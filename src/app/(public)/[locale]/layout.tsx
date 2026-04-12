@@ -4,12 +4,16 @@ import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { TopBar } from '@/components/layout/TopBar';
 import { Footer } from '@/components/layout/Footer';
+import { ServiceWorkerRegister } from '@/components/layout/ServiceWorkerRegister';
 import { ScrollProgress } from '@/components/layout/ScrollProgress';
 import { SkipToContent } from '@/components/layout/SkipToContent';
 import { fetchSiteSettings } from '@/lib/payload';
 import { bytesToGrams } from '@/lib/carbon';
 import { LOCALES, isRtl, type Locale } from '@/i18n/config';
 import { loadScriptFont } from '@/app/fonts';
+import { HtmlLang } from '@/components/layout/HtmlLang';
+
+export const dynamic = 'force-dynamic';
 
 export default async function LocaleLayout({
   children,
@@ -54,6 +58,8 @@ export default async function LocaleLayout({
           locale={locale}
           studioBlurb={settings.studioBlurb ?? 'A studio building software for universal access. Incorporated in Alberta, Canada.'}
         />
+        <ServiceWorkerRegister />
+        <HtmlLang locale={locale} />
       </div>
     </NextIntlClientProvider>
   );

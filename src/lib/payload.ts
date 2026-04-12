@@ -1,157 +1,157 @@
 import { getPayload } from 'payload';
 import config from '@payload-config';
-import { cacheLife, cacheTag } from 'next/cache';
+import { unstable_cache } from 'next/cache';
 import { CACHE_TAGS, localeTag } from './cache-tags';
 
 export async function getPayloadInstance() {
   return getPayload({ config });
 }
 
-export async function fetchHomepageContent(locale: string) {
-  'use cache';
-  cacheLife('hours');
-  cacheTag(CACHE_TAGS.homepage, localeTag(CACHE_TAGS.homepage, locale));
+export const fetchHomepageContent = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'homepage-content', locale: locale as 'en' });
+  },
+  ['homepage'],
+  { tags: [CACHE_TAGS.homepage], revalidate: 3600 }
+);
 
-  const payload = await getPayloadInstance();
-  return payload.findGlobal({ slug: 'homepage-content', locale: locale as 'en' });
-}
+export const fetchITUData = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'itu-data', locale: locale as 'en' });
+  },
+  ['itu'],
+  { tags: [CACHE_TAGS.itu], revalidate: 604800 }
+);
 
-export async function fetchITUData(locale: string) {
-  'use cache';
-  cacheLife('weeks');
-  cacheTag(CACHE_TAGS.itu, localeTag(CACHE_TAGS.itu, locale));
+export const fetchFlagshipProducts = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'products',
+      where: { isFlagship: { equals: true } },
+      sort: 'ordering',
+      limit: 10,
+      locale: locale as 'en',
+    });
+    return res.docs;
+  },
+  ['flagships'],
+  { tags: [CACHE_TAGS.products], revalidate: 3600 }
+);
 
-  const payload = await getPayloadInstance();
-  return payload.findGlobal({ slug: 'itu-data', locale: locale as 'en' });
-}
+export const fetchAllProducts = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'products',
+      sort: 'ordering',
+      limit: 100,
+      depth: 2,
+      locale: locale as 'en',
+    });
+    return res.docs;
+  },
+  ['all-products'],
+  { tags: [CACHE_TAGS.products], revalidate: 3600 }
+);
 
-export async function fetchFlagshipProducts(locale: string) {
-  'use cache';
-  cacheLife('hours');
-  cacheTag(CACHE_TAGS.products, localeTag(CACHE_TAGS.products, locale));
+export const fetchProductCategories = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'product-categories',
+      sort: 'ordering',
+      limit: 20,
+      locale: locale as 'en',
+    });
+    return res.docs;
+  },
+  ['categories'],
+  { tags: [CACHE_TAGS.productCategories], revalidate: 86400 }
+);
 
-  const payload = await getPayloadInstance();
-  const res = await payload.find({
-    collection: 'products',
-    where: { isFlagship: { equals: true } },
-    sort: 'ordering',
-    limit: 10,
-    locale: locale as 'en',
-  });
-  return res.docs;
-}
+export const fetchCommitments = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'commitment-items',
+      sort: 'number',
+      limit: 20,
+      locale: locale as 'en',
+    });
+    return res.docs;
+  },
+  ['commitments'],
+  { tags: [CACHE_TAGS.commitments], revalidate: 86400 }
+);
 
-export async function fetchAllProducts(locale: string) {
-  'use cache';
-  cacheLife('hours');
-  cacheTag(CACHE_TAGS.products, localeTag(CACHE_TAGS.products, locale));
+export const fetchManifesto = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'manifesto-page', locale: locale as 'en' });
+  },
+  ['manifesto'],
+  { tags: [CACHE_TAGS.manifesto], revalidate: 3600 }
+);
 
-  const payload = await getPayloadInstance();
-  const res = await payload.find({
-    collection: 'products',
-    sort: 'ordering',
-    limit: 100,
-    depth: 2,
-    locale: locale as 'en',
-  });
-  return res.docs;
-}
+export const fetchAbout = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'about-page', locale: locale as 'en' });
+  },
+  ['about'],
+  { tags: [CACHE_TAGS.about], revalidate: 86400 }
+);
 
-export async function fetchProductCategories(locale: string) {
-  'use cache';
-  cacheLife('days');
-  cacheTag(CACHE_TAGS.productCategories, localeTag(CACHE_TAGS.productCategories, locale));
+export const fetchGreen = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'green-page', locale: locale as 'en' });
+  },
+  ['green'],
+  { tags: [CACHE_TAGS.green], revalidate: 3600 }
+);
 
-  const payload = await getPayloadInstance();
-  const res = await payload.find({
-    collection: 'product-categories',
-    sort: 'ordering',
-    limit: 20,
-    locale: locale as 'en',
-  });
-  return res.docs;
-}
+export const fetchContactPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'contact-page', locale: locale as 'en' });
+  },
+  ['contact-page'],
+  { tags: [CACHE_TAGS.contact], revalidate: 86400 }
+);
 
-export async function fetchCommitments(locale: string) {
-  'use cache';
-  cacheLife('days');
-  cacheTag(CACHE_TAGS.commitments, localeTag(CACHE_TAGS.commitments, locale));
+export const fetchContactRoutes = unstable_cache(
+  async () => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({ collection: 'contact-routes', limit: 10 });
+    return res.docs;
+  },
+  ['contact-routes'],
+  { tags: [CACHE_TAGS.contact], revalidate: 86400 }
+);
 
-  const payload = await getPayloadInstance();
-  const res = await payload.find({
-    collection: 'commitment-items',
-    sort: 'number',
-    limit: 20,
-    locale: locale as 'en',
-  });
-  return res.docs;
-}
+export const fetchLegalPage = unstable_cache(
+  async (slug: string) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'legal-pages',
+      where: { slug: { equals: slug } },
+      limit: 1,
+    });
+    return res.docs[0] ?? null;
+  },
+  ['legal'],
+  { tags: [CACHE_TAGS.legal], revalidate: 604800 }
+);
 
-export async function fetchManifesto(locale: string) {
-  'use cache';
-  cacheLife('hours');
-  cacheTag(CACHE_TAGS.manifesto, localeTag(CACHE_TAGS.manifesto, locale));
-
-  const payload = await getPayloadInstance();
-  return payload.findGlobal({ slug: 'manifesto-page', locale: locale as 'en' });
-}
-
-export async function fetchAbout(locale: string) {
-  'use cache';
-  cacheLife('days');
-  cacheTag(CACHE_TAGS.about, localeTag(CACHE_TAGS.about, locale));
-
-  const payload = await getPayloadInstance();
-  return payload.findGlobal({ slug: 'about-page', locale: locale as 'en' });
-}
-
-export async function fetchGreen(locale: string) {
-  'use cache';
-  cacheLife('hours');
-  cacheTag(CACHE_TAGS.green, localeTag(CACHE_TAGS.green, locale));
-
-  const payload = await getPayloadInstance();
-  return payload.findGlobal({ slug: 'green-page', locale: locale as 'en' });
-}
-
-export async function fetchContactPage(locale: string) {
-  'use cache';
-  cacheLife('days');
-  cacheTag(CACHE_TAGS.contact, localeTag(CACHE_TAGS.contact, locale));
-
-  const payload = await getPayloadInstance();
-  return payload.findGlobal({ slug: 'contact-page', locale: locale as 'en' });
-}
-
-export async function fetchContactRoutes() {
-  'use cache';
-  cacheLife('days');
-  cacheTag(CACHE_TAGS.contact);
-
-  const payload = await getPayloadInstance();
-  const res = await payload.find({ collection: 'contact-routes', limit: 10 });
-  return res.docs;
-}
-
-export async function fetchLegalPage(slug: string) {
-  'use cache';
-  cacheLife('weeks');
-  cacheTag(CACHE_TAGS.legal, `${CACHE_TAGS.legal}:${slug}`);
-
-  const payload = await getPayloadInstance();
-  const res = await payload.find({
-    collection: 'legal-pages',
-    where: { slug: { equals: slug } },
-    limit: 1,
-  });
-  return res.docs[0] ?? null;
-}
-
-export async function fetchSiteSettings(locale: string) {
-  'use cache';
-  cacheLife('days');
-  cacheTag(CACHE_TAGS.siteSettings, localeTag(CACHE_TAGS.siteSettings, locale));
-
-  const payload = await getPayloadInstance();
-  return payload.findGlobal({ slug: 'site-settings', locale: locale as 'en' });
-}
+export const fetchSiteSettings = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'site-settings', locale: locale as 'en' });
+  },
+  ['site-settings'],
+  { tags: [CACHE_TAGS.siteSettings], revalidate: 86400 }
+);

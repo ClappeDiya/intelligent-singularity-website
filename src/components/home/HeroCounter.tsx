@@ -16,6 +16,7 @@ export function HeroCounter({ value, label, tagline, primaryCta, secondaryCta }:
 
   return (
     <section className="pt-[42px] min-h-[80vh] md:min-h-screen flex flex-col justify-center relative px-4 sm:px-6 md:px-8 lg:px-12 pb-20">
+      <h1 className="sr-only">Intelligent Singularity — {label}</h1>
       <div
         className="absolute start-4 end-4 sm:start-6 sm:end-6 md:start-8 md:end-8 lg:start-12 lg:end-12 top-[44%] h-px"
         style={{

@@ -12,15 +12,15 @@ type Root = { root: { type: 'root'; children: LexicalNode[] } };
 const FORMAT_BOLD = 1;
 const FORMAT_ITALIC = 1 << 1;
 
-function renderTextNode(node: TextNode, key: React.Key): React.ReactNode {
+function renderTextNode(node: TextNode, key: string | number): React.ReactNode {
   let el: React.ReactNode = node.text;
   const f = node.format ?? 0;
-  if (f & FORMAT_BOLD) el = React.createElement('strong', { key: `${key}-b` }, el);
-  if (f & FORMAT_ITALIC) el = React.createElement('em', { key: `${key}-i` }, el);
+  if (f & FORMAT_BOLD) el = React.createElement('strong', { key: `${String(key)}-b` }, el);
+  if (f & FORMAT_ITALIC) el = React.createElement('em', { key: `${String(key)}-i` }, el);
   return el;
 }
 
-function renderNode(node: LexicalNode, key: React.Key): React.ReactNode {
+function renderNode(node: LexicalNode, key: string | number): React.ReactNode {
   switch (node.type) {
     case 'text':
       return renderTextNode(node, key);

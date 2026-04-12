@@ -3,12 +3,12 @@
   --color-ink-soft: #13201a;
   --color-mint: #A8E6CF;
   --color-mint-glow: rgba(168, 230, 207, 0.55);
-  --color-mint-dim: rgba(168, 230, 207, 0.35);
+  --color-mint-dim: rgba(168, 230, 207, 0.55);
   --color-mint-faint: rgba(168, 230, 207, 0.15);
   --color-cream: #FEFDF8;
   --color-cream-soft: rgba(254, 253, 248, 0.78);
   --color-cream-dim: rgba(254, 253, 248, 0.55);
-  --color-cream-faint: rgba(254, 253, 248, 0.28);
+  --color-cream-faint: rgba(254, 253, 248, 0.50);
   --color-stone: #556161;
   --color-rule: rgba(254, 253, 248, 0.08);
 

@@ -19,7 +19,7 @@ export function Footer({ locale, studioBlurb }: { locale: string; studioBlurb: s
           </p>
         </div>
         <div>
-          <h4 className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-mint)] mb-4" style={{ fontFamily: 'var(--font-mono)' }}>Studio</h4>
+          <div className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-mint)] mb-4 font-bold" style={{ fontFamily: 'var(--font-mono)' }}>Studio</div>
           <Link className="block py-1 text-[13px] text-[var(--color-cream-soft)] hover:text-[var(--color-mint)]" href="/manifesto">Manifesto</Link>
           <Link className="block py-1 text-[13px] text-[var(--color-cream-soft)] hover:text-[var(--color-mint)]" href="/#flagships">Flagships</Link>
           <Link className="block py-1 text-[13px] text-[var(--color-cream-soft)] hover:text-[var(--color-mint)]" href="/portfolio">Full ecosystem</Link>
@@ -28,7 +28,7 @@ export function Footer({ locale, studioBlurb }: { locale: string; studioBlurb: s
           <Link className="block py-1 text-[13px] text-[var(--color-cream-soft)] hover:text-[var(--color-mint)]" href="/contact">Contact</Link>
         </div>
         <div>
-          <h4 className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-mint)] mb-4" style={{ fontFamily: 'var(--font-mono)' }}>Legal</h4>
+          <div className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-mint)] mb-4 font-bold" style={{ fontFamily: 'var(--font-mono)' }}>Legal</div>
           <Link className="block py-1 text-[13px] text-[var(--color-cream-soft)] hover:text-[var(--color-mint)]" href="/legal/privacy">Privacy</Link>
           <Link className="block py-1 text-[13px] text-[var(--color-cream-soft)] hover:text-[var(--color-mint)]" href="/legal/terms">Terms</Link>
           <Link className="block py-1 text-[13px] text-[var(--color-cream-soft)] hover:text-[var(--color-mint)]" href="/legal/accessibility">Accessibility</Link>
@@ -36,7 +36,7 @@ export function Footer({ locale, studioBlurb }: { locale: string; studioBlurb: s
           <p className="mt-2 text-[11px] text-[var(--color-cream-faint)]">Legal in English only.</p>
         </div>
         <div>
-          <h4 className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-mint)] mb-4" style={{ fontFamily: 'var(--font-mono)' }}>14 Languages</h4>
+          <div className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-mint)] mb-4 font-bold" style={{ fontFamily: 'var(--font-mono)' }}>14 Languages</div>
           <LanguageWheel />
         </div>
       </div>
