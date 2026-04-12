@@ -1,17 +1,48 @@
-import { MeridianMark } from '@/components/brand/MeridianMark';
-import { Wordmark } from '@/components/brand/Wordmark';
+import { HeroCounter } from '@/components/home/HeroCounter';
+import { FactsSection } from '@/components/home/FactsSection';
+import { FlagshipsSection } from '@/components/home/FlagshipsSection';
+import { CommitmentsSection } from '@/components/home/CommitmentsSection';
+import { GreenStrip } from '@/components/home/GreenStrip';
+import {
+  fetchHomepageContent,
+  fetchITUData,
+  fetchFlagshipProducts,
+  fetchCommitments,
+} from '@/lib/payload';
+import { bytesToGrams } from '@/lib/carbon';
 
-export default function HomePage() {
+export default async function HomePage() {
+  const locale = 'en';
+  const [hp, itu, flagships, commitments] = await Promise.all([
+    fetchHomepageContent(locale),
+    fetchITUData(locale),
+    fetchFlagshipProducts(locale),
+    fetchCommitments(locale),
+  ]);
+
+  const estBytes = 48_000;
+  const grams = bytesToGrams(estBytes, 0.8);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-6 p-8">
-      <MeridianMark size={64} />
-      <Wordmark className="text-2xl" />
-      <p className="text-sm opacity-60 font-[var(--font-mono)]">
-        A studio building software for universal access.
-      </p>
-      <p className="text-xs opacity-40 font-[var(--font-mono)]">
-        Coming soon · Incorporated in Alberta, Canada
-      </p>
-    </main>
+    <>
+      <HeroCounter
+        value={itu.offlineCount}
+        label={hp.heroLabel}
+        tagline={hp.heroTagline}
+        primaryCta={hp.heroCtaPrimary}
+        secondaryCta={hp.heroCtaSecondary}
+      />
+      <FactsSection title={hp.factsTitle} lead={hp.factsLead} itu={itu} />
+      <FlagshipsSection
+        title={hp.flagshipsTitle}
+        lead={hp.flagshipsLead}
+        flagships={flagships}
+        seeAllLine={hp.seeAllPortfolioLine}
+      />
+      <section className="px-12 py-[120px]" style={{ borderTop: '1px solid var(--color-rule)' }}>
+        <GreenStrip pageBytes={estBytes} carbonGrams={grams} />
+      </section>
+      <CommitmentsSection title={hp.commitmentsTitle} lead={hp.commitmentsLead} items={commitments} />
+    </>
   );
 }
