@@ -1,8 +1,9 @@
+import { Suspense } from 'react';
 import { fetchGreen } from '@/lib/payload';
 import { bytesToGrams, formatCarbon, formatBytes } from '@/lib/carbon';
+import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
 
-export default async function GreenPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+async function GreenContent({ locale }: { locale: string }) {
   const green = await fetchGreen(locale);
   const bytes = 42_000;
   const grams = bytesToGrams(bytes, green.hostingGreenRatio);
@@ -32,9 +33,16 @@ export default async function GreenPage({ params }: { params: Promise<{ locale: 
           <div className="font-[var(--font-serif)] text-[22px] font-light">Zero</div>
         </div>
       </div>
-      <pre className="whitespace-pre-wrap text-[16px] font-[var(--font-serif)] mb-12">
-        {JSON.stringify(green.environmentalStance, null, 2)}
-      </pre>
+      <LexicalRenderer content={green.environmentalStance} className="mb-12" />
     </article>
+  );
+}
+
+export default async function GreenPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return (
+    <Suspense fallback={<div className="px-12 py-[120px]">Loading...</div>}>
+      <GreenContent locale={locale} />
+    </Suspense>
   );
 }

@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { HeroCounter } from '@/components/home/HeroCounter';
 import { FactsSection } from '@/components/home/FactsSection';
 import { FlagshipsSection } from '@/components/home/FlagshipsSection';
@@ -26,8 +27,7 @@ type HomepageContent = {
   commitmentsLead: string;
 };
 
-export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+async function HomeContent({ locale }: { locale: string }) {
   const [hp, itu, flagships, commitments] = await Promise.all([
     fetchHomepageContent(locale),
     fetchITUData(locale),
@@ -59,5 +59,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
       <CommitmentsSection title={hp.commitmentsTitle} lead={hp.commitmentsLead} items={commitments} />
     </>
+  );
+}
+
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return (
+    <Suspense fallback={<div className="px-12 py-[120px]">Loading...</div>}>
+      <HomeContent locale={locale} />
+    </Suspense>
   );
 }

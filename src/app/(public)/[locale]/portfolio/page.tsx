@@ -1,9 +1,9 @@
+import { Suspense } from 'react';
 import { PortfolioGrid } from '@/components/pages/PortfolioGrid';
 import { fetchAllProducts, fetchProductCategories } from '@/lib/payload';
 import type { Product, ProductCategory } from '@/types/cms';
 
-export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+async function PortfolioContent({ locale }: { locale: string }) {
   const [products, categories] = await Promise.all([
     fetchAllProducts(locale),
     fetchProductCategories(locale),
@@ -20,5 +20,14 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
       </p>
       <PortfolioGrid categories={categories as unknown as ProductCategory[]} products={products as unknown as Product[]} />
     </article>
+  );
+}
+
+export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return (
+    <Suspense fallback={<div className="px-12 py-[120px]">Loading...</div>}>
+      <PortfolioContent locale={locale} />
+    </Suspense>
   );
 }

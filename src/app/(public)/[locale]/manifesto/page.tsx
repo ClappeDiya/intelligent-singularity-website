@@ -1,7 +1,8 @@
+import { Suspense } from 'react';
 import { fetchManifesto, fetchCommitments, fetchITUData } from '@/lib/payload';
+import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
 
-export default async function ManifestoPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+async function ManifestoContent({ locale }: { locale: string }) {
   const [manifesto, commitments, itu] = await Promise.all([
     fetchManifesto(locale),
     fetchCommitments(locale),
@@ -16,11 +17,7 @@ export default async function ManifestoPage({ params }: { params: Promise<{ loca
       </h1>
       <p className="font-[var(--font-serif)] italic text-[22px] leading-[1.55] text-[var(--color-cream-soft)] mb-[72px]">{manifesto.lead}</p>
       <section className="prose prose-invert max-w-none text-[18px] leading-[1.65] mb-20">
-        {/* Rich text rendering — use a Payload rich text serializer here;
-            for Phase 2, show a plain <pre> as a placeholder */}
-        <pre className="whitespace-pre-wrap text-[16px] font-[var(--font-serif)]">
-          {JSON.stringify(manifesto.body, null, 2)}
-        </pre>
+        <LexicalRenderer content={manifesto.body} className="mb-20" />
       </section>
       <section className="mb-20">
         <h2 className="font-[var(--font-serif)] text-[36px] mb-8">The nine commitments</h2>
@@ -39,5 +36,14 @@ export default async function ManifestoPage({ params }: { params: Promise<{ loca
         <a href={itu.sourceUrl} className="text-[var(--color-mint)]">{itu.sourceUrl}</a>
       </footer>
     </article>
+  );
+}
+
+export default async function ManifestoPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return (
+    <Suspense fallback={<div className="px-12 py-[120px]">Loading...</div>}>
+      <ManifestoContent locale={locale} />
+    </Suspense>
   );
 }
