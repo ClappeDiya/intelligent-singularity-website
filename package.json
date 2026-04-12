@@ -16,9 +16,14 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@payloadcms/db-postgres": "^3.82.1",
+    "@payloadcms/next": "^3.82.1",
+    "@payloadcms/richtext-lexical": "^3.82.1",
     "next": "^16",
+    "payload": "^3.82.1",
     "react": "^19",
-    "react-dom": "^19"
+    "react-dom": "^19",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.2",
