@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "manifesto": "Manifesto",
+    "studio": "Studio",
+    "about": "About",
+    "green": "Green",
+    "contact": "Contact"
+  },
+  "status": {
+    "production": "Production",
+    "staging": "Staging",
+    "awaitingApproval": "Awaiting approval",
+    "infrastructure": "Infrastructure"
+  },
+  "footer": {
+    "legalEnglishOnly": "Legal in English only.",
+    "studioLabel": "Studio",
+    "legalLabel": "Legal",
+    "languagesLabel": "14 Languages",
+    "zeroTrackers": "0 trackers",
+    "zeroThirdParty": "0 third-party calls",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+  },
+  "hero": {
+    "skipToContent": "Skip to main content",
+    "scrollHint": "Scroll"
+  },
+  "contactForm": {
+    "routingLabel": "Routing",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "routeGeneral": "General inquiry",
+    "routePress": "Press",
+    "routePartnerships": "Partnerships",
+    "routeLegal": "Legal",
+    "sendButton": "Send",
+    "sendingButton": "Sending..."
+  }
+}
