@@ -1,22 +1,6 @@
 import Link from 'next/link';
 import { MeridianMark } from '@/components/brand/MeridianMark';
-
-const LANGUAGES = [
-  { code: 'en', label: 'EN' },
-  { code: 'zh-CN', label: '中' },
-  { code: 'es', label: 'ES' },
-  { code: 'hi', label: 'हि' },
-  { code: 'ar', label: 'ع' },
-  { code: 'fr', label: 'FR' },
-  { code: 'pt', label: 'PT' },
-  { code: 'bn', label: 'বা' },
-  { code: 'ru', label: 'RU' },
-  { code: 'ur', label: 'ار' },
-  { code: 'id', label: 'ID' },
-  { code: 'sw', label: 'SW' },
-  { code: 'yo', label: 'YO' },
-  { code: 'ha', label: 'HA' },
-];
+import { LanguageWheel } from './LanguageWheel';
 
 export function Footer({ locale, studioBlurb }: { locale: string; studioBlurb: string }) {
   return (
@@ -53,23 +37,7 @@ export function Footer({ locale, studioBlurb }: { locale: string; studioBlurb: s
         </div>
         <div>
           <h4 className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-mint)] mb-4" style={{ fontFamily: 'var(--font-mono)' }}>14 Languages</h4>
-          <div className="flex flex-wrap gap-2">
-            {LANGUAGES.map((lang) => (
-              <Link
-                key={lang.code}
-                href={`/${lang.code}` as '/'}
-                aria-label={`Switch language to ${lang.code}`}
-                className={`w-[34px] h-[34px] rounded-full border flex items-center justify-center text-[10px] transition ${
-                  lang.code === locale
-                    ? 'bg-[var(--color-mint)] text-[var(--color-ink)] border-[var(--color-mint)]'
-                    : 'border-[var(--color-rule)] text-[var(--color-cream-dim)] hover:border-[var(--color-mint)] hover:text-[var(--color-mint)]'
-                }`}
-                style={{ fontFamily: 'var(--font-mono)' }}
-              >
-                {lang.label}
-              </Link>
-            ))}
-          </div>
+          <LanguageWheel />
         </div>
       </div>
       <div
