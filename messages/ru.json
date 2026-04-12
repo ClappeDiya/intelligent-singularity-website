@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "Манифест",
+    "studio": "Студия",
+    "about": "О нас",
+    "green": "Экология",
+    "contact": "Контакт"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "В продакшене",
+    "staging": "Предрелиз",
+    "awaitingApproval": "Ожидает одобрения",
+    "infrastructure": "Инфраструктура"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "Юридические документы только на английском языке.",
+    "studioLabel": "Студия",
+    "legalLabel": "Юридическая информация",
+    "languagesLabel": "14 языков",
+    "zeroTrackers": "0 трекеров",
+    "zeroThirdParty": "0 сторонних вызовов",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Собственный хостинг на 100% возобновляемой энергии"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "Перейти к основному содержанию",
+    "scrollHint": "Прокрутить"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "Направление",
+    "nameLabel": "Имя",
+    "emailLabel": "Электронная почта",
+    "subjectLabel": "Тема",
+    "messageLabel": "Сообщение",
+    "routeGeneral": "Общий вопрос",
+    "routePress": "Пресса",
+    "routePartnerships": "Партнёрство",
+    "routeLegal": "Юридический вопрос",
+    "sendButton": "Отправить",
+    "sendingButton": "Отправка…"
   }
 }

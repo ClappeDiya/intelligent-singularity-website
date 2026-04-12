@@ -2,40 +2,40 @@
   "nav": {
     "manifesto": "Manifesto",
     "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "about": "Tentang",
+    "green": "Hijau",
+    "contact": "Kontak"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "Produksi",
+    "staging": "Tahap Uji",
+    "awaitingApproval": "Menunggu persetujuan",
+    "infrastructure": "Infrastruktur"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
+    "legalEnglishOnly": "Dokumen hukum hanya dalam bahasa Inggris.",
     "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalLabel": "Hukum",
+    "languagesLabel": "14 Bahasa",
+    "zeroTrackers": "0 pelacak",
+    "zeroThirdParty": "0 panggilan pihak ketiga",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Dihosting mandiri dengan 100% energi terbarukan"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "Langsung ke konten utama",
+    "scrollHint": "Gulir"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
+    "routingLabel": "Tujuan",
+    "nameLabel": "Nama",
     "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "subjectLabel": "Subjek",
+    "messageLabel": "Pesan",
+    "routeGeneral": "Pertanyaan umum",
+    "routePress": "Pers",
+    "routePartnerships": "Kemitraan",
+    "routeLegal": "Hukum",
+    "sendButton": "Kirim",
+    "sendingButton": "Mengirim..."
   }
 }

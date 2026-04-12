@@ -1,41 +1,41 @@
 {
   "nav": {
     "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "studio": "Estúdio",
+    "about": "Sobre",
+    "green": "Verde",
+    "contact": "Contato"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "Produção",
+    "staging": "Pré-produção",
+    "awaitingApproval": "Aguardando aprovação",
+    "infrastructure": "Infraestrutura"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "Termos legais disponíveis apenas em inglês.",
+    "studioLabel": "Estúdio",
+    "legalLabel": "Jurídico",
+    "languagesLabel": "14 idiomas",
+    "zeroTrackers": "0 rastreadores",
+    "zeroThirdParty": "0 chamadas a terceiros",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Hospedagem própria com 100% de energia renovável"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "Ir para o conteúdo principal",
+    "scrollHint": "Rolar"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "Encaminhamento",
+    "nameLabel": "Nome",
+    "emailLabel": "E-mail",
+    "subjectLabel": "Assunto",
+    "messageLabel": "Mensagem",
+    "routeGeneral": "Consulta geral",
+    "routePress": "Imprensa",
+    "routePartnerships": "Parcerias",
+    "routeLegal": "Jurídico",
+    "sendButton": "Enviar",
+    "sendingButton": "Enviando..."
   }
 }

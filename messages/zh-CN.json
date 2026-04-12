@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "宣言",
+    "studio": "工作室",
+    "about": "关于",
+    "green": "绿色",
+    "contact": "联系"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "生产环境",
+    "staging": "预发布环境",
+    "awaitingApproval": "等待审批",
+    "infrastructure": "基础设施"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "法律条款仅提供英文版本。",
+    "studioLabel": "工作室",
+    "legalLabel": "法律条款",
+    "languagesLabel": "14 种语言",
+    "zeroTrackers": "0 个追踪器",
+    "zeroThirdParty": "0 个第三方调用",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · 自托管于 100% 可再生能源"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "跳转至正文内容",
+    "scrollHint": "滚动"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "分类",
+    "nameLabel": "姓名",
+    "emailLabel": "电子邮箱",
+    "subjectLabel": "主题",
+    "messageLabel": "留言内容",
+    "routeGeneral": "一般咨询",
+    "routePress": "媒体查询",
+    "routePartnerships": "合作伙伴",
+    "routeLegal": "法律事务",
+    "sendButton": "发送",
+    "sendingButton": "发送中..."
   }
 }

@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "Manifiesto",
+    "studio": "Estudio",
+    "about": "Nosotros",
+    "green": "Sostenibilidad",
+    "contact": "Contacto"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "Producción",
+    "staging": "Pruebas",
+    "awaitingApproval": "Pendiente de aprobación",
+    "infrastructure": "Infraestructura"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
+    "legalEnglishOnly": "Información legal disponible solo en inglés.",
+    "studioLabel": "Estudio",
     "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "languagesLabel": "14 idiomas",
+    "zeroTrackers": "0 rastreadores",
+    "zeroThirdParty": "0 llamadas a terceros",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Alojamiento propio con energía 100 % renovable"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "Ir al contenido principal",
+    "scrollHint": "Desplazar"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
+    "routingLabel": "Destinatario",
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo electrónico",
+    "subjectLabel": "Asunto",
+    "messageLabel": "Mensaje",
+    "routeGeneral": "Consulta general",
+    "routePress": "Prensa",
+    "routePartnerships": "Alianzas",
     "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "sendButton": "Enviar",
+    "sendingButton": "Enviando..."
   }
 }

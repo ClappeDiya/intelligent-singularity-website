@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
+    "manifesto": "Tamko",
     "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "about": "Kuhusu",
+    "green": "Mazingira",
+    "contact": "Wasiliana"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "Uzalishaji",
+    "staging": "Majaribio",
+    "awaitingApproval": "Inasubiri idhini",
+    "infrastructure": "Miundombinu"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
+    "legalEnglishOnly": "Masuala ya kisheria kwa Kiingereza pekee.",
     "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalLabel": "Kisheria",
+    "languagesLabel": "Lugha 14",
+    "zeroTrackers": "Vifuatiliaji 0",
+    "zeroThirdParty": "Simu 0 za wahusika wa nje",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Inajihifadhi kwenye nishati mbadala 100%"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "Ruka hadi maudhui makuu",
+    "scrollHint": "Sogeza"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "Elekeza",
+    "nameLabel": "Jina",
+    "emailLabel": "Barua pepe",
+    "subjectLabel": "Mada",
+    "messageLabel": "Ujumbe",
+    "routeGeneral": "Swali la jumla",
+    "routePress": "Vyombo vya habari",
+    "routePartnerships": "Ushirikiano",
+    "routeLegal": "Kisheria",
+    "sendButton": "Tuma",
+    "sendingButton": "Inatuma..."
   }
 }

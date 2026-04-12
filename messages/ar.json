@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "البيان",
+    "studio": "الاستوديو",
+    "about": "من نحن",
+    "green": "الاستدامة",
+    "contact": "تواصل معنا"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "قيد الإنتاج",
+    "staging": "قيد التجربة",
+    "awaitingApproval": "بانتظار الموافقة",
+    "infrastructure": "بنية تحتية"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "النصوص القانونية متوفرة بالإنجليزية فقط.",
+    "studioLabel": "الاستوديو",
+    "legalLabel": "قانوني",
+    "languagesLabel": "١٤ لغة",
+    "zeroTrackers": "٠ متتبعات",
+    "zeroThirdParty": "٠ اتصالات بأطراف ثالثة",
+    "alberta": "© ٢٠٢٦ Intelligent Singularity Inc. · Alberta, Canada · مستضاف ذاتيًا بطاقة متجددة ١٠٠٪"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "انتقل إلى المحتوى الرئيسي",
+    "scrollHint": "مرّر"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "التوجيه",
+    "nameLabel": "الاسم",
+    "emailLabel": "البريد الإلكتروني",
+    "subjectLabel": "الموضوع",
+    "messageLabel": "الرسالة",
+    "routeGeneral": "استفسار عام",
+    "routePress": "صحافة",
+    "routePartnerships": "شراكات",
+    "routeLegal": "قانوني",
+    "sendButton": "إرسال",
+    "sendingButton": "جارٍ الإرسال..."
   }
 }

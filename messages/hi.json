@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "घोषणापत्र",
+    "studio": "कार्यशाला",
+    "about": "परिचय",
+    "green": "हरित",
+    "contact": "संपर्क"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "उत्पादन",
+    "staging": "परीक्षण",
+    "awaitingApproval": "अनुमोदन प्रतीक्षित",
+    "infrastructure": "अवसंरचना"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "विधिक सामग्री केवल अंग्रेज़ी में।",
+    "studioLabel": "कार्यशाला",
+    "legalLabel": "विधिक",
+    "languagesLabel": "14 भाषाएँ",
+    "zeroTrackers": "0 ट्रैकर",
+    "zeroThirdParty": "0 तृतीय-पक्ष कॉल",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · 100% नवीकरणीय ऊर्जा पर स्व-होस्टेड"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "मुख्य सामग्री पर जाएँ",
+    "scrollHint": "नीचे स्क्रॉल करें"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "मार्गनिर्देशन",
+    "nameLabel": "नाम",
+    "emailLabel": "ईमेल",
+    "subjectLabel": "विषय",
+    "messageLabel": "संदेश",
+    "routeGeneral": "सामान्य पूछताछ",
+    "routePress": "प्रेस",
+    "routePartnerships": "साझेदारी",
+    "routeLegal": "विधिक",
+    "sendButton": "भेजें",
+    "sendingButton": "भेजा जा रहा है..."
   }
 }

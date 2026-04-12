@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "منشور",
+    "studio": "اسٹوڈیو",
+    "about": "ہمارے بارے میں",
+    "green": "سبز عزم",
+    "contact": "رابطہ"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "فعال",
+    "staging": "آزمائشی",
+    "awaitingApproval": "زیرِ منظوری",
+    "infrastructure": "بنیادی ڈھانچہ"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "قانونی متن صرف انگریزی میں دستیاب ہے۔",
+    "studioLabel": "اسٹوڈیو",
+    "legalLabel": "قانونی",
+    "languagesLabel": "۱۴ زبانیں",
+    "zeroTrackers": "۰ ٹریکرز",
+    "zeroThirdParty": "۰ فریقِ ثالث کالز",
+    "alberta": "© ۲۰۲۶ Intelligent Singularity Inc. · Alberta, Canada · ۱۰۰٪ قابلِ تجدید توانائی پر خود میزبان"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "بنیادی مواد پر جائیں",
+    "scrollHint": "نیچے سکرول کریں"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "شعبہ",
+    "nameLabel": "نام",
+    "emailLabel": "ای میل",
+    "subjectLabel": "موضوع",
+    "messageLabel": "پیغام",
+    "routeGeneral": "عمومی استفسار",
+    "routePress": "صحافت",
+    "routePartnerships": "شراکتیں",
+    "routeLegal": "قانونی",
+    "sendButton": "بھیجیں",
+    "sendingButton": "بھیجا جا رہا ہے..."
   }
 }

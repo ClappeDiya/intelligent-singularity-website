@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "Ìwé Ìpinnu",
+    "studio": "Ilé Iṣẹ́",
+    "about": "Nípa Wa",
+    "green": "Àyíká",
+    "contact": "Kàn sí Wa"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "Ṣiṣẹ́",
+    "staging": "Ìdánwò",
+    "awaitingApproval": "Ń dúró de ìfọwọ́sí",
+    "infrastructure": "Ìpìlẹ̀ amọ̀nà"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "Ọ̀rọ̀ òfin ní èdè Gẹ̀ẹ́sì nìkan.",
+    "studioLabel": "Ilé Iṣẹ́",
+    "legalLabel": "Òfin",
+    "languagesLabel": "Èdè 14",
+    "zeroTrackers": "Olùtọpinpin 0",
+    "zeroThirdParty": "Ìpè ẹlẹ́kẹta 0",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Àwọn ológùn tí a fi ara wa gbé lórí agbára ìṣàtúnṣe 100%"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "Fò lọ sí àkóónú àkọ́kọ́",
+    "scrollHint": "Yí"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "Ìtọ́sọ́nà",
+    "nameLabel": "Orúkọ",
+    "emailLabel": "Ímeèlì",
+    "subjectLabel": "Àkọlé",
+    "messageLabel": "Ìfiránṣẹ́",
+    "routeGeneral": "Ìbéèrè àpapọ̀",
+    "routePress": "Àtẹjáde",
+    "routePartnerships": "Ìfọwọ́sowọ́pọ̀",
+    "routeLegal": "Òfin",
+    "sendButton": "Fi ránṣẹ́",
+    "sendingButton": "Ń fi ránṣẹ́..."
   }
 }

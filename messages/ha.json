@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "Manufesto",
+    "studio": "Ɗakin Aiki",
+    "about": "Game da Mu",
+    "green": "Kore",
+    "contact": "Tuntuɓe Mu"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "Ana Amfani",
+    "staging": "Gwajin Aiki",
+    "awaitingApproval": "Jiran amincewar",
+    "infrastructure": "Kayayyakin More"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "Dokokin shari'a a Turancin kaɗai.",
+    "studioLabel": "Ɗakin Aiki",
+    "legalLabel": "Shari'a",
+    "languagesLabel": "Harsuna 14",
+    "zeroTrackers": "Babu mai bin diddigi",
+    "zeroThirdParty": "Babu kiran na waje",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Ana ɗaukar nauyi a kan makamashin da ake sabuntawa kashi 100%"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "Tsallaka zuwa babban abun ciki",
+    "scrollHint": "Gungura"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "Sashe",
+    "nameLabel": "Suna",
+    "emailLabel": "Imel",
+    "subjectLabel": "Batu",
+    "messageLabel": "Saƙo",
+    "routeGeneral": "Tambaya ta gabaɗaya",
+    "routePress": "Labarai",
+    "routePartnerships": "Haɗin gwiwa",
+    "routeLegal": "Shari'a",
+    "sendButton": "Aika",
+    "sendingButton": "Ana aikawa..."
   }
 }

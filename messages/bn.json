@@ -1,41 +1,41 @@
 {
   "nav": {
-    "manifesto": "Manifesto",
-    "studio": "Studio",
-    "about": "About",
-    "green": "Green",
-    "contact": "Contact"
+    "manifesto": "ইশতেহার",
+    "studio": "স্টুডিও",
+    "about": "পরিচিতি",
+    "green": "সবুজ",
+    "contact": "যোগাযোগ"
   },
   "status": {
-    "production": "Production",
-    "staging": "Staging",
-    "awaitingApproval": "Awaiting approval",
-    "infrastructure": "Infrastructure"
+    "production": "উৎপাদন",
+    "staging": "পরীক্ষামূলক",
+    "awaitingApproval": "অনুমোদন প্রতীক্ষিত",
+    "infrastructure": "অবকাঠামো"
   },
   "footer": {
-    "legalEnglishOnly": "Legal in English only.",
-    "studioLabel": "Studio",
-    "legalLabel": "Legal",
-    "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
-    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Self-hosted on 100% renewable energy"
+    "legalEnglishOnly": "আইনি বিষয়বস্তু কেবল ইংরেজিতে।",
+    "studioLabel": "স্টুডিও",
+    "legalLabel": "আইনি",
+    "languagesLabel": "14টি ভাষা",
+    "zeroTrackers": "0 ট্র্যাকার",
+    "zeroThirdParty": "0 তৃতীয়-পক্ষ কল",
+    "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · 100% নবায়নযোগ্য জ্বালানিতে স্ব-হোস্টেড"
   },
   "hero": {
-    "skipToContent": "Skip to main content",
-    "scrollHint": "Scroll"
+    "skipToContent": "মূল বিষয়বস্তুতে যান",
+    "scrollHint": "স্ক্রল করুন"
   },
   "contactForm": {
-    "routingLabel": "Routing",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "messageLabel": "Message",
-    "routeGeneral": "General inquiry",
-    "routePress": "Press",
-    "routePartnerships": "Partnerships",
-    "routeLegal": "Legal",
-    "sendButton": "Send",
-    "sendingButton": "Sending..."
+    "routingLabel": "রাউটিং",
+    "nameLabel": "নাম",
+    "emailLabel": "ইমেইল",
+    "subjectLabel": "বিষয়",
+    "messageLabel": "বার্তা",
+    "routeGeneral": "সাধারণ জিজ্ঞাসা",
+    "routePress": "প্রেস",
+    "routePartnerships": "অংশীদারিত্ব",
+    "routeLegal": "আইনি",
+    "sendButton": "পাঠান",
+    "sendingButton": "পাঠানো হচ্ছে..."
   }
 }
