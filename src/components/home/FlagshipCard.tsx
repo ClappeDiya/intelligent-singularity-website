@@ -6,7 +6,7 @@ export function FlagshipCard({ product, index }: { product: Product; index: numb
       href={product.outboundURL}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-[var(--color-ink)] p-10 pb-9 flex flex-col justify-between min-h-[340px] transition-colors hover:bg-[rgba(168,230,207,0.035)] no-underline text-[var(--color-cream)]"
+      className="bg-[var(--color-ink)] p-6 md:p-10 pb-6 md:pb-9 flex flex-col justify-between min-h-[340px] transition-colors hover:bg-[rgba(168,230,207,0.035)] no-underline text-[var(--color-cream)]"
     >
       <div className="flex justify-between items-start mb-7">
         <div className="relative w-[38px] h-[14px]" aria-hidden="true">

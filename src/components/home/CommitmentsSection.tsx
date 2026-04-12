@@ -4,7 +4,7 @@ type Props = { title: string; lead: string; items: CommitmentItem[] };
 
 export function CommitmentsSection({ title, lead, items }: Props) {
   return (
-    <section className="px-12 py-[120px] relative" style={{ borderTop: '1px solid var(--color-rule)' }}>
+    <section className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px] relative" style={{ borderTop: '1px solid var(--color-rule)' }}>
       <div className="absolute top-10 end-12 text-[10px] text-[var(--color-mint)] tracking-[0.2em]" style={{ fontFamily: 'var(--font-mono)' }}>03 / PLEDGE</div>
       <div className="text-[11px] uppercase tracking-[0.22em] text-[var(--color-mint)] mb-5" style={{ fontFamily: 'var(--font-mono)' }}>— Our Nine Commitments</div>
       <h2 className="font-light leading-[1.05] tracking-[-0.025em] mb-12 max-w-[1200px]" style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(36px, 5vw, 72px)' }}>

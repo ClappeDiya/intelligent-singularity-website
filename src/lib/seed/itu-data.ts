@@ -1,5 +1,5 @@
 export const ITU_DATA_SEED = {
-  offlineCount: 2_200_000_000,
+  offlineCount: 2_210_000_000,
   onlinePercent: 74,
   offlinePercent: 26,
   highIncomePercent: 94,

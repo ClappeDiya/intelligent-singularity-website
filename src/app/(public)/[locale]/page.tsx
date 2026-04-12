@@ -54,7 +54,7 @@ async function HomeContent({ locale }: { locale: string }) {
         flagships={flagships}
         seeAllLine={hp.seeAllPortfolioLine}
       />
-      <section className="px-12 py-[120px]" style={{ borderTop: '1px solid var(--color-rule)' }}>
+      <section className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]" style={{ borderTop: '1px solid var(--color-rule)' }}>
         <GreenStrip pageBytes={estBytes} carbonGrams={grams} />
       </section>
       <CommitmentsSection title={hp.commitmentsTitle} lead={hp.commitmentsLead} items={commitments} />
@@ -65,7 +65,7 @@ async function HomeContent({ locale }: { locale: string }) {
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-12 py-[120px]">Loading...</div>}>
+    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
       <HomeContent locale={locale} />
     </Suspense>
   );

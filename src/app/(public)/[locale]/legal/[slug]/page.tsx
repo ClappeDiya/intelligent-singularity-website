@@ -7,7 +7,7 @@ async function LegalContent({ locale, slug }: { locale: string; slug: string }) 
   const page = await fetchLegalPage(slug);
   if (!page) notFound();
   return (
-    <article className="px-12 py-[120px] max-w-[760px] mx-auto">
+    <article className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px] max-w-[760px] mx-auto">
       <div className="font-[var(--font-mono)] text-[11px] uppercase tracking-[0.22em] text-[var(--color-mint)] mb-5">&mdash; Legal</div>
       <h1 className="font-[var(--font-serif)] font-light leading-[1.05] tracking-[-0.025em] mb-12" style={{ fontSize: 'clamp(36px, 5vw, 72px)' }}>
         {page.title}
@@ -23,7 +23,7 @@ async function LegalContent({ locale, slug }: { locale: string; slug: string }) 
 export default async function LegalSlugPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
   return (
-    <Suspense fallback={<div className="px-12 py-[120px]">Loading...</div>}>
+    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
       <LegalContent locale={locale} slug={slug} />
     </Suspense>
   );

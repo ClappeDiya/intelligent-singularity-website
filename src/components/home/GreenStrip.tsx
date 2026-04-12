@@ -6,7 +6,7 @@ export function GreenStrip({ pageBytes, carbonGrams }: Props) {
   const kb = (pageBytes / 1024).toFixed(1);
   return (
     <div
-      className="mt-12 p-9 rounded-sm grid grid-cols-2 md:grid-cols-4 gap-8 items-center"
+      className="mt-12 p-5 md:p-9 rounded-sm grid grid-cols-2 md:grid-cols-4 gap-8 items-center"
       style={{
         border: '1px solid var(--color-mint-dim)',
         background: 'rgba(168,230,207,0.03)',

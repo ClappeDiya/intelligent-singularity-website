@@ -10,7 +10,7 @@ async function PortfolioContent({ locale }: { locale: string }) {
   ]);
 
   return (
-    <article className="px-12 py-[120px]">
+    <article className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">
       <div className="font-[var(--font-mono)] text-[11px] uppercase tracking-[0.22em] text-[var(--color-mint)] mb-5">&mdash; The full ecosystem</div>
       <h1 className="font-[var(--font-serif)] font-light leading-[1.05] tracking-[-0.025em] mb-12" style={{ fontSize: 'clamp(36px, 5vw, 72px)' }}>
         Twenty-three tools. One mission.
@@ -26,7 +26,7 @@ async function PortfolioContent({ locale }: { locale: string }) {
 export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-12 py-[120px]">Loading...</div>}>
+    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
       <PortfolioContent locale={locale} />
     </Suspense>
   );

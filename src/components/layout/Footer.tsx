@@ -5,10 +5,10 @@ import { LanguageWheel } from './LanguageWheel';
 export function Footer({ locale, studioBlurb }: { locale: string; studioBlurb: string }) {
   return (
     <footer
-      className="px-12 pt-20 pb-10"
+      className="px-4 sm:px-6 md:px-8 lg:px-12 pt-12 md:pt-20 pb-8 md:pb-10"
       style={{ borderTop: '1px solid var(--color-rule)' }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-14 max-w-[1400px] mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14 max-w-[1400px] mx-auto">
         <div>
           <div className="flex items-center gap-3 mb-5">
             <MeridianMark size={56} />
