@@ -10,8 +10,8 @@ export function FlagshipCard({ product, index }: { product: Product; index: numb
     >
       <div className="flex justify-between items-start mb-7">
         <div className="relative w-[38px] h-[14px]" aria-hidden="true">
-          <div className="absolute left-0 right-0 top-[10px] h-px bg-[var(--color-mint)]" style={{ opacity: 0.85 }} />
-          <div className="absolute left-[9px] top-[5px] w-[7px] h-[7px] rounded-full bg-[var(--color-mint)]" />
+          <div className="absolute start-0 end-0 top-[10px] h-px bg-[var(--color-mint)]" style={{ opacity: 0.85 }} />
+          <div className="absolute start-[9px] top-[5px] w-[7px] h-[7px] rounded-full bg-[var(--color-mint)]" />
         </div>
         <div className="text-[9px] text-[var(--color-mint)] uppercase tracking-[0.18em] px-2 py-1 border border-[var(--color-mint-faint)] rounded-sm" style={{ fontFamily: 'var(--font-mono)' }}>
           {product.productStatus === 'production' ? 'Production' : product.productStatus}

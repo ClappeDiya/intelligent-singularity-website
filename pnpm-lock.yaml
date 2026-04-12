@@ -8,6 +8,24 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/noto-nastaliq-urdu':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource-variable/noto-sans':
+        specifier: ^5.2.10
+        version: 5.2.10
+      '@fontsource-variable/noto-sans-arabic':
+        specifier: ^5.2.10
+        version: 5.2.10
+      '@fontsource-variable/noto-sans-bengali':
+        specifier: ^5.2.11
+        version: 5.2.11
+      '@fontsource-variable/noto-sans-devanagari':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource-variable/noto-sans-sc':
+        specifier: ^5.2.10
+        version: 5.2.10
       '@next/env':
         specifier: ^16.2.3
         version: 16.2.3
@@ -859,6 +877,24 @@ packages:
 
   '@floating-ui/utils@0.2.11':
     resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
+
+  '@fontsource-variable/noto-nastaliq-urdu@5.2.8':
+    resolution: {integrity: sha512-h+10ToT71H+mtMnM/SclxC46x9smZW8OH0joqVdDZ0BaVahqPQ1I/M8bKgWeU8X+WktICYrIsJ0oTxQvyg+A9Q==}
+
+  '@fontsource-variable/noto-sans-arabic@5.2.10':
+    resolution: {integrity: sha512-6vP9gU5yQQE/4ClrVoS92rjwc3qUnSkoxaw/Hkrha1Nqn9UEwuh3WVxT2+DMlMdV49uxvxUKVauSd2nwLu/WBA==}
+
+  '@fontsource-variable/noto-sans-bengali@5.2.11':
+    resolution: {integrity: sha512-/n/T+YpnXXZHOYuoucK/Q+hOd8I93Pp49esgbb9DNKY4Ve+xIRTtvcoRZPLkjmMhEM+Fg5Z3LtaBPrHErM97GA==}
+
+  '@fontsource-variable/noto-sans-devanagari@5.2.8':
+    resolution: {integrity: sha512-KogMgbXfY/gGtuubU+Pc/vV5Tc4zggObUppNKcSKIRixGUBM1gZdBTpEtS6Q6Cyr9kaIH7081npaxEx3zLlBnA==}
+
+  '@fontsource-variable/noto-sans-sc@5.2.10':
+    resolution: {integrity: sha512-zdk10i5HrDQTXI7ldD61zToX1fsgig8vDTsu7zB48SXOitWfuX0e5viZAwnkHuhwh096PU6X6i1AyAsbBCISpA==}
+
+  '@fontsource-variable/noto-sans@5.2.10':
+    resolution: {integrity: sha512-wyFgKkFu7jki5kEL8qv7avjQ8rxHX0J/nhLWvbR9T0hOH1HRKZEvb9EW9lMjZfWHHfEzKkYf5J+NadwgCS7TXA==}
 
   '@formatjs/bigdecimal@0.2.0':
     resolution: {integrity: sha512-GeaxHZbUoYvHL9tC5eltHLs+1zU70aPw0s7LwqgktIzF5oMhNY4o4deEtusJMsq7WFJF3Ye2zQEzdG8beVk73w==}
@@ -5043,6 +5079,18 @@ snapshots:
       tabbable: 6.4.0
 
   '@floating-ui/utils@0.2.11': {}
+
+  '@fontsource-variable/noto-nastaliq-urdu@5.2.8': {}
+
+  '@fontsource-variable/noto-sans-arabic@5.2.10': {}
+
+  '@fontsource-variable/noto-sans-bengali@5.2.11': {}
+
+  '@fontsource-variable/noto-sans-devanagari@5.2.8': {}
+
+  '@fontsource-variable/noto-sans-sc@5.2.10': {}
+
+  '@fontsource-variable/noto-sans@5.2.10': {}
 
   '@formatjs/bigdecimal@0.2.0': {}
 

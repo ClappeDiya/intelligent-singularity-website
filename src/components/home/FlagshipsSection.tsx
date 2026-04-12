@@ -12,7 +12,7 @@ type Props = {
 export function FlagshipsSection({ title, lead, flagships, seeAllLine }: Props) {
   return (
     <section id="flagships" className="px-12 py-[120px] relative" style={{ borderTop: '1px solid var(--color-rule)' }}>
-      <div className="absolute top-10 right-12 text-[10px] text-[var(--color-mint)] tracking-[0.2em]" style={{ fontFamily: 'var(--font-mono)' }}>02 / STUDIO</div>
+      <div className="absolute top-10 end-12 text-[10px] text-[var(--color-mint)] tracking-[0.2em]" style={{ fontFamily: 'var(--font-mono)' }}>02 / STUDIO</div>
       <div className="text-[11px] uppercase tracking-[0.22em] text-[var(--color-mint)] mb-5" style={{ fontFamily: 'var(--font-mono)' }}>— The Studio</div>
       <h2 className="font-light leading-[1.05] tracking-[-0.025em] mb-12 max-w-[1200px]" style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(36px, 5vw, 72px)' }}>
         {title}

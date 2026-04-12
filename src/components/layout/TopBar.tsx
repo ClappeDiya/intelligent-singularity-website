@@ -11,7 +11,7 @@ export function TopBar({ sizeBytes, carbonGrams, locale }: Props) {
   const kb = Math.round(sizeBytes / 1024);
   return (
     <header
-      className="fixed top-0 left-0 right-0 h-[42px] flex items-center justify-between px-6 z-50 text-[11px] text-[var(--color-cream-dim)]"
+      className="fixed top-0 start-0 end-0 h-[42px] flex items-center justify-between px-6 z-50 text-[11px] text-[var(--color-cream-dim)]"
       style={{
         fontFamily: 'var(--font-mono)',
         background: 'rgba(15, 23, 18, 0.92)',

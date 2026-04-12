@@ -13,7 +13,12 @@
   --color-rule: rgba(254, 253, 248, 0.08);
 
   --font-serif: Georgia, 'Times New Roman', serif;
-  --font-sans: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  --font-sans: 'Noto Sans Variable', 'Noto Sans', -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  --font-sans-cjk: 'Noto Sans SC Variable', 'Noto Sans SC', var(--font-sans);
+  --font-sans-arabic: 'Noto Sans Arabic Variable', 'Noto Sans Arabic', var(--font-sans);
+  --font-sans-devanagari: 'Noto Sans Devanagari Variable', 'Noto Sans Devanagari', var(--font-sans);
+  --font-sans-bengali: 'Noto Sans Bengali Variable', 'Noto Sans Bengali', var(--font-sans);
+  --font-sans-nastaliq: 'Noto Nastaliq Urdu Variable', 'Noto Nastaliq Urdu', var(--font-sans-arabic);
   --font-mono: 'SF Mono', Menlo, Consolas, monospace;
 
   --spacing-section: 120px;

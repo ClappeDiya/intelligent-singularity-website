@@ -18,6 +18,12 @@
     "seed": "tsx src/lib/seed/seed.ts"
   },
   "dependencies": {
+    "@fontsource-variable/noto-nastaliq-urdu": "^5.2.8",
+    "@fontsource-variable/noto-sans": "^5.2.10",
+    "@fontsource-variable/noto-sans-arabic": "^5.2.10",
+    "@fontsource-variable/noto-sans-bengali": "^5.2.11",
+    "@fontsource-variable/noto-sans-devanagari": "^5.2.8",
+    "@fontsource-variable/noto-sans-sc": "^5.2.10",
     "@next/env": "^16.2.3",
     "@payloadcms/db-postgres": "^3.82.1",
     "@payloadcms/next": "^3.82.1",

@@ -9,6 +9,7 @@ import { SkipToContent } from '@/components/layout/SkipToContent';
 import { fetchSiteSettings } from '@/lib/payload';
 import { bytesToGrams } from '@/lib/carbon';
 import { LOCALES, isRtl, type Locale } from '@/i18n/config';
+import { loadScriptFont } from '@/app/fonts';
 
 export default async function LocaleLayout({
   children,
@@ -20,6 +21,21 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!(LOCALES as readonly string[]).includes(locale)) notFound();
 
+  await loadScriptFont(locale as Locale);
+
+  const fontFamily =
+    locale === 'zh-CN'
+      ? 'var(--font-sans-cjk)'
+      : locale === 'ar'
+        ? 'var(--font-sans-arabic)'
+        : locale === 'ur'
+          ? 'var(--font-sans-nastaliq)'
+          : locale === 'hi'
+            ? 'var(--font-sans-devanagari)'
+            : locale === 'bn'
+              ? 'var(--font-sans-bengali)'
+              : undefined;
+
   const messages = await getMessages();
   const settings = await fetchSiteSettings(locale);
   const estBytes = 48_000;
@@ -27,7 +43,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div dir={isRtl(locale as Locale) ? 'rtl' : 'ltr'}>
+      <div dir={isRtl(locale as Locale) ? 'rtl' : 'ltr'} style={fontFamily ? { fontFamily } : undefined}>
         <SkipToContent />
         <Suspense>
           <TopBar sizeBytes={estBytes} carbonGrams={grams} locale={locale} />
