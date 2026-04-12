@@ -1,0 +1,15 @@
+export const ITU_DATA_SEED = {
+  offlineCount: 2_200_000_000,
+  onlinePercent: 74,
+  offlinePercent: 26,
+  highIncomePercent: 94,
+  lowIncomePercent: 23,
+  highIncome5G: 84,
+  lowIncome5G: 4,
+  urbanPercent: 85,
+  ruralPercent: 58,
+  offlineInLowMiddleIncomePercent: 96,
+  sourceLabel: 'ITU Facts and Figures 2025',
+  sourceUrl: 'https://www.itu.int/itu-d/reports/statistics/facts-figures-2025/',
+  lastVerified: '2026-04-11',
+};

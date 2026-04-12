@@ -14,7 +14,8 @@
     "type-check": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "pre-deploy": "sh scripts/pre-deploy-checks.sh"
+    "pre-deploy": "sh scripts/pre-deploy-checks.sh",
+    "seed": "tsx src/lib/seed/seed.ts"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "^3.82.1",
@@ -43,6 +44,7 @@
     "jsdom": "^29.0.2",
     "postcss": "^8.5.9",
     "tailwindcss": "^4.2.2",
+    "tsx": "^4.21.0",
     "typescript": "^5",
     "vitest": "^4.1.4"
   }
