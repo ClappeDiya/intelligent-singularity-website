@@ -10,6 +10,21 @@ import {
   fetchCommitments,
 } from '@/lib/payload';
 import { bytesToGrams } from '@/lib/carbon';
+import type { ITUData, Product, CommitmentItem } from '@/types/cms';
+
+type HomepageContent = {
+  heroLabel: string;
+  heroTagline: string;
+  heroCtaPrimary: string;
+  heroCtaSecondary: string;
+  factsTitle: string;
+  factsLead: string;
+  flagshipsTitle: string;
+  flagshipsLead: string;
+  seeAllPortfolioLine: string;
+  commitmentsTitle: string;
+  commitmentsLead: string;
+};
 
 export default async function HomePage() {
   const locale = 'en';
@@ -18,7 +33,7 @@ export default async function HomePage() {
     fetchITUData(locale),
     fetchFlagshipProducts(locale),
     fetchCommitments(locale),
-  ]);
+  ]) as [HomepageContent, ITUData, Product[], CommitmentItem[]];
 
   const estBytes = 48_000;
   const grams = bytesToGrams(estBytes, 0.8);
