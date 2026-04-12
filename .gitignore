@@ -10,3 +10,4 @@ pnpm-debug.log*
 coverage/
 *.tsbuildinfo
 .pnpm-store/
+.env.local
