@@ -1,7 +1,11 @@
 import type { GlobalConfig } from 'payload';
+import { revalidateGlobal } from '../hooks/revalidate';
 
 export const HomepageContent: GlobalConfig = {
   slug: 'homepage-content',
+  hooks: {
+    afterChange: [revalidateGlobal('homepage')],
+  },
   fields: [
     { name: 'heroLabel', type: 'text', required: true, localized: true },
     { name: 'heroTagline', type: 'text', required: true, localized: true },

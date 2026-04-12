@@ -1,9 +1,13 @@
 import type { CollectionConfig } from 'payload';
+import { revalidateCollection } from '../hooks/revalidate';
 
 export const LegalPages: CollectionConfig = {
   slug: 'legal-pages',
   admin: { useAsTitle: 'title', defaultColumns: ['slug', 'title', 'lastUpdated'] },
   access: { read: () => true },
+  hooks: {
+    afterChange: [revalidateCollection('legal')],
+  },
   versions: { drafts: true },
   fields: [
     {

@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload';
+import { revalidateCollection } from '../hooks/revalidate';
 
 export const Products: CollectionConfig = {
   slug: 'products',
@@ -7,6 +8,9 @@ export const Products: CollectionConfig = {
     defaultColumns: ['name', 'category', 'status', 'isFlagship', 'ordering'],
   },
   access: { read: () => true },
+  hooks: {
+    afterChange: [revalidateCollection('products')],
+  },
   versions: { drafts: true },
   fields: [
     { name: 'name', type: 'text', required: true },

@@ -1,7 +1,11 @@
 import type { GlobalConfig } from 'payload';
+import { revalidateGlobal } from '../hooks/revalidate';
 
 export const GreenPage: GlobalConfig = {
   slug: 'green-page',
+  hooks: {
+    afterChange: [revalidateGlobal('green')],
+  },
   versions: { drafts: true },
   fields: [
     { name: 'title', type: 'text', required: true, localized: true },

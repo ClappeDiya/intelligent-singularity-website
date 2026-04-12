@@ -1,7 +1,11 @@
 import type { GlobalConfig } from 'payload';
+import { revalidateGlobal } from '../hooks/revalidate';
 
 export const ITUData: GlobalConfig = {
   slug: 'itu-data',
+  hooks: {
+    afterChange: [revalidateGlobal('itu')],
+  },
   fields: [
     { name: 'offlineCount', type: 'number', required: true, defaultValue: 2200000000 },
     { name: 'onlinePercent', type: 'number', required: true, defaultValue: 74 },
