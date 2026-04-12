@@ -1,5 +1,8 @@
+import nextConfig from 'eslint-config-next';
+
 export default [
+  ...nextConfig,
   {
-    files: ['**/*.{ts,tsx,js,jsx,mjs}'],
+    ignores: ['src/payload-types.ts'],
   },
 ];

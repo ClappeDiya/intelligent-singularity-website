@@ -19,7 +19,7 @@ describe('sendContactMessage', () => {
       body: 'Body',
     });
     expect(result.ok).toBe(true);
-    expect(result.messageId).toBe('test-123');
+    if (result.ok) expect(result.messageId).toBe('test-123');
   });
 
   it('rejects missing body', async () => {
