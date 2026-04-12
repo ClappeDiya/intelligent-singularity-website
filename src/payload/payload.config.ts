@@ -15,6 +15,14 @@ import { LegalPages } from './collections/LegalPages';
 import { ContactRoutes } from './collections/ContactRoutes';
 import { Redirects } from './collections/Redirects';
 
+import { SiteSettings } from './globals/SiteSettings';
+import { HomepageContent } from './globals/HomepageContent';
+import { ManifestoPage } from './globals/ManifestoPage';
+import { AboutPage } from './globals/AboutPage';
+import { GreenPage } from './globals/GreenPage';
+import { ContactPage } from './globals/ContactPage';
+import { ITUData } from './globals/ITUData';
+
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
@@ -35,6 +43,15 @@ export default buildConfig({
     LegalPages,
     ContactRoutes,
     Redirects,
+  ],
+  globals: [
+    SiteSettings,
+    HomepageContent,
+    ManifestoPage,
+    AboutPage,
+    GreenPage,
+    ContactPage,
+    ITUData,
   ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
