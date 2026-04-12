@@ -55,15 +55,15 @@ export const GREEN_SEED = {
   title: 'Our Green Pledge',
   lead: 'This website is the smallest example of what we build. Measured live, below.',
   environmentalStance: {
-    root: { type: 'root', children: [{ type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0, children: [{ type: 'text', version: 1, text: 'Every page on this site weighs less than 50 KB on first paint. Every visit is measured in grams of CO\u2082 and shown to you, honestly, in the top status bar. We host on renewable energy. We use zero third-party trackers. We are radically transparent about what we emit, because the next generation is watching.' }] }], direction: 'ltr', format: '', indent: 0, version: 1 },
+    root: { type: 'root', children: [{ type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0, children: [{ type: 'text', version: 1, text: 'Every page on this site weighs less than 50 KB on first paint. Every visit is measured in grams of CO\u2082 and shown to you, honestly, in the top status bar. We use zero third-party trackers. We are radically transparent about what we emit, because the next generation is watching.' }] }], direction: 'ltr', format: '', indent: 0, version: 1 },
   },
   hostingStory: {
-    root: { type: 'root', children: [{ type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0, children: [{ type: 'text', version: 1, text: 'Hosted on a single Contabo Cloud VPS in US Central. No CDN. No third parties. One origin, hardened with CrowdSec, Traefik, and Let\u2019s Encrypt.' }] }], direction: 'ltr', format: '', indent: 0, version: 1 },
+    root: { type: 'root', children: [{ type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0, children: [{ type: 'text', version: 1, text: 'Hosted on a single VPS in Edmonton, Alberta, Canada. No CDN. No third parties. One origin, hardened with Traefik and Let\u2019s Encrypt. Alberta\u2019s grid is approximately 85% natural gas with growing renewable capacity \u2014 we are honest about this and committed to migrating to verified green hosting as options improve.' }] }], direction: 'ltr', format: '', indent: 0, version: 1 },
   },
   futureGenerationPledge: {
     root: { type: 'root', children: [{ type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0, children: [{ type: 'text', version: 1, text: 'Everything we build must serve the generations that follow. That is the constraint we hold ourselves to, forever.' }] }], direction: 'ltr', format: '', indent: 0, version: 1 },
   },
-  hostingGreenRatio: 0.8,
+  hostingGreenRatio: 0.15,
 };
 
 export const CONTACT_SEED = {
