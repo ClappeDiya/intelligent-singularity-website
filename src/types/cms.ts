@@ -1,24 +1,33 @@
+/**
+ * Lightweight CMS types used in page components.
+ * These mirror the Payload-generated types but are manually maintained
+ * until payload-types.ts is auto-generated in a later phase.
+ */
+
+export type ProductCategory = {
+  id: string;
+  name: string;
+  slug: string;
+  ordering: number;
+  description?: string;
+  accentColor?: string;
+};
+
 export type Product = {
   id: string;
   name: string;
   slug: string;
-  publicName?: string;
-  tagline?: string;
-  shortDescription?: string;
+  publicName?: string | null;
+  category: ProductCategory | string;
+  tagline?: string | null;
+  shortDescription?: string | null;
   longDescription?: unknown;
-  universalReachNote?: string;
+  universalReachNote?: string | null;
   outboundURL: string;
   status: 'production' | 'staging' | 'awaiting-approval' | 'infrastructure';
   isFlagship: boolean;
-  launchDate?: string;
+  launchDate?: string | null;
   ordering: number;
-  category:
-    | string
-    | {
-        id: string;
-        name: string;
-        slug: string;
-      };
 };
 
 export type CommitmentItem = {
@@ -26,6 +35,14 @@ export type CommitmentItem = {
   number: number;
   title: string;
   body: string;
+};
+
+export type LegalPage = {
+  id: string;
+  slug: string;
+  title: string;
+  body: unknown;
+  lastUpdated: string;
 };
 
 export type ITUData = {

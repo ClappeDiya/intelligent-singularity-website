@@ -57,7 +57,7 @@ export function Footer({ locale, studioBlurb }: { locale: string; studioBlurb: s
             {LANGUAGES.map((lang) => (
               <Link
                 key={lang.code}
-                href={`/${lang.code}`}
+                href={`/${lang.code}` as '/'}
                 aria-label={`Switch language to ${lang.code}`}
                 className={`w-[34px] h-[34px] rounded-full border flex items-center justify-center text-[10px] transition ${
                   lang.code === locale
