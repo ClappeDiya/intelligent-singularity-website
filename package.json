@@ -13,7 +13,8 @@
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "pre-deploy": "sh scripts/pre-deploy-checks.sh"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "^3.82.1",
