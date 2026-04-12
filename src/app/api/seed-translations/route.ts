@@ -35,7 +35,11 @@ async function safeUpdate(label: string, fn: () => Promise<void>, log: string[])
 
 export async function POST(request: Request) {
   if (process.env.NODE_ENV === 'production') {
-    return Response.json({ error: 'Seed disabled in production' }, { status: 403 });
+    const url = new URL(request.url);
+    const secret = url.searchParams.get('secret');
+    if (secret !== process.env.REVALIDATE_SECRET) {
+      return Response.json({ error: 'Seed requires valid secret in production' }, { status: 403 });
+    }
   }
 
   const { locale } = (await request.json()) as { locale?: string };

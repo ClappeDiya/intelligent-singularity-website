@@ -14,9 +14,13 @@ import {
 } from '@/lib/seed/globals';
 import { LEGAL_SEED } from '@/lib/seed/legal';
 
-export async function POST() {
+export async function POST(request: Request) {
   if (process.env.NODE_ENV === 'production') {
-    return Response.json({ error: 'Seed disabled in production' }, { status: 403 });
+    const url = new URL(request.url);
+    const secret = url.searchParams.get('secret');
+    if (secret !== process.env.REVALIDATE_SECRET) {
+      return Response.json({ error: 'Seed requires valid secret in production' }, { status: 403 });
+    }
   }
 
   const payload = await getPayload({ config });
