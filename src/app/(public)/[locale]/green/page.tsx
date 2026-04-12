@@ -1,8 +1,9 @@
 import { fetchGreen } from '@/lib/payload';
 import { bytesToGrams, formatCarbon, formatBytes } from '@/lib/carbon';
 
-export default async function GreenPage() {
-  const green = await fetchGreen('en');
+export default async function GreenPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const green = await fetchGreen(locale);
   const bytes = 42_000;
   const grams = bytesToGrams(bytes, green.hostingGreenRatio);
 

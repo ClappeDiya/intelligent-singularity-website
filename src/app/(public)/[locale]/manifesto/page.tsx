@@ -1,7 +1,7 @@
 import { fetchManifesto, fetchCommitments, fetchITUData } from '@/lib/payload';
 
-export default async function ManifestoPage() {
-  const locale = 'en';
+export default async function ManifestoPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const [manifesto, commitments, itu] = await Promise.all([
     fetchManifesto(locale),
     fetchCommitments(locale),

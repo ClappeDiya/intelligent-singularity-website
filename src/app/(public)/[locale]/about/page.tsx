@@ -1,7 +1,8 @@
 import { fetchAbout } from '@/lib/payload';
 
-export default async function AboutPage() {
-  const about = await fetchAbout('en');
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const about = await fetchAbout(locale);
   return (
     <article className="px-12 py-[120px] max-w-[920px] mx-auto">
       <div className="font-[var(--font-mono)] text-[11px] uppercase tracking-[0.22em] text-[var(--color-mint)] mb-5">&mdash; About</div>

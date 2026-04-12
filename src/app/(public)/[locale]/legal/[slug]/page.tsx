@@ -1,8 +1,8 @@
 import { fetchLegalPage } from '@/lib/payload';
 import { notFound } from 'next/navigation';
 
-export default async function LegalSlugPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default async function LegalSlugPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  const { locale, slug } = await params;
   const page = await fetchLegalPage(slug);
   if (!page) notFound();
   return (

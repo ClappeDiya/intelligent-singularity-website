@@ -1,8 +1,9 @@
 import { ContactForm } from '@/components/pages/ContactForm';
 import { fetchContactPage } from '@/lib/payload';
 
-export default async function ContactPage() {
-  const contact = await fetchContactPage('en');
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const contact = await fetchContactPage(locale);
   return (
     <article className="px-12 py-[120px] max-w-[920px] mx-auto">
       <div className="font-[var(--font-mono)] text-[11px] uppercase tracking-[0.22em] text-[var(--color-mint)] mb-5">&mdash; Contact</div>

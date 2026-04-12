@@ -2,8 +2,8 @@ import { PortfolioGrid } from '@/components/pages/PortfolioGrid';
 import { fetchAllProducts, fetchProductCategories } from '@/lib/payload';
 import type { Product, ProductCategory } from '@/types/cms';
 
-export default async function PortfolioPage() {
-  const locale = 'en';
+export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const [products, categories] = await Promise.all([
     fetchAllProducts(locale),
     fetchProductCategories(locale),

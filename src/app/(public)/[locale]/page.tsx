@@ -26,8 +26,8 @@ type HomepageContent = {
   commitmentsLead: string;
 };
 
-export default async function HomePage() {
-  const locale = 'en';
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const [hp, itu, flagships, commitments] = await Promise.all([
     fetchHomepageContent(locale),
     fetchITUData(locale),
