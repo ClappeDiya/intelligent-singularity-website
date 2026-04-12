@@ -39,6 +39,13 @@ export default function proxy(request: NextRequest) {
   );
   response.headers.set('X-Nonce', nonce);
 
+  // Note: we cannot measure the full response body here; instead, we set a
+  // header that the server component reads. The actual bytes value is
+  // computed by Next.js at render time and attached in a later RSC step.
+  // This header is a hook point — the TopBar component computes and renders
+  // the final value inside a <Suspense>.
+  response.headers.set('X-Page-Bytes-Source', 'proxy');
+
   return response;
 }
 
