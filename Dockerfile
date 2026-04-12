@@ -17,8 +17,8 @@ ENV NEXT_TELEMETRY_DISABLED=1
 # Build-time env vars (overridden at runtime)
 ENV DATABASE_URL=postgres://placeholder:placeholder@localhost:5432/placeholder
 ENV PAYLOAD_SECRET=build-time-placeholder-secret-that-is-at-least-32-characters-long
-RUN pnpm pre-deploy
-RUN pnpm build
+ENV NEXT_PUBLIC_SITE_URL=https://intelligentsingularityinc.com
+RUN pnpm exec next build --webpack
 
 FROM base AS runner
 WORKDIR /app
