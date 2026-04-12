@@ -24,7 +24,7 @@ export type Product = {
   longDescription?: unknown;
   universalReachNote?: string | null;
   outboundURL: string;
-  status: 'production' | 'staging' | 'awaiting-approval' | 'infrastructure';
+  productStatus: 'production' | 'staging' | 'awaiting-approval' | 'infrastructure';
   isFlagship: boolean;
   launchDate?: string | null;
   ordering: number;

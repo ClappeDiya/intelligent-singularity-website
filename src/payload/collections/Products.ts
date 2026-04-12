@@ -5,7 +5,7 @@ export const Products: CollectionConfig = {
   slug: 'products',
   admin: {
     useAsTitle: 'name',
-    defaultColumns: ['name', 'category', 'status', 'isFlagship', 'ordering'],
+    defaultColumns: ['name', 'category', 'productStatus', 'isFlagship', 'ordering'],
   },
   access: { read: () => true },
   hooks: {
@@ -35,7 +35,7 @@ export const Products: CollectionConfig = {
     { name: 'universalReachNote', type: 'textarea', localized: true },
     { name: 'outboundURL', type: 'text', required: true },
     {
-      name: 'status',
+      name: 'productStatus',
       type: 'select',
       required: true,
       options: [

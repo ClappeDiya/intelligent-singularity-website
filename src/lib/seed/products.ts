@@ -6,7 +6,7 @@ export type ProductSeed = {
   tagline: string;
   shortDescription: string;
   outboundURL: string;
-  status: 'production' | 'staging' | 'awaiting-approval' | 'infrastructure';
+  productStatus: 'production' | 'staging' | 'awaiting-approval' | 'infrastructure';
   isFlagship: boolean;
   ordering: number;
 };

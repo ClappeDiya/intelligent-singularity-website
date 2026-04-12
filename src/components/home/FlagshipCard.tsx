@@ -14,7 +14,7 @@ export function FlagshipCard({ product, index }: { product: Product; index: numb
           <div className="absolute left-[9px] top-[5px] w-[7px] h-[7px] rounded-full bg-[var(--color-mint)]" />
         </div>
         <div className="text-[9px] text-[var(--color-mint)] uppercase tracking-[0.18em] px-2 py-1 border border-[var(--color-mint-faint)] rounded-sm" style={{ fontFamily: 'var(--font-mono)' }}>
-          {product.status === 'production' ? 'Production' : product.status}
+          {product.productStatus === 'production' ? 'Production' : product.productStatus}
         </div>
       </div>
       <div className="flex-grow">

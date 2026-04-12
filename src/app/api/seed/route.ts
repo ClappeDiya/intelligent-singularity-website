@@ -1,10 +1,9 @@
-import 'dotenv/config';
 import { getPayload } from 'payload';
 import config from '@payload-config';
-import { CATEGORIES_SEED } from './categories';
-import { PRODUCTS_SEED } from './products';
-import { COMMITMENTS_SEED } from './commitments';
-import { ITU_DATA_SEED } from './itu-data';
+import { CATEGORIES_SEED } from '@/lib/seed/categories';
+import { PRODUCTS_SEED } from '@/lib/seed/products';
+import { COMMITMENTS_SEED } from '@/lib/seed/commitments';
+import { ITU_DATA_SEED } from '@/lib/seed/itu-data';
 import {
   HOMEPAGE_SEED,
   SITE_SETTINGS_SEED,
@@ -12,13 +11,18 @@ import {
   ABOUT_SEED,
   GREEN_SEED,
   CONTACT_SEED,
-} from './globals';
-import { LEGAL_SEED } from './legal';
+} from '@/lib/seed/globals';
+import { LEGAL_SEED } from '@/lib/seed/legal';
 
-async function main() {
+export async function POST() {
+  if (process.env.NODE_ENV === 'production') {
+    return Response.json({ error: 'Seed disabled in production' }, { status: 403 });
+  }
+
   const payload = await getPayload({ config });
+  const log: string[] = [];
 
-  console.log('Seeding categories...');
+  log.push('Seeding categories...');
   const categoryMap = new Map<string, string>();
   for (const cat of CATEGORIES_SEED) {
     const existing = await payload.find({
@@ -27,14 +31,14 @@ async function main() {
       limit: 1,
     });
     if (existing.docs.length > 0) {
-      categoryMap.set(cat.slug, String(existing.docs[0].id));
+      categoryMap.set(cat.slug, existing.docs[0].id as unknown as string);
       continue;
     }
     const created = await payload.create({ collection: 'product-categories', data: cat });
-    categoryMap.set(cat.slug, String(created.id));
+    categoryMap.set(cat.slug, created.id as unknown as string);
   }
 
-  console.log('Seeding products...');
+  log.push('Seeding products...');
   for (const p of PRODUCTS_SEED) {
     const catId = categoryMap.get(p.categorySlug);
     if (!catId) throw new Error(`Missing category: ${p.categorySlug}`);
@@ -61,7 +65,7 @@ async function main() {
     });
   }
 
-  console.log('Seeding commitments...');
+  log.push('Seeding commitments...');
   for (const c of COMMITMENTS_SEED) {
     const existing = await payload.find({
       collection: 'commitment-items',
@@ -72,7 +76,7 @@ async function main() {
     await payload.create({ collection: 'commitment-items', data: c });
   }
 
-  console.log('Seeding legal pages...');
+  log.push('Seeding legal pages...');
   for (const l of LEGAL_SEED) {
     const existing = await payload.find({
       collection: 'legal-pages',
@@ -80,23 +84,19 @@ async function main() {
       limit: 1,
     });
     if (existing.docs.length > 0) continue;
-    await payload.create({ collection: 'legal-pages', data: l });
+    await payload.create({ collection: 'legal-pages', data: l as any });
   }
 
-  console.log('Seeding globals...');
-  await payload.updateGlobal({ slug: 'site-settings', data: SITE_SETTINGS_SEED });
-  await payload.updateGlobal({ slug: 'homepage-content', data: HOMEPAGE_SEED });
-  await payload.updateGlobal({ slug: 'manifesto-page', data: MANIFESTO_SEED });
-  await payload.updateGlobal({ slug: 'about-page', data: ABOUT_SEED });
-  await payload.updateGlobal({ slug: 'green-page', data: GREEN_SEED });
-  await payload.updateGlobal({ slug: 'contact-page', data: CONTACT_SEED });
-  await payload.updateGlobal({ slug: 'itu-data', data: ITU_DATA_SEED });
+  log.push('Seeding globals...');
+  await payload.updateGlobal({ slug: 'site-settings', data: SITE_SETTINGS_SEED as any });
+  await payload.updateGlobal({ slug: 'homepage-content', data: HOMEPAGE_SEED as any });
+  await payload.updateGlobal({ slug: 'manifesto-page', data: MANIFESTO_SEED as any });
+  await payload.updateGlobal({ slug: 'about-page', data: ABOUT_SEED as any });
+  await payload.updateGlobal({ slug: 'green-page', data: GREEN_SEED as any });
+  await payload.updateGlobal({ slug: 'contact-page', data: CONTACT_SEED as any });
+  await payload.updateGlobal({ slug: 'itu-data', data: ITU_DATA_SEED as any });
 
-  console.log('Seed complete.');
-  process.exit(0);
+  log.push('Seed complete.');
+
+  return Response.json({ ok: true, log });
 }
-
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
