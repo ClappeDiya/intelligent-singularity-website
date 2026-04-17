@@ -14,6 +14,9 @@ import { TimelineEvents } from './collections/TimelineEvents';
 import { LegalPages } from './collections/LegalPages';
 import { ContactRoutes } from './collections/ContactRoutes';
 import { Redirects } from './collections/Redirects';
+import { ReleaseNotes } from './collections/ReleaseNotes';
+import { RoadmapItems } from './collections/RoadmapItems';
+import { JournalPosts } from './collections/JournalPosts';
 
 import { SiteSettings } from './globals/SiteSettings';
 import { HomepageContent } from './globals/HomepageContent';
@@ -22,6 +25,9 @@ import { AboutPage } from './globals/AboutPage';
 import { GreenPage } from './globals/GreenPage';
 import { ContactPage } from './globals/ContactPage';
 import { ITUData } from './globals/ITUData';
+import { StatusPage } from './globals/StatusPage';
+import { TrustPage } from './globals/TrustPage';
+import { HelpPage } from './globals/HelpPage';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -63,6 +69,9 @@ export default buildConfig({
     LegalPages,
     ContactRoutes,
     Redirects,
+    ReleaseNotes,
+    RoadmapItems,
+    JournalPosts,
   ],
   globals: [
     SiteSettings,
@@ -72,6 +81,9 @@ export default buildConfig({
     GreenPage,
     ContactPage,
     ITUData,
+    StatusPage,
+    TrustPage,
+    HelpPage,
   ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
