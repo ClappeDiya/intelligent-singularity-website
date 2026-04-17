@@ -10,6 +10,7 @@
     "dev": "next dev",
     "build": "next build --webpack && node scripts/measure-page-sizes.mjs && node scripts/ci-checks/bundle-budget.mjs && node scripts/ci-checks/no-third-party.mjs",
     "a11y": "node scripts/ci-checks/axe-scan.mjs",
+    "seo:rich-results-checklist": "node scripts/ci-checks/seo-rich-results-checklist.mjs",
     "lighthouse": "lhci autorun",
     "start": "next start",
     "lint": "eslint src/",

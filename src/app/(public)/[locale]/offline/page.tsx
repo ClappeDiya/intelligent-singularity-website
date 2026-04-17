@@ -1,13 +1,70 @@
+import Link from 'next/link';
 import { MeridianMark } from '@/components/brand/MeridianMark';
+import type { Metadata } from 'next';
+import { buildPageMetadata } from '@/lib/seo';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    pathname: '/offline',
+    title: 'Offline | Intelligent Singularity',
+    description: 'Offline fallback page for Intelligent Singularity web experiences.',
+    noindex: true,
+  });
+}
 
 export default function OfflinePage() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center gap-6 p-8">
-      <MeridianMark size={64} />
-      <h1 className="font-[var(--font-serif)] text-[32px]">You&apos;re offline.</h1>
-      <p className="font-[var(--font-serif)] italic text-[18px] text-[var(--color-cream-soft)] text-center max-w-[520px]">
-        That&apos;s okay. This site was built to keep working without a connection. Try again when you&apos;re back online.
+    <section className="min-h-[calc(100vh-52px)] flex flex-col items-center justify-center gap-6 px-6 py-20">
+      <MeridianMark size={72} />
+      <div
+        className="text-[11px] uppercase tracking-[0.3em] text-[var(--color-mint)]"
+        style={{ fontFamily: 'var(--font-mono)' }}
+      >
+        No connection · You are offline
+      </div>
+      <h1
+        className="text-center text-[var(--color-paper-ink)]"
+        style={{
+          fontFamily: 'var(--font-serif)',
+          fontSize: 'clamp(40px, 6vw, 68px)',
+          letterSpacing: '-0.035em',
+          lineHeight: 1.02,
+          fontWeight: 600,
+        }}
+      >
+        Designed for this moment.
+      </h1>
+      <p
+        className="text-center italic max-w-[560px]"
+        style={{
+          fontFamily: 'var(--font-serif)',
+          fontSize: 'clamp(17px, 1.6vw, 20px)',
+          lineHeight: 1.55,
+          color: 'rgba(26,22,18,0.7)',
+        }}
+      >
+        Universal access is the brief. This site keeps working without a connection — every page you
+        visited once is cached and readable. Try a page you&apos;ve already seen, or reconnect to
+        load something new.
       </p>
+      <Link
+        href="/"
+        className="mt-4 inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[11px] uppercase tracking-[0.2em] font-semibold"
+        style={{
+          fontFamily: 'var(--font-mono)',
+          borderColor: 'rgba(26,22,18,0.18)',
+          color: 'var(--color-paper-ink)',
+        }}
+      >
+        Return to the home page
+        <span aria-hidden="true">→</span>
+      </Link>
     </section>
   );
 }

@@ -19,15 +19,16 @@ export function ScrollProgress() {
   return (
     <div
       aria-hidden="true"
-      className="fixed start-0 end-0 top-[42px] h-px z-[49] pointer-events-none"
+      className="fixed start-0 end-0 top-[63px] h-[2px] z-[49] pointer-events-none"
+      style={{ background: 'rgba(108,143,122,0.08)' }}
     >
       <div
-        className="h-px"
+        className="h-[2px]"
         style={{
           width: `${pct}%`,
-          background: 'var(--color-mint)',
+          background: 'linear-gradient(90deg, rgba(108,143,122,0.6), var(--color-mint))',
           boxShadow: '0 0 8px var(--color-mint-glow)',
-          transition: 'width 0.1s',
+          transition: 'width 120ms ease-out',
         }}
       />
     </div>

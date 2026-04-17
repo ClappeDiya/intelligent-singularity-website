@@ -29,7 +29,7 @@ export function LanguageWheel() {
   }
 
   return (
-    <div className="flex flex-wrap gap-2 mt-[6px]" role="group" aria-label="Language selector">
+    <div className="flex flex-wrap gap-2" role="group" aria-label="Language selector">
       {LOCALES.map((l) => {
         const active = l === current;
         return (
@@ -39,10 +39,11 @@ export function LanguageWheel() {
             onClick={() => onPick(l)}
             aria-label={`Switch language to ${LOCALE_NAMES[l]}`}
             aria-pressed={active}
-            className={`w-[34px] h-[34px] rounded-full border flex items-center justify-center text-[10px] font-[var(--font-mono)] transition ${
+            title={LOCALE_NAMES[l]}
+            className={`min-w-[36px] h-[32px] px-2 rounded-full border flex items-center justify-center text-[10.5px] font-[var(--font-mono)] uppercase tracking-[0.06em] transition ${
               active
                 ? 'bg-[var(--color-mint)] text-[var(--color-ink)] border-[var(--color-mint)]'
-                : 'border-[var(--color-rule)] text-[var(--color-cream-dim)] hover:border-[var(--color-mint)] hover:text-[var(--color-mint)]'
+                : 'border-[rgba(246,241,231,0.16)] text-[var(--color-cream-soft)] hover:border-[var(--color-mint)] hover:text-[var(--color-mint)]'
             }`}
           >
             {LOCALE_LABELS[l]}

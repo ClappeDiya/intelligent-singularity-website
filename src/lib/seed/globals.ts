@@ -6,10 +6,10 @@ export const HOMEPAGE_SEED = {
   factsTitle: 'The digital divide isn\u2019t abstract. It is measurable, and it is cruel.',
   factsLead: 'The United Nations\u2019 International Telecommunication Union publishes connectivity data every year. Here is what the 2025 report says about the world right now.',
   flagshipsTitle: 'A studio for universal access. Five flagships and counting.',
-  flagshipsLead: 'Built under one mission, on one shared stack, by one small AI-augmented team. These are the five tools every person can pick up today \u2014 work, earn, eat, move. Eighteen more ship beside them.',
+  flagshipsLead: 'Built under one mission, on one shared stack, by one small AI-augmented team. These are the five tools every person can pick up today \u2014 work, earn, eat, move. Nine more ship beside them.',
   commitmentsTitle: 'A child in Oslo and a child in rural Malawi use the same software.',
   commitmentsLead: 'These are not aspirations. They are engineering constraints. Every product ships against this list or it does not ship.',
-  seeAllPortfolioLine: 'Plus 18 more tools \u2014 healthcare, finance, creative work, agriculture, communications, and infrastructure.',
+  seeAllPortfolioLine: 'Plus nine more tools \u2014 healthcare, finance, agriculture, media, and communications.',
 };
 
 export const SITE_SETTINGS_SEED = {
@@ -47,7 +47,7 @@ export const ABOUT_SEED = {
   },
   incorporationContext: 'Incorporated 2024 in Alberta, Canada. A studio, not a venture-backed startup. Self-funded, bootstrapped, AI-augmented operations from day one.',
   leanOpsPhilosophy: {
-    root: { type: 'root', children: [{ type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0, children: [{ type: 'text', version: 1, text: 'One small team. One shared stack. One shared infrastructure layer. Twenty-three tools shipping under one mission. The savings from lean operations fund real democratization, not executive salaries.' }] }], direction: 'ltr', format: '', indent: 0, version: 1 },
+    root: { type: 'root', children: [{ type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0, children: [{ type: 'text', version: 1, text: 'One small team. One shared stack. One shared infrastructure layer. Fourteen tools shipping under one mission. The savings from lean operations fund real democratization, not executive salaries.' }] }], direction: 'ltr', format: '', indent: 0, version: 1 },
   },
 };
 

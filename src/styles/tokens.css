@@ -1,19 +1,38 @@
 @theme {
-  --color-ink: #0F1712;
-  --color-ink-soft: #13201a;
-  --color-mint: #A8E6CF;
-  --color-mint-glow: rgba(168, 230, 207, 0.55);
-  --color-mint-dim: rgba(168, 230, 207, 0.55);
-  --color-mint-faint: rgba(168, 230, 207, 0.15);
-  --color-cream: #FEFDF8;
-  --color-cream-soft: rgba(254, 253, 248, 0.78);
-  --color-cream-dim: rgba(254, 253, 248, 0.55);
-  --color-cream-faint: rgba(254, 253, 248, 0.50);
-  --color-stone: #556161;
-  --color-rule: rgba(254, 253, 248, 0.08);
+  /* Ink / dark ends */
+  --color-ink: #141413;
+  --color-ink-soft: #1a1714;
+  --color-ink-muted: #2a241e;
 
-  --font-serif: Georgia, 'Times New Roman', serif;
-  --font-sans: 'Noto Sans Variable', 'Noto Sans', -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  /* Paper / light backgrounds — tuned to Anthropic's warm ivory palette */
+  --color-paper: #f0eee6;
+  --color-paper-soft: #faf9f5;
+  --color-paper-warm: #e3dacc;
+  --color-paper-deep: #d6ccb8;
+  --color-paper-ink: #141413;
+
+  /* Mint accent (brand) */
+  --color-mint: #6c8f7a;
+  --color-mint-glow: rgba(108, 143, 122, 0.32);
+  --color-mint-dim: rgba(108, 143, 122, 0.6);
+  --color-mint-faint: rgba(108, 143, 122, 0.12);
+
+  /* Cream (used on dark surfaces) */
+  --color-cream: #faf9f5;
+  --color-cream-soft: rgba(250, 249, 245, 0.82);
+  --color-cream-dim: rgba(250, 249, 245, 0.62);
+  --color-cream-faint: rgba(250, 249, 245, 0.4);
+
+  /* Label / text helpers on light paper */
+  --color-label: #3d3d3a;
+  --color-label-soft: #87867f;
+  --color-stone: #6f6558;
+  --color-rule: rgba(250, 249, 245, 0.1);
+  --color-rule-light: rgba(20, 20, 19, 0.12);
+
+  /* Fonts */
+  --font-serif: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, 'Noto Sans Variable', 'Noto Sans', system-ui, sans-serif;
   --font-sans-cjk: 'Noto Sans SC Variable', 'Noto Sans SC', var(--font-sans);
   --font-sans-arabic: 'Noto Sans Arabic Variable', 'Noto Sans Arabic', var(--font-sans);
   --font-sans-devanagari: 'Noto Sans Devanagari Variable', 'Noto Sans Devanagari', var(--font-sans);
@@ -21,6 +40,6 @@
   --font-sans-nastaliq: 'Noto Nastaliq Urdu Variable', 'Noto Nastaliq Urdu', var(--font-sans-arabic);
   --font-mono: 'SF Mono', Menlo, Consolas, monospace;
 
-  --spacing-section: 120px;
+  --spacing-section: 128px;
   --spacing-gutter: 48px;
 }

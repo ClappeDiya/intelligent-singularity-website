@@ -22,6 +22,8 @@ export async function POST(request: Request) {
       return Response.json({ error: 'Seed requires valid secret in production' }, { status: 403 });
     }
   }
+  const url = new URL(request.url);
+  const overwriteLegal = url.searchParams.get('overwriteLegal') === '1';
 
   const payload = await getPayload({ config });
   const log: string[] = [];
@@ -80,15 +82,22 @@ export async function POST(request: Request) {
     await payload.create({ collection: 'commitment-items', data: c });
   }
 
-  log.push('Seeding legal pages...');
+  log.push(`Seeding legal pages (overwrite=${overwriteLegal})...`);
   for (const l of LEGAL_SEED) {
     const existing = await payload.find({
       collection: 'legal-pages',
       where: { slug: { equals: l.slug } },
       limit: 1,
     });
-    if (existing.docs.length > 0) continue;
-    await payload.create({ collection: 'legal-pages', data: l as any });
+    if (existing.docs.length > 0) {
+      if (!overwriteLegal) continue;
+      const id = existing.docs[0].id;
+      await payload.update({ collection: 'legal-pages', id, data: l as any });
+      await payload.update({ collection: 'legal-pages', id, data: { _status: 'published' } as any });
+    } else {
+      const created = await payload.create({ collection: 'legal-pages', data: l as any });
+      await payload.update({ collection: 'legal-pages', id: created.id, data: { _status: 'published' } as any });
+    }
   }
 
   log.push('Seeding globals...');
