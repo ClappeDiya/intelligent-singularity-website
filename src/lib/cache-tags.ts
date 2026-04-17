@@ -10,6 +10,12 @@ export const CACHE_TAGS = {
   itu: 'itu',
   legal: 'legal',
   siteSettings: 'site-settings',
+  releaseNotes: 'release-notes',
+  roadmapItems: 'roadmap-items',
+  journalPosts: 'journal-posts',
+  statusPage: 'status-page',
+  trustPage: 'trust-page',
+  helpPage: 'help-page',
 } as const;
 
 export type CacheTag = (typeof CACHE_TAGS)[keyof typeof CACHE_TAGS];
