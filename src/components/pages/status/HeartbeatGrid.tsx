@@ -22,8 +22,8 @@ export function HeartbeatGrid({
     <div
       role="img"
       aria-label={`Uptime over the last 90 days, ${pct} in the last 24 hours.`}
-      className="flex gap-[2px] items-stretch"
-      style={{ height: 28 }}
+      className="flex gap-[2px] items-stretch min-w-0"
+      style={{ height: 28, overflow: 'hidden' }}
     >
       {padded.map((h, i) => (
         <span
@@ -32,7 +32,7 @@ export function HeartbeatGrid({
           title={h.time}
           style={{
             flex: 1,
-            minWidth: 2,
+            minWidth: 1,
             borderRadius: 2,
             background: color(h.status),
           }}

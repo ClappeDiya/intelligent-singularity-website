@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://intelligentsingularityinc.com/en",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en-2026_04_18_06_52_57.report.html",
+    "jsonPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en-2026_04_18_06_52_57.report.json",
+    "summary": {
+      "performance": 0.72,
+      "accessibility": 0.91,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_changelog-2026_04_18_06_53_10.report.html",
+    "jsonPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_changelog-2026_04_18_06_53_10.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.89,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_status-2026_04_18_06_53_22.report.html",
+    "jsonPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_status-2026_04_18_06_53_22.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.91,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_roadmap-2026_04_18_06_53_34.report.html",
+    "jsonPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_roadmap-2026_04_18_06_53_34.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.91,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_insights-2026_04_18_06_53_45.report.html",
+    "jsonPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_insights-2026_04_18_06_53_45.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.9,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_insights_the_2_2_billion_gap-2026_04_18_06_53_58.report.html",
+    "jsonPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_insights_the_2_2_billion_gap-2026_04_18_06_53_58.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.91,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_trust-2026_04_18_06_54_10.report.html",
+    "jsonPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_trust-2026_04_18_06_54_10.report.json",
+    "summary": {
+      "performance": 0.97,
+      "accessibility": 0.91,
+      "best-practices": 1,
+      "seo": 0.92
+    }
+  },
+  {
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_help-2026_04_18_06_54_22.report.html",
+    "jsonPath": "/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website/.lighthouse-results/intelligentsingularityinc_com-en_help-2026_04_18_06_54_22.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.84,
+      "best-practices": 1,
+      "seo": 1
+    }
+  }
+]

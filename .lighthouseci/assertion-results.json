@@ -1,0 +1,1626 @@
+[
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "bf-cache",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Page prevented back/forward cache restoration",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "cls-culprits-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Layout shift culprits",
+    "auditDocumentationLink": "https://web.dev/articles/optimize-cls"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.02,
+    "values": [
+      0.02
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "cumulative-layout-shift",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Cumulative Layout Shift",
+    "auditDocumentationLink": "https://web.dev/articles/cls"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "document-latency-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Document request latency"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "label-content-name-mismatch",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Elements with visible text labels do not have matching accessible names.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "legacy-javascript-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Legacy JavaScript",
+    "auditDocumentationLink": "https://web.dev/articles/baseline-and-polyfills"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "legacy-javascript",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Avoid serving legacy JavaScript to modern browsers",
+    "auditDocumentationLink": "https://web.dev/baseline"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-insight",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Render blocking requests",
+    "auditDocumentationLink": "https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-resources",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Eliminate render-blocking resources",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.88,
+    "values": [
+      0.88
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "speed-index",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Speed Index",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/speed-index/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "target-size",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Touch targets do not have sufficient size or spacing.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/target-size"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-css-rules",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Reduce unused CSS",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 2,
+    "values": [
+      2
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-javascript",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Reduce unused JavaScript",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "redirects",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en",
+    "auditTitle": "Avoid multiple page redirects",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.72,
+    "values": [
+      0.72
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditProperty": "performance",
+    "auditId": "categories",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "bf-cache",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Page prevented back/forward cache restoration",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "document-latency-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Document request latency"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "heading-order",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Heading elements are not in a sequentially-descending order",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/heading-order"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "label-content-name-mismatch",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Elements with visible text labels do not have matching accessible names.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "legacy-javascript-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Legacy JavaScript",
+    "auditDocumentationLink": "https://web.dev/articles/baseline-and-polyfills"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "legacy-javascript",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Avoid serving legacy JavaScript to modern browsers",
+    "auditDocumentationLink": "https://web.dev/baseline"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-insight",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Render blocking requests",
+    "auditDocumentationLink": "https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-resources",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Eliminate render-blocking resources",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "target-size",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Touch targets do not have sufficient size or spacing.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/target-size"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-css-rules",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Reduce unused CSS",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 2,
+    "values": [
+      2
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-javascript",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Reduce unused JavaScript",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "uses-text-compression",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Enable text compression",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/uses-text-compression/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "redirects",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/changelog",
+    "auditTitle": "Avoid multiple page redirects",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.89,
+    "values": [
+      0.89
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditProperty": "accessibility",
+    "auditId": "categories",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/changelog"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "bf-cache",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Page prevented back/forward cache restoration",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "document-latency-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Document request latency"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.5,
+    "values": [
+      0.5
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "dom-size",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Avoid an excessive DOM size",
+    "auditDocumentationLink": "https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "label-content-name-mismatch",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Elements with visible text labels do not have matching accessible names.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "legacy-javascript-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Legacy JavaScript",
+    "auditDocumentationLink": "https://web.dev/articles/baseline-and-polyfills"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "legacy-javascript",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Avoid serving legacy JavaScript to modern browsers",
+    "auditDocumentationLink": "https://web.dev/baseline"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-insight",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Render blocking requests",
+    "auditDocumentationLink": "https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-resources",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Eliminate render-blocking resources",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "target-size",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Touch targets do not have sufficient size or spacing.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/target-size"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-css-rules",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Reduce unused CSS",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 2,
+    "values": [
+      2
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-javascript",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Reduce unused JavaScript",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "redirects",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/status",
+    "auditTitle": "Avoid multiple page redirects",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "bf-cache",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Page prevented back/forward cache restoration",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "document-latency-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Document request latency"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "label-content-name-mismatch",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Elements with visible text labels do not have matching accessible names.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "legacy-javascript-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Legacy JavaScript",
+    "auditDocumentationLink": "https://web.dev/articles/baseline-and-polyfills"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "legacy-javascript",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Avoid serving legacy JavaScript to modern browsers",
+    "auditDocumentationLink": "https://web.dev/baseline"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-insight",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Render blocking requests",
+    "auditDocumentationLink": "https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-resources",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Eliminate render-blocking resources",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "target-size",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Touch targets do not have sufficient size or spacing.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/target-size"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-css-rules",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Reduce unused CSS",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 2,
+    "values": [
+      2
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-javascript",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Reduce unused JavaScript",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "redirects",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/roadmap",
+    "auditTitle": "Avoid multiple page redirects",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "bf-cache",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Page prevented back/forward cache restoration",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "document-latency-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Document request latency"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "label-content-name-mismatch",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Elements with visible text labels do not have matching accessible names.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "legacy-javascript-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Legacy JavaScript",
+    "auditDocumentationLink": "https://web.dev/articles/baseline-and-polyfills"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "legacy-javascript",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Avoid serving legacy JavaScript to modern browsers",
+    "auditDocumentationLink": "https://web.dev/baseline"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-insight",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Render blocking requests",
+    "auditDocumentationLink": "https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-resources",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Eliminate render-blocking resources",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "target-size",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Touch targets do not have sufficient size or spacing.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/target-size"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-css-rules",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Reduce unused CSS",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 2,
+    "values": [
+      2
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-javascript",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Reduce unused JavaScript",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "redirects",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights",
+    "auditTitle": "Avoid multiple page redirects",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "bf-cache",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Page prevented back/forward cache restoration",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "document-latency-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Document request latency"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "label-content-name-mismatch",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Elements with visible text labels do not have matching accessible names.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "legacy-javascript-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Legacy JavaScript",
+    "auditDocumentationLink": "https://web.dev/articles/baseline-and-polyfills"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "legacy-javascript",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Avoid serving legacy JavaScript to modern browsers",
+    "auditDocumentationLink": "https://web.dev/baseline"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-insight",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Render blocking requests",
+    "auditDocumentationLink": "https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-resources",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Eliminate render-blocking resources",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "target-size",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Touch targets do not have sufficient size or spacing.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/target-size"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-css-rules",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Reduce unused CSS",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 2,
+    "values": [
+      2
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-javascript",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Reduce unused JavaScript",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "redirects",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap",
+    "auditTitle": "Avoid multiple page redirects",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "bf-cache",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Page prevented back/forward cache restoration",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "document-latency-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Document request latency"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.89,
+    "values": [
+      0.89
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "first-contentful-paint",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "First Contentful Paint",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "label-content-name-mismatch",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Elements with visible text labels do not have matching accessible names.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "legacy-javascript-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Legacy JavaScript",
+    "auditDocumentationLink": "https://web.dev/articles/baseline-and-polyfills"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "legacy-javascript",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Avoid serving legacy JavaScript to modern browsers",
+    "auditDocumentationLink": "https://web.dev/baseline"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "link-text",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Links do not have descriptive text",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/seo/link-text/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-insight",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Render blocking requests",
+    "auditDocumentationLink": "https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-resources",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Eliminate render-blocking resources",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "target-size",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Touch targets do not have sufficient size or spacing.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/target-size"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-css-rules",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Reduce unused CSS",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 2,
+    "values": [
+      2
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-javascript",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Reduce unused JavaScript",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "redirects",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Avoid multiple page redirects",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "bf-cache",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Page prevented back/forward cache restoration",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "definition-list",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "`<dl>`'s do not contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/definition-list"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "document-latency-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Document request latency"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "label-content-name-mismatch",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Elements with visible text labels do not have matching accessible names.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "legacy-javascript-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Legacy JavaScript",
+    "auditDocumentationLink": "https://web.dev/articles/baseline-and-polyfills"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "legacy-javascript",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Avoid serving legacy JavaScript to modern browsers",
+    "auditDocumentationLink": "https://web.dev/baseline"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-insight",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Render blocking requests",
+    "auditDocumentationLink": "https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 4,
+    "values": [
+      4
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "render-blocking-resources",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Eliminate render-blocking resources",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "target-size",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Touch targets do not have sufficient size or spacing.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/target-size"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 1,
+    "values": [
+      1
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-css-rules",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Reduce unused CSS",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/"
+  },
+  {
+    "name": "maxLength",
+    "expected": 0,
+    "actual": 2,
+    "values": [
+      2
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "unused-javascript",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Reduce unused JavaScript",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "dlitem",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Definition list items are not wrapped in `<dl>` elements",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/dlitem"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "redirects",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/help",
+    "auditTitle": "Avoid multiple page redirects",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.84,
+    "values": [
+      0.84
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditProperty": "accessibility",
+    "auditId": "categories",
+    "level": "warn",
+    "url": "https://intelligentsingularityinc.com/en/help"
+  }
+]

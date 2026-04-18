@@ -6,7 +6,9 @@ const BASE = process.env.BASE_URL ?? 'http://localhost:3000';
 const PATHS = [
   '/en', '/en/manifesto', '/en/portfolio', '/en/about', '/en/green',
   '/en/contact', '/en/legal/privacy',
-  '/ar', '/ur', '/zh-CN', '/fr',
+  '/en/changelog', '/en/status', '/en/roadmap', '/en/insights',
+  '/en/insights/the-2-2-billion-gap', '/en/trust', '/en/help',
+  '/ar', '/ar/trust', '/ur', '/zh-CN', '/fr',
 ];
 
 async function main() {
