@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { HeroCounter } from '@/components/home/HeroCounter';
 import { FactsSection } from '@/components/home/FactsSection';
 import { FlagshipsSection } from '@/components/home/FlagshipsSection';
@@ -31,7 +32,7 @@ type HomepageContent = {
   commitmentsLead: string;
 };
 
-async function HomeContent({ locale }: { locale: string }) {
+export async function HomeContent({ locale }: { locale: string }) {
   const [hp, itu, flagships, commitments] = await Promise.all([
     fetchHomepageContent(locale),
     fetchITUData(locale),
@@ -70,6 +71,41 @@ async function HomeContent({ locale }: { locale: string }) {
         <GreenStrip pageBytes={estBytes} carbonGrams={grams} />
       </section>
       <CommitmentsSection title={hp.commitmentsTitle} lead={hp.commitmentsLead} items={commitments} />
+      <section
+        aria-labelledby="insights-callout"
+        className="my-20 rounded-[24px] p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-6"
+        style={{ background: 'var(--color-paper-warm)' }}
+      >
+        <div className="flex-1">
+          <div className="text-[12.5px] uppercase" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}>
+            Field notes
+          </div>
+          <h2
+            id="insights-callout"
+            className="mt-2 mb-3"
+            style={{
+              fontFamily: 'var(--font-serif)',
+              fontSize: 'clamp(24px, 3vw, 36px)',
+              letterSpacing: '-0.025em',
+              fontWeight: 600,
+              lineHeight: 1.1,
+              color: 'var(--color-paper-ink)',
+            }}
+          >
+            How we think about building this.
+          </h2>
+          <p className="text-[15px] leading-[1.7] max-w-[52ch]" style={{ color: 'rgba(20,20,19,0.72)' }}>
+            Short, grounded essays from the studio. We write slowly and cite everything. No clickbait, no thought-leadership fog.
+          </p>
+        </div>
+        <Link
+          href={`/${locale}/insights`}
+          className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full bg-[var(--color-paper-ink)] text-[var(--color-cream)] text-[13px] uppercase"
+          style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+        >
+          Read our field notes →
+        </Link>
+      </section>
     </div>
   );
 }
