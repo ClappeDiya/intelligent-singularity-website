@@ -19,9 +19,9 @@ export async function POST(request: NextRequest) {
   }
 
   const tag: string = body.tag;
-  revalidateTag(tag);
+  revalidateTag(tag, 'default');
   for (const locale of LOCALES) {
-    revalidateTag(`${tag}:${locale}`);
+    revalidateTag(`${tag}:${locale}`, 'default');
   }
 
   return NextResponse.json({ revalidated: true, tag });
