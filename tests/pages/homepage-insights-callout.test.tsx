@@ -29,7 +29,7 @@ vi.mock('@/components/home/CommitmentsSection', () => ({ CommitmentsSection: () 
 vi.mock('@/components/home/GreenStrip', () => ({ GreenStrip: () => null }));
 vi.mock('@/components/seo/JsonLd', () => ({ JsonLd: () => null }));
 
-import { HomeContent } from '@/app/(public)/[locale]/page';
+import { HomeContent } from '@/components/home/HomeContent';
 
 describe('Home', () => {
   it('renders a "Read our field notes" callout linking to /insights', async () => {

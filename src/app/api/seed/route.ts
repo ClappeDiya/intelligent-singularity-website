@@ -13,6 +13,12 @@ import {
   CONTACT_SEED,
 } from '@/lib/seed/globals';
 import { LEGAL_SEED } from '@/lib/seed/legal';
+import { seedHelpPage } from '@/lib/seed/new-pages/help';
+import { seedStatusPage } from '@/lib/seed/new-pages/status';
+import { seedTrustPage } from '@/lib/seed/new-pages/trust';
+import { seedRoadmap } from '@/lib/seed/new-pages/roadmap';
+import { seedInsights } from '@/lib/seed/new-pages/insights';
+import { seedChangelog } from '@/lib/seed/new-pages/changelog';
 
 export async function POST(request: Request) {
   if (process.env.NODE_ENV === 'production') {
@@ -108,6 +114,14 @@ export async function POST(request: Request) {
   await payload.updateGlobal({ slug: 'green-page', data: GREEN_SEED as any });
   await payload.updateGlobal({ slug: 'contact-page', data: CONTACT_SEED as any });
   await payload.updateGlobal({ slug: 'itu-data', data: ITU_DATA_SEED as any });
+
+  log.push('Seeding new pages...');
+  try { await seedHelpPage(payload, log); } catch (e) { log.push(`help: ${(e as Error).message}`); }
+  try { await seedStatusPage(payload, log); } catch (e) { log.push(`status: ${(e as Error).message}`); }
+  try { await seedTrustPage(payload, log); } catch (e) { log.push(`trust: ${(e as Error).message}`); }
+  try { await seedRoadmap(payload, log); } catch (e) { log.push(`roadmap: ${(e as Error).message}`); }
+  try { await seedInsights(payload, log); } catch (e) { log.push(`insights: ${(e as Error).message}`); }
+  try { await seedChangelog(payload, log); } catch (e) { log.push(`changelog: ${(e as Error).message}`); }
 
   log.push('Seed complete.');
 
