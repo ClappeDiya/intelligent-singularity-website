@@ -12,3 +12,6 @@ coverage/
 .pnpm-store/
 .env.local
 .ci/seed-snapshots/
+test-results/
+playwright-report/
+.lighthouse-results/
