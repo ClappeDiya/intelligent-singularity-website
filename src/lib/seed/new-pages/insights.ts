@@ -22,7 +22,7 @@ type LexicalRoot = {
 
 type Source = {
   label: string;
-  url: string;
+  href: string;
 };
 
 type InsightPost = {
@@ -30,7 +30,7 @@ type InsightPost = {
   title: string;
   publishedAt: string;
   status: 'published' | 'draft';
-  tags: string[];
+  tags: { tag: string }[];
   sources: Source[];
   body: LexicalRoot;
 };
@@ -49,15 +49,15 @@ export const INSIGHTS_SEED: InsightPost[] = [
     title: 'The 2.2 billion gap: who the web still does not reach',
     publishedAt: '2026-04-01T00:00:00.000Z',
     status: 'published',
-    tags: ['Localisation', 'Access'],
+    tags: [{ tag: 'Localisation' }, { tag: 'Access' }],
     sources: [
       {
         label: 'ITU Facts and Figures 2023',
-        url: 'https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx',
+        href: 'https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx',
       },
       {
         label: 'W3C Internationalisation Activity',
-        url: 'https://www.w3.org/International/',
+        href: 'https://www.w3.org/International/',
       },
     ],
     body: {
@@ -83,15 +83,15 @@ export const INSIGHTS_SEED: InsightPost[] = [
     title: 'One VPS, zero trackers: what we run and why',
     publishedAt: '2026-04-10T00:00:00.000Z',
     status: 'published',
-    tags: ['Transparency', 'Infrastructure'],
+    tags: [{ tag: 'Transparency' }, { tag: 'Infrastructure' }],
     sources: [
       {
         label: 'Green Web Foundation — check a host',
-        url: 'https://www.thegreenwebfoundation.org/tools/green-web-check/',
+        href: 'https://www.thegreenwebfoundation.org/tools/green-web-check/',
       },
       {
         label: 'Contabo VPS specs',
-        url: 'https://contabo.com/en/vps/',
+        href: 'https://contabo.com/en/vps/',
       },
     ],
     body: {
@@ -117,15 +117,15 @@ export const INSIGHTS_SEED: InsightPost[] = [
     title: 'Grade 8 is the ceiling: how we write for real people',
     publishedAt: '2026-04-17T00:00:00.000Z',
     status: 'published',
-    tags: ['Accessibility', 'Writing'],
+    tags: [{ tag: 'Accessibility' }, { tag: 'Writing' }],
     sources: [
       {
         label: 'Plain Language Guidelines — plainlanguage.gov',
-        url: 'https://www.plainlanguage.gov/guidelines/',
+        href: 'https://www.plainlanguage.gov/guidelines/',
       },
       {
         label: 'Flesch-Kincaid readability formula',
-        url: 'https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests',
+        href: 'https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests',
       },
     ],
     body: {
@@ -152,6 +152,15 @@ export const INSIGHTS_SEED: InsightPost[] = [
 ];
 
 export async function seedInsights(payload: Payload, log: string[]): Promise<void> {
+  // JournalPosts.author is a required relationship to users. Pick the first
+  // admin user so the seed has something valid to point at.
+  const users = await payload.find({ collection: 'users', limit: 1 });
+  const authorId = users.docs[0]?.id;
+  if (!authorId) {
+    log.push('insights: skipped (no users exist to attribute posts to)');
+    return;
+  }
+
   let created = 0;
   for (const post of INSIGHTS_SEED) {
     const existing = await payload.find({
@@ -160,7 +169,10 @@ export async function seedInsights(payload: Payload, log: string[]): Promise<voi
       limit: 1,
     });
     if (existing.docs.length === 0) {
-      await payload.create({ collection: 'journal-posts', data: post as any });
+      await payload.create({
+        collection: 'journal-posts',
+        data: { ...post, author: authorId } as any,
+      });
       created += 1;
     }
   }
