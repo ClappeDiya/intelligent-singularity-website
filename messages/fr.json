@@ -4,7 +4,8 @@
     "studio": "Studio",
     "about": "\u00C0 propos",
     "green": "Vert",
-    "contact": "Contact"
+    "contact": "Contact",
+    "insights": "Insights"
   },
   "status": {
     "production": "Production",
@@ -19,7 +20,10 @@
     "languagesLabel": "14 langues",
     "zeroTrackers": "0 traqueur",
     "zeroThirdParty": "0 appel tiers",
-    "alberta": "\u00a9 2026 Intelligent Singularity Inc. \u00b7 Alberta, Canada \u00b7 Auto-h\u00e9berg\u00e9 sur \u00e9nergie 100\u00a0% renouvelable"
+    "alberta": "\u00a9 2026 Intelligent Singularity Inc. \u00b7 Alberta, Canada \u00b7 Auto-h\u00e9berg\u00e9 sur \u00e9nergie 100\u00a0% renouvelable",
+    "transparencyLabel": "Transparency",
+    "helpLabel": "Help",
+    "trustLabel": "Trust"
   },
   "hero": {
     "skipToContent": "Passer au contenu principal",
@@ -37,5 +41,57 @@
     "routeLegal": "Juridique",
     "sendButton": "Envoyer",
     "sendingButton": "Envoi en cours\u2026"
+  },
+  "pages": {
+    "changelog": {
+      "eyebrow": "CHANGELOG",
+      "title": "What changed, in order.",
+      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
+      "feedLabel": "Subscribe"
+    },
+    "status": {
+      "eyebrow": "STATUS",
+      "title": "How everything is running.",
+      "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
+      "operational": "All systems operational",
+      "degraded": "Degraded — at least one service affected",
+      "unavailable": "Live data unavailable — please retry"
+    },
+    "roadmap": {
+      "eyebrow": "ROADMAP",
+      "title": "What is next, and why.",
+      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
+      "statusPlanned": "Planned",
+      "statusInProgress": "In progress",
+      "statusShipped": "Shipped",
+      "statusPaused": "Paused",
+      "emptyColumn": "(none)"
+    },
+    "insights": {
+      "eyebrow": "INSIGHTS",
+      "title": "Field notes from the studio.",
+      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
+      "readMore": "Read the essay",
+      "minutesRead": "min read",
+      "sourcesHeading": "Sources",
+      "backToIndex": "Back to insights"
+    },
+    "trust": {
+      "eyebrow": "TRUST",
+      "title": "Where to find the proof.",
+      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
+      "pillarsHeading": "The four pillars",
+      "subprocessorsHeading": "Subprocessors",
+      "certificationsHeading": "Certifications",
+      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+    },
+    "help": {
+      "eyebrow": "HELP",
+      "title": "We can usually help in one click.",
+      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
+      "emergencyLabel": "If it is urgent",
+      "popularHeading": "Popular answers",
+      "stillStuck": "Still stuck?"
+    }
   }
 }
