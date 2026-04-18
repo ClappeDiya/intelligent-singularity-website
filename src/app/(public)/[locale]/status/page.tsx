@@ -1,246 +1,149 @@
-import Link from 'next/link';
+// src/app/(public)/[locale]/status/page.tsx
 import type { Metadata } from 'next';
+import Link from 'next/link';
+import { unstable_cache } from 'next/cache';
+import { fetchStatusPage } from '@/lib/payload';
+import { fetchKumaStatus, type KumaStatus } from '@/lib/uptime-kuma';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
+import { PageHero } from '@/components/pages/shared/PageHero';
+import { HeartbeatGrid } from '@/components/pages/status/HeartbeatGrid';
 
-type Surface = {
-  name: string;
-  domain: string;
-  status: 'live' | 'staging' | 'awaiting-approval' | 'infrastructure';
-  note: string;
-};
-
-const SURFACES: Surface[] = [
-  { name: 'Intelligent Singularity (this site)', domain: 'intelligentsingularityinc.com', status: 'live', note: 'Sub-50 KB per page, monitored continuously.' },
-  { name: 'Clappe', domain: 'clappe.com', status: 'live', note: 'Flagship ERP. Shipping to real users today.' },
-  { name: 'ClapBill', domain: 'clapbill.com', status: 'live', note: 'Multi-tenant invoicing.' },
-  { name: 'ClapDiet', domain: 'clapdiet.com', status: 'live', note: 'Lab-guided nutrition and meal planning.' },
-  { name: 'ClapMove', domain: 'clap.world', status: 'live', note: 'Joint-health programs and pain tracking.' },
-  { name: 'Clapwork', domain: 'clapwork.com', status: 'live', note: 'Trust-first freelance marketplace.' },
-  { name: 'Audiflo / SlideFlow', domain: 'audiflo.com', status: 'live', note: 'AI presentation narration.' },
-  { name: 'ClapMed', domain: 'clapmed.com', status: 'awaiting-approval', note: 'Agentic EMR. Waiting on a regulator before public launch.' },
-  { name: 'ClapPay', domain: 'clappay.com', status: 'awaiting-approval', note: 'Unified financial rails. In review.' },
-  { name: 'Apogee', domain: 'apogee.farm', status: 'staging', note: 'Goat-farm management. Invite-only.' },
-  { name: 'Nestbitt', domain: 'nestbitt.com', status: 'staging', note: 'AI music generation. Invite-only.' },
-  { name: 'DailyWorship', domain: 'dailyworship.com', status: 'staging', note: 'AI worship music, open-source.' },
-  { name: 'Gclap', domain: 'gclap.com', status: 'staging', note: 'Open-source email and marketing.' },
-  { name: 'FileManager', domain: 'filemanager.clappe.com', status: 'staging', note: 'Cross-platform file operations.' },
-  { name: 'RateAds / Feedback Hub', domain: 'rateads.com', status: 'staging', note: 'Community survey and feedback tooling.' },
-];
-
-const STATUS_STYLE: Record<Surface['status'], { label: string; color: string; bg: string }> = {
-  live: { label: 'Live', color: 'var(--color-mint)', bg: 'rgba(108,143,122,0.1)' },
-  staging: { label: 'Staging', color: '#c7a261', bg: 'rgba(199,162,97,0.12)' },
-  'awaiting-approval': { label: 'Awaiting approval', color: '#b56b61', bg: 'rgba(181,107,97,0.12)' },
-  infrastructure: { label: 'Infrastructure', color: '#7a8b9e', bg: 'rgba(122,139,158,0.12)' },
-};
+const getCachedKuma = unstable_cache(
+  async (baseUrl: string, slug: string) => fetchKumaStatus({ baseUrl, slug }),
+  ['kuma-status'],
+  { tags: ['status'], revalidate: 60 }
+);
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
+}: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   return buildPageMetadata({
     locale,
     pathname: '/status',
-    title: 'Platform Status | Intelligent Singularity',
-    description:
-      'Live status for every product and service in the Intelligent Singularity portfolio. Honest labels: live, staging, awaiting approval, infrastructure.',
+    title: 'Status | Intelligent Singularity',
+    description: 'Live system status for the website and its infrastructure.',
   });
 }
 
-export default async function StatusPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  const webPageSchema = getWebPageSchema({
-    locale,
-    pathname: '/status',
-    name: 'Platform Status | Intelligent Singularity',
-    description:
-      'Live status and reachability for every surface in the Intelligent Singularity portfolio.',
-  });
-  const breadcrumbSchema = getBreadcrumbSchema({
-    locale,
-    crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Status', pathname: '/status' },
-    ],
-  });
+function overallPill(s: KumaStatus | null) {
+  if (!s) {
+    return { label: 'Live data unavailable — please retry', color: 'rgba(246,241,231,0.2)' };
+  }
+  if (s.overall === 'operational') return { label: 'All systems operational', color: 'var(--color-mint)' };
+  if (s.overall === 'degraded') return { label: 'Degraded — at least one service affected', color: '#E1B054' };
+  if (s.overall === 'down') return { label: 'Service interruption', color: '#C24B4B' };
+  return { label: 'Status unknown', color: 'rgba(246,241,231,0.2)' };
+}
 
-  const liveCount = SURFACES.filter((s) => s.status === 'live').length;
+export default async function StatusPageRoute({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const settings = (await fetchStatusPage(locale)) as any;
+  const data = await getCachedKuma(settings.kumaBaseUrl, settings.kumaSlug);
+  const pill = overallPill(data);
 
   return (
     <article className="page-shell-wide">
-      <JsonLd id={`status-schema-${locale}`} data={webPageSchema} />
-      <JsonLd id={`status-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">Status · Reachability</div>
-      <h1 className="page-title">Everything we ship, in one list.</h1>
-      <p className="page-lead">
-        Honest, human-friendly status labels for every product. Clicking a row
-        opens the product\u2019s own domain in a new tab.
-      </p>
-
-      <section
-        aria-label="Status summary"
-        className="mb-10 flex flex-wrap gap-3 md:gap-4"
-      >
-        <div
-          className="flex-1 min-w-[200px] rounded-[20px] p-5 md:p-6"
-          style={{ background: 'var(--color-paper-soft)' }}
-        >
-          <div
-            className="text-[12.5px] uppercase text-[var(--color-mint)] mb-1"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
-          >
-            Live surfaces
-          </div>
-          <div
-            className="text-[var(--color-paper-ink)] leading-none"
-            style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: 600, letterSpacing: '-0.02em' }}
-          >
-            {liveCount} of {SURFACES.length}
-          </div>
-          <div className="text-[13.5px] text-[rgba(20,20,19,0.66)] leading-[1.6] mt-1">
-            Reachable right now, any region.
-          </div>
-        </div>
-        <div
-          className="flex-1 min-w-[200px] rounded-[20px] p-5 md:p-6"
-          style={{ background: 'var(--color-paper-soft)' }}
-        >
-          <div
-            className="text-[12.5px] uppercase text-[var(--color-mint)] mb-1"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
-          >
-            Last incident
-          </div>
-          <div
-            className="text-[var(--color-paper-ink)] leading-none"
-            style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: 600, letterSpacing: '-0.02em' }}
-          >
-            None recorded
-          </div>
-          <div className="text-[13.5px] text-[rgba(20,20,19,0.66)] leading-[1.6] mt-1">
-            Any incident is published here with a post-mortem.
-          </div>
-        </div>
-        <div
-          className="flex-1 min-w-[200px] rounded-[20px] p-5 md:p-6"
-          style={{ background: 'var(--color-paper-soft)' }}
-        >
-          <div
-            className="text-[12.5px] uppercase text-[var(--color-mint)] mb-1"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
-          >
-            How we monitor
-          </div>
-          <div
-            className="text-[var(--color-paper-ink)] leading-none"
-            style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(22px, 2.2vw, 28px)', fontWeight: 600, letterSpacing: '-0.018em' }}
-          >
-            Uptime Kuma · 60 s
-          </div>
-          <div className="text-[13.5px] text-[rgba(20,20,19,0.66)] leading-[1.6] mt-1">
-            Self-hosted probe on every endpoint.
-          </div>
-        </div>
-      </section>
-
-      <section aria-label="All surfaces" className="flex flex-col gap-3">
-        {SURFACES.map((s) => {
-          const st = STATUS_STYLE[s.status];
-          return (
-            <a
-              key={s.domain}
-              href={`https://${s.domain}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group rounded-[18px] p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-3 md:gap-6 no-underline text-[var(--color-paper-ink)] transition-transform hover:-translate-y-0.5"
-              style={{ background: 'var(--color-paper-soft)' }}
-            >
-              <span
-                className="inline-flex items-center gap-2 px-3 py-1 rounded-full shrink-0 text-[11.5px] uppercase"
-                style={{
-                  fontFamily: 'var(--font-mono)',
-                  fontWeight: 500,
-                  color: st.color,
-                  background: st.bg,
-                }}
-              >
-                <span
-                  aria-hidden="true"
-                  className="inline-block w-1.5 h-1.5 rounded-full"
-                  style={{ background: st.color }}
-                />
-                {st.label}
-              </span>
-              <div className="flex-1">
-                <div
-                  className="text-[18px] leading-[1.2]"
-                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 600, letterSpacing: '-0.018em' }}
-                >
-                  {s.name}
-                </div>
-                <div
-                  className="text-[13px] mt-0.5"
-                  style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.56)' }}
-                >
-                  {s.domain}
-                </div>
-              </div>
-              <div className="text-[13.5px] text-[rgba(20,20,19,0.7)] md:max-w-[52ch]">
-                {s.note}
-              </div>
-              <span
-                aria-hidden="true"
-                className="text-[var(--color-mint)] transition-transform group-hover:translate-x-1 shrink-0 md:text-right"
-                style={{ fontFamily: 'var(--font-mono)' }}
-              >
-                →
-              </span>
-            </a>
-          );
+      <JsonLd
+        id={`status-schema-${locale}`}
+        data={getWebPageSchema({ locale, pathname: '/status', name: 'Status', description: 'Live systems status.' })}
+      />
+      <JsonLd
+        id={`status-breadcrumb-${locale}`}
+        data={getBreadcrumbSchema({
+          locale,
+          crumbs: [
+            { name: 'Home', pathname: '/' },
+            { name: 'Status', pathname: '/status' },
+          ],
         })}
-      </section>
+      />
+
+      <PageHero eyebrow={settings.eyebrow} title={settings.title} lede={settings.lede} />
 
       <section
-        className="mt-14 rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
-        style={{ background: 'var(--color-paper-warm)' }}
+        aria-label="Overall status"
+        className="mb-10 rounded-[22px] p-6 flex flex-col md:flex-row md:items-center gap-4"
+        style={{ background: 'var(--color-paper-soft)' }}
       >
-        <div className="flex-1">
-          <div
-            className="text-[12.5px] uppercase text-[var(--color-mint)] mb-2"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
-          >
-            See something down?
-          </div>
-          <h3
-            className="mb-2 text-[var(--color-paper-ink)]"
-            style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(22px, 2.4vw, 30px)',
-              letterSpacing: '-0.025em',
-              fontWeight: 600,
-              lineHeight: 1.15,
-            }}
-          >
-            Tell us what, tell us where.
-          </h3>
-          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(20,20,19,0.72)' }}>
-            If a surface is unreachable and this page still says &ldquo;Live&rdquo;, we want
-            to know. The more specific the report, the faster we fix.
-          </p>
-        </div>
-        <Link
-          href="/contact"
-          className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full bg-[var(--color-paper-ink)] text-[var(--color-cream)] text-[13px] uppercase"
-          style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+        <span
+          aria-hidden="true"
+          className="inline-block w-3 h-3 rounded-full"
+          style={{ background: pill.color }}
+        />
+        <p
+          className="flex-1"
+          style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(19px, 2vw, 24px)', fontWeight: 600, color: 'var(--color-paper-ink)' }}
         >
-          Report an outage
-          <span aria-hidden="true">→</span>
-        </Link>
+          {pill.label}
+        </p>
+        <p
+          className="text-[12.5px]"
+          style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.55)' }}
+        >
+          {data
+            ? <>updated <time dateTime={data.fetchedAt}>{new Date(data.fetchedAt).toISOString().replace('T', ' ').slice(0, 16)}Z</time></>
+            : <>no live data — last attempt just now</>}
+        </p>
       </section>
+
+      {!data ? (
+        <p className="mb-10 text-[14px]" style={{ color: 'rgba(20,20,19,0.7)' }}>
+          We could not reach our public status monitor just now. The page will refresh in the background and turn green once the data comes back. Please retry in a minute.
+        </p>
+      ) : (
+        <section aria-labelledby="systems" className="mb-14">
+          <h2 id="systems" className="sr-only">Systems</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {data.groups.map((g) => (
+              <div key={g.name} className="rounded-[20px] p-5" style={{ background: 'var(--color-paper-soft)' }}>
+                <h3
+                  className="text-[12.5px] uppercase mb-4"
+                  style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)', fontWeight: 500 }}
+                >
+                  {g.name}
+                </h3>
+                <ul className="flex flex-col gap-4">
+                  {g.monitors.map((m) => (
+                    <li key={m.id}>
+                      <div className="flex items-baseline justify-between gap-3">
+                        <span style={{ fontFamily: 'var(--font-serif)', fontSize: 16, fontWeight: 600 }}>{m.name}</span>
+                        <span className="text-[12px]" style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.55)' }}>
+                          {typeof m.uptime24h === 'number' ? `${(m.uptime24h * 100).toFixed(2)}% · 24h` : 'no data'}
+                        </span>
+                      </div>
+                      <div className="mt-2">
+                        <HeartbeatGrid heartbeats={m.heartbeats} uptime24h={m.uptime24h} />
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {settings.operationalCopy ? (
+        <p className="max-w-[60ch] text-[14.5px] leading-[1.75] mb-12" style={{ color: 'rgba(20,20,19,0.72)' }}>
+          {settings.operationalCopy}
+        </p>
+      ) : null}
+
+      <nav className="text-[13px]" aria-label="External">
+        Source of truth:{' '}
+        <a
+          href={`${settings.kumaBaseUrl}/status/${settings.kumaSlug}`}
+          rel="noreferrer external"
+          style={{ color: 'var(--color-mint)' }}
+        >
+          {settings.kumaBaseUrl}
+        </a>
+        {' · '}
+        <Link href={`/${locale}/changelog`} style={{ color: 'var(--color-mint)' }}>Changelog</Link>
+      </nav>
     </article>
   );
 }
