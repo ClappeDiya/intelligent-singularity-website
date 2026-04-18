@@ -29,8 +29,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
-  const insightsRes = (await fetchJournalPosts('en', { limit: 200, page: 1 })) as any;
-  const postSlugs: string[] = (insightsRes?.docs ?? []).map((p: any) => p.slug);
+  // Post entries are best-effort: during the Docker build the DB is a placeholder,
+  // so fetchJournalPosts will fail. Fall back to an empty list. At runtime on a
+  // live deploy the next sitemap revalidation picks up the real posts.
+  let postSlugs: string[] = [];
+  try {
+    const insightsRes = (await fetchJournalPosts('en', { limit: 200, page: 1 })) as any;
+    postSlugs = (insightsRes?.docs ?? []).map((p: any) => p.slug);
+  } catch {
+    postSlugs = [];
+  }
 
   for (const locale of LOCALES) {
     for (const route of ROUTES) {
