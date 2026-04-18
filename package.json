@@ -8,7 +8,11 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack && node scripts/measure-page-sizes.mjs && node scripts/ci-checks/bundle-budget.mjs && node scripts/ci-checks/no-third-party.mjs && node scripts/ci-checks/readability.mjs --path=src/lib/seed/new-pages --maxGrade=10",
+    "build": "pnpm verify:authenticity && pnpm readability && pnpm verify:outbound-links && next build --webpack && node scripts/measure-page-sizes.mjs && node scripts/ci-checks/bundle-budget.mjs && node scripts/ci-checks/no-third-party.mjs",
+    "seed:snapshot": "node scripts/ci-checks/snapshot-seeds.mjs",
+    "verify:authenticity": "pnpm seed:snapshot && node scripts/ci-checks/verify-authenticity.mjs --roadmap=.ci/seed-snapshots/roadmap.json --posts=.ci/seed-snapshots/insights.json --changelog=.ci/seed-snapshots/changelog.json --trust=.ci/seed-snapshots/trust-subprocessors.json",
+    "readability": "node scripts/ci-checks/readability.mjs --path=src/lib/seed/new-pages --maxGrade=10",
+    "verify:outbound-links": "node scripts/ci-checks/verify-outbound-links.mjs",
     "a11y": "node scripts/ci-checks/axe-scan.mjs",
     "seo:rich-results-checklist": "node scripts/ci-checks/seo-rich-results-checklist.mjs",
     "lighthouse": "lhci autorun",
