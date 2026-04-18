@@ -29,7 +29,7 @@ export function TimelineEntry({
         <time
           dateTime={date}
           className="text-[12px] uppercase tracking-[0.16em] shrink-0"
-          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint-ink)' }}
         >
           {display}
         </time>
