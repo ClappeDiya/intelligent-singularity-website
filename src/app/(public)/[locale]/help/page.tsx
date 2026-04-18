@@ -172,7 +172,7 @@ export default async function HelpPageRoute({
                     <dt>{item.question}</dt>
                     <span
                       aria-hidden="true"
-                      className="flex-shrink-0 text-[var(--color-mint)] text-[18px] transition-transform group-open:rotate-45"
+                      className="flex-shrink-0 text-[var(--color-mint-ink)] text-[18px] transition-transform group-open:rotate-45"
                     >
                       +
                     </span>
@@ -197,7 +197,7 @@ export default async function HelpPageRoute({
           >
             <div className="flex-1">
               <div
-                className="text-[12.5px] uppercase text-[var(--color-mint)] mb-2"
+                className="text-[12.5px] uppercase text-[var(--color-mint-ink)] mb-2"
                 style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
               >
                 Contact

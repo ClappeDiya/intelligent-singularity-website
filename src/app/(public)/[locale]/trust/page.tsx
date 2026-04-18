@@ -141,7 +141,7 @@ export default async function TrustPage({
                           fontSize: '11px',
                           textTransform: 'uppercase',
                           letterSpacing: '0.16em',
-                          color: 'var(--color-mint)',
+                          color: 'var(--color-mint-ink)',
                           fontWeight: 500,
                         }}
                       >
@@ -209,7 +209,7 @@ export default async function TrustPage({
         >
           <div className="flex-1">
             <div
-              className="text-[12.5px] uppercase text-[var(--color-mint)] mb-2"
+              className="text-[12.5px] uppercase text-[var(--color-mint-ink)] mb-2"
               style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
             >
               Incident reporting

@@ -71,7 +71,7 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
         lede="Every visible change we have made to this site, with the release date and the commit behind it."
       />
 
-      <p className="mb-8 text-[13px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}>
+      <p className="mb-8 text-[13px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint-ink)' }}>
         Subscribe: <Link href={`/${locale}/changelog/feed.xml`}>/changelog/feed.xml</Link>
       </p>
 
@@ -114,7 +114,7 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
                     <li key={i}>
                       <span
                         className="inline-block mr-2 px-2 py-px rounded-full text-[11px] uppercase"
-                        style={{ fontFamily: 'var(--font-mono)', background: 'rgba(168,230,207,0.14)', color: 'var(--color-mint)' }}
+                        style={{ fontFamily: 'var(--font-mono)', background: 'rgba(168,230,207,0.14)', color: 'var(--color-mint-ink)' }}
                       >
                         {c.type}
                       </span>

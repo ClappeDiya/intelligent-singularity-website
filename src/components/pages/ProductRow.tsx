@@ -42,7 +42,7 @@ export function ProductRow({ product }: { product: Product }) {
           </div>
         </div>
         <div
-          className="text-[12px] uppercase text-[var(--color-mint)] mt-2 shrink-0"
+          className="text-[12px] uppercase text-[var(--color-mint-ink)] mt-2 shrink-0"
           style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
         >
           {statusLabel}
@@ -53,7 +53,7 @@ export function ProductRow({ product }: { product: Product }) {
           className="text-[12.5px] uppercase mb-3 -mt-1"
           style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.66)' }}
         >
-          Public as <span className="text-[var(--color-mint)]">{product.publicName}</span>
+          Public as <span className="text-[var(--color-mint-ink)]">{product.publicName}</span>
         </div>
       ) : null}
       {product.tagline ? (
@@ -78,7 +78,7 @@ export function ProductRow({ product }: { product: Product }) {
           {categoryName}
         </div>
         <div
-          className="flex items-center gap-1.5 text-[12.5px] uppercase text-[var(--color-mint)]"
+          className="flex items-center gap-1.5 text-[12.5px] uppercase text-[var(--color-mint-ink)]"
           style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
         >
           <span>Visit</span>

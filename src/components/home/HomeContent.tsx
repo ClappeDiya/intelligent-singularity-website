@@ -74,7 +74,7 @@ export async function HomeContent({ locale }: { locale: string }) {
         style={{ background: 'var(--color-paper-warm)' }}
       >
         <div className="flex-1">
-          <div className="text-[12.5px] uppercase" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}>
+          <div className="text-[12.5px] uppercase" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint-ink)' }}>
             Field notes
           </div>
           <h2

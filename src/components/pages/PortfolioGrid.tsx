@@ -31,7 +31,7 @@ export function PortfolioGrid({ categories, products }: Props) {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
               <div className="flex-1">
                 <div
-                  className="text-[12.5px] uppercase text-[var(--color-mint)] mb-3"
+                  className="text-[12.5px] uppercase text-[var(--color-mint-ink)] mb-3"
                   style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
                 >
                   {index} · Vertical
@@ -61,7 +61,7 @@ export function PortfolioGrid({ categories, products }: Props) {
                   border: '1px solid rgba(108,143,122,0.28)',
                   background: 'rgba(108,143,122,0.06)',
                   fontFamily: 'var(--font-mono)',
-                  color: 'var(--color-mint)',
+                  color: 'var(--color-mint-ink)',
                   fontSize: '12.5px',
                   fontWeight: 500,
                   textTransform: 'uppercase',
