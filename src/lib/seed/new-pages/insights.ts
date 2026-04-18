@@ -166,6 +166,7 @@ export async function seedInsights(payload: Payload, log: string[]): Promise<voi
   }
 
   let created = 0;
+  let updated = 0;
   for (const post of INSIGHTS_SEED) {
     const existing = await payload.find({
       collection: 'journal-posts',
@@ -178,7 +179,15 @@ export async function seedInsights(payload: Payload, log: string[]): Promise<voi
         data: { ...post, author: authorId } as any,
       });
       created += 1;
+    } else {
+      const existingId = existing.docs[0]!.id as any;
+      await payload.update({
+        collection: 'journal-posts',
+        id: existingId,
+        data: { subtitle: post.subtitle } as any,
+      });
+      updated += 1;
     }
   }
-  log.push(`insights: seeded ${created} launch post(s)`);
+  log.push(`insights: ${created} created, ${updated} updated-subtitle`);
 }
