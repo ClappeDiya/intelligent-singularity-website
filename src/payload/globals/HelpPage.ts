@@ -22,7 +22,7 @@ export const HelpPage: GlobalConfig = {
       minRows: 4,
       maxRows: 6,
       fields: [
-        { name: 'id', type: 'text', required: true },
+        { name: 'key', type: 'text', required: true },
         { name: 'heading', type: 'text', required: true, localized: true },
         { name: 'blurb', type: 'textarea', required: true, localized: true },
         {

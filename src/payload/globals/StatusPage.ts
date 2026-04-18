@@ -14,7 +14,7 @@ export const StatusPage: GlobalConfig = {
       type: 'array',
       fields: [
         { name: 'heading', type: 'text', required: true, localized: true },
-        { name: 'monitorIds', type: 'array', fields: [{ name: 'id', type: 'text', required: true }] },
+        { name: 'monitorIds', type: 'array', fields: [{ name: 'monitorId', type: 'text', required: true }] },
       ],
     },
     { name: 'operationalCopy', type: 'textarea', localized: true },

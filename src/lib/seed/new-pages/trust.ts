@@ -7,7 +7,7 @@ export const TRUST_PAGE_SEED = {
     'Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.',
   pillars: [
     {
-      id: 'security',
+      key: 'security',
       heading: 'Security',
       blurb: 'How we keep the site and your data safe, in plain terms you can check.',
       href: '/security',
@@ -17,7 +17,7 @@ export const TRUST_PAGE_SEED = {
       ],
     },
     {
-      id: 'privacy',
+      key: 'privacy',
       heading: 'Privacy',
       blurb: 'What we collect, what we do not collect, and how to delete what you have shared.',
       href: '/legal/privacy',
@@ -27,14 +27,14 @@ export const TRUST_PAGE_SEED = {
       ],
     },
     {
-      id: 'sustainability',
+      key: 'sustainability',
       heading: 'Sustainability',
       blurb: 'How small a site can be — measured, not guessed.',
       href: '/green',
       proof: [{ label: 'First-paint budget per route', value: '50 KB gzip' }],
     },
     {
-      id: 'accessibility',
+      key: 'accessibility',
       heading: 'Accessibility',
       blurb: 'What WCAG 2.2 AA means here, and how we check ourselves on every build.',
       href: '/legal/accessibility',

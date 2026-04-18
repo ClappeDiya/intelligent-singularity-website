@@ -7,7 +7,7 @@ export const HELP_PAGE_SEED = {
     'Pick a topic below or search the page. If none of these answer your question, the contact form at the bottom goes to a real person.',
   routes: [
     {
-      id: 'use-product',
+      key: 'use-product',
       heading: 'Using the product',
       links: [
         { label: 'Getting started', href: '/docs/getting-started' },
@@ -16,7 +16,7 @@ export const HELP_PAGE_SEED = {
       ],
     },
     {
-      id: 'billing',
+      key: 'billing',
       heading: 'Billing',
       links: [
         { label: 'Plans and pricing', href: '/pricing' },
@@ -25,7 +25,7 @@ export const HELP_PAGE_SEED = {
       ],
     },
     {
-      id: 'security',
+      key: 'security',
       heading: 'Security',
       links: [
         { label: 'Our security posture', href: '/security' },
@@ -34,7 +34,7 @@ export const HELP_PAGE_SEED = {
       ],
     },
     {
-      id: 'how-built',
+      key: 'how-built',
       heading: 'How this is built',
       links: [
         { label: 'Technology choices', href: '/insights/one-vps-zero-trackers' },
@@ -43,7 +43,7 @@ export const HELP_PAGE_SEED = {
       ],
     },
     {
-      id: 'broken',
+      key: 'broken',
       heading: 'Something is broken',
       links: [
         { label: 'Check service status', href: '/status' },
@@ -51,7 +51,7 @@ export const HELP_PAGE_SEED = {
       ],
     },
     {
-      id: 'anything-else',
+      key: 'anything-else',
       heading: 'Anything else',
       links: [
         { label: 'Contact us', href: '/contact' },

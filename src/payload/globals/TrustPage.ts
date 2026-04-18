@@ -13,7 +13,7 @@ export const TrustPage: GlobalConfig = {
       minRows: 1,
       fields: [
         {
-          name: 'id',
+          name: 'key',
           type: 'select',
           required: true,
           options: ['security', 'privacy', 'sustainability', 'accessibility', 'finance'],
