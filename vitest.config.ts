@@ -8,10 +8,12 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./tests/setup.ts'],
     globals: true,
+    exclude: ['**/node_modules/**', '**/dist/**', '**/.next/**', 'tests/e2e/**'],
   },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      '@payload-config': path.resolve(__dirname, './src/payload/payload.config.ts'),
     },
   },
 });

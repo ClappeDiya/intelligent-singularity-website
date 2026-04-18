@@ -15,6 +15,7 @@ const NAV_LINKS = [
   { href: '/pricing', label: 'Pricing' },
   { href: '/security', label: 'Security' },
   { href: '/faq', label: 'FAQ' },
+  { href: '/insights', label: 'Insights' },
   { href: '/about', label: 'About' },
 ];
 

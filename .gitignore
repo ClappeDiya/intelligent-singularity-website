@@ -11,3 +11,4 @@ coverage/
 *.tsbuildinfo
 .pnpm-store/
 .env.local
+.ci/seed-snapshots/

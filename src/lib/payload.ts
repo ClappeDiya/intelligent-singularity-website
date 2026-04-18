@@ -155,3 +155,93 @@ export const fetchSiteSettings = unstable_cache(
   ['site-settings'],
   { tags: [CACHE_TAGS.siteSettings], revalidate: 86400 }
 );
+
+export const fetchReleaseNotes = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'release-notes',
+      where: { status: { equals: 'published' } },
+      sort: '-releaseDate',
+      limit: 200,
+      locale: locale as 'en',
+    });
+    return res.docs;
+  },
+  ['release-notes'],
+  { tags: [CACHE_TAGS.releaseNotes], revalidate: 3600 }
+);
+
+export const fetchRoadmapItems = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'roadmap-items',
+      sort: 'ordering',
+      limit: 200,
+      locale: locale as 'en',
+    });
+    return res.docs;
+  },
+  ['roadmap-items'],
+  { tags: [CACHE_TAGS.roadmapItems], revalidate: 3600 }
+);
+
+export const fetchJournalPosts = unstable_cache(
+  async (locale: string, opts: { limit?: number; page?: number } = {}) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'journal-posts',
+      where: { status: { equals: 'published' } },
+      sort: '-publishedAt',
+      limit: opts.limit ?? 12,
+      page: opts.page ?? 1,
+      locale: locale as 'en',
+    });
+    return res;
+  },
+  ['journal-posts'],
+  { tags: [CACHE_TAGS.journalPosts], revalidate: 3600 }
+);
+
+export const fetchJournalPostBySlug = unstable_cache(
+  async (slug: string, locale: string) => {
+    const payload = await getPayloadInstance();
+    const res = await payload.find({
+      collection: 'journal-posts',
+      where: { slug: { equals: slug }, status: { equals: 'published' } },
+      limit: 1,
+      locale: locale as 'en',
+    });
+    return res.docs[0] ?? null;
+  },
+  ['journal-post'],
+  { tags: [CACHE_TAGS.journalPosts], revalidate: 3600 }
+);
+
+export const fetchStatusPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'status-page', locale: locale as 'en' });
+  },
+  ['status-page'],
+  { tags: [CACHE_TAGS.statusPage], revalidate: 3600 }
+);
+
+export const fetchTrustPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'trust-page', locale: locale as 'en' });
+  },
+  ['trust-page'],
+  { tags: [CACHE_TAGS.trustPage], revalidate: 3600 }
+);
+
+export const fetchHelpPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'help-page', locale: locale as 'en' });
+  },
+  ['help-page'],
+  { tags: [CACHE_TAGS.helpPage], revalidate: 3600 }
+);

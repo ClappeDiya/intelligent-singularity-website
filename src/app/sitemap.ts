@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { LOCALES } from '@/i18n/config';
 import { getSiteUrl } from '@/lib/seo';
+import { fetchJournalPosts } from '@/lib/payload';
 
 const ROUTES = [
   '/',
@@ -16,13 +17,20 @@ const ROUTES = [
   '/careers',
   '/changelog',
   '/status',
+  '/roadmap',
+  '/insights',
+  '/trust',
+  '/help',
 ] as const;
 const LEGAL_SLUGS = ['privacy', 'terms', 'accessibility', 'cookies'] as const;
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = getSiteUrl();
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
+
+  const insightsRes = (await fetchJournalPosts('en', { limit: 200, page: 1 })) as any;
+  const postSlugs: string[] = (insightsRes?.docs ?? []).map((p: any) => p.slug);
 
   for (const locale of LOCALES) {
     for (const route of ROUTES) {
@@ -40,6 +48,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: 'yearly',
         priority: 0.4,
+      });
+    }
+
+    for (const slug of postSlugs) {
+      entries.push({
+        url: new URL(`/${locale}/insights/${slug}`, siteUrl).toString(),
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.6,
       });
     }
   }
