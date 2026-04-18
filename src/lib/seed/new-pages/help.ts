@@ -9,6 +9,7 @@ export const HELP_PAGE_SEED = {
     {
       key: 'use-product',
       heading: 'Using the product',
+      blurb: 'Guides, API docs, and examples for everyday use.',
       links: [
         { label: 'Getting started', href: '/docs/getting-started' },
         { label: 'API reference', href: '/docs/api' },
@@ -18,6 +19,7 @@ export const HELP_PAGE_SEED = {
     {
       key: 'billing',
       heading: 'Billing',
+      blurb: 'Plans, pricing, refunds, and how to change your subscription.',
       links: [
         { label: 'Plans and pricing', href: '/pricing' },
         { label: 'Change or cancel plan', href: '/account/billing' },
@@ -27,6 +29,7 @@ export const HELP_PAGE_SEED = {
     {
       key: 'security',
       heading: 'Security',
+      blurb: 'Our posture, how to report a vulnerability, and trust pages.',
       links: [
         { label: 'Our security posture', href: '/security' },
         { label: 'Report a vulnerability', href: '/contact?topic=security' },
@@ -36,6 +39,7 @@ export const HELP_PAGE_SEED = {
     {
       key: 'how-built',
       heading: 'How this is built',
+      blurb: 'Technology choices, accessibility statement, and green details.',
       links: [
         { label: 'Technology choices', href: '/insights/one-vps-zero-trackers' },
         { label: 'Accessibility statement', href: '/legal/accessibility' },
@@ -45,6 +49,7 @@ export const HELP_PAGE_SEED = {
     {
       key: 'broken',
       heading: 'Something is broken',
+      blurb: 'Current service status and how to report a bug that you hit.',
       links: [
         { label: 'Check service status', href: '/status' },
         { label: 'Report a bug', href: '/contact?topic=bug' },
@@ -53,6 +58,7 @@ export const HELP_PAGE_SEED = {
     {
       key: 'anything-else',
       heading: 'Anything else',
+      blurb: 'A direct line to us — contact form, media, and press.',
       links: [
         { label: 'Contact us', href: '/contact' },
         { label: 'Media and press', href: '/contact?topic=press' },
@@ -79,14 +85,12 @@ export const HELP_PAGE_SEED = {
   emergencyRow: {
     heading: 'Need help right now?',
     body: 'If the site is down or you cannot log in, check the status page first. It updates every minute.',
-    ctaLabel: 'View status',
-    ctaHref: '/status',
+    href: '/status',
   },
   contactFallback: {
     heading: 'Still stuck?',
     body: 'Send us a message and we will reply within one business day.',
-    ctaLabel: 'Contact us',
-    ctaHref: '/contact',
+    href: '/contact',
   },
 };
 
