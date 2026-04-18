@@ -209,8 +209,8 @@ export default async function TrustPage({
         >
           <div className="flex-1">
             <div
-              className="text-[12.5px] uppercase text-[var(--color-mint-ink)] mb-2"
-              style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+              className="text-[12.5px] uppercase mb-2"
+              style={{ fontFamily: 'var(--font-mono)', fontWeight: 500, color: 'var(--color-mint)' }}
             >
               Incident reporting
             </div>

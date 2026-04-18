@@ -24,7 +24,7 @@ export function TimelineEntry({
 }) {
   const display = formatDate(date, locale);
   return (
-    <li id={id} className="py-6 md:py-8 border-t" style={{ borderColor: 'rgba(246,241,231,0.08)' }}>
+    <li id={id} className="py-6 md:py-8 border-t" style={{ borderColor: 'rgba(20,20,19,0.1)' }}>
       <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 mb-3">
         <time
           dateTime={date}
@@ -34,21 +34,21 @@ export function TimelineEntry({
           {display}
         </time>
         <h3
-          className="text-[20px] md:text-[22px] leading-[1.25] tracking-[-0.01em] text-[var(--color-cream)]"
-          style={{ fontFamily: 'var(--font-serif)' }}
+          className="text-[20px] md:text-[22px] leading-[1.25] tracking-[-0.01em]"
+          style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-paper-ink)' }}
         >
           {title}
         </h3>
         {meta ? (
           <span
             className="text-[11px] uppercase tracking-[0.16em]"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-cream-faint)' }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.6)' }}
           >
             {meta}
           </span>
         ) : null}
       </div>
-      <div className="text-[15px] leading-[1.75] text-[var(--color-cream-dim)]">
+      <div className="text-[15px] leading-[1.75]" style={{ color: 'rgba(20,20,19,0.76)' }}>
         {children}
       </div>
     </li>

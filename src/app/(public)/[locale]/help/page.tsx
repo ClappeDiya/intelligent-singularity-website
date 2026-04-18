@@ -73,17 +73,18 @@ export default async function HelpPageRoute({
           >
             <div className="flex-1">
               <h2
-                className="text-[var(--color-cream)] mb-1"
+                className="mb-1"
                 style={{
                   fontFamily: 'var(--font-serif)',
                   fontSize: 'clamp(18px, 1.6vw, 22px)',
                   fontWeight: 600,
                   letterSpacing: '-0.015em',
+                  color: 'var(--color-paper-ink)',
                 }}
               >
                 {emergencyRow.heading}
               </h2>
-              <p className="text-[14px] text-[var(--color-cream-dim)] leading-[1.6]">
+              <p className="text-[14px] leading-[1.6]" style={{ color: 'rgba(20,20,19,0.76)' }}>
                 {emergencyRow.body}
               </p>
             </div>
@@ -93,7 +94,7 @@ export default async function HelpPageRoute({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontWeight: 500,
-                background: 'rgba(217,143,123,0.3)',
+                background: 'rgba(185,77,51,0.88)',
                 color: 'var(--color-cream)',
               } as React.CSSProperties}
             >
@@ -197,8 +198,8 @@ export default async function HelpPageRoute({
           >
             <div className="flex-1">
               <div
-                className="text-[12.5px] uppercase text-[var(--color-mint-ink)] mb-2"
-                style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+                className="text-[12.5px] uppercase mb-2"
+                style={{ fontFamily: 'var(--font-mono)', fontWeight: 500, color: 'var(--color-mint)' }}
               >
                 Contact
               </div>
