@@ -1,5 +1,5 @@
 import type { GlobalConfig } from 'payload';
-import { revalidateGlobal } from '../hooks/revalidate';
+import { revalidateGlobal } from '../hooks/revalidate.ts';
 
 export const ContactPage: GlobalConfig = {
   slug: 'contact-page',

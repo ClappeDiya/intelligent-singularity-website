@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload';
-import { revalidateCollection } from '../hooks/revalidate';
+import { revalidateCollection } from '../hooks/revalidate.ts';
 
 export const LegalPages: CollectionConfig = {
   slug: 'legal-pages',
