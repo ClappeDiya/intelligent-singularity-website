@@ -6,7 +6,11 @@ FROM base AS deps
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@9.12.0 --activate
 COPY package.json pnpm-lock.yaml ./
-RUN pnpm install --frozen-lockfile
+# --network-concurrency=4 keeps the resolver below the 16GB memory
+# ceiling our build host enforces; without it the install was OOM-killed.
+RUN pnpm config set network-concurrency 4 && \
+    pnpm config set child-concurrency 2 && \
+    pnpm install --frozen-lockfile --network-concurrency=4
 
 FROM base AS builder
 WORKDIR /app
