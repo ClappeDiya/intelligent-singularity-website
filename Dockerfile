@@ -24,11 +24,17 @@ FROM base AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+RUN corepack enable && corepack prepare pnpm@9.12.0 --activate
 RUN addgroup --system --gid 1001 nodejs && \
     adduser --system --uid 1001 nextjs
 COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+# Keep full node_modules + source + payload config so `payload migrate:*`
+# commands can run inside the container (needed for schema push on deploy).
+COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./full-node_modules
+COPY --from=builder --chown=nextjs:nodejs /app/src ./src
+COPY --from=builder --chown=nextjs:nodejs /app/tsconfig.json /app/package.json /app/pnpm-lock.yaml ./
 USER nextjs
 EXPOSE 3000
 ENV PORT=3000

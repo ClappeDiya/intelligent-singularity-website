@@ -13,20 +13,8 @@ export async function register() {
       import('payload'),
       import('@payload-config'),
     ]);
-    const payload = await getPayload({ config: (config as any).default });
-    const db = payload.db as any;
-    // push: true relies on an explicit schema push against the live adapter;
-    // Payload does not do this at init automatically. Drizzle's `push`
-    // reconciles the code schema with the DB, creating any missing tables.
-    if (typeof db?.pushDevSchema === 'function') {
-      await db.pushDevSchema(payload);
-      console.log('[instrumentation] Payload schema push complete');
-    } else if (typeof db?.push === 'function') {
-      await db.push();
-      console.log('[instrumentation] Payload db.push() complete');
-    } else {
-      console.log('[instrumentation] Payload init complete (no push function found)');
-    }
+    await getPayload({ config: (config as any).default });
+    console.log('[instrumentation] Payload init complete');
   } catch (err) {
     console.error('[instrumentation] Payload init failed:', (err as Error).message);
   }
