@@ -28,6 +28,7 @@ type Source = {
 type InsightPost = {
   slug: string;
   title: string;
+  subtitle: string;
   publishedAt: string;
   status: 'published' | 'draft';
   tags: { tag: string }[];
@@ -47,6 +48,7 @@ export const INSIGHTS_SEED: InsightPost[] = [
   {
     slug: 'the-2-2-billion-gap',
     title: 'The 2.2 billion gap: who the web still does not reach',
+    subtitle: 'Who is still offline, which languages they speak, and why an English-only web leaves most of the world out.',
     publishedAt: '2026-04-01T00:00:00.000Z',
     status: 'published',
     tags: [{ tag: 'Localisation' }, { tag: 'Access' }],
@@ -81,6 +83,7 @@ export const INSIGHTS_SEED: InsightPost[] = [
   {
     slug: 'one-vps-zero-trackers',
     title: 'One VPS, zero trackers: what we run and why',
+    subtitle: 'No CDN, no analytics SaaS, no third-party fonts. The whole site answers from one server we control.',
     publishedAt: '2026-04-10T00:00:00.000Z',
     status: 'published',
     tags: [{ tag: 'Transparency' }, { tag: 'Infrastructure' }],
@@ -115,6 +118,7 @@ export const INSIGHTS_SEED: InsightPost[] = [
   {
     slug: 'grade-8-is-the-ceiling',
     title: 'Grade 8 is the ceiling: how we write for real people',
+    subtitle: 'A CI gate rejects any prose above Flesch-Kincaid grade 10. The goal is grade 8. Legal pages included.',
     publishedAt: '2026-04-17T00:00:00.000Z',
     status: 'published',
     tags: [{ tag: 'Accessibility' }, { tag: 'Writing' }],

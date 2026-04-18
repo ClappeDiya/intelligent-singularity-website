@@ -88,6 +88,7 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
             <TimelineEntry
               key={r.slug}
               id={r.slug}
+              locale={locale}
               title={`${r.version} — ${r.title}`}
               date={r.releaseDate}
               meta={
