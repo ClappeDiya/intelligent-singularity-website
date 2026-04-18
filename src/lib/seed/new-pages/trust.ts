@@ -97,7 +97,7 @@ export const TRUST_PAGE_SEED = {
           type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0,
           children: [{
             type: 'text', version: 1, mode: 'normal', detail: 0, format: 0, style: '',
-            text: 'Found a security issue? Email security@intelligentsingularityinc.com. We reply within one business day and credit the researcher once a fix ships.',
+            text: 'Found a bug? Write to the security team. We reply within one business day. We credit the reporter when a fix ships.',
           }],
         },
       ],
