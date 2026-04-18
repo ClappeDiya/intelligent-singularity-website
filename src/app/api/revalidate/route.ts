@@ -1,4 +1,4 @@
-import { updateTag } from 'next/cache';
+import { revalidateTag } from 'next/cache';
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
@@ -19,9 +19,9 @@ export async function POST(request: NextRequest) {
   }
 
   const tag: string = body.tag;
-  updateTag(tag);
+  revalidateTag(tag);
   for (const locale of LOCALES) {
-    updateTag(`${tag}:${locale}`);
+    revalidateTag(`${tag}:${locale}`);
   }
 
   return NextResponse.json({ revalidated: true, tag });
