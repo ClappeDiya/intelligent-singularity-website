@@ -45,16 +45,19 @@ export function Footer({ locale: _locale, studioBlurb }: { locale: string; studi
             <FooterLink href="/about">About</FooterLink>
             <FooterLink href="/careers">Careers</FooterLink>
             <FooterLink href="/press">Press</FooterLink>
+            <FooterLink href="/help">Help</FooterLink>
+            <FooterLink href="/contact">Contact</FooterLink>
           </FooterColumn>
 
-          <FooterColumn title="Trust &amp; Help">
-            <FooterLink href="/security">Security</FooterLink>
-            <FooterLink href="/pricing">Pricing philosophy</FooterLink>
-            <FooterLink href="/green">Green pledge</FooterLink>
-            <FooterLink href="/faq">FAQ</FooterLink>
-            <FooterLink href="/status">Status</FooterLink>
+          <FooterColumn title="Transparency">
             <FooterLink href="/changelog">Changelog</FooterLink>
-            <FooterLink href="/contact">Contact</FooterLink>
+            <FooterLink href="/status">Status</FooterLink>
+            <FooterLink href="/roadmap">Roadmap</FooterLink>
+            <FooterLink href="/insights">Insights</FooterLink>
+            <FooterLink href="/security">Security</FooterLink>
+            <FooterLink href="/green">Green pledge</FooterLink>
+            <FooterLink href="/pricing">Pricing</FooterLink>
+            <FooterLink href="/faq">FAQ</FooterLink>
           </FooterColumn>
 
           <FooterColumn title="Legal">
@@ -62,6 +65,7 @@ export function Footer({ locale: _locale, studioBlurb }: { locale: string; studi
             <FooterLink href="/legal/terms">Terms</FooterLink>
             <FooterLink href="/legal/accessibility">Accessibility</FooterLink>
             <FooterLink href="/legal/cookies">Cookies</FooterLink>
+            <FooterLink href="/trust">Trust</FooterLink>
             <p
               className="mt-4 text-[11.5px] leading-[1.7] text-[var(--color-cream-faint)] max-w-[220px]"
               style={{ fontFamily: 'var(--font-mono)' }}
