@@ -63,7 +63,7 @@ export function FlagshipCard({
           style={{
             fontFamily: 'var(--font-mono)',
             fontWeight: 500,
-            color: 'var(--color-mint)',
+            color: featured ? 'var(--color-mint)' : 'var(--color-mint-ink)',
             border: featured ? '1px solid rgba(108,143,122,0.4)' : '1px solid rgba(108,143,122,0.32)',
             background: featured ? 'rgba(108,143,122,0.08)' : 'rgba(108,143,122,0.06)',
           }}
@@ -80,7 +80,7 @@ export function FlagshipCard({
         </div>
         <div
           className={`${featured ? 'text-[18px]' : 'text-[15px]'} mb-4 font-medium`}
-          style={{ color: 'var(--color-mint)' }}
+          style={{ color: featured ? 'var(--color-mint)' : 'var(--color-mint-ink)' }}
         >
           {product.tagline}
         </div>
@@ -98,7 +98,7 @@ export function FlagshipCard({
               color: featured ? 'var(--color-cream-faint)' : 'rgba(20,20,19,0.64)',
             }}
           >
-            Ships live as <strong className="text-[var(--color-mint)]">{product.publicName}</strong>
+            Ships live as <strong style={{ color: featured ? 'var(--color-mint)' : 'var(--color-mint-ink)' }}>{product.publicName}</strong>
           </div>
         )}
       </div>
@@ -118,7 +118,7 @@ export function FlagshipCard({
           style={{
             fontFamily: 'var(--font-mono)',
             fontWeight: 500,
-            color: 'var(--color-mint)',
+            color: featured ? 'var(--color-mint)' : 'var(--color-mint-ink)',
           }}
         >
           <span>Visit</span>

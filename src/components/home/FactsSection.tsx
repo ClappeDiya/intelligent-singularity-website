@@ -115,11 +115,11 @@ export function FactsSection({ title, lead, itu }: Props) {
           className="mt-12 pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-[13px] text-[rgba(20,20,19,0.7)]"
           style={{ borderTop: '1px solid rgba(20,20,19,0.1)', fontFamily: 'var(--font-mono)' }}
         >
-          <span className="uppercase text-[var(--color-mint)]" style={{ fontWeight: 500 }}>Source</span>
+          <span className="uppercase text-[var(--color-mint-ink)]" style={{ fontWeight: 500 }}>Source</span>
           <span className="uppercase">{itu.sourceLabel}</span>
           <a
             href={itu.sourceUrl}
-            className="sm:ms-auto underline underline-offset-4 hover:text-[var(--color-mint)] break-all"
+            className="sm:ms-auto underline underline-offset-4 hover:text-[var(--color-mint-ink)] break-all"
           >
             {itu.sourceUrl}
           </a>

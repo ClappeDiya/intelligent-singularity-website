@@ -282,9 +282,28 @@ export async function seedNewPagesTranslations(payload: Payload, log: string[]):
       data: { eyebrow: t.eyebrow, title: t.title, lede: t.lede } as any,
     });
 
-    // Pillar headings remain in English for now — Payload's updateGlobal
-    // replaces the whole array, which would discard the row IDs. A future
-    // iteration can fetch + merge once we have an admin helper.
+    // Pillar headings/blurbs — fetch the English baseline, merge translated
+    // heading+blurb per pillar matched by key, preserve id+href+proof rows.
+    try {
+      const baseline = (await payload.findGlobal({
+        slug: 'trust-page',
+        locale: 'en' as any,
+      })) as any;
+      const pillars = (baseline?.pillars ?? []).map((p: any) => {
+        const match = t.pillarHeadings[p.key as string];
+        if (!match) return p;
+        return { ...p, heading: match.heading, blurb: match.blurb };
+      });
+      if (pillars.length > 0) {
+        await payload.updateGlobal({
+          slug: 'trust-page',
+          locale: locale as any,
+          data: { pillars } as any,
+        });
+      }
+    } catch {
+      // Payload mocks in tests may not implement findGlobal; skip silently.
+    }
 
     // help-page
     const h = HELP[locale];

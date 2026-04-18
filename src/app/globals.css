@@ -106,9 +106,9 @@ textarea:focus-visible {
   margin-bottom: 1rem;
 }
 
-/* On dark backgrounds, kicker uses mint for identity */
+/* On paper backgrounds, kicker uses the darker mint for AA contrast */
 .page-home .home-story-header .home-story-kicker {
-  color: var(--color-mint);
+  color: var(--color-mint-ink);
   font-weight: 500;
 }
 
@@ -148,7 +148,7 @@ textarea:focus-visible {
 }
 
 .page-label {
-  color: var(--color-mint);
+  color: var(--color-mint-ink);
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0;

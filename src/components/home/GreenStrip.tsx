@@ -8,7 +8,7 @@ function Stat({ label, value, hint }: StatProps) {
   return (
     <div className="flex flex-col gap-2">
       <div
-        className="text-[10px] text-[var(--color-mint)] tracking-[0.22em] uppercase"
+        className="text-[10px] text-[var(--color-mint-ink)] tracking-[0.22em] uppercase"
         style={{ fontFamily: 'var(--font-mono)' }}
       >
         {label}
@@ -41,7 +41,7 @@ export function GreenStrip({ pageBytes, carbonGrams }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1.3fr] gap-10 lg:gap-16 items-start">
         <div>
           <div
-            className="text-[10.5px] uppercase tracking-[0.24em] mb-4 text-[var(--color-mint)]"
+            className="text-[10.5px] uppercase tracking-[0.24em] mb-4 text-[var(--color-mint-ink)]"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
             Live Carbon Receipt

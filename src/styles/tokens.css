@@ -11,8 +11,12 @@
   --color-paper-deep: #d6ccb8;
   --color-paper-ink: #141413;
 
-  /* Mint accent (brand) */
+  /* Mint accent (brand) — two shades for two surfaces.
+     --color-mint stays tuned for dark ink surfaces (5.87:1 on #141413).
+     --color-mint-ink is darker for eyebrow/label text on paper-soft
+     backgrounds (5.03:1 on #faf9f5 — passes WCAG 2.2 AA for small text). */
   --color-mint: #6c8f7a;
+  --color-mint-ink: #4d7460;
   --color-mint-glow: rgba(108, 143, 122, 0.32);
   --color-mint-dim: rgba(108, 143, 122, 0.6);
   --color-mint-faint: rgba(108, 143, 122, 0.12);
