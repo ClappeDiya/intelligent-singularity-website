@@ -66,35 +66,33 @@ export default async function RoadmapPage({
       <JsonLd id={`roadmap-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
 
       <PageHero
-        eyebrow="ROADMAP"
+        eyebrow="ROADMAP · IN PUBLIC"
         title="What we are building."
-        lede="In public. No vaporware. Every item links to code when it ships."
+        lede="In public. No vaporware. Every item is on the studio side — corporate-site work, shared infrastructure, and the cross-cutting commitments that touch every product. Each product in the Clap ecosystem keeps its own roadmap on its own domain. Items here link to code when they ship."
       />
 
       <div className="px-4 sm:px-6 md:px-8 lg:px-12 pb-20 max-w-[1360px] mx-auto">
 
         {/* Status columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {STATUSES.map((s) => {
             const col = byStatus[s.id];
             return (
               <section key={s.id} aria-labelledby={`col-${s.id}`}>
                 <div
                   className="mb-4 flex items-center gap-2 pb-3"
-                  style={{ borderBottom: '1px solid rgba(168,230,207,0.2)' }}
+                  style={{ borderBottom: '1px solid rgba(16,185,129,0.18)' }}
                 >
                   <h2
                     id={`col-${s.id}`}
-                    className="text-[11px] uppercase tracking-[0.22em]"
-                    style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+                    className="label-mono"
                   >
                     {s.label}
                   </h2>
                   {col.length > 0 && (
                     <span
                       aria-hidden="true"
-                      className="text-[11px] opacity-60"
-                      style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+                      className="label-mono opacity-60"
                     >
                       · {col.length}
                     </span>
@@ -104,7 +102,7 @@ export default async function RoadmapPage({
                 {col.length === 0 ? (
                   <p
                     className="text-[13px] italic"
-                    style={{ color: 'rgba(246,241,231,0.35)', fontFamily: 'var(--font-mono)' }}
+                    style={{ color: 'rgba(17,24,39,0.4)', fontFamily: 'var(--font-mono)' }}
                   >
                     (none)
                   </p>
@@ -113,8 +111,7 @@ export default async function RoadmapPage({
                     {col.map((item: any) => (
                       <li
                         key={item.slug}
-                        className="rounded-[16px] p-4 flex flex-col gap-2"
-                        style={{ background: 'var(--color-paper-soft)' }}
+                        className="is-card rounded-[16px] p-5 flex flex-col gap-3"
                       >
                         <h3
                           className="text-[var(--color-paper-ink)] leading-[1.3]"
@@ -130,7 +127,7 @@ export default async function RoadmapPage({
                         {item.summary && (
                           <p
                             className="text-[13px] leading-[1.6]"
-                            style={{ color: 'rgba(20,20,19,0.68)' }}
+                            style={{ color: 'rgba(17,24,39,0.68)' }}
                           >
                             {item.summary}
                           </p>
@@ -138,7 +135,7 @@ export default async function RoadmapPage({
                         {item.whyItMatters && (
                           <p
                             className="text-[12.5px] italic leading-[1.55]"
-                            style={{ color: 'rgba(20,20,19,0.55)' }}
+                            style={{ color: 'rgba(17,24,39,0.52)', lineHeight: 1.6 }}
                           >
                             {item.whyItMatters}
                           </p>
@@ -152,8 +149,9 @@ export default async function RoadmapPage({
                                   className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] uppercase tracking-[0.12em]"
                                   style={{
                                     fontFamily: 'var(--font-mono)',
-                                    color: 'var(--color-mint)',
-                                    border: '1px solid rgba(168,230,207,0.3)',
+                                    color: 'var(--color-emerald-ink)',
+                                    border: '1px solid rgba(16,185,129,0.22)',
+                                    background: 'rgba(16,185,129,0.06)',
                                   } as React.CSSProperties}
                                 >
                                   {ref.label ?? 'ref'}
@@ -174,15 +172,13 @@ export default async function RoadmapPage({
         {/* Trailing CTA */}
         <section
           className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
-          style={{ background: 'var(--color-paper-ink)', color: 'var(--color-cream)' }}
+        style={{
+            border: '1px solid rgba(16,185,129,0.18)',
+            background: 'linear-gradient(135deg, rgba(16,185,129,0.06), rgba(20,184,166,0.04))',
+          }}
         >
           <div className="flex-1">
-            <div
-              className="text-[12.5px] uppercase text-[var(--color-mint)] mb-2"
-              style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
-            >
-              Missing something?
-            </div>
+            <div className="label-mono mb-2">Missing something?</div>
             <h2
               className="mb-2"
               style={{
@@ -195,15 +191,15 @@ export default async function RoadmapPage({
             >
               Tell us what you need.
             </h2>
-            <p className="text-[14.5px] leading-[1.7] text-[var(--color-cream-dim)] max-w-[54ch]">
+            <p className="text-[14.5px] leading-[1.7] max-w-[54ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>
               If there is a feature, tool, or fix that would make a real difference to you,
               send us a note. We read every message and prioritise based on real need.
             </p>
           </div>
           <Link
             href="/contact?reason=roadmap"
-            className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-[11px] rounded-full bg-[var(--color-cream)] text-[var(--color-paper-ink)] text-[13px] uppercase"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+            className="btn-primary"
+            style={{ fontFamily: 'var(--font-mono)' }}
           >
             Send a note
             <span aria-hidden="true">→</span>

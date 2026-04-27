@@ -48,14 +48,15 @@ export const INSIGHTS_SEED: InsightPost[] = [
   {
     slug: 'the-2-2-billion-gap',
     title: 'The 2.2 billion gap: who the web still does not reach',
-    subtitle: 'Who is still offline, which languages they speak, and why an English-only web leaves most of the world out.',
+    subtitle:
+      'Who is still offline in 2026, which languages they speak, and why an English-only web leaves most of the world out of the room.',
     publishedAt: '2026-04-01T00:00:00.000Z',
     status: 'published',
     tags: [{ tag: 'Localisation' }, { tag: 'Access' }],
     sources: [
       {
-        label: 'ITU Facts and Figures 2023',
-        href: 'https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx',
+        label: 'ITU Facts and Figures 2025',
+        href: 'https://www.itu.int/itu-d/reports/statistics/facts-figures-2025/',
       },
       {
         label: 'W3C Internationalisation Activity',
@@ -68,13 +69,19 @@ export const INSIGHTS_SEED: InsightPost[] = [
         version: 1,
         children: [
           para(
-            'The ITU puts the number of people still offline at roughly 2.6 billion. A large share of those who are online use devices and apps built in English only.'
+            'The International Telecommunication Union, a United Nations agency, counts roughly 2.2 billion people still offline in 2025. That is about one human being in four. Ninety-six out of every hundred of them live in low or middle income countries. The gap is not a rounding error. It is a generation of would-be doctors, shopkeepers, farmers, and students who cannot open a web browser today.'
           ),
           para(
-            'We built this site in fourteen languages from day one. The set includes Arabic, Urdu, Bengali, Hindi, Hausa, Swahili, and Yoruba. All are in the top twenty by speaker count. All are under-served by English-only tools.'
+            'The gap is not only about a missing cable. It is also about language. Most of the web speaks English first. A large share of sites speak only English. The languages carried by smaller communities are often left out at the design stage, even when the translation would cost almost nothing.'
           ),
           para(
-            'Shipping in one language is faster. It is also a choice about who you want to serve. We chose the wider set.'
+            'We built this site in fourteen languages on day one. The set covers Arabic and Urdu as right-to-left scripts. It also covers Bengali, Hindi, Hausa, Swahili, Yoruba, Simplified Chinese, French, Spanish, Portuguese, Russian, Indonesian, and English. Each one is in the top twenty by speaker count. Each one is under-served by English-only tools.'
+          ),
+          para(
+            'Shipping in one language is faster. It is also a quiet decision about who is allowed to be a customer. We chose the wider circle. Every new product in the family follows the same rule: fourteen languages on day one, or the product does not launch.'
+          ),
+          para(
+            'If you read a page here and the translation reads awkwardly, please tell us. Real readers across the world are part of our editing team. That is how the language floor keeps rising.'
           ),
         ],
       },
@@ -103,13 +110,16 @@ export const INSIGHTS_SEED: InsightPost[] = [
         version: 1,
         children: [
           para(
-            'The whole site runs on one VPS. There is no CDN vendor, no analytics SaaS, no third-party font host. Every request goes to our server and comes back from it.'
+            'The whole site runs on one virtual server that we rent and manage ourselves. There is no content delivery network in front of it. There is no analytics vendor. There are no outside font hosts. Every page you see is sent from a single machine in a single named datacentre, with nothing in the middle to read the traffic.'
           ),
           para(
-            'We removed the "100% renewable hosting" claim from the site. The server is in Alberta, Canada. We have not yet confirmed the data centre energy mix with the Green Web Foundation API. We will update the green page once we have a verified result.'
+            'That simplicity is not a shortcut. It is the whole product story. When a visitor asks what we do with their data, we can point at one log file that lives for fourteen days and then disappears. When a regulator asks where the information lives, the answer is a sentence, not a map.'
           ),
           para(
-            'Running one server is a constraint and a choice. It keeps the data flow simple, the cost low, and the privacy story easy to explain.'
+            'We used to carry a "one hundred percent renewable hosting" claim on the green page. We removed it. The server is in a part of Canada whose grid is still heavy on natural gas, and we had not yet confirmed the datacentre energy mix with an independent source. Until that confirmation lands, the honest sentence is that we run on a mixed grid and are watching for a cleaner option.'
+          ),
+          para(
+            'Running one server is a constraint and a choice. It keeps the data flow simple, the cost low, the carbon cost measurable, and the privacy story short enough to read aloud in a meeting. If the site outgrows this setup, the next step is to add a second server that we also manage \u2014 not to hide behind an outside platform.'
           ),
         ],
       },
@@ -138,16 +148,19 @@ export const INSIGHTS_SEED: InsightPost[] = [
         version: 1,
         children: [
           para(
-            'Every string on this site that a human reads must pass a Flesch-Kincaid grade-10 ceiling. Our CI gate rejects prose that scores above it.'
+            'Every string on this site that a human being will read has to pass a reading-level test before it can ship. The test uses the Flesch-Kincaid grade formula. The ceiling is grade ten. The goal is grade eight, which is roughly the reading level of a thirteen-year-old and also the ceiling used by most plain-language writing guides around the world.'
           ),
           para(
-            'The goal is grade 8. Short sentences. Common words. No jargon left in for the sake of sounding clever.'
+            'Short sentences. Common words. One idea at a time. Technical terms only when they are the honest name of the thing. Numbers written in full so there is no room to misread them.'
           ),
           para(
-            'This matters most for legal pages. A privacy policy written at grade 14 is not readable by most adults. Ours sits at grade 7.'
+            'This matters most for legal pages. A privacy policy written at grade fourteen is not readable by the majority of adults, no matter where they went to school. Ours sits at grade seven. So do the terms of service, the accessibility statement, and the cookie notice. A person does not have to earn the right to understand what we do with their data.'
           ),
           para(
-            'The gate is a mjs script in scripts/ci-checks. It runs on every build. If a string fails, the build stops.'
+            'The test lives in a small script called readability.mjs inside our CI folder. It runs on every pull request. If any string scores above the ceiling, the build stops and we rewrite the line. There is no setting to switch this off for a release, because a deadline is never a good reason to write above our readers.'
+          ),
+          para(
+            'If you hit a page that feels hard to read, that is a bug. Please tell us and we will fix it in the next release.'
           ),
         ],
       },

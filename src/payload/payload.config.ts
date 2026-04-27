@@ -28,6 +28,11 @@ import { ITUData } from './globals/ITUData.ts';
 import { StatusPage } from './globals/StatusPage.ts';
 import { TrustPage } from './globals/TrustPage.ts';
 import { HelpPage } from './globals/HelpPage.ts';
+import { CareersPage } from './globals/CareersPage.ts';
+import { PressPage } from './globals/PressPage.ts';
+import { SecurityPage } from './globals/SecurityPage.ts';
+import { PricingPage } from './globals/PricingPage.ts';
+import { FaqPage } from './globals/FaqPage.ts';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -84,6 +89,11 @@ export default buildConfig({
     StatusPage,
     TrustPage,
     HelpPage,
+    CareersPage,
+    PressPage,
+    SecurityPage,
+    PricingPage,
+    FaqPage,
   ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',

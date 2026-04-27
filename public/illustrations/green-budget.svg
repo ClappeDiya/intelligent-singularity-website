@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="green-budget-title green-budget-desc">
+  <title id="green-budget-title">Byte budget and carbon footprint</title>
+  <desc id="green-budget-desc">This page weighs 42 kilobytes out of a 50-kilobyte route budget, emitting 0.03 grams of CO2 per visit, with zero third-party calls.</desc>
+  <defs>
+    <style>
+      .ink   { fill: #141413; }
+      .ink-d { fill: rgba(20,20,19,0.62); }
+      .ink-f { fill: rgba(20,20,19,0.38); }
+      .mint  { fill: #6c8f7a; }
+      .mint-i{ fill: #3e6750; }
+      .s-ink { stroke: rgba(20,20,19,0.68); fill: none; }
+      .s-mint{ stroke: #6c8f7a; fill: none; }
+      .s-faint{stroke: rgba(20,20,19,0.14); fill: none; }
+      .label { font-family: -apple-system, system-ui, "Segoe UI", sans-serif; font-size: 12px; fill: rgba(20,20,19,0.66); }
+      .mono  { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; fill: #3e6750; }
+      .serif { font-family: ui-serif, Georgia, "Times New Roman", serif; font-weight: 600; fill: #141413; }
+      .mono-num { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; fill: #141413; }
+    </style>
+  </defs>
+
+  <!-- Eyebrow + framing -->
+  <text class="mono" x="48" y="60">Green · Per-route budget</text>
+  <text class="serif" x="48" y="98" font-size="26">42 KB shipped. 50 KB ceiling. 0 third parties.</text>
+
+  <!-- Main gauge track -->
+  <g transform="translate(48,160)">
+    <!-- Track background -->
+    <rect x="0" y="0" width="720" height="32" rx="16" fill="rgba(20,20,19,0.06)"/>
+    <!-- Used portion (42/50 = 84%) -->
+    <rect x="0" y="0" width="605" height="32" rx="16" fill="#6c8f7a" opacity="0.28"/>
+    <rect x="0" y="0" width="605" height="32" rx="16" fill="url(#mintGrad)" opacity="0.4"/>
+    <!-- 50KB ceiling marker -->
+    <line x1="720" y1="-10" x2="720" y2="42" class="s-ink" stroke-width="1.25" stroke-dasharray="3 3"/>
+    <text class="mono" x="720" y="-18" text-anchor="end" fill="#141413">Budget 50 KB</text>
+
+    <!-- Ticks -->
+    <g class="s-faint" stroke-width="1">
+      <line x1="0"   y1="36" x2="0"   y2="44"/>
+      <line x1="144" y1="36" x2="144" y2="44"/>
+      <line x1="288" y1="36" x2="288" y2="44"/>
+      <line x1="432" y1="36" x2="432" y2="44"/>
+      <line x1="576" y1="36" x2="576" y2="44"/>
+      <line x1="720" y1="36" x2="720" y2="44"/>
+    </g>
+    <g class="ink-f" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.12em">
+      <text x="0"   y="58">0</text>
+      <text x="144" y="58">10</text>
+      <text x="288" y="58">20</text>
+      <text x="432" y="58">30</text>
+      <text x="576" y="58">40</text>
+      <text x="720" y="58" text-anchor="end">50 KB</text>
+    </g>
+
+    <!-- Current position pointer -->
+    <g transform="translate(605,0)">
+      <polygon points="0,-10 -6,-2 6,-2" class="mint-i"/>
+      <line x1="0" y1="-2" x2="0" y2="32" stroke="#3e6750" stroke-width="1.5"/>
+    </g>
+
+    <!-- Current label -->
+    <g transform="translate(605,-48)">
+      <rect x="-44" y="-22" width="88" height="26" rx="13" fill="#141413"/>
+      <text x="0" y="-4" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="11" letter-spacing="0.14em" fill="#faf9f5">42 KB · LIVE</text>
+    </g>
+  </g>
+
+  <!-- Detail stats row -->
+  <g transform="translate(48,270)">
+    <!-- CO2 mini gauge -->
+    <g>
+      <text class="mono" x="0" y="0">CO₂ · this visit</text>
+      <text class="serif" x="0" y="36" font-size="28">0.03 g</text>
+      <text class="label" x="0" y="56">Green Web Foundation · Alberta grid</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="232" y1="-6" x2="232" y2="64" class="s-faint" stroke-width="1"/>
+
+    <!-- Third-party counter -->
+    <g transform="translate(256,0)">
+      <text class="mono" x="0" y="0">Third-party calls</text>
+      <text class="serif" x="0" y="36" font-size="28">0</text>
+      <text class="label" x="0" y="56">No pixels · no fonts · no CDN</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="464" y1="-6" x2="464" y2="64" class="s-faint" stroke-width="1"/>
+
+    <!-- Hosting -->
+    <g transform="translate(488,0)">
+      <text class="mono" x="0" y="0">Hosting</text>
+      <text class="serif" x="0" y="36" font-size="28">1 VPS</text>
+      <text class="label" x="0" y="56">Self-hosted · low-PUE datacentre</text>
+    </g>
+
+    <!-- Leaf accent on the right -->
+    <g transform="translate(820,24)" opacity="0.9">
+      <path d="M0,0 C24,-28 56,-36 80,-20 C72,12 44,32 16,28 Z" fill="#6c8f7a" opacity="0.28"/>
+      <path d="M0,0 C24,-28 56,-36 80,-20 C72,12 44,32 16,28 Z" class="s-mint" stroke-width="1.2"/>
+      <line x1="4" y1="4" x2="64" y2="-22" class="s-mint" stroke-width="1"/>
+    </g>
+  </g>
+
+  <defs>
+    <linearGradient id="mintGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#6c8f7a" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#6c8f7a" stop-opacity="0.65"/>
+    </linearGradient>
+  </defs>
+</svg>

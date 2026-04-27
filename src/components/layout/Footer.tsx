@@ -6,12 +6,12 @@ export function Footer({ locale: _locale, studioBlurb }: { locale: string; studi
   return (
     <footer
       className="px-4 sm:px-6 md:px-8 lg:px-12 pt-24 md:pt-28 pb-10 md:pb-12 bg-[var(--color-ink)] text-[var(--color-cream)]"
-      style={{ borderTop: '1px solid rgba(246,241,231,0.08)' }}
+      style={{ borderTop: '1px solid rgba(13,148,136,0.18)' }}
     >
       <div className="max-w-[1360px] mx-auto">
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_.85fr_.95fr_.85fr_1.1fr] gap-10 md:gap-12 lg:gap-14 pb-14"
-          style={{ borderBottom: '1px solid rgba(246,241,231,0.08)' }}
+          style={{ borderBottom: '1px solid rgba(13,148,136,0.14)' }}
         >
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -29,11 +29,11 @@ export function Footer({ locale: _locale, studioBlurb }: { locale: string; studi
             <p className="text-[15px] leading-[1.85] text-[var(--color-cream-dim)] max-w-[440px]">
               {studioBlurb}
             </p>
-            <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[12px] uppercase" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)', fontWeight: 500 }}>
+            <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[12px] uppercase" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald)', letterSpacing: '0.08em', fontWeight: 500 }}>
               <span>0 trackers</span>
-              <span aria-hidden="true" style={{ color: 'rgba(246,241,231,0.2)' }}>·</span>
+              <span aria-hidden="true" style={{ color: 'rgba(16,185,129,0.35)' }}>·</span>
               <span>0 third-party calls</span>
-              <span aria-hidden="true" style={{ color: 'rgba(246,241,231,0.2)' }}>·</span>
+              <span aria-hidden="true" style={{ color: 'rgba(16,185,129,0.35)' }}>·</span>
               <span>Self-hosted on a single VPS</span>
             </div>
           </div>
@@ -76,7 +76,7 @@ export function Footer({ locale: _locale, studioBlurb }: { locale: string; studi
 
           <div>
             <div
-              className="text-[12px] uppercase text-[var(--color-mint)] mb-4 font-medium"
+              className="text-[12px] uppercase text-[var(--color-emerald)] mb-4 font-medium"
               style={{ fontFamily: 'var(--font-mono)' }}
             >
               14 Languages
@@ -99,10 +99,11 @@ export function Footer({ locale: _locale, studioBlurb }: { locale: string; studi
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-5 py-[10px] rounded-full border text-[11px] uppercase tracking-[0.2em] font-semibold text-[var(--color-cream)] transition-colors hover:text-[var(--color-mint)] hover:border-[var(--color-mint)]"
+            className="inline-flex items-center gap-2 px-5 py-[10px] rounded-full text-[11px] uppercase tracking-[0.12em] font-semibold text-white transition-all hover:opacity-90 hover:-translate-y-0.5"
             style={{
               fontFamily: 'var(--font-mono)',
-              borderColor: 'rgba(246,241,231,0.2)',
+              background: 'var(--color-emerald)',
+              boxShadow: '0 2px 10px rgba(16,185,129,0.28)',
             }}
           >
             Start a conversation
@@ -131,7 +132,7 @@ function FooterColumn({ title, children }: { title: string; children: React.Reac
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <Link
-      className="py-[7px] text-[14px] text-[var(--color-cream-soft)] hover:text-[var(--color-mint)] transition-colors"
+      className="py-[7px] text-[14px] text-[var(--color-cream-soft)] hover:text-[var(--color-emerald)] transition-colors"
       href={href}
     >
       {children}

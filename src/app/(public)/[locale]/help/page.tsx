@@ -69,7 +69,7 @@ export default async function HelpPageRoute({
         {emergencyRow && (
           <aside
             className="rounded-[20px] p-6 md:p-7 mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-4"
-            style={{ background: 'rgba(217,143,123,0.15)', border: '1px solid rgba(217,143,123,0.3)' }}
+            style={{ background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.18)' }}
           >
             <div className="flex-1">
               <h2
@@ -94,8 +94,8 @@ export default async function HelpPageRoute({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontWeight: 500,
-                background: 'rgba(185,77,51,0.88)',
-                color: 'var(--color-cream)',
+                background: 'linear-gradient(135deg,#059669,#0d9488)',
+                color: '#fff',
               } as React.CSSProperties}
             >
               Check status
@@ -111,8 +111,7 @@ export default async function HelpPageRoute({
               {routes.map((route: any) => (
                 <div
                   key={route.id}
-                  className="rounded-[20px] p-6 md:p-7 flex flex-col gap-4"
-                  style={{ background: 'var(--color-paper-soft)' }}
+                  className="is-card rounded-[20px] p-6 md:p-7 flex flex-col gap-4"
                 >
                   <h3
                     className="text-[var(--color-paper-ink)]"
@@ -137,7 +136,8 @@ export default async function HelpPageRoute({
                         <li key={link.href}>
                           <OutboundLink
                             href={link.href}
-                            className="text-[13px] text-[var(--color-ink)] underline underline-offset-2"
+                            className="text-[13px] underline underline-offset-2 transition-colors hover:text-[var(--color-emerald-ink)]"
+                            style={{ color: 'var(--color-emerald-ink)' }}
                           >
                             {link.label}
                           </OutboundLink>
@@ -159,8 +159,7 @@ export default async function HelpPageRoute({
               {popularQuestions.map((item: any, i: number) => (
                 <details
                   key={i}
-                  className="rounded-[16px] group"
-                  style={{ background: 'var(--color-paper-soft)' }}
+                  className="is-card rounded-[16px] group"
                 >
                   <summary
                     className="px-6 py-4 cursor-pointer list-none flex items-center justify-between gap-4 text-[var(--color-paper-ink)]"
@@ -173,14 +172,14 @@ export default async function HelpPageRoute({
                     <dt>{item.question}</dt>
                     <span
                       aria-hidden="true"
-                      className="flex-shrink-0 text-[var(--color-mint-ink)] text-[18px] transition-transform group-open:rotate-45"
+                      className="flex-shrink-0 text-[var(--color-emerald-ink)] text-[18px] transition-transform group-open:rotate-45"
                     >
                       +
                     </span>
                   </summary>
                   <dd
                     className="px-6 pb-5 text-[14px] leading-[1.7]"
-                    style={{ color: 'rgba(20,20,19,0.72)' }}
+                    style={{ color: 'rgba(17,24,39,0.7)' }}
                   >
                     {item.answer}
                   </dd>
@@ -194,12 +193,12 @@ export default async function HelpPageRoute({
         {contactFallback && (
           <section
             className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
-            style={{ background: 'var(--color-paper-ink)', color: 'var(--color-cream)' }}
+            style={{ background: 'var(--color-ink)', color: 'var(--color-cream)', border: '1px solid rgba(16,185,129,0.2)' }}
           >
             <div className="flex-1">
               <div
-                className="text-[12.5px] uppercase mb-2"
-                style={{ fontFamily: 'var(--font-mono)', fontWeight: 500, color: 'var(--color-mint)' }}
+                className="text-[11px] uppercase tracking-[0.1em] text-[var(--color-emerald)] mb-3"
+                style={{ fontFamily: 'var(--font-mono)', fontWeight: 600 }}
               >
                 Contact
               </div>
@@ -221,8 +220,8 @@ export default async function HelpPageRoute({
             </div>
             <Link
               href={contactFallback.href}
-              className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-[11px] rounded-full bg-[var(--color-cream)] text-[var(--color-paper-ink)] text-[13px] uppercase"
-              style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+              className="btn-primary"
+              style={{ fontFamily: 'var(--font-mono)' }}
             >
               Contact us
               <span aria-hidden="true">→</span>

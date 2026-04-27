@@ -12,44 +12,39 @@ export function CommitmentsSection({ title, lead, items }: Props) {
           <p className="home-story-lead editorial-muted">{lead}</p>
         </div>
         <ol className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-7 lg:gap-8" aria-label="The nine commitments">
-          {items.map((c) => (
-            <li
+          {items.map((c, i) => (
+            <article
               key={c.number}
-              className="relative rounded-[24px] p-7 md:p-8 flex gap-5"
-              style={{ background: 'var(--color-paper-warm)' }}
+              className="is-card flex gap-6 md:gap-8 items-start rounded-[20px] p-6 md:p-7 animate-fade-up"
+              style={{ animationDelay: `${i * 60}ms` }}
             >
-              <div className="flex-shrink-0 flex items-start justify-center w-10 pt-1">
-                <span
-                  className="inline-flex items-center justify-center w-9 h-9 rounded-full text-[13px]"
-                  style={{
-                    fontFamily: 'var(--font-mono)',
-                    fontWeight: 500,
-                    color: 'var(--color-paper-ink)',
-                    background: 'var(--color-paper-soft)',
-                  }}
-                >
-                  {String(c.number).padStart(2, '0')}
-                </span>
+              <div
+                className="shrink-0 text-[12px] font-semibold w-9 h-9 rounded-full flex items-center justify-center mt-0.5"
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  background: 'linear-gradient(135deg, rgba(16,185,129,0.12), rgba(20,184,166,0.12))',
+                  color: 'var(--color-emerald-ink)',
+                  border: '1px solid rgba(16,185,129,0.2)',
+                }}
+              >
+                {String(c.number).padStart(2, '0')}
               </div>
               <div>
                 <h3
-                  className="text-[24px] md:text-[26px] leading-[1.1] tracking-[-0.028em] mb-3 max-w-[22ch]"
+                  className="font-semibold text-[var(--color-paper-ink)] mb-2"
                   style={{
                     fontFamily: 'var(--font-serif)',
-                    color: 'var(--color-paper-ink)',
-                    fontWeight: 600,
+                    fontSize: 'clamp(20px, 1.9vw, 24px)',
+                    lineHeight: 1.18,
+                    letterSpacing: '-0.025em',
+                    textWrap: 'balance',
                   }}
                 >
                   {c.title}
                 </h3>
-                <p
-                  className="text-[15.5px] leading-[1.78] max-w-[46ch]"
-                  style={{ color: 'rgba(20,20,19,0.78)' }}
-                >
-                  {c.body}
-                </p>
+                <p className="text-[15px] leading-[1.78]" style={{ color: 'rgba(17,24,39,0.7)' }}>{c.body}</p>
               </div>
-            </li>
+            </article>
           ))}
         </ol>
       </div>

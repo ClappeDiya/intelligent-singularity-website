@@ -41,7 +41,7 @@ export const HelpPage: GlobalConfig = {
       name: 'popularQuestions',
       type: 'array',
       minRows: 0,
-      maxRows: 3,
+      maxRows: 20,
       fields: [
         { name: 'question', type: 'text', required: true, localized: true },
         { name: 'answer', type: 'textarea', required: true, localized: true },

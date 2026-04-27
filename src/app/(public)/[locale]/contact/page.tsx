@@ -10,22 +10,42 @@ const CHANNELS = [
   {
     label: 'General',
     email: 'hello@intelligentsingularityinc.com',
-    hint: 'For product questions, intros, or just to say hi.',
+    hint: 'Product questions, intros, or just to say hi.',
   },
   {
     label: 'Press',
     email: 'press@intelligentsingularityinc.com',
-    hint: 'Interviews, quotes, and background on the mission.',
+    hint: 'Interviews, quotes, founder availability, story leads.',
   },
   {
     label: 'Partnerships',
     email: 'partners@intelligentsingularityinc.com',
-    hint: 'NGOs, governments, and enterprise collaboration.',
+    hint: 'NGOs, governments, enterprise collaboration, grant funding.',
+  },
+  {
+    label: 'Careers',
+    email: 'careers@intelligentsingularityinc.com',
+    hint: 'Open roles, introductions, references.',
+  },
+  {
+    label: 'Security',
+    email: 'security@intelligentsingularityinc.com',
+    hint: 'Vulnerability reports — acknowledged within one business day.',
+  },
+  {
+    label: 'Accessibility',
+    email: 'accessibility@intelligentsingularityinc.com',
+    hint: 'Report a barrier on the site or in any product.',
+  },
+  {
+    label: 'Privacy',
+    email: 'privacy@intelligentsingularityinc.com',
+    hint: 'Data access, correction, deletion, portability requests.',
   },
   {
     label: 'Legal',
     email: 'legal@intelligentsingularityinc.com',
-    hint: 'Data requests, DPAs, and regulatory inquiries.',
+    hint: 'DPAs, MSAs, formal notices, regulatory inquiries.',
   },
 ];
 
@@ -66,15 +86,10 @@ async function ContactContent({ locale }: { locale: string }) {
 
         <aside className="flex flex-col gap-6">
           <div
-            className="rounded-[24px] border p-7"
-            style={{
-              borderColor: 'rgba(26,22,18,0.1)',
-              background: 'rgba(255,255,255,0.65)',
-            }}
+            className="is-card rounded-[24px] p-7"
           >
             <div
-              className="text-[10.5px] uppercase tracking-[0.24em] text-[var(--color-mint)] mb-4"
-              style={{ fontFamily: 'var(--font-mono)' }}
+              className="label-mono mb-4"
             >
               Direct channels
             </div>
@@ -82,18 +97,18 @@ async function ContactContent({ locale }: { locale: string }) {
               {CHANNELS.map((c) => (
                 <li key={c.label}>
                   <div
-                    className="text-[10.5px] uppercase tracking-[0.2em] mb-1.5"
-                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(26,22,18,0.56)' }}
+                    className="text-[10px] uppercase tracking-[0.1em] mb-1.5"
+                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.5)' }}
                   >
                     {c.label}
                   </div>
                   <a
                     href={`mailto:${c.email}`}
-                    className="text-[15px] text-[var(--color-paper-ink)] underline underline-offset-4 decoration-[rgba(26,22,18,0.18)] hover:decoration-[var(--color-mint)] hover:text-[var(--color-mint)] break-all"
+                    className="text-[15px] text-[var(--color-paper-ink)] underline underline-offset-4 decoration-[rgba(16,185,129,0.2)] hover:decoration-[var(--color-emerald-ink)] hover:text-[var(--color-emerald-ink)] break-all"
                   >
                     {c.email}
                   </a>
-                  <p className="text-[13px] text-[rgba(26,22,18,0.6)] leading-[1.6] mt-1.5">
+                  <p className="text-[13px] leading-[1.6] mt-1.5" style={{ color: 'rgba(17,24,39,0.6)' }}>
                     {c.hint}
                   </p>
                 </li>
@@ -102,32 +117,31 @@ async function ContactContent({ locale }: { locale: string }) {
           </div>
 
           <div
-            className="rounded-[24px] border p-7"
+            className="rounded-[24px] p-7"
             style={{
-              borderColor: 'rgba(108,143,122,0.22)',
-              background:
-                'linear-gradient(180deg, rgba(108,143,122,0.08) 0%, rgba(108,143,122,0.02) 100%)',
+              border: '1px solid rgba(16,185,129,0.2)',
+              background: 'linear-gradient(180deg, rgba(16,185,129,0.08) 0%, rgba(16,185,129,0.02) 100%)',
             }}
           >
-            <div
-              className="text-[10.5px] uppercase tracking-[0.24em] text-[var(--color-mint)] mb-3"
-              style={{ fontFamily: 'var(--font-mono)' }}
-            >
+            <div className="label-mono mb-3">
               Response time
             </div>
-            <p className="text-[14px] leading-[1.75] text-[rgba(26,22,18,0.72)]">
+            <p className="text-[14px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.68)' }}>
               A human reads every message. We reply within two business days across UTC−07:00
-              (Mountain) working hours. Legal and press inquiries are prioritised.
+              (Mountain) working hours. Security and legal inquiries are
+              prioritised — security reports are acknowledged within one
+              business day. We can reply in any of the fourteen languages this
+              site speaks.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3 text-[12px]" style={{ fontFamily: 'var(--font-mono)' }}>
             <div
               className="rounded-2xl p-5"
-              style={{ border: '1px solid rgba(26,22,18,0.1)', background: 'rgba(255,255,255,0.5)' }}
+              style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="uppercase tracking-[0.2em] text-[rgba(26,22,18,0.5)] mb-2">HQ</div>
-              <div className="text-[13.5px] text-[var(--color-paper-ink)] leading-[1.5]">
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.5)', fontFamily: 'var(--font-mono)' }}>HQ</div>
+              <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 Alberta, Canada
                 <br />
                 Incorporated 2024
@@ -135,13 +149,35 @@ async function ContactContent({ locale }: { locale: string }) {
             </div>
             <div
               className="rounded-2xl p-5"
-              style={{ border: '1px solid rgba(26,22,18,0.1)', background: 'rgba(255,255,255,0.5)' }}
+              style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="uppercase tracking-[0.2em] text-[rgba(26,22,18,0.5)] mb-2">Privacy</div>
-              <div className="text-[13.5px] text-[var(--color-paper-ink)] leading-[1.5]">
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.5)', fontFamily: 'var(--font-mono)' }}>Privacy</div>
+              <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 No trackers.
                 <br />
                 Email delivery only.
+              </div>
+            </div>
+            <div
+              className="rounded-2xl p-5"
+              style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
+            >
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.5)', fontFamily: 'var(--font-mono)' }}>Languages</div>
+              <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
+                14 shipping locales.
+                <br />
+                Including Arabic & Urdu RTL.
+              </div>
+            </div>
+            <div
+              className="rounded-2xl p-5"
+              style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
+            >
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.5)', fontFamily: 'var(--font-mono)' }}>Hosting</div>
+              <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
+                Single VPS, Edmonton.
+                <br />
+                No third-party CDN.
               </div>
             </div>
           </div>

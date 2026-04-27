@@ -4,6 +4,7 @@ import { FactsSection } from '@/components/home/FactsSection';
 import { FlagshipsSection } from '@/components/home/FlagshipsSection';
 import { CommitmentsSection } from '@/components/home/CommitmentsSection';
 import { GreenStrip } from '@/components/home/GreenStrip';
+import { DigitalDivideIllustration } from '@/components/illustrations/DigitalDivideIllustration';
 import {
   fetchHomepageContent,
   fetchITUData,
@@ -35,7 +36,7 @@ export async function HomeContent({ locale }: { locale: string }) {
     fetchITUData(locale),
     fetchFlagshipProducts(locale),
     fetchCommitments(locale),
-  ]) as [HomepageContent, ITUData, Product[], CommitmentItem[]];
+  ]) as unknown as [HomepageContent, ITUData, Product[], CommitmentItem[]];
 
   const estBytes = 48_000;
   const grams = bytesToGrams(estBytes, 0.8);
@@ -58,6 +59,38 @@ export async function HomeContent({ locale }: { locale: string }) {
         secondaryCta={hp.heroCtaSecondary}
       />
       <FactsSection title={hp.factsTitle} lead={hp.factsLead} itu={itu} />
+      <section
+        aria-labelledby="dd-heading"
+        className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[88px]"
+      >
+        <div className="max-w-[1100px] mx-auto">
+          <p className="label-mono" style={{ marginBottom: '0.75rem' }}>
+            One hundred people, drawn to scale
+          </p>
+          <h2
+            id="dd-heading"
+            className="mb-6 md:mb-10"
+            style={{
+              fontFamily: 'var(--font-serif)',
+              fontSize: 'clamp(28px, 3.5vw, 44px)',
+              letterSpacing: '-0.025em',
+              fontWeight: 600,
+              lineHeight: 1.1,
+              color: 'var(--color-cream)',
+              maxWidth: '22ch',
+            }}
+          >
+            Twenty-six out of every hundred people on Earth still have no digital access at all.
+          </h2>
+          <DigitalDivideIllustration
+            onlinePercent={Math.round(itu.onlinePercent)}
+            offlinePercent={Math.round(itu.offlinePercent)}
+            onlineCount="5.9 billion"
+            offlineCount="2.2 billion"
+            source={itu.sourceLabel || 'ITU Facts and Figures 2025'}
+          />
+        </div>
+      </section>
       <FlagshipsSection
         title={hp.flagshipsTitle}
         lead={hp.flagshipsLead}
@@ -71,10 +104,14 @@ export async function HomeContent({ locale }: { locale: string }) {
       <section
         aria-labelledby="insights-callout"
         className="my-20 rounded-[24px] p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-6"
-        style={{ background: 'var(--color-paper-warm)' }}
+        style={{
+          background: 'linear-gradient(135deg, rgba(16,185,129,0.06), rgba(20,184,166,0.06))',
+          border: '1px solid rgba(16,185,129,0.15)',
+          borderRadius: '24px',
+        }}
       >
         <div className="flex-1">
-          <div className="text-[12.5px] uppercase" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint-ink)' }}>
+          <div className="label-mono" style={{ marginBottom: '0.5rem' }}>
             Field notes
           </div>
           <h2
@@ -91,14 +128,14 @@ export async function HomeContent({ locale }: { locale: string }) {
           >
             How we think about building this.
           </h2>
-          <p className="text-[15px] leading-[1.7] max-w-[52ch]" style={{ color: 'rgba(20,20,19,0.72)' }}>
+          <p className="text-[15px] leading-[1.7] max-w-[52ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>
             Short, grounded essays from the studio. We write slowly and cite everything. No clickbait, no thought-leadership fog.
           </p>
         </div>
         <Link
           href={`/${locale}/insights`}
-          className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full bg-[var(--color-paper-ink)] text-[var(--color-cream)] text-[13px] uppercase"
-          style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+          className="btn-primary"
+          style={{ fontFamily: 'var(--font-mono)' }}
         >
           Read our field notes →
         </Link>

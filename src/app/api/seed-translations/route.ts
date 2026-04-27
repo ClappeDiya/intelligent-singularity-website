@@ -42,10 +42,13 @@ export async function POST(request: Request) {
     }
   }
 
-  const { locale } = (await request.json()) as { locale?: string };
-  if (!locale || !TRANSLATIONS[locale]) {
+  const { locale: rawLocale } = (await request.json()) as { locale?: string };
+  if (!rawLocale || !TRANSLATIONS[rawLocale]) {
     return Response.json({ error: 'Invalid locale' }, { status: 400 });
   }
+  // Payload's generated types narrow `locale` to a literal union. The runtime
+  // guard above proves the value is one of the supported locales, so cast.
+  const locale = rawLocale as keyof typeof TRANSLATIONS;
 
   const payload = await getPayload({ config });
   const t = TRANSLATIONS[locale];
@@ -68,7 +71,7 @@ export async function POST(request: Request) {
       commitmentsLead: t.homepage.commitmentsLead,
       seeAllPortfolioLine: t.homepage.seeAllPortfolioLine,
     },
-  }).then(() => {}), log);
+  } as any).then(() => {}), log);
 
   await safeUpdate('site-settings', () => payload.updateGlobal({
     slug: 'site-settings',
@@ -78,7 +81,7 @@ export async function POST(request: Request) {
       footerSources: t.siteSettings.footerSources,
       topBarStatusText: t.siteSettings.topBarStatusText,
     },
-  }).then(() => {}), log);
+  } as any).then(() => {}), log);
 
   await safeUpdate('manifesto-page', async () => {
     const db = payload.db?.pool;
@@ -103,7 +106,7 @@ export async function POST(request: Request) {
       incorporationContext: t.about.incorporationContext,
       leanOpsPhilosophy: textToParagraph(t.about.leanOpsPhilosophyText, dir),
     },
-  }).then(() => {}), log);
+  } as any).then(() => {}), log);
 
   await safeUpdate('green-page', () => payload.updateGlobal({
     slug: 'green-page',
@@ -115,7 +118,7 @@ export async function POST(request: Request) {
       hostingStory: textToParagraph(t.green.hostingStoryText, dir),
       futureGenerationPledge: textToParagraph(t.green.futureGenerationPledgeText, dir),
     },
-  }).then(() => {}), log);
+  } as any).then(() => {}), log);
 
   await safeUpdate('contact-page', () => payload.updateGlobal({
     slug: 'contact-page',
@@ -127,7 +130,7 @@ export async function POST(request: Request) {
       successMessage: t.contact.successMessage,
       errorMessage: t.contact.errorMessage,
     },
-  }).then(() => {}), log);
+  } as any).then(() => {}), log);
 
   for (const c of t.commitments) {
     const idx = t.commitments.indexOf(c);
@@ -143,7 +146,7 @@ export async function POST(request: Request) {
           id: existing.docs[0].id,
           locale,
           data: { title: c.title, body: c.body },
-        });
+        } as any);
       }
     }, log);
   }
@@ -161,7 +164,7 @@ export async function POST(request: Request) {
           id: existing.docs[0].id,
           locale,
           data: { tagline: p.tagline, shortDescription: p.shortDescription },
-        });
+        } as any);
       }
     }, log);
   }
@@ -179,7 +182,7 @@ export async function POST(request: Request) {
           id: existing.docs[0].id,
           locale,
           data: { name: cat.name, description: cat.description },
-        });
+        } as any);
       }
     }, log);
   }

@@ -2,22 +2,34 @@ import { formatCarbon } from '@/lib/carbon';
 
 type Props = { pageBytes: number; carbonGrams: number };
 
-type StatProps = { label: string; value: string; hint?: string };
+type StatProps = { label: string; value: string; unit?: string; hint?: string };
 
-function Stat({ label, value, hint }: StatProps) {
+function Stat({ label, value, unit, hint }: StatProps) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-1.5">
       <div
-        className="text-[10px] text-[var(--color-mint-ink)] tracking-[0.22em] uppercase"
+        className="text-[10.5px] uppercase tracking-[0.12em] text-[var(--color-emerald)]"
         style={{ fontFamily: 'var(--font-mono)' }}
       >
         {label}
       </div>
       <div
-        className="font-semibold text-[var(--color-cream)] leading-none tracking-[-0.02em]"
-        style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(26px, 2.6vw, 38px)' }}
+        className="font-semibold leading-none tracking-[-0.04em]"
+        style={{
+          fontFamily: 'var(--font-serif)',
+          fontSize: 'clamp(28px, 3.2vw, 44px)',
+          color: 'var(--color-cream)',
+        }}
       >
         {value}
+        {unit && (
+          <span
+            className="text-[0.4em] align-super ml-0.5"
+            style={{ color: 'var(--color-emerald)' }}
+          >
+            {unit}
+          </span>
+        )}
       </div>
       {hint ? (
         <div className="text-[11px] text-[var(--color-cream-faint)] leading-[1.6]" style={{ fontFamily: 'var(--font-mono)' }}>
@@ -41,7 +53,7 @@ export function GreenStrip({ pageBytes, carbonGrams }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1.3fr] gap-10 lg:gap-16 items-start">
         <div>
           <div
-            className="text-[10.5px] uppercase tracking-[0.24em] mb-4 text-[var(--color-mint-ink)]"
+            className="text-[10.5px] uppercase tracking-[0.12em] mb-4 text-[var(--color-emerald)]"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
             Live Carbon Receipt

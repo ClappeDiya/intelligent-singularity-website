@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="about-studio-title about-studio-desc">
+  <title id="about-studio-title">The studio topology</title>
+  <desc id="about-studio-desc">A small remote studio — one founder at centre, a ring of AI-leverage, a horizon line that reaches 20 years.</desc>
+  <defs>
+    <style>
+      .ink    { fill: #141413; }
+      .ink-d  { fill: rgba(20,20,19,0.62); }
+      .ink-f  { fill: rgba(20,20,19,0.38); }
+      .mint   { fill: #6c8f7a; }
+      .mint-i { fill: #3e6750; }
+      .s-ink  { stroke: rgba(20,20,19,0.68); fill: none; }
+      .s-mint { stroke: #6c8f7a; fill: none; }
+      .s-faint{ stroke: rgba(20,20,19,0.14); fill: none; }
+      .label  { font-family: -apple-system, system-ui, "Segoe UI", sans-serif; font-size: 12px; fill: rgba(20,20,19,0.66); }
+      .mono   { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; fill: #3e6750; }
+      .serif  { font-family: ui-serif, Georgia, "Times New Roman", serif; font-weight: 600; fill: #141413; }
+    </style>
+  </defs>
+
+  <!-- Frame grid lines -->
+  <g class="s-faint" stroke-width="1">
+    <line x1="48" y1="120" x2="912" y2="120"/>
+    <line x1="48" y1="360" x2="912" y2="360"/>
+  </g>
+
+  <!-- Eyebrow + framing labels -->
+  <text class="mono" x="48" y="64">Studio · Remote · AI-augmented</text>
+  <text class="serif" x="48" y="102" font-size="26">One founder. Shared stack. Long horizon.</text>
+
+  <!-- Centre: founder node -->
+  <g transform="translate(480,240)">
+    <!-- Orbit ring (AI leverage) -->
+    <circle cx="0" cy="0" r="130" class="s-mint" stroke-width="1" stroke-dasharray="2 4" opacity="0.55"/>
+    <circle cx="0" cy="0" r="88"  class="s-mint" stroke-width="1" opacity="0.5"/>
+
+    <!-- Inner glow -->
+    <circle cx="0" cy="0" r="44" fill="#6c8f7a" opacity="0.12"/>
+    <circle cx="0" cy="0" r="28" fill="#6c8f7a" opacity="0.22"/>
+    <!-- Founder dot -->
+    <circle cx="0" cy="0" r="9" class="mint-i"/>
+
+    <!-- AI leverage nodes on inner ring -->
+    <g>
+      <circle cx="0"    cy="-88" r="5" class="mint"/>
+      <circle cx="62"   cy="-62" r="5" class="mint"/>
+      <circle cx="88"   cy="0"   r="5" class="mint"/>
+      <circle cx="62"   cy="62"  r="5" class="mint"/>
+      <circle cx="0"    cy="88"  r="5" class="mint"/>
+      <circle cx="-62"  cy="62"  r="5" class="mint"/>
+      <circle cx="-88"  cy="0"   r="5" class="mint"/>
+      <circle cx="-62"  cy="-62" r="5" class="mint"/>
+    </g>
+
+    <!-- Outer ring: remote collaborators (hollow dots) -->
+    <g>
+      <circle cx="0"     cy="-130" r="4" class="s-ink" stroke-width="1.25"/>
+      <circle cx="92"    cy="-92"  r="4" class="s-ink" stroke-width="1.25"/>
+      <circle cx="130"   cy="0"    r="4" class="s-ink" stroke-width="1.25"/>
+      <circle cx="92"    cy="92"   r="4" class="s-ink" stroke-width="1.25"/>
+      <circle cx="0"     cy="130"  r="4" class="s-ink" stroke-width="1.25"/>
+      <circle cx="-92"   cy="92"   r="4" class="s-ink" stroke-width="1.25"/>
+      <circle cx="-130"  cy="0"    r="4" class="s-ink" stroke-width="1.25"/>
+      <circle cx="-92"   cy="-92"  r="4" class="s-ink" stroke-width="1.25"/>
+    </g>
+  </g>
+
+  <!-- Founder label -->
+  <g>
+    <line x1="490" y1="240" x2="560" y2="240" class="s-ink" stroke-width="1" opacity="0.45"/>
+    <text class="mono" x="566" y="236">Founder</text>
+    <text class="label" x="566" y="252">Dr. Md Diya · 2024</text>
+  </g>
+
+  <!-- AI leverage label -->
+  <g>
+    <line x1="480" y1="152" x2="480" y2="122" class="s-mint" stroke-width="1"/>
+    <text class="mono" x="480" y="112" text-anchor="middle">AI-augmented leverage</text>
+  </g>
+
+  <!-- Remote collaborators label -->
+  <g>
+    <text class="mono" x="480" y="402" text-anchor="middle">Small remote circle</text>
+    <text class="label" x="480" y="418" text-anchor="middle">Shared stack · short meetings · real weekends</text>
+  </g>
+
+  <!-- Left side: at-a-glance strip -->
+  <g transform="translate(48,170)">
+    <text class="mono" x="0" y="0">At a glance</text>
+    <g class="ink-d" font-family="-apple-system, system-ui, sans-serif" font-size="12">
+      <text x="0" y="28">Founded 2024 · Alberta</text>
+      <text x="0" y="52">Bootstrapped · self-funded</text>
+      <text x="0" y="76">14 tools · 5 live</text>
+      <text x="0" y="100">14 languages live</text>
+    </g>
+  </g>
+
+  <!-- Right side: horizon line -->
+  <g transform="translate(720,170)">
+    <text class="mono" x="0" y="0">Horizon</text>
+    <line x1="0" y1="24" x2="192" y2="24" class="s-ink" stroke-width="1"/>
+    <g>
+      <circle cx="0"   cy="24" r="4" class="mint-i"/>
+      <circle cx="64"  cy="24" r="3" class="s-ink" stroke-width="1"/>
+      <circle cx="128" cy="24" r="3" class="s-ink" stroke-width="1"/>
+      <circle cx="192" cy="24" r="4" class="s-ink" stroke-width="1"/>
+    </g>
+    <g class="ink-f" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="0.18em">
+      <text x="0"   y="46">2024</text>
+      <text x="60"  y="46">2030</text>
+      <text x="124" y="46">2036</text>
+      <text x="172" y="46">2044</text>
+    </g>
+    <text class="label" x="0" y="72">Plan to still be shipping in 20 years.</text>
+  </g>
+</svg>

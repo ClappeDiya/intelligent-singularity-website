@@ -70,6 +70,25 @@ export default async function TrustPage({
 
       <div className="px-4 sm:px-6 md:px-8 lg:px-12 pb-20 max-w-[1360px] mx-auto">
 
+        <figure
+          className="mb-14 rounded-[24px] overflow-hidden"
+          style={{
+            border: '1px solid rgba(16,185,129,0.18)',
+            background:
+              'radial-gradient(800px 300px at 50% -20%, rgba(16,185,129,0.08), transparent 70%), var(--color-paper-soft)',
+          }}
+        >
+          <img
+            src="/illustrations/trust-pillars.svg"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className="block w-full h-auto"
+            width={960}
+            height={380}
+          />
+        </figure>
+
         {/* Pillars grid */}
         {pillars.length > 0 && (
           <section aria-labelledby="pillars-heading" className="mb-16">
@@ -78,23 +97,24 @@ export default async function TrustPage({
               {pillars.map((p: any) => (
                 <div
                   key={p.id}
-                  className="rounded-[20px] p-6 md:p-7 flex flex-col gap-4"
-                  style={{ background: 'var(--color-paper-soft)' }}
+                  className="is-card rounded-[20px] p-6 md:p-7 flex flex-col gap-4"
                 >
                   <h3
-                    className="text-[var(--color-paper-ink)]"
+                    className=""
                     style={{
                       fontFamily: 'var(--font-serif)',
                       fontSize: 'clamp(19px, 1.8vw, 22px)',
                       letterSpacing: '-0.02em',
                       fontWeight: 600,
                       lineHeight: 1.2,
+                      color: 'var(--color-paper-ink)',
+                      textWrap: 'balance',
                     }}
                   >
                     {p.heading}
                   </h3>
                   {p.blurb && (
-                    <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(20,20,19,0.76)' }}>
+                    <p className="text-[14.5px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.7)' }}>
                       {p.blurb}
                     </p>
                   )}
@@ -125,13 +145,13 @@ export default async function TrustPage({
         {subprocessors.length > 0 && (
           <section aria-labelledby="subprocessors-heading" className="mb-16">
             <SectionHeading id="subprocessors-heading">Subprocessors</SectionHeading>
-            <p className="text-[14.5px] leading-[1.7] text-[var(--color-cream-dim)] mb-6 max-w-[72ch]">
+            <p className="text-[14.5px] leading-[1.75] mb-6 max-w-[72ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>
               Every third party that may touch your data, what they access, and where they operate.
             </p>
-            <div className="overflow-x-auto rounded-[16px]" style={{ border: '1px solid rgba(246,241,231,0.1)' }}>
+            <div className="overflow-x-auto rounded-[16px]" style={{ border: '1px solid rgba(16,185,129,0.15)' }}>
               <table className="w-full text-[13.5px]" style={{ borderCollapse: 'collapse' }}>
                 <thead>
-                  <tr style={{ borderBottom: '1px solid rgba(246,241,231,0.1)', background: 'rgba(246,241,231,0.04)' }}>
+                  <tr style={{ borderBottom: '1px solid rgba(16,185,129,0.12)', background: 'rgba(16,185,129,0.03)' }}>
                     {['Name', 'Purpose', 'Data accessed', 'Location'].map((col) => (
                       <th
                         key={col}
@@ -141,7 +161,7 @@ export default async function TrustPage({
                           fontSize: '11px',
                           textTransform: 'uppercase',
                           letterSpacing: '0.16em',
-                          color: 'var(--color-mint-ink)',
+                          color: 'var(--color-emerald-ink)',
                           fontWeight: 500,
                         }}
                       >
@@ -154,9 +174,9 @@ export default async function TrustPage({
                   {subprocessors.map((sp: any) => (
                     <tr
                       key={sp.name}
-                      style={{ borderBottom: '1px solid rgba(246,241,231,0.06)' }}
+                      style={{ borderBottom: '1px solid rgba(16,185,129,0.08)' }}
                     >
-                      <td className="px-4 py-3 text-[var(--color-cream)]">
+                      <td className="px-4 py-3" style={{ color: 'var(--color-paper-ink)' }}>
                         {sp.href ? (
                           <OutboundLink href={sp.href} className="underline underline-offset-2">
                             {sp.name}
@@ -165,9 +185,9 @@ export default async function TrustPage({
                           sp.name
                         )}
                       </td>
-                      <td className="px-4 py-3 text-[var(--color-cream-dim)]">{sp.purpose}</td>
-                      <td className="px-4 py-3 text-[var(--color-cream-dim)]">{sp.dataAccessed}</td>
-                      <td className="px-4 py-3 text-[var(--color-cream-dim)]">{sp.location}</td>
+                      <td className="px-4 py-3" style={{ color: 'rgba(17,24,39,0.68)' }}>{sp.purpose}</td>
+                      <td className="px-4 py-3" style={{ color: 'rgba(17,24,39,0.68)' }}>{sp.dataAccessed}</td>
+                      <td className="px-4 py-3" style={{ color: 'rgba(17,24,39,0.68)' }}>{sp.location}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -189,12 +209,11 @@ export default async function TrustPage({
               {certifications.map((cert: any) => (
                 <li
                   key={cert.name}
-                  className="rounded-[16px] p-5"
-                  style={{ background: 'var(--color-paper-soft)' }}
+                  className="is-card rounded-[16px] p-5"
                 >
-                  <div className="font-medium text-[var(--color-cream)]">{cert.name}</div>
+                  <div className="font-semibold" style={{ color: 'var(--color-paper-ink)', fontFamily: 'var(--font-serif)' }}>{cert.name}</div>
                   {cert.issuer && (
-                    <div className="text-[13px] text-[var(--color-cream-dim)] mt-1">{cert.issuer}</div>
+                    <div className="text-[13px] mt-2 label-mono opacity-70">{cert.issuer}</div>
                   )}
                 </li>
               ))}
@@ -205,12 +224,12 @@ export default async function TrustPage({
         {/* Report incident CTA */}
         <section
           className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 mb-10"
-          style={{ background: 'var(--color-paper-ink)', color: 'var(--color-cream)' }}
+          style={{ background: 'var(--color-ink)', color: 'var(--color-cream)', border: '1px solid rgba(16,185,129,0.2)' }}
         >
           <div className="flex-1">
             <div
-              className="text-[12.5px] uppercase mb-2"
-              style={{ fontFamily: 'var(--font-mono)', fontWeight: 500, color: 'var(--color-mint)' }}
+              className="text-[11px] uppercase tracking-[0.1em] text-[var(--color-emerald)] mb-3"
+              style={{ fontFamily: 'var(--font-mono)', fontWeight: 600 }}
             >
               Incident reporting
             </div>
@@ -226,25 +245,29 @@ export default async function TrustPage({
             >
               Found something? Please tell us first.
             </h3>
-            <p className="text-[14.5px] leading-[1.7] text-[var(--color-cream-dim)] max-w-[54ch]">
-              Email security@intelligentsingularityinc.com with a description and reproduction
-              steps. We acknowledge reports within one business day and credit researchers in our
-              post-mortem when a fix ships.
+            <p className="text-[14.5px] leading-[1.7] text-[var(--color-cream-dim)] max-w-[60ch]">
+              Coordinated disclosure is the path we take seriously. Email
+              security@intelligentsingularityinc.com with a description and
+              reproduction steps. We acknowledge reports within one business
+              day, triage within three, and ship a fix on a timeline we agree
+              with you. Researchers are credited by name in our post-mortem
+              when a fix ships — unless you prefer to remain anonymous. We
+              do not threaten or sue good-faith security researchers, full stop.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
               href="mailto:security@intelligentsingularityinc.com"
-              className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full bg-[var(--color-cream)] text-[var(--color-paper-ink)] text-[13px] uppercase"
-              style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+              className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
+              style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg,#059669,#0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
             >
               Report incident
               <span aria-hidden="true">→</span>
             </a>
             <Link
               href="/legal/privacy"
-              className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[13px] uppercase text-[var(--color-cream)]"
-              style={{ fontFamily: 'var(--font-mono)', fontWeight: 500, borderColor: 'rgba(246,241,231,0.24)' }}
+              className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[12px] uppercase font-semibold text-[var(--color-cream)] transition-colors hover:border-[var(--color-emerald)] hover:text-[var(--color-emerald)]"
+              style={{ fontFamily: 'var(--font-mono)', borderColor: 'rgba(16,185,129,0.3)' }}
             >
               Privacy policy
             </Link>
@@ -253,7 +276,7 @@ export default async function TrustPage({
 
         {/* Last reviewed */}
         {reviewDate && (
-          <p className="text-[12.5px] text-[var(--color-cream-dim)]" style={{ fontFamily: 'var(--font-mono)' }}>
+          <p className="text-[12.5px]" style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}>
             Last reviewed: <time dateTime={lastReviewedAt}>{reviewDate}</time>
           </p>
         )}

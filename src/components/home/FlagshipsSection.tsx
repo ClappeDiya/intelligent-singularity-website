@@ -26,17 +26,18 @@ export function FlagshipsSection({ title, lead, flagships, seeAllLine }: Props) 
             <FlagshipCard key={p.slug} product={p} index={i + 1} />
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6" style={{ borderTop: '1px solid rgba(26,22,18,0.08)' }}>
-          <p className="text-[15px] text-[rgba(26,22,18,0.68)] max-w-[52ch] leading-[1.7]">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6" style={{ borderTop: '1px solid rgba(16,185,129,0.12)' }}>
+          <p className="text-[15px] max-w-[52ch] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.65)' }}>
             {seeAllLine}
           </p>
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[11.5px] uppercase tracking-[0.18em] font-semibold transition-colors hover:border-[var(--color-mint)] hover:text-[var(--color-mint)]"
+            className="inline-flex items-center gap-2 px-5 py-[10px] rounded-full text-[11.5px] uppercase font-semibold transition-all hover:-translate-y-0.5"
             style={{
               fontFamily: 'var(--font-mono)',
-              borderColor: 'rgba(26,22,18,0.14)',
-              color: 'var(--color-paper-ink)',
+              background: 'linear-gradient(135deg, #059669, #0d9488)',
+              color: '#fff',
+              boxShadow: '0 4px 14px rgba(16,185,129,0.25)',
             }}
           >
             See the full ecosystem

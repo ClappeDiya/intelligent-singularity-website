@@ -79,28 +79,27 @@ export default async function PostPage({
       />
       <JsonLd id={`post-blogposting-${slug}-${locale}`} data={blogPostingSchema} />
 
-      <header className="px-4 sm:px-6 md:px-8 lg:px-12 pt-[96px] md:pt-[140px] pb-10 md:pb-14">
+      <header className="px-4 sm:px-6 md:px-8 lg:px-12 pt-[96px] md:pt-[140px] pb-12 md:pb-16">
         <div className="max-w-[760px] mx-auto">
           <div
-            className="text-[11px] uppercase tracking-[0.24em] mb-6"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+            className="label-mono mb-6"
           >
             {eyebrow}
           </div>
           <h1
-            className="font-normal text-[clamp(2rem,5vw,3.5rem)] leading-[1.08] tracking-[-0.02em] text-[var(--color-cream)]"
-            style={{ fontFamily: 'var(--font-serif)' }}
+            className="font-normal text-[clamp(2rem,5vw,3.5rem)] leading-[1.08] tracking-[-0.02em]"
+            style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-paper-ink)', textWrap: 'balance' }}
           >
             {post.title}
           </h1>
           {post.subtitle ? (
-            <p className="mt-4 text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.65] text-[var(--color-cream-dim)]">
+            <p className="mt-4 text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.68)' }}>
               {post.subtitle}
             </p>
           ) : null}
           <div
             className="mt-6 flex flex-wrap gap-x-4 gap-y-1 text-[12px]"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-cream-dim)' }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
           >
             {post.author?.name ? <span>{post.author.name}</span> : null}
             {post.publishedAt ? <span>{formatDate(post.publishedAt)}</span> : null}
@@ -114,10 +113,9 @@ export default async function PostPage({
           <RichTextBody data={post.body} />
 
           {sources.length > 0 ? (
-            <section className="mt-14 pt-8 border-t" style={{ borderColor: 'rgba(246,241,231,0.12)' }}>
+            <section className="mt-14 pt-8 border-t" style={{ borderColor: 'rgba(16,185,129,0.15)' }}>
               <h2
-                className="text-[11px] uppercase tracking-[0.22em] mb-5"
-                style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+                className="label-mono mb-5"
               >
                 Sources
               </h2>
@@ -126,7 +124,7 @@ export default async function PostPage({
                   <li key={i} className="flex gap-3 text-[14px]">
                     <span
                       className="shrink-0 text-[11px] pt-[3px]"
-                      style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-cream-dim)' }}
+                      style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.45)' }}
                     >
                       [{i + 1}]
                     </span>
@@ -134,7 +132,8 @@ export default async function PostPage({
                       href={s.href}
                       target="_blank"
                       rel="noreferrer external"
-                      className="text-[var(--color-cream-dim)] underline underline-offset-2 hover:text-[var(--color-cream)]"
+                      className="underline underline-offset-2 transition-colors hover:text-[var(--color-emerald-ink)]"
+                      style={{ color: 'rgba(17,24,39,0.62)' }}
                     >
                       {s.label}
                     </a>
@@ -147,8 +146,7 @@ export default async function PostPage({
           <div className="mt-14">
             <Link
               href={`/${locale}/insights`}
-              className="text-[12px] uppercase tracking-[0.18em]"
-              style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+              className="label-mono"
             >
               ← All insights
             </Link>

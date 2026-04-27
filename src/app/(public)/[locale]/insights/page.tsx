@@ -32,7 +32,7 @@ function TagChip({ label }: { label: string }) {
   return (
     <span
       className="inline-block px-2 py-px rounded-full text-[11px] uppercase tracking-[0.14em]"
-      style={{ fontFamily: 'var(--font-mono)', background: 'rgba(168,230,207,0.14)', color: 'var(--color-mint)' }}
+      style={{ fontFamily: 'var(--font-mono)', background: 'rgba(16,185,129,0.1)', color: 'var(--color-emerald-ink)' }}
     >
       {label}
     </span>
@@ -44,38 +44,38 @@ function FeatureCard({ post, locale }: { post: any; locale: string }) {
   return (
     <Link
       href={`/${locale}/insights/${post.slug}`}
-      className="block rounded-2xl p-8 md:p-10 border transition-colors hover:border-[rgba(246,241,231,0.3)]"
-      style={{ borderColor: 'rgba(246,241,231,0.14)', background: 'rgba(246,241,231,0.03)' }}
+      className="block rounded-2xl p-8 md:p-10 border transition-all hover:border-[rgba(16,185,129,0.35)] hover:shadow-[0_8px_32px_rgba(16,185,129,0.08)]"
+      style={{ borderColor: 'rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
     >
       <div className="flex gap-3 items-center mb-5 flex-wrap">
         {firstTag ? <TagChip label={firstTag} /> : null}
         <span
           className="text-[12px]"
-          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-cream-dim)' }}
+          style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
         >
           {formatDate(post.publishedAt)}
         </span>
         {post.readingTime ? (
           <span
             className="text-[12px]"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-cream-dim)' }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
           >
             {post.readingTime} min read
           </span>
         ) : null}
       </div>
       <h2
-        className="text-[clamp(1.6rem,3.5vw,2.5rem)] leading-[1.1] tracking-[-0.02em] text-[var(--color-cream)] mb-3"
-        style={{ fontFamily: 'var(--font-serif)' }}
+        className="text-[clamp(1.6rem,3.5vw,2.5rem)] leading-[1.1] tracking-[-0.02em] mb-3"
+        style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-paper-ink)', textWrap: 'balance' }}
       >
         {post.title}
       </h2>
       {post.subtitle ? (
-        <p className="text-[16px] leading-[1.65] text-[var(--color-cream-dim)] max-w-[64ch]">{post.subtitle}</p>
+        <p className="text-[16px] leading-[1.65] max-w-[64ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>{post.subtitle}</p>
       ) : null}
       <div
         className="mt-6 text-[12px] uppercase tracking-[0.18em]"
-        style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+        style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
       >
         Read →
       </div>
@@ -88,8 +88,8 @@ function PostCard({ post, locale }: { post: any; locale: string }) {
   return (
     <Link
       href={`/${locale}/insights/${post.slug}`}
-      className="block rounded-xl p-6 border transition-colors hover:border-[rgba(246,241,231,0.3)]"
-      style={{ borderColor: 'rgba(246,241,231,0.10)', background: 'rgba(246,241,231,0.02)' }}
+      className="block rounded-xl p-6 border transition-all hover:border-[rgba(16,185,129,0.3)] hover:shadow-[0_4px_16px_rgba(16,185,129,0.07)]"
+      style={{ borderColor: 'rgba(16,185,129,0.12)', background: 'rgba(255,255,255,0.92)' }}
     >
       {firstTag ? (
         <div className="mb-3">
@@ -97,17 +97,17 @@ function PostCard({ post, locale }: { post: any; locale: string }) {
         </div>
       ) : null}
       <h3
-        className="text-[18px] leading-[1.25] tracking-[-0.01em] text-[var(--color-cream)] mb-2"
-        style={{ fontFamily: 'var(--font-serif)' }}
+        className="text-[18px] leading-[1.25] tracking-[-0.01em] mb-2"
+        style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-paper-ink)', textWrap: 'balance' }}
       >
         {post.title}
       </h3>
       {post.subtitle ? (
-        <p className="text-[14px] leading-[1.6] text-[var(--color-cream-dim)]">{post.subtitle}</p>
+        <p className="text-[14px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.66)' }}>{post.subtitle}</p>
       ) : null}
       <div
         className="mt-4 flex gap-3 text-[11px]"
-        style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-cream-dim)' }}
+        style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.5)' }}
       >
         <span>{formatDate(post.publishedAt)}</span>
         {post.readingTime ? <span>{post.readingTime} min</span> : null}
@@ -157,12 +157,12 @@ export default async function InsightsIndex({
       />
 
       <PageHero
-        eyebrow="INSIGHTS"
+        eyebrow="INSIGHTS · FIELD NOTES FROM THE STUDIO"
         title="Thinking in public."
-        lede="Access, alignment, and the long arc of artificial intelligence — written to be understood, not to impress."
+        lede="Field notes on universal access, AI-augmented engineering, the offline 2.2 billion, and the long arc of artificial intelligence — written to be understood, not to impress. We write slowly. Every claim links to a source. No clickbait, no thought-leadership fog."
       />
 
-      <p className="mb-8 text-[13px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}>
+      <p className="mb-10 text-[13px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}>
         Subscribe:{' '}
         <Link href={`/${locale}/insights/feed.xml`}>/insights/feed.xml</Link>
       </p>
@@ -193,23 +193,23 @@ export default async function InsightsIndex({
               {currentPage > 1 ? (
                 <Link
                   href={`/${locale}/insights?page=${currentPage - 1}`}
-                  className="text-[13px] uppercase tracking-[0.14em]"
-                  style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+                  className="text-[13px] uppercase tracking-[0.14em] transition-opacity hover:opacity-70"
+                  style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
                 >
                   ← Newer
                 </Link>
               ) : null}
               <span
                 className="text-[13px]"
-                style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-cream-dim)' }}
+                style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
               >
                 {currentPage} / {totalPages}
               </span>
               {currentPage < totalPages ? (
                 <Link
                   href={`/${locale}/insights?page=${currentPage + 1}`}
-                  className="text-[13px] uppercase tracking-[0.14em]"
-                  style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint)' }}
+                  className="text-[13px] uppercase tracking-[0.14em] transition-opacity hover:opacity-70"
+                  style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
                 >
                   Older →
                 </Link>

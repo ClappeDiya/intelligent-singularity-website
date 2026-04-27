@@ -51,9 +51,19 @@ function walk(dir) {
 const STRING_RE = /["'`]([^"'`\n]{40,})["'`]/g;
 const MD_PARA_RE = /(?:^|\n)([^\n#`>|\-*]{60,})(?:\n|$)/g;
 
+const ENGLISH_PUNCT = /[A-Za-z0-9\s.,;:!?'"()\-—–…“”‘’/&%$@#+=*\[\]{}<>]/;
+function isNonEnglish(text) {
+  let nonEnglishChars = 0;
+  for (const ch of text) {
+    if (!ENGLISH_PUNCT.test(ch)) nonEnglishChars++;
+  }
+  return nonEnglishChars > Math.max(2, text.length * 0.01);
+}
+
 const failures = [];
 const files = walk(ROOT);
 for (const f of files) {
+  if (f.endsWith('translations.ts') || f.includes('/translations/')) continue;
   const src = readFileSync(f, 'utf8');
   const isMd = f.endsWith('.md') || f.endsWith('.txt');
   const re = isMd ? MD_PARA_RE : STRING_RE;
@@ -61,6 +71,7 @@ for (const f of files) {
   while ((m = re.exec(src))) {
     const txt = m[1].trim();
     if (txt.split(/\s+/).length < 12) continue;
+    if (isNonEnglish(txt)) continue;
     const g = grade(txt);
     if (g > MAX) {
       failures.push({ file: f, grade: g.toFixed(1), snippet: txt.slice(0, 80) + '...' });

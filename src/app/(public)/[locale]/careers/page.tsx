@@ -1,29 +1,11 @@
 import Link from 'next/link';
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
-
-type Value = { title: string; body: string };
-
-const HOW_WE_WORK: Value[] = [
-  {
-    title: 'Small team, shared stack',
-    body: 'One codebase, one deployment model, one shared platform. You will not spend your first month learning fifteen tools and five meetings per day.',
-  },
-  {
-    title: 'AI-augmented, not AI-replaced',
-    body: 'We lean hard on AI for leverage, but humans write every line that ships. Craft matters. Code review matters. Ownership matters.',
-  },
-  {
-    title: 'Remote, honestly',
-    body: 'We are remote because it is the right model for the work, not because it is trendy. Meetings are short and few. Writing is a craft we take seriously.',
-  },
-  {
-    title: 'Made for the long game',
-    body: 'The studio is bootstrapped and not for sale. We plan to be shipping in twenty years. That means sustainable pace and real weekends.',
-  },
-];
+import { fetchCareersPage } from '@/lib/payload';
+import { CAREERS_PAGE_SEED } from '@/lib/seed/new-pages/careers';
 
 export async function generateMetadata({
   params,
@@ -40,14 +22,15 @@ export async function generateMetadata({
   });
 }
 
-export default async function CareersPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+async function CareersContent({ locale }: { locale: string }) {
+  const cmsPage = (await fetchCareersPage(locale).catch(() => null)) as any;
+  const page: any = cmsPage ?? CAREERS_PAGE_SEED;
+
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/careers',
     name: 'Careers | Intelligent Singularity',
-    description:
-      'How the studio hires and what it is like to work at Intelligent Singularity.',
+    description: 'How the studio hires and what it is like to work at Intelligent Singularity.',
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
@@ -61,14 +44,30 @@ export default async function CareersPage({ params }: { params: Promise<{ locale
     <article className="page-shell-wide">
       <JsonLd id={`careers-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`careers-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">Careers · Join the studio</div>
-      <h1 className="page-title">A small team, with a long horizon.</h1>
-      <p className="page-lead">
-        We hire slowly and carefully. When a role is open, it is posted here.
-        If nothing is open, the best introductions still get a reply.
-      </p>
+      <div className="page-label">{page.eyebrow}</div>
+      <h1 className="page-title">{page.title}</h1>
+      <p className="page-lead">{page.lede}</p>
 
-      <section aria-labelledby="how-heading" className="mb-14">
+      <figure
+        className="mb-14 rounded-[24px] overflow-hidden"
+        style={{
+          border: '1px solid rgba(16,185,129,0.18)',
+          background:
+            'radial-gradient(800px 280px at 50% -20%, rgba(16,185,129,0.08), transparent 70%), var(--color-paper-soft)',
+        }}
+      >
+        <img
+          src="/illustrations/careers-horizon.svg"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          className="block w-full h-auto"
+          width={960}
+          height={360}
+        />
+      </figure>
+
+      <section aria-labelledby="how-heading" className="mb-20">
         <h2
           id="how-heading"
           className="mb-6 text-[var(--color-paper-ink)]"
@@ -83,26 +82,95 @@ export default async function CareersPage({ params }: { params: Promise<{ locale
           How we actually work
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-          {HOW_WE_WORK.map((v) => (
-            <div
-              key={v.title}
-              className="rounded-[20px] p-6 md:p-7"
-              style={{ background: 'var(--color-paper-warm)' }}
-            >
+          {(page.howWeWork ?? []).map((v: any) => (
+            <div key={v.title} className="is-card rounded-[20px] p-7 md:p-8">
               <h3
-                className="mb-2 text-[var(--color-paper-ink)]"
+                className="mb-3"
                 style={{
                   fontFamily: 'var(--font-serif)',
                   fontSize: 'clamp(19px, 1.8vw, 22px)',
                   letterSpacing: '-0.02em',
                   fontWeight: 600,
                   lineHeight: 1.2,
+                  color: 'var(--color-paper-ink)',
+                  textWrap: 'balance',
                 }}
               >
                 {v.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(20,20,19,0.76)' }}>
+              <p className="text-[14.5px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.7)' }}>
                 {v.body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="family-heading" className="mb-20">
+        <h2
+          id="family-heading"
+          className="mb-3 text-[var(--color-paper-ink)]"
+          style={{
+            fontFamily: 'var(--font-serif)',
+            fontSize: 'clamp(26px, 3vw, 38px)',
+            letterSpacing: '-0.03em',
+            lineHeight: 1.05,
+            fontWeight: 600,
+          }}
+        >
+          What you would actually work on
+        </h2>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+          Intelligent Singularity is the parent company of a growing family of platforms. New hires rarely work on a single product for an entire year — most cycle across two or three, depending on what is shipping and what needs the most senior attention that quarter.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+          {(page.productFamily ?? []).map((p: any) => (
+            <div key={p.name} className="is-card rounded-[16px] p-5 flex flex-col gap-1">
+              <div
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '12px',
+                  letterSpacing: '0.06em',
+                  textTransform: 'uppercase',
+                  color: 'var(--color-emerald-ink)',
+                  fontWeight: 600,
+                }}
+              >
+                {p.name}
+              </div>
+              <p className="text-[14px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+                {p.line}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="process-heading" className="mb-20">
+        <h2
+          id="process-heading"
+          className="mb-3 text-[var(--color-paper-ink)]"
+          style={{
+            fontFamily: 'var(--font-serif)',
+            fontSize: 'clamp(26px, 3vw, 38px)',
+            letterSpacing: '-0.03em',
+            lineHeight: 1.05,
+            fontWeight: 600,
+          }}
+        >
+          How we hire, end to end
+        </h2>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+          Four steps. Maximum two weeks from first email to written offer if both sides move quickly. No surprise stages, no unpaid take-homes, no &ldquo;culture fit&rdquo; rejections without a written reason.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+          {(page.process ?? []).map((p: any) => (
+            <div key={p.stage} className="is-card rounded-[20px] p-6 md:p-7">
+              <div className="label-mono mb-2" style={{ color: 'var(--color-emerald-ink)' }}>
+                {p.stage}
+              </div>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+                {p.what}
               </p>
             </div>
           ))}
@@ -111,17 +179,15 @@ export default async function CareersPage({ params }: { params: Promise<{ locale
 
       <section
         aria-labelledby="openings-heading"
-        className="mb-14 rounded-[24px] p-8 md:p-10"
-        style={{ background: 'var(--color-paper-soft)' }}
+        className="mb-20 rounded-[24px] p-8 md:p-12"
+        style={{
+          border: '1px solid rgba(16,185,129,0.15)',
+          background: 'linear-gradient(180deg, rgba(240,253,244,0.9) 0%, rgba(255,255,255,0.95) 100%)',
+        }}
       >
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
           <div>
-            <div
-              className="text-[12.5px] uppercase text-[var(--color-mint)] mb-2"
-              style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
-            >
-              Open roles
-            </div>
+            <div className="label-mono mb-2">{page.openings?.heading ?? 'Open roles'}</div>
             <h2
               id="openings-heading"
               className="text-[var(--color-paper-ink)]"
@@ -133,73 +199,68 @@ export default async function CareersPage({ params }: { params: Promise<{ locale
                 fontWeight: 600,
               }}
             >
-              Currently hiring for&hellip; nothing.
+              {page.openings?.currentlyHiringText}
             </h2>
           </div>
-          <div
-            className="text-[12.5px] uppercase text-[rgba(20,20,19,0.56)]"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
-          >
+          <div className="label-mono opacity-60">
             Updated {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
           </div>
         </div>
-        <p
-          className="text-[15.5px] leading-[1.75] max-w-[60ch]"
-          style={{ color: 'rgba(20,20,19,0.74)' }}
-        >
-          There are no open roles at this moment. This line is not decoration — we
-          keep it honest. When something opens, it is a real role with a real
-          scope, salary range, and a named hiring manager.
+        <p className="text-[15.5px] leading-[1.75] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+          {page.openings?.note}
         </p>
       </section>
 
       <section
-        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
-        style={{ background: 'var(--color-paper-warm)' }}
+        className="rounded-[24px] p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-8"
+        style={{
+          border: '1px solid rgba(16,185,129,0.18)',
+          background: 'linear-gradient(135deg, rgba(16,185,129,0.06), rgba(20,184,166,0.04))',
+        }}
       >
         <div className="flex-1">
-          <div
-            className="text-[12.5px] uppercase text-[var(--color-mint)] mb-2"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
-          >
-            Introduce yourself anyway
-          </div>
+          <div className="label-mono mb-3">{page.introduceYourself?.eyebrow}</div>
           <h3
-            className="mb-2 text-[var(--color-paper-ink)]"
+            className="mb-3"
             style={{
               fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(22px, 2.4vw, 30px)',
               letterSpacing: '-0.025em',
               fontWeight: 600,
               lineHeight: 1.15,
+              color: 'var(--color-paper-ink)',
+              textWrap: 'balance',
             }}
           >
-            The best hires we ever made wrote us before there was a role.
+            {page.introduceYourself?.heading}
           </h3>
-          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(20,20,19,0.72)' }}>
-            Tell us what you have shipped and what you want to build next. Two
-            paragraphs beats a polished CV. A real reply comes from a human,
-            typically within two business days.
+          <p className="text-[14.5px] leading-[1.75] max-w-[52ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+            {page.introduceYourself?.body}
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3">
           <a
-            href="mailto:careers@intelligentsingularityinc.com"
-            className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full bg-[var(--color-paper-ink)] text-[var(--color-cream)] text-[13px] uppercase"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
+            href={`mailto:${page.introduceYourself?.email}`}
+            className="btn-primary"
+            style={{ fontFamily: 'var(--font-mono)' }}
           >
             careers@…
             <span aria-hidden="true">→</span>
           </a>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[13px] uppercase text-[var(--color-paper-ink)]"
-            style={{ fontFamily: 'var(--font-mono)', fontWeight: 500, borderColor: 'rgba(20,20,19,0.18)' }}
-          >
+          <Link href="/contact" className="btn-outline" style={{ fontFamily: 'var(--font-mono)' }}>
             Contact form
           </Link>
         </div>
       </section>
     </article>
+  );
+}
+
+export default async function CareersPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return (
+    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+      <CareersContent locale={locale} />
+    </Suspense>
   );
 }

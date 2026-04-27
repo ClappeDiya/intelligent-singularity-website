@@ -7,6 +7,22 @@ import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
 
+function formatLastUpdated(value: string | Date | null | undefined, locale: string): string {
+  if (!value) return '';
+  const date = typeof value === 'string' ? new Date(value) : value;
+  if (Number.isNaN(date.getTime())) return String(value);
+  try {
+    return new Intl.DateTimeFormat(locale, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      timeZone: 'UTC',
+    }).format(date);
+  } catch {
+    return date.toISOString().slice(0, 10);
+  }
+}
+
 async function LegalContent({ locale, slug }: { locale: string; slug: string }) {
   const page = await fetchLegalPage(slug);
   if (!page) notFound();
@@ -30,8 +46,11 @@ async function LegalContent({ locale, slug }: { locale: string; slug: string }) 
       <div className="page-label">Legal</div>
       <h1 className="page-title">{page.title}</h1>
       <LexicalRenderer content={page.body} className="editorial-richtext" />
-      <div className="mt-12 font-[var(--font-mono)] text-[11px] text-[rgba(26,22,18,0.5)]">
-        Last updated: {page.lastUpdated}
+      <div
+        className="mt-14 text-[11px]"
+        style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.45)', borderTop: '1px solid rgba(16,185,129,0.12)', paddingTop: '1.25rem' }}
+      >
+        Last updated: {formatLastUpdated(page.lastUpdated, locale)}
       </div>
     </article>
   );

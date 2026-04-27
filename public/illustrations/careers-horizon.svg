@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="careers-horizon-title careers-horizon-desc">
+  <title id="careers-horizon-title">A twenty-year horizon</title>
+  <desc id="careers-horizon-desc">The studio is bootstrapped and plans to still be shipping in 2044 — a single meridian arc marking a sustainable pace across two decades.</desc>
+  <defs>
+    <style>
+      .ink   { fill: #141413; }
+      .ink-d { fill: rgba(20,20,19,0.62); }
+      .ink-f { fill: rgba(20,20,19,0.38); }
+      .mint  { fill: #6c8f7a; }
+      .mint-i{ fill: #3e6750; }
+      .s-ink { stroke: rgba(20,20,19,0.68); fill: none; }
+      .s-mint{ stroke: #6c8f7a; fill: none; }
+      .s-faint{stroke: rgba(20,20,19,0.14); fill: none; }
+      .label { font-family: -apple-system, system-ui, "Segoe UI", sans-serif; font-size: 12px; fill: rgba(20,20,19,0.66); }
+      .mono  { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; fill: #3e6750; }
+      .serif { font-family: ui-serif, Georgia, "Times New Roman", serif; font-weight: 600; fill: #141413; }
+    </style>
+    <linearGradient id="arcFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#3e6750" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#6c8f7a" stop-opacity="0.32"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Eyebrow + framing -->
+  <text class="mono" x="48" y="54">Careers · Long horizon</text>
+  <text class="serif" x="48" y="90" font-size="24">Sustainable pace. Twenty-year plan.</text>
+
+  <!-- Baseline meridian -->
+  <line x1="96" y1="230" x2="864" y2="230" class="s-faint" stroke-width="1"/>
+
+  <!-- Arc representing horizon -->
+  <path d="M96,230 Q480,40 864,230" class="s-mint" stroke-width="1.5" fill="none"/>
+  <path d="M96,230 Q480,60 864,230" stroke="url(#arcFade)" stroke-width="2" fill="none" opacity="0.35"/>
+
+  <!-- Milestone dots -->
+  <g>
+    <!-- 2024 -->
+    <circle cx="96"  cy="230" r="7" class="mint-i"/>
+    <!-- 2030 -->
+    <circle cx="288" cy="148" r="4.5" class="s-ink" stroke-width="1.25" fill="#faf9f5"/>
+    <!-- 2036 -->
+    <circle cx="480" cy="112" r="4.5" class="s-ink" stroke-width="1.25" fill="#faf9f5"/>
+    <!-- 2040 -->
+    <circle cx="672" cy="148" r="4.5" class="s-ink" stroke-width="1.25" fill="#faf9f5"/>
+    <!-- 2044 -->
+    <circle cx="864" cy="230" r="7" class="s-mint" stroke-width="2" fill="#faf9f5"/>
+  </g>
+
+  <!-- Year labels under baseline -->
+  <g>
+    <text class="mono" x="96"  y="258" text-anchor="middle">2024</text>
+    <text class="mono" x="288" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2030</text>
+    <text class="mono" x="480" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2036</text>
+    <text class="mono" x="672" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2040</text>
+    <text class="mono" x="864" y="258" text-anchor="middle">2044</text>
+  </g>
+
+  <!-- Milestone callouts -->
+  <g>
+    <text class="label" x="96"  y="280" text-anchor="middle">Founded</text>
+    <text class="label" x="96"  y="296" text-anchor="middle" fill="rgba(20,20,19,0.42)">Alberta, Canada</text>
+
+    <text class="label" x="864" y="280" text-anchor="middle">Still shipping</text>
+    <text class="label" x="864" y="296" text-anchor="middle" fill="rgba(20,20,19,0.42)">Same mission, older code</text>
+  </g>
+
+  <!-- Stacked principles on the left -->
+  <g transform="translate(48,160)">
+    <g class="mono">
+      <text x="0" y="0">How we hire</text>
+    </g>
+    <g class="ink-d" font-family="-apple-system, system-ui, sans-serif" font-size="12">
+      <text x="0" y="22">Small · shared stack</text>
+      <text x="0" y="40">AI-augmented, not replaced</text>
+      <text x="0" y="58">Remote, honestly</text>
+      <text x="0" y="76">Real weekends</text>
+    </g>
+  </g>
+
+  <!-- Right side: callout box -->
+  <g transform="translate(704,144)">
+    <rect x="0" y="0" width="200" height="72" rx="12" fill="rgba(108,143,122,0.08)" stroke="rgba(108,143,122,0.32)" stroke-width="1"/>
+    <text class="mono" x="16" y="22">Open roles</text>
+    <text class="serif" x="16" y="48" font-size="20">Zero · today</text>
+    <text class="label" x="16" y="62">Written notes still land.</text>
+  </g>
+</svg>

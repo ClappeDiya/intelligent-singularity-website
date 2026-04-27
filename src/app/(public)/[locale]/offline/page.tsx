@@ -20,11 +20,10 @@ export async function generateMetadata({
 
 export default function OfflinePage() {
   return (
-    <section className="min-h-[calc(100vh-52px)] flex flex-col items-center justify-center gap-6 px-6 py-20">
+    <section className="min-h-[100dvh] flex flex-col items-center justify-center gap-8 px-6 py-24">
       <MeridianMark size={72} />
       <div
-        className="text-[11px] uppercase tracking-[0.3em] text-[var(--color-mint)]"
-        style={{ fontFamily: 'var(--font-mono)' }}
+        className="label-mono"
       >
         No connection · You are offline
       </div>
@@ -46,7 +45,7 @@ export default function OfflinePage() {
           fontFamily: 'var(--font-serif)',
           fontSize: 'clamp(17px, 1.6vw, 20px)',
           lineHeight: 1.55,
-          color: 'rgba(26,22,18,0.7)',
+          color: 'rgba(17,24,39,0.65)',
         }}
       >
         Universal access is the brief. This site keeps working without a connection — every page you
@@ -55,12 +54,8 @@ export default function OfflinePage() {
       </p>
       <Link
         href="/"
-        className="mt-4 inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[11px] uppercase tracking-[0.2em] font-semibold"
-        style={{
-          fontFamily: 'var(--font-mono)',
-          borderColor: 'rgba(26,22,18,0.18)',
-          color: 'var(--color-paper-ink)',
-        }}
+        className="btn-outline mt-2"
+        style={{ fontFamily: 'var(--font-mono)' }}
       >
         Return to the home page
         <span aria-hidden="true">→</span>

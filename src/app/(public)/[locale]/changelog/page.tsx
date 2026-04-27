@@ -66,12 +66,12 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
       />
 
       <PageHero
-        eyebrow="CHANGELOG"
+        eyebrow="CHANGELOG · CORPORATE SITE"
         title="What changed, in order."
-        lede="Every visible change we have made to this site, with the release date and the commit behind it."
+        lede="Every visible change we have made to this corporate site, dated and tied to the commit behind it. Each product in the Clap ecosystem keeps its own changelog on its own domain — this page is the parent-company front door, nothing more, nothing hidden."
       />
 
-      <p className="mb-8 text-[13px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-mint-ink)' }}>
+      <p className="mb-10 text-[13px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}>
         Subscribe: <Link href={`/${locale}/changelog/feed.xml`}>/changelog/feed.xml</Link>
       </p>
 
@@ -83,7 +83,7 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
           linkText="View the repository"
         />
       ) : (
-        <ol className="flex flex-col gap-10 list-none p-0">
+        <ol className="flex flex-col gap-14 list-none p-0">
           {releases.map((r: any) => (
             <TimelineEntry
               key={r.slug}
@@ -114,7 +114,7 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
                     <li key={i}>
                       <span
                         className="inline-block mr-2 px-2 py-px rounded-full text-[11px] uppercase"
-                        style={{ fontFamily: 'var(--font-mono)', background: 'rgba(168,230,207,0.14)', color: 'var(--color-mint-ink)' }}
+                        style={{ fontFamily: 'var(--font-mono)', background: 'rgba(16,185,129,0.1)', color: 'var(--color-emerald-ink)' }}
                       >
                         {c.type}
                       </span>

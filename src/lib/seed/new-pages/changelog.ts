@@ -49,9 +49,9 @@ export const CHANGELOG_SEED = [
     releaseDate: '2026-04-17T00:00:00.000Z',
     gitTag: 'pre-v1.0',
     gitSha: '0e73599',
-    title: 'Refreshed navigation, trust pages, honest hosting claims',
+    title: 'Fresh top navigation, full trust pages, and an honest hosting story',
     summary:
-      'We rebuilt the top nav and added FAQ, Security, Pricing, Press, Careers, and Changelog pages. We also dropped the "100% renewable" claim. The site now says we run one VPS on the Alberta grid.',
+      'We rebuilt the top navigation bar so the full picture of the studio is reachable from any page. We added six new sections: Frequently Asked Questions, Security, Pricing, Press, Careers, and a public Changelog. We also dropped the old "one hundred percent renewable" claim from the green page, because we could not back it up yet with a third-party verification. The site now says plainly that we run one virtual server on the Alberta grid and are watching for a cleaner option.',
     changes: [
       { type: 'changed', entry: 'Site' },
       { type: 'changed', entry: 'Transparency' },
@@ -66,9 +66,9 @@ export const CHANGELOG_SEED = [
     releaseDate: '2026-04-15T00:00:00.000Z',
     gitTag: 'pre-v1.0',
     gitSha: '0e73599',
-    title: 'Pruned experimental tools from the public portfolio',
+    title: 'Portfolio trimmed to the tools that are ready for real users',
     summary:
-      'Removed nine tools that were still experimental and not ready for public use. The portfolio now shows fourteen products, each with an honest status label.',
+      'We took nine tools off the public portfolio for now. They are still in test mode. The page now lists fourteen products. Each one shows a clear label. You can see where it sits at a glance: in production, in staging, or still in the studio.',
     changes: [{ type: 'changed', entry: 'Portfolio' }],
     authors: [{ username: 'md' }],
     status: 'published',
@@ -80,9 +80,9 @@ export const CHANGELOG_SEED = [
     releaseDate: '2026-04-12T00:00:00.000Z',
     gitTag: 'pre-v1.0',
     gitSha: 'aee1bf6',
-    title: 'Published the full legal set',
+    title: 'The full legal set is now a proper set of documents',
     summary:
-      'We turned the Privacy Policy, Terms, Accessibility, and Cookie pages from stubs into real docs. Each one now has headings, lists, and a direct contact address.',
+      'The Privacy, Terms, Accessibility, and Cookies pages went from short stubs to full plain-English documents. Each page now has clear headings and short lists. Each page is graded for an eighth-grade reader. Each page lists its own contact email. Each page tells you what rights you have and how to use them.',
     changes: [
       { type: 'changed', entry: 'Legal' },
       { type: 'changed', entry: 'Privacy' },
@@ -97,9 +97,9 @@ export const CHANGELOG_SEED = [
     releaseDate: '2026-04-01T00:00:00.000Z',
     gitTag: 'pre-v1.0',
     gitSha: '14180d3',
-    title: 'Fourteen-language localisation went live',
+    title: 'The site now speaks fourteen languages from the first click',
     summary:
-      'All public pages now load in fourteen languages. The set includes Arabic, Urdu, Bengali, Hindi, Hausa, Swahili, and Yoruba. Use the language wheel at the foot of any page to switch.',
+      'Every public page loads in any of fourteen languages on the day it ships. The set is wide on purpose and includes Arabic and Urdu as right-to-left scripts, along with Bengali, Hindi, Hausa, Swahili, Yoruba, Simplified Chinese, French, Spanish, Portuguese, Russian, Indonesian, and English. Use the language wheel at the foot of any page to switch. Your choice is remembered for the next visit.',
     changes: [{ type: 'changed', entry: 'Localisation' }],
     authors: [{ username: 'md' }],
     status: 'published',
@@ -111,9 +111,9 @@ export const CHANGELOG_SEED = [
     releaseDate: '2026-03-20T00:00:00.000Z',
     gitTag: 'pre-v1.0',
     gitSha: '2ddc49b',
-    title: 'Per-route bundle budget enforced in CI',
+    title: 'Every page now has a fifty-kilobyte first-paint ceiling',
     summary:
-      'Each route now has a fifty-kilobyte gzip cap. CI checks this on every pull request. If a PR breaks the cap, the build fails. No bypass, no exceptions.',
+      'Every route in the site is capped at fifty kilobytes of gzipped code on first paint. The build pipeline checks the number on every pull request. If a change breaks the ceiling, the build stops. There is no setting to switch it off, because a small page is the easiest climate promise we can keep.',
     changes: [
       { type: 'changed', entry: 'Performance' },
       { type: 'changed', entry: 'Green' },

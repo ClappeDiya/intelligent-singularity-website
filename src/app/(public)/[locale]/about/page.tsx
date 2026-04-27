@@ -6,16 +6,20 @@ import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
+import { EcosystemTree } from '@/components/illustrations/EcosystemTree';
 
 type MetaRow = { label: string; value: string };
 
 const META: MetaRow[] = [
+  { label: 'Legal entity', value: 'Intelligent Singularity Inc.' },
   { label: 'Founded', value: '2024 · Alberta, Canada' },
+  { label: 'Founder', value: 'Dr. Md Diya, MD' },
+  { label: 'Structure', value: 'Parent of the Clap ecosystem' },
   { label: 'Operating model', value: 'Small, remote, AI-augmented' },
-  { label: 'Capital', value: 'Bootstrapped · Self-funded' },
-  { label: 'Portfolio', value: '14 tools, 5 shipping live' },
-  { label: 'Languages', value: '14 live · more in seed' },
-  { label: 'Footprint', value: 'Sub-50 KB pages · zero trackers' },
+  { label: 'Capital', value: 'Bootstrapped · self-funded · not for sale' },
+  { label: 'Portfolio', value: 'A growing family of platforms' },
+  { label: 'Languages', value: '14 shipping locales' },
+  { label: 'Footprint', value: '≤ 50 KB per page · zero trackers' },
 ];
 
 async function AboutContent({ locale }: { locale: string }) {
@@ -42,67 +46,97 @@ async function AboutContent({ locale }: { locale: string }) {
       <div className="page-label">About · The studio</div>
       <h1 className="page-title">{about.title}</h1>
       <p className="page-lead">{about.lead}</p>
+      <figure
+        className="mb-14 rounded-[24px] overflow-hidden"
+        style={{
+          border: '1px solid rgba(16,185,129,0.18)',
+          background:
+            'radial-gradient(900px 340px at 50% -20%, rgba(16,185,129,0.1), transparent 70%), var(--color-paper-soft)',
+        }}
+      >
+        <img
+          src="/illustrations/about-studio.svg"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          className="block w-full h-auto"
+          width={960}
+          height={480}
+        />
+      </figure>
       <div className="grid grid-cols-1 lg:grid-cols-[1.6fr_.9fr] gap-12 lg:gap-20">
         <div>
           <LexicalRenderer content={about.founderStory} className="editorial-richtext mb-10" />
           <p
             className="text-[15px] leading-[1.9] mb-10 max-w-[60ch]"
-            style={{ color: 'rgba(26,22,18,0.68)' }}
+            style={{ color: 'rgba(17,24,39,0.65)' }}
           >
             {about.incorporationContext}
           </p>
           <LexicalRenderer content={about.leanOpsPhilosophy} className="editorial-richtext" />
+          <section
+            aria-labelledby="ecosystem-heading"
+            className="mt-12 mb-4 rounded-[24px] p-6 md:p-8"
+            style={{
+              border: '1px solid rgba(16,185,129,0.18)',
+              background:
+                'radial-gradient(900px 280px at 90% -20%, rgba(16,185,129,0.08), transparent 70%), rgba(255,255,255,0.95)',
+            }}
+          >
+            <div className="label-mono mb-2">The ecosystem at a glance</div>
+            <h2
+              id="ecosystem-heading"
+              className="mb-4"
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 'clamp(22px, 2.4vw, 30px)',
+                letterSpacing: '-0.025em',
+                fontWeight: 600,
+                lineHeight: 1.15,
+                color: 'var(--color-paper-ink)',
+                textWrap: 'balance',
+              }}
+            >
+              One parent company, seven product categories.
+            </h2>
+            <EcosystemTree />
+          </section>
         </div>
         <aside className="lg:sticky lg:top-28 self-start">
           <div
-            className="rounded-[24px] border p-7"
-            style={{
-              borderColor: 'rgba(26,22,18,0.1)',
-              background: 'rgba(255,255,255,0.65)',
-            }}
+            className="is-card rounded-[24px] p-7"
           >
-            <div
-              className="text-[10.5px] uppercase tracking-[0.24em] text-[var(--color-mint)] mb-5"
-              style={{ fontFamily: 'var(--font-mono)' }}
-            >
-              At a glance
-            </div>
+            <div className="label-mono mb-5">At a glance</div>
             <dl className="flex flex-col gap-5">
               {META.map((m) => (
-                <div key={m.label}>
+                <div key={m.label} className="transition-colors hover:bg-[rgba(16,185,129,0.03)] -mx-2 px-2 py-1 rounded-lg">
                   <dt
-                    className="text-[10px] uppercase tracking-[0.22em] mb-1.5"
-                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(26,22,18,0.5)' }}
+                    className="text-[10px] uppercase tracking-[0.1em] mb-1.5"
+                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.5)' }}
                   >
                     {m.label}
                   </dt>
-                  <dd className="text-[15px] leading-[1.5] text-[var(--color-paper-ink)]">{m.value}</dd>
+                  <dd className="text-[15px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>{m.value}</dd>
                 </div>
               ))}
             </dl>
           </div>
           <div
-            className="mt-6 rounded-[24px] border p-7"
+            className="mt-6 rounded-[24px] p-7"
             style={{
-              borderColor: 'rgba(108,143,122,0.22)',
-              background:
-                'linear-gradient(180deg, rgba(108,143,122,0.08) 0%, rgba(108,143,122,0.02) 100%)',
+              border: '1px solid rgba(16,185,129,0.2)',
+              background: 'linear-gradient(180deg, rgba(16,185,129,0.08) 0%, rgba(16,185,129,0.02) 100%)',
             }}
           >
-            <div
-              className="text-[10.5px] uppercase tracking-[0.24em] text-[var(--color-mint)] mb-3"
-              style={{ fontFamily: 'var(--font-mono)' }}
-            >
-              Talk to the studio
-            </div>
-            <p className="text-[14.5px] leading-[1.72] text-[rgba(26,22,18,0.72)] mb-5">
+            <div className="label-mono mb-3">Talk to the studio</div>
+            <p className="text-[14.5px] leading-[1.72] mb-5" style={{ color: 'rgba(17,24,39,0.68)' }}>
               Partnerships, press, or a product question — messages reach the founder directly,
               typically within two business days.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.2em] font-semibold text-[var(--color-paper-ink)] border-b pb-0.5"
-              style={{ fontFamily: 'var(--font-mono)', borderColor: 'var(--color-paper-ink)' }}
+              className="btn-primary text-[11px]"
+              style={{ fontFamily: 'var(--font-mono)' }}
             >
               Contact · Open form
               <span aria-hidden="true">→</span>

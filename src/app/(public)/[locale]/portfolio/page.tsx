@@ -6,6 +6,7 @@ import type { Product, ProductCategory } from '@/types/cms';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getPortfolioItemListSchema, getWebPageSchema } from '@/lib/schema';
+import { PortfolioMosaic } from '@/components/illustrations/PortfolioMosaic';
 
 type Stat = { label: string; value: string | number; hint?: string };
 
@@ -26,12 +27,12 @@ async function PortfolioContent({ locale }: { locale: string }) {
   ).length;
 
   const stats: Stat[] = [
-    { label: 'Tools', value: total, hint: 'Across business, health, finance, agri, media, infra' },
-    { label: 'Flagships', value: flagshipCount, hint: 'On the home page, curated for first use' },
+    { label: 'Tools', value: total, hint: 'Across the seven categories below' },
+    { label: 'Flagships', value: flagshipCount, hint: 'Curated for first use on the home page' },
     { label: 'Live · production', value: productionCount, hint: 'Shipping to real end users today' },
     { label: 'In staging', value: stagingCount, hint: 'Invite-only, hardening before launch' },
-    { label: 'Verticals', value: categoryCount, hint: 'One shared stack, many domains' },
-    { label: 'Third-party calls', value: 'Zero', hint: 'Across the entire portfolio' },
+    { label: 'Categories', value: categoryCount, hint: 'One shared stack across every domain' },
+    { label: 'Third-party calls', value: 'Zero', hint: 'Enforced by CI on every product release' },
   ];
 
   const webPageSchema = getWebPageSchema({
@@ -59,16 +60,26 @@ async function PortfolioContent({ locale }: { locale: string }) {
       <JsonLd id={`portfolio-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`portfolio-itemlist-schema-${locale}`} data={itemListSchema} />
       <JsonLd id={`portfolio-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">Portfolio · Full ecosystem</div>
+      <div className="page-label">Portfolio · The Clap ecosystem</div>
       <h1 className="page-title max-w-none">
         {total} tools.
         <br />
         One mission.
       </h1>
       <p className="page-lead">
-        One shared stack. Honest status labels — production, staging, awaiting approval, infrastructure.
-        Every product links out to its own domain.
+        Intelligent Singularity is the parent company of the Clap ecosystem. Every product runs on its own domain, under its own terms, with its own pricing — but they share one engineering stack, one accessibility budget, one privacy posture, and one shared AI-agent fabric. Honest status labels throughout: production, staging, awaiting approval, infrastructure.
       </p>
+
+      <figure
+        className="mb-12 rounded-[24px] overflow-hidden p-6 md:p-10"
+        style={{
+          border: '1px solid rgba(16,185,129,0.18)',
+          background:
+            'radial-gradient(900px 340px at 50% -20%, rgba(16,185,129,0.1), transparent 70%), var(--color-paper-soft)',
+        }}
+      >
+        <PortfolioMosaic />
+      </figure>
 
       <section
         aria-label="Ecosystem statistics"
@@ -77,26 +88,21 @@ async function PortfolioContent({ locale }: { locale: string }) {
         {stats.map((s) => (
           <div
             key={s.label}
-            className="rounded-[18px] p-5 md:p-5 flex flex-col gap-2"
-            style={{
-              border: '1px solid rgba(26,22,18,0.08)',
-              background: 'rgba(255,255,255,0.7)',
-            }}
+            className="is-card rounded-[18px] p-5 md:p-5 flex flex-col gap-2"
           >
             <div
-              className="text-[10px] uppercase tracking-[0.22em] text-[var(--color-mint)]"
-              style={{ fontFamily: 'var(--font-mono)' }}
+              className="label-mono"
             >
               {s.label}
             </div>
             <div
-              className="font-semibold text-[var(--color-paper-ink)] leading-none tracking-[-0.02em]"
+              className="font-semibold leading-none tracking-[-0.02em] gradient-text"
               style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(26px, 2.6vw, 38px)' }}
             >
               {s.value}
             </div>
             {s.hint ? (
-              <div className="text-[11.5px] text-[rgba(26,22,18,0.6)] leading-[1.55]">{s.hint}</div>
+              <div className="text-[11.5px] leading-[1.55]" style={{ color: 'rgba(17,24,39,0.6)' }}>{s.hint}</div>
             ) : null}
           </div>
         ))}

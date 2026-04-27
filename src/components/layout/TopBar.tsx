@@ -40,15 +40,15 @@ export function TopBar({ locale }: Props) {
     };
   }, [menuOpen]);
 
-  const barBg = isHomepage ? 'rgba(10, 13, 11, 0.88)' : 'rgba(250, 249, 245, 0.92)';
-  const barBorder = isHomepage ? '1px solid rgba(246,241,231,0.08)' : '1px solid rgba(20,20,19,0.08)';
-  const linkColor = isHomepage ? 'var(--color-cream)' : '#141413';
-  const linkHover = 'var(--color-mint)';
-  const brandColor = isHomepage ? 'var(--color-cream)' : '#141413';
-  const ctaBg = isHomepage ? 'var(--color-cream)' : '#141413';
-  const ctaText = isHomepage ? '#141413' : 'var(--color-cream)';
-  const chipBorder = isHomepage ? 'rgba(246,241,231,0.18)' : 'rgba(20,20,19,0.14)';
-  const chipText = isHomepage ? 'rgba(246,241,231,0.76)' : 'rgba(20,20,19,0.64)';
+  const barBg = isHomepage ? 'rgba(17, 24, 39, 0.92)' : 'rgba(255, 255, 255, 0.96)';
+  const barBorder = isHomepage ? '1px solid rgba(13,148,136,0.12)' : '1px solid rgba(17,24,39,0.08)';
+  const linkColor = isHomepage ? 'rgba(240,253,250,0.82)' : '#374151';
+  const linkHover = isHomepage ? 'var(--color-emerald)' : 'var(--color-emerald-ink)';
+  const brandColor = isHomepage ? 'var(--color-cream)' : '#111827';
+  const ctaBg = 'var(--color-emerald)';
+  const ctaText = '#fff';
+  const chipBorder = isHomepage ? 'rgba(16,185,129,0.22)' : 'rgba(16,185,129,0.18)';
+  const chipText = isHomepage ? 'rgba(240,253,244,0.72)' : 'var(--color-emerald-ink)';
 
   return (
     <>
@@ -77,27 +77,38 @@ export function TopBar({ locale }: Props) {
             <span>Intelligent Singularity</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6 lg:gap-7" aria-label="Primary">
-            {NAV_LINKS.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="transition-colors focus-visible:outline-2 focus-visible:outline-[var(--color-mint)] rounded-sm"
-                style={{
-                  color: linkColor,
-                  fontSize: '14.5px',
-                  fontWeight: 500,
-                  letterSpacing: '-0.005em',
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.color = linkHover;
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.color = linkColor;
-                }}
-              >
-                {l.label}
-              </Link>
-            ))}
+            {NAV_LINKS.map((l) => {
+              const isActive = pathname === `/${locale}${l.href}` || pathname.startsWith(`/${locale}${l.href}/`);
+              return (
+                <Link
+                  key={l.href}
+                  href={`/${locale}${l.href}`}
+                  aria-current={isActive ? 'page' : undefined}
+                  className="relative transition-colors focus-visible:outline-2 focus-visible:outline-[var(--color-emerald)] rounded-sm"
+                  style={{
+                    color: isActive ? linkHover : linkColor,
+                    fontSize: '14.5px',
+                    fontWeight: isActive ? 600 : 500,
+                    letterSpacing: '-0.005em',
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLAnchorElement).style.color = linkHover;
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLAnchorElement).style.color = isActive ? linkHover : linkColor;
+                  }}
+                >
+                  {l.label}
+                  {isActive && (
+                    <span
+                      aria-hidden="true"
+                      className="absolute -bottom-[22px] left-0 right-0 h-[2px] rounded-full"
+                      style={{ background: 'linear-gradient(90deg, var(--color-emerald-ink), var(--color-teal))' }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
           </nav>
         </div>
         <div className="flex items-center gap-2 md:gap-3">
@@ -111,23 +122,23 @@ export function TopBar({ locale }: Props) {
               border: `1px solid ${chipBorder}`,
             }}
           >
-            <span style={{ color: 'var(--color-mint)' }}>●</span>
+            <span style={{ color: 'var(--color-emerald)' }}>●</span>
             {locale.toUpperCase()} · 14 languages
           </span>
           <Link
-            href="/contact"
-            className="hidden md:inline-flex items-center gap-1.5 px-4 py-[9px] rounded-full transition-transform hover:-translate-y-0.5"
+            href={`/${locale}/contact`}
+            className="hidden md:inline-flex items-center gap-1.5 px-5 py-[9px] rounded-full transition-all hover:opacity-90 hover:-translate-y-0.5"
             style={{
               background: ctaBg,
               color: ctaText,
-              fontSize: '14px',
-              fontWeight: 500,
-              letterSpacing: '-0.005em',
-              boxShadow: isHomepage ? '0 8px 20px rgba(0,0,0,0.24)' : '0 4px 14px rgba(20,20,19,0.18)',
+              fontSize: '13px',
+              fontWeight: 600,
+              letterSpacing: '0.02em',
+              boxShadow: '0 2px 10px rgba(16,185,129,0.28)',
             }}
           >
             Contact
-            <span aria-hidden="true" className="opacity-80">→</span>
+            <span aria-hidden="true">→</span>
           </Link>
           <button
             type="button"
@@ -183,8 +194,9 @@ export function TopBar({ locale }: Props) {
           className="md:hidden fixed inset-0 z-40 flex flex-col"
           style={{
             top: '64px',
-            background: isHomepage ? 'rgba(10, 13, 11, 0.98)' : 'rgba(250, 249, 245, 0.98)',
+            background: isHomepage ? 'rgba(10, 13, 11, 0.98)' : 'rgba(255, 255, 255, 0.98)',
             color: brandColor,
+            borderTop: `1px solid ${isHomepage ? 'rgba(16,185,129,0.12)' : 'rgba(16,185,129,0.15)'}`,
             backdropFilter: 'blur(18px)',
           }}
         >
@@ -192,14 +204,14 @@ export function TopBar({ locale }: Props) {
             {[...NAV_LINKS, { href: '/contact', label: 'Contact' }].map((l) => (
               <Link
                 key={l.href}
-                href={l.href}
+                href={`/${locale}${l.href}`}
                 onClick={() => setMenuOpen(false)}
-                className="py-3 text-[28px] tracking-[-0.02em]"
+                className="py-3 text-[28px] tracking-[-0.02em] transition-colors hover:text-[var(--color-emerald)]"
                 style={{
                   fontFamily: 'var(--font-serif)',
                   color: brandColor,
                   fontWeight: 600,
-                  borderBottom: `1px solid ${isHomepage ? 'rgba(246,241,231,0.08)' : 'rgba(20,20,19,0.08)'}`,
+                  borderBottom: `1px solid ${isHomepage ? 'rgba(16,185,129,0.1)' : 'rgba(16,185,129,0.12)'}`,
                 }}
               >
                 {l.label}
@@ -208,23 +220,23 @@ export function TopBar({ locale }: Props) {
           </nav>
           <div
             className="mt-auto px-5 pb-8 pt-6 flex flex-col gap-3"
-            style={{ borderTop: `1px solid ${isHomepage ? 'rgba(246,241,231,0.08)' : 'rgba(20,20,19,0.08)'}` }}
+            style={{ borderTop: `1px solid ${isHomepage ? 'rgba(16,185,129,0.1)' : 'rgba(16,185,129,0.12)'}` }}
           >
             <div
-              className="text-[10px] uppercase tracking-[0.22em]"
-              style={{ color: 'var(--color-mint)', fontFamily: 'var(--font-mono)' }}
+              className="text-[10px] uppercase tracking-[0.12em]"
+              style={{ color: 'var(--color-emerald)', fontFamily: 'var(--font-mono)' }}
             >
               Currently viewing · {locale.toUpperCase()}
             </div>
             <p
               className="text-[14px] leading-[1.7]"
-              style={{ color: isHomepage ? 'rgba(246,241,231,0.72)' : 'rgba(20,20,19,0.72)' }}
+              style={{ color: isHomepage ? 'rgba(240,253,244,0.72)' : 'rgba(17,24,39,0.72)' }}
             >
               Fourteen languages. Switch from the language wheel at the bottom of any page.
             </p>
             <div
               className="flex gap-4 mt-1 text-[11px]"
-              style={{ color: 'var(--color-mint)', fontFamily: 'var(--font-mono)' }}
+              style={{ color: 'var(--color-emerald)', fontFamily: 'var(--font-mono)' }}
             >
               <span>0 trackers</span>
               <span>0 third-party calls</span>

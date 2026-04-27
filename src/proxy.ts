@@ -81,6 +81,6 @@ function applySecurityHeaders(response: NextResponse) {
 
 export const config = {
   matcher: [
-    '/((?!_next/static|_next/image|favicon.ico|robots.txt|manifest.webmanifest|sw.js|icons/|api/\\[).*)',
+    '/((?!_next/static|_next/image|favicon.ico|robots.txt|manifest.webmanifest|sw.js|icons/|illustrations/|api/\\[).*)',
   ],
 };

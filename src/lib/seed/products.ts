@@ -24,7 +24,8 @@ export const PRODUCTS_SEED: ProductSeed[] = [
 
   // Health & Wellness
   { name: 'ClapMed', slug: 'clapmed', categorySlug: 'health-wellness',
-    tagline: 'Manage your health.', shortDescription: 'World\u2019s first agentic Electronic Medical Record system.',
+    tagline: 'Manage your health.',
+    shortDescription: 'An agentic Electronic Medical Record. The same record system used by a private clinic in Z\u00fcrich and a rural health post \u2014 offline-capable for both.',
     outboundURL: 'https://clapmed.com', productStatus: 'awaiting-approval', isFlagship: false, ordering: 5 },
   { name: 'ClapDiet', slug: 'clapdiet', categorySlug: 'health-wellness',
     tagline: 'Eat better.',

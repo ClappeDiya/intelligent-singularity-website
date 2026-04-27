@@ -50,7 +50,7 @@ async function main() {
         name: p.name,
         slug: p.slug,
         publicName: p.publicName,
-        category: catId,
+        category: catId as any,
         tagline: p.tagline,
         shortDescription: p.shortDescription,
         outboundURL: p.outboundURL,
@@ -80,17 +80,17 @@ async function main() {
       limit: 1,
     });
     if (existing.docs.length > 0) continue;
-    await payload.create({ collection: 'legal-pages', data: l });
+    await payload.create({ collection: 'legal-pages', data: l as any });
   }
 
   console.log('Seeding globals...');
-  await payload.updateGlobal({ slug: 'site-settings', data: SITE_SETTINGS_SEED });
-  await payload.updateGlobal({ slug: 'homepage-content', data: HOMEPAGE_SEED });
-  await payload.updateGlobal({ slug: 'manifesto-page', data: MANIFESTO_SEED });
-  await payload.updateGlobal({ slug: 'about-page', data: ABOUT_SEED });
-  await payload.updateGlobal({ slug: 'green-page', data: GREEN_SEED });
-  await payload.updateGlobal({ slug: 'contact-page', data: CONTACT_SEED });
-  await payload.updateGlobal({ slug: 'itu-data', data: ITU_DATA_SEED });
+  await payload.updateGlobal({ slug: 'site-settings', data: SITE_SETTINGS_SEED } as any);
+  await payload.updateGlobal({ slug: 'homepage-content', data: HOMEPAGE_SEED } as any);
+  await payload.updateGlobal({ slug: 'manifesto-page', data: MANIFESTO_SEED } as any);
+  await payload.updateGlobal({ slug: 'about-page', data: ABOUT_SEED } as any);
+  await payload.updateGlobal({ slug: 'green-page', data: GREEN_SEED } as any);
+  await payload.updateGlobal({ slug: 'contact-page', data: CONTACT_SEED } as any);
+  await payload.updateGlobal({ slug: 'itu-data', data: ITU_DATA_SEED } as any);
 
   console.log('Seed complete.');
   process.exit(0);

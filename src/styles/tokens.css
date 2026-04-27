@@ -1,40 +1,55 @@
 @theme {
-  /* Ink / dark ends */
-  --color-ink: #141413;
-  --color-ink-soft: #1a1714;
-  --color-ink-muted: #2a241e;
+  /* ── Dark ink ends ─────────────────────────────────── */
+  --color-ink: #111827;
+  --color-ink-soft: #1f2937;
+  --color-ink-muted: #374151;
 
-  /* Paper / light backgrounds — tuned to Anthropic's warm ivory palette */
-  --color-paper: #f0eee6;
-  --color-paper-soft: #faf9f5;
-  --color-paper-warm: #e3dacc;
-  --color-paper-deep: #d6ccb8;
-  --color-paper-ink: #141413;
+  /* ── Body / page backgrounds — ClapMove blue-grey hero wash ─ */
+  --color-paper: #f0f4f8;
+  --color-paper-soft: #f7fafc;
+  --color-paper-warm: #eef7f4;
+  --color-paper-deep: #d1fae5;
+  --color-paper-ink: #111827;
 
-  /* Mint accent (brand) — two shades for two surfaces.
-     --color-mint stays tuned for dark ink surfaces (5.87:1 on #141413).
-     --color-mint-ink is darker for eyebrow/label text on paper-soft
-     backgrounds (5.03:1 on #faf9f5 — passes WCAG 2.2 AA for small text). */
-  --color-mint: #6c8f7a;
-  --color-mint-ink: #3e6750;
-  --color-mint-glow: rgba(108, 143, 122, 0.32);
-  --color-mint-dim: rgba(108, 143, 122, 0.6);
-  --color-mint-faint: rgba(108, 143, 122, 0.12);
+  /* ── Brand emerald (ClapMove #10b981) ──────────────────
+     emerald-500 on dark surfaces, emerald-600 on light.  */
+  --color-emerald: #10b981;
+  --color-emerald-ink: #059669;
+  --color-emerald-dark: #047857;
+  --color-emerald-glow: rgba(16, 185, 129, 0.30);
+  --color-emerald-dim: rgba(16, 185, 129, 0.55);
+  --color-emerald-faint: rgba(16, 185, 129, 0.1);
 
-  /* Cream (used on dark surfaces) */
-  --color-cream: #faf9f5;
-  --color-cream-soft: rgba(250, 249, 245, 0.82);
-  --color-cream-dim: rgba(250, 249, 245, 0.62);
-  --color-cream-faint: rgba(250, 249, 245, 0.4);
+  /* ── Teal — deep CTA band partner ───────────────────── */
+  --color-teal: #14b8a6;
+  --color-teal-ink: #0d9488;
+  --color-teal-faint: rgba(20, 184, 166, 0.1);
 
-  /* Label / text helpers on light paper */
-  --color-label: #3d3d3a;
-  --color-label-soft: #87867f;
-  --color-stone: #6f6558;
-  --color-rule: rgba(250, 249, 245, 0.1);
-  --color-rule-light: rgba(20, 20, 19, 0.12);
+  /* ── Legacy mint aliases (keep all existing refs live) ── */
+  --color-mint: var(--color-emerald);
+  --color-mint-ink: var(--color-emerald-ink);
+  --color-mint-glow: var(--color-emerald-glow);
+  --color-mint-dim: var(--color-emerald-dim);
+  --color-mint-faint: var(--color-emerald-faint);
 
-  /* Fonts */
+  /* ── Cream — light text on dark surfaces ─────────────── */
+  --color-cream: #f0fdf4;
+  --color-cream-soft: rgba(240, 253, 244, 0.9);
+  --color-cream-dim: rgba(240, 253, 244, 0.65);
+  --color-cream-faint: rgba(240, 253, 244, 0.38);
+
+  /* ── Text helpers ────────────────────────────────────── */
+  --color-label: #374151;
+  --color-label-soft: #6b7280;
+  --color-stone: #4b5563;
+  --color-rule: rgba(16, 185, 129, 0.12);
+  --color-rule-light: rgba(17, 24, 39, 0.1);
+
+  /* ── Card / surface ──────────────────────────────────── */
+  --color-card: #ffffff;
+  --color-card-border: rgba(167, 243, 208, 0.45);
+
+  /* ── Fonts ───────────────────────────────────────────── */
   --font-serif: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
   --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, 'Noto Sans Variable', 'Noto Sans', system-ui, sans-serif;
   --font-sans-cjk: 'Noto Sans SC Variable', 'Noto Sans SC', var(--font-sans);
@@ -44,6 +59,7 @@
   --font-sans-nastaliq: 'Noto Nastaliq Urdu Variable', 'Noto Nastaliq Urdu', var(--font-sans-arabic);
   --font-mono: 'SF Mono', Menlo, Consolas, monospace;
 
-  --spacing-section: 128px;
+  /* ── Spacing scale ───────────────────────────────────── */
+  --spacing-section: 112px;
   --spacing-gutter: 48px;
 }

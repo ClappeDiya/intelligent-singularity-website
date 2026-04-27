@@ -14,11 +14,11 @@ export type RoadmapItem = {
 export const ROADMAP_SEED: RoadmapItem[] = [
   {
     slug: 'plausible-analytics',
-    title: 'Self-hosted analytics via Plausible',
+    title: 'Self-hosted page counts, without third parties',
     summary:
-      'Deploy Plausible on our own VPS. Proxy events through the app so no third-party script runs in the browser.',
+      'Run an open-source page-counter on our own server. Send page views to it through a proxy we control. No outside script ever runs in your browser.',
     whyItMatters:
-      'We can track page views without sending data to outside services. Visitors stay private. The no-tracker CI gate stays green.',
+      'We want to know which pages help people the most, but we do not want your visit to feed an outside company. Running the tool ourselves keeps the question and the answer inside our walls. The zero-tracker rule in our build pipeline stays green while we learn from the numbers.',
     status: 'planned',
     category: 'infra',
     gitRefs: [],
@@ -26,11 +26,11 @@ export const ROADMAP_SEED: RoadmapItem[] = [
   },
   {
     slug: 'uptime-kuma',
-    title: 'Uptime monitoring with Uptime Kuma',
+    title: 'Live uptime monitor with our own alerts',
     summary:
-      'Run Uptime Kuma on Dokploy. Add a monitor for each public endpoint. Set up SMTP alerts for downtime.',
+      'Run a small open-source uptime monitor on our deployment host. Add a check for every public page and every API route. Send alerts through our own mail server.',
     whyItMatters:
-      'We find out when a page goes down before a user does. Alerts go to our own mail server, not a paid SaaS.',
+      'We would rather hear from a monitor than from a visitor when something goes down. Running the monitor ourselves keeps the alerts private, keeps the cost near zero, and shows the same data you see on our public status page.',
     status: 'planned',
     category: 'infra',
     gitRefs: [],
@@ -38,11 +38,11 @@ export const ROADMAP_SEED: RoadmapItem[] = [
   },
   {
     slug: 'glitchtip-telemetry',
-    title: 'Error tracking with GlitchTip',
+    title: 'Self-hosted error reporting',
     summary:
-      'Deploy GlitchTip on the VPS and wire the Next.js app to it via the Sentry-compatible SDK.',
+      'Set up an open-source error tracker on our own server. Wire the site to it with a small drop-in library.',
     whyItMatters:
-      'Runtime errors get captured and grouped. We fix bugs faster. No data leaves our own servers.',
+      'Runtime errors get caught, grouped, and explained without waiting for a user to tell us. Bugs get fixed sooner. Nothing leaves our own machines, which keeps the privacy story the same as before.',
     status: 'planned',
     category: 'infra',
     gitRefs: [],
@@ -50,11 +50,11 @@ export const ROADMAP_SEED: RoadmapItem[] = [
   },
   {
     slug: 'encrypted-backups',
-    title: 'Daily encrypted Postgres backups',
+    title: 'Daily encrypted backups of every database',
     summary:
-      'Run a nightly pg_dump, encrypt it with age, and copy it to the Audiflo secondary server. A cron job fires at 3 am.',
+      'Run a nightly dump of our PostgreSQL databases, encrypt the file, and copy it to a second server we run ourselves. One script, one scheduled task, zero outside storage.',
     whyItMatters:
-      'If the main server fails, we can restore from the prior night. One script, one cron entry, zero third-party storage.',
+      'If a disk fails or a mistake lands on production, we can restore from the previous night. Encryption means the backup cannot be read if the second server is ever stolen. The pipeline is simple enough to fit on one page.',
     status: 'planned',
     category: 'infra',
     gitRefs: [],
@@ -62,11 +62,11 @@ export const ROADMAP_SEED: RoadmapItem[] = [
   },
   {
     slug: 'green-hosting-badge',
-    title: 'Verify and publish green hosting status',
+    title: 'Publish a verified green-hosting result',
     summary:
-      'Query the Green Web Foundation API for the Contabo data centre. Update the green page once the result is confirmed.',
+      'Ask a known outside green-hosting registry to check the energy mix at our data centre. Publish the result on the green page. Link back to the registry so anyone can verify it.',
     whyItMatters:
-      'We only claim green hosting if we can prove it. The API check makes the claim honest and repeatable.',
+      'We will only claim green hosting when a neutral outside source can vouch for it. A published badge keeps us honest, replaceable, and easy to audit.',
     status: 'planned',
     category: 'green',
     gitRefs: [],
@@ -74,11 +74,11 @@ export const ROADMAP_SEED: RoadmapItem[] = [
   },
   {
     slug: 'launch-v1',
-    title: 'Run the launch checklist and tag v1.0.0',
+    title: 'Walk the launch checklist and tag version 1.0.0',
     summary:
-      'Walk through docs/runbooks/launch-checklist.md, do a final deploy, run a smoke test, then tag v1.0.0 and announce.',
+      'Walk the launch checklist in our repo. Run a final deploy. Smoke-test every route in every language. Tag the release. Announce it.',
     whyItMatters:
-      'A public v1.0.0 tag marks the point where the site is stable enough for real users. The checklist keeps us honest.',
+      'A published version 1.0.0 tag marks the point where the site is stable enough for real users to depend on. The checklist is the difference between a shipped product and a hopeful one.',
     status: 'planned',
     category: 'website',
     gitRefs: [],

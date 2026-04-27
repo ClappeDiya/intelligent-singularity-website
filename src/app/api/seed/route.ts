@@ -66,7 +66,7 @@ export async function POST(request: Request) {
         name: p.name,
         slug: p.slug,
         publicName: p.publicName,
-        category: catId,
+        category: catId as any,
         tagline: p.tagline,
         shortDescription: p.shortDescription,
         outboundURL: p.outboundURL,

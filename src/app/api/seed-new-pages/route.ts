@@ -6,6 +6,11 @@ import { seedInsights } from '@/lib/seed/new-pages/insights';
 import { seedStatusPage } from '@/lib/seed/new-pages/status';
 import { seedTrustPage } from '@/lib/seed/new-pages/trust';
 import { seedHelpPage } from '@/lib/seed/new-pages/help';
+import { seedCareersPage } from '@/lib/seed/new-pages/careers';
+import { seedPressPage } from '@/lib/seed/new-pages/press';
+import { seedSecurityPage } from '@/lib/seed/new-pages/security';
+import { seedPricingPage } from '@/lib/seed/new-pages/pricing';
+import { seedFaqPage } from '@/lib/seed/new-pages/faq';
 import { seedNewPagesTranslations } from '@/lib/seed/new-pages/translations';
 
 export async function POST(request: Request) {
@@ -26,6 +31,11 @@ export async function POST(request: Request) {
   await seedStatusPage(payload as any, log);
   await seedTrustPage(payload as any, log);
   await seedHelpPage(payload as any, log);
+  await seedCareersPage(payload as any, log);
+  await seedPressPage(payload as any, log);
+  await seedSecurityPage(payload as any, log);
+  await seedPricingPage(payload as any, log);
+  await seedFaqPage(payload as any, log);
   await seedRoadmap(payload as any, log);
   await seedChangelog(payload as any, log);
   await seedInsights(payload as any, log);

@@ -16,6 +16,11 @@ export const CACHE_TAGS = {
   statusPage: 'status-page',
   trustPage: 'trust-page',
   helpPage: 'help-page',
+  careersPage: 'careers-page',
+  pressPage: 'press-page',
+  securityPage: 'security-page',
+  pricingPage: 'pricing-page',
+  faqPage: 'faq-page',
 } as const;
 
 export type CacheTag = (typeof CACHE_TAGS)[keyof typeof CACHE_TAGS];

@@ -245,3 +245,48 @@ export const fetchHelpPage = unstable_cache(
   ['help-page'],
   { tags: [CACHE_TAGS.helpPage], revalidate: 3600 }
 );
+
+export const fetchCareersPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'careers-page', locale: locale as 'en' });
+  },
+  ['careers-page'],
+  { tags: [CACHE_TAGS.careersPage], revalidate: 3600 }
+);
+
+export const fetchPressPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'press-page', locale: locale as 'en' });
+  },
+  ['press-page'],
+  { tags: [CACHE_TAGS.pressPage], revalidate: 3600 }
+);
+
+export const fetchSecurityPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'security-page', locale: locale as 'en' });
+  },
+  ['security-page'],
+  { tags: [CACHE_TAGS.securityPage], revalidate: 3600 }
+);
+
+export const fetchPricingPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'pricing-page', locale: locale as 'en' });
+  },
+  ['pricing-page'],
+  { tags: [CACHE_TAGS.pricingPage], revalidate: 3600 }
+);
+
+export const fetchFaqPage = unstable_cache(
+  async (locale: string) => {
+    const payload = await getPayloadInstance();
+    return payload.findGlobal({ slug: 'faq-page', locale: locale as 'en' });
+  },
+  ['faq-page'],
+  { tags: [CACHE_TAGS.faqPage], revalidate: 3600 }
+);
