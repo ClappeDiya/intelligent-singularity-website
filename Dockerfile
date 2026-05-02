@@ -25,6 +25,7 @@ ENV NEXT_PUBLIC_SITE_URL=https://intelligentsingularityinc.com
 RUN pnpm exec next build --webpack
 
 FROM base AS runner
+LABEL org.opencontainers.image.source="https://github.com/ClappeDiya/intelligent-singularity-website"
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
