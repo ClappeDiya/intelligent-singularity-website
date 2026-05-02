@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { HomeContent } from '@/components/home/HomeContent';
+import { HomeSkeleton } from '@/components/home/HomeSkeleton';
 import { buildPageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({
@@ -21,7 +22,7 @@ export async function generateMetadata({
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<HomeSkeleton />}>
       <HomeContent locale={locale} />
     </Suspense>
   );
