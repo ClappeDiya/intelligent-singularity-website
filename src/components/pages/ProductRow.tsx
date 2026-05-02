@@ -64,7 +64,7 @@ export function ProductRow({ product }: { product: Product }) {
           {product.tagline}
         </div>
       ) : null}
-      <div className="text-[14.5px] text-[rgba(20,20,19,0.76)] leading-[1.72] mb-5">
+      <div className="text-[14.5px] text-[rgba(20,20,19,0.82)] leading-[1.72] mb-5">
         {product.shortDescription}
       </div>
       <div

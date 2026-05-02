@@ -83,6 +83,8 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
           linkText="View the repository"
         />
       ) : (
+        <>
+          <h2 className="sr-only">Releases</h2>
         <ol className="flex flex-col gap-14 list-none p-0">
           {releases.map((r: any) => (
             <TimelineEntry
@@ -126,6 +128,7 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
             </TimelineEntry>
           ))}
         </ol>
+        </>
       )}
     </article>
   );

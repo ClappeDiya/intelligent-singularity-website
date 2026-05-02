@@ -44,7 +44,7 @@ async function AboutContent({ locale }: { locale: string }) {
       <JsonLd id={`about-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`about-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
       <div className="page-label">About · The studio</div>
-      <h1 className="page-title">{about.title}</h1>
+      <h1 className="page-title">{about.title || 'About Intelligent Singularity'}</h1>
       <p className="page-lead">{about.lead}</p>
       <figure
         className="mb-14 rounded-[24px] overflow-hidden"
@@ -69,7 +69,7 @@ async function AboutContent({ locale }: { locale: string }) {
           <LexicalRenderer content={about.founderStory} className="editorial-richtext mb-10" />
           <p
             className="text-[15px] leading-[1.9] mb-10 max-w-[60ch]"
-            style={{ color: 'rgba(17,24,39,0.65)' }}
+            style={{ color: 'rgba(17,24,39,0.72)' }}
           >
             {about.incorporationContext}
           </p>
@@ -102,7 +102,7 @@ async function AboutContent({ locale }: { locale: string }) {
             <EcosystemTree />
           </section>
         </div>
-        <aside className="lg:sticky lg:top-28 self-start">
+        <div className="lg:sticky lg:top-28 self-start">
           <div
             className="is-card rounded-[24px] p-7"
           >
@@ -112,7 +112,7 @@ async function AboutContent({ locale }: { locale: string }) {
                 <div key={m.label} className="transition-colors hover:bg-[rgba(16,185,129,0.03)] -mx-2 px-2 py-1 rounded-lg">
                   <dt
                     className="text-[10px] uppercase tracking-[0.1em] mb-1.5"
-                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.5)' }}
+                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
                   >
                     {m.label}
                   </dt>
@@ -129,7 +129,7 @@ async function AboutContent({ locale }: { locale: string }) {
             }}
           >
             <div className="label-mono mb-3">Talk to the studio</div>
-            <p className="text-[14.5px] leading-[1.72] mb-5" style={{ color: 'rgba(17,24,39,0.68)' }}>
+            <p className="text-[14.5px] leading-[1.72] mb-5" style={{ color: 'rgba(17,24,39,0.78)' }}>
               Partnerships, press, or a product question — messages reach the founder directly,
               typically within two business days.
             </p>
@@ -142,7 +142,7 @@ async function AboutContent({ locale }: { locale: string }) {
               <span aria-hidden="true">→</span>
             </Link>
           </div>
-        </aside>
+        </div>
       </div>
     </article>
   );

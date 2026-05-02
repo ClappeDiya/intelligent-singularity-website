@@ -93,7 +93,7 @@ export function HeroCounter({ value, label, tagline, primaryCta, secondaryCta }:
             <Link
               href="/manifesto"
               className="inline-flex items-center justify-center gap-2 px-7 py-[14px] text-[12px] tracking-[0.04em] uppercase font-semibold rounded-full transition-all hover:-translate-y-0.5"
-              style={{ background: 'linear-gradient(135deg, #059669, #0d9488)', color: '#fff', boxShadow: '0 10px 28px rgba(16,185,129,0.32)' }}
+              style={{ background: 'linear-gradient(135deg, #047857, #0f766e)', color: '#fff', boxShadow: '0 10px 28px rgba(16,185,129,0.32)' }}
             >
               {primaryCta}
             </Link>

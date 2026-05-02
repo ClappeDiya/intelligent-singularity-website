@@ -41,7 +41,7 @@ function FactCard({ number, caption, comparison, accent }: FactCardProps) {
         </div>
         {comparison ? (
           <div
-            className="text-[11px] uppercase text-right text-[rgba(17,24,39,0.6)] tracking-[0.06em]"
+            className="text-[11px] uppercase text-right text-[rgba(17,24,39,0.78)] tracking-[0.06em]"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
             {comparison}
@@ -117,7 +117,7 @@ export function FactsSection({ title, lead, itu }: Props) {
           />
         </div>
         <div
-          className="mt-12 pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-[13px] text-[rgba(17,24,39,0.6)]"
+          className="mt-12 pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-[13px] text-[rgba(17,24,39,0.78)]"
           style={{ borderTop: '1px solid rgba(16,185,129,0.12)', fontFamily: 'var(--font-mono)' }}
         >
           <span className="uppercase text-[var(--color-emerald-ink)] tracking-[0.08em]" style={{ fontWeight: 600 }}>Source</span>

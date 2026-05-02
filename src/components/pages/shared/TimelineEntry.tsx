@@ -42,13 +42,13 @@ export function TimelineEntry({
         {meta ? (
           <span
             className="text-[11px] uppercase tracking-[0.16em]"
-            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.6)' }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.78)' }}
           >
             {meta}
           </span>
         ) : null}
       </div>
-      <div className="text-[15px] leading-[1.75]" style={{ color: 'rgba(20,20,19,0.76)' }}>
+      <div className="text-[15px] leading-[1.75]" style={{ color: 'rgba(20,20,19,0.82)' }}>
         {children}
       </div>
     </li>

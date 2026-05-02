@@ -32,7 +32,7 @@ function StatCard({ label, value, hint, accent }: StatProps) {
       >
         {value}
       </div>
-      {hint ? <div className="text-[11px] leading-[1.5]" style={{ color: 'rgba(17,24,39,0.6)' }}>{hint}</div> : null}
+      {hint ? <div className="text-[11px] leading-[1.5]" style={{ color: 'rgba(17,24,39,0.78)' }}>{hint}</div> : null}
     </div>
   );
 }
@@ -169,7 +169,7 @@ async function GreenContent({ locale }: { locale: string }) {
               <h3 className="font-semibold mb-1.5" style={{ fontFamily: 'var(--font-serif)', fontSize: '18px', letterSpacing: '-0.015em', color: 'var(--color-paper-ink)', textWrap: 'balance' }}>
                 {p.value}
               </h3>
-              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.68)' }}>{p.hint}</p>
+              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.78)' }}>{p.hint}</p>
             </div>
           ))}
         </div>
@@ -199,7 +199,7 @@ async function GreenContent({ locale }: { locale: string }) {
           >
             We publish everything. You hold us accountable.
           </h2>
-          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
             Every number on this page is computed live from real measurements. The bundle budget is enforced by CI; the third-party count is audited on every build; the carbon estimate uses Green Web Foundation methodology against the page weight you actually loaded. If something looks wrong, tell us — we will respond in writing within five business days, with the underlying numbers shown.
           </p>
         </div>

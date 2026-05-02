@@ -45,7 +45,7 @@ export function TopBar({ locale }: Props) {
   const linkColor = isHomepage ? 'rgba(240,253,250,0.82)' : '#374151';
   const linkHover = isHomepage ? 'var(--color-emerald)' : 'var(--color-emerald-ink)';
   const brandColor = isHomepage ? 'var(--color-cream)' : '#111827';
-  const ctaBg = 'var(--color-emerald)';
+  const ctaBg = 'var(--color-emerald-ink)';
   const ctaText = '#fff';
   const chipBorder = isHomepage ? 'rgba(16,185,129,0.22)' : 'rgba(16,185,129,0.18)';
   const chipText = isHomepage ? 'rgba(240,253,244,0.72)' : 'var(--color-emerald-ink)';
@@ -145,7 +145,7 @@ export function TopBar({ locale }: Props) {
             aria-expanded={menuOpen}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             onClick={() => setMenuOpen((v) => !v)}
-            className="md:hidden inline-flex items-center justify-center w-10 h-10 -me-1 rounded-full"
+            className="md:hidden inline-flex items-center justify-center w-11 h-11 -me-1 rounded-full"
             style={{
               color: brandColor,
               border: `1px solid ${chipBorder}`,

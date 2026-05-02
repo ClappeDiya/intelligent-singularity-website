@@ -102,7 +102,7 @@ async function PortfolioContent({ locale }: { locale: string }) {
               {s.value}
             </div>
             {s.hint ? (
-              <div className="text-[11.5px] leading-[1.55]" style={{ color: 'rgba(17,24,39,0.6)' }}>{s.hint}</div>
+              <div className="text-[11.5px] leading-[1.55]" style={{ color: 'rgba(17,24,39,0.78)' }}>{s.hint}</div>
             ) : null}
           </div>
         ))}

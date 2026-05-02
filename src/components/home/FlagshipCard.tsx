@@ -18,57 +18,23 @@ export function FlagshipCard({
 }) {
   const categoryName = typeof product.category === 'object' ? product.category?.name : '';
   const statusLabel = STATUS_COPY[product.productStatus] ?? product.productStatus;
+  const accentColor = featured ? 'var(--color-emerald)' : 'var(--color-emerald-ink)';
 
   return (
     <a
       href={product.outboundURL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group relative overflow-hidden rounded-[30px] border flex flex-col justify-between transition-all no-underline ${
-        featured ? 'md:col-span-2 min-h-[440px] p-8 md:p-12' : 'min-h-[340px] p-7 md:p-9'
-      }`}
-      style={{
-        background: featured
-          ? 'radial-gradient(1200px 500px at 90% -10%, rgba(16,185,129,0.16), transparent 60%), linear-gradient(180deg, rgba(10,13,11,1) 0%, rgba(17,21,18,1) 100%)'
-          : 'rgba(255,255,255,0.95)',
-        borderColor: featured ? 'rgba(16,185,129,0.2)' : 'rgba(167,243,208,0.4)',
-        color: featured ? 'var(--color-cream)' : 'var(--color-paper-ink)',
-        boxShadow: featured
-          ? '0 28px 60px rgba(16,185,129,0.12)'
-          : '0 4px 16px rgba(16,185,129,0.04)',
-        transform: 'translateY(0)',
-      }}
-      onMouseEnter={(e) => {
-        (e.currentTarget as HTMLAnchorElement).style.transform = featured ? 'translateY(-4px)' : 'translateY(-3px)';
-        (e.currentTarget as HTMLAnchorElement).style.boxShadow = featured
-          ? '0 36px 72px rgba(16,185,129,0.18)'
-          : '0 12px 32px rgba(16,185,129,0.1)';
-      }}
-      onMouseLeave={(e) => {
-        (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(0)';
-        (e.currentTarget as HTMLAnchorElement).style.boxShadow = featured
-          ? '0 28px 60px rgba(16,185,129,0.12)'
-          : '0 4px 16px rgba(16,185,129,0.04)';
-      }}
+      className={`flagship-card group ${featured ? 'flagship-card--featured' : ''}`}
     >
-      {featured ? (
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 opacity-50"
-          style={{
-            background:
-              'repeating-linear-gradient(0deg, rgba(16,185,129,0.04) 0px, rgba(16,185,129,0.04) 1px, transparent 1px, transparent 56px),' +
-              'repeating-linear-gradient(90deg, rgba(16,185,129,0.04) 0px, rgba(16,185,129,0.04) 1px, transparent 1px, transparent 56px)',
-          }}
-        />
-      ) : null}
+      {featured ? <div aria-hidden="true" className="flagship-card__grid" /> : null}
       <div className="relative flex justify-between items-start mb-7">
         <div
           className="text-[11px] uppercase tracking-[0.1em]"
           style={{
             fontFamily: 'var(--font-mono)',
             fontWeight: 600,
-            color: featured ? 'var(--color-emerald)' : 'var(--color-emerald-ink)',
+            color: accentColor,
           }}
         >
           {String(index + 1).padStart(2, '0')} · Flagship
@@ -78,7 +44,7 @@ export function FlagshipCard({
           style={{
             fontFamily: 'var(--font-mono)',
             fontWeight: 600,
-            color: featured ? 'var(--color-emerald)' : 'var(--color-emerald-ink)',
+            color: accentColor,
             border: featured ? '1px solid rgba(16,185,129,0.3)' : '1px solid rgba(16,185,129,0.25)',
             background: featured ? 'rgba(16,185,129,0.08)' : 'rgba(16,185,129,0.06)',
           }}
@@ -95,13 +61,13 @@ export function FlagshipCard({
         </div>
         <div
           className={`${featured ? 'text-[18px]' : 'text-[15px]'} mb-4 font-semibold`}
-          style={{ color: featured ? 'var(--color-emerald)' : 'var(--color-emerald-ink)' }}
+          style={{ color: accentColor }}
         >
           {product.tagline}
         </div>
         <div
           className={`${featured ? 'text-[16px] max-w-[52ch]' : 'text-[14.5px] max-w-[38ch]'} leading-[1.72]`}
-          style={{ color: featured ? 'rgba(240,253,244,0.72)' : 'rgba(17,24,39,0.7)' }}
+          style={{ color: featured ? 'rgba(240,253,244,0.72)' : 'rgba(17,24,39,0.8)' }}
         >
           {product.shortDescription}
         </div>
@@ -110,10 +76,10 @@ export function FlagshipCard({
             className="text-[13px] mt-4"
             style={{
               fontFamily: 'var(--font-mono)',
-              color: featured ? 'rgba(240,253,244,0.5)' : 'rgba(17,24,39,0.56)',
+              color: featured ? 'rgba(240,253,244,0.7)' : 'rgba(17,24,39,0.8)',
             }}
           >
-            Ships live as <strong style={{ color: featured ? 'var(--color-emerald)' : 'var(--color-emerald-ink)' }}>{product.publicName}</strong>
+            Ships live as <strong style={{ color: accentColor }}>{product.publicName}</strong>
           </div>
         )}
       </div>
@@ -123,7 +89,7 @@ export function FlagshipCard({
           style={{
             fontFamily: 'var(--font-mono)',
             fontWeight: 500,
-            color: featured ? 'rgba(240,253,244,0.45)' : 'rgba(17,24,39,0.5)',
+            color: featured ? 'rgba(240,253,244,0.65)' : 'rgba(17,24,39,0.72)',
           }}
         >
           {categoryName}
@@ -133,7 +99,7 @@ export function FlagshipCard({
           style={{
             fontFamily: 'var(--font-mono)',
             fontWeight: 600,
-            color: featured ? 'var(--color-emerald)' : 'var(--color-emerald-ink)',
+            color: accentColor,
           }}
         >
           <span>Visit</span>

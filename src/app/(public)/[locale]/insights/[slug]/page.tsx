@@ -56,7 +56,7 @@ export default async function PostPage({
   };
 
   return (
-    <article className="page-shell">
+    <div className="page-shell">
       <JsonLd
         id={`post-schema-${slug}-${locale}`}
         data={getWebPageSchema({
@@ -79,7 +79,7 @@ export default async function PostPage({
       />
       <JsonLd id={`post-blogposting-${slug}-${locale}`} data={blogPostingSchema} />
 
-      <header className="px-4 sm:px-6 md:px-8 lg:px-12 pt-[96px] md:pt-[140px] pb-12 md:pb-16">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-12 pt-[96px] md:pt-[140px] pb-12 md:pb-16">
         <div className="max-w-[760px] mx-auto">
           <div
             className="label-mono mb-6"
@@ -93,20 +93,20 @@ export default async function PostPage({
             {post.title}
           </h1>
           {post.subtitle ? (
-            <p className="mt-4 text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+            <p className="mt-4 text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
               {post.subtitle}
             </p>
           ) : null}
           <div
             className="mt-6 flex flex-wrap gap-x-4 gap-y-1 text-[12px]"
-            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
           >
             {post.author?.name ? <span>{post.author.name}</span> : null}
             {post.publishedAt ? <span>{formatDate(post.publishedAt)}</span> : null}
             {post.readingTime ? <span>{post.readingTime} min read</span> : null}
           </div>
         </div>
-      </header>
+      </div>
 
       <div className="px-4 sm:px-6 md:px-8 lg:px-12 pb-16">
         <div className="max-w-[760px] mx-auto">
@@ -133,7 +133,7 @@ export default async function PostPage({
                       target="_blank"
                       rel="noreferrer external"
                       className="underline underline-offset-2 transition-colors hover:text-[var(--color-emerald-ink)]"
-                      style={{ color: 'rgba(17,24,39,0.62)' }}
+                      style={{ color: 'rgba(17,24,39,0.78)' }}
                     >
                       {s.label}
                     </a>
@@ -153,6 +153,6 @@ export default async function PostPage({
           </div>
         </div>
       </div>
-    </article>
+    </div>
   );
 }

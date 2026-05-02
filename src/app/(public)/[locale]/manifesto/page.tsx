@@ -70,7 +70,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
             >
               Two-point-two billion people are still offline today.
             </h2>
-            <p className="text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+            <p className="text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
               The lighter dots above are the people already online. The darker, ringed dots are the people who are not. Ninety-six percent of the offline population lives in low- and middle-income countries. Universal-access engineering is what closes that gap. The nine commitments below are how we hold ourselves to it.
             </p>
           </div>
@@ -101,7 +101,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
             >
               The nine commitments
             </h2>
-            <p className="mt-3 text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+            <p className="mt-3 text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
               Nine concentric rings — every product ships against every one of them, every release. The list is not a wishlist. It is the engineering contract.
             </p>
           </div>
@@ -140,7 +140,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
                 >
                   {c.title}
                 </h3>
-                <p className="text-[14.5px] leading-[1.78]" style={{ color: 'rgba(17,24,39,0.7)' }}>{c.body}</p>
+                <p className="text-[14.5px] leading-[1.78]" style={{ color: 'rgba(17,24,39,0.8)' }}>{c.body}</p>
               </div>
             </li>
           ))}

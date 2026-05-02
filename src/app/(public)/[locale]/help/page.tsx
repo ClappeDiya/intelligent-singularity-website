@@ -67,7 +67,8 @@ export default async function HelpPageRoute({
 
         {/* Emergency row */}
         {emergencyRow && (
-          <aside
+          <section
+            aria-label="Urgent help"
             className="rounded-[20px] p-6 md:p-7 mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-4"
             style={{ background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.18)' }}
           >
@@ -84,7 +85,7 @@ export default async function HelpPageRoute({
               >
                 {emergencyRow.heading}
               </h2>
-              <p className="text-[14px] leading-[1.6]" style={{ color: 'rgba(20,20,19,0.76)' }}>
+              <p className="text-[14px] leading-[1.6]" style={{ color: 'rgba(20,20,19,0.82)' }}>
                 {emergencyRow.body}
               </p>
             </div>
@@ -94,13 +95,13 @@ export default async function HelpPageRoute({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontWeight: 500,
-                background: 'linear-gradient(135deg,#059669,#0d9488)',
+                background: 'linear-gradient(135deg,#047857,#0f766e)',
                 color: '#fff',
               } as React.CSSProperties}
             >
               Check status
             </OutboundLink>
-          </aside>
+          </section>
         )}
 
         {/* Help categories grid */}
@@ -126,7 +127,7 @@ export default async function HelpPageRoute({
                     {route.heading}
                   </h3>
                   {route.blurb && (
-                    <p className="text-[13.5px] leading-[1.65]" style={{ color: 'rgba(20,20,19,0.72)' }}>
+                    <p className="text-[13.5px] leading-[1.65]" style={{ color: 'rgba(20,20,19,0.82)' }}>
                       {route.blurb}
                     </p>
                   )}
@@ -155,7 +156,7 @@ export default async function HelpPageRoute({
         {popularQuestions.length > 0 && (
           <section aria-labelledby="faq-heading" className="mb-16">
             <SectionHeading id="faq-heading">Popular questions</SectionHeading>
-            <dl className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
               {popularQuestions.map((item: any, i: number) => (
                 <details
                   key={i}
@@ -169,7 +170,7 @@ export default async function HelpPageRoute({
                       fontWeight: 500,
                     }}
                   >
-                    <dt>{item.question}</dt>
+                    <span>{item.question}</span>
                     <span
                       aria-hidden="true"
                       className="flex-shrink-0 text-[var(--color-emerald-ink)] text-[18px] transition-transform group-open:rotate-45"
@@ -177,15 +178,15 @@ export default async function HelpPageRoute({
                       +
                     </span>
                   </summary>
-                  <dd
+                  <div
                     className="px-6 pb-5 text-[14px] leading-[1.7]"
-                    style={{ color: 'rgba(17,24,39,0.7)' }}
+                    style={{ color: 'rgba(17,24,39,0.8)' }}
                   >
                     {item.answer}
-                  </dd>
+                  </div>
                 </details>
               ))}
-            </dl>
+            </div>
           </section>
         )}
 

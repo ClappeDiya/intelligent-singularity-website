@@ -92,7 +92,8 @@ export default async function RoadmapPage({
                   {col.length > 0 && (
                     <span
                       aria-hidden="true"
-                      className="label-mono opacity-60"
+                      className="label-mono"
+                      style={{ color: 'rgba(17,24,39,0.65)' }}
                     >
                       · {col.length}
                     </span>
@@ -102,7 +103,7 @@ export default async function RoadmapPage({
                 {col.length === 0 ? (
                   <p
                     className="text-[13px] italic"
-                    style={{ color: 'rgba(17,24,39,0.4)', fontFamily: 'var(--font-mono)' }}
+                    style={{ color: 'rgba(17,24,39,0.65)', fontFamily: 'var(--font-mono)' }}
                   >
                     (none)
                   </p>
@@ -127,7 +128,7 @@ export default async function RoadmapPage({
                         {item.summary && (
                           <p
                             className="text-[13px] leading-[1.6]"
-                            style={{ color: 'rgba(17,24,39,0.68)' }}
+                            style={{ color: 'rgba(17,24,39,0.78)' }}
                           >
                             {item.summary}
                           </p>
@@ -135,7 +136,7 @@ export default async function RoadmapPage({
                         {item.whyItMatters && (
                           <p
                             className="text-[12.5px] italic leading-[1.55]"
-                            style={{ color: 'rgba(17,24,39,0.52)', lineHeight: 1.6 }}
+                            style={{ color: 'rgba(17,24,39,0.72)', lineHeight: 1.6 }}
                           >
                             {item.whyItMatters}
                           </p>
@@ -191,7 +192,7 @@ export default async function RoadmapPage({
             >
               Tell us what you need.
             </h2>
-            <p className="text-[14.5px] leading-[1.7] max-w-[54ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+            <p className="text-[14.5px] leading-[1.7] max-w-[54ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
               If there is a feature, tool, or fix that would make a real difference to you,
               send us a note. We read every message and prioritise based on real need.
             </p>

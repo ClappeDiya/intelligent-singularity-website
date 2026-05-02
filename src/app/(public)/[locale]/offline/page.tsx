@@ -45,7 +45,7 @@ export default function OfflinePage() {
           fontFamily: 'var(--font-serif)',
           fontSize: 'clamp(17px, 1.6vw, 20px)',
           lineHeight: 1.55,
-          color: 'rgba(17,24,39,0.65)',
+          color: 'rgba(17,24,39,0.72)',
         }}
       >
         Universal access is the brief. This site keeps working without a connection — every page you

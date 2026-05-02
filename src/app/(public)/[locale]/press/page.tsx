@@ -148,7 +148,7 @@ async function PressContent({ locale }: { locale: string }) {
         >
           Press boilerplate
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           One paragraph, drop-in for press releases. Approved for verbatim use.
         </p>
         <div
@@ -175,7 +175,7 @@ async function PressContent({ locale }: { locale: string }) {
         >
           Story angles we welcome
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           If your story sits inside one of these angles, we will move quickly to make a founder, an engineer, or a product lead available — usually within a working day.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -195,7 +195,7 @@ async function PressContent({ locale }: { locale: string }) {
               >
                 {a.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.8)' }}>
                 {a.body}
               </p>
             </div>
@@ -217,7 +217,7 @@ async function PressContent({ locale }: { locale: string }) {
         >
           Story angles we usually decline
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           Honesty up front saves everyone time. We will not provide quotes for the angles below. We will, however, point you to a journalist or analyst whose work fits the story better.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
@@ -237,7 +237,7 @@ async function PressContent({ locale }: { locale: string }) {
               >
                 {a.title}
               </h3>
-              <p className="text-[14px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+              <p className="text-[14px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
                 {a.body}
               </p>
             </div>

@@ -102,7 +102,7 @@ export function Footer({ locale: _locale, studioBlurb }: { locale: string; studi
             className="inline-flex items-center gap-2 px-5 py-[10px] rounded-full text-[11px] uppercase tracking-[0.12em] font-semibold text-white transition-all hover:opacity-90 hover:-translate-y-0.5"
             style={{
               fontFamily: 'var(--font-mono)',
-              background: 'var(--color-emerald)',
+              background: 'var(--color-emerald-ink)',
               boxShadow: '0 2px 10px rgba(16,185,129,0.28)',
             }}
           >

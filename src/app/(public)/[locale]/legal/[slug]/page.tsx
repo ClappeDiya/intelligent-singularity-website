@@ -48,7 +48,7 @@ async function LegalContent({ locale, slug }: { locale: string; slug: string }) 
       <LexicalRenderer content={page.body} className="editorial-richtext" />
       <div
         className="mt-14 text-[11px]"
-        style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.45)', borderTop: '1px solid rgba(16,185,129,0.12)', paddingTop: '1.25rem' }}
+        style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)', borderTop: '1px solid rgba(16,185,129,0.12)', paddingTop: '1.25rem' }}
       >
         Last updated: {formatLastUpdated(page.lastUpdated, locale)}
       </div>

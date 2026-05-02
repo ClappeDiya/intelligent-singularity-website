@@ -27,7 +27,7 @@ export function FlagshipsSection({ title, lead, flagships, seeAllLine }: Props) 
           ))}
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6" style={{ borderTop: '1px solid rgba(16,185,129,0.12)' }}>
-          <p className="text-[15px] max-w-[52ch] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.65)' }}>
+          <p className="text-[15px] max-w-[52ch] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.72)' }}>
             {seeAllLine}
           </p>
           <Link
@@ -35,7 +35,7 @@ export function FlagshipsSection({ title, lead, flagships, seeAllLine }: Props) 
             className="inline-flex items-center gap-2 px-5 py-[10px] rounded-full text-[11.5px] uppercase font-semibold transition-all hover:-translate-y-0.5"
             style={{
               fontFamily: 'var(--font-mono)',
-              background: 'linear-gradient(135deg, #059669, #0d9488)',
+              background: 'linear-gradient(135deg, #047857, #0f766e)',
               color: '#fff',
               boxShadow: '0 4px 14px rgba(16,185,129,0.25)',
             }}

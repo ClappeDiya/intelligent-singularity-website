@@ -129,7 +129,7 @@ async function FaqContent({ locale }: { locale: string }) {
           >
             {page.stillStuckCta?.heading}
           </h3>
-          <p className="text-[15px] leading-[1.7] max-w-[50ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+          <p className="text-[15px] leading-[1.7] max-w-[50ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
             {page.stillStuckCta?.body}
           </p>
         </div>

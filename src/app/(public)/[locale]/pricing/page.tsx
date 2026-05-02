@@ -135,7 +135,7 @@ async function PricingContent({ locale }: { locale: string }) {
                 >
                   {p.title}
                 </h3>
-                <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+                <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.8)' }}>
                   {p.body}
                 </p>
               </div>
@@ -158,7 +158,7 @@ async function PricingContent({ locale }: { locale: string }) {
         >
           What we will not do
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           The anti-patterns below are common in business software. We have decided against each of them, in writing, in advance — so neither we nor a future us can quietly bring them back.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -182,7 +182,7 @@ async function PricingContent({ locale }: { locale: string }) {
               >
                 {a.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.8)' }}>
                 {a.body}
               </p>
             </div>
@@ -204,7 +204,7 @@ async function PricingContent({ locale }: { locale: string }) {
         >
           The same product, three customers
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product&rsquo;s own page.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
@@ -257,7 +257,7 @@ async function PricingContent({ locale }: { locale: string }) {
           >
             {page.seePricesCta?.heading}
           </h3>
-          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
             {page.seePricesCta?.body}
           </p>
         </div>

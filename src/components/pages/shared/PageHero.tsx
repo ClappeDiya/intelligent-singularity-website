@@ -16,7 +16,7 @@ export function PageHero({
         >
           {title}
         </h1>
-        <p className="mt-6 md:mt-8 text-[clamp(1rem,1.4vw,1.25rem)] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(20,20,19,0.76)' }}>
+        <p className="mt-6 md:mt-8 text-[clamp(1rem,1.4vw,1.25rem)] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(20,20,19,0.82)' }}>
           {lede}
         </p>
       </div>

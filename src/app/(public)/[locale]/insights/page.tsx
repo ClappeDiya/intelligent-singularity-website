@@ -51,14 +51,14 @@ function FeatureCard({ post, locale }: { post: any; locale: string }) {
         {firstTag ? <TagChip label={firstTag} /> : null}
         <span
           className="text-[12px]"
-          style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
+          style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
         >
           {formatDate(post.publishedAt)}
         </span>
         {post.readingTime ? (
           <span
             className="text-[12px]"
-            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
           >
             {post.readingTime} min read
           </span>
@@ -71,7 +71,7 @@ function FeatureCard({ post, locale }: { post: any; locale: string }) {
         {post.title}
       </h2>
       {post.subtitle ? (
-        <p className="text-[16px] leading-[1.65] max-w-[64ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>{post.subtitle}</p>
+        <p className="text-[16px] leading-[1.65] max-w-[64ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>{post.subtitle}</p>
       ) : null}
       <div
         className="mt-6 text-[12px] uppercase tracking-[0.18em]"
@@ -96,18 +96,18 @@ function PostCard({ post, locale }: { post: any; locale: string }) {
           <TagChip label={firstTag} />
         </div>
       ) : null}
-      <h3
+      <h2
         className="text-[18px] leading-[1.25] tracking-[-0.01em] mb-2"
         style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-paper-ink)', textWrap: 'balance' }}
       >
         {post.title}
-      </h3>
+      </h2>
       {post.subtitle ? (
         <p className="text-[14px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.66)' }}>{post.subtitle}</p>
       ) : null}
       <div
         className="mt-4 flex gap-3 text-[11px]"
-        style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.5)' }}
+        style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
       >
         <span>{formatDate(post.publishedAt)}</span>
         {post.readingTime ? <span>{post.readingTime} min</span> : null}
@@ -201,7 +201,7 @@ export default async function InsightsIndex({
               ) : null}
               <span
                 className="text-[13px]"
-                style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
+                style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
               >
                 {currentPage} / {totalPages}
               </span>

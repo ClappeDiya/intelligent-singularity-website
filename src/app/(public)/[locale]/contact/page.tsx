@@ -71,7 +71,7 @@ async function ContactContent({ locale }: { locale: string }) {
       <JsonLd id={`contact-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`contact-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
       <div className="page-label">Contact · Studio desk</div>
-      <h1 className="page-title">{contact.title}</h1>
+      <h1 className="page-title">{contact.title || 'Get in touch'}</h1>
       <p className="page-lead">{contact.lead}</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_.9fr] gap-12 lg:gap-20">
@@ -84,7 +84,7 @@ async function ContactContent({ locale }: { locale: string }) {
           />
         </section>
 
-        <aside className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
           <div
             className="is-card rounded-[24px] p-7"
           >
@@ -98,7 +98,7 @@ async function ContactContent({ locale }: { locale: string }) {
                 <li key={c.label}>
                   <div
                     className="text-[10px] uppercase tracking-[0.1em] mb-1.5"
-                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.5)' }}
+                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
                   >
                     {c.label}
                   </div>
@@ -108,7 +108,7 @@ async function ContactContent({ locale }: { locale: string }) {
                   >
                     {c.email}
                   </a>
-                  <p className="text-[13px] leading-[1.6] mt-1.5" style={{ color: 'rgba(17,24,39,0.6)' }}>
+                  <p className="text-[13px] leading-[1.6] mt-1.5" style={{ color: 'rgba(17,24,39,0.78)' }}>
                     {c.hint}
                   </p>
                 </li>
@@ -126,7 +126,7 @@ async function ContactContent({ locale }: { locale: string }) {
             <div className="label-mono mb-3">
               Response time
             </div>
-            <p className="text-[14px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+            <p className="text-[14px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.78)' }}>
               A human reads every message. We reply within two business days across UTC−07:00
               (Mountain) working hours. Security and legal inquiries are
               prioritised — security reports are acknowledged within one
@@ -140,7 +140,7 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.5)', fontFamily: 'var(--font-mono)' }}>HQ</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>HQ</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 Alberta, Canada
                 <br />
@@ -151,7 +151,7 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.5)', fontFamily: 'var(--font-mono)' }}>Privacy</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>Privacy</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 No trackers.
                 <br />
@@ -162,7 +162,7 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.5)', fontFamily: 'var(--font-mono)' }}>Languages</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>Languages</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 14 shipping locales.
                 <br />
@@ -173,7 +173,7 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.5)', fontFamily: 'var(--font-mono)' }}>Hosting</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>Hosting</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 Single VPS, Edmonton.
                 <br />
@@ -181,7 +181,7 @@ async function ContactContent({ locale }: { locale: string }) {
               </div>
             </div>
           </div>
-        </aside>
+        </div>
       </div>
     </article>
   );

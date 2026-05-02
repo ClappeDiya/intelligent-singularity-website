@@ -81,7 +81,7 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
         </p>
         <p
           className="text-[12.5px]"
-          style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.52)' }}
+          style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
         >
           {data
             ? <>updated <time dateTime={data.fetchedAt}>{new Date(data.fetchedAt).toISOString().replace('T', ' ').slice(0, 16)}Z</time></>
@@ -90,7 +90,7 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
       </section>
 
       {!data ? (
-        <p className="mb-10 text-[14px]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="mb-10 text-[14px]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           We could not reach our public status monitor just now. The page will refresh in the background and turn green once the data comes back. Please retry in a minute.
         </p>
       ) : (
@@ -107,7 +107,7 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
                     <li key={m.id}>
                       <div className="flex items-baseline justify-between gap-3">
                         <span style={{ fontFamily: 'var(--font-serif)', fontSize: 16, fontWeight: 600, color: 'var(--color-paper-ink)' }}>{m.name}</span>
-                        <span className="text-[12px]" style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.55)' }}>
+                        <span className="text-[12px]" style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.78)' }}>
                           {typeof m.uptime24h === 'number' ? `${(m.uptime24h * 100).toFixed(2)}% · 24h` : 'no data'}
                         </span>
                       </div>
@@ -124,7 +124,7 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
       )}
 
       {settings.operationalCopy ? (
-        <p className="max-w-[60ch] text-[14.5px] leading-[1.75] mb-12" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="max-w-[60ch] text-[14.5px] leading-[1.75] mb-12" style={{ color: 'rgba(17,24,39,0.8)' }}>
           {settings.operationalCopy}
         </p>
       ) : null}

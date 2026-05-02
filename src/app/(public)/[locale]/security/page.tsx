@@ -77,7 +77,7 @@ async function SecurityContent({ locale }: { locale: string }) {
           >
             {page.postureSummary?.heading}
           </h2>
-          <p className="text-[14.5px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+          <p className="text-[14.5px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
             {page.postureSummary?.body}
           </p>
         </div>
@@ -93,7 +93,7 @@ async function SecurityContent({ locale }: { locale: string }) {
             >
               {s.value}
             </div>
-            <div className="text-[13.5px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.6)' }}>{s.hint}</div>
+            <div className="text-[13.5px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.78)' }}>{s.hint}</div>
           </div>
         ))}
       </section>
@@ -129,7 +129,7 @@ async function SecurityContent({ locale }: { locale: string }) {
               >
                 {p.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.8)' }}>
                 {p.body}
               </p>
             </div>
@@ -168,7 +168,7 @@ async function SecurityContent({ locale }: { locale: string }) {
               >
                 {p.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.8)' }}>
                 {p.body}
               </p>
             </div>
@@ -190,7 +190,7 @@ async function SecurityContent({ locale }: { locale: string }) {
         >
           Standards we hold ourselves to
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           We follow a small, named set of standards — and we are honest about which audits we have not yet earned.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -210,7 +210,7 @@ async function SecurityContent({ locale }: { locale: string }) {
               >
                 {c.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.8)' }}>
                 {c.body}
               </p>
             </div>

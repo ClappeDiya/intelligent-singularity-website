@@ -4,7 +4,7 @@ export function ProofChip({ label, value }: { label: string; value: string }) {
       className="inline-flex items-center gap-2 px-3 py-1 rounded-full border text-[11px] uppercase tracking-[0.16em]"
       style={{
         fontFamily: 'var(--font-mono)',
-        color: 'rgba(20,20,19,0.72)',
+        color: 'rgba(20,20,19,0.82)',
         borderColor: 'rgba(20,20,19,0.12)',
       }}
     >

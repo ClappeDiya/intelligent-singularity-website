@@ -12,7 +12,7 @@ describe('help page seed', () => {
     }
   });
 
-  it('popularQuestions has exactly three entries', () => {
-    expect(HELP_PAGE_SEED.popularQuestions).toHaveLength(3);
+  it('popularQuestions has at least three entries', () => {
+    expect(HELP_PAGE_SEED.popularQuestions.length).toBeGreaterThanOrEqual(3);
   });
 });

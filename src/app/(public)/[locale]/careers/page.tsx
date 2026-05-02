@@ -98,7 +98,7 @@ async function CareersContent({ locale }: { locale: string }) {
               >
                 {v.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+              <p className="text-[14.5px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.8)' }}>
                 {v.body}
               </p>
             </div>
@@ -120,7 +120,7 @@ async function CareersContent({ locale }: { locale: string }) {
         >
           What you would actually work on
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           Intelligent Singularity is the parent company of a growing family of platforms. New hires rarely work on a single product for an entire year — most cycle across two or three, depending on what is shipping and what needs the most senior attention that quarter.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
@@ -160,7 +160,7 @@ async function CareersContent({ locale }: { locale: string }) {
         >
           How we hire, end to end
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           Four steps. Maximum two weeks from first email to written offer if both sides move quickly. No surprise stages, no unpaid take-homes, no &ldquo;culture fit&rdquo; rejections without a written reason.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -206,7 +206,7 @@ async function CareersContent({ locale }: { locale: string }) {
             Updated {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
           </div>
         </div>
-        <p className="text-[15.5px] leading-[1.75] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.7)' }}>
+        <p className="text-[15.5px] leading-[1.75] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
           {page.openings?.note}
         </p>
       </section>
@@ -234,7 +234,7 @@ async function CareersContent({ locale }: { locale: string }) {
           >
             {page.introduceYourself?.heading}
           </h3>
-          <p className="text-[14.5px] leading-[1.75] max-w-[52ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+          <p className="text-[14.5px] leading-[1.75] max-w-[52ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
             {page.introduceYourself?.body}
           </p>
         </div>

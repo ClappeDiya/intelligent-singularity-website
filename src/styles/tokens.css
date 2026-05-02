@@ -12,10 +12,11 @@
   --color-paper-ink: #111827;
 
   /* ── Brand emerald (ClapMove #10b981) ──────────────────
-     emerald-500 on dark surfaces, emerald-600 on light.  */
+     emerald-500 on dark surfaces, emerald-700 on light text
+     (WCAG AA 4.5:1 minimum on white).                     */
   --color-emerald: #10b981;
-  --color-emerald-ink: #059669;
-  --color-emerald-dark: #047857;
+  --color-emerald-ink: #047857;
+  --color-emerald-dark: #065f46;
   --color-emerald-glow: rgba(16, 185, 129, 0.30);
   --color-emerald-dim: rgba(16, 185, 129, 0.55);
   --color-emerald-faint: rgba(16, 185, 129, 0.1);
@@ -33,10 +34,12 @@
   --color-mint-faint: var(--color-emerald-faint);
 
   /* ── Cream — light text on dark surfaces ─────────────── */
+  /* Faint must remain ≥ 0.62 to pass WCAG 2.2 AA on the
+     dark home/footer background (≈ 4.5:1).             */
   --color-cream: #f0fdf4;
   --color-cream-soft: rgba(240, 253, 244, 0.9);
   --color-cream-dim: rgba(240, 253, 244, 0.65);
-  --color-cream-faint: rgba(240, 253, 244, 0.38);
+  --color-cream-faint: rgba(240, 253, 244, 0.62);
 
   /* ── Text helpers ────────────────────────────────────── */
   --color-label: #374151;

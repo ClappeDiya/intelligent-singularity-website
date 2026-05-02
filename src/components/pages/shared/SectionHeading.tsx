@@ -11,7 +11,7 @@ export function SectionHeading({
   return (
     <Tag
       id={id}
-      className={`${size} font-normal tracking-[-0.015em] leading-[1.2] text-[var(--color-cream)] mb-6`}
+      className={`${size} font-normal tracking-[-0.015em] leading-[1.2] text-[var(--color-paper-ink)] mb-6`}
       style={{ fontFamily: 'var(--font-serif)' }}
     >
       {children}

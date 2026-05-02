@@ -128,7 +128,7 @@ export async function HomeContent({ locale }: { locale: string }) {
           >
             How we think about building this.
           </h2>
-          <p className="text-[15px] leading-[1.7] max-w-[52ch]" style={{ color: 'rgba(17,24,39,0.68)' }}>
+          <p className="text-[15px] leading-[1.7] max-w-[52ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
             Short, grounded essays from the studio. We write slowly and cite everything. No clickbait, no thought-leadership fog.
           </p>
         </div>
