@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { getTranslations } from 'next-intl/server';
 import { fetchJournalPostBySlug } from '@/lib/payload';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -22,12 +23,13 @@ export async function generateMetadata({
   });
 }
 
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('en-US', {
+function formatDate(iso: string, locale: string) {
+  return new Intl.DateTimeFormat(locale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  });
+    timeZone: 'UTC',
+  }).format(new Date(iso));
 }
 
 export default async function PostPage({
@@ -39,6 +41,7 @@ export default async function PostPage({
   const post = (await fetchJournalPostBySlug(slug, locale)) as any;
 
   if (!post) notFound();
+  const t = await getTranslations('pages.insights');
 
   const eyebrow = post.tags?.[0]?.tag?.toUpperCase() ?? 'INSIGHTS';
   const sources: Array<{ label: string; href: string }> = post.sources ?? [];
@@ -102,8 +105,8 @@ export default async function PostPage({
             style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
           >
             {post.author?.name ? <span>{post.author.name}</span> : null}
-            {post.publishedAt ? <span>{formatDate(post.publishedAt)}</span> : null}
-            {post.readingTime ? <span>{post.readingTime} min read</span> : null}
+            {post.publishedAt ? <span>{formatDate(post.publishedAt, locale)}</span> : null}
+            {post.readingTime ? <span>{post.readingTime} {t('minutesRead')}</span> : null}
           </div>
         </div>
       </div>
@@ -117,7 +120,7 @@ export default async function PostPage({
               <h2
                 className="label-mono mb-5"
               >
-                Sources
+                {t('sourcesHeading')}
               </h2>
               <ol className="flex flex-col gap-2 list-none p-0">
                 {sources.map((s, i) => (
@@ -136,6 +139,8 @@ export default async function PostPage({
                       style={{ color: 'rgba(17,24,39,0.78)' }}
                     >
                       {s.label}
+                      <span className="sr-only"> (opens in a new tab)</span>
+                      <span aria-hidden="true" className="ms-1">↗</span>
                     </a>
                   </li>
                 ))}
@@ -148,7 +153,7 @@ export default async function PostPage({
               href={`/${locale}/insights`}
               className="label-mono"
             >
-              ← All insights
+              {t('backToIndex')}
             </Link>
           </div>
         </div>

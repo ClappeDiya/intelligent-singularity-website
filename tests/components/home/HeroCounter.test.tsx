@@ -6,11 +6,14 @@ describe('HeroCounter', () => {
   it('renders the number with comma separators', () => {
     const { container } = render(
       <HeroCounter
+        locale="en"
         value={2_199_847_302}
         label="People still offline, worldwide"
         tagline="We exist until this number is zero."
         primaryCta="Read the manifesto →"
         secondaryCta="Meet the studio"
+        scrollHint="Scroll"
+        scrollHintTarget="the gap in numbers"
       />
     );
     expect(container.textContent).toContain('2,199,847,302');
@@ -18,17 +21,37 @@ describe('HeroCounter', () => {
     expect(container.textContent).toContain('We exist until this number is zero.');
   });
 
-  it('uses aria-live=polite for the counter', () => {
+  it('prefixes the locale on the manifesto link', () => {
     const { container } = render(
       <HeroCounter
+        locale="zh-CN"
         value={2_199_847_302}
         label="X"
         tagline="Y"
         primaryCta="A"
         secondaryCta="B"
+        scrollHint="Scroll"
+        scrollHintTarget="the gap in numbers"
       />
     );
-    const live = container.querySelector('[aria-live="polite"]');
-    expect(live).not.toBeNull();
+    const manifestoLink = container.querySelector('a[href="/zh-CN/manifesto"]');
+    expect(manifestoLink).not.toBeNull();
+  });
+
+  it('exposes the figure to assistive tech via aria-label', () => {
+    const { container } = render(
+      <HeroCounter
+        locale="en"
+        value={2_199_847_302}
+        label="X"
+        tagline="Y"
+        primaryCta="A"
+        secondaryCta="B"
+        scrollHint="Scroll"
+        scrollHintTarget="the gap in numbers"
+      />
+    );
+    const labelled = container.querySelector('[aria-label*="2199847302"], [aria-label*="people still offline"]');
+    expect(labelled).not.toBeNull();
   });
 });

@@ -5,7 +5,11 @@
     "about": "Nípa Wa",
     "green": "Àyíká",
     "contact": "Kàn sí Wa",
-    "insights": "Insights"
+    "insights": "Ìjìnlẹ̀",
+    "portfolio": "Àkójọpọ̀ iṣẹ́",
+    "pricing": "Iye",
+    "security": "Ààbò",
+    "faq": "Ìbéèrè"
   },
   "status": {
     "production": "Ṣiṣẹ́",
@@ -22,12 +26,29 @@
     "zeroThirdParty": "Ìpè ẹlẹ́kẹta 0",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Àwọn ológùn tí a fi ara wa gbé lórí agbára ìṣàtúnṣe 100%",
     "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "helpLabel": "Iranlọ́wọ́",
+    "trustLabel": "Ìgbẹ́kẹ̀lẹ́",
+    "startConversation": "Bẹ̀rẹ̀ ìbáraẹnisọrọ",
+    "languagesBlurb": "Gbogbo ojú-ìwé gbangba wà ní èdè mẹ́rinlá, pẹ̀lú Lárúbáwá, Nasitalíkì Úrdù, Bengali, Hindi, Hausa, Swahili, àti Yorùbá.",
+    "selfHostedChip": "Ti gbe sori VPS kan",
+    "links": {
+      "flagships": "Àwọn ọjà àkọ́bẹ̀rẹ̀",
+      "careers": "Iṣẹ́",
+      "press": "Atẹ̀wé",
+      "changelog": "Àkọsílẹ̀ àyípadà",
+      "status": "Ipo",
+      "roadmap": "Maapu ọ̀nà",
+      "greenPledge": "Ìlérí àlàwọ̀ ewé",
+      "privacy": "Àṣírí",
+      "terms": "Àwọn ọ̀rọ̀ ìjùmọ̀",
+      "accessibility": "Ìráyé",
+      "cookies": "Cookies"
+    }
   },
   "hero": {
     "skipToContent": "Fò lọ sí àkóónú àkọ́kọ́",
-    "scrollHint": "Yí"
+    "scrollHint": "Yí",
+    "scrollHintTarget": "àlàfo nínú àwọn nọ́mbà"
   },
   "contactForm": {
     "routingLabel": "Ìtọ́sọ́nà",
@@ -44,10 +65,12 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "ÌWÉ ÌYÍPADÀ · OJÚ-ÌWÉ ILÉ-IṢẸ́",
+      "title": "Ohun tó yí padà, ní ìtẹ̀lẹ̀.",
+      "lede": "Gbogbo ìyípadà tí a lè rí tí a ti ṣe lórí ojú-ìwé ilé-iṣẹ́ yìí, pẹ̀lú ọjọ́ àti ìsopọ̀ pẹ̀lú commit tí ó wà lẹ́yìn rẹ̀. Olúkúlùkù ọjà nínú àjọ Clap ní ìwé ìyípadà tirẹ̀ lórí àgbègbè tirẹ̀ — ojú-ìwé yìí jẹ́ ẹnu-ọ̀nà àkọ́kọ́ ti ilé-iṣẹ́ òbí, kò sí mọ́, kò sí ohun tí a fi pamọ́.",
+      "feedLabel": "Forúkọ sílẹ̀:",
+      "feedTitle": "Intelligent Singularity — Ìwé Ìyípadà",
+      "rssFeed": "Ìpèsè RSS"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -55,43 +78,334 @@
       "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
       "operational": "All systems operational",
       "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "unavailable": "Live data unavailable — please retry",
+      "serviceInterruption": "Service interruption",
+      "statusUnknown": "Status unknown",
+      "updatedPrefix": "updated",
+      "noLiveDataAttempt": "no live data — last attempt just now",
+      "connectionFailed": "We could not reach our public status monitor just now. The page will refresh in the background and turn green once the data comes back. Please retry in a minute.",
+      "systemsHeading": "Systems",
+      "noData": "no data",
+      "sourceOfTruth": "Source of truth:",
+      "liveStatusDashboard": "Live status dashboard",
+      "overallStatusAria": "Overall status",
+      "externalNavAria": "External",
+      "opensInNewTab": " (opens in a new tab)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "ÌLÀNÀ ÌRÌNNÀ · NÍ GBANGBA",
+      "title": "Ohun tí à ń kọ́.",
+      "lede": "Ní gbangba. Kò sí vaporware. Olúkúlùkù ohun wà ní ẹ̀gbẹ́ studio — iṣẹ́ ojú-ìwé ilé-iṣẹ́, ètò àjùmọ̀-pín, àti àdéhùn àgbéléwò tí ó kan olúkúlùkù ọjà. Olúkúlùkù ọjà nínú àjọ Clap ní ìlànà ìrìnnà tirẹ̀ lórí àgbègbè tirẹ̀. Àwọn ohun níbí so mọ́ kóòdù nígbà tí wọ́n bá fi ránṣẹ́.",
+      "statusPlanned": "Ti pinnu",
+      "statusInProgress": "Ń lọ lọ́wọ́",
+      "statusShipped": "Ti ránṣẹ́",
+      "statusPaused": "Ti dúró",
+      "emptyColumn": "Kò sí ohunkóhun nínú ìwé yìí ní báyìí. Iṣẹ́ tuntun yóò farahàn níbí bí ó ṣe ń yí ìpele padà.",
+      "byStatusLabel": "Nípa ipo",
+      "ctaEyebrow": "Ohun kan kùrú?",
+      "ctaHeading": "Sọ ohun tí o nilò fún wa.",
+      "ctaBody": "Tí ìlànà-iṣẹ́, irinṣẹ́, tàbí àtúnṣe kan bá wà tí yóò ṣe ìyàtọ̀ tòótọ́ fún ọ, fi ọ̀rọ̀ ránṣẹ́ sí wa. À ń ka olúkúlùkù iṣẹ́, à sì ń pinnu ní ìbámu pẹ̀lú àìní gídígbà.",
+      "ctaButton": "Fi ọ̀rọ̀ ránṣẹ́"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "ÀKÓJỌ ÀRÒ · ÀKÌYÈSÍ LÁTI ILÉ-IṢẸ́",
+      "title": "Ronú ní gbangba.",
+      "lede": "Àkìyèsí láti orí pápá nípa àǹfààní kárí ayé, ìmọ̀-ẹ̀rọ tí AI ń ràn lọ́wọ́, ènìyàn bílíọ̀nù 2.2 tí kò sí lórí ayélujára, àti ọ̀nà gígùn ti ọgbọ́n atọ́ka — a kọ wọ́n láti yé wọn, kì í ṣe láti dájì. À ń kọ́ wọn lọ́nà tó lọ́ra. Olúkúlùkù ẹ̀rí ní àyọkà rẹ̀. Kò sí clickbait, kò sí ìkùukù olórí ìrònú.",
+      "readMore": "Kà →",
+      "minutesRead": "ìṣẹ́jú kíkà",
+      "sourcesHeading": "Àyọkà",
+      "backToIndex": "← Gbogbo àkójọ àrò",
+      "subscribeLabel": "Forúkọ sílẹ̀:",
+      "rssFeed": "Ìpèsè RSS",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "Àtòkun-ìwé"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "ÌGBẸ́KẸ̀LẸ́",
+      "title": "Ibi tí o ti lè rí ẹ̀rí.",
+      "lede": "Olúkúlùkù àdéhùn tí à ń ṣe nípa ààbò, ìkọ̀kọ̀, ìdúró, àti àǹfààní so mọ́ ẹ̀rí. Kò yẹ kí o ní láti gba ọ̀rọ̀ wa kọ̀ọ̀kan.",
+      "pillarsHeading": "Òpó ìgbẹ́kẹ̀lẹ́",
+      "subprocessorsHeading": "Àwọn alábojútó kéékèèké",
+      "certificationsHeading": "Àwọn ẹ̀rí àfijọ",
+      "certsEmpty": "Kò sí kankan síbẹ̀. Nígbà tí a bá ti jẹ́rìí, yóò farahàn níbí pẹ̀lú ọ̀nà sí ẹ̀rí.",
+      "colName": "Orúkọ",
+      "colPurpose": "Ète",
+      "colDataAccessed": "Dátà tí a wọlé",
+      "colLocation": "Ipò",
+      "certsEmptyTitle": "Kò sí kankan síbẹ̀",
+      "certsEmptyBody": "Studio kékeré ni wá. Àwọn ẹ̀rí àfijọ̀ọ́sí ti ètò gbangba gòógó àti losẹ́. Nígbà tí a bá rí ọ̀kan, yóò farahàn níbí pẹ̀lú ọ̀nà sí olùpèsè.",
+      "subprocessorsLede": "Olúkúlùkù àlejò ẹlẹ́gbẹ́ kẹta tí ó lè kàn sí dátà rẹ, ohun tí wọ́n ń wọlé, àti ibi tí wọ́n ń ṣiṣẹ́.",
+      "lastReviewedLabel": "Àyẹ̀wò ìkẹhìn:",
+      "incidentEyebrow": "Ìròyìn ìṣẹ̀lẹ̀",
+      "incidentHeading": "Ṣé o rí nǹkan kan? Jọ̀wọ́ sọ fún wa àkọ́kọ́.",
+      "incidentBody": "Ìṣípayá tí a fi ọwọ́ ṣíṣẹ́pọ̀ ni ọ̀nà tí à ń tẹ̀lé tọkàntọkàn. Fi imeèlì ránṣẹ́ sí security@intelligentsingularityinc.com pẹ̀lú àpèjúwe àti àwọn ìgbésẹ̀ ìtúngbé. À ń jẹ́wọ́ àwọn ìròyìn nínú ọjọ́ iṣẹ́ kan, à ń ṣe ìpín nínú ọjọ́ mẹta, a sì ń fi àtúnṣe ránṣẹ́ ní àkókò tí à fi gbà pẹ̀lú rẹ. À ń sọ ti àwọn olùwadìí pẹ̀lú orúkọ wọn nínú ìròyìn lẹ́yìn-tí-ó-bára-tó-bá-ṣẹlẹ̀ wa nígbà tí àtúnṣe bá tó — àyàfi tí o bá fẹ́ kí orúkọ rẹ má farahàn. Kò ní halẹ̀ bá tàbí pe ẹjọ́ àwọn olùwadìí ààbò tí ó ní ọkàn rere, ìparí ọ̀rọ̀.",
+      "incidentCta": "Ròhìn ìṣẹ̀lẹ̀",
+      "privacyPolicyLink": "Ìlànà àbáwọlé",
+      "learnMore": "Kọ́ síi"
     },
     "help": {
-      "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "eyebrow": "ÌRÀNLỌ́WỌ́",
+      "title": "A sábà máa ń ràn ọ́ lọ́wọ́ ní ìfọwọ́kàn kan.",
+      "lede": "Yan ila tó dà bí ìbéèrè rẹ jù lọ. Gbogbo ìjápọ̀ ń lọ sí ibi gidi — kò sí fọ́mù tí a ti pa, kò sí chatbots.",
+      "emergencyLabel": "Tó bá jẹ́ kíákíá",
+      "popularHeading": "Àwọn ìbéèrè gbajúmọ̀",
+      "stillStuck": "Ṣé ó ṣì jọ̀?",
+      "browseByTopic": "Wo nípa àkòrí",
+      "checkStatus": "Ṣàyẹ̀wò ipò",
+      "contactEyebrow": "Olùbáwí",
+      "contactFallbackCta": "Bá wa sọ̀rọ̀"
+    },
+    "about": {
+      "eyebrow": "Nípa wa · Studio",
+      "defaultTitle": "Nípa Intelligent Singularity",
+      "ecosystemLabel": "Ìṣàfihàn àjọ ní oju kan",
+      "ecosystemHeading": "Ilé-iṣẹ́ òbí kan, ẹka ọjà méje.",
+      "ataGlanceLabel": "Ní ojú kan",
+      "talkToStudioLabel": "Bá studio sọ̀rọ̀",
+      "talkToStudioBody": "Àjọṣepọ̀, ìròyìn, tàbí ìbéèrè ọjà — àwọn ọ̀rọ̀ ó jẹ́wọ́ olùdá tààrà, lójú-pípadá nínú ọjọ́ iṣẹ́ méjì.",
+      "contactCta": "Olùbáwí · Ṣí fọ́mù",
+      "metaLabels": {
+        "legalEntity": "Ètò òfin",
+        "founded": "Tí a dá",
+        "founder": "Olùdá",
+        "structure": "Ìpilẹ̀",
+        "operatingModel": "Àpẹrẹ ìṣiṣẹ́",
+        "capital": "Olú",
+        "portfolio": "Àkójọpọ̀ iṣẹ́",
+        "languages": "Àwọn èdè",
+        "footprint": "Ifaagun"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · Alberta, Kánádà",
+        "founder": "Dr. Md Diya, MD",
+        "structure": "Òbí ti àjọ Clap",
+        "operatingModel": "Kéékèèké, jíjìnnà, ti AI túbọ̀",
+        "capital": "Bootstrapped · ìnáwó-ara · kò sí fún títà",
+        "portfolio": "Ìdílé pẹpẹ tó ń dàgbàsókè",
+        "languages": "Àwọn àyè 14 tó ti tu sílẹ̀",
+        "footprint": "≤ 50 KB fún ojú-ìwé kọ̀ọ̀kan · òfò àwọn olùtọpa"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "Ìpolongo · Àwọn ìpilẹ̀ àkọ́kọ́",
+      "offlinePercentEyebrow": "Ìpín 26",
+      "offlinePercentHeading": "Ènìyàn bílíọ̀nù méjì àti díẹ̀ kò sí lórí ayélujára lónìí.",
+      "offlinePercentBody": "Àwọn àmì tó fẹ́lẹ̀fẹ́ ní òkè jẹ́ àwọn ènìyàn tí wọ́n wà lórí ayélujára. Àwọn àmì tí ó dúdú jù tí wọ́n sì ní àyíká jẹ́ àwọn tí kò sí. Ìpín 96 nínú ọgọ́rùn-ún àwọn tí kò sí lórí ayélujára ń gbé ní àwọn orílẹ̀-èdè tó ní owó-orí kékeré àti aláàárín. Ìmọ̀-ẹ̀rọ àǹfààní kárí ayé ni èyí tí ó pa àlàfo náà mọ́ra. Àwọn àdéhùn mẹ́sàn-án tó wà nísàlẹ̀ ni bí à ṣe ń di ara wa lọ́wọ́.",
+      "commitmentsHeading": "Àwọn àdéhùn mẹ́sàn-án",
+      "commitmentsBody": "Àyíká mẹ́sàn-án tó wà ní àárín kannáà — gbogbo ọjà ni a kọ́ lòdì sí ọ̀kọ̀ọ̀kan wọn, ní gbogbo ìkọsílẹ̀. Àkójọpọ̀ kì í ṣe àwọn ohun tí à ń fẹ́. Òfin iṣẹ́-ẹ̀rọ ni.",
+      "sourceData": "Orísun dátà"
+    },
+    "faq": {
+      "openTheForm": "Open the form",
+      "emailDirectly": "Email directly"
+    },
+    "pricing": {
+      "tierFree": "Free tier:",
+      "tierPaid": "Paid tier:",
+      "tierEnterprise": "Enterprise:",
+      "sixRulesHeading": "Six rules every product ships under",
+      "antiPatternsHeading": "What we will not do",
+      "antiPatternsBody": "The anti-patterns below are common in business software. We have decided against each of them, in writing, in advance — so neither we nor a future us can quietly bring them back.",
+      "workedExampleHeading": "The same product, three customers",
+      "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
+      "viewThePortfolio": "View the portfolio",
+      "talkAboutPricing": "Talk about pricing"
+    },
+    "careers": {
+      "howWeWorkHeading": "Bí a ṣe ń ṣiṣẹ́ ní gidi",
+      "whatYouWouldWorkOnHeading": "Ohun tí ìwọ yóò ṣiṣẹ́ lórí ní gidi",
+      "howWeHireHeading": "Bí a ṣe ń gba òṣìṣẹ́ jọ, láti ìbẹ̀rẹ̀ dé òpin",
+      "openRolesFallback": "Àwọn ipò tí ó ṣí sílẹ̀",
+      "updatedPrefix": "Ti ṣe àyípadà",
+      "contactFormCta": "Fọ́ọ̀mù olùbátà",
+      "whatYouWouldWorkOnLede": "Intelligent Singularity ni ilé-iṣẹ́ ìyá ti ìdílé tí ń dàgbà ti àwọn pèpéle. Àwọn òṣìṣẹ́ tuntun kì í ṣiṣẹ́ lórí ọjà kan ṣoṣo fún gbogbo ọdún — púpọ̀ ń yí láàárín méjì tàbí mẹ́ta, dá lórí ohun tí ń lọ ìfìsí àti ohun tí ó ṣe pàtàkì jù sí àwọn òṣìṣẹ́ àgbà ní àkókò mẹ́ta-mẹ́ta yẹn.",
+      "howWeHireLede": "Ìgbésẹ̀ mẹ́rin. Ó pọ̀jù ọ̀sẹ̀ méjì láti ìmẹ́ìlì àkọ́kọ́ dé ìfọ̀rọ̀wánilẹ́nuwò tí a kọ tí àwọn ẹ̀gbẹ́ méjèèjì bá yára. Kò sí ìgbésẹ̀ ìyàlẹ́nu, kò sí iṣẹ́ ilé tí kò ní owó, kò sí ìkọ̀sí \"ìbámu àṣà\" láì sí ìdí tí a kọ."
+    },
+    "press": {
+      "factSheetHeading": "Ìwé àkọsílẹ̀ òtítọ́",
+      "approvedQuotesHeading": "Àyọkà tí a fọwọsi",
+      "brandAssetsHeading": "Àwọn dúkìá àmì",
+      "brandNameLabel": "Orúkọ àmì",
+      "founderReferenceLabel": "Ìtọ́kasí olùdásílẹ̀",
+      "pressBoilerplateHeading": "Àkọsílẹ̀ òfin ti ìròyìn",
+      "storyAnglesWelcomedHeading": "Àwọn igun ìtàn tí a kabọ̀",
+      "storyAnglesDeclineHeading": "Àwọn igun ìtàn tí a sábà máa kọ̀",
+      "contactFormCta": "Fọ́ọ̀mù olùbátà",
+      "boilerplateLede": "Àyọ̀kà kan, tí ó ṣetán fún ìfisí láti rán síta ìtàn ìròyìn. A ti fọwọ́sí lílò ọ̀rọ̀-ọ̀rọ̀.",
+      "storyAnglesYesLede": "Tí ìtàn rẹ bá wà nínú ọ̀kan lára àwọn igun wọnyi, a ó yára láti jẹ́ kí olùdásílẹ̀, ènjíníà, tàbí olùdarí ọjà wà — sábà nínú ọjọ́ iṣẹ́ kan.",
+      "storyAnglesNoLede": "Òtítọ́ ní ìbẹ̀rẹ̀ ń tu àkókò gbogbo ènìyàn. A kì yóò pèsè àyọkà fún àwọn igun nísàlẹ̀. Sibẹsibẹ, a ó tọ́ ọ sí oníròyìn tàbí olùṣàyẹ̀wò tí iṣẹ́ rẹ̀ bá ìtàn náà mu jù lọ."
+    },
+    "portfolio": {
+      "eyebrow": "Àkójọpọ̀ iṣẹ́ · Àjọ Clap",
+      "titleLine1": "Irinṣẹ́ {count}.",
+      "titleLine2": "Iṣẹ́-àyànfẹ́ kan.",
+      "lede": "Intelligent Singularity jẹ́ ilé-iṣẹ́ òbí ti àjọ Clap. Olúkúlùkù ọjà ń ṣiṣẹ́ lórí àgbègbè rẹ̀, lábẹ́ àdéhùn rẹ̀, pẹ̀lú iye-owó rẹ̀ — ṣùgbọ́n wọ́n pín ìpele ìmọ̀-ẹ̀rọ kan, ètò àǹfààní kan, ìduróṣinṣin ìkọ̀kọ̀ kan, àti àpẹrẹ àjùmọ̀-pín ti AI-agent kan. Àmì ipò olóòótọ́ níbí gbogbo: production, staging, ìdúró fún ìfọwọ́sí, ìpilẹ̀ ọmọ-ìṣe.",
+      "statToolsLabel": "Irinṣẹ́",
+      "statToolsHint": "Ní àárín àwọn ẹka méje tí ó wà nísàlẹ̀",
+      "statFlagshipsLabel": "Àwọn ìpilẹ̀-ọjà",
+      "statFlagshipsHint": "Tí a yàn fún ìlò àkọ́kọ́ ní orí ojú-ìwé ilé",
+      "statProductionLabel": "Láàyè · production",
+      "statProductionHint": "À ń fi ránṣẹ́ sí àwọn olùṣàmúlò gídí lónìí",
+      "statStagingLabel": "Ní staging",
+      "statStagingHint": "Ìpèníjà nìkan, ti a ń fi agbára kún kí a tó tu sílẹ̀",
+      "statCategoriesLabel": "Ẹka",
+      "statCategoriesHint": "Ìpele kanṣoṣo tí a pín ní gbogbo àgbègbè",
+      "statThirdPartyLabel": "Ìpè ti ẹlẹ́gbẹ́ kẹta",
+      "statThirdPartyValue": "Òfò",
+      "statThirdPartyHint": "Tí a fi agbára múlò nípasẹ̀ CI ní gbogbo ìtu ọjà sílẹ̀",
+      "ecosystemStatsAria": "Ìṣirò ti àjọ"
+    },
+    "contact": {
+      "eyebrow": "Olùbáwí · Ojú-tábìlì studio",
+      "titleFallback": "Bá wa sọ̀rọ̀",
+      "directChannelsLabel": "Àwọn orísun tààrà",
+      "channels": {
+        "general": {
+          "label": "Gbogbogbò",
+          "hint": "Àwọn ìbéèrè ọjà, ìfihàn, tàbí kíkàn láti kí."
+        },
+        "press": {
+          "label": "Ìròyìn",
+          "hint": "Ìfọ̀rọ̀wérọ̀, ìwòye, àǹfààní olùdá, ìṣírí ìtàn."
+        },
+        "partnerships": {
+          "label": "Àjọṣepọ̀",
+          "hint": "NGOs, ìjọba, ìfọwọ́sowọ́pọ̀ ile-iṣẹ́, ìfowóléwoló."
+        },
+        "careers": {
+          "label": "Iṣẹ́",
+          "hint": "Àwọn ipò tó ṣí, ìfihàn, àyọkà."
+        },
+        "security": {
+          "label": "Ààbò",
+          "hint": "Àwọn ìròyìn àìlera — a jẹ́wọ́ nínú ọjọ́ iṣẹ́ kan."
+        },
+        "accessibility": {
+          "label": "Àǹfààní",
+          "hint": "Ròhìn ìdíwọ́ lórí ojú-opó tàbí nínú ọjà èyíkéyìí."
+        },
+        "privacy": {
+          "label": "Ìkọ̀kọ̀",
+          "hint": "Àbéwò dátà, àtúnṣe, ìparẹ́, ìfaragbalé àwọn ìbéèrè."
+        },
+        "legal": {
+          "label": "Òfin",
+          "hint": "DPAs, MSAs, àwọn ìkìlọ̀ àtìkànlú, àwọn ìbéèrè aṣòfin."
+        }
+      },
+      "responseTimeLabel": "Àkókò ìdáhùn",
+      "responseTimeBody": "Ènìyàn ka olúkúlùkù iṣẹ́. À ń dáhùn nínú ọjọ́ iṣẹ́ méjì ní àkókò iṣẹ́ UTC−07:00 (Mountain). A fún àwọn ìbéèrè ààbò àti òfin ní pàtàkì — a jẹ́wọ́ àwọn ìròyìn ààbò nínú ọjọ́ iṣẹ́ kan. À lè dáhùn nínú èyíkéyìí àwọn èdè mẹ́rìnlá tí ojú-opó yìí ń sọ.",
+      "factHqLabel": "Olú-iṣẹ́",
+      "factHqLine1": "Alberta, Kánádà",
+      "factHqLine2": "Tí a dá ní 2024",
+      "factPrivacyLabel": "Ìkọ̀kọ̀",
+      "factPrivacyLine1": "Kò sí olùtọpa.",
+      "factPrivacyLine2": "Ìfijiṣẹ́ imeèlì nìkan.",
+      "factLanguagesLabel": "Àwọn èdè",
+      "factLanguagesLine1": "Àwọn àyè 14 tó ti tu sílẹ̀.",
+      "factLanguagesLine2": "Pẹ̀lú Lárúbáwá àti Urdu RTL.",
+      "factHostingLabel": "Hosting",
+      "factHostingLine1": "VPS kanṣoṣo, Edmonton.",
+      "factHostingLine2": "Kò sí CDN ti ẹlẹ́gbẹ́ kẹta."
+    },
+    "security": {
+      "postureHeading": "Báwo ní à ṣe ń ṣàkóso ojú-opó àti pẹpẹ",
+      "dataHeading": "Báwo ní à ṣe ń bójútó dátà rẹ",
+      "complianceHeading": "Àwọn ìlànà tí à fọwọ́ rẹ̀ pàápàá",
+      "complianceLede": "À ń tẹ̀lé àkójọ kéékèèké, tí a sọ orúkọ rẹ̀ ti àwọn ìlànà — a sì ń sọ òtítọ́ nípa àyẹ̀wò tí a kò tíì gbà.",
+      "privacyPolicyLink": "Ka ìlànà àbáwọlé"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "Aláwọ̀-ewé · Telemetry láàyè",
+      "statThisPageLabel": "Ojú-ìwé yìí",
+      "statThisPageHint": "HTML + CSS, kò sí olùtọpa",
+      "statThisVisitLabel": "Ìbẹ̀wò yìí",
+      "statThisVisitHint": "CO₂ · Green Web Foundation",
+      "statHostingLabel": "Hosting",
+      "statHostingValue": "Tí a fi ara wa hósúù",
+      "statHostingHint": "VPS kanṣoṣo · gírídì Alberta (~{percent}% tí a lè tún ṣe)",
+      "statThirdPartyLabel": "Ẹlẹ́gbẹ́ kẹta",
+      "statThirdPartyValue": "Òfò",
+      "statThirdPartyHint": "Kò sí pixels · kò sí fonts · kò sí CDN",
+      "engineeringPracticesEyebrow": "Àwọn àṣà ìmọ̀-ẹ̀rọ",
+      "byteBudgetHeading": "Bí ìnáwó byte ṣe ń wà ní kéékèèké",
+      "pledgeEyebrow": "Àdéhùn",
+      "pledgeHeading": "À ń tẹ̀ jáde ohun gbogbo. O ń di wa lónìí.",
+      "pledgeBody": "Olúkúlùkù nọ́mbà lórí ojú-ìwé yìí ni a kà gẹ́gẹ́ bí akoko-gangan láti àwọn ìwọ̀n gangan. CI ń fipá mú ìnáwó pápá; àyẹ̀wò ka àwọn ẹlẹ́gbẹ́ kẹta lórí olúkúlùkù ìkọ́; ìṣirò carbon n lo ọ̀nà Green Web Foundation lòdì sí ìwọn ojú-ìwé tí o lóòdì gangan. Tí ohunkohun bá dàbí àṣìṣe, sọ fún wa — a ó dáhùn nínú ìwé nínú ọjọ́ iṣẹ́ márùn-ún, pẹ̀lú àwọn nọ́mbà ìpilẹ̀ tí a fihàn.",
+      "reportIssueCta": "Ròhìn ìṣòro",
+      "practices": {
+        "bundleBudget": {
+          "label": "Ìnáwó pápá",
+          "value": "≤ 50 KB / ọ̀nà",
+          "hint": "Gzipped. CI ń fipá mú u ní gbogbo pull request — ìkọ́ tí ó tan ìnáwó kò lè tan."
+        },
+        "thirdPartyCalls": {
+          "label": "Ìpè ti ẹlẹ́gbẹ́ kẹta",
+          "value": "Òfò",
+          "hint": "Kò sí analytics, fonts, pixels, video embeds, àwọn widgets ti agbègbè, tàbí ìrìn CDN. Ó wà ní àyẹ̀wò ní gbogbo ìkọ́ nípasẹ̀ no-third-party.mjs."
+        },
+        "renderer": {
+          "label": "Mọ́nà",
+          "value": "HTML olu-iṣẹ́-akọ́kọ́",
+          "hint": "Ojú-ìwé ń ya lórí olu-iṣẹ́ tí ó sì ń gbà sí ẹ̀rọ-ìwé. Hydration jẹ́ opt-in, ní gbogbo component, kò sí ní àgbáyé rárá."
+        },
+        "mediaStrategy": {
+          "label": "Ìlànà media",
+          "value": "Fonts ti tẹ́tẹ́ · SVG",
+          "hint": "Kò sí àwọn akọni raster. Àwọn àṣàrò SVG inline. Àwọn ìpín fonts kòòkan ní gbogbo iṣẹ́ tí a fi sílẹ̀ kì í kàn lóòdì pẹ̀lú script."
+        },
+        "hosting": {
+          "label": "Hosting",
+          "value": "VPS PUE-kéékèèké",
+          "hint": "Tí a fi-ara-wa-hósúù lórí VPS kanṣoṣo ní Edmonton, Alberta. Kò sí CDN. Kò sí àwọn edge nodes. Orísun kan, ààlà ìgbẹ́kẹ̀lẹ́ kan."
+        },
+        "offlineReach": {
+          "label": "Ipa-ọ̀nà offline",
+          "value": "PWA · Service worker",
+          "hint": "HTML olu-network-akọ́kọ́ · àwọn ohun-ìní stale-while-revalidate · ojú-ìwé offline fallback ní gbogbo èdè."
+        },
+        "reducedMotion": {
+          "label": "Iṣipopada tí ó dín kù",
+          "value": "Tí a bọwọ́ fún kárí",
+          "hint": "Olúkúlùkù iṣipopada ń dúró nígbà tí a bá ṣe prefers-reduced-motion. Kò sí ìyàtọ̀, kò sí ohun tí a nilò opt-out."
+        },
+        "paperless": {
+          "label": "Aláìní bébà gẹ́gẹ́ bí àṣàrò",
+          "value": "Lórí pẹpẹ",
+          "hint": "Bíìì, àkọsílẹ̀ ìṣègùn, rasiti ń di díjítà bí àṣàrò. Bébà ọ́fíìsì, káàdì iṣẹ́, àti àwọn ohun-èlò ìpolówó ti a tẹ̀ jáde kò sí lára bí ó ṣe ń ṣiṣẹ́ wa."
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "Nine non-negotiables",
+      "commitmentsAria": "The nine commitments"
     }
+  },
+  "topBar": {
+    "openMenu": "Ṣí àkójọ àwọn àṣàyàn",
+    "closeMenu": "Ti àkójọ àwọn àṣàyàn",
+    "drawerCurrentlyViewing": "Èdè lọ́wọ́lọ́wọ́",
+    "drawerLanguagesBlurb": "Èdè mẹ́rìnlá. Yí padà láti orí kẹ̀kẹ́ èdè ní ìsàlẹ̀ ojú-ìwé èyíkéyìí.",
+    "primaryNavAria": "Àkọ́kọ́",
+    "mobileNavAria": "Àkọ́kọ́ alágbèéká",
+    "mobileDrawerAria": "Ìrìnnà ojú opó"
+  },
+  "common": {
+    "contactUs": "Kàn sí wa",
+    "goToHome": "Lọ sí ilé",
+    "honestNote": "Àkọsílẹ̀ òtítọ́",
+    "loading": "Ń gbé jáde...",
+    "notFoundBody": "Ó lè jẹ́ pé ìjápọ̀ náà ti pẹ́, tàbí pé a ti gbé ojú-ìwé náà, tàbí pé àdírẹ́sì náà ní àṣìṣe. Gbìyànjú ojú-ìwé ilé, tàbí kàn sí wa bí o bá dé ibí láti ìjápọ̀ tí a kọ.",
+    "notFoundEyebrow": "404 · A kò rí ojú-ìwé náà",
+    "notFoundTitle": "A kò rí ojú-ìwé yẹn.",
+    "offlineBody": "Ó dàbí pé o wà lódì sí ìkànnì. À ń ṣe ìránṣẹ́ ojú-ìwé yìí láti inú àkójọ ìmọ̀.",
+    "offlineEyebrow": "Lódì sí ìkànnì",
+    "offlineReturnHome": "Padà sí ilé",
+    "offlineTitle": "Kò sí ìsopọ̀ báyìí."
+  },
+  "languageWheel": {
+    "navAria": "Èdè",
+    "switchTo": "Yí èdè padà sí {language}"
   }
 }

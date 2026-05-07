@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MeridianMark } from '@/components/brand/MeridianMark';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({
@@ -18,14 +19,20 @@ export async function generateMetadata({
   });
 }
 
-export default function OfflinePage() {
+export default async function OfflinePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations('common');
   return (
     <section className="min-h-[100dvh] flex flex-col items-center justify-center gap-8 px-6 py-24">
       <MeridianMark size={72} />
       <div
         className="label-mono"
       >
-        No connection · You are offline
+        {t('offlineEyebrow')}
       </div>
       <h1
         className="text-center text-[var(--color-paper-ink)]"
@@ -37,7 +44,7 @@ export default function OfflinePage() {
           fontWeight: 600,
         }}
       >
-        Designed for this moment.
+        {t('offlineTitle')}
       </h1>
       <p
         className="text-center italic max-w-[560px]"
@@ -48,16 +55,14 @@ export default function OfflinePage() {
           color: 'rgba(17,24,39,0.72)',
         }}
       >
-        Universal access is the brief. This site keeps working without a connection — every page you
-        visited once is cached and readable. Try a page you&apos;ve already seen, or reconnect to
-        load something new.
+        {t('offlineBody')}
       </p>
       <Link
-        href="/"
+        href={`/${locale}`}
         className="btn-outline mt-2"
         style={{ fontFamily: 'var(--font-mono)' }}
       >
-        Return to the home page
+        {t('offlineReturnHome')}
         <span aria-hidden="true">→</span>
       </Link>
     </section>

@@ -8,6 +8,10 @@ vi.mock('@/lib/payload', () => ({
   }),
 }));
 
+vi.mock('next-intl/server', () => ({
+  getTranslations: async () => (key: string) => ({ feedTitle: 'Intelligent Singularity — Insights' }[key] ?? key),
+}));
+
 describe('GET /insights/feed.xml', () => {
   it('returns 200 Atom with entries', async () => {
     const mod = await import('@/app/(public)/[locale]/insights/feed.xml/route');

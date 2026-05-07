@@ -5,6 +5,22 @@ vi.mock('next/navigation', () => ({
   usePathname: () => '/en/faq',
 }));
 
+vi.mock('next-intl', () => ({
+  useTranslations: () => (key: string) => {
+    const labels: Record<string, string> = {
+      portfolio: 'Portfolio',
+      manifesto: 'Manifesto',
+      pricing: 'Pricing',
+      security: 'Security',
+      faq: 'FAQ',
+      insights: 'Insights',
+      about: 'About',
+      contact: 'Contact',
+    };
+    return labels[key] ?? key;
+  },
+}));
+
 import { TopBar } from '@/components/layout/TopBar';
 
 describe('<TopBar>', () => {

@@ -2,27 +2,35 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { useEffect, useRef, useState } from 'react';
 import { MeridianMark } from '@/components/brand/MeridianMark';
 
 type Props = {
   locale: string;
 };
 
-const NAV_LINKS = [
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/manifesto', label: 'Manifesto' },
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/security', label: 'Security' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/insights', label: 'Insights' },
-  { href: '/about', label: 'About' },
+type NavKey = 'portfolio' | 'manifesto' | 'pricing' | 'security' | 'faq' | 'insights' | 'about' | 'contact';
+
+const NAV_LINKS: Array<{ href: string; key: NavKey }> = [
+  { href: '/portfolio', key: 'portfolio' },
+  { href: '/manifesto', key: 'manifesto' },
+  { href: '/pricing', key: 'pricing' },
+  { href: '/security', key: 'security' },
+  { href: '/faq', key: 'faq' },
+  { href: '/insights', key: 'insights' },
+  { href: '/about', key: 'about' },
 ];
 
 export function TopBar({ locale }: Props) {
   const pathname = usePathname();
+  const tNav = useTranslations('nav');
+  const tBar = useTranslations('topBar');
+  const tFooter = useTranslations('footer');
   const isHomepage = pathname === `/${locale}` || pathname === `/${locale}/`;
   const [menuOpen, setMenuOpen] = useState(false);
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
   const [prevPathname, setPrevPathname] = useState(pathname);
   if (prevPathname !== pathname) {
     setPrevPathname(pathname);
@@ -38,6 +46,43 @@ export function TopBar({ locale }: Props) {
     return () => {
       document.documentElement.style.overflow = '';
     };
+  }, [menuOpen]);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const id = window.setTimeout(() => {
+      const firstFocusable = dialogRef.current?.querySelector<HTMLElement>('a, button');
+      firstFocusable?.focus();
+    }, 0);
+    return () => window.clearTimeout(id);
+  }, [menuOpen]);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setMenuOpen(false);
+        hamburgerRef.current?.focus();
+        return;
+      }
+      if (e.key === 'Tab' && dialogRef.current) {
+        const focusables = dialogRef.current.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled])',
+        );
+        if (focusables.length === 0) return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
   }, [menuOpen]);
 
   const barBg = isHomepage ? 'rgba(17, 24, 39, 0.92)' : 'rgba(255, 255, 255, 0.96)';
@@ -63,7 +108,7 @@ export function TopBar({ locale }: Props) {
       >
         <div className="flex items-center gap-3 md:gap-8">
           <Link
-            href="/"
+            href={`/${locale}`}
             className="flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-[var(--color-mint)] rounded-sm"
             style={{
               fontFamily: 'var(--font-serif)',
@@ -76,7 +121,7 @@ export function TopBar({ locale }: Props) {
             <MeridianMark size={22} />
             <span>Intelligent Singularity</span>
           </Link>
-          <nav className="hidden md:flex items-center gap-6 lg:gap-7" aria-label="Primary">
+          <nav className="hidden lg:flex items-center gap-6" aria-label={tBar('primaryNavAria')}>
             {NAV_LINKS.map((l) => {
               const isActive = pathname === `/${locale}${l.href}` || pathname.startsWith(`/${locale}${l.href}/`);
               return (
@@ -98,7 +143,7 @@ export function TopBar({ locale }: Props) {
                     (e.currentTarget as HTMLAnchorElement).style.color = isActive ? linkHover : linkColor;
                   }}
                 >
-                  {l.label}
+                  {tNav(l.key)}
                   {isActive && (
                     <span
                       aria-hidden="true"
@@ -123,11 +168,11 @@ export function TopBar({ locale }: Props) {
             }}
           >
             <span style={{ color: 'var(--color-emerald)' }}>●</span>
-            {locale.toUpperCase()} · 14 languages
+            {locale.toUpperCase()} · {tFooter('languagesLabel')}
           </span>
           <Link
             href={`/${locale}/contact`}
-            className="hidden md:inline-flex items-center gap-1.5 px-5 py-[9px] rounded-full transition-all hover:opacity-90 hover:-translate-y-0.5"
+            className="hidden lg:inline-flex items-center gap-1.5 px-5 py-[9px] rounded-full transition-all hover:opacity-90 hover:-translate-y-0.5"
             style={{
               background: ctaBg,
               color: ctaText,
@@ -137,15 +182,17 @@ export function TopBar({ locale }: Props) {
               boxShadow: '0 2px 10px rgba(16,185,129,0.28)',
             }}
           >
-            Contact
+            {tNav('contact')}
             <span aria-hidden="true">→</span>
           </Link>
           <button
+            ref={hamburgerRef}
             type="button"
             aria-expanded={menuOpen}
-            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-controls="is-mobile-menu"
+            aria-label={menuOpen ? tBar('closeMenu') : tBar('openMenu')}
             onClick={() => setMenuOpen((v) => !v)}
-            className="md:hidden inline-flex items-center justify-center w-11 h-11 -me-1 rounded-full"
+            className="lg:hidden inline-flex items-center justify-center w-11 h-11 -me-1 rounded-full"
             style={{
               color: brandColor,
               border: `1px solid ${chipBorder}`,
@@ -187,11 +234,12 @@ export function TopBar({ locale }: Props) {
 
       {menuOpen ? (
         <div
+          ref={dialogRef}
           id="is-mobile-menu"
           role="dialog"
           aria-modal="true"
-          aria-label="Site navigation"
-          className="md:hidden fixed inset-0 z-40 flex flex-col"
+          aria-label={tBar('mobileDrawerAria')}
+          className="lg:hidden fixed inset-0 z-40 flex flex-col"
           style={{
             top: '64px',
             background: isHomepage ? 'rgba(10, 13, 11, 0.98)' : 'rgba(255, 255, 255, 0.98)',
@@ -200,8 +248,8 @@ export function TopBar({ locale }: Props) {
             backdropFilter: 'blur(18px)',
           }}
         >
-          <nav className="flex flex-col gap-1 px-5 pt-6 pb-6" aria-label="Primary mobile">
-            {[...NAV_LINKS, { href: '/contact', label: 'Contact' }].map((l) => (
+          <nav className="flex flex-col gap-1 px-5 pt-6 pb-6" aria-label={tBar('mobileNavAria')}>
+            {[...NAV_LINKS, { href: '/contact', key: 'contact' as const }].map((l) => (
               <Link
                 key={l.href}
                 href={`/${locale}${l.href}`}
@@ -214,7 +262,7 @@ export function TopBar({ locale }: Props) {
                   borderBottom: `1px solid ${isHomepage ? 'rgba(16,185,129,0.1)' : 'rgba(16,185,129,0.12)'}`,
                 }}
               >
-                {l.label}
+                {tNav(l.key)}
               </Link>
             ))}
           </nav>
@@ -226,20 +274,20 @@ export function TopBar({ locale }: Props) {
               className="text-[10px] uppercase tracking-[0.12em]"
               style={{ color: 'var(--color-emerald)', fontFamily: 'var(--font-mono)' }}
             >
-              Currently viewing · {locale.toUpperCase()}
+              {tBar('drawerCurrentlyViewing')} · {locale.toUpperCase()}
             </div>
             <p
               className="text-[14px] leading-[1.7]"
               style={{ color: isHomepage ? 'rgba(240,253,244,0.72)' : 'rgba(17,24,39,0.72)' }}
             >
-              Fourteen languages. Switch from the language wheel at the bottom of any page.
+              {tBar('drawerLanguagesBlurb')}
             </p>
             <div
               className="flex gap-4 mt-1 text-[11px]"
               style={{ color: 'var(--color-emerald)', fontFamily: 'var(--font-mono)' }}
             >
-              <span>0 trackers</span>
-              <span>0 third-party calls</span>
+              <span>{tFooter('zeroTrackers')}</span>
+              <span>{tFooter('zeroThirdParty')}</span>
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
+import { getLocale } from 'next-intl/server';
 import './globals.css';
 import { getSiteUrl } from '@/lib/seo';
+import { isRtl, type Locale } from '@/i18n/config';
 
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
@@ -24,9 +26,11 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getLocale();
+  const dir = isRtl(locale as Locale) ? 'rtl' : 'ltr';
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} dir={dir}>
       <body>{children}</body>
     </html>
   );

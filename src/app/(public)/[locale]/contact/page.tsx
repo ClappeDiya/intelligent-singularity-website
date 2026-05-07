@@ -1,56 +1,27 @@
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { ContactForm } from '@/components/pages/ContactForm';
 import { fetchContactPage } from '@/lib/payload';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
 
-const CHANNELS = [
-  {
-    label: 'General',
-    email: 'hello@intelligentsingularityinc.com',
-    hint: 'Product questions, intros, or just to say hi.',
-  },
-  {
-    label: 'Press',
-    email: 'press@intelligentsingularityinc.com',
-    hint: 'Interviews, quotes, founder availability, story leads.',
-  },
-  {
-    label: 'Partnerships',
-    email: 'partners@intelligentsingularityinc.com',
-    hint: 'NGOs, governments, enterprise collaboration, grant funding.',
-  },
-  {
-    label: 'Careers',
-    email: 'careers@intelligentsingularityinc.com',
-    hint: 'Open roles, introductions, references.',
-  },
-  {
-    label: 'Security',
-    email: 'security@intelligentsingularityinc.com',
-    hint: 'Vulnerability reports — acknowledged within one business day.',
-  },
-  {
-    label: 'Accessibility',
-    email: 'accessibility@intelligentsingularityinc.com',
-    hint: 'Report a barrier on the site or in any product.',
-  },
-  {
-    label: 'Privacy',
-    email: 'privacy@intelligentsingularityinc.com',
-    hint: 'Data access, correction, deletion, portability requests.',
-  },
-  {
-    label: 'Legal',
-    email: 'legal@intelligentsingularityinc.com',
-    hint: 'DPAs, MSAs, formal notices, regulatory inquiries.',
-  },
-];
+const CHANNEL_SLUGS = [
+  { slug: 'general', email: 'hello@intelligentsingularityinc.com' },
+  { slug: 'press', email: 'press@intelligentsingularityinc.com' },
+  { slug: 'partnerships', email: 'partners@intelligentsingularityinc.com' },
+  { slug: 'careers', email: 'careers@intelligentsingularityinc.com' },
+  { slug: 'security', email: 'security@intelligentsingularityinc.com' },
+  { slug: 'accessibility', email: 'accessibility@intelligentsingularityinc.com' },
+  { slug: 'privacy', email: 'privacy@intelligentsingularityinc.com' },
+  { slug: 'legal', email: 'legal@intelligentsingularityinc.com' },
+] as const;
 
 async function ContactContent({ locale }: { locale: string }) {
   const contact = await fetchContactPage(locale);
+  const t = await getTranslations('pages.contact');
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/contact',
@@ -70,8 +41,8 @@ async function ContactContent({ locale }: { locale: string }) {
     <article className="page-shell-wide">
       <JsonLd id={`contact-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`contact-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">Contact · Studio desk</div>
-      <h1 className="page-title">{contact.title || 'Get in touch'}</h1>
+      <div className="page-label">{t('eyebrow')}</div>
+      <h1 className="page-title">{contact.title || t('titleFallback')}</h1>
       <p className="page-lead">{contact.lead}</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_.9fr] gap-12 lg:gap-20">
@@ -91,16 +62,16 @@ async function ContactContent({ locale }: { locale: string }) {
             <div
               className="label-mono mb-4"
             >
-              Direct channels
+              {t('directChannelsLabel')}
             </div>
             <ul className="flex flex-col gap-5">
-              {CHANNELS.map((c) => (
-                <li key={c.label}>
+              {CHANNEL_SLUGS.map((c) => (
+                <li key={c.slug}>
                   <div
                     className="text-[10px] uppercase tracking-[0.1em] mb-1.5"
                     style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
                   >
-                    {c.label}
+                    {t(`channels.${c.slug}.label`)}
                   </div>
                   <a
                     href={`mailto:${c.email}`}
@@ -109,7 +80,7 @@ async function ContactContent({ locale }: { locale: string }) {
                     {c.email}
                   </a>
                   <p className="text-[13px] leading-[1.6] mt-1.5" style={{ color: 'rgba(17,24,39,0.78)' }}>
-                    {c.hint}
+                    {t(`channels.${c.slug}.hint`)}
                   </p>
                 </li>
               ))}
@@ -124,14 +95,10 @@ async function ContactContent({ locale }: { locale: string }) {
             }}
           >
             <div className="label-mono mb-3">
-              Response time
+              {t('responseTimeLabel')}
             </div>
             <p className="text-[14px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.78)' }}>
-              A human reads every message. We reply within two business days across UTC−07:00
-              (Mountain) working hours. Security and legal inquiries are
-              prioritised — security reports are acknowledged within one
-              business day. We can reply in any of the fourteen languages this
-              site speaks.
+              {t('responseTimeBody')}
             </p>
           </div>
 
@@ -140,44 +107,44 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>HQ</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>{t('factHqLabel')}</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
-                Alberta, Canada
+                {t('factHqLine1')}
                 <br />
-                Incorporated 2024
+                {t('factHqLine2')}
               </div>
             </div>
             <div
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>Privacy</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>{t('factPrivacyLabel')}</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
-                No trackers.
+                {t('factPrivacyLine1')}
                 <br />
-                Email delivery only.
+                {t('factPrivacyLine2')}
               </div>
             </div>
             <div
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>Languages</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>{t('factLanguagesLabel')}</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
-                14 shipping locales.
+                {t('factLanguagesLine1')}
                 <br />
-                Including Arabic & Urdu RTL.
+                {t('factLanguagesLine2')}
               </div>
             </div>
             <div
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>Hosting</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>{t('factHostingLabel')}</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
-                Single VPS, Edmonton.
+                {t('factHostingLine1')}
                 <br />
-                No third-party CDN.
+                {t('factHostingLine2')}
               </div>
             </div>
           </div>
@@ -205,7 +172,7 @@ export async function generateMetadata({
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <ContactContent locale={locale} />
     </Suspense>
   );

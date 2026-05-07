@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { fetchRoadmapItems } from '@/lib/payload';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -9,11 +10,13 @@ import { OutboundLink } from '@/components/pages/shared/OutboundLink';
 
 type RoadmapStatus = 'in-progress' | 'planned' | 'shipped' | 'paused';
 
-const STATUSES: { id: RoadmapStatus; label: string }[] = [
-  { id: 'in-progress', label: 'In progress' },
-  { id: 'planned',     label: 'Planned'     },
-  { id: 'shipped',     label: 'Shipped'     },
-  { id: 'paused',      label: 'Paused'      },
+type StatusKey = 'statusInProgress' | 'statusPlanned' | 'statusShipped' | 'statusPaused';
+
+const STATUSES: { id: RoadmapStatus; key: StatusKey }[] = [
+  { id: 'in-progress', key: 'statusInProgress' },
+  { id: 'planned',     key: 'statusPlanned'    },
+  { id: 'shipped',     key: 'statusShipped'    },
+  { id: 'paused',      key: 'statusPaused'     },
 ];
 
 export async function generateMetadata({
@@ -37,6 +40,7 @@ export default async function RoadmapPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations('pages.roadmap');
 
   const items = await fetchRoadmapItems(locale);
 
@@ -66,12 +70,39 @@ export default async function RoadmapPage({
       <JsonLd id={`roadmap-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
 
       <PageHero
-        eyebrow="ROADMAP · IN PUBLIC"
-        title="What we are building."
-        lede="In public. No vaporware. Every item is on the studio side — corporate-site work, shared infrastructure, and the cross-cutting commitments that touch every product. Each product in the Clap ecosystem keeps its own roadmap on its own domain. Items here link to code when they ship."
+        eyebrow={t('eyebrow')}
+        title={t('title')}
+        lede={t('lede')}
       />
 
       <div className="px-4 sm:px-6 md:px-8 lg:px-12 pb-20 max-w-[1360px] mx-auto">
+
+        {/* Status summary tally */}
+        <div
+          className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 px-5 py-4 rounded-[14px]"
+          style={{
+            background: 'rgba(16,185,129,0.04)',
+            border: '1px solid rgba(16,185,129,0.16)',
+            fontFamily: 'var(--font-mono)',
+          }}
+        >
+          <span className="label-mono" style={{ marginBottom: 0 }}>{t('byStatusLabel')}</span>
+          {STATUSES.map((s) => {
+            const n = byStatus[s.id].length;
+            return (
+              <span
+                key={s.id}
+                className="text-[12px] uppercase tracking-[0.06em]"
+                style={{
+                  color: n > 0 ? 'var(--color-emerald-ink)' : 'rgba(17,24,39,0.78)',
+                  fontWeight: n > 0 ? 600 : 500,
+                }}
+              >
+                {t(s.key)} · {n}
+              </span>
+            );
+          })}
+        </div>
 
         {/* Status columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
@@ -87,25 +118,23 @@ export default async function RoadmapPage({
                     id={`col-${s.id}`}
                     className="label-mono"
                   >
-                    {s.label}
+                    {t(s.key)}
                   </h2>
-                  {col.length > 0 && (
-                    <span
-                      aria-hidden="true"
-                      className="label-mono"
-                      style={{ color: 'rgba(17,24,39,0.65)' }}
-                    >
-                      · {col.length}
-                    </span>
-                  )}
+                  <span
+                    aria-hidden="true"
+                    className="label-mono"
+                    style={{ color: 'rgba(17,24,39,0.78)', marginBottom: 0 }}
+                  >
+                    · {col.length}
+                  </span>
                 </div>
 
                 {col.length === 0 ? (
                   <p
-                    className="text-[13px] italic"
-                    style={{ color: 'rgba(17,24,39,0.65)', fontFamily: 'var(--font-mono)' }}
+                    className="text-[12.5px] leading-[1.55]"
+                    style={{ color: 'rgba(17,24,39,0.7)', fontFamily: 'var(--font-mono)' }}
                   >
-                    (none)
+                    {t('emptyColumn')}
                   </p>
                 ) : (
                   <ul className="flex flex-col gap-3">
@@ -179,7 +208,7 @@ export default async function RoadmapPage({
           }}
         >
           <div className="flex-1">
-            <div className="label-mono mb-2">Missing something?</div>
+            <div className="label-mono mb-2">{t('ctaEyebrow')}</div>
             <h2
               className="mb-2"
               style={{
@@ -190,19 +219,18 @@ export default async function RoadmapPage({
                 lineHeight: 1.15,
               }}
             >
-              Tell us what you need.
+              {t('ctaHeading')}
             </h2>
             <p className="text-[14.5px] leading-[1.7] max-w-[54ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
-              If there is a feature, tool, or fix that would make a real difference to you,
-              send us a note. We read every message and prioritise based on real need.
+              {t('ctaBody')}
             </p>
           </div>
           <Link
-            href="/contact?reason=roadmap"
+            href={`/${locale}/contact?reason=roadmap`}
             className="btn-primary"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Send a note
+            {t('ctaButton')}
             <span aria-hidden="true">→</span>
           </Link>
         </section>

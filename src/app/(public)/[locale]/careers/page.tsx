@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
@@ -25,6 +27,7 @@ export async function generateMetadata({
 async function CareersContent({ locale }: { locale: string }) {
   const cmsPage = (await fetchCareersPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? CAREERS_PAGE_SEED;
+  const t = await getTranslations('pages.careers');
 
   const webPageSchema = getWebPageSchema({
     locale,
@@ -56,6 +59,8 @@ async function CareersContent({ locale }: { locale: string }) {
             'radial-gradient(800px 280px at 50% -20%, rgba(16,185,129,0.08), transparent 70%), var(--color-paper-soft)',
         }}
       >
+        {/* Decorative SVG: native <img> is leaner than next/image runtime against the 50 KB budget. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/illustrations/careers-horizon.svg"
           alt=""
@@ -79,7 +84,7 @@ async function CareersContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          How we actually work
+          {t('howWeWorkHeading')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.howWeWork ?? []).map((v: any) => (
@@ -118,10 +123,10 @@ async function CareersContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          What you would actually work on
+          {t('whatYouWouldWorkOnHeading')}
         </h2>
         <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-          Intelligent Singularity is the parent company of a growing family of platforms. New hires rarely work on a single product for an entire year — most cycle across two or three, depending on what is shipping and what needs the most senior attention that quarter.
+          {t('whatYouWouldWorkOnLede')}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
           {(page.productFamily ?? []).map((p: any) => (
@@ -158,10 +163,10 @@ async function CareersContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          How we hire, end to end
+          {t('howWeHireHeading')}
         </h2>
         <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-          Four steps. Maximum two weeks from first email to written offer if both sides move quickly. No surprise stages, no unpaid take-homes, no &ldquo;culture fit&rdquo; rejections without a written reason.
+          {t('howWeHireLede')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.process ?? []).map((p: any) => (
@@ -187,7 +192,7 @@ async function CareersContent({ locale }: { locale: string }) {
       >
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
           <div>
-            <div className="label-mono mb-2">{page.openings?.heading ?? 'Open roles'}</div>
+            <div className="label-mono mb-2">{page.openings?.heading ?? t('openRolesFallback')}</div>
             <h2
               id="openings-heading"
               className="text-[var(--color-paper-ink)]"
@@ -203,7 +208,7 @@ async function CareersContent({ locale }: { locale: string }) {
             </h2>
           </div>
           <div className="label-mono opacity-60">
-            Updated {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+            {t('updatedPrefix')} {new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date())}
           </div>
         </div>
         <p className="text-[15.5px] leading-[1.75] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
@@ -241,14 +246,15 @@ async function CareersContent({ locale }: { locale: string }) {
         <div className="flex flex-col sm:flex-row gap-3">
           <a
             href={`mailto:${page.introduceYourself?.email}`}
+            aria-label={`Email ${page.introduceYourself?.email}`}
             className="btn-primary"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
             careers@…
             <span aria-hidden="true">→</span>
           </a>
-          <Link href="/contact" className="btn-outline" style={{ fontFamily: 'var(--font-mono)' }}>
-            Contact form
+          <Link href={`/${locale}/contact`} className="btn-outline" style={{ fontFamily: 'var(--font-mono)' }}>
+            {t('contactFormCta')}
           </Link>
         </div>
       </section>
@@ -259,7 +265,7 @@ async function CareersContent({ locale }: { locale: string }) {
 export default async function CareersPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <CareersContent locale={locale} />
     </Suspense>
   );

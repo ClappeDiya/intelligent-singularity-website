@@ -3,11 +3,16 @@ import puppeteer from 'puppeteer';
 import AxeBuilder from '@axe-core/puppeteer';
 
 const BASE = process.env.BASE_URL ?? 'http://localhost:3000';
+// Note: /en/insights/[slug] detail is content-dependent (requires a Payload
+// user to attribute the seeded post). Its template is covered by the Vitest
+// suite at tests/pages/insights-post.test.tsx with mocked data.
 const PATHS = [
   '/en', '/en/manifesto', '/en/portfolio', '/en/about', '/en/green',
-  '/en/contact', '/en/legal/privacy',
+  '/en/contact', '/en/legal/privacy', '/en/legal/terms',
+  '/en/legal/accessibility', '/en/legal/cookies',
   '/en/changelog', '/en/status', '/en/roadmap', '/en/insights',
-  '/en/insights/the-2-2-billion-gap', '/en/trust', '/en/help',
+  '/en/trust', '/en/help',
+  '/en/security', '/en/pricing', '/en/faq', '/en/careers', '/en/press',
   '/ar', '/ar/trust', '/ur', '/zh-CN', '/fr',
 ];
 
@@ -17,7 +22,14 @@ async function main() {
   for (const path of PATHS) {
     const page = await browser.newPage();
     try {
-      await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle2', timeout: 30000 });
+      const response = await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle2', timeout: 30000 });
+      const status = response?.status() ?? 0;
+      if (status >= 400) {
+        console.error(`${path}: HTTP ${status} — refusing to silently scan an error page`);
+        total += 1;
+        await page.close();
+        continue;
+      }
       const results = await new AxeBuilder(page).analyze();
       if (results.violations.length > 0) {
         console.error(`\n${path}: ${results.violations.length} violation(s)`);

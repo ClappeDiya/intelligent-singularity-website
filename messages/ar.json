@@ -5,7 +5,11 @@
     "about": "من نحن",
     "green": "الاستدامة",
     "contact": "تواصل معنا",
-    "insights": "Insights"
+    "insights": "Insights",
+    "portfolio": "أعمالنا",
+    "pricing": "الأسعار",
+    "security": "الأمان",
+    "faq": "الأسئلة الشائعة"
   },
   "status": {
     "production": "قيد الإنتاج",
@@ -21,13 +25,30 @@
     "zeroTrackers": "٠ متتبعات",
     "zeroThirdParty": "٠ اتصالات بأطراف ثالثة",
     "alberta": "© ٢٠٢٦ Intelligent Singularity Inc. · Alberta, Canada · مستضاف ذاتيًا بطاقة متجددة ١٠٠٪",
-    "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "transparencyLabel": "الشفافية",
+    "helpLabel": "المساعدة",
+    "trustLabel": "الثقة",
+    "startConversation": "ابدأ محادثة",
+    "languagesBlurb": "كل صفحة عامة تصدر بأربع عشرة لغة، منها العربية، والأردية النستعليق، والبنغالية، والهندية، والهوسا، والسواحيلية، واليوروبا.",
+    "selfHostedChip": "مستضاف ذاتيًا على VPS واحد",
+    "links": {
+      "flagships": "منتجاتنا الرئيسية",
+      "careers": "الوظائف",
+      "press": "الصحافة",
+      "changelog": "السجل",
+      "status": "الحالة",
+      "roadmap": "خارطة الطريق",
+      "greenPledge": "التزام أخضر",
+      "privacy": "الخصوصية",
+      "terms": "الشروط",
+      "accessibility": "إمكانية الوصول",
+      "cookies": "ملفات تعريف الارتباط"
+    }
   },
   "hero": {
     "skipToContent": "انتقل إلى المحتوى الرئيسي",
-    "scrollHint": "مرّر"
+    "scrollHint": "مرّر",
+    "scrollHintTarget": "الفجوة بالأرقام"
   },
   "contactForm": {
     "routingLabel": "التوجيه",
@@ -44,54 +65,347 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "سجل التغييرات · الموقع المؤسسي",
+      "title": "ما الذي تغيّر، بالترتيب.",
+      "lede": "كل تغيير ظاهر أجريناه على هذا الموقع المؤسسي، مع التاريخ والـ commit المرتبط به. يحتفظ كل منتج في نظام Clap بسجل التغييرات الخاص به على نطاقه الخاص — هذه الصفحة هي البوابة الرئيسية للشركة الأم، لا أكثر ولا أقل.",
+      "feedLabel": "اشترك:",
+      "feedTitle": "Intelligent Singularity — السجل",
+      "rssFeed": "خلاصة RSS"
     },
     "status": {
       "eyebrow": "STATUS",
-      "title": "How everything is running.",
-      "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
-      "operational": "All systems operational",
-      "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "title": "حالة الأنظمة.",
+      "lede": "هذه الصفحة مأخوذة مباشرة من مراقب الحالة العام لدينا. إذا بدت الأرقام خاطئة، فأخبرنا — فهذا جزء من الحفاظ على صدقها.",
+      "operational": "جميع الأنظمة تعمل",
+      "degraded": "متراجع — تأثرت خدمة واحدة على الأقل",
+      "unavailable": "البيانات المباشرة غير متاحة — يُرجى المحاولة مرة أخرى",
+      "serviceInterruption": "انقطاع الخدمة",
+      "statusUnknown": "حالة غير معروفة",
+      "updatedPrefix": "تم التحديث",
+      "noLiveDataAttempt": "لا توجد بيانات مباشرة — آخر محاولة الآن",
+      "connectionFailed": "تعذر الوصول إلى مراقب الحالة العام لدينا الآن. ستُحدَّث الصفحة في الخلفية وتصبح خضراء عند عودة البيانات. يُرجى المحاولة بعد دقيقة.",
+      "systemsHeading": "الأنظمة",
+      "noData": "لا توجد بيانات",
+      "sourceOfTruth": "المصدر الرسمي:",
+      "liveStatusDashboard": "لوحة الحالة المباشرة",
+      "overallStatusAria": "الحالة العامة",
+      "externalNavAria": "خارجي",
+      "opensInNewTab": " (يفتح في علامة تبويب جديدة)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "خارطة الطريق · علنًا",
+      "title": "ما نقوم ببنائه.",
+      "lede": "علنًا. لا برامج وهمية. كل عنصر يتعلق بالاستوديو — عمل الموقع المؤسسي، البنية التحتية المشتركة، والالتزامات الشاملة التي تمس كل منتج. يحتفظ كل منتج في نظام Clap البيئي بخارطة الطريق الخاصة به على نطاقه الخاص. ترتبط العناصر هنا بالكود عند إطلاقها.",
+      "statusPlanned": "مخطط له",
+      "statusInProgress": "قيد التنفيذ",
+      "statusShipped": "تم الإطلاق",
+      "statusPaused": "متوقف",
+      "emptyColumn": "لا شيء في هذا العمود الآن. تظهر المهام الجديدة هنا عندما تنتقل بين المراحل.",
+      "byStatusLabel": "حسب الحالة",
+      "ctaEyebrow": "تفتقد شيئًا؟",
+      "ctaHeading": "أخبرنا بما تحتاج إليه.",
+      "ctaBody": "إن كانت هناك ميزة أو أداة أو إصلاح سيُحدث فرقًا حقيقيًا لك، أرسل لنا رسالة. نقرأ كل رسالة ونرتّب حسب الاحتياج الفعلي.",
+      "ctaButton": "أرسل ملاحظة"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "إنسايتس · ملاحظات ميدانية من الاستوديو",
+      "title": "التفكير في العلن.",
+      "lede": "ملاحظات ميدانية حول الوصول الشامل، والهندسة المعزّزة بالذكاء الاصطناعي، والـ 2.2 مليار شخص غير المتصلين بالإنترنت، والقوس الطويل للذكاء الاصطناعي — مكتوبة لتُفهم، لا لتُبهر. نكتب ببطء. كل ادعاء يُربط بمصدره. لا عناوين مثيرة، ولا ضباب قيادة فكرية.",
+      "readMore": "اقرأ →",
+      "minutesRead": "دقيقة قراءة",
+      "sourcesHeading": "المصادر",
+      "backToIndex": "← جميع المقالات",
+      "subscribeLabel": "اشترك:",
+      "rssFeed": "خلاصة RSS",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "ترقيم الصفحات"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "الثقة",
+      "title": "أين تجد الدليل.",
+      "lede": "كل ادعاء نقدمه بشأن الأمان والخصوصية والاستدامة والوصول يرتبط بالأدلة. يجب ألا تضطر أبدًا إلى تصديقنا على كلامنا.",
+      "pillarsHeading": "أركان الثقة",
+      "subprocessorsHeading": "المعالجون الفرعيون",
+      "certificationsHeading": "الشهادات",
+      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence.",
+      "colName": "الاسم",
+      "colPurpose": "الغرض",
+      "colDataAccessed": "البيانات المُستخدَمة",
+      "colLocation": "الموقع",
+      "certsEmptyTitle": "لا شيء حتى الآن",
+      "certsEmptyBody": "نحن استوديو صغير. الشهادات الرسمية مكلفة وبطيئة. عندما نحصل على واحدة، ستظهر هنا مع رابط إلى الجهة المُصدِرة.",
+      "subprocessorsLede": "كل طرف ثالث قد يتعامل مع بياناتك، وما يمكنه الوصول إليه، وأين يعمل.",
+      "lastReviewedLabel": "آخر مراجعة:",
+      "incidentEyebrow": "الإبلاغ عن الحوادث",
+      "incidentHeading": "هل عثرت على شيء؟ من فضلك أخبرنا أولاً.",
+      "incidentBody": "الإفصاح المنسق هو المسار الذي نتخذه على محمل الجد. أرسل بريدًا إلكترونيًا إلى security@intelligentsingularityinc.com مع وصف وخطوات إعادة الإنتاج. نقر باستلام التقارير في غضون يوم عمل واحد، ونصنفها في غضون ثلاثة، ونطلق إصلاحًا وفق جدول زمني نتفق عليه معك. يتم اعتماد الباحثين بأسمائهم في تقريرنا اللاحق عند شحن الإصلاح — ما لم تفضل البقاء مجهول الهوية. نحن لا نهدد ولا نقاضي باحثي الأمن ذوي النية الحسنة، نقطة.",
+      "incidentCta": "الإبلاغ عن حادث",
+      "privacyPolicyLink": "سياسة الخصوصية",
+      "learnMore": "اعرف المزيد"
     },
     "help": {
       "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "title": "يمكننا المساعدة عادةً بنقرة واحدة.",
+      "lede": "اختر الصف الأقرب إلى سؤالك. كل رابط يقود إلى مكان حقيقي — لا نماذج مغلقة، ولا روبوتات محادثة.",
+      "emergencyLabel": "إن كان الأمر عاجلًا",
+      "popularHeading": "أسئلة شائعة",
+      "stillStuck": "لم تجد ما تبحث عنه؟",
+      "browseByTopic": "تصفح حسب الموضوع",
+      "checkStatus": "عرض الحالة",
+      "contactEyebrow": "تواصل",
+      "contactFallbackCta": "تواصل معنا"
+    },
+    "about": {
+      "eyebrow": "About · The studio",
+      "defaultTitle": "About Intelligent Singularity",
+      "ecosystemLabel": "The ecosystem at a glance",
+      "ecosystemHeading": "One parent company, seven product categories.",
+      "ataGlanceLabel": "At a glance",
+      "talkToStudioLabel": "Talk to the studio",
+      "talkToStudioBody": "Partnerships, press, or a product question — messages reach the founder directly, typically within two business days.",
+      "contactCta": "Contact · Open form",
+      "metaLabels": {
+        "legalEntity": "الكيان القانوني",
+        "founded": "تأسست",
+        "founder": "المؤسس",
+        "structure": "الهيكل",
+        "operatingModel": "نموذج التشغيل",
+        "capital": "رأس المال",
+        "portfolio": "المحفظة",
+        "languages": "اللغات",
+        "footprint": "البصمة"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · ألبرتا، كندا",
+        "founder": "د. Md Diya، MD",
+        "structure": "الشركة الأم لنظام Clap البيئي",
+        "operatingModel": "صغير، عن بُعد، معزز بالذكاء الاصطناعي",
+        "capital": "Bootstrapped · ممول ذاتيًا · غير معروض للبيع",
+        "portfolio": "عائلة متنامية من المنصات",
+        "languages": "14 لغة في الإنتاج",
+        "footprint": "≤ 50 كيلوبايت لكل صفحة · لا متتبعات"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "البيان · المبادئ الأساسية",
+      "offlinePercentEyebrow": "الستة وعشرون بالمئة",
+      "offlinePercentHeading": "اثنان فاصلة اثنان مليار شخص لا يزالون غير متصلين بالإنترنت اليوم.",
+      "offlinePercentBody": "النقاط الأفتح أعلاه هي الأشخاص المتصلون بالفعل. النقاط الأغمق والمطوقة هي الأشخاص غير المتصلين. ستة وتسعون بالمئة من السكان غير المتصلين يعيشون في البلدان منخفضة الدخل والبلدان متوسطة الدخل. هندسة الوصول الشامل هي ما يسد هذه الفجوة. الالتزامات التسعة أدناه هي كيف نلزم أنفسنا بها.",
+      "commitmentsHeading": "الالتزامات التسعة",
+      "commitmentsBody": "تسع حلقات متحدة المركز — كل منتج يتم تسليمه مقابل كل واحدة منها، في كل إصدار. القائمة ليست قائمة أمنيات. إنها عقد الهندسة.",
+      "sourceData": "مصدر البيانات"
+    },
+    "faq": {
+      "openTheForm": "افتح النموذج",
+      "emailDirectly": "أرسل بريدًا إلكترونيًا مباشرة"
+    },
+    "pricing": {
+      "tierFree": "المستوى المجاني:",
+      "tierPaid": "المستوى المدفوع:",
+      "tierEnterprise": "المؤسسات:",
+      "sixRulesHeading": "ست قواعد يلتزم بها كل منتج",
+      "antiPatternsHeading": "ما لن نفعله",
+      "antiPatternsBody": "الأنماط المضادة أدناه شائعة في برمجيات الأعمال. قررنا الامتناع عن كل منها كتابيًا ومسبقًا — حتى لا نتمكن نحن ولا نسخ مستقبلية منا من إعادتها سرًا.",
+      "workedExampleHeading": "نفس المنتج، ثلاثة عملاء",
+      "workedExampleBody": "مثال عملي — توضيحي، وليس عرض سعر — لإظهار كيف تنطبق القواعد الست في الممارسة. الأرقام المحددة موجودة في صفحة كل منتج.",
+      "viewThePortfolio": "عرض الأعمال",
+      "talkAboutPricing": "تحدث عن الأسعار"
+    },
+    "careers": {
+      "howWeWorkHeading": "كيف نعمل فعلاً",
+      "whatYouWouldWorkOnHeading": "على ماذا ستعمل فعلاً",
+      "howWeHireHeading": "كيف نُعيّن، من البداية إلى النهاية",
+      "openRolesFallback": "الوظائف المفتوحة",
+      "updatedPrefix": "تم التحديث",
+      "contactFormCta": "نموذج التواصل",
+      "whatYouWouldWorkOnLede": "Intelligent Singularity هي الشركة الأم لعائلة متنامية من المنصات. نادرًا ما يعمل الموظفون الجدد على منتج واحد لمدة عام كامل — يتنقل معظمهم بين منتجين أو ثلاثة، حسب ما يتم إطلاقه وما يحتاج إلى أكبر قدر من اهتمام كبار المهندسين في ذلك الربع.",
+      "howWeHireLede": "أربع خطوات. أقصى مدة أسبوعان من البريد الإلكتروني الأول إلى عرض مكتوب إذا تحرك الطرفان بسرعة. لا مراحل مفاجئة، لا واجبات منزلية غير مدفوعة، لا رفض بسبب \"التوافق الثقافي\" دون سبب مكتوب."
+    },
+    "press": {
+      "factSheetHeading": "ورقة الحقائق",
+      "approvedQuotesHeading": "اقتباسات معتمدة",
+      "brandAssetsHeading": "أصول العلامة التجارية",
+      "brandNameLabel": "اسم العلامة",
+      "founderReferenceLabel": "مرجع المؤسس",
+      "pressBoilerplateHeading": "نص الصحافة الجاهز",
+      "storyAnglesWelcomedHeading": "زوايا القصص التي نرحب بها",
+      "storyAnglesDeclineHeading": "زوايا القصص التي نرفضها عادةً",
+      "contactFormCta": "نموذج التواصل",
+      "boilerplateLede": "فقرة واحدة، جاهزة للإدراج في البيانات الصحفية. معتمدة للاستخدام الحرفي.",
+      "storyAnglesYesLede": "إذا كانت قصتك تندرج ضمن إحدى هذه الزوايا، فسنتحرك بسرعة لإتاحة مؤسس أو مهندس أو قائد منتج — عادةً خلال يوم عمل.",
+      "storyAnglesNoLede": "الصدق المبكر يوفر الوقت على الجميع. لن نقدم اقتباسات للزوايا أدناه. ولكن سنوجهك إلى صحفي أو محلل يناسب عمله القصة بشكل أفضل."
+    },
+    "portfolio": {
+      "eyebrow": "المحفظة · نظام Clap البيئي",
+      "titleLine1": "{count} أدوات.",
+      "titleLine2": "مهمة واحدة.",
+      "lede": "Intelligent Singularity هي الشركة الأم لنظام Clap البيئي. يعمل كل منتج على نطاقه الخاص، وفقًا لشروطه الخاصة، بأسعاره الخاصة — لكنها تشترك في مكدس هندسي واحد، وميزانية وصول واحدة، وموقف خصوصية واحد، ونسيج وكيل ذكاء اصطناعي مشترك واحد. تسميات حالة صادقة في كل مكان: إنتاج، تجريب، بانتظار الموافقة، بنية تحتية.",
+      "statToolsLabel": "أدوات",
+      "statToolsHint": "في الفئات السبع أدناه",
+      "statFlagshipsLabel": "الرئيسية",
+      "statFlagshipsHint": "منسقة للاستخدام الأول في الصفحة الرئيسية",
+      "statProductionLabel": "مباشر · إنتاج",
+      "statProductionHint": "تشحن للمستخدمين النهائيين الفعليين اليوم",
+      "statStagingLabel": "في التجريب",
+      "statStagingHint": "بدعوة فقط، تتقوى قبل الإطلاق",
+      "statCategoriesLabel": "الفئات",
+      "statCategoriesHint": "مكدس واحد مشترك في كل مجال",
+      "statThirdPartyLabel": "مكالمات الطرف الثالث",
+      "statThirdPartyValue": "صفر",
+      "statThirdPartyHint": "يفرضه CI في كل إصدار منتج",
+      "ecosystemStatsAria": "إحصائيات النظام البيئي"
+    },
+    "contact": {
+      "eyebrow": "اتصل · مكتب الاستوديو",
+      "titleFallback": "تواصل معنا",
+      "directChannelsLabel": "القنوات المباشرة",
+      "channels": {
+        "general": {
+          "label": "عام",
+          "hint": "أسئلة المنتج، التعارف، أو فقط لإلقاء التحية."
+        },
+        "press": {
+          "label": "صحافة",
+          "hint": "مقابلات، اقتباسات، توافر المؤسس، أفكار قصص."
+        },
+        "partnerships": {
+          "label": "شراكات",
+          "hint": "منظمات غير حكومية، حكومات، تعاون مؤسسي، تمويل المنح."
+        },
+        "careers": {
+          "label": "وظائف",
+          "hint": "وظائف مفتوحة، تعارف، مراجع."
+        },
+        "security": {
+          "label": "الأمان",
+          "hint": "تقارير الثغرات — يتم إقرارها في غضون يوم عمل واحد."
+        },
+        "accessibility": {
+          "label": "إمكانية الوصول",
+          "hint": "أبلغ عن حاجز في الموقع أو في أي منتج."
+        },
+        "privacy": {
+          "label": "الخصوصية",
+          "hint": "طلبات الوصول إلى البيانات، التصحيح، الحذف، إمكانية النقل."
+        },
+        "legal": {
+          "label": "قانوني",
+          "hint": "اتفاقيات معالجة البيانات، اتفاقيات الخدمة الرئيسية، الإشعارات الرسمية، الاستفسارات التنظيمية."
+        }
+      },
+      "responseTimeLabel": "وقت الاستجابة",
+      "responseTimeBody": "إنسان يقرأ كل رسالة. نرد في غضون يومي عمل خلال ساعات العمل بتوقيت UTC−07:00 (Mountain). يتم تحديد أولوية الاستفسارات الأمنية والقانونية — يتم الإقرار بتقارير الأمان في غضون يوم عمل واحد. يمكننا الرد بأي من اللغات الأربعة عشرة التي يتحدث بها هذا الموقع.",
+      "factHqLabel": "المقر الرئيسي",
+      "factHqLine1": "ألبرتا، كندا",
+      "factHqLine2": "تأسست عام 2024",
+      "factPrivacyLabel": "الخصوصية",
+      "factPrivacyLine1": "لا متتبعات.",
+      "factPrivacyLine2": "تسليم البريد الإلكتروني فقط.",
+      "factLanguagesLabel": "اللغات",
+      "factLanguagesLine1": "14 لغة في الإنتاج.",
+      "factLanguagesLine2": "بما في ذلك العربية والأردية RTL.",
+      "factHostingLabel": "الاستضافة",
+      "factHostingLine1": "خادم VPS واحد، إدمونتون.",
+      "factHostingLine2": "لا CDN طرف ثالث."
+    },
+    "security": {
+      "postureHeading": "كيف ندير الموقع والمنصة",
+      "dataHeading": "كيف نتعامل مع بياناتك",
+      "complianceHeading": "المعايير التي نلتزم بها",
+      "complianceLede": "نتبع مجموعة صغيرة ومحددة من المعايير — ونحن صادقون بشأن عمليات التدقيق التي لم نحققها بعد.",
+      "privacyPolicyLink": "قراءة سياسة الخصوصية"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "أخضر · قياس عن بُعد مباشر",
+      "statThisPageLabel": "هذه الصفحة",
+      "statThisPageHint": "HTML + CSS، بدون متتبعات",
+      "statThisVisitLabel": "هذه الزيارة",
+      "statThisVisitHint": "CO₂ · مؤسسة الويب الأخضر",
+      "statHostingLabel": "الاستضافة",
+      "statHostingValue": "استضافة ذاتية",
+      "statHostingHint": "خادم VPS واحد · شبكة ألبرتا (~{percent}% متجدد)",
+      "statThirdPartyLabel": "طرف ثالث",
+      "statThirdPartyValue": "صفر",
+      "statThirdPartyHint": "لا بكسلات · لا خطوط · لا CDN",
+      "engineeringPracticesEyebrow": "ممارسات الهندسة",
+      "byteBudgetHeading": "كيف تظل ميزانية البايت صغيرة",
+      "pledgeEyebrow": "التعهد",
+      "pledgeHeading": "ننشر كل شيء. أنت تحاسبنا.",
+      "pledgeBody": "كل رقم على هذه الصفحة محسوب مباشرةً من قياسات حقيقية. يفرض CI ميزانية الحزمة؛ ويتم تدقيق عدد الأطراف الثالثة في كل بناء؛ ويستخدم تقدير الكربون منهجية مؤسسة الويب الأخضر مقابل وزن الصفحة الذي قمت بتحميله فعلاً. إذا بدا شيء خاطئًا، أخبرنا — سنرد كتابةً خلال خمسة أيام عمل، مع عرض الأرقام الأساسية.",
+      "reportIssueCta": "الإبلاغ عن مشكلة",
+      "practices": {
+        "bundleBudget": {
+          "label": "ميزانية الحزمة",
+          "value": "≤ 50 كيلوبايت / مسار",
+          "hint": "مضغوط بـ gzip. يفرضه CI في كل طلب سحب — البناء الذي يتجاوز الميزانية لا يمكن شحنه."
+        },
+        "thirdPartyCalls": {
+          "label": "مكالمات الطرف الثالث",
+          "value": "صفر",
+          "hint": "لا تحليلات، خطوط، بكسلات، تضمينات فيديو، أدوات اجتماعية، أو رحلات CDN. مدقق لكل بناء بواسطة no-third-party.mjs."
+        },
+        "renderer": {
+          "label": "العرض",
+          "value": "HTML من الخادم أولاً",
+          "hint": "تُرسم الصفحات على الخادم وتُبث إلى المتصفح. الإماهة اختيارية، لكل مكون، وليست عالمية أبدًا."
+        },
+        "mediaStrategy": {
+          "label": "استراتيجية الوسائط",
+          "value": "خطوط النظام · SVG",
+          "hint": "لا أبطال نقطية. رسوم SVG مضمّنة. مجموعات فرعية من الخطوط لكل سكربت تُحمَّل فقط عندما يكون السكربت على الصفحة."
+        },
+        "hosting": {
+          "label": "الاستضافة",
+          "value": "خادم VPS منخفض PUE",
+          "hint": "استضافة ذاتية على خادم VPS واحد في إدمونتون، ألبرتا. لا CDN. لا عقد طرفية. أصل واحد، حد ثقة واحد."
+        },
+        "offlineReach": {
+          "label": "الوصول دون اتصال",
+          "value": "PWA · عامل خدمة",
+          "hint": "HTML الشبكة أولاً · أصول stale-while-revalidate · صفحة احتياطية دون اتصال في كل لغة."
+        },
+        "reducedMotion": {
+          "label": "الحركة المخففة",
+          "value": "محترمة في كل مكان",
+          "hint": "كل رسم متحرك يتوقف عند تعيين prefers-reduced-motion. لا استثناءات، لا حاجة لإلغاء الاشتراك."
+        },
+        "paperless": {
+          "label": "بلا ورق افتراضيًا",
+          "value": "عبر المنصة بأكملها",
+          "hint": "الفواتير والسجلات الطبية والإيصالات رقمية افتراضيًا. ورق المكتب وبطاقات العمل والمواد التسويقية المطبوعة ليست جزءًا من طريقة عملنا."
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "تسعة ثوابت غير قابلة للتفاوض",
+      "commitmentsAria": "الالتزامات التسعة"
     }
+  },
+  "topBar": {
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "drawerCurrentlyViewing": "اللغة الحالية",
+    "drawerLanguagesBlurb": "أربع عشرة لغة. غيّر اللغة من عجلة اللغات في أسفل أي صفحة.",
+    "primaryNavAria": "أساسي",
+    "mobileNavAria": "أساسي للجوال",
+    "mobileDrawerAria": "تنقل الموقع"
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "honestNote": "ملاحظة صادقة",
+    "notFoundEyebrow": "404 · الصفحة غير موجودة",
+    "notFoundTitle": "لم نتمكن من العثور على تلك الصفحة.",
+    "notFoundBody": "قد يكون الرابط قديمًا، أو نُقلت الصفحة، أو يحتوي العنوان على خطأ مطبعي. جرّب الصفحة الرئيسية، أو تواصل معنا إذا وصلت من رابط كتبناه نحن.",
+    "goToHome": "الذهاب إلى الرئيسية",
+    "contactUs": "تواصل معنا",
+    "offlineEyebrow": "لا يوجد اتصال · أنت غير متصل",
+    "offlineTitle": "مصمَّم لهذه اللحظة.",
+    "offlineBody": "الوصول الشامل هو هدفنا. يستمر هذا الموقع في العمل دون اتصال — كل صفحة زرتها مرة محفوظة في الذاكرة المؤقتة وقابلة للقراءة. جرّب صفحة سبق أن رأيتها، أو أعد الاتصال لتحميل صفحة جديدة.",
+    "offlineReturnHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "languageWheel": {
+    "navAria": "اللغة",
+    "switchTo": "تغيير اللغة إلى {language}"
   }
 }

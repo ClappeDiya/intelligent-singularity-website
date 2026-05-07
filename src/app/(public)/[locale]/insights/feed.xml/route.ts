@@ -1,4 +1,5 @@
 // src/app/(public)/[locale]/insights/feed.xml/route.ts
+import { getTranslations } from 'next-intl/server';
 import { fetchJournalPosts } from '@/lib/payload';
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://intelligentsingularityinc.com';
@@ -13,6 +14,7 @@ export async function GET(
 ) {
   const { locale } = await params;
   const res = (await fetchJournalPosts(locale, { limit: 50, page: 1 })) as any;
+  const t = await getTranslations({ locale, namespace: 'pages.insights' });
   const posts = res.docs ?? [];
   const feedUrl = `${SITE}/${locale}/insights/feed.xml`;
   const updated = posts[0]?.publishedAt ?? new Date().toISOString();
@@ -33,7 +35,7 @@ export async function GET(
   const xml = `<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="${locale}">
   <id>${feedUrl}</id>
-  <title>Intelligent Singularity — Insights</title>
+  <title>${esc(t('feedTitle'))}</title>
   <link rel="self" href="${feedUrl}"/>
   <updated>${new Date(updated).toISOString()}</updated>
   ${entries}

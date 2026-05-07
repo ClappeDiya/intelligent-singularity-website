@@ -8,9 +8,8 @@ import { ServiceWorkerRegister } from '@/components/layout/ServiceWorkerRegister
 import { ScrollProgress } from '@/components/layout/ScrollProgress';
 import { SkipToContent } from '@/components/layout/SkipToContent';
 import { fetchSiteSettings } from '@/lib/payload';
-import { LOCALES, isRtl, type Locale } from '@/i18n/config';
+import { LOCALES, type Locale } from '@/i18n/config';
 import { loadScriptFont } from '@/app/fonts';
-import { HtmlLang } from '@/components/layout/HtmlLang';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getFounderSchema, getOrganizationSchema, getWebSiteSchema } from '@/lib/schema';
 
@@ -49,7 +48,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div dir={isRtl(locale as Locale) ? 'rtl' : 'ltr'} style={fontFamily ? { fontFamily } : undefined}>
+      <div style={fontFamily ? { fontFamily } : undefined}>
         <JsonLd id="org-schema" data={organizationSchema} />
         <JsonLd id={`website-schema-${locale}`} data={webSiteSchema} />
         <JsonLd id="founder-schema" data={founderSchema} />
@@ -58,13 +57,12 @@ export default async function LocaleLayout({
           <TopBar locale={locale} />
         </Suspense>
         <ScrollProgress />
-        <main id="main-content">{children}</main>
+        <main id="main-content" tabIndex={-1}>{children}</main>
         <Footer
           locale={locale}
           studioBlurb={settings.studioBlurb ?? 'A studio building software for universal access. Incorporated in Alberta, Canada.'}
         />
         <ServiceWorkerRegister />
-        <HtmlLang locale={locale} />
       </div>
     </NextIntlClientProvider>
   );

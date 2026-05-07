@@ -11,6 +11,7 @@ export function OutboundLink({
   return (
     <a href={href} target="_blank" rel="noreferrer external" className={className} style={style}>
       {children}
+      <span className="sr-only"> (opens in a new tab)</span>
       <span aria-hidden="true" className="inline-block ms-1">↗</span>
     </a>
   );

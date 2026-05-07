@@ -1,4 +1,5 @@
 // src/app/(public)/[locale]/changelog/feed.xml/route.ts
+import { getTranslations } from 'next-intl/server';
 import { fetchReleaseNotes } from '@/lib/payload';
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://intelligentsingularityinc.com';
@@ -13,6 +14,7 @@ export async function GET(
 ) {
   const { locale } = await params;
   const releases = ((await fetchReleaseNotes(locale)) as any[]) ?? [];
+  const t = await getTranslations({ locale, namespace: 'pages.changelog' });
   const feedUrl = `${SITE}/${locale}/changelog/feed.xml`;
   const updated = releases[0]?.releaseDate ?? new Date().toISOString();
 
@@ -32,7 +34,7 @@ export async function GET(
   const xml = `<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="${locale}">
   <id>${feedUrl}</id>
-  <title>Intelligent Singularity — Changelog</title>
+  <title>${esc(t('feedTitle'))}</title>
   <link rel="self" href="${feedUrl}"/>
   <updated>${new Date(updated).toISOString()}</updated>
   ${entries}

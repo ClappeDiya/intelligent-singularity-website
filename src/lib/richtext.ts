@@ -20,30 +20,69 @@ function renderTextNode(node: TextNode, key: string | number): React.ReactNode {
   return el;
 }
 
-function renderNode(node: LexicalNode, key: string | number): React.ReactNode {
+function getNodeText(node: LexicalNode): string {
+  if (node.type === 'text') return node.text;
+  const children = (node as { children?: LexicalNode[] }).children;
+  if (Array.isArray(children)) return children.map(getNodeText).join('');
+  return '';
+}
+
+function slugifyHeading(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+    .replace(/[^\p{L}\p{N}\s-]/gu, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function collectHeadingIds(nodes: LexicalNode[]): Map<HeadingNode, string> {
+  const ids = new Map<HeadingNode, string>();
+  const seen = new Map<string, number>();
+  for (const node of nodes) {
+    if (node.type !== 'heading') continue;
+    const tag = node.tag;
+    if (tag !== 'h2' && tag !== 'h3') continue;
+    const base = slugifyHeading(getNodeText(node));
+    if (!base) continue;
+    const count = seen.get(base) ?? 0;
+    ids.set(node, count === 0 ? base : `${base}-${count + 1}`);
+    seen.set(base, count + 1);
+  }
+  return ids;
+}
+
+function renderNode(
+  node: LexicalNode,
+  key: string | number,
+  headingIds?: Map<HeadingNode, string>
+): React.ReactNode {
   switch (node.type) {
     case 'text':
       return renderTextNode(node, key);
     case 'paragraph':
       return React.createElement('p', { key, className: 'mb-6 text-[17px] leading-[1.65]' },
-        node.children.map((c, i) => renderNode(c, `${key}-${i}`)));
+        node.children.map((c, i) => renderNode(c, `${key}-${i}`, headingIds)));
     case 'heading': {
-      const tag = (node as HeadingNode).tag || 'h2';
-      return React.createElement(tag, { key, style: { fontFamily: 'var(--font-serif)', fontSize: 28, marginTop: 40, marginBottom: 16 } },
-        node.children.map((c, i) => renderNode(c, `${key}-${i}`)));
+      const tag = node.tag || 'h2';
+      const id = headingIds?.get(node);
+      return React.createElement(tag, { key, ...(id ? { id } : {}) },
+        node.children.map((c, i) => renderNode(c, `${key}-${i}`, headingIds)));
     }
     case 'list': {
       const tag = node.listType === 'number' ? 'ol' : 'ul';
       return React.createElement(tag, { key, className: 'list-inside mb-6 space-y-2' },
-        node.children.map((c, i) => renderNode(c, `${key}-${i}`)));
+        node.children.map((c, i) => renderNode(c, `${key}-${i}`, headingIds)));
     }
     case 'listitem':
       return React.createElement('li', { key },
-        node.children.map((c, i) => renderNode(c, `${key}-${i}`)));
+        node.children.map((c, i) => renderNode(c, `${key}-${i}`, headingIds)));
     case 'link': {
       const href = node.fields?.url ?? node.url ?? '#';
       return React.createElement('a', { key, href, className: 'text-[var(--color-mint)] underline' },
-        node.children.map((c, i) => renderNode(c, `${key}-${i}`)));
+        node.children.map((c, i) => renderNode(c, `${key}-${i}`, headingIds)));
     }
     default:
       return null;
@@ -54,5 +93,24 @@ export function renderLexical(content: unknown): React.ReactNode {
   if (!content || typeof content !== 'object') return null;
   const root = (content as Root).root;
   if (!root || !Array.isArray(root.children)) return null;
-  return root.children.map((node, i) => renderNode(node, i));
+  const headingIds = collectHeadingIds(root.children);
+  return root.children.map((node, i) => renderNode(node, i, headingIds));
+}
+
+export type ExtractedHeading = { id: string; text: string; level: 2 | 3 };
+
+export function extractHeadings(content: unknown): ExtractedHeading[] {
+  if (!content || typeof content !== 'object') return [];
+  const root = (content as Root).root;
+  if (!root || !Array.isArray(root.children)) return [];
+  const ids = collectHeadingIds(root.children);
+  const out: ExtractedHeading[] = [];
+  for (const node of root.children) {
+    if (node.type !== 'heading') continue;
+    if (node.tag !== 'h2' && node.tag !== 'h3') continue;
+    const id = ids.get(node);
+    if (!id) continue;
+    out.push({ id, text: getNodeText(node), level: node.tag === 'h2' ? 2 : 3 });
+  }
+  return out;
 }

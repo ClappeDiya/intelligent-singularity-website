@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 type Props = {
   successMessage: string;
@@ -9,13 +10,22 @@ type Props = {
 };
 
 const labelClass =
-  'text-[12.5px] uppercase text-[var(--color-paper-ink)]';
+  'text-[12.5px] uppercase text-[var(--color-paper-ink)] flex items-center gap-1';
 
 const fieldClass =
-  'bg-[var(--color-paper-soft)] border border-transparent px-4 py-[13px] text-[15px] text-[var(--color-paper-ink)] rounded-[14px] focus:outline-none focus:border-[var(--color-mint)] transition-colors';
+  'bg-white border px-4 py-[13px] text-[15px] text-[var(--color-paper-ink)] rounded-[14px] focus:outline-none focus:border-[var(--color-emerald)] focus:ring-2 focus:ring-[rgba(16,185,129,0.18)] transition-colors';
+
+const fieldStyle: React.CSSProperties = {
+  borderColor: 'rgba(16,185,129,0.28)',
+};
+
+const RequiredMark = () => (
+  <span aria-hidden="true" className="text-[var(--color-emerald-ink)] ml-0.5">*</span>
+);
 
 export function ContactForm({ successMessage, errorMessage, privacyNote }: Props) {
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  const t = useTranslations('contactForm');
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -34,7 +44,7 @@ export function ContactForm({ successMessage, errorMessage, privacyNote }: Props
 
   if (state === 'sent')
     return (
-      <p role="status" className="text-[var(--color-mint)] text-[18px]">
+      <p role="status" className="text-[var(--color-emerald-ink)] text-[18px]">
         {successMessage}
       </p>
     );
@@ -47,13 +57,13 @@ export function ContactForm({ successMessage, errorMessage, privacyNote }: Props
             className={labelClass}
             style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
           >
-            Routing
+            {t('routingLabel')}<RequiredMark />
           </span>
-          <select name="route" required className={fieldClass}>
-            <option value="general">General inquiry</option>
-            <option value="press">Press</option>
-            <option value="partnerships">Partnerships</option>
-            <option value="legal">Legal</option>
+          <select name="route" required aria-required="true" className={fieldClass} style={fieldStyle}>
+            <option value="general">{t('routeGeneral')}</option>
+            <option value="press">{t('routePress')}</option>
+            <option value="partnerships">{t('routePartnerships')}</option>
+            <option value="legal">{t('routeLegal')}</option>
           </select>
         </label>
         <label className="flex flex-col gap-2">
@@ -61,47 +71,53 @@ export function ContactForm({ successMessage, errorMessage, privacyNote }: Props
             className={labelClass}
             style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
           >
-            Name
+            {t('nameLabel')}<RequiredMark />
           </span>
-          <input type="text" name="name" required className={fieldClass} />
+          <input type="text" name="name" required aria-required="true" autoComplete="name" className={fieldClass} style={fieldStyle} />
         </label>
         <label className="flex flex-col gap-2">
           <span
             className={labelClass}
             style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
           >
-            Email
+            {t('emailLabel')}<RequiredMark />
           </span>
-          <input type="email" name="from" required className={fieldClass} />
+          <input type="email" name="from" required aria-required="true" autoComplete="email" className={fieldClass} style={fieldStyle} />
         </label>
         <label className="flex flex-col gap-2">
           <span
             className={labelClass}
             style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
           >
-            Subject
+            {t('subjectLabel')}<RequiredMark />
           </span>
-          <input type="text" name="subject" required className={fieldClass} />
+          <input type="text" name="subject" required aria-required="true" autoComplete="off" className={fieldClass} style={fieldStyle} />
         </label>
         <label className="flex flex-col gap-2">
           <span
             className={labelClass}
             style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
           >
-            Message
+            {t('messageLabel')}<RequiredMark />
           </span>
-          <textarea name="body" required rows={8} className={fieldClass} />
+          <textarea name="body" required aria-required="true" aria-describedby="contact-privacy-note" rows={8} className={fieldClass} style={fieldStyle} />
         </label>
-        <p className="text-[13.5px] text-[rgba(20,20,19,0.66)] leading-[1.65]">{privacyNote}</p>
+        <p id="contact-privacy-note" className="text-[13.5px] text-[rgba(20,20,19,0.66)] leading-[1.65]">{privacyNote}</p>
       </div>
       <button
         type="submit"
         disabled={state === 'sending'}
         aria-busy={state === 'sending'}
-        className="w-full sm:w-auto rounded-full bg-[var(--color-paper-ink)] text-[var(--color-cream)] py-[13px] px-8 font-semibold text-[13px] uppercase"
-        style={{ fontFamily: 'var(--font-mono)' }}
+        className="w-full sm:w-auto rounded-full text-[var(--color-cream)] py-[13px] px-8 font-semibold text-[13px] uppercase transition-all hover:-translate-y-0.5 disabled:opacity-70 disabled:translate-y-0"
+        style={{
+          fontFamily: 'var(--font-mono)',
+          background: 'var(--color-emerald-ink)',
+          boxShadow: '0 2px 10px rgba(16,185,129,0.28)',
+        }}
       >
-        {state === 'sending' ? 'Sending…' : 'Send message'}
+        {state === 'sending' ? t('sendingButton') : (
+          <>{t('sendButton')} <span aria-hidden="true">→</span></>
+        )}
       </button>
       {state === 'error' && (
         <p role="alert" className="text-[#b04a3a]">

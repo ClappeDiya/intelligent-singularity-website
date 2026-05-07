@@ -5,7 +5,11 @@
     "about": "ہمارے بارے میں",
     "green": "سبز عزم",
     "contact": "رابطہ",
-    "insights": "Insights"
+    "insights": "بصیرت",
+    "portfolio": "پورٹ فولیو",
+    "pricing": "قیمتیں",
+    "security": "سیکیورٹی",
+    "faq": "اکثر پوچھے گئے سوالات"
   },
   "status": {
     "production": "فعال",
@@ -21,13 +25,30 @@
     "zeroTrackers": "۰ ٹریکرز",
     "zeroThirdParty": "۰ فریقِ ثالث کالز",
     "alberta": "© ۲۰۲۶ Intelligent Singularity Inc. · Alberta, Canada · ۱۰۰٪ قابلِ تجدید توانائی پر خود میزبان",
-    "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "transparencyLabel": "شفافیت",
+    "helpLabel": "مدد",
+    "trustLabel": "اعتماد",
+    "startConversation": "گفتگو شروع کریں",
+    "languagesBlurb": "ہر عوامی صفحہ چودہ زبانوں میں شائع ہوتا ہے، بشمول عربی، نستعلیق اردو، بنگالی، ہندی، ہاؤسا، سواحلی، اور یوروبا۔",
+    "selfHostedChip": "ایک VPS پر خود میزبان",
+    "links": {
+      "flagships": "بنیادی مصنوعات",
+      "careers": "کیریئر",
+      "press": "پریس",
+      "changelog": "تبدیلیوں کا لاگ",
+      "status": "حالت",
+      "roadmap": "روڈ میپ",
+      "greenPledge": "سبز عہد",
+      "privacy": "رازداری",
+      "terms": "شرائط",
+      "accessibility": "رسائی",
+      "cookies": "کوکیز"
+    }
   },
   "hero": {
     "skipToContent": "بنیادی مواد پر جائیں",
-    "scrollHint": "نیچے سکرول کریں"
+    "scrollHint": "نیچے سکرول کریں",
+    "scrollHintTarget": "اعداد میں خلا"
   },
   "contactForm": {
     "routingLabel": "شعبہ",
@@ -44,10 +65,12 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "تبدیلیوں کا لاگ · کارپوریٹ سائٹ",
+      "title": "کیا تبدیل ہوا، ترتیب سے۔",
+      "lede": "اس کارپوریٹ سائٹ پر ہم نے جو بھی نظر آنے والی تبدیلی کی، تاریخ کے ساتھ اور اس کے پیچھے موجود کمٹ سے منسلک۔ Clap ایکوسسٹم کا ہر پروڈکٹ اپنے ڈومین پر اپنا الگ چینج لاگ رکھتا ہے — یہ صفحہ مادر کمپنی کا مرکزی دروازہ ہے، اس سے زیادہ کچھ نہیں، کچھ بھی چھپا ہوا نہیں۔",
+      "feedLabel": "سبسکرائب کریں:",
+      "feedTitle": "Intelligent Singularity — تبدیلیوں کا لاگ",
+      "rssFeed": "RSS فیڈ"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -55,43 +78,334 @@
       "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
       "operational": "All systems operational",
       "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "unavailable": "Live data unavailable — please retry",
+      "serviceInterruption": "Service interruption",
+      "statusUnknown": "Status unknown",
+      "updatedPrefix": "updated",
+      "noLiveDataAttempt": "no live data — last attempt just now",
+      "connectionFailed": "We could not reach our public status monitor just now. The page will refresh in the background and turn green once the data comes back. Please retry in a minute.",
+      "systemsHeading": "Systems",
+      "noData": "no data",
+      "sourceOfTruth": "Source of truth:",
+      "liveStatusDashboard": "Live status dashboard",
+      "overallStatusAria": "Overall status",
+      "externalNavAria": "External",
+      "opensInNewTab": " (opens in a new tab)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "نقشہ راہ · علانیہ",
+      "title": "ہم کیا بنا رہے ہیں۔",
+      "lede": "علانیہ۔ کوئی ویپر ویئر نہیں۔ ہر آئٹم سٹوڈیو کی طرف ہے — کارپوریٹ سائٹ کا کام، مشترکہ بنیادی ڈھانچہ، اور وہ کراس کٹنگ وعدے جو ہر پروڈکٹ کو چھوتے ہیں۔ Clap ایکوسسٹم کا ہر پروڈکٹ اپنے ڈومین پر اپنا الگ نقشہ راہ رکھتا ہے۔ یہاں کے آئٹمز جب شپ ہوتے ہیں تو کوڈ سے منسلک ہو جاتے ہیں۔",
+      "statusPlanned": "منصوبہ بندی شدہ",
+      "statusInProgress": "جاری",
+      "statusShipped": "شپ ہو چکا",
+      "statusPaused": "روکا گیا",
+      "emptyColumn": "اس کالم میں ابھی کچھ نہیں۔ نیا کام مرحلوں میں منتقل ہو کر یہاں ظاہر ہوگا۔",
+      "byStatusLabel": "حالت کے لحاظ سے",
+      "ctaEyebrow": "کیا کچھ کم ہے؟",
+      "ctaHeading": "ہمیں بتائیں آپ کو کیا چاہیے۔",
+      "ctaBody": "اگر کوئی فیچر، ٹول، یا فکس ایسا ہے جو آپ کے لیے حقیقی فرق پیدا کرے گا، تو ہمیں ایک پیغام بھیجیں۔ ہم ہر پیغام پڑھتے ہیں اور حقیقی ضرورت کی بنیاد پر ترجیح دیتے ہیں۔",
+      "ctaButton": "پیغام بھیجیں"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "بصیرتیں · سٹوڈیو سے میدانی نوٹس",
+      "title": "علانیہ سوچنا۔",
+      "lede": "ہمہ گیر رسائی، AI سے مدد یافتہ انجینئرنگ، 2.2 ارب آف لائن لوگوں، اور مصنوعی ذہانت کے طویل سفر پر میدانی نوٹس — متاثر کرنے کے لیے نہیں، بلکہ سمجھے جانے کے لیے لکھے گئے۔ ہم آہستہ آہستہ لکھتے ہیں۔ ہر دعویٰ کسی ماخذ سے جڑا ہوتا ہے۔ کوئی کلک بیٹ نہیں، کوئی فکری قیادت کی دھند نہیں۔",
+      "readMore": "پڑھیں ←",
+      "minutesRead": "منٹ کا مطالعہ",
+      "sourcesHeading": "ماخذ",
+      "backToIndex": "← تمام بصیرتیں",
+      "subscribeLabel": "سبسکرائب کریں:",
+      "rssFeed": "RSS فیڈ",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "صفحہ بندی"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "اعتماد",
+      "title": "ثبوت کہاں ملے گا۔",
+      "lede": "سیکیورٹی، رازداری، پائیداری، اور رسائی کے بارے میں ہم جو بھی دعویٰ کرتے ہیں، وہ ثبوت سے جڑا ہوا ہے۔ آپ کو کبھی بھی صرف ہماری بات پر بھروسہ کرنا نہیں پڑے گا۔",
+      "pillarsHeading": "اعتماد کے ستون",
+      "subprocessorsHeading": "ذیلی پروسیسر",
+      "certificationsHeading": "تصدیقی اسناد",
+      "certsEmpty": "ابھی کچھ نہیں۔ جب ہم تصدیق شدہ ہو جائیں گے، تو یہ ثبوت کے لنک کے ساتھ یہاں ظاہر ہوگا۔",
+      "colName": "نام",
+      "colPurpose": "مقصد",
+      "colDataAccessed": "رسائی شدہ ڈیٹا",
+      "colLocation": "مقام",
+      "certsEmptyTitle": "ابھی کچھ نہیں",
+      "certsEmptyBody": "ہم ایک چھوٹا اسٹوڈیو ہیں۔ رسمی تصدیقی اسناد مہنگی اور سست ہیں۔ جب ہم ایک کمائیں گے، یہ جاری کنندہ کے لنک کے ساتھ یہاں ظاہر ہوگا۔",
+      "subprocessorsLede": "ہر تیسری پارٹی جو آپ کے ڈیٹا کو چھو سکتی ہے، وہ کس چیز تک رسائی رکھتی ہے، اور کہاں کام کرتی ہے۔",
+      "lastReviewedLabel": "آخری جائزہ:",
+      "incidentEyebrow": "حادثے کی رپورٹنگ",
+      "incidentHeading": "کچھ ملا؟ براہ کرم پہلے ہمیں بتائیں۔",
+      "incidentBody": "مربوط انکشاف وہ راستہ ہے جسے ہم سنجیدگی سے لیتے ہیں۔ تفصیل اور دوبارہ پیش کرنے کے اقدامات کے ساتھ security@intelligentsingularityinc.com پر ای میل کریں۔ ہم ایک کاروباری دن کے اندر رپورٹس کو تسلیم کرتے ہیں، تین دنوں کے اندر ٹرائج کرتے ہیں، اور آپ کے ساتھ طے شدہ شیڈول پر فکس بھیجتے ہیں۔ جب فکس بھیجا جاتا ہے تو ہمارے پوسٹ مارٹم میں محققین کو نام سے کریڈٹ دیا جاتا ہے — تاوقتیکہ آپ گمنام رہنا پسند کریں۔ ہم نیک نیتی والے سیکیورٹی محققین کو دھمکی نہیں دیتے یا ان پر مقدمہ نہیں چلاتے، بس اتنا۔",
+      "incidentCta": "حادثے کی رپورٹ",
+      "privacyPolicyLink": "رازداری پالیسی",
+      "learnMore": "مزید جانیں"
     },
     "help": {
-      "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "eyebrow": "مدد",
+      "title": "عام طور پر ہم ایک کلک میں مدد کر سکتے ہیں۔",
+      "lede": "اس قطار کا انتخاب کریں جو آپ کے سوال سے سب سے زیادہ مماثل ہو۔ ہر لنک ایک حقیقی جگہ لے کر جاتا ہے — کوئی بند فارم نہیں، کوئی چیٹ بوٹ نہیں۔",
+      "emergencyLabel": "اگر فوری ہے",
+      "popularHeading": "مقبول سوالات",
+      "stillStuck": "اب بھی پھنسے ہیں؟",
+      "browseByTopic": "موضوع کے لحاظ سے دیکھیں",
+      "checkStatus": "حیثیت چیک کریں",
+      "contactEyebrow": "رابطہ",
+      "contactFallbackCta": "ہم سے رابطہ کریں"
+    },
+    "about": {
+      "eyebrow": "ہمارے بارے میں · سٹوڈیو",
+      "defaultTitle": "Intelligent Singularity کے بارے میں",
+      "ecosystemLabel": "ایک نظر میں ایکوسسٹم",
+      "ecosystemHeading": "ایک پیرنٹ کمپنی، سات پروڈکٹ زمرے۔",
+      "ataGlanceLabel": "ایک نظر میں",
+      "talkToStudioLabel": "سٹوڈیو سے بات کریں",
+      "talkToStudioBody": "شراکت داری، پریس، یا پروڈکٹ کا سوال — پیغامات بانی تک براہ راست پہنچتے ہیں، عام طور پر دو کاروباری دنوں کے اندر۔",
+      "contactCta": "رابطہ · فارم کھولیں",
+      "metaLabels": {
+        "legalEntity": "قانونی ادارہ",
+        "founded": "قائم کردہ",
+        "founder": "بانی",
+        "structure": "ساخت",
+        "operatingModel": "آپریٹنگ ماڈل",
+        "capital": "سرمایہ",
+        "portfolio": "پورٹ فولیو",
+        "languages": "زبانیں",
+        "footprint": "اثر"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · البرٹا، کینیڈا",
+        "founder": "ڈاکٹر Md Diya، MD",
+        "structure": "Clap ایکوسسٹم کا پیرنٹ",
+        "operatingModel": "چھوٹا، ریموٹ، AI سے مدد یافتہ",
+        "capital": "Bootstrapped · خود مالی · فروخت کے لیے نہیں",
+        "portfolio": "پلیٹ فارمز کا بڑھتا ہوا خاندان",
+        "languages": "14 شپنگ مقامات",
+        "footprint": "≤ 50 KB فی صفحہ · صفر ٹریکرز"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "بیانیہ · بنیادی اصول",
+      "offlinePercentEyebrow": "26 فیصد",
+      "offlinePercentHeading": "آج 2.2 ارب لوگ اب بھی آف لائن ہیں۔",
+      "offlinePercentBody": "اوپر ہلکے نقطے وہ لوگ ہیں جو پہلے ہی آن لائن ہیں۔ گہرے، حلقے دار نقطے وہ لوگ ہیں جو نہیں ہیں۔ آف لائن آبادی کا 96 فیصد کم اور درمیانی آمدنی والے ممالک میں رہتا ہے۔ ہمہ گیر رسائی کی انجینئرنگ وہ چیز ہے جو اس فرق کو بند کرتی ہے۔ ذیل میں نو وعدے ہیں جو ہمیں ان کا پابند رکھتے ہیں۔",
+      "commitmentsHeading": "نو وعدے",
+      "commitmentsBody": "نو مرکوزی حلقے — ہر پروڈکٹ ہر اِن میں سے ایک کے خلاف، ہر ریلیز پر بھیجا جاتا ہے۔ یہ فہرست خواہشات کی فہرست نہیں ہے۔ یہ انجینئرنگ کا معاہدہ ہے۔",
+      "sourceData": "ماخذ ڈیٹا"
+    },
+    "faq": {
+      "openTheForm": "Open the form",
+      "emailDirectly": "Email directly"
+    },
+    "pricing": {
+      "tierFree": "Free tier:",
+      "tierPaid": "Paid tier:",
+      "tierEnterprise": "Enterprise:",
+      "sixRulesHeading": "Six rules every product ships under",
+      "antiPatternsHeading": "What we will not do",
+      "antiPatternsBody": "The anti-patterns below are common in business software. We have decided against each of them, in writing, in advance — so neither we nor a future us can quietly bring them back.",
+      "workedExampleHeading": "The same product, three customers",
+      "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
+      "viewThePortfolio": "View the portfolio",
+      "talkAboutPricing": "Talk about pricing"
+    },
+    "careers": {
+      "howWeWorkHeading": "ہم اصل میں کیسے کام کرتے ہیں",
+      "whatYouWouldWorkOnHeading": "آپ اصل میں کس پر کام کریں گے",
+      "howWeHireHeading": "ہم کیسے بھرتی کرتے ہیں، آغاز سے اختتام تک",
+      "openRolesFallback": "کھلی آسامیاں",
+      "updatedPrefix": "اپڈیٹ ہوا",
+      "contactFormCta": "رابطہ فارم",
+      "whatYouWouldWorkOnLede": "انٹیلیجنٹ سنگولیریٹی پلیٹ فارمز کے بڑھتے ہوئے خاندان کی پیرنٹ کمپنی ہے۔ نئے بھرتی شدہ افراد شاذ و نادر ہی پورا سال ایک مصنوع پر کام کرتے ہیں — زیادہ تر دو یا تین کے درمیان چکر لگاتے ہیں، اس بات پر منحصر ہے کہ کیا شپ ہو رہا ہے اور اس سہ ماہی میں کس کو سب سے زیادہ سینیئر توجہ کی ضرورت ہے۔",
+      "howWeHireLede": "چار مراحل۔ پہلے ای میل سے تحریری پیشکش تک زیادہ سے زیادہ دو ہفتے اگر دونوں فریق تیزی سے آگے بڑھیں۔ کوئی حیرت انگیز مرحلہ نہیں، کوئی غیر معاوضہ ٹیک ہوم نہیں، تحریری وجہ کے بغیر کوئی \"ثقافتی فٹ\" مسترد کرنا نہیں۔"
+    },
+    "press": {
+      "factSheetHeading": "حقائق کی شیٹ",
+      "approvedQuotesHeading": "منظور شدہ اقتباسات",
+      "brandAssetsHeading": "برانڈ کے اثاثے",
+      "brandNameLabel": "برانڈ کا نام",
+      "founderReferenceLabel": "بانی کا حوالہ",
+      "pressBoilerplateHeading": "پریس بوائلر پلیٹ",
+      "storyAnglesWelcomedHeading": "کہانی کے پہلو جنہیں ہم خوش آمدید کہتے ہیں",
+      "storyAnglesDeclineHeading": "کہانی کے پہلو جنہیں ہم عام طور پر مسترد کرتے ہیں",
+      "contactFormCta": "رابطہ فارم",
+      "boilerplateLede": "ایک پیراگراف، پریس ریلیز میں شامل کرنے کے لیے تیار۔ لفظ بہ لفظ استعمال کے لیے منظور شدہ۔",
+      "storyAnglesYesLede": "اگر آپ کی کہانی ان پہلوؤں میں سے کسی ایک کے اندر ہے، تو ہم تیزی سے کسی بانی، انجینیئر یا پروڈکٹ لیڈ کو دستیاب کرنے کے لیے کام کریں گے — عام طور پر ایک کاروباری دن کے اندر۔",
+      "storyAnglesNoLede": "پہلے سے ایمانداری سب کا وقت بچاتی ہے۔ ہم نیچے دیے گئے پہلوؤں کے لیے اقتباسات فراہم نہیں کریں گے۔ تاہم، ہم آپ کو کسی ایسے صحافی یا تجزیہ کار کی طرف رہنمائی کریں گے جس کا کام کہانی کے ساتھ بہتر طور پر میل کھاتا ہو۔"
+    },
+    "portfolio": {
+      "eyebrow": "پورٹ فولیو · Clap ایکوسسٹم",
+      "titleLine1": "{count} ٹولز۔",
+      "titleLine2": "ایک مشن۔",
+      "lede": "Intelligent Singularity Clap ایکوسسٹم کی پیرنٹ کمپنی ہے۔ ہر پروڈکٹ اپنے ڈومین پر، اپنی شرائط کے تحت، اپنی قیمتوں کے ساتھ چلتا ہے — لیکن وہ ایک انجینئرنگ اسٹیک، ایک رسائی بجٹ، ایک رازداری پوسٹورن، اور ایک مشترکہ AI-ایجنٹ فیبرک کا اشتراک کرتے ہیں۔ ہر جگہ ایمانداری والے اسٹیٹس لیبلز: پروڈکشن، سٹیجنگ، منظوری کے انتظار میں، انفراسٹرکچر۔",
+      "statToolsLabel": "ٹولز",
+      "statToolsHint": "ذیل کی سات اقسام میں",
+      "statFlagshipsLabel": "فلیگ شپس",
+      "statFlagshipsHint": "ہوم پیج پر پہلے استعمال کے لیے منتخب",
+      "statProductionLabel": "لائیو · پروڈکشن",
+      "statProductionHint": "آج حقیقی صارفین کو بھیجا جا رہا ہے",
+      "statStagingLabel": "سٹیجنگ میں",
+      "statStagingHint": "صرف دعوتی، لانچ سے پہلے مضبوط ہو رہا ہے",
+      "statCategoriesLabel": "اقسام",
+      "statCategoriesHint": "ہر ڈومین میں ایک مشترکہ اسٹیک",
+      "statThirdPartyLabel": "تیسرے فریق کی کالز",
+      "statThirdPartyValue": "صفر",
+      "statThirdPartyHint": "ہر پروڈکٹ ریلیز پر CI کے ذریعہ نافذ",
+      "ecosystemStatsAria": "ایکوسسٹم اعداد و شمار"
+    },
+    "contact": {
+      "eyebrow": "رابطہ · سٹوڈیو ڈیسک",
+      "titleFallback": "رابطہ کریں",
+      "directChannelsLabel": "براہ راست چینلز",
+      "channels": {
+        "general": {
+          "label": "عمومی",
+          "hint": "پروڈکٹ کے سوالات، تعارف، یا صرف ہیلو کہنے کے لیے۔"
+        },
+        "press": {
+          "label": "پریس",
+          "hint": "انٹرویوز، اقتباسات، بانی کی دستیابی، کہانی کی سراگ۔"
+        },
+        "partnerships": {
+          "label": "شراکت داری",
+          "hint": "NGOs، حکومتیں، انٹرپرائز تعاون، گرانٹ فنڈنگ۔"
+        },
+        "careers": {
+          "label": "کریئر",
+          "hint": "کھلی پوزیشنز، تعارف، حوالہ جات۔"
+        },
+        "security": {
+          "label": "سیکیورٹی",
+          "hint": "کمزوری کی رپورٹس — ایک کاروباری دن کے اندر تسلیم شدہ۔"
+        },
+        "accessibility": {
+          "label": "رسائی",
+          "hint": "سائٹ پر یا کسی پروڈکٹ میں رکاوٹ کی اطلاع دیں۔"
+        },
+        "privacy": {
+          "label": "رازداری",
+          "hint": "ڈیٹا تک رسائی، اصلاح، حذف، اور پورٹیبلٹی کی درخواستیں۔"
+        },
+        "legal": {
+          "label": "قانونی",
+          "hint": "DPAs، MSAs، رسمی نوٹس، ریگولیٹری سوالات۔"
+        }
+      },
+      "responseTimeLabel": "جواب دینے کا وقت",
+      "responseTimeBody": "ہر پیغام انسان پڑھتا ہے۔ ہم UTC−07:00 (Mountain) کام کے اوقات میں دو کاروباری دنوں کے اندر جواب دیتے ہیں۔ سیکیورٹی اور قانونی سوالات کو ترجیح دی جاتی ہے — سیکیورٹی رپورٹس ایک کاروباری دن کے اندر تسلیم شدہ ہیں۔ ہم اس سائٹ کی بولی جانے والی چودہ زبانوں میں سے کسی میں بھی جواب دے سکتے ہیں۔",
+      "factHqLabel": "ہیڈ کوارٹر",
+      "factHqLine1": "البرٹا، کینیڈا",
+      "factHqLine2": "2024 میں قائم",
+      "factPrivacyLabel": "رازداری",
+      "factPrivacyLine1": "کوئی ٹریکر نہیں۔",
+      "factPrivacyLine2": "صرف ای میل کی فراہمی۔",
+      "factLanguagesLabel": "زبانیں",
+      "factLanguagesLine1": "14 شپنگ مقامات۔",
+      "factLanguagesLine2": "بشمول عربی اور اردو RTL۔",
+      "factHostingLabel": "ہوسٹنگ",
+      "factHostingLine1": "ایک VPS، ایڈمنٹن۔",
+      "factHostingLine2": "کوئی تھرڈ پارٹی CDN نہیں۔"
+    },
+    "security": {
+      "postureHeading": "ہم سائٹ اور پلیٹ فارم کیسے چلاتے ہیں",
+      "dataHeading": "ہم آپ کے ڈیٹا کو کیسے سنبھالتے ہیں",
+      "complianceHeading": "وہ معیار جن پر ہم خود کو پابند رکھتے ہیں",
+      "complianceLede": "ہم معیارات کے ایک چھوٹے، مخصوص گروہ پر عمل پیرا ہیں — اور جو آڈٹ ہم نے ابھی تک حاصل نہیں کیے، اس بارے میں ایماندار ہیں۔",
+      "privacyPolicyLink": "رازداری پالیسی پڑھیں"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "سبز · لائیو ٹیلی میٹری",
+      "statThisPageLabel": "یہ صفحہ",
+      "statThisPageHint": "HTML + CSS، کوئی ٹریکر نہیں",
+      "statThisVisitLabel": "یہ وزٹ",
+      "statThisVisitHint": "CO₂ · Green Web Foundation",
+      "statHostingLabel": "ہوسٹنگ",
+      "statHostingValue": "خود ہوسٹڈ",
+      "statHostingHint": "ایک VPS · البرٹا گرڈ (~{percent}% قابل تجدید)",
+      "statThirdPartyLabel": "تیسرا فریق",
+      "statThirdPartyValue": "صفر",
+      "statThirdPartyHint": "کوئی pixels نہیں · کوئی fonts نہیں · کوئی CDN نہیں",
+      "engineeringPracticesEyebrow": "انجینئرنگ کے طریقے",
+      "byteBudgetHeading": "بائٹ بجٹ چھوٹا کیسے رہتا ہے",
+      "pledgeEyebrow": "وعدہ",
+      "pledgeHeading": "ہم سب کچھ شائع کرتے ہیں۔ آپ ہمیں جوابدہ بناتے ہیں۔",
+      "pledgeBody": "اس صفحے پر ہر نمبر حقیقی پیمائشوں سے براہ راست شمار کیا جاتا ہے۔ بنڈل بجٹ CI کے ذریعے نافذ کیا جاتا ہے؛ ہر بلڈ پر تیسرے فریق کی گنتی کا آڈٹ کیا جاتا ہے؛ کاربن کا تخمینہ آپ کی لوڈ کردہ صفحے کے وزن کے خلاف Green Web Foundation طریقہ کار استعمال کرتا ہے۔ اگر کچھ غلط لگتا ہے تو ہمیں بتائیں — ہم پانچ کاروباری دنوں کے اندر تحریری طور پر جواب دیں گے، بنیادی نمبروں کے ساتھ۔",
+      "reportIssueCta": "مسئلے کی اطلاع دیں",
+      "practices": {
+        "bundleBudget": {
+          "label": "بنڈل بجٹ",
+          "value": "≤ 50 KB / روٹ",
+          "hint": "Gzip شدہ۔ ہر پل ریکویسٹ پر CI کے ذریعہ نافذ — جو بلڈ بجٹ توڑتا ہے وہ شپ نہیں ہو سکتا۔"
+        },
+        "thirdPartyCalls": {
+          "label": "تیسرے فریق کی کالز",
+          "value": "صفر",
+          "hint": "کوئی analytics، fonts، pixels، video embeds، social widgets، یا CDN round-trips نہیں۔ ہر بلڈ پر no-third-party.mjs کے ذریعہ آڈٹ کیا جاتا ہے۔"
+        },
+        "renderer": {
+          "label": "رینڈرر",
+          "value": "سرور پہلے HTML",
+          "hint": "صفحات سرور پر رینڈر ہوتے ہیں اور براؤزر پر اسٹریم ہوتے ہیں۔ Hydration opt-in ہے، فی component، کبھی global نہیں۔"
+        },
+        "mediaStrategy": {
+          "label": "میڈیا حکمت عملی",
+          "value": "سسٹم fonts · SVG",
+          "hint": "کوئی raster heroes نہیں۔ Inline SVG illustrations۔ فی script کی font subsets صرف اس وقت لوڈ ہوتی ہیں جب وہ script صفحے پر ہوتی ہے۔"
+        },
+        "hosting": {
+          "label": "ہوسٹنگ",
+          "value": "کم PUE والا VPS",
+          "hint": "Edmonton، Alberta میں ایک VPS پر خود ہوسٹڈ۔ کوئی CDN نہیں۔ کوئی edge nodes نہیں۔ ایک origin، ایک trust حد۔"
+        },
+        "offlineReach": {
+          "label": "آف لائن رسائی",
+          "value": "PWA · Service worker",
+          "hint": "Network پہلے HTML · stale-while-revalidate assets · ہر زبان پر offline fallback صفحہ۔"
+        },
+        "reducedMotion": {
+          "label": "کم تحریک",
+          "value": "ہر جگہ احترام کیا گیا",
+          "hint": "ہر animation رک جاتی ہے جب prefers-reduced-motion سیٹ ہوتا ہے۔ کوئی استثناء نہیں، opt-out کی ضرورت نہیں۔"
+        },
+        "paperless": {
+          "label": "بطور default کاغذ کے بغیر",
+          "value": "پلیٹ فارم میں",
+          "hint": "بل، طبی ریکارڈز، رسیدیں default طور پر ڈیجیٹل ہیں۔ آفس کاغذ، بزنس کارڈز، اور پرنٹ شدہ مارکیٹنگ مواد ہمارے کام کا حصہ نہیں۔"
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "Nine non-negotiables",
+      "commitmentsAria": "The nine commitments"
     }
+  },
+  "topBar": {
+    "openMenu": "مینو کھولیں",
+    "closeMenu": "مینو بند کریں",
+    "drawerCurrentlyViewing": "موجودہ زبان",
+    "drawerLanguagesBlurb": "چودہ زبانیں۔ کسی بھی صفحے کے نیچے زبان کے پہیے سے تبدیل کریں۔",
+    "primaryNavAria": "بنیادی",
+    "mobileNavAria": "بنیادی موبائل",
+    "mobileDrawerAria": "سائٹ نیویگیشن"
+  },
+  "common": {
+    "contactUs": "ہم سے رابطہ کریں",
+    "goToHome": "ہوم پیج پر جائیں",
+    "honestNote": "ایماندارانہ نوٹ",
+    "loading": "لوڈ ہو رہا ہے...",
+    "notFoundBody": "لنک پرانا ہو سکتا ہے، صفحہ منتقل ہو سکتا ہے، یا پتے میں ٹائپو ہو سکتا ہے۔ ہوم پیج آزمائیں، یا ہم سے رابطہ کریں اگر آپ یہاں ہمارے لکھے ہوئے لنک سے پہنچے ہیں۔",
+    "notFoundEyebrow": "404 · صفحہ نہیں ملا",
+    "notFoundTitle": "ہم وہ صفحہ نہیں ڈھونڈ سکے۔",
+    "offlineBody": "ایسا لگتا ہے کہ آپ آف لائن ہیں۔ ہم آپ کو یہ صفحہ کیشے سے فراہم کر رہے ہیں۔",
+    "offlineEyebrow": "آف لائن",
+    "offlineReturnHome": "ہوم پیج پر واپس جائیں",
+    "offlineTitle": "ابھی کوئی کنکشن نہیں۔"
+  },
+  "languageWheel": {
+    "navAria": "زبان",
+    "switchTo": "زبان {language} میں تبدیل کریں"
   }
 }

@@ -32,21 +32,6 @@
   {
     "name": "minScore",
     "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditId": "color-contrast",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en",
-    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
     "actual": 0.02,
     "values": [
       0.02
@@ -151,21 +136,6 @@
   {
     "name": "minScore",
     "expected": 0.9,
-    "actual": 0.88,
-    "values": [
-      0.88
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditId": "speed-index",
-    "level": "warn",
-    "url": "https://intelligentsingularityinc.com/en",
-    "auditTitle": "Speed Index",
-    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/speed-index/"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
     "actual": 0,
     "values": [
       0
@@ -261,40 +231,10 @@
     ],
     "operator": ">=",
     "passed": false,
-    "auditId": "color-contrast",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/changelog",
-    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
     "auditId": "document-latency-insight",
     "level": "error",
     "url": "https://intelligentsingularityinc.com/en/changelog",
     "auditTitle": "Document request latency"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditId": "heading-order",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/changelog",
-    "auditTitle": "Heading elements are not in a sequentially-descending order",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/heading-order"
   },
   {
     "name": "minScore",
@@ -449,20 +389,6 @@
   {
     "name": "minScore",
     "expected": 0.9,
-    "actual": 0.89,
-    "values": [
-      0.89
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditProperty": "accessibility",
-    "auditId": "categories",
-    "level": "warn",
-    "url": "https://intelligentsingularityinc.com/en/changelog"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
     "actual": 0,
     "values": [
       0
@@ -474,21 +400,6 @@
     "url": "https://intelligentsingularityinc.com/en/status",
     "auditTitle": "Page prevented back/forward cache restoration",
     "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditId": "color-contrast",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/status",
-    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
   },
   {
     "name": "minScore",
@@ -678,21 +589,6 @@
     ],
     "operator": ">=",
     "passed": false,
-    "auditId": "color-contrast",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/roadmap",
-    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
     "auditId": "document-latency-insight",
     "level": "error",
     "url": "https://intelligentsingularityinc.com/en/roadmap",
@@ -847,21 +743,6 @@
     "url": "https://intelligentsingularityinc.com/en/insights",
     "auditTitle": "Page prevented back/forward cache restoration",
     "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache/"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditId": "color-contrast",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/insights",
-    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
   },
   {
     "name": "minScore",
@@ -1215,40 +1096,10 @@
     ],
     "operator": ">=",
     "passed": false,
-    "auditId": "color-contrast",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/trust",
-    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
     "auditId": "document-latency-insight",
     "level": "error",
     "url": "https://intelligentsingularityinc.com/en/trust",
     "auditTitle": "Document request latency"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0.89,
-    "values": [
-      0.89
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditId": "first-contentful-paint",
-    "level": "warn",
-    "url": "https://intelligentsingularityinc.com/en/trust",
-    "auditTitle": "First Contentful Paint",
-    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/"
   },
   {
     "name": "minScore",
@@ -1264,6 +1115,36 @@
     "url": "https://intelligentsingularityinc.com/en/trust",
     "auditTitle": "Elements with visible text labels do not have matching accessible names.",
     "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "lcp-discovery-insight",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "LCP request discovery",
+    "auditDocumentationLink": "https://web.dev/articles/optimize-lcp#1_eliminate_resource_load_delay"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "lcp-lazy-loaded",
+    "level": "error",
+    "url": "https://intelligentsingularityinc.com/en/trust",
+    "auditTitle": "Largest Contentful Paint image was lazily loaded",
+    "auditDocumentationLink": "https://web.dev/articles/lcp-lazy-loading"
   },
   {
     "name": "minScore",
@@ -1424,36 +1305,6 @@
     ],
     "operator": ">=",
     "passed": false,
-    "auditId": "color-contrast",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/help",
-    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/color-contrast"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditId": "definition-list",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/help",
-    "auditTitle": "`<dl>`'s do not contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements.",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/definition-list"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
     "auditId": "document-latency-insight",
     "level": "error",
     "url": "https://intelligentsingularityinc.com/en/help",
@@ -1588,39 +1439,10 @@
     ],
     "operator": ">=",
     "passed": false,
-    "auditId": "dlitem",
-    "level": "error",
-    "url": "https://intelligentsingularityinc.com/en/help",
-    "auditTitle": "Definition list items are not wrapped in `<dl>` elements",
-    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.10/dlitem"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0,
-    "values": [
-      0
-    ],
-    "operator": ">=",
-    "passed": false,
     "auditId": "redirects",
     "level": "error",
     "url": "https://intelligentsingularityinc.com/en/help",
     "auditTitle": "Avoid multiple page redirects",
     "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/redirects/"
-  },
-  {
-    "name": "minScore",
-    "expected": 0.9,
-    "actual": 0.84,
-    "values": [
-      0.84
-    ],
-    "operator": ">=",
-    "passed": false,
-    "auditProperty": "accessibility",
-    "auditId": "categories",
-    "level": "warn",
-    "url": "https://intelligentsingularityinc.com/en/help"
   }
 ]

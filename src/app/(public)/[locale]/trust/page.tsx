@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { fetchTrustPage } from '@/lib/payload';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -31,6 +32,8 @@ export default async function TrustPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations('common');
+  const tTrust = await getTranslations('pages.trust');
 
   const page = await fetchTrustPage(locale);
 
@@ -54,7 +57,7 @@ export default async function TrustPage({
   const lastReviewedAt = (page as any).lastReviewedAt as string | undefined;
 
   const reviewDate = lastReviewedAt
-    ? new Intl.DateTimeFormat('en', { dateStyle: 'long' }).format(new Date(lastReviewedAt))
+    ? new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(lastReviewedAt))
     : null;
 
   return (
@@ -63,9 +66,9 @@ export default async function TrustPage({
       <JsonLd id={`trust-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
 
       <PageHero
-        eyebrow={(page as any).eyebrow ?? 'TRUST'}
-        title={(page as any).title ?? 'Where to find the proof.'}
-        lede={(page as any).lede ?? 'Every claim links to evidence.'}
+        eyebrow={(page as any).eyebrow ?? tTrust('eyebrow')}
+        title={(page as any).title ?? tTrust('title')}
+        lede={(page as any).lede ?? tTrust('lede')}
       />
 
       <div className="px-4 sm:px-6 md:px-8 lg:px-12 pb-20 max-w-[1360px] mx-auto">
@@ -78,6 +81,8 @@ export default async function TrustPage({
               'radial-gradient(800px 300px at 50% -20%, rgba(16,185,129,0.08), transparent 70%), var(--color-paper-soft)',
           }}
         >
+          {/* Decorative SVG: native <img> is leaner than next/image runtime against the 50 KB budget. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/illustrations/trust-pillars.svg"
             alt=""
@@ -92,7 +97,7 @@ export default async function TrustPage({
         {/* Pillars grid */}
         {pillars.length > 0 && (
           <section aria-labelledby="pillars-heading" className="mb-16">
-            <SectionHeading id="pillars-heading">Trust pillars</SectionHeading>
+            <SectionHeading id="pillars-heading">{tTrust('pillarsHeading')}</SectionHeading>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
               {pillars.map((p: any) => (
                 <div
@@ -129,9 +134,9 @@ export default async function TrustPage({
                     <div className="mt-auto">
                       <OutboundLink
                         href={p.href}
-                        className="text-[12.5px] uppercase tracking-[0.14em]"
+                        className="inline-block py-2 text-[12.5px] uppercase tracking-[0.14em]"
                       >
-                        Learn more
+                        {tTrust('learnMore')}
                       </OutboundLink>
                     </div>
                   )}
@@ -144,17 +149,17 @@ export default async function TrustPage({
         {/* Subprocessors table */}
         {subprocessors.length > 0 && (
           <section aria-labelledby="subprocessors-heading" className="mb-16">
-            <SectionHeading id="subprocessors-heading">Subprocessors</SectionHeading>
+            <SectionHeading id="subprocessors-heading">{tTrust('subprocessorsHeading')}</SectionHeading>
             <p className="text-[14.5px] leading-[1.75] mb-6 max-w-[72ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
-              Every third party that may touch your data, what they access, and where they operate.
+              {tTrust('subprocessorsLede')}
             </p>
             <div className="overflow-x-auto rounded-[16px]" style={{ border: '1px solid rgba(16,185,129,0.15)' }}>
               <table className="w-full text-[13.5px]" style={{ borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ borderBottom: '1px solid rgba(16,185,129,0.12)', background: 'rgba(16,185,129,0.03)' }}>
-                    {['Name', 'Purpose', 'Data accessed', 'Location'].map((col) => (
+                    {([['colName', tTrust('colName')], ['colPurpose', tTrust('colPurpose')], ['colDataAccessed', tTrust('colDataAccessed')], ['colLocation', tTrust('colLocation')]] as const).map(([key, col]) => (
                       <th
-                        key={col}
+                        key={key}
                         className="text-left px-4 py-3"
                         style={{
                           fontFamily: 'var(--font-mono)',
@@ -198,11 +203,12 @@ export default async function TrustPage({
 
         {/* Certifications */}
         <section aria-labelledby="certifications-heading" className="mb-16">
-          <SectionHeading id="certifications-heading">Certifications</SectionHeading>
+          <SectionHeading id="certifications-heading">{tTrust('certificationsHeading')}</SectionHeading>
           {certifications.length === 0 ? (
             <EmptyState
-              title="None yet"
-              body="We are a small studio. Formal certifications are expensive and slow. When we earn one it will appear here with a link to the issuer."
+              eyebrow={t('honestNote')}
+              title={tTrust('certsEmptyTitle')}
+              body={tTrust('certsEmptyBody')}
             />
           ) : (
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -231,7 +237,7 @@ export default async function TrustPage({
               className="text-[11px] uppercase tracking-[0.1em] text-[var(--color-emerald)] mb-3"
               style={{ fontFamily: 'var(--font-mono)', fontWeight: 600 }}
             >
-              Incident reporting
+              {tTrust('incidentEyebrow')}
             </div>
             <h3
               className="mb-2"
@@ -243,16 +249,10 @@ export default async function TrustPage({
                 lineHeight: 1.15,
               }}
             >
-              Found something? Please tell us first.
+              {tTrust('incidentHeading')}
             </h3>
             <p className="text-[14.5px] leading-[1.7] text-[var(--color-cream-dim)] max-w-[60ch]">
-              Coordinated disclosure is the path we take seriously. Email
-              security@intelligentsingularityinc.com with a description and
-              reproduction steps. We acknowledge reports within one business
-              day, triage within three, and ship a fix on a timeline we agree
-              with you. Researchers are credited by name in our post-mortem
-              when a fix ships — unless you prefer to remain anonymous. We
-              do not threaten or sue good-faith security researchers, full stop.
+              {tTrust('incidentBody')}
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -261,15 +261,15 @@ export default async function TrustPage({
               className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg,#059669,#0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
             >
-              Report incident
+              {tTrust('incidentCta')}
               <span aria-hidden="true">→</span>
             </a>
             <Link
-              href="/legal/privacy"
+              href={`/${locale}/legal/privacy`}
               className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[12px] uppercase font-semibold text-[var(--color-cream)] transition-colors hover:border-[var(--color-emerald)] hover:text-[var(--color-emerald)]"
               style={{ fontFamily: 'var(--font-mono)', borderColor: 'rgba(16,185,129,0.3)' }}
             >
-              Privacy policy
+              {tTrust('privacyPolicyLink')}
             </Link>
           </div>
         </section>
@@ -277,7 +277,7 @@ export default async function TrustPage({
         {/* Last reviewed */}
         {reviewDate && (
           <p className="text-[12.5px]" style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}>
-            Last reviewed: <time dateTime={lastReviewedAt}>{reviewDate}</time>
+            {tTrust('lastReviewedLabel')} <time dateTime={lastReviewedAt}>{reviewDate}</time>
           </p>
         )}
       </div>

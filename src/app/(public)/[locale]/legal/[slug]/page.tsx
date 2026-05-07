@@ -1,8 +1,10 @@
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { fetchLegalPage } from '@/lib/payload';
 import { notFound } from 'next/navigation';
 import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
+import { RichTextTOC } from '@/components/richtext/RichTextTOC';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
@@ -45,6 +47,7 @@ async function LegalContent({ locale, slug }: { locale: string; slug: string }) 
       <JsonLd id={`legal-breadcrumb-schema-${slug}-${locale}`} data={breadcrumbSchema} />
       <div className="page-label">Legal</div>
       <h1 className="page-title">{page.title}</h1>
+      <RichTextTOC content={page.body} />
       <LexicalRenderer content={page.body} className="editorial-richtext" />
       <div
         className="mt-14 text-[11px]"
@@ -79,7 +82,7 @@ export async function generateMetadata({
 export default async function LegalSlugPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <LegalContent locale={locale} slug={slug} />
     </Suspense>
   );

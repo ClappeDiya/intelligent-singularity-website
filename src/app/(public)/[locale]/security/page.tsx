@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
@@ -26,6 +28,7 @@ export async function generateMetadata({
 async function SecurityContent({ locale }: { locale: string }) {
   const cmsPage = (await fetchSecurityPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? SECURITY_PAGE_SEED;
+  const t = await getTranslations('pages.security');
 
   const webPageSchema = getWebPageSchema({
     locale,
@@ -110,7 +113,7 @@ async function SecurityContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          How we run the site and the platform
+          {t('postureHeading')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.posture ?? []).map((p: any) => (
@@ -149,7 +152,7 @@ async function SecurityContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          How we handle your data
+          {t('dataHeading')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.dataHandling ?? []).map((p: any) => (
@@ -188,10 +191,10 @@ async function SecurityContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          Standards we hold ourselves to
+          {t('complianceHeading')}
         </h2>
         <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-          We follow a small, named set of standards — and we are honest about which audits we have not yet earned.
+          {t('complianceLede')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.compliance ?? []).map((c: any) => (
@@ -248,6 +251,7 @@ async function SecurityContent({ locale }: { locale: string }) {
         <div className="flex flex-col sm:flex-row gap-3">
           <a
             href={`mailto:${page.reportCta?.email}`}
+            aria-label={`Email ${page.reportCta?.email}`}
             className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
             style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg, #059669, #0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
           >
@@ -255,11 +259,11 @@ async function SecurityContent({ locale }: { locale: string }) {
             <span aria-hidden="true">→</span>
           </a>
           <Link
-            href="/legal/privacy"
+            href={`/${locale}/legal/privacy`}
             className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[12px] uppercase font-semibold text-[var(--color-cream)] transition-colors hover:border-[var(--color-emerald)] hover:text-[var(--color-emerald)]"
             style={{ fontFamily: 'var(--font-mono)', borderColor: 'rgba(16,185,129,0.3)' }}
           >
-            Read privacy policy
+            {t('privacyPolicyLink')}
           </Link>
         </div>
       </section>
@@ -270,7 +274,7 @@ async function SecurityContent({ locale }: { locale: string }) {
 export default async function SecurityPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <SecurityContent locale={locale} />
     </Suspense>
   );

@@ -1,23 +1,17 @@
 import type { Product } from '@/types/cms';
 
-const STATUS_COPY: Record<string, string> = {
-  production: 'Live · Production',
-  staging: 'Staging · Invite only',
-  'awaiting-approval': 'Awaiting approval',
-  infrastructure: 'Infrastructure',
-};
-
 export function FlagshipCard({
   product,
   index,
   featured = false,
+  statusLabel,
 }: {
   product: Product;
   index: number;
   featured?: boolean;
+  statusLabel: string;
 }) {
   const categoryName = typeof product.category === 'object' ? product.category?.name : '';
-  const statusLabel = STATUS_COPY[product.productStatus] ?? product.productStatus;
   const accentColor = featured ? 'var(--color-emerald)' : 'var(--color-emerald-ink)';
 
   return (
@@ -103,7 +97,8 @@ export function FlagshipCard({
           }}
         >
           <span>Visit</span>
-          <span className="transition-transform group-hover:translate-x-1.5" aria-hidden="true">→</span>
+          <span className="sr-only"> (opens in a new tab)</span>
+          <span className="transition-transform group-hover:translate-x-1.5" aria-hidden="true">↗</span>
         </div>
       </div>
     </a>

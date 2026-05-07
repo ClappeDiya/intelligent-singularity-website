@@ -5,7 +5,11 @@
     "about": "परिचय",
     "green": "हरित",
     "contact": "संपर्क",
-    "insights": "Insights"
+    "insights": "Insights",
+    "portfolio": "पोर्टफोलियो",
+    "pricing": "मूल्य",
+    "security": "सुरक्षा",
+    "faq": "अक्सर पूछे जाने वाले"
   },
   "status": {
     "production": "उत्पादन",
@@ -21,13 +25,30 @@
     "zeroTrackers": "0 ट्रैकर",
     "zeroThirdParty": "0 तृतीय-पक्ष कॉल",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · 100% नवीकरणीय ऊर्जा पर स्व-होस्टेड",
-    "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "transparencyLabel": "पारदर्शिता",
+    "helpLabel": "सहायता",
+    "trustLabel": "विश्वास",
+    "startConversation": "Start a conversation",
+    "languagesBlurb": "Every public page ships in fourteen languages, including Arabic, Nastaliq Urdu, Bengali, Hindi, Hausa, Swahili, and Yoruba.",
+    "selfHostedChip": "Self-hosted on a single VPS",
+    "links": {
+      "flagships": "प्रमुख उत्पाद",
+      "careers": "करियर",
+      "press": "प्रेस",
+      "changelog": "बदलाव",
+      "status": "स्थिति",
+      "roadmap": "रोडमैप",
+      "greenPledge": "हरित प्रतिज्ञा",
+      "privacy": "गोपनीयता",
+      "terms": "शर्तें",
+      "accessibility": "पहुँच",
+      "cookies": "कुकीज़"
+    }
   },
   "hero": {
     "skipToContent": "मुख्य सामग्री पर जाएँ",
-    "scrollHint": "नीचे स्क्रॉल करें"
+    "scrollHint": "नीचे स्क्रॉल करें",
+    "scrollHintTarget": "संख्याओं में दरार"
   },
   "contactForm": {
     "routingLabel": "मार्गनिर्देशन",
@@ -44,54 +65,347 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "चेंजलॉग · कॉर्पोरेट साइट",
+      "title": "क्या-क्या बदला, क्रम में।",
+      "lede": "इस कॉर्पोरेट साइट में हमने जो भी दृश्यमान परिवर्तन किए हैं — दिनांक और संबंधित commit के साथ। Clap इकोसिस्टम का प्रत्येक उत्पाद अपने स्वयं के डोमेन पर अपना changelog रखता है — यह पृष्ठ मूल कंपनी का मुख्य प्रवेश द्वार है, इससे अधिक कुछ नहीं, कुछ छिपा हुआ नहीं।",
+      "feedLabel": "सब्सक्राइब करें:",
+      "feedTitle": "Intelligent Singularity — बदलाव",
+      "rssFeed": "RSS फ़ीड"
     },
     "status": {
       "eyebrow": "STATUS",
-      "title": "How everything is running.",
-      "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
-      "operational": "All systems operational",
-      "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "title": "सब कुछ कैसे चल रहा है।",
+      "lede": "यह पेज हमारे सार्वजनिक स्टेटस मॉनिटर से लाइव खींचा जाता है। यदि संख्याएँ गलत लगें, तो हमें बताएँ — यह इसे ईमानदार रखने का हिस्सा है।",
+      "operational": "सभी सिस्टम चालू",
+      "degraded": "डिग्रेडेड — कम से कम एक सेवा प्रभावित",
+      "unavailable": "लाइव डेटा अनुपलब्ध — पुनः प्रयास करें",
+      "serviceInterruption": "सेवा बाधित",
+      "statusUnknown": "स्थिति अज्ञात",
+      "updatedPrefix": "अपडेट",
+      "noLiveDataAttempt": "लाइव डेटा नहीं — अभी प्रयास",
+      "connectionFailed": "हम अभी अपने सार्वजनिक स्टेटस मॉनिटर से नहीं जुड़ सके। पेज बैकग्राउंड में रीफ़्रेश होगा और डेटा वापस आने पर हरा हो जाएगा। एक मिनट में पुनः प्रयास करें।",
+      "systemsHeading": "सिस्टम",
+      "noData": "कोई डेटा नहीं",
+      "sourceOfTruth": "स्रोत:",
+      "liveStatusDashboard": "लाइव स्टेटस डैशबोर्ड",
+      "overallStatusAria": "समग्र स्थिति",
+      "externalNavAria": "बाहरी",
+      "opensInNewTab": " (नए टैब में खुलता है)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "रोडमैप · सार्वजनिक रूप से",
+      "title": "हम क्या बना रहे हैं।",
+      "lede": "सार्वजनिक रूप से। कोई वेपरवेयर नहीं। हर आइटम स्टूडियो की ओर से है — कॉर्पोरेट साइट का काम, साझा बुनियादी ढांचा, और हर उत्पाद को छूने वाली क्रॉस-कटिंग प्रतिबद्धताएं। Clap इकोसिस्टम का प्रत्येक उत्पाद अपने डोमेन पर अपना रोडमैप रखता है। यहां के आइटम जब शिप होते हैं तो कोड से लिंक होते हैं।",
+      "statusPlanned": "योजनाबद्ध",
+      "statusInProgress": "प्रगति में",
+      "statusShipped": "जारी",
+      "statusPaused": "रुका हुआ",
+      "emptyColumn": "अभी इस स्तंभ में कुछ नहीं है। नए कार्य चरण बदलने पर यहाँ दिखाई देंगे।",
+      "byStatusLabel": "स्थिति के अनुसार",
+      "ctaEyebrow": "कुछ छूट रहा है?",
+      "ctaHeading": "बताइए आपको क्या चाहिए।",
+      "ctaBody": "यदि कोई फ़ीचर, टूल, या सुधार आपके लिए वास्तविक अंतर लाएगा, तो हमें संदेश भेजें। हम हर संदेश पढ़ते हैं और वास्तविक ज़रूरत के आधार पर प्राथमिकता तय करते हैं।",
+      "ctaButton": "नोट भेजें"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "इनसाइट्स · स्टूडियो से फील्ड नोट्स",
+      "title": "सार्वजनिक रूप से सोचना।",
+      "lede": "सार्वभौमिक पहुंच, AI-संवर्धित इंजीनियरिंग, 2.2 अरब ऑफ़लाइन लोगों, और कृत्रिम बुद्धिमत्ता के दीर्घ चाप पर फील्ड नोट्स — समझे जाने के लिए लिखे गए, प्रभावित करने के लिए नहीं। हम धीरे लिखते हैं। हर दावा स्रोत से जुड़ा है। कोई क्लिकबेट नहीं, कोई थॉट-लीडरशिप कोहरा नहीं।",
+      "readMore": "पढ़ें →",
+      "minutesRead": "मिनट पढ़ें",
+      "sourcesHeading": "स्रोत",
+      "backToIndex": "← सभी लेख",
+      "subscribeLabel": "सब्सक्राइब करें:",
+      "rssFeed": "RSS फ़ीड",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "पेजिनेशन"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "विश्वास",
+      "title": "प्रमाण कहां पाएं।",
+      "lede": "सुरक्षा, गोपनीयता, स्थिरता और पहुंच के बारे में हमारा हर दावा सबूत से जुड़ा है। आपको कभी भी हमारी बात पर भरोसा नहीं करना चाहिए।",
+      "pillarsHeading": "विश्वास के स्तंभ",
+      "subprocessorsHeading": "उप-प्रोसेसर",
+      "certificationsHeading": "प्रमाणपत्र",
+      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence.",
+      "colName": "नाम",
+      "colPurpose": "उद्देश्य",
+      "colDataAccessed": "डेटा एक्सेस",
+      "colLocation": "स्थान",
+      "certsEmptyTitle": "अभी कोई नहीं",
+      "certsEmptyBody": "हम एक छोटा स्टूडियो हैं। औपचारिक प्रमाणन महंगे और धीमे होते हैं। जब हमें एक मिलेगा, तो यह यहां जारीकर्ता के लिंक के साथ दिखाई देगा।",
+      "subprocessorsLede": "हर तीसरा पक्ष जो आपके डेटा को छू सकता है, वह क्या एक्सेस करता है, और वह कहां काम करता है।",
+      "lastReviewedLabel": "अंतिम समीक्षा:",
+      "incidentEyebrow": "घटना रिपोर्टिंग",
+      "incidentHeading": "कुछ मिला? कृपया पहले हमें बताएं।",
+      "incidentBody": "समन्वित प्रकटीकरण वह रास्ता है जिसे हम गंभीरता से लेते हैं। विवरण और पुनरुत्पादन चरणों के साथ security@intelligentsingularityinc.com पर ईमेल करें। हम एक व्यावसायिक दिन के भीतर रिपोर्ट को स्वीकार करते हैं, तीन के भीतर ट्राइएज करते हैं, और आपके साथ सहमत समय-सारिणी पर एक फिक्स शिप करते हैं। जब फिक्स शिप होता है तो हमारे पोस्ट-मॉर्टम में शोधकर्ताओं को नाम से श्रेय दिया जाता है — जब तक कि आप गुमनाम रहना नहीं चाहते। हम सद्भावना सुरक्षा शोधकर्ताओं को धमकी या मुकदमा नहीं देते, पूर्ण विराम।",
+      "incidentCta": "घटना की रिपोर्ट करें",
+      "privacyPolicyLink": "गोपनीयता नीति",
+      "learnMore": "और जानें"
     },
     "help": {
       "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "title": "आमतौर पर हम एक क्लिक में मदद करते हैं।",
+      "lede": "ऐसी पंक्ति चुनें जो आपके सवाल से सबसे मेल खाती हो। हर लिंक असली जगह ले जाता है — कोई बंद फॉर्म नहीं, कोई चैटबॉट नहीं।",
+      "emergencyLabel": "यदि अति आवश्यक हो",
+      "popularHeading": "लोकप्रिय प्रश्न",
+      "stillStuck": "अभी भी अटके हुए हैं?",
+      "browseByTopic": "विषय के अनुसार ब्राउज़ करें",
+      "checkStatus": "स्थिति देखें",
+      "contactEyebrow": "संपर्क",
+      "contactFallbackCta": "हमसे संपर्क करें"
+    },
+    "about": {
+      "eyebrow": "About · The studio",
+      "defaultTitle": "About Intelligent Singularity",
+      "ecosystemLabel": "The ecosystem at a glance",
+      "ecosystemHeading": "One parent company, seven product categories.",
+      "ataGlanceLabel": "At a glance",
+      "talkToStudioLabel": "Talk to the studio",
+      "talkToStudioBody": "Partnerships, press, or a product question — messages reach the founder directly, typically within two business days.",
+      "contactCta": "Contact · Open form",
+      "metaLabels": {
+        "legalEntity": "कानूनी इकाई",
+        "founded": "स्थापना",
+        "founder": "संस्थापक",
+        "structure": "संरचना",
+        "operatingModel": "संचालन मॉडल",
+        "capital": "पूंजी",
+        "portfolio": "पोर्टफोलियो",
+        "languages": "भाषाएँ",
+        "footprint": "पदचिह्न"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · अल्बर्टा, कनाडा",
+        "founder": "डॉ. एमडी दीया, एमडी",
+        "structure": "Clap इकोसिस्टम की मूल कंपनी",
+        "operatingModel": "छोटा, दूरस्थ, AI-संवर्धित",
+        "capital": "बूटस्ट्रैप्ड · स्व-वित्तपोषित · बिक्री के लिए नहीं",
+        "portfolio": "प्लेटफार्मों का बढ़ता परिवार",
+        "languages": "14 शिपिंग भाषाएँ",
+        "footprint": "प्रति पृष्ठ ≤ 50 KB · शून्य ट्रैकर"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "घोषणापत्र · मूल सिद्धांत",
+      "offlinePercentEyebrow": "26 प्रतिशत",
+      "offlinePercentHeading": "आज भी दो दशमलव दो अरब लोग ऑफलाइन हैं।",
+      "offlinePercentBody": "ऊपर के हल्के बिंदु पहले से ऑनलाइन लोग हैं। गहरे, छल्लेदार बिंदु वे लोग हैं जो ऑनलाइन नहीं हैं। ऑफलाइन आबादी का छियानवे प्रतिशत निम्न और मध्यम आय वाले देशों में रहता है। सार्वभौमिक पहुंच इंजीनियरिंग इस अंतर को पाटती है। नीचे दिए गए नौ प्रतिबद्धताएं हम खुद को इसके प्रति प्रतिबद्ध रखने का तरीका हैं।",
+      "commitmentsHeading": "नौ प्रतिबद्धताएं",
+      "commitmentsBody": "नौ संकेंद्रित छल्ले — हर उत्पाद हर रिलीज में उन सभी के विरुद्ध शिप करता है। यह सूची इच्छा सूची नहीं है। यह इंजीनियरिंग अनुबंध है।",
+      "sourceData": "स्रोत डेटा"
+    },
+    "faq": {
+      "openTheForm": "फ़ॉर्म खोलें",
+      "emailDirectly": "सीधे ईमेल भेजें"
+    },
+    "pricing": {
+      "tierFree": "मुफ़्त स्तर:",
+      "tierPaid": "सशुल्क स्तर:",
+      "tierEnterprise": "एंटरप्राइज़:",
+      "sixRulesHeading": "हर उत्पाद जिन छह नियमों के तहत भेजा जाता है",
+      "antiPatternsHeading": "हम क्या नहीं करेंगे",
+      "antiPatternsBody": "नीचे दिए गए एंटी-पैटर्न व्यावसायिक सॉफ़्टवेयर में आम हैं। हमने पहले से, लिखित रूप में, प्रत्येक के विरुद्ध निर्णय लिया है — ताकि न तो हम और न ही भविष्य के हम इन्हें चुपचाप वापस ला सकें।",
+      "workedExampleHeading": "एक ही उत्पाद, तीन ग्राहक",
+      "workedExampleBody": "एक काम किया गया उदाहरण — दृष्टांतात्मक, मूल्य उद्धरण नहीं — यह दिखाने के लिए कि छह नियम व्यवहार में कैसे काम करते हैं। विशिष्ट संख्याएँ हर उत्पाद के अपने पेज पर हैं।",
+      "viewThePortfolio": "पोर्टफोलियो देखें",
+      "talkAboutPricing": "मूल्य के बारे में बात करें"
+    },
+    "careers": {
+      "howWeWorkHeading": "हम वास्तव में कैसे काम करते हैं",
+      "whatYouWouldWorkOnHeading": "आप वास्तव में किस पर काम करेंगे",
+      "howWeHireHeading": "हम शुरू से अंत तक कैसे भर्ती करते हैं",
+      "openRolesFallback": "खुले पद",
+      "updatedPrefix": "अपडेट",
+      "contactFormCta": "संपर्क फ़ॉर्म",
+      "whatYouWouldWorkOnLede": "Intelligent Singularity, बढ़ते प्लेटफार्मों के परिवार की मूल कंपनी है। नए कर्मचारी शायद ही पूरे एक वर्ष के लिए एक ही उत्पाद पर काम करते हैं — अधिकांश दो या तीन के बीच चक्र करते हैं, उस तिमाही में क्या शिप हो रहा है और क्या सबसे वरिष्ठ ध्यान चाहता है, इस पर निर्भर करता है।",
+      "howWeHireLede": "चार चरण। यदि दोनों पक्ष तेजी से चलते हैं तो पहले ईमेल से लिखित प्रस्ताव तक अधिकतम दो सप्ताह। कोई आश्चर्यजनक चरण नहीं, कोई अवैतनिक टेक-होम नहीं, बिना लिखित कारण के कोई \"सांस्कृतिक फिट\" अस्वीकृति नहीं।"
+    },
+    "press": {
+      "factSheetHeading": "तथ्य पत्रक",
+      "approvedQuotesHeading": "स्वीकृत उद्धरण",
+      "brandAssetsHeading": "ब्रांड संसाधन",
+      "brandNameLabel": "ब्रांड नाम",
+      "founderReferenceLabel": "संस्थापक संदर्भ",
+      "pressBoilerplateHeading": "प्रेस मानक पाठ",
+      "storyAnglesWelcomedHeading": "कहानी के पहलू जिनका हम स्वागत करते हैं",
+      "storyAnglesDeclineHeading": "कहानी के पहलू जिन्हें हम आमतौर पर अस्वीकार करते हैं",
+      "contactFormCta": "संपर्क फ़ॉर्म",
+      "boilerplateLede": "एक पैराग्राफ, प्रेस विज्ञप्तियों में डालने के लिए तैयार। शाब्दिक उपयोग के लिए अनुमोदित।",
+      "storyAnglesYesLede": "यदि आपकी कहानी इन कोणों में से एक में बैठती है, तो हम जल्दी से एक संस्थापक, इंजीनियर, या उत्पाद नेता को उपलब्ध कराने के लिए कार्य करेंगे — आमतौर पर एक कार्य दिवस के भीतर।",
+      "storyAnglesNoLede": "अग्रिम ईमानदारी सभी का समय बचाती है। हम नीचे दिए गए कोणों के लिए उद्धरण प्रदान नहीं करेंगे। हालाँकि, हम आपको एक पत्रकार या विश्लेषक की ओर इंगित करेंगे जिसका काम कहानी के लिए बेहतर फिट है।"
+    },
+    "portfolio": {
+      "eyebrow": "पोर्टफोलियो · Clap इकोसिस्टम",
+      "titleLine1": "{count} उपकरण।",
+      "titleLine2": "एक मिशन।",
+      "lede": "Intelligent Singularity, Clap इकोसिस्टम की मूल कंपनी है। हर उत्पाद अपने डोमेन पर, अपनी शर्तों के तहत, अपने मूल्य निर्धारण के साथ चलता है — लेकिन वे एक इंजीनियरिंग स्टैक, एक एक्सेसिबिलिटी बजट, एक गोपनीयता स्थिति, और एक साझा AI-एजेंट कपड़ा साझा करते हैं। हर जगह ईमानदार स्थिति लेबल: उत्पादन, स्टेजिंग, अनुमोदन की प्रतीक्षा, बुनियादी ढांचा।",
+      "statToolsLabel": "उपकरण",
+      "statToolsHint": "नीचे की सात श्रेणियों में",
+      "statFlagshipsLabel": "फ्लैगशिप",
+      "statFlagshipsHint": "होम पेज पर पहले उपयोग के लिए चुने गए",
+      "statProductionLabel": "लाइव · उत्पादन",
+      "statProductionHint": "आज वास्तविक अंतिम उपयोगकर्ताओं को शिप कर रहे हैं",
+      "statStagingLabel": "स्टेजिंग में",
+      "statStagingHint": "केवल आमंत्रण, लॉन्च से पहले सख्त किया जा रहा है",
+      "statCategoriesLabel": "श्रेणियाँ",
+      "statCategoriesHint": "हर डोमेन में एक साझा स्टैक",
+      "statThirdPartyLabel": "तृतीय-पक्ष कॉल",
+      "statThirdPartyValue": "शून्य",
+      "statThirdPartyHint": "हर उत्पाद रिलीज पर CI द्वारा प्रवर्तित",
+      "ecosystemStatsAria": "इकोसिस्टम आँकड़े"
+    },
+    "contact": {
+      "eyebrow": "संपर्क · स्टूडियो डेस्क",
+      "titleFallback": "संपर्क करें",
+      "directChannelsLabel": "प्रत्यक्ष चैनल",
+      "channels": {
+        "general": {
+          "label": "सामान्य",
+          "hint": "उत्पाद प्रश्न, परिचय, या बस नमस्ते कहना।"
+        },
+        "press": {
+          "label": "प्रेस",
+          "hint": "साक्षात्कार, उद्धरण, संस्थापक उपलब्धता, कहानी सुझाव।"
+        },
+        "partnerships": {
+          "label": "साझेदारी",
+          "hint": "NGO, सरकारें, उद्यम सहयोग, अनुदान वित्तपोषण।"
+        },
+        "careers": {
+          "label": "करियर",
+          "hint": "खुले पद, परिचय, संदर्भ।"
+        },
+        "security": {
+          "label": "सुरक्षा",
+          "hint": "भेद्यता रिपोर्ट — एक व्यावसायिक दिन के भीतर पुष्टि की जाती है।"
+        },
+        "accessibility": {
+          "label": "एक्सेसिबिलिटी",
+          "hint": "साइट या किसी भी उत्पाद में बाधा की रिपोर्ट करें।"
+        },
+        "privacy": {
+          "label": "गोपनीयता",
+          "hint": "डेटा एक्सेस, सुधार, विलोपन, पोर्टेबिलिटी अनुरोध।"
+        },
+        "legal": {
+          "label": "कानूनी",
+          "hint": "DPA, MSA, औपचारिक नोटिस, नियामक पूछताछ।"
+        }
+      },
+      "responseTimeLabel": "प्रतिक्रिया समय",
+      "responseTimeBody": "एक मनुष्य हर संदेश पढ़ता है। हम UTC−07:00 (माउंटेन) कार्य समय में दो व्यावसायिक दिनों के भीतर जवाब देते हैं। सुरक्षा और कानूनी पूछताछ को प्राथमिकता दी जाती है — सुरक्षा रिपोर्ट एक व्यावसायिक दिन के भीतर स्वीकार की जाती हैं। हम इस साइट द्वारा बोली जाने वाली चौदह भाषाओं में से किसी में भी जवाब दे सकते हैं।",
+      "factHqLabel": "मुख्यालय",
+      "factHqLine1": "अल्बर्टा, कनाडा",
+      "factHqLine2": "2024 में निगमित",
+      "factPrivacyLabel": "गोपनीयता",
+      "factPrivacyLine1": "कोई ट्रैकर नहीं।",
+      "factPrivacyLine2": "केवल ईमेल वितरण।",
+      "factLanguagesLabel": "भाषाएँ",
+      "factLanguagesLine1": "14 शिपिंग भाषाएँ।",
+      "factLanguagesLine2": "अरबी और उर्दू RTL सहित।",
+      "factHostingLabel": "होस्टिंग",
+      "factHostingLine1": "एक VPS, एडमोंटन।",
+      "factHostingLine2": "कोई तृतीय-पक्ष CDN नहीं।"
+    },
+    "security": {
+      "postureHeading": "हम साइट और प्लेटफॉर्म कैसे चलाते हैं",
+      "dataHeading": "हम आपके डेटा को कैसे संभालते हैं",
+      "complianceHeading": "मानक जिनका हम पालन करते हैं",
+      "complianceLede": "हम एक छोटे, नामित मानकों के सेट का पालन करते हैं — और हम उन ऑडिट के बारे में ईमानदार हैं जो हमने अभी तक नहीं अर्जित किए हैं।",
+      "privacyPolicyLink": "गोपनीयता नीति पढ़ें"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "हरा · लाइव टेलीमेट्री",
+      "statThisPageLabel": "यह पृष्ठ",
+      "statThisPageHint": "HTML + CSS, कोई ट्रैकर नहीं",
+      "statThisVisitLabel": "यह यात्रा",
+      "statThisVisitHint": "CO₂ · ग्रीन वेब फाउंडेशन",
+      "statHostingLabel": "होस्टिंग",
+      "statHostingValue": "स्व-होस्टेड",
+      "statHostingHint": "एकल VPS · अल्बर्टा ग्रिड (~{percent}% नवीकरणीय)",
+      "statThirdPartyLabel": "तृतीय-पक्ष",
+      "statThirdPartyValue": "शून्य",
+      "statThirdPartyHint": "कोई पिक्सेल नहीं · कोई फ़ॉन्ट नहीं · कोई CDN नहीं",
+      "engineeringPracticesEyebrow": "इंजीनियरिंग प्रथाएँ",
+      "byteBudgetHeading": "बाइट बजट कैसे छोटा रहता है",
+      "pledgeEyebrow": "प्रतिज्ञा",
+      "pledgeHeading": "हम सब कुछ प्रकाशित करते हैं। आप हमें जवाबदेह ठहराते हैं।",
+      "pledgeBody": "इस पृष्ठ पर हर संख्या वास्तविक माप से लाइव गणना की जाती है। बंडल बजट CI द्वारा लागू किया जाता है; हर बिल्ड पर तृतीय-पक्ष गणना का ऑडिट किया जाता है; कार्बन अनुमान ग्रीन वेब फाउंडेशन की पद्धति का उपयोग आपके द्वारा वास्तव में लोड किए गए पृष्ठ वजन के विरुद्ध करता है। यदि कुछ गलत लगता है, हमें बताएं — हम पाँच व्यावसायिक दिनों के भीतर लिखित रूप से जवाब देंगे, अंतर्निहित संख्याओं को दिखाते हुए।",
+      "reportIssueCta": "समस्या की रिपोर्ट करें",
+      "practices": {
+        "bundleBudget": {
+          "label": "बंडल बजट",
+          "value": "≤ 50 KB / रूट",
+          "hint": "Gzipped। हर पुल रिक्वेस्ट पर CI द्वारा प्रवर्तित — बजट तोड़ने वाला बिल्ड शिप नहीं हो सकता।"
+        },
+        "thirdPartyCalls": {
+          "label": "तृतीय-पक्ष कॉल",
+          "value": "शून्य",
+          "hint": "कोई एनालिटिक्स, फ़ॉन्ट, पिक्सेल, वीडियो एम्बेड, सोशल विजेट, या CDN राउंड-ट्रिप नहीं। हर बिल्ड पर no-third-party.mjs द्वारा ऑडिट किया गया।"
+        },
+        "renderer": {
+          "label": "रेंडरर",
+          "value": "सर्वर-पहले HTML",
+          "hint": "पृष्ठ सर्वर पर रेंडर होते हैं और ब्राउज़र में स्ट्रीम होते हैं। हाइड्रेशन ऑप्ट-इन है, प्रति-कंपोनेंट, कभी ग्लोबल नहीं।"
+        },
+        "mediaStrategy": {
+          "label": "मीडिया रणनीति",
+          "value": "सिस्टम फ़ॉन्ट्स · SVG",
+          "hint": "कोई रास्टर हीरो नहीं। इनलाइन SVG चित्र। प्रति-स्क्रिप्ट फ़ॉन्ट सबसेट केवल तब लोड होते हैं जब वह स्क्रिप्ट पेज पर होती है।"
+        },
+        "hosting": {
+          "label": "होस्टिंग",
+          "value": "कम PUE वाला VPS",
+          "hint": "एडमॉन्टन, अल्बर्टा में एकल VPS पर स्व-होस्टेड। कोई CDN नहीं। कोई एज नोड्स नहीं। एक मूल, एक विश्वास सीमा।"
+        },
+        "offlineReach": {
+          "label": "ऑफ़लाइन पहुंच",
+          "value": "PWA · सर्विस वर्कर",
+          "hint": "नेटवर्क-पहले HTML · stale-while-revalidate संपत्तियाँ · हर लोकेल में ऑफ़लाइन फ़ॉलबैक पेज।"
+        },
+        "reducedMotion": {
+          "label": "घटी हुई गति",
+          "value": "हर जगह सम्मानित",
+          "hint": "हर एनिमेशन रुक जाता है जब prefers-reduced-motion सेट होता है। कोई अपवाद नहीं, कोई ऑप्ट-आउट की आवश्यकता नहीं।"
+        },
+        "paperless": {
+          "label": "डिफ़ॉल्ट रूप से पेपरलेस",
+          "value": "पूरे प्लेटफ़ॉर्म पर",
+          "hint": "चालान, चिकित्सा रिकॉर्ड, रसीदें डिफ़ॉल्ट रूप से डिजिटल। कार्यालय का कागज़, बिज़नेस कार्ड और छपी हुई मार्केटिंग सामग्री हमारे संचालन का हिस्सा नहीं हैं।"
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "नौ अटूट प्रतिबद्धताएँ",
+      "commitmentsAria": "नौ प्रतिबद्धताएँ"
     }
+  },
+  "topBar": {
+    "openMenu": "मेनू खोलें",
+    "closeMenu": "मेनू बंद करें",
+    "drawerCurrentlyViewing": "वर्तमान भाषा",
+    "drawerLanguagesBlurb": "चौदह भाषाएँ। किसी भी पेज के नीचे लैंग्वेज व्हील से बदलें।",
+    "primaryNavAria": "मुख्य",
+    "mobileNavAria": "मुख्य मोबाइल",
+    "mobileDrawerAria": "साइट नेविगेशन"
+  },
+  "common": {
+    "loading": "लोड हो रहा है…",
+    "honestNote": "ईमानदार नोट",
+    "notFoundEyebrow": "404 · पेज नहीं मिला",
+    "notFoundTitle": "हम यह पेज नहीं ढूँढ सके।",
+    "notFoundBody": "लिंक पुराना हो सकता है, पेज स्थानांतरित हो सकता है, या पते में त्रुटि हो सकती है। होम पेज आज़माएँ, या हमसे संपर्क करें यदि आप हमारे लिखे लिंक से यहाँ पहुँचे हैं।",
+    "goToHome": "मुख्य पृष्ठ पर जाएँ",
+    "contactUs": "हमसे संपर्क करें",
+    "offlineEyebrow": "कोई कनेक्शन नहीं · आप ऑफ़लाइन हैं",
+    "offlineTitle": "इसी क्षण के लिए बनाया गया।",
+    "offlineBody": "सार्वभौमिक पहुँच हमारा लक्ष्य है। यह साइट बिना कनेक्शन के काम करती रहती है — आप जिस पेज पर एक बार गए हैं वह कैश में है और पढ़ने योग्य है। पहले देखा हुआ पेज आज़माएँ, या नया लोड करने के लिए फिर से कनेक्ट करें।",
+    "offlineReturnHome": "मुख्य पृष्ठ पर लौटें"
+  },
+  "languageWheel": {
+    "navAria": "भाषा",
+    "switchTo": "भाषा को {language} में बदलें"
   }
 }

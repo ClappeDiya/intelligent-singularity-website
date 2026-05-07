@@ -24,6 +24,9 @@ const POST = {
 vi.mock('@/lib/payload', () => ({ fetchJournalPostBySlug: async () => POST }));
 vi.mock('@/lib/seo', () => ({ buildPageMetadata: () => ({ title: 't' }) }));
 vi.mock('@/lib/schema', () => ({ getWebPageSchema: () => ({}), getBreadcrumbSchema: () => ({}) }));
+vi.mock('next-intl/server', () => ({
+  getTranslations: async () => (key: string) => ({ minutesRead: 'min read', sourcesHeading: 'Sources', backToIndex: '← All insights' }[key] ?? key),
+}));
 
 import PostPage from '@/app/(public)/[locale]/insights/[slug]/page';
 

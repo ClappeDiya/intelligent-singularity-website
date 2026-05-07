@@ -3,6 +3,6 @@ import nextConfig from 'eslint-config-next';
 export default [
   ...nextConfig,
   {
-    ignores: ['src/payload-types.ts'],
+    ignores: ['src/payload-types.ts', 'src/types/payload-types.ts'],
   },
 ];

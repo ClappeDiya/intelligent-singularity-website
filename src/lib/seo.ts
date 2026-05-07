@@ -74,11 +74,20 @@ export function buildPageMetadata(params: {
       description,
       siteName: 'Intelligent Singularity',
       locale,
+      images: [
+        {
+          url: new URL('/icons/og-image.png', siteUrl).toString(),
+          width: 1200,
+          height: 630,
+          alt: 'Intelligent Singularity — Software for universal access.',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      images: [new URL('/icons/og-image.png', siteUrl).toString()],
     },
     robots: noindex
       ? {

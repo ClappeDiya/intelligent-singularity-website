@@ -13,6 +13,19 @@ vi.mock('@/lib/payload', () => ({
 }));
 vi.mock('@/lib/seo', () => ({ buildPageMetadata: () => ({ title: 't' }) }));
 vi.mock('@/lib/schema', () => ({ getWebPageSchema: () => ({}), getBreadcrumbSchema: () => ({}) }));
+vi.mock('next-intl/server', () => ({
+  getTranslations: async () => (key: string) => ({
+    honestNote: 'Honest note',
+    loading: 'Loading...',
+    eyebrow: 'INSIGHTS · FIELD NOTES FROM THE STUDIO',
+    title: 'Thinking in public.',
+    lede: 'Field notes on universal access, AI-augmented engineering, the offline 2.2 billion, and the long arc of artificial intelligence — written to be understood, not to impress.',
+    subscribeLabel: 'Subscribe:',
+    rssFeed: 'RSS feed',
+    readMore: 'Read →',
+    minutesRead: 'min read',
+  }[key] ?? key),
+}));
 
 import InsightsIndex from '@/app/(public)/[locale]/insights/page';
 

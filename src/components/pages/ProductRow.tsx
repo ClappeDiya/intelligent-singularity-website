@@ -82,7 +82,8 @@ export function ProductRow({ product }: { product: Product }) {
           style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
         >
           <span>Visit</span>
-          <span className="transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+          <span className="sr-only"> (opens in a new tab)</span>
+          <span className="transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
         </div>
       </div>
     </a>

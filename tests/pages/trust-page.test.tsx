@@ -21,6 +21,14 @@ const TRUST = {
 vi.mock('@/lib/payload', () => ({ fetchTrustPage: async () => TRUST }));
 vi.mock('@/lib/seo', () => ({ buildPageMetadata: () => ({ title: 't' }) }));
 vi.mock('@/lib/schema', () => ({ getWebPageSchema: () => ({}), getBreadcrumbSchema: () => ({}) }));
+vi.mock('next-intl/server', () => ({
+  getTranslations: async () => (key: string) => ({
+    honestNote: 'Honest note',
+    loading: 'Loading...',
+    certsEmptyTitle: 'None yet',
+    certsEmptyBody: 'We are a small studio. Formal certifications are expensive and slow.',
+  }[key] ?? key),
+}));
 
 import TrustPage from '@/app/(public)/[locale]/trust/page';
 

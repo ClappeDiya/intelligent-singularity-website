@@ -5,7 +5,11 @@
     "about": "পরিচিতি",
     "green": "সবুজ",
     "contact": "যোগাযোগ",
-    "insights": "Insights"
+    "insights": "অন্তর্দৃষ্টি",
+    "portfolio": "পোর্টফোলিও",
+    "pricing": "মূল্য নির্ধারণ",
+    "security": "নিরাপত্তা",
+    "faq": "প্রশ্নোত্তর"
   },
   "status": {
     "production": "উৎপাদন",
@@ -21,13 +25,30 @@
     "zeroTrackers": "0 ট্র্যাকার",
     "zeroThirdParty": "0 তৃতীয়-পক্ষ কল",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · 100% নবায়নযোগ্য জ্বালানিতে স্ব-হোস্টেড",
-    "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "transparencyLabel": "স্বচ্ছতা",
+    "helpLabel": "সাহায্য",
+    "trustLabel": "বিশ্বাস",
+    "startConversation": "কথা শুরু করুন",
+    "languagesBlurb": "প্রতিটি পাবলিক পৃষ্ঠা চৌদ্দটি ভাষায় শিপ করে, যার মধ্যে আরবি, নাসতালিক উর্দু, বাংলা, হিন্দি, হাউসা, সোয়াহিলি এবং ইওরুবা অন্তর্ভুক্ত।",
+    "selfHostedChip": "একটি VPS-এ স্ব-হোস্টেড",
+    "links": {
+      "flagships": "প্রধান পণ্য",
+      "careers": "ক্যারিয়ার",
+      "press": "প্রেস",
+      "changelog": "চেঞ্জলগ",
+      "status": "অবস্থা",
+      "roadmap": "রোডম্যাপ",
+      "greenPledge": "সবুজ প্রতিশ্রুতি",
+      "privacy": "গোপনীয়তা",
+      "terms": "শর্তাবলী",
+      "accessibility": "প্রবেশযোগ্যতা",
+      "cookies": "কুকিজ"
+    }
   },
   "hero": {
     "skipToContent": "মূল বিষয়বস্তুতে যান",
-    "scrollHint": "স্ক্রল করুন"
+    "scrollHint": "স্ক্রল করুন",
+    "scrollHintTarget": "সংখ্যায় ব্যবধান"
   },
   "contactForm": {
     "routingLabel": "রাউটিং",
@@ -44,10 +65,12 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "চেঞ্জলগ · কর্পোরেট সাইট",
+      "title": "ক্রমানুসারে যা পরিবর্তিত হয়েছে।",
+      "lede": "এই কর্পোরেট সাইটে আমরা যা যা দৃশ্যমান পরিবর্তন করেছি, তারিখ ও সংশ্লিষ্ট কমিটের সঙ্গে যুক্ত। Clap ইকোসিস্টেমের প্রতিটি পণ্য তার নিজস্ব ডোমেইনে নিজস্ব চেঞ্জলগ রাখে — এই পৃষ্ঠা হলো মূল কোম্পানির প্রবেশদ্বার, এর বেশি কিছু নয়, কিছু লুকানো নেই।",
+      "feedLabel": "সাবস্ক্রাইব:",
+      "feedTitle": "Intelligent Singularity — চেঞ্জলগ",
+      "rssFeed": "RSS ফিড"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -55,43 +78,334 @@
       "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
       "operational": "All systems operational",
       "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "unavailable": "Live data unavailable — please retry",
+      "serviceInterruption": "Service interruption",
+      "statusUnknown": "Status unknown",
+      "updatedPrefix": "updated",
+      "noLiveDataAttempt": "no live data — last attempt just now",
+      "connectionFailed": "We could not reach our public status monitor just now. The page will refresh in the background and turn green once the data comes back. Please retry in a minute.",
+      "systemsHeading": "Systems",
+      "noData": "no data",
+      "sourceOfTruth": "Source of truth:",
+      "liveStatusDashboard": "Live status dashboard",
+      "overallStatusAria": "Overall status",
+      "externalNavAria": "External",
+      "opensInNewTab": " (opens in a new tab)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "রোডম্যাপ · প্রকাশ্যে",
+      "title": "আমরা যা তৈরি করছি।",
+      "lede": "প্রকাশ্যে। কোনো ভ্যাপারওয়্যার নেই। প্রতিটি আইটেম স্টুডিও দিকে — কর্পোরেট-সাইটের কাজ, ভাগ করা পরিকাঠামো এবং প্রতিটি পণ্যকে স্পর্শ করে এমন ক্রসকাটিং প্রতিশ্রুতি। Clap ইকোসিস্টেমের প্রতিটি পণ্য তার নিজস্ব ডোমেইনে নিজস্ব রোডম্যাপ রাখে। এখানকার আইটেমগুলো শিপ হলে কোডে লিঙ্ক হয়।",
+      "statusPlanned": "পরিকল্পিত",
+      "statusInProgress": "চলমান",
+      "statusShipped": "শিপড",
+      "statusPaused": "বিরতিতে",
+      "emptyColumn": "এই কলামে এখন কিছু নেই। নতুন কাজ ধাপে ধাপে এখানে আসবে।",
+      "byStatusLabel": "অবস্থা অনুসারে",
+      "ctaEyebrow": "কিছু বাদ পড়েছে?",
+      "ctaHeading": "আপনার যা প্রয়োজন আমাদের জানান।",
+      "ctaBody": "যদি এমন কোনো ফিচার, টুল, বা ফিক্স থাকে যা আপনার জন্য সত্যিকারের পার্থক্য তৈরি করবে, আমাদের একটি বার্তা পাঠান। আমরা প্রতিটি বার্তা পড়ি এবং প্রকৃত প্রয়োজনের ভিত্তিতে অগ্রাধিকার দিই।",
+      "ctaButton": "একটি বার্তা পাঠান"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "ইনসাইটস · স্টুডিওর মাঠ থেকে নোট",
+      "title": "প্রকাশ্যে চিন্তা।",
+      "lede": "সর্বজনীন প্রবেশাধিকার, AI-সহায়ক প্রকৌশল, ইন্টারনেটহীন ২.২ বিলিয়ন মানুষ এবং কৃত্রিম বুদ্ধিমত্তার দীর্ঘ পথ নিয়ে মাঠের নোট — মুগ্ধ করার জন্য নয়, বোঝার জন্য লেখা। আমরা ধীরে লিখি। প্রতিটি দাবি সূত্রের সঙ্গে যুক্ত। কোনো ক্লিকবেইট নেই, কোনো চিন্তা-নেতৃত্বের কুয়াশা নেই।",
+      "readMore": "পড়ুন →",
+      "minutesRead": "মিনিট পড়া",
+      "sourcesHeading": "সূত্র",
+      "backToIndex": "← সব ইনসাইটস",
+      "subscribeLabel": "সাবস্ক্রাইব:",
+      "rssFeed": "RSS ফিড",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "পৃষ্ঠাবিন্যাস"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "ভরসা",
+      "title": "প্রমাণ কোথায় পাবেন।",
+      "lede": "নিরাপত্তা, গোপনীয়তা, স্থায়িত্ব এবং প্রবেশাধিকার সম্পর্কে আমরা যা দাবি করি, তার প্রতিটি প্রমাণের সঙ্গে যুক্ত। আপনার কখনোই কেবল আমাদের কথায় বিশ্বাস করতে হবে না।",
+      "pillarsHeading": "ভরসার স্তম্ভ",
+      "subprocessorsHeading": "সাবপ্রসেসর",
+      "certificationsHeading": "সার্টিফিকেশন",
+      "certsEmpty": "এখনো নেই। যখন আমরা সার্টিফাইড হবো, তখন এটি এখানে প্রমাণের লিঙ্কসহ দেখানো হবে।",
+      "colName": "নাম",
+      "colPurpose": "উদ্দেশ্য",
+      "colDataAccessed": "অ্যাক্সেস করা ডেটা",
+      "colLocation": "স্থান",
+      "certsEmptyTitle": "এখনো নেই",
+      "certsEmptyBody": "আমরা একটি ছোট স্টুডিও। আনুষ্ঠানিক সার্টিফিকেশন ব্যয়বহুল এবং ধীর। যখন আমরা একটি অর্জন করব, তখন এটি ইস্যুকারীর লিঙ্কসহ এখানে উপস্থিত হবে।",
+      "subprocessorsLede": "প্রতিটি তৃতীয় পক্ষ যারা আপনার ডেটা স্পর্শ করতে পারে, তারা কী অ্যাক্সেস করে এবং কোথায় কাজ করে।",
+      "lastReviewedLabel": "সর্বশেষ পর্যালোচনা:",
+      "incidentEyebrow": "ঘটনা রিপোর্টিং",
+      "incidentHeading": "কিছু খুঁজে পেয়েছেন? অনুগ্রহ করে আগে আমাদের জানান।",
+      "incidentBody": "সমন্বিত প্রকাশই হলো আমরা গুরুত্ব সহকারে যে পথ অনুসরণ করি। বিবরণ ও পুনরুৎপাদনের ধাপসহ security@intelligentsingularityinc.com-এ ইমেইল করুন। আমরা এক কর্মদিবসের মধ্যে রিপোর্ট স্বীকার করি, তিন দিনের মধ্যে ট্রায়েজ করি এবং আপনার সঙ্গে সম্মত একটি সময়সীমায় ফিক্স পাঠাই। ফিক্স পাঠানো হলে আমাদের পোস্ট-মর্টেমে গবেষকদের নাম দিয়ে কৃতিত্ব দেওয়া হয় — যদি না আপনি বেনামী থাকতে চান। আমরা সদিচ্ছাপূর্ণ নিরাপত্তা গবেষকদের হুমকি দিই না বা মামলা করি না, কোনো ব্যতিক্রম নেই।",
+      "incidentCta": "ঘটনা রিপোর্ট করুন",
+      "privacyPolicyLink": "গোপনীয়তা নীতি",
+      "learnMore": "আরও জানুন"
     },
     "help": {
-      "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "eyebrow": "সহায়তা",
+      "title": "সাধারণত এক ক্লিকেই সমাধান।",
+      "lede": "যে সারিটি আপনার প্রশ্নের সবচেয়ে কাছাকাছি, সেটি বেছে নিন। প্রতিটি লিঙ্ক সত্যিকারের জায়গায় নিয়ে যাবে — কোনো গেট-করা ফর্ম নয়, কোনো চ্যাটবটও নয়।",
+      "emergencyLabel": "যদি জরুরি হয়",
+      "popularHeading": "জনপ্রিয় প্রশ্ন",
+      "stillStuck": "এখনো আটকে আছেন?",
+      "browseByTopic": "বিষয় অনুযায়ী দেখুন",
+      "checkStatus": "স্থিতি দেখুন",
+      "contactEyebrow": "যোগাযোগ",
+      "contactFallbackCta": "যোগাযোগ করুন"
+    },
+    "about": {
+      "eyebrow": "সম্পর্কে · স্টুডিও",
+      "defaultTitle": "Intelligent Singularity সম্পর্কে",
+      "ecosystemLabel": "এক নজরে ইকোসিস্টেম",
+      "ecosystemHeading": "এক মূল কোম্পানি, সাতটি পণ্য বিভাগ।",
+      "ataGlanceLabel": "এক নজরে",
+      "talkToStudioLabel": "স্টুডিওর সঙ্গে কথা বলুন",
+      "talkToStudioBody": "অংশীদারিত্ব, প্রেস, বা পণ্য সংক্রান্ত প্রশ্ন — বার্তা সরাসরি প্রতিষ্ঠাতার কাছে পৌঁছায়, সাধারণত দুই কর্মদিবসের মধ্যে।",
+      "contactCta": "যোগাযোগ · ফর্ম খুলুন",
+      "metaLabels": {
+        "legalEntity": "আইনি সত্তা",
+        "founded": "প্রতিষ্ঠিত",
+        "founder": "প্রতিষ্ঠাতা",
+        "structure": "কাঠামো",
+        "operatingModel": "পরিচালন মডেল",
+        "capital": "মূলধন",
+        "portfolio": "পোর্টফোলিও",
+        "languages": "ভাষা",
+        "footprint": "পদচিহ্ন"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "২০২৪ · আলবার্টা, কানাডা",
+        "founder": "ডা. Md Diya, MD",
+        "structure": "Clap ইকোসিস্টেমের মূল কোম্পানি",
+        "operatingModel": "ছোট, রিমোট, AI-উন্নত",
+        "capital": "বুটস্ট্র্যাপড · স্ব-অর্থায়িত · বিক্রির জন্য নয়",
+        "portfolio": "প্ল্যাটফর্মের একটি ক্রমবর্ধমান পরিবার",
+        "languages": "১৪টি শিপিং লোকেল",
+        "footprint": "প্রতি পৃষ্ঠায় ≤ ৫০ KB · শূন্য ট্র্যাকার"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "ম্যানিফেস্টো · মৌলিক নীতি",
+      "offlinePercentEyebrow": "২৬ শতাংশ",
+      "offlinePercentHeading": "আজ ২.২ বিলিয়ন মানুষ এখনো ইন্টারনেটের বাইরে।",
+      "offlinePercentBody": "উপরের হালকা বিন্দুগুলো হলো সেইসব মানুষ যারা ইতিমধ্যে অনলাইনে আছেন। গাঢ়, রিং করা বিন্দুগুলো হলো সেইসব মানুষ যারা নেই। অফলাইন জনসংখ্যার ৯৬ শতাংশ নিম্ন ও মধ্যম-আয়ের দেশে বাস করেন। সর্বজনীন-প্রবেশাধিকার প্রকৌশল হলো সেই উপায় যা এই ব্যবধান বন্ধ করে। নিচের নয়টি প্রতিশ্রুতি হলো আমরা কীভাবে নিজেদের তাতে আবদ্ধ রাখি।",
+      "commitmentsHeading": "নয়টি প্রতিশ্রুতি",
+      "commitmentsBody": "নয়টি কেন্দ্রীভূত বলয় — প্রতিটি পণ্য প্রতিটি রিলিজে এর প্রতিটির বিপরীতে শিপ হয়। তালিকাটি ইচ্ছার তালিকা নয়। এটি হলো প্রকৌশল চুক্তি।",
+      "sourceData": "উৎস ডেটা"
+    },
+    "faq": {
+      "openTheForm": "Open the form",
+      "emailDirectly": "Email directly"
+    },
+    "pricing": {
+      "tierFree": "Free tier:",
+      "tierPaid": "Paid tier:",
+      "tierEnterprise": "Enterprise:",
+      "sixRulesHeading": "Six rules every product ships under",
+      "antiPatternsHeading": "What we will not do",
+      "antiPatternsBody": "The anti-patterns below are common in business software. We have decided against each of them, in writing, in advance — so neither we nor a future us can quietly bring them back.",
+      "workedExampleHeading": "The same product, three customers",
+      "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
+      "viewThePortfolio": "View the portfolio",
+      "talkAboutPricing": "Talk about pricing"
+    },
+    "careers": {
+      "howWeWorkHeading": "আমরা আসলে কীভাবে কাজ করি",
+      "whatYouWouldWorkOnHeading": "আপনি আসলে কী নিয়ে কাজ করবেন",
+      "howWeHireHeading": "আমরা কীভাবে নিয়োগ করি, শুরু থেকে শেষ পর্যন্ত",
+      "openRolesFallback": "খোলা পদসমূহ",
+      "updatedPrefix": "আপডেট হয়েছে",
+      "contactFormCta": "যোগাযোগ ফর্ম",
+      "whatYouWouldWorkOnLede": "ইনটেলিজেন্ট সিঙ্গুলারিটি ক্রমবর্ধমান প্ল্যাটফর্ম পরিবারের প্যারেন্ট কোম্পানি। নতুন নিয়োগপ্রাপ্তরা সাধারণত পুরো এক বছর একটি পণ্যে কাজ করেন না — অধিকাংশই দুই বা তিনটির মধ্যে চক্রাকারে যান, কী শিপ হচ্ছে এবং সেই ত্রৈমাসিকে কোনটির সবচেয়ে বেশি সিনিয়র মনোযোগ প্রয়োজন তার ভিত্তিতে।",
+      "howWeHireLede": "চারটি ধাপ। উভয় পক্ষ দ্রুত এগোলে প্রথম ইমেইল থেকে লিখিত প্রস্তাব পর্যন্ত সর্বাধিক দুই সপ্তাহ। কোনো বিস্ময়কর পর্যায় নেই, কোনো অবৈতনিক টেক-হোম নেই, লিখিত কারণ ছাড়া কোনো \"কালচার ফিট\" প্রত্যাখ্যান নেই।"
+    },
+    "press": {
+      "factSheetHeading": "ফ্যাক্ট শিট",
+      "approvedQuotesHeading": "অনুমোদিত উদ্ধৃতি",
+      "brandAssetsHeading": "ব্র্যান্ড সম্পদ",
+      "brandNameLabel": "ব্র্যান্ডের নাম",
+      "founderReferenceLabel": "প্রতিষ্ঠাতা সম্পর্কিত তথ্য",
+      "pressBoilerplateHeading": "প্রেস বয়লারপ্লেট",
+      "storyAnglesWelcomedHeading": "যেসব গল্পের কোণ আমরা স্বাগত জানাই",
+      "storyAnglesDeclineHeading": "যেসব গল্পের কোণ আমরা সাধারণত প্রত্যাখ্যান করি",
+      "contactFormCta": "যোগাযোগ ফর্ম",
+      "boilerplateLede": "একটি অনুচ্ছেদ, প্রেস রিলিজে সরাসরি ব্যবহারের জন্য। হুবহু ব্যবহারের অনুমোদিত।",
+      "storyAnglesYesLede": "আপনার গল্প যদি এই কোণগুলোর একটির মধ্যে থাকে, আমরা একজন প্রতিষ্ঠাতা, একজন ইঞ্জিনিয়ার বা একজন প্রোডাক্ট লিডকে উপলব্ধ করার জন্য দ্রুত কাজ করব — সাধারণত একটি কার্যদিবসের মধ্যে।",
+      "storyAnglesNoLede": "আগে থেকেই সততা সবার সময় বাঁচায়। নিচের কোণগুলোর জন্য আমরা উদ্ধৃতি প্রদান করব না। তবে আমরা আপনাকে এমন একজন সাংবাদিক বা বিশ্লেষকের কাছে নির্দেশ দেব যার কাজ গল্পের সাথে আরও ভালোভাবে মেলে।"
+    },
+    "portfolio": {
+      "eyebrow": "পোর্টফোলিও · Clap ইকোসিস্টেম",
+      "titleLine1": "{count} টুল।",
+      "titleLine2": "এক মিশন।",
+      "lede": "Intelligent Singularity হলো Clap ইকোসিস্টেমের মূল কোম্পানি। প্রতিটি পণ্য নিজস্ব ডোমেইনে, নিজস্ব শর্তে, নিজস্ব মূল্যে চলে — তবে তারা একটি প্রকৌশল স্ট্যাক, একটি অ্যাক্সেসিবিলিটি বাজেট, একটি গোপনীয়তা ভঙ্গি এবং একটি ভাগ করা AI-এজেন্ট ফ্যাব্রিক ভাগ করে। সর্বত্র সৎ স্ট্যাটাস লেবেল: প্রোডাকশন, স্টেজিং, অনুমোদনের অপেক্ষায়, অবকাঠামো।",
+      "statToolsLabel": "টুল",
+      "statToolsHint": "নিচের সাতটি ক্যাটাগরি জুড়ে",
+      "statFlagshipsLabel": "ফ্ল্যাগশিপ",
+      "statFlagshipsHint": "হোম পেজে প্রথম ব্যবহারের জন্য কিউরেটেড",
+      "statProductionLabel": "লাইভ · প্রোডাকশন",
+      "statProductionHint": "আজ প্রকৃত শেষ ব্যবহারকারীদের কাছে শিপিং",
+      "statStagingLabel": "স্টেজিং-এ",
+      "statStagingHint": "শুধু আমন্ত্রিত, লঞ্চের আগে কঠোর হচ্ছে",
+      "statCategoriesLabel": "ক্যাটাগরি",
+      "statCategoriesHint": "প্রতিটি ডোমেইন জুড়ে একটি ভাগ করা স্ট্যাক",
+      "statThirdPartyLabel": "তৃতীয় পক্ষের কল",
+      "statThirdPartyValue": "শূন্য",
+      "statThirdPartyHint": "প্রতিটি পণ্য রিলিজে CI দ্বারা প্রয়োগকৃত",
+      "ecosystemStatsAria": "ইকোসিস্টেম পরিসংখ্যান"
+    },
+    "contact": {
+      "eyebrow": "যোগাযোগ · স্টুডিও ডেস্ক",
+      "titleFallback": "যোগাযোগ করুন",
+      "directChannelsLabel": "সরাসরি চ্যানেল",
+      "channels": {
+        "general": {
+          "label": "সাধারণ",
+          "hint": "পণ্য সম্পর্কিত প্রশ্ন, পরিচয়, বা শুধু হ্যালো বলতে।"
+        },
+        "press": {
+          "label": "প্রেস",
+          "hint": "সাক্ষাৎকার, উদ্ধৃতি, প্রতিষ্ঠাতার প্রাপ্যতা, গল্পের সূত্র।"
+        },
+        "partnerships": {
+          "label": "অংশীদারিত্ব",
+          "hint": "NGO, সরকার, এন্টারপ্রাইজ সহযোগিতা, অনুদান তহবিল।"
+        },
+        "careers": {
+          "label": "ক্যারিয়ার",
+          "hint": "খোলা পদ, পরিচয়, রেফারেন্স।"
+        },
+        "security": {
+          "label": "নিরাপত্তা",
+          "hint": "দুর্বলতার রিপোর্ট — এক কর্মদিবসের মধ্যে স্বীকৃত।"
+        },
+        "accessibility": {
+          "label": "অ্যাক্সেসিবিলিটি",
+          "hint": "সাইটে বা যে কোনো পণ্যে একটি বাধা রিপোর্ট করুন।"
+        },
+        "privacy": {
+          "label": "গোপনীয়তা",
+          "hint": "ডেটা অ্যাক্সেস, সংশোধন, মুছে ফেলা, পোর্টেবিলিটি অনুরোধ।"
+        },
+        "legal": {
+          "label": "আইনি",
+          "hint": "DPA, MSA, আনুষ্ঠানিক বিজ্ঞপ্তি, নিয়ন্ত্রক অনুসন্ধান।"
+        }
+      },
+      "responseTimeLabel": "সাড়া দেওয়ার সময়",
+      "responseTimeBody": "একজন মানুষ প্রতিটি বার্তা পড়ে। আমরা UTC−07:00 (Mountain) কর্মঘণ্টায় দুই কর্মদিবসের মধ্যে সাড়া দিই। নিরাপত্তা ও আইনি অনুসন্ধান অগ্রাধিকার পায় — নিরাপত্তা রিপোর্ট এক কর্মদিবসের মধ্যে স্বীকৃত। এই সাইট যে চৌদ্দটি ভাষায় কথা বলে তার যেকোনো একটিতে আমরা উত্তর দিতে পারি।",
+      "factHqLabel": "প্রধান কার্যালয়",
+      "factHqLine1": "আলবার্টা, কানাডা",
+      "factHqLine2": "২০২৪-এ নিগমিত",
+      "factPrivacyLabel": "গোপনীয়তা",
+      "factPrivacyLine1": "কোনো ট্র্যাকার নেই।",
+      "factPrivacyLine2": "শুধু ইমেইল ডেলিভারি।",
+      "factLanguagesLabel": "ভাষা",
+      "factLanguagesLine1": "১৪টি শিপিং লোকেল।",
+      "factLanguagesLine2": "আরবি ও উর্দু RTL সহ।",
+      "factHostingLabel": "হোস্টিং",
+      "factHostingLine1": "একক VPS, এডমন্টন।",
+      "factHostingLine2": "কোনো তৃতীয় পক্ষের CDN নেই।"
+    },
+    "security": {
+      "postureHeading": "আমরা সাইট ও প্ল্যাটফর্ম কীভাবে চালাই",
+      "dataHeading": "আমরা আপনার ডেটা কীভাবে পরিচালনা করি",
+      "complianceHeading": "যে মানদণ্ডে আমরা নিজেদের ধরে রাখি",
+      "complianceLede": "আমরা একটি ছোট, নামধারী মানদণ্ডের সেট অনুসরণ করি — এবং কোন কোন অডিট আমরা এখনো অর্জন করিনি, সে বিষয়ে আমরা সৎ।",
+      "privacyPolicyLink": "গোপনীয়তা নীতি পড়ুন"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "সবুজ · লাইভ টেলিমেট্রি",
+      "statThisPageLabel": "এই পৃষ্ঠা",
+      "statThisPageHint": "HTML + CSS, কোনো ট্র্যাকার নেই",
+      "statThisVisitLabel": "এই ভিজিট",
+      "statThisVisitHint": "CO₂ · Green Web Foundation",
+      "statHostingLabel": "হোস্টিং",
+      "statHostingValue": "নিজস্ব হোস্টেড",
+      "statHostingHint": "একটি VPS · আলবার্টা গ্রিড (~{percent}% নবায়নযোগ্য)",
+      "statThirdPartyLabel": "তৃতীয় পক্ষ",
+      "statThirdPartyValue": "শূন্য",
+      "statThirdPartyHint": "কোনো পিক্সেল নেই · কোনো ফন্ট নেই · কোনো CDN নেই",
+      "engineeringPracticesEyebrow": "প্রকৌশল অনুশীলন",
+      "byteBudgetHeading": "কীভাবে বাইট বাজেট ছোট থাকে",
+      "pledgeEyebrow": "প্রতিশ্রুতি",
+      "pledgeHeading": "আমরা সব প্রকাশ করি। আপনি আমাদের জবাবদিহি করেন।",
+      "pledgeBody": "এই পৃষ্ঠার প্রতিটি সংখ্যা প্রকৃত পরিমাপ থেকে লাইভ গণনা করা হয়। বান্ডেল বাজেট CI দ্বারা প্রয়োগ করা হয়; প্রতিটি বিল্ডে তৃতীয় পক্ষের গণনা অডিট করা হয়; কার্বন অনুমান আপনি যে পৃষ্ঠার ওজন প্রকৃতপক্ষে লোড করেছেন তার বিরুদ্ধে Green Web Foundation পদ্ধতি ব্যবহার করে। কিছু ভুল মনে হলে আমাদের জানান — আমরা পাঁচ কর্মদিবসের মধ্যে লিখিতভাবে সাড়া দেব, অন্তর্নিহিত সংখ্যাগুলো দেখিয়ে।",
+      "reportIssueCta": "সমস্যা রিপোর্ট করুন",
+      "practices": {
+        "bundleBudget": {
+          "label": "বান্ডেল বাজেট",
+          "value": "≤ 50 KB / রুট",
+          "hint": "Gzip করা। প্রতিটি পুল রিকোয়েস্টে CI দ্বারা প্রয়োগকৃত — যে বিল্ড বাজেট ভাঙে তা শিপ করা যায় না।"
+        },
+        "thirdPartyCalls": {
+          "label": "তৃতীয় পক্ষের কল",
+          "value": "শূন্য",
+          "hint": "কোনো অ্যানালিটিকস, ফন্ট, পিক্সেল, ভিডিও এমবেড, সোশ্যাল উইজেট, বা CDN রাউন্ড-ট্রিপ নেই। প্রতি বিল্ডে no-third-party.mjs দ্বারা অডিট করা হয়।"
+        },
+        "renderer": {
+          "label": "রেন্ডারার",
+          "value": "সার্ভার-প্রথম HTML",
+          "hint": "পৃষ্ঠা সার্ভারে রেন্ডার হয় এবং ব্রাউজারে স্ট্রিম হয়। হাইড্রেশন অপ্ট-ইন, প্রতি কম্পোনেন্টে, কখনোই গ্লোবাল নয়।"
+        },
+        "mediaStrategy": {
+          "label": "মিডিয়া কৌশল",
+          "value": "সিস্টেম ফন্ট · SVG",
+          "hint": "কোনো রাস্টার হিরো নেই। ইনলাইন SVG ইলাস্ট্রেশন। প্রতি স্ক্রিপ্ট ফন্ট সাবসেট শুধু সেই স্ক্রিপ্ট পৃষ্ঠায় থাকলেই লোড হয়।"
+        },
+        "hosting": {
+          "label": "হোস্টিং",
+          "value": "কম-PUE VPS",
+          "hint": "এডমন্টন, আলবার্টায় একটি VPS-এ স্ব-হোস্টেড। কোনো CDN নেই। কোনো এজ নোড নেই। একটি অরিজিন, একটি ট্রাস্ট সীমা।"
+        },
+        "offlineReach": {
+          "label": "অফলাইন রিচ",
+          "value": "PWA · সার্ভিস ওয়ার্কার",
+          "hint": "নেটওয়ার্ক-প্রথম HTML · stale-while-revalidate সম্পদ · প্রতিটি লোকেলে অফলাইন ফলব্যাক পৃষ্ঠা।"
+        },
+        "reducedMotion": {
+          "label": "হ্রাসকৃত গতি",
+          "value": "সর্বত্র সম্মানিত",
+          "hint": "prefers-reduced-motion সেট থাকলে প্রতিটি অ্যানিমেশন বিরতি নেয়। কোনো ব্যতিক্রম নেই, কোনো অপ্ট-আউট প্রয়োজন নেই।"
+        },
+        "paperless": {
+          "label": "ডিফল্ট হিসেবে কাগজবিহীন",
+          "value": "প্ল্যাটফর্ম জুড়ে",
+          "hint": "চালান, মেডিকেল রেকর্ড, রসিদ ডিফল্টভাবে ডিজিটাল। অফিস কাগজ, ব্যবসায়িক কার্ড, এবং মুদ্রিত মার্কেটিং সংগ্রহ আমাদের কাজের অংশ নয়।"
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "Nine non-negotiables",
+      "commitmentsAria": "The nine commitments"
     }
+  },
+  "topBar": {
+    "openMenu": "মেনু খুলুন",
+    "closeMenu": "মেনু বন্ধ করুন",
+    "drawerCurrentlyViewing": "বর্তমান ভাষা",
+    "drawerLanguagesBlurb": "চৌদ্দটি ভাষা। যেকোনো পৃষ্ঠার নিচের ভাষা চাকা থেকে পরিবর্তন করুন।",
+    "primaryNavAria": "প্রধান",
+    "mobileNavAria": "মোবাইলের প্রধান",
+    "mobileDrawerAria": "সাইট নেভিগেশন"
+  },
+  "common": {
+    "contactUs": "যোগাযোগ করুন",
+    "goToHome": "হোমে যান",
+    "honestNote": "সৎ নোট",
+    "loading": "লোড হচ্ছে...",
+    "notFoundBody": "লিঙ্কটি পুরানো হতে পারে, পৃষ্ঠাটি সরে গেছে, অথবা ঠিকানায় টাইপো থাকতে পারে। হোম পৃষ্ঠাটি চেষ্টা করুন, অথবা আমরা লিখেছি এমন একটি লিঙ্ক থেকে এখানে এসে থাকলে আমাদের সাথে যোগাযোগ করুন।",
+    "notFoundEyebrow": "404 · পৃষ্ঠা পাওয়া যায়নি",
+    "notFoundTitle": "আমরা সেই পৃষ্ঠাটি খুঁজে পাইনি।",
+    "offlineBody": "আপনি অফলাইনে আছেন বলে মনে হচ্ছে। আমরা এই পৃষ্ঠাটি ক্যাশ থেকে পরিবেশন করছি।",
+    "offlineEyebrow": "অফলাইন",
+    "offlineReturnHome": "হোমে ফিরে যান",
+    "offlineTitle": "এখন কোনো সংযোগ নেই।"
+  },
+  "languageWheel": {
+    "navAria": "ভাষা",
+    "switchTo": "ভাষা পরিবর্তন করে {language} করুন"
   }
 }

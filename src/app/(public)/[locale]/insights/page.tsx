@@ -1,6 +1,7 @@
 // src/app/(public)/[locale]/insights/page.tsx
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 import { fetchJournalPosts } from '@/lib/payload';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -20,12 +21,13 @@ export async function generateMetadata({
   });
 }
 
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('en-US', {
+function formatDate(iso: string, locale: string) {
+  return new Intl.DateTimeFormat(locale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  });
+    timeZone: 'UTC',
+  }).format(new Date(iso));
 }
 
 function TagChip({ label }: { label: string }) {
@@ -39,7 +41,7 @@ function TagChip({ label }: { label: string }) {
   );
 }
 
-function FeatureCard({ post, locale }: { post: any; locale: string }) {
+function FeatureCard({ post, locale, minutesRead, readMore }: { post: any; locale: string; minutesRead: string; readMore: string }) {
   const firstTag = post.tags?.[0]?.tag;
   return (
     <Link
@@ -53,14 +55,14 @@ function FeatureCard({ post, locale }: { post: any; locale: string }) {
           className="text-[12px]"
           style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
         >
-          {formatDate(post.publishedAt)}
+          {formatDate(post.publishedAt, locale)}
         </span>
         {post.readingTime ? (
           <span
             className="text-[12px]"
             style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
           >
-            {post.readingTime} min read
+            {post.readingTime} {minutesRead}
           </span>
         ) : null}
       </div>
@@ -77,13 +79,13 @@ function FeatureCard({ post, locale }: { post: any; locale: string }) {
         className="mt-6 text-[12px] uppercase tracking-[0.18em]"
         style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
       >
-        Read →
+        {readMore}
       </div>
     </Link>
   );
 }
 
-function PostCard({ post, locale }: { post: any; locale: string }) {
+function PostCard({ post, locale, minutesRead }: { post: any; locale: string; minutesRead: string }) {
   const firstTag = post.tags?.[0]?.tag;
   return (
     <Link
@@ -109,8 +111,8 @@ function PostCard({ post, locale }: { post: any; locale: string }) {
         className="mt-4 flex gap-3 text-[11px]"
         style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
       >
-        <span>{formatDate(post.publishedAt)}</span>
-        {post.readingTime ? <span>{post.readingTime} min</span> : null}
+        <span>{formatDate(post.publishedAt, locale)}</span>
+        {post.readingTime ? <span>{post.readingTime} {minutesRead}</span> : null}
       </div>
     </Link>
   );
@@ -131,6 +133,8 @@ export default async function InsightsIndex({
   const docs: any[] = result.docs ?? [];
   const totalPages: number = result.totalPages ?? 1;
   const currentPage: number = result.page ?? page;
+  const t = await getTranslations('common');
+  const tInsights = await getTranslations('pages.insights');
 
   const [feature, ...rest] = docs;
 
@@ -157,18 +161,24 @@ export default async function InsightsIndex({
       />
 
       <PageHero
-        eyebrow="INSIGHTS · FIELD NOTES FROM THE STUDIO"
-        title="Thinking in public."
-        lede="Field notes on universal access, AI-augmented engineering, the offline 2.2 billion, and the long arc of artificial intelligence — written to be understood, not to impress. We write slowly. Every claim links to a source. No clickbait, no thought-leadership fog."
+        eyebrow={tInsights('eyebrow')}
+        title={tInsights('title')}
+        lede={tInsights('lede')}
       />
 
       <p className="mb-10 text-[13px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}>
-        Subscribe:{' '}
-        <Link href={`/${locale}/insights/feed.xml`}>/insights/feed.xml</Link>
+        {tInsights('subscribeLabel')}{' '}
+        <a
+          href={`/${locale}/insights/feed.xml`}
+          className="underline underline-offset-4 decoration-[rgba(16,185,129,0.4)] hover:decoration-[var(--color-emerald-ink)]"
+        >
+          {tInsights('rssFeed')}
+        </a>
       </p>
 
       {docs.length === 0 ? (
         <EmptyState
+          eyebrow={t('honestNote')}
           title="Nothing published yet."
           body="The first insight will appear here once it is ready. We write slowly and carefully."
         />
@@ -176,20 +186,20 @@ export default async function InsightsIndex({
         <>
           {feature ? (
             <div className="mb-10">
-              <FeatureCard post={feature} locale={locale} />
+              <FeatureCard post={feature} locale={locale} minutesRead={tInsights('minutesRead')} readMore={tInsights('readMore')} />
             </div>
           ) : null}
 
           {rest.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12">
               {rest.map((post: any) => (
-                <PostCard key={post.slug} post={post} locale={locale} />
+                <PostCard key={post.slug} post={post} locale={locale} minutesRead={tInsights('minutesRead')} />
               ))}
             </div>
           ) : null}
 
           {totalPages > 1 ? (
-            <nav className="flex gap-4 items-center justify-center" aria-label="Pagination">
+            <nav className="flex gap-4 items-center justify-center" aria-label={tInsights('paginationAria')}>
               {currentPage > 1 ? (
                 <Link
                   href={`/${locale}/insights?page=${currentPage - 1}`}

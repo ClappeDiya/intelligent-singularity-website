@@ -5,7 +5,11 @@
     "about": "Kuhusu",
     "green": "Mazingira",
     "contact": "Wasiliana",
-    "insights": "Insights"
+    "insights": "Maarifa",
+    "portfolio": "Portofolio",
+    "pricing": "Bei",
+    "security": "Usalama",
+    "faq": "Maswali"
   },
   "status": {
     "production": "Uzalishaji",
@@ -22,12 +26,29 @@
     "zeroThirdParty": "Simu 0 za wahusika wa nje",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Inajihifadhi kwenye nishati mbadala 100%",
     "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "helpLabel": "Msaada",
+    "trustLabel": "Uaminifu",
+    "startConversation": "Anza mazungumzo",
+    "languagesBlurb": "Kila ukurasa wa umma huchapishwa katika lugha kumi na nne, ikiwa ni pamoja na Kiarabu, Nastaliq Urdu, Kibengali, Kihindi, Kihausa, Kiswahili, na Kiyoruba.",
+    "selfHostedChip": "Imejihospi katika VPS moja",
+    "links": {
+      "flagships": "Bidhaa kuu",
+      "careers": "Kazi",
+      "press": "Vyombo vya habari",
+      "changelog": "Kumbukumbu ya mabadiliko",
+      "status": "Hali",
+      "roadmap": "Ramani ya safari",
+      "greenPledge": "Ahadi ya kijani",
+      "privacy": "Faragha",
+      "terms": "Masharti",
+      "accessibility": "Upatikanaji",
+      "cookies": "Vidakuzi"
+    }
   },
   "hero": {
     "skipToContent": "Ruka hadi maudhui makuu",
-    "scrollHint": "Sogeza"
+    "scrollHint": "Sogeza",
+    "scrollHintTarget": "pengo katika takwimu"
   },
   "contactForm": {
     "routingLabel": "Elekeza",
@@ -44,10 +65,12 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "CHANGELOG · TOVUTI YA SHIRIKA",
+      "title": "Kilichobadilika, kwa mpangilio.",
+      "lede": "Kila mabadiliko yanayoonekana tuliyofanya kwenye tovuti hii ya shirika, yakiwa na tarehe na kuhusishwa na commit iliyo nyuma yake. Kila bidhaa katika mfumo wa Clap inahifadhi changelog yake mwenyewe katika kikoa chake — ukurasa huu ni mlango mkuu wa kampuni mama, si zaidi ya hapo, hakuna kilichofichwa.",
+      "feedLabel": "Jisajili:",
+      "feedTitle": "Intelligent Singularity — Changelog",
+      "rssFeed": "Mlisho wa RSS"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -55,43 +78,334 @@
       "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
       "operational": "All systems operational",
       "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "unavailable": "Live data unavailable — please retry",
+      "serviceInterruption": "Service interruption",
+      "statusUnknown": "Status unknown",
+      "updatedPrefix": "updated",
+      "noLiveDataAttempt": "no live data — last attempt just now",
+      "connectionFailed": "We could not reach our public status monitor just now. The page will refresh in the background and turn green once the data comes back. Please retry in a minute.",
+      "systemsHeading": "Systems",
+      "noData": "no data",
+      "sourceOfTruth": "Source of truth:",
+      "liveStatusDashboard": "Live status dashboard",
+      "overallStatusAria": "Overall status",
+      "externalNavAria": "External",
+      "opensInNewTab": " (opens in a new tab)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "RAMANI YA SAFARI · HADHARANI",
+      "title": "Tunachojenga.",
+      "lede": "Hadharani. Hakuna vaporware. Kila kipengele kiko upande wa studio — kazi ya tovuti ya shirika, miundombinu inayoshirikiwa, na ahadi za kuvuka mipaka zinazogusa kila bidhaa. Kila bidhaa katika mfumo wa Clap inaweka ramani yake ya safari kwenye kikoa chake. Vipengele hapa hujiunga na msimbo vinapotumwa.",
+      "statusPlanned": "Kimepangwa",
+      "statusInProgress": "Kinaendelea",
+      "statusShipped": "Kimetumwa",
+      "statusPaused": "Kimesimamishwa",
+      "emptyColumn": "Hakuna kitu katika safu hii kwa sasa. Kazi mpya itaonekana hapa inapohama hatua.",
+      "byStatusLabel": "Kwa hali",
+      "ctaEyebrow": "Kuna kinachokosekana?",
+      "ctaHeading": "Tuambie unachohitaji.",
+      "ctaBody": "Ikiwa kuna kipengele, zana, au marekebisho ambayo yatakuletea tofauti halisi, tutumie ujumbe. Tunasoma kila ujumbe na tunatoa kipaumbele kwa msingi wa hitaji halisi.",
+      "ctaButton": "Tuma ujumbe"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "INSIGHTS · MAANDISHI YA UWANJANI YA STUDIO",
+      "title": "Kufikiri hadharani.",
+      "lede": "Maandishi ya uwanjani kuhusu ufikiaji kwa wote, uhandisi unaosaidiwa na AI, watu bilioni 2.2 wasio mtandaoni, na safari ndefu ya akili bandia — yameandikwa ili kueleweka, si kuvutia. Tunaandika polepole. Kila dai linaunganishwa na chanzo. Hakuna clickbait, hakuna ukungu wa uongozi wa fikra.",
+      "readMore": "Soma →",
+      "minutesRead": "dak. ya kusoma",
+      "sourcesHeading": "Vyanzo",
+      "backToIndex": "← Maarifa yote",
+      "subscribeLabel": "Jisajili:",
+      "rssFeed": "Mlisho wa RSS",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "Ukurasa"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "KUAMINIANA",
+      "title": "Mahali pa kupata uthibitisho.",
+      "lede": "Kila madai tunayoyatoa kuhusu usalama, faragha, uendelevu, na ufikiaji yameunganishwa na ushahidi. Hupaswi kamwe kulazimika kutuamini tu kwa neno letu.",
+      "pillarsHeading": "Nguzo za kuaminiana",
+      "subprocessorsHeading": "Wachakataji wadogo",
+      "certificationsHeading": "Vyeti",
+      "certsEmpty": "Hakuna bado. Tutakapopata vyeti, vitaonekana hapa pamoja na kiungo kwa ushahidi.",
+      "colName": "Jina",
+      "colPurpose": "Lengo",
+      "colDataAccessed": "Data inayofikiwa",
+      "colLocation": "Mahali",
+      "certsEmptyTitle": "Hakuna bado",
+      "certsEmptyBody": "Sisi ni studio ndogo. Vyeti rasmi ni ghali na pole pole. Tutakapopata kimoja, kitatokea hapa pamoja na kiungo kwa mtoaji.",
+      "subprocessorsLede": "Kila mhusika wa tatu ambaye anaweza kugusa data yako, kile wanachofikia, na mahali wanapofanya kazi.",
+      "lastReviewedLabel": "Imepitiwa mara ya mwisho:",
+      "incidentEyebrow": "Ripoti ya tukio",
+      "incidentHeading": "Umeona kitu? Tafadhali tuambie kwanza.",
+      "incidentBody": "Ufichuzi wa pamoja ndio njia tunayoichukulia kwa uzito. Tuma barua pepe kwa security@intelligentsingularityinc.com ikiwa na maelezo na hatua za kurudia. Tunatambua ripoti ndani ya siku moja ya kazi, tunazifanyia uchunguzi ndani ya siku tatu, na tunatuma marekebisho kwa ratiba tuliyokubaliana nawe. Watafiti hupewa heshima kwa jina katika ripoti yetu ya tafiti baada ya kosa wakati marekebisho yanatumwa — isipokuwa unapendelea kubaki bila jina. Hatutishi wala hatumshtaki mtafiti wa usalama mwenye nia njema, hapana zaidi.",
+      "incidentCta": "Ripoti tukio",
+      "privacyPolicyLink": "Sera ya faragha",
+      "learnMore": "Pata maelezo zaidi"
     },
     "help": {
-      "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "eyebrow": "USAIDIZI",
+      "title": "Kawaida tunaweza kusaidia kwa mbofyo mmoja.",
+      "lede": "Chagua mstari unaofanana zaidi na swali lako. Kila kiungo huenda mahali halisi — hakuna fomu zilizofungwa, hakuna chatbots.",
+      "emergencyLabel": "Ikiwa ni dharura",
+      "popularHeading": "Maswali maarufu",
+      "stillStuck": "Bado umekwama?",
+      "browseByTopic": "Vinjari kwa mada",
+      "checkStatus": "Angalia hali",
+      "contactEyebrow": "Mawasiliano",
+      "contactFallbackCta": "Wasiliana nasi"
+    },
+    "about": {
+      "eyebrow": "Kuhusu · Studio",
+      "defaultTitle": "Kuhusu Intelligent Singularity",
+      "ecosystemLabel": "Mfumo kwa muhtasari",
+      "ecosystemHeading": "Kampuni mama moja, makundi saba ya bidhaa.",
+      "ataGlanceLabel": "Kwa muhtasari",
+      "talkToStudioLabel": "Ongea na studio",
+      "talkToStudioBody": "Ushirikiano, vyombo vya habari, au swali la bidhaa — ujumbe unafika moja kwa moja kwa mwanzilishi, kwa kawaida ndani ya siku mbili za kazi.",
+      "contactCta": "Wasiliana · Fungua fomu",
+      "metaLabels": {
+        "legalEntity": "Taasisi ya kisheria",
+        "founded": "Ilianzishwa",
+        "founder": "Mwanzilishi",
+        "structure": "Muundo",
+        "operatingModel": "Mtindo wa uendeshaji",
+        "capital": "Mtaji",
+        "portfolio": "Portofolio",
+        "languages": "Lugha",
+        "footprint": "Athari"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · Alberta, Kanada",
+        "founder": "Dkt. Md Diya, MD",
+        "structure": "Mama wa mfumo wa Clap",
+        "operatingModel": "Ndogo, ya mbali, iliyoboreshwa na AI",
+        "capital": "Bootstrapped · iliyojigharamia · si ya kuuza",
+        "portfolio": "Familia inayokua ya majukwaa",
+        "languages": "Lugha 14 zinazotumwa",
+        "footprint": "≤ 50 KB kwa kila ukurasa · sifuri vifuatiliaji"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "Tamko · Misingi ya kwanza",
+      "offlinePercentEyebrow": "Asilimia 26",
+      "offlinePercentHeading": "Watu bilioni mbili nukta mbili bado wako nje ya mtandao leo.",
+      "offlinePercentBody": "Madoa mepesi hapo juu ni watu walio mtandaoni tayari. Madoa meusi, yenye duara ni watu wasio mtandaoni. Asilimia 96 ya watu wasio mtandaoni wanaishi katika nchi za kipato cha chini na cha kati. Uhandisi wa upatikanaji wa watu wote ndio unaopiga marufuku pengo hilo. Ahadi tisa zilizoorodheshwa hapo chini ni jinsi tunavyojibinya navyo.",
+      "commitmentsHeading": "Ahadi tisa",
+      "commitmentsBody": "Pete tisa za kati moja — kila bidhaa hutumwa dhidi ya kila moja yao, katika kila toleo. Orodha hii sio orodha ya matakwa. Ni mkataba wa uhandisi.",
+      "sourceData": "Chanzo cha data"
+    },
+    "faq": {
+      "openTheForm": "Open the form",
+      "emailDirectly": "Email directly"
+    },
+    "pricing": {
+      "tierFree": "Free tier:",
+      "tierPaid": "Paid tier:",
+      "tierEnterprise": "Enterprise:",
+      "sixRulesHeading": "Six rules every product ships under",
+      "antiPatternsHeading": "What we will not do",
+      "antiPatternsBody": "The anti-patterns below are common in business software. We have decided against each of them, in writing, in advance — so neither we nor a future us can quietly bring them back.",
+      "workedExampleHeading": "The same product, three customers",
+      "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
+      "viewThePortfolio": "View the portfolio",
+      "talkAboutPricing": "Talk about pricing"
+    },
+    "careers": {
+      "howWeWorkHeading": "Jinsi tunavyofanya kazi kwa ukweli",
+      "whatYouWouldWorkOnHeading": "Kile ungefanyia kazi kwa ukweli",
+      "howWeHireHeading": "Jinsi tunavyoajiri, kuanzia mwanzo hadi mwisho",
+      "openRolesFallback": "Nafasi zilizo wazi",
+      "updatedPrefix": "Imesasishwa",
+      "contactFormCta": "Fomu ya mawasiliano",
+      "whatYouWouldWorkOnLede": "Intelligent Singularity ni kampuni mama ya familia inayoongezeka ya majukwaa. Wafanyakazi wapya mara chache hufanya kazi kwenye bidhaa moja kwa mwaka mzima — wengi huzunguka kati ya mbili au tatu, kulingana na kinachosafirishwa na kile kinachohitaji uangalifu mkubwa wa wafanyakazi wakuu kwenye robo hiyo.",
+      "howWeHireLede": "Hatua nne. Upeo wa wiki mbili kutoka barua pepe ya kwanza hadi ofa iliyoandikwa ikiwa pande zote mbili zinaendelea haraka. Hakuna hatua za mshangao, hakuna kazi za nyumbani zisizolipwa, hakuna kukataliwa kwa \"kufaa kwa utamaduni\" bila sababu iliyoandikwa."
+    },
+    "press": {
+      "factSheetHeading": "Karatasi ya ukweli",
+      "approvedQuotesHeading": "Manukuu yaliyoidhinishwa",
+      "brandAssetsHeading": "Mali za chapa",
+      "brandNameLabel": "Jina la chapa",
+      "founderReferenceLabel": "Marejeleo ya mwanzilishi",
+      "pressBoilerplateHeading": "Maandishi ya msingi ya vyombo vya habari",
+      "storyAnglesWelcomedHeading": "Pembe za hadithi tunazokaribisha",
+      "storyAnglesDeclineHeading": "Pembe za hadithi tunazokataa kwa kawaida",
+      "contactFormCta": "Fomu ya mawasiliano",
+      "boilerplateLede": "Aya moja, tayari kuingiza katika taarifa za vyombo vya habari. Imeidhinishwa kutumika neno kwa neno.",
+      "storyAnglesYesLede": "Ikiwa hadithi yako iko ndani ya mojawapo ya pembe hizi, tutahamia haraka kumweka mwanzilishi, mhandisi, au kiongozi wa bidhaa — kwa kawaida ndani ya siku moja ya kazi.",
+      "storyAnglesNoLede": "Unyoofu wa mapema huokoa muda wa kila mtu. Hatutatoa manukuu kwa pembe zilizo hapa chini. Hata hivyo, tutakuelekeza kwa mwandishi wa habari au mchambuzi ambaye kazi yake inafaa zaidi kwa hadithi."
+    },
+    "portfolio": {
+      "eyebrow": "Portofolio · Mfumo wa Clap",
+      "titleLine1": "Zana {count}.",
+      "titleLine2": "Dhamira moja.",
+      "lede": "Intelligent Singularity ni kampuni mama ya mfumo wa Clap. Kila bidhaa inafanya kazi kwenye kikoa chake, chini ya masharti yake, na bei zake — lakini zinashiriki rundo moja la uhandisi, bajeti moja ya upatikanaji, msimamo mmoja wa faragha, na kitambaa kimoja cha mawakala wa AI. Lebo za hali za uaminifu kila mahali: uzalishaji, staging, kusubiri idhini, miundombinu.",
+      "statToolsLabel": "Zana",
+      "statToolsHint": "Katika makundi saba yaliyo chini",
+      "statFlagshipsLabel": "Bidhaa kuu",
+      "statFlagshipsHint": "Zilizochaguliwa kwa matumizi ya kwanza ukurasa wa nyumbani",
+      "statProductionLabel": "Hai · uzalishaji",
+      "statProductionHint": "Inawasilishwa kwa watumiaji halisi leo",
+      "statStagingLabel": "Katika staging",
+      "statStagingHint": "Mwaliko tu, kuimarisha kabla ya kuzindua",
+      "statCategoriesLabel": "Makundi",
+      "statCategoriesHint": "Rundo moja la kushiriki kwenye kila kikoa",
+      "statThirdPartyLabel": "Simu za mtu wa tatu",
+      "statThirdPartyValue": "Sifuri",
+      "statThirdPartyHint": "Inatekelezwa na CI kwenye kila toleo la bidhaa",
+      "ecosystemStatsAria": "Takwimu za mfumo"
+    },
+    "contact": {
+      "eyebrow": "Mawasiliano · Dawati la studio",
+      "titleFallback": "Wasiliana nasi",
+      "directChannelsLabel": "Njia za moja kwa moja",
+      "channels": {
+        "general": {
+          "label": "Jumla",
+          "hint": "Maswali ya bidhaa, utangulizi, au tu kusema habari."
+        },
+        "press": {
+          "label": "Vyombo vya habari",
+          "hint": "Mahojiano, nukuu, upatikanaji wa mwanzilishi, mbazi za hadithi."
+        },
+        "partnerships": {
+          "label": "Ushirikiano",
+          "hint": "NGOs, serikali, ushirikiano wa biashara, ufadhili wa ruzuku."
+        },
+        "careers": {
+          "label": "Kazi",
+          "hint": "Nafasi wazi, utangulizi, marejeo."
+        },
+        "security": {
+          "label": "Usalama",
+          "hint": "Ripoti za udhaifu — zinakubaliwa ndani ya siku moja ya kazi."
+        },
+        "accessibility": {
+          "label": "Upatikanaji",
+          "hint": "Ripoti kizuizi kwenye tovuti au katika bidhaa yoyote."
+        },
+        "privacy": {
+          "label": "Faragha",
+          "hint": "Maombi ya ufikiaji, urekebishaji, kufuta, na uhamishaji wa data."
+        },
+        "legal": {
+          "label": "Sheria",
+          "hint": "DPAs, MSAs, ilani rasmi, maswali ya udhibiti."
+        }
+      },
+      "responseTimeLabel": "Muda wa majibu",
+      "responseTimeBody": "Mtu hasoma kila ujumbe. Tunajibu ndani ya siku mbili za kazi katika masaa ya kazi ya UTC−07:00 (Mountain). Maswali ya usalama na sheria yanapewa kipaumbele — ripoti za usalama zinakubaliwa ndani ya siku moja ya kazi. Tunaweza kujibu katika lugha yoyote kati ya kumi na nne ambazo tovuti hii inazungumza.",
+      "factHqLabel": "Ofisi kuu",
+      "factHqLine1": "Alberta, Kanada",
+      "factHqLine2": "Imeundwa 2024",
+      "factPrivacyLabel": "Faragha",
+      "factPrivacyLine1": "Hakuna vifuatiliaji.",
+      "factPrivacyLine2": "Uwasilishaji wa barua pepe pekee.",
+      "factLanguagesLabel": "Lugha",
+      "factLanguagesLine1": "Lugha 14 zinazotumwa.",
+      "factLanguagesLine2": "Pamoja na Kiarabu na Kiurdu RTL.",
+      "factHostingLabel": "Hosting",
+      "factHostingLine1": "VPS moja, Edmonton.",
+      "factHostingLine2": "Hakuna CDN ya mtu wa tatu."
+    },
+    "security": {
+      "postureHeading": "Jinsi tunavyoendesha tovuti na jukwaa",
+      "dataHeading": "Jinsi tunavyoshughulikia data yako",
+      "complianceHeading": "Viwango tunavyojibinya navyo",
+      "complianceLede": "Tunafuata seti ndogo, iliyotajwa ya viwango — na tunakiri kwa uwazi juu ya ukaguzi ambao bado hatujaupata.",
+      "privacyPolicyLink": "Soma sera ya faragha"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "Kijani · Telemetria moja kwa moja",
+      "statThisPageLabel": "Ukurasa huu",
+      "statThisPageHint": "HTML + CSS, hakuna vifuatiliaji",
+      "statThisVisitLabel": "Ziara hii",
+      "statThisVisitHint": "CO₂ · Green Web Foundation",
+      "statHostingLabel": "Hosting",
+      "statHostingValue": "Iliyojitegemea",
+      "statHostingHint": "VPS moja · gridi ya Alberta (~{percent}% inayoweza kufanywa upya)",
+      "statThirdPartyLabel": "Mtu wa tatu",
+      "statThirdPartyValue": "Sifuri",
+      "statThirdPartyHint": "Hakuna pixels · hakuna fonti · hakuna CDN",
+      "engineeringPracticesEyebrow": "Mazoea ya uhandisi",
+      "byteBudgetHeading": "Jinsi bajeti ya baiti inavyobaki ndogo",
+      "pledgeEyebrow": "Ahadi",
+      "pledgeHeading": "Tunachapisha kila kitu. Wewe unatuwajibisha.",
+      "pledgeBody": "Kila nambari kwenye ukurasa huu inahesabiwa moja kwa moja kutoka kwa vipimo halisi. Bajeti ya kifurushi hutekelezwa na CI; idadi ya mtu wa tatu inakaguliwa kwenye kila build; makadirio ya kaboni hutumia mbinu ya Green Web Foundation dhidi ya uzito wa ukurasa uliyoupakia. Ikiwa kitu kinaonekana si sahihi, tuambie — tutajibu kwa maandishi ndani ya siku tano za kazi, na nambari za msingi zikionyeshwa.",
+      "reportIssueCta": "Ripoti tatizo",
+      "practices": {
+        "bundleBudget": {
+          "label": "Bajeti ya kifurushi",
+          "value": "≤ 50 KB / njia",
+          "hint": "Gzipped. Inatekelezwa na CI kwenye kila pull request — build inayovunja bajeti haiwezi kutumwa."
+        },
+        "thirdPartyCalls": {
+          "label": "Simu za mtu wa tatu",
+          "value": "Sifuri",
+          "hint": "Hakuna analytics, fonti, pixels, embeds za video, vidude vya kijamii, au safari za CDN. Hukaguliwa kwa kila build na no-third-party.mjs."
+        },
+        "renderer": {
+          "label": "Mtoa sura",
+          "value": "HTML wa-server-kwanza",
+          "hint": "Kurasa hutolewa kwenye server na hupelekwa kwenye kivinjari. Hydration ni opt-in, kwa kila kipengele, kamwe si ya kimataifa."
+        },
+        "mediaStrategy": {
+          "label": "Mkakati wa media",
+          "value": "Fonti za mfumo · SVG",
+          "hint": "Hakuna mashujaa wa raster. Mchoro wa SVG wa ndani. Vipande vya fonti kwa kila skripti hupakuliwa tu wakati skripti hiyo iko kwenye ukurasa."
+        },
+        "hosting": {
+          "label": "Hosting",
+          "value": "VPS yenye PUE-ndogo",
+          "hint": "Iliyojitegemea kwenye VPS moja huko Edmonton, Alberta. Hakuna CDN. Hakuna nodi za edge. Asili moja, mpaka mmoja wa imani."
+        },
+        "offlineReach": {
+          "label": "Ufikiaji wa offline",
+          "value": "PWA · Service worker",
+          "hint": "HTML wa-network-kwanza · rasilimali za stale-while-revalidate · ukurasa wa offline fallback katika kila lugha."
+        },
+        "reducedMotion": {
+          "label": "Mwendo uliopunguzwa",
+          "value": "Inaheshimiwa kila mahali",
+          "hint": "Kila uhuishaji unasimama wakati prefers-reduced-motion imewekwa. Hakuna ubaguzi, hakuna haja ya opt-out."
+        },
+        "paperless": {
+          "label": "Bila karatasi kwa default",
+          "value": "Katika jukwaa lote",
+          "hint": "Bili, rekodi za matibabu, risiti hulingana na dijiti kwa default. Karatasi za ofisi, kadi za biashara, na vifaa vya uuzaji vilivyochapishwa si sehemu ya jinsi tunavyofanya kazi."
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "Nine non-negotiables",
+      "commitmentsAria": "The nine commitments"
     }
+  },
+  "topBar": {
+    "openMenu": "Fungua menyu",
+    "closeMenu": "Funga menyu",
+    "drawerCurrentlyViewing": "Lugha ya sasa",
+    "drawerLanguagesBlurb": "Lugha kumi na nne. Badilisha kutoka gurudumu la lugha chini ya ukurasa wowote.",
+    "primaryNavAria": "Kuu",
+    "mobileNavAria": "Kuu ya simu",
+    "mobileDrawerAria": "Usogezi wa tovuti"
+  },
+  "common": {
+    "contactUs": "Wasiliana nasi",
+    "goToHome": "Nenda nyumbani",
+    "honestNote": "Maelezo ya ukweli",
+    "loading": "Inapakia...",
+    "notFoundBody": "Kiungo kinaweza kuwa cha zamani, ukurasa unaweza kuwa umehamishwa, au anwani inaweza kuwa na hitilafu ya kuandika. Jaribu ukurasa wa nyumbani, au wasiliana nasi ikiwa ulifika hapa kupitia kiungo tulichoandika.",
+    "notFoundEyebrow": "404 · Ukurasa haukupatikana",
+    "notFoundTitle": "Hatukuweza kupata ukurasa huo.",
+    "offlineBody": "Inaonekana uko nje ya mtandao. Tunakutumikia ukurasa huu kutoka kwenye akiba.",
+    "offlineEyebrow": "Nje ya mtandao",
+    "offlineReturnHome": "Rudi nyumbani",
+    "offlineTitle": "Hakuna muunganisho sasa."
+  },
+  "languageWheel": {
+    "navAria": "Lugha",
+    "switchTo": "Badilisha lugha kuwa {language}"
   }
 }

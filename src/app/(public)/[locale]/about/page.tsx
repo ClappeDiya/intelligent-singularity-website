@@ -1,6 +1,8 @@
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { fetchAbout } from '@/lib/payload';
 import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
 import { buildPageMetadata } from '@/lib/seo';
@@ -8,22 +10,21 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
 import { EcosystemTree } from '@/components/illustrations/EcosystemTree';
 
-type MetaRow = { label: string; value: string };
-
-const META: MetaRow[] = [
-  { label: 'Legal entity', value: 'Intelligent Singularity Inc.' },
-  { label: 'Founded', value: '2024 · Alberta, Canada' },
-  { label: 'Founder', value: 'Dr. Md Diya, MD' },
-  { label: 'Structure', value: 'Parent of the Clap ecosystem' },
-  { label: 'Operating model', value: 'Small, remote, AI-augmented' },
-  { label: 'Capital', value: 'Bootstrapped · self-funded · not for sale' },
-  { label: 'Portfolio', value: 'A growing family of platforms' },
-  { label: 'Languages', value: '14 shipping locales' },
-  { label: 'Footprint', value: '≤ 50 KB per page · zero trackers' },
-];
+const META_KEYS = [
+  'legalEntity',
+  'founded',
+  'founder',
+  'structure',
+  'operatingModel',
+  'capital',
+  'portfolio',
+  'languages',
+  'footprint',
+] as const;
 
 async function AboutContent({ locale }: { locale: string }) {
   const about = await fetchAbout(locale);
+  const t = await getTranslations('pages.about');
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/about',
@@ -43,8 +44,8 @@ async function AboutContent({ locale }: { locale: string }) {
     <article className="page-shell-wide">
       <JsonLd id={`about-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`about-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">About · The studio</div>
-      <h1 className="page-title">{about.title || 'About Intelligent Singularity'}</h1>
+      <div className="page-label">{t('eyebrow')}</div>
+      <h1 className="page-title">{about.title || t('defaultTitle')}</h1>
       <p className="page-lead">{about.lead}</p>
       <figure
         className="mb-14 rounded-[24px] overflow-hidden"
@@ -54,6 +55,8 @@ async function AboutContent({ locale }: { locale: string }) {
             'radial-gradient(900px 340px at 50% -20%, rgba(16,185,129,0.1), transparent 70%), var(--color-paper-soft)',
         }}
       >
+        {/* Decorative SVG: native <img> is leaner than next/image runtime against the 50 KB budget. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/illustrations/about-studio.svg"
           alt=""
@@ -83,7 +86,7 @@ async function AboutContent({ locale }: { locale: string }) {
                 'radial-gradient(900px 280px at 90% -20%, rgba(16,185,129,0.08), transparent 70%), rgba(255,255,255,0.95)',
             }}
           >
-            <div className="label-mono mb-2">The ecosystem at a glance</div>
+            <div className="label-mono mb-2">{t('ecosystemLabel')}</div>
             <h2
               id="ecosystem-heading"
               className="mb-4"
@@ -97,7 +100,7 @@ async function AboutContent({ locale }: { locale: string }) {
                 textWrap: 'balance',
               }}
             >
-              One parent company, seven product categories.
+              {t('ecosystemHeading')}
             </h2>
             <EcosystemTree />
           </section>
@@ -106,17 +109,19 @@ async function AboutContent({ locale }: { locale: string }) {
           <div
             className="is-card rounded-[24px] p-7"
           >
-            <div className="label-mono mb-5">At a glance</div>
+            <div className="label-mono mb-5">{t('ataGlanceLabel')}</div>
             <dl className="flex flex-col gap-5">
-              {META.map((m) => (
-                <div key={m.label} className="transition-colors hover:bg-[rgba(16,185,129,0.03)] -mx-2 px-2 py-1 rounded-lg">
+              {META_KEYS.map((key) => (
+                <div key={key} className="transition-colors hover:bg-[rgba(16,185,129,0.03)] -mx-2 px-2 py-1 rounded-lg">
                   <dt
                     className="text-[10px] uppercase tracking-[0.1em] mb-1.5"
                     style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
                   >
-                    {m.label}
+                    {t(`metaLabels.${key}` as 'metaLabels.legalEntity')}
                   </dt>
-                  <dd className="text-[15px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>{m.value}</dd>
+                  <dd className="text-[15px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
+                    {t(`metaValues.${key}` as 'metaValues.legalEntity')}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -128,17 +133,16 @@ async function AboutContent({ locale }: { locale: string }) {
               background: 'linear-gradient(180deg, rgba(16,185,129,0.08) 0%, rgba(16,185,129,0.02) 100%)',
             }}
           >
-            <div className="label-mono mb-3">Talk to the studio</div>
+            <div className="label-mono mb-3">{t('talkToStudioLabel')}</div>
             <p className="text-[14.5px] leading-[1.72] mb-5" style={{ color: 'rgba(17,24,39,0.78)' }}>
-              Partnerships, press, or a product question — messages reach the founder directly,
-              typically within two business days.
+              {t('talkToStudioBody')}
             </p>
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="btn-primary text-[11px]"
               style={{ fontFamily: 'var(--font-mono)' }}
             >
-              Contact · Open form
+              {t('contactCta')}
               <span aria-hidden="true">→</span>
             </Link>
           </div>
@@ -166,7 +170,7 @@ export async function generateMetadata({
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <AboutContent locale={locale} />
     </Suspense>
   );

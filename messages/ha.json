@@ -5,7 +5,11 @@
     "about": "Game da Mu",
     "green": "Kore",
     "contact": "Tuntuɓe Mu",
-    "insights": "Insights"
+    "insights": "Bayanai",
+    "portfolio": "Tarihin Aikin",
+    "pricing": "Farashi",
+    "security": "Tsaro",
+    "faq": "Tambayoyi"
   },
   "status": {
     "production": "Ana Amfani",
@@ -22,12 +26,29 @@
     "zeroThirdParty": "Babu kiran na waje",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Ana ɗaukar nauyi a kan makamashin da ake sabuntawa kashi 100%",
     "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "helpLabel": "Taimako",
+    "trustLabel": "Amincewa",
+    "startConversation": "Fara tattaunawa",
+    "languagesBlurb": "Kowane shafi na jama'a yana shiga cikin yarukan goma sha huɗu, ciki har da Larabci, Nastaliq Urdu, Bengali, Hindi, Hausa, Swahili, da Yoruba.",
+    "selfHostedChip": "An ɗauki nauyin shi a kan VPS guda",
+    "links": {
+      "flagships": "Manyan kayayyaki",
+      "careers": "Sana'o'i",
+      "press": "Manema labarai",
+      "changelog": "Tarihin canje-canje",
+      "status": "Matsayi",
+      "roadmap": "Taswirar tafiya",
+      "greenPledge": "Alkawari na koren",
+      "privacy": "Tsare sirri",
+      "terms": "Sharuɗɗa",
+      "accessibility": "Damar shiga",
+      "cookies": "Kuki"
+    }
   },
   "hero": {
     "skipToContent": "Tsallaka zuwa babban abun ciki",
-    "scrollHint": "Gungura"
+    "scrollHint": "Gungura",
+    "scrollHintTarget": "rata a cikin lambobi"
   },
   "contactForm": {
     "routingLabel": "Sashe",
@@ -44,10 +65,12 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "CHANGELOG · GIDAN YANAR GIZON KAMFANI",
+      "title": "Abin da ya canza, bisa tsari.",
+      "lede": "Kowane canjin da aka gani da muka yi a wannan gidan yanar gizon kamfani, da kwanan wata da kuma haɗe da commit ɗin da ke baya. Kowane samfuri a tsarin Clap yana riƙe da nasa changelog a kan nasa yanki — wannan shafin ƙofar gida ce ta babban kamfani, babu fiye da haka, babu abin da aka ɓoye.",
+      "feedLabel": "Yi rajista:",
+      "feedTitle": "Intelligent Singularity — Changelog",
+      "rssFeed": "RSS feed"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -55,43 +78,334 @@
       "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
       "operational": "All systems operational",
       "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "unavailable": "Live data unavailable — please retry",
+      "serviceInterruption": "Service interruption",
+      "statusUnknown": "Status unknown",
+      "updatedPrefix": "updated",
+      "noLiveDataAttempt": "no live data — last attempt just now",
+      "connectionFailed": "We could not reach our public status monitor just now. The page will refresh in the background and turn green once the data comes back. Please retry in a minute.",
+      "systemsHeading": "Systems",
+      "noData": "no data",
+      "sourceOfTruth": "Source of truth:",
+      "liveStatusDashboard": "Live status dashboard",
+      "overallStatusAria": "Overall status",
+      "externalNavAria": "External",
+      "opensInNewTab": " (opens in a new tab)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "TSARIN AIKI · A FILI",
+      "title": "Abin da muke ginawa.",
+      "lede": "A fili. Babu vaporware. Kowane abu na ɓangaren studio ne — aikin gidan yanar gizo na kamfani, abubuwan da ake raba, da alkawura masu yaduwa da suka shafi kowane samfuri. Kowane samfuri a tsarin Clap yana riƙe da nasa tsarin aiki a kan nasa yanki. Abubuwan da ke nan suna haɗawa da code lokacin da aka tura su.",
+      "statusPlanned": "An tsara",
+      "statusInProgress": "Ana ci gaba",
+      "statusShipped": "An tura",
+      "statusPaused": "An dakatar",
+      "emptyColumn": "Babu komai a wannan rukuni a yanzu. Sabon aiki yana bayyana a nan yayin da yake ƙaura matakai.",
+      "byStatusLabel": "Ta matsayi",
+      "ctaEyebrow": "Wani abu ya rasa?",
+      "ctaHeading": "Gaya mana abin da kake bukata.",
+      "ctaBody": "Idan akwai fasali, kayan aiki, ko gyara da zai yi bambanci na gaske a gare ka, aiko mana sako. Mukan karanta kowane sako kuma mukan ba da fifiko bisa la'akari da bukata ta gaske.",
+      "ctaButton": "Aiko sako"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "INSIGHTS · BAYANAI DAGA STUDIO",
+      "title": "Tunani a fili.",
+      "lede": "Bayanai daga fili kan damar duniya gaba ɗaya, injiniyancin da AI ke taimakawa, mutum biliyan 2.2 da ke waje da yanar gizo, da kuma dogon tafiyar basirar wucin gadi — an rubuta su don a fahimce su, ba don a burge ba. Muna rubuta a hankali. Kowace iƙirari tana da maɓuɓɓuga. Babu clickbait, babu hayaƙin shugabancin tunani.",
+      "readMore": "Karanta →",
+      "minutesRead": "min karatu",
+      "sourcesHeading": "Maɓuɓɓuga",
+      "backToIndex": "← Duk insights",
+      "subscribeLabel": "Yi rajista:",
+      "rssFeed": "RSS feed",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "Lambar shafuka"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "AMINCI",
+      "title": "Inda za ka samu hujja.",
+      "lede": "Kowane iƙirari da muke yi game da tsaro, sirri, dorewa, da damar shiga yana haɗawa da hujja. Ba za ka taɓa zama dole ka yarda da kalmarmu kawai ba.",
+      "pillarsHeading": "Ginshiƙan amincin",
+      "subprocessorsHeading": "Masu sarrafa na biyu",
+      "certificationsHeading": "Takardun shaida",
+      "certsEmpty": "Babu tukuna. Sa'ad da aka tabbatar da mu, za ta nuna a nan da haɗin gwiwa zuwa ga hujjar.",
+      "colName": "Suna",
+      "colPurpose": "Manufa",
+      "colDataAccessed": "Bayanan da aka samu",
+      "colLocation": "Wuri",
+      "certsEmptyTitle": "Babu tukuna",
+      "certsEmptyBody": "Mu ƙaramin studio ne. Takardun shaida na hukuma masu tsada ne kuma masu jinkiri. Sa'ad da muka samu ɗaya, za ta bayyana a nan da haɗin gwiwa zuwa ga mai bayarwa.",
+      "subprocessorsLede": "Kowane ɓangare na uku wanda zai iya taɓo bayananka, abin da yake samu, da kuma inda yake aiki.",
+      "lastReviewedLabel": "Bita ta ƙarshe:",
+      "incidentEyebrow": "Bayar da rahoton ta'addanci",
+      "incidentHeading": "Kun gano wani abu? Da fatan ku gaya mana tukuna.",
+      "incidentBody": "Bayyanawa cikin haɗin gwiwa shi ne hanyar da muke ɗauka da muhimmanci. Aiko email zuwa security@intelligentsingularityinc.com tare da bayanin da matakan sake gwadawa. Muna karɓar rahotanni a cikin ranar aiki ɗaya, muna tantance su cikin uku, kuma muna aikawa da gyara a cikin lokacin da muka yarda da ku. Ana ba masu bincike yabo da sunansu a cikin tsananin bayanmu lokacin da gyara ya tashi — sai dai idan kun fi son zama anonymous. Ba mu yi barazana ko shigar da kara wa masu binciken tsaro masu kyakkyawar niyya ba, ƙarshen labarin.",
+      "incidentCta": "Bayar da rahoton ta'addanci",
+      "privacyPolicyLink": "Manufar sirri",
+      "learnMore": "Ƙara koyo"
     },
     "help": {
-      "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "eyebrow": "TAIMAKO",
+      "title": "Yawanci muna iya taimaka da dannawa ɗaya kawai.",
+      "lede": "Zaɓi layin da ya fi kama da tambayarka. Kowane mahaɗi yana zuwa wuri na gaske — babu fom ɗin da aka rufe, babu chatbots.",
+      "emergencyLabel": "Idan yana da gaggawa",
+      "popularHeading": "Tambayoyin da aka fi yi",
+      "stillStuck": "Har yanzu kana fama?",
+      "browseByTopic": "Bincika ta jigon",
+      "checkStatus": "Duba matsayin",
+      "contactEyebrow": "Tuntuɓa",
+      "contactFallbackCta": "Tuntuɓe mu"
+    },
+    "about": {
+      "eyebrow": "Game da mu · Studio",
+      "defaultTitle": "Game da Intelligent Singularity",
+      "ecosystemLabel": "Tsarin a kalla guda",
+      "ecosystemHeading": "Mahaifiyar kamfani guda, nau'ikan samfuri bakwai.",
+      "ataGlanceLabel": "A kalla guda",
+      "talkToStudioLabel": "Yi magana da studio",
+      "talkToStudioBody": "Haɗin gwiwa, jarida, ko tambayar samfuri — saƙonni suna isa kai-tsaye ga wanda ya kafa, yawanci a cikin kwanaki biyu na aiki.",
+      "contactCta": "Tuntuɓa · Buɗe fom",
+      "metaLabels": {
+        "legalEntity": "Ƙungiyar shari'a",
+        "founded": "An kafa",
+        "founder": "Wanda ya kafa",
+        "structure": "Tsari",
+        "operatingModel": "Tsarin aiki",
+        "capital": "Babban jari",
+        "portfolio": "Tarihin aikin",
+        "languages": "Harsuna",
+        "footprint": "Sawu"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · Alberta, Kanada",
+        "founder": "Dr. Md Diya, MD",
+        "structure": "Mahaifiyar kamfanin tsarin Clap",
+        "operatingModel": "Ƙarami, mai-nesa, mai-AI-augmented",
+        "capital": "Bootstrapped · mai-tallafin-kai · ba a sayarwa",
+        "portfolio": "Iyalin dandalin da ke girma",
+        "languages": "Yanki 14 na turawa",
+        "footprint": "≤ 50 KB kowane shafi · sifili masu binciko"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "Sanarwa · Ƙa'idodin asali",
+      "offlinePercentEyebrow": "Kashi 26 cikin ɗari",
+      "offlinePercentHeading": "Mutum biliyan biyu da kashi biyu cikin goma har yanzu suna waje da yanar gizo a yau.",
+      "offlinePercentBody": "Ɗigogi masu haske a sama mutane ne waɗanda ke kan layi. Ɗigogi masu duhu, masu zobe mutane ne waɗanda ba sa kan layi. Kashi 96 cikin ɗari na waɗanda ba sa kan layi suna zaune ne a ƙasashe masu ƙarancin kuɗin shiga da matsakaicin kuɗin shiga. Injiniyancin damar duniya gaba ɗaya shi ne abin da ke rufe wannan giɓin. Alkawura tara da ke ƙasa su ne yadda muke riƙe da kanmu.",
+      "commitmentsHeading": "Alkawura tara",
+      "commitmentsBody": "Zoba tara masu tsakiya guda — kowane samfuri yana shiga ne bisa kowane ɗayansu, a kowane lokaci. Jerin ba jerin abubuwan da ake so ba ne. Kwangilar injiniyanci ce.",
+      "sourceData": "Tushen bayanai"
+    },
+    "faq": {
+      "openTheForm": "Open the form",
+      "emailDirectly": "Email directly"
+    },
+    "pricing": {
+      "tierFree": "Free tier:",
+      "tierPaid": "Paid tier:",
+      "tierEnterprise": "Enterprise:",
+      "sixRulesHeading": "Six rules every product ships under",
+      "antiPatternsHeading": "What we will not do",
+      "antiPatternsBody": "The anti-patterns below are common in business software. We have decided against each of them, in writing, in advance — so neither we nor a future us can quietly bring them back.",
+      "workedExampleHeading": "The same product, three customers",
+      "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
+      "viewThePortfolio": "View the portfolio",
+      "talkAboutPricing": "Talk about pricing"
+    },
+    "careers": {
+      "howWeWorkHeading": "Yadda muke aiki da gaske",
+      "whatYouWouldWorkOnHeading": "Abin da za ka yi aiki a kai da gaske",
+      "howWeHireHeading": "Yadda muke ɗaukar ma'aikata, daga farko zuwa ƙarshe",
+      "openRolesFallback": "Buƙatun aiki da ke buɗe",
+      "updatedPrefix": "An sabunta",
+      "contactFormCta": "Fom na sadarwa",
+      "whatYouWouldWorkOnLede": "Intelligent Singularity ita ce kamfanin uba ga dangi mai girma na dandamali. Sabbin ma'aikata ba sa yawan aiki kan samfuri ɗaya na cikakken shekara — galibi suna juyawa tsakanin biyu ko uku, ya danganta da abin da ake aikawa da kuma abin da ke buƙatar fiye da kulawar manyan ma'aikata a wancan kwata.",
+      "howWeHireLede": "Matakai huɗu. Mafi yawa makonni biyu daga imel na farko zuwa tayin da aka rubuta idan ɓangarorin biyu suka yi sauri. Babu matakai masu ban mamaki, babu ayyukan gida marasa biyan kuɗi, babu ƙin yarda na \"dacewa da al'ada\" ba tare da dalilai a rubuce ba."
+    },
+    "press": {
+      "factSheetHeading": "Fakitin bayanai",
+      "approvedQuotesHeading": "Maganganu da aka amince",
+      "brandAssetsHeading": "Kayan tambari",
+      "brandNameLabel": "Sunan tambari",
+      "founderReferenceLabel": "Ƙayyadewar wanda ya kafa",
+      "pressBoilerplateHeading": "Tsarin matsayin labarai",
+      "storyAnglesWelcomedHeading": "Kusurwoyin labari da muke maraba",
+      "storyAnglesDeclineHeading": "Kusurwoyin labari da galibi muke ƙi",
+      "contactFormCta": "Fom na sadarwa",
+      "boilerplateLede": "Sakin layi ɗaya, mai shirye-shiryen shigarwa cikin sakon manema labarai. An amince da amfani kalma-kalma.",
+      "storyAnglesYesLede": "Idan labarinka ya zauna a cikin ɗaya daga cikin waɗannan kusurwoyi, za mu yi sauri don sa wanda ya kafa, injiniya, ko shugaban samfuri ya kasance — yawanci a cikin rana ɗaya ta aiki.",
+      "storyAnglesNoLede": "Gaskiya tun farko tana ceton kowa lokaci. Ba za mu ba da maganganu don kusurwoyin da ke ƙasa ba. Duk da haka, za mu nuna maka ɗan jarida ko mai bincike wanda aikinsa ya fi dacewa da labarin."
+    },
+    "portfolio": {
+      "eyebrow": "Tarihin Aikin · Tsarin Clap",
+      "titleLine1": "Kayan aiki {count}.",
+      "titleLine2": "Manufa ɗaya.",
+      "lede": "Intelligent Singularity ita ce mahaifiyar kamfanin tsarin Clap. Kowane samfuri yana aiki ne a kan nasa yanki, a ƙarƙashin nasa sharuɗɗa, da nasa farashi — amma suna raba tarin injiniyanci ɗaya, kasafin samun damar shiga ɗaya, matsayin sirri ɗaya, da kuma yadudduka na AI-agent na haɗin gwiwa ɗaya. Alamar matsayi mai gaskiya a ko'ina: production, staging, jiran amincewa, kayayyakin asali.",
+      "statToolsLabel": "Kayan aiki",
+      "statToolsHint": "A cikin nau'ikan bakwai da ke ƙasa",
+      "statFlagshipsLabel": "Tutoci",
+      "statFlagshipsHint": "An tsara su don farkon amfani a shafin gida",
+      "statProductionLabel": "Kai-tsaye · production",
+      "statProductionHint": "Ana isa ga masu amfani na ƙarshe na gaske a yau",
+      "statStagingLabel": "A staging",
+      "statStagingHint": "Da gayyata kawai, ana ƙarfafawa kafin ƙaddamarwa",
+      "statCategoriesLabel": "Nau'ikan",
+      "statCategoriesHint": "Tarin haɗin gwiwa ɗaya a ko'ina",
+      "statThirdPartyLabel": "Kira na ɓangare na uku",
+      "statThirdPartyValue": "Sifili",
+      "statThirdPartyHint": "An tilasta shi ta CI a kowane saki na samfuri",
+      "ecosystemStatsAria": "Ƙididdigar tsarin"
+    },
+    "contact": {
+      "eyebrow": "Tuntuɓa · Tebur na studio",
+      "titleFallback": "Tuntuɓe mu",
+      "directChannelsLabel": "Tashoshi kai-tsaye",
+      "channels": {
+        "general": {
+          "label": "Gabaɗaya",
+          "hint": "Tambayoyin samfuri, gabatarwa, ko kawai don ku ce sannu."
+        },
+        "press": {
+          "label": "'Yan jarida",
+          "hint": "Tattaunawa, faɗi, samuwar wanda ya kafa, jagorancin labari."
+        },
+        "partnerships": {
+          "label": "Haɗin gwiwa",
+          "hint": "NGOs, gwamnatoci, haɗin gwiwa na kasuwanci, tallafi."
+        },
+        "careers": {
+          "label": "Aiki",
+          "hint": "Mukamai a buɗe, gabatarwa, refranci."
+        },
+        "security": {
+          "label": "Tsaro",
+          "hint": "Rahotannin rauni — an tabbatar a cikin ranar aiki ɗaya."
+        },
+        "accessibility": {
+          "label": "Damar shiga",
+          "hint": "Bayar da rahoton shinge a kan rukunin yanar gizo ko a cikin kowane samfuri."
+        },
+        "privacy": {
+          "label": "Sirri",
+          "hint": "Buƙatun samun bayanai, gyara, gogewa, ɗaukar bayanai."
+        },
+        "legal": {
+          "label": "Doka",
+          "hint": "DPAs, MSAs, sanarwa na hukuma, tambayoyin tsari."
+        }
+      },
+      "responseTimeLabel": "Lokacin amsa",
+      "responseTimeBody": "Mutum yana karanta kowane saƙo. Muna amsa cikin kwanaki biyu na aiki a lokutan aikin UTC−07:00 (Mountain). Ana ba fifiko ga binciken tsaro da na shari'a — ana tabbatar da rahotannin tsaro cikin ranar aiki ɗaya. Za mu iya amsawa cikin kowane harshe goma sha huɗu da wannan rukunin yanar gizo ke magana.",
+      "factHqLabel": "Hedikwata",
+      "factHqLine1": "Alberta, Kanada",
+      "factHqLine2": "An kafa a 2024",
+      "factPrivacyLabel": "Sirri",
+      "factPrivacyLine1": "Babu masu binciko.",
+      "factPrivacyLine2": "Isar da imel kawai.",
+      "factLanguagesLabel": "Harsuna",
+      "factLanguagesLine1": "Yanki 14 na turawa.",
+      "factLanguagesLine2": "Hadawa da Larabci da Urdu RTL.",
+      "factHostingLabel": "Hosting",
+      "factHostingLine1": "VPS guda ɗaya, Edmonton.",
+      "factHostingLine2": "Babu CDN na ɓangare na uku."
+    },
+    "security": {
+      "postureHeading": "Yadda muke gudanar da gidan yanar gizo da dandalin",
+      "dataHeading": "Yadda muke kula da bayanan ka",
+      "complianceHeading": "Ka'idodin da muke riƙe wa kanmu",
+      "complianceLede": "Muna bin ƙananan, sunaye masu suna na ƙa'idodi — kuma muna gaskiya game da binciken da ba mu samu ba tukuna.",
+      "privacyPolicyLink": "Karanta manufar sirri"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "Kore · Telemetry kai-tsaye",
+      "statThisPageLabel": "Wannan shafin",
+      "statThisPageHint": "HTML + CSS, babu masu binciko",
+      "statThisVisitLabel": "Wannan ziyarar",
+      "statThisVisitHint": "CO₂ · Green Web Foundation",
+      "statHostingLabel": "Hosting",
+      "statHostingValue": "Mai gida",
+      "statHostingHint": "VPS guda · grid na Alberta (~{percent}% mai sabuntawa)",
+      "statThirdPartyLabel": "Ɓangare na uku",
+      "statThirdPartyValue": "Sifili",
+      "statThirdPartyHint": "Babu pixels · babu fonts · babu CDN",
+      "engineeringPracticesEyebrow": "Ayyukan injiniyanci",
+      "byteBudgetHeading": "Yadda kasafin byte ke zama ƙanƙanta",
+      "pledgeEyebrow": "Alkawari",
+      "pledgeHeading": "Mun buga komai. Kuna riƙe mu da alhakin.",
+      "pledgeBody": "Kowane lamba a wannan shafin ana ƙididdiga shi kai-tsaye daga ainihin ma'auni. Kasafin tarin ana tilasta shi ta CI; an duba ƙidayar ɓangare na uku a kowane gini; ƙididdigar carbon tana amfani da hanyar Green Web Foundation akan nauyin shafin da kuka loda. Idan wani abu ya yi kama da kuskure, gaya mana — za mu amsa a rubuce a cikin kwanaki biyar na aiki, tare da nuna lambobi na asali.",
+      "reportIssueCta": "Bayar da rahoton matsala",
+      "practices": {
+        "bundleBudget": {
+          "label": "Kasafin tari",
+          "value": "≤ 50 KB / hanya",
+          "hint": "Gzipped. An tilasta shi ta CI a kowane pull request — gini da ya karya kasafin ba zai iya tashi ba."
+        },
+        "thirdPartyCalls": {
+          "label": "Kira na ɓangare na uku",
+          "value": "Sifili",
+          "hint": "Babu analytics, fonts, pixels, video embeds, social widgets, ko CDN round-trips. Ana duba kowane gini ta no-third-party.mjs."
+        },
+        "renderer": {
+          "label": "Mai bayarwa",
+          "value": "HTML mai-tsaye-server",
+          "hint": "Shafuka suna bayar da kayan a kan server kuma ana yaɗa su zuwa browser. Hydration na opt-in, kowane component, ba duniya ba."
+        },
+        "mediaStrategy": {
+          "label": "Dabarar media",
+          "value": "Fonts na tsarin · SVG",
+          "hint": "Babu masu jarumai na raster. Hotunan SVG na cikin layi. Ƙananan fonts na kowane script suna lodawa kawai lokacin da wannan script yake a shafin."
+        },
+        "hosting": {
+          "label": "Hosting",
+          "value": "VPS mai-ƙarancin-PUE",
+          "hint": "Mai-gida a kan VPS guda a Edmonton, Alberta. Babu CDN. Babu edge nodes. Asali ɗaya, iyaka amincewa ɗaya."
+        },
+        "offlineReach": {
+          "label": "Cimma na offline",
+          "value": "PWA · Service worker",
+          "hint": "HTML mai-network-tsaye · kayan stale-while-revalidate · shafin offline fallback a kowane harshe."
+        },
+        "reducedMotion": {
+          "label": "Rage motsi",
+          "value": "An girmama a ko'ina",
+          "hint": "Kowane animation yana tsayawa lokacin da prefers-reduced-motion aka saita. Babu keɓancewa, babu buƙatar opt-out."
+        },
+        "paperless": {
+          "label": "Ba takarda ta tsohuwa",
+          "value": "A duk dandalin",
+          "hint": "Daftari, bayanan likita, rasit suna zuwa dijital ta tsohuwa. Takardar ofis, kati na kasuwanci, da kayan tallace-tallace na bugawa ba sa cikin yadda muke aiki."
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "Nine non-negotiables",
+      "commitmentsAria": "The nine commitments"
     }
+  },
+  "topBar": {
+    "openMenu": "Buɗe menu",
+    "closeMenu": "Rufe menu",
+    "drawerCurrentlyViewing": "Harshe na yanzu",
+    "drawerLanguagesBlurb": "Harsuna goma sha huɗu. Canza daga ƙafar harsuna a ƙasan kowane shafi.",
+    "primaryNavAria": "Na farko",
+    "mobileNavAria": "Na farko na wayar hannu",
+    "mobileDrawerAria": "Tafiyar shafi"
+  },
+  "common": {
+    "contactUs": "Tuntuɓe mu",
+    "goToHome": "Je zuwa babban shafin",
+    "honestNote": "Bayanin gaskiya",
+    "loading": "Ana lodi...",
+    "notFoundBody": "Watakila hanyar ta tsufa, an matsar da shafin, ko adireshin yana da kuskure. Gwada babban shafin, ko tuntuɓe mu idan kun zo nan daga hanyar mu.",
+    "notFoundEyebrow": "404 · Ba a sami shafin ba",
+    "notFoundTitle": "Ba mu sami shafin nan ba.",
+    "offlineBody": "Da alama kun fita kan layi. Muna ba ku wannan shafin daga ma'ajiyar ƙwaƙwalwa.",
+    "offlineEyebrow": "Kan layi",
+    "offlineReturnHome": "Komawa babban shafin",
+    "offlineTitle": "Babu haɗi yanzu."
+  },
+  "languageWheel": {
+    "navAria": "Harshe",
+    "switchTo": "Canza harshe zuwa {language}"
   }
 }

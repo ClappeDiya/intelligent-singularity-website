@@ -5,7 +5,11 @@
     "about": "Nosotros",
     "green": "Sostenibilidad",
     "contact": "Contacto",
-    "insights": "Insights"
+    "insights": "Insights",
+    "portfolio": "Portafolio",
+    "pricing": "Precios",
+    "security": "Seguridad",
+    "faq": "FAQ"
   },
   "status": {
     "production": "Producción",
@@ -21,13 +25,30 @@
     "zeroTrackers": "0 rastreadores",
     "zeroThirdParty": "0 llamadas a terceros",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Alojamiento propio con energía 100 % renovable",
-    "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "transparencyLabel": "Transparencia",
+    "helpLabel": "Ayuda",
+    "trustLabel": "Confianza",
+    "startConversation": "Iniciar una conversación",
+    "languagesBlurb": "Cada página pública se publica en catorce idiomas, incluidos árabe, urdu nastaliq, bengalí, hindi, hausa, suajili y yoruba.",
+    "selfHostedChip": "Alojado en un solo VPS",
+    "links": {
+      "flagships": "Productos insignia",
+      "careers": "Empleo",
+      "press": "Prensa",
+      "changelog": "Cambios",
+      "status": "Estado",
+      "roadmap": "Hoja de ruta",
+      "greenPledge": "Compromiso verde",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "accessibility": "Accesibilidad",
+      "cookies": "Cookies"
+    }
   },
   "hero": {
     "skipToContent": "Ir al contenido principal",
-    "scrollHint": "Desplazar"
+    "scrollHint": "Desplazar",
+    "scrollHintTarget": "la brecha en cifras"
   },
   "contactForm": {
     "routingLabel": "Destinatario",
@@ -44,54 +65,347 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "CHANGELOG · SITIO CORPORATIVO",
+      "title": "Qué cambió, en orden.",
+      "lede": "Cada cambio visible que hemos hecho en este sitio corporativo, fechado y vinculado al commit correspondiente. Cada producto del ecosistema Clap mantiene su propio changelog en su propio dominio — esta página es la puerta principal de la casa matriz, nada más, nada oculto.",
+      "feedLabel": "Suscríbete:",
+      "feedTitle": "Intelligent Singularity — Cambios",
+      "rssFeed": "Canal RSS"
     },
     "status": {
       "eyebrow": "STATUS",
-      "title": "How everything is running.",
-      "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
-      "operational": "All systems operational",
-      "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "title": "Estado del sistema.",
+      "lede": "Esta página se extrae en directo de nuestro monitor público de estado. Si los números parecen erróneos, dínoslo — eso forma parte de mantener esto honesto.",
+      "operational": "Todos los sistemas operativos",
+      "degraded": "Degradado — al menos un servicio afectado",
+      "unavailable": "Datos en vivo no disponibles — vuelve a intentar",
+      "serviceInterruption": "Interrupción del servicio",
+      "statusUnknown": "Estado desconocido",
+      "updatedPrefix": "actualizado",
+      "noLiveDataAttempt": "sin datos en vivo — último intento ahora",
+      "connectionFailed": "No pudimos conectarnos a nuestro monitor de estado público en este momento. La página se actualizará en segundo plano y se pondrá verde cuando regresen los datos. Por favor, vuelve a intentarlo en un minuto.",
+      "systemsHeading": "Sistemas",
+      "noData": "sin datos",
+      "sourceOfTruth": "Fuente oficial:",
+      "liveStatusDashboard": "Panel de estado en vivo",
+      "overallStatusAria": "Estado general",
+      "externalNavAria": "Externo",
+      "opensInNewTab": " (se abre en una nueva pestaña)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "HOJA DE RUTA · EN PÚBLICO",
+      "title": "Lo que estamos construyendo.",
+      "lede": "En público. Sin vaporware. Cada elemento es del lado del estudio — trabajo del sitio corporativo, infraestructura compartida y los compromisos transversales que tocan cada producto. Cada producto del ecosistema Clap mantiene su propia hoja de ruta en su propio dominio. Los elementos aquí enlazan al código cuando se publican.",
+      "statusPlanned": "Planificado",
+      "statusInProgress": "En curso",
+      "statusShipped": "Lanzado",
+      "statusPaused": "En pausa",
+      "emptyColumn": "Nada en esta columna por ahora. El nuevo trabajo aparece aquí a medida que cambia de etapa.",
+      "byStatusLabel": "Por estado",
+      "ctaEyebrow": "¿Falta algo?",
+      "ctaHeading": "Dinos lo que necesitas.",
+      "ctaBody": "Si hay una función, herramienta o arreglo que marcaría una diferencia real para ti, envíanos un mensaje. Leemos cada mensaje y priorizamos según la necesidad real.",
+      "ctaButton": "Enviar una nota"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "INSIGHTS · NOTAS DE CAMPO DEL ESTUDIO",
+      "title": "Pensar en público.",
+      "lede": "Notas de campo sobre el acceso universal, la ingeniería aumentada por IA, los 2.200 millones de personas sin conexión y la larga trayectoria de la inteligencia artificial — escritas para ser entendidas, no para impresionar. Escribimos despacio. Cada afirmación enlaza a una fuente. Sin clickbait, sin niebla de liderazgo intelectual.",
+      "readMore": "Leer →",
+      "minutesRead": "min de lectura",
+      "sourcesHeading": "Fuentes",
+      "backToIndex": "← Todos los artículos",
+      "subscribeLabel": "Suscríbete:",
+      "rssFeed": "Canal RSS",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "Paginación"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "CONFIANZA",
+      "title": "Dónde encontrar las pruebas.",
+      "lede": "Cada afirmación que hacemos sobre seguridad, privacidad, sostenibilidad y acceso enlaza con la evidencia. Nunca debería tener que confiar solo en nuestra palabra.",
+      "pillarsHeading": "Pilares de confianza",
+      "subprocessorsHeading": "Subprocesadores",
+      "certificationsHeading": "Certificaciones",
+      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence.",
+      "colName": "Nombre",
+      "colPurpose": "Propósito",
+      "colDataAccessed": "Datos consultados",
+      "colLocation": "Ubicación",
+      "certsEmptyTitle": "Ninguna todavía",
+      "certsEmptyBody": "Somos un estudio pequeño. Las certificaciones formales son caras y lentas. Cuando obtengamos una, aparecerá aquí con un enlace al emisor.",
+      "subprocessorsLede": "Cada tercero que pueda tocar sus datos, a qué accede y dónde opera.",
+      "lastReviewedLabel": "Última revisión:",
+      "incidentEyebrow": "Informe de incidentes",
+      "incidentHeading": "¿Encontró algo? Cuéntenoslo primero.",
+      "incidentBody": "La divulgación coordinada es el camino que tomamos en serio. Envíe un correo a security@intelligentsingularityinc.com con una descripción y pasos de reproducción. Acusamos recibo de los informes en un día hábil, los clasificamos en tres y lanzamos una solución en un plazo acordado con usted. Los investigadores son acreditados por su nombre en nuestro post-mortem cuando se publica una solución, a menos que prefieran permanecer anónimos. No amenazamos ni demandamos a investigadores de seguridad de buena fe, punto.",
+      "incidentCta": "Informar incidente",
+      "privacyPolicyLink": "Política de privacidad",
+      "learnMore": "Más información"
     },
     "help": {
       "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "title": "Podemos ayudarte en un clic.",
+      "lede": "Elige la fila que más se parezca a tu pregunta. Cada enlace lleva a un lugar real — sin formularios cerrados, sin chatbots.",
+      "emergencyLabel": "Si es urgente",
+      "popularHeading": "Preguntas populares",
+      "stillStuck": "¿Sigues atascado?",
+      "browseByTopic": "Explorar por tema",
+      "checkStatus": "Ver estado",
+      "contactEyebrow": "Contacto",
+      "contactFallbackCta": "Contáctanos"
+    },
+    "about": {
+      "eyebrow": "Acerca de · El estudio",
+      "defaultTitle": "Acerca de Intelligent Singularity",
+      "ecosystemLabel": "El ecosistema de un vistazo",
+      "ecosystemHeading": "Una empresa matriz, siete categorías de productos.",
+      "ataGlanceLabel": "De un vistazo",
+      "talkToStudioLabel": "Habla con el estudio",
+      "talkToStudioBody": "Alianzas, prensa o preguntas sobre productos: los mensajes llegan directamente al fundador, normalmente en dos días laborables.",
+      "contactCta": "Contacto · Abrir formulario",
+      "metaLabels": {
+        "legalEntity": "Entidad jurídica",
+        "founded": "Fundada",
+        "founder": "Fundador",
+        "structure": "Estructura",
+        "operatingModel": "Modelo operativo",
+        "capital": "Capital",
+        "portfolio": "Portafolio",
+        "languages": "Idiomas",
+        "footprint": "Huella"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · Alberta, Canadá",
+        "founder": "Dr. Md Diya, MD",
+        "structure": "Empresa matriz del ecosistema Clap",
+        "operatingModel": "Pequeño, remoto, aumentado por IA",
+        "capital": "Bootstrapped · autofinanciado · no en venta",
+        "portfolio": "Una familia creciente de plataformas",
+        "languages": "14 idiomas en producción",
+        "footprint": "≤ 50 KB por página · cero rastreadores"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "Manifiesto · Principios fundamentales",
+      "offlinePercentEyebrow": "El 26 por ciento",
+      "offlinePercentHeading": "Dos coma dos mil millones de personas siguen sin conexión hoy.",
+      "offlinePercentBody": "Los puntos más claros arriba son las personas ya en línea. Los puntos más oscuros y con anillos son las personas que no lo están. El noventa y seis por ciento de la población sin conexión vive en países de ingresos bajos y medios. La ingeniería de acceso universal es lo que cierra esa brecha. Los nueve compromisos a continuación son cómo nos comprometemos con ella.",
+      "commitmentsHeading": "Los nueve compromisos",
+      "commitmentsBody": "Nueve anillos concéntricos — cada producto cumple con cada uno de ellos, en cada lanzamiento. La lista no es una lista de deseos. Es el contrato de ingeniería.",
+      "sourceData": "Fuente de datos"
+    },
+    "faq": {
+      "openTheForm": "Abrir el formulario",
+      "emailDirectly": "Enviar correo directamente"
+    },
+    "pricing": {
+      "tierFree": "Nivel gratuito:",
+      "tierPaid": "Nivel pago:",
+      "tierEnterprise": "Empresarial:",
+      "sixRulesHeading": "Seis reglas bajo las que cada producto se lanza",
+      "antiPatternsHeading": "Lo que no haremos",
+      "antiPatternsBody": "Los antipatrones a continuación son comunes en el software empresarial. Hemos decidido en contra de cada uno por escrito, de antemano — para que ni nosotros ni un nosotros futuro podamos traerlos de vuelta en silencio.",
+      "workedExampleHeading": "El mismo producto, tres clientes",
+      "workedExampleBody": "Un ejemplo trabajado — ilustrativo, no una cotización de precio — para mostrar cómo se aplican las seis reglas en la práctica. Los números específicos están en la página de cada producto.",
+      "viewThePortfolio": "Ver el portafolio",
+      "talkAboutPricing": "Hablar de precios"
+    },
+    "careers": {
+      "howWeWorkHeading": "Cómo trabajamos realmente",
+      "whatYouWouldWorkOnHeading": "En qué realmente trabajarías",
+      "howWeHireHeading": "Cómo contratamos, de principio a fin",
+      "openRolesFallback": "Puestos abiertos",
+      "updatedPrefix": "Actualizado",
+      "contactFormCta": "Formulario de contacto",
+      "whatYouWouldWorkOnLede": "Intelligent Singularity es la empresa matriz de una familia creciente de plataformas. Los nuevos empleados rara vez trabajan en un solo producto durante todo un año — la mayoría rota entre dos o tres, según lo que se está lanzando y lo que requiere más atención senior ese trimestre.",
+      "howWeHireLede": "Cuatro pasos. Máximo dos semanas desde el primer correo hasta la oferta por escrito si ambas partes se mueven rápido. Sin etapas sorpresa, sin tareas para casa no remuneradas, sin rechazos por \"encaje cultural\" sin una razón por escrito."
+    },
+    "press": {
+      "factSheetHeading": "Hoja de datos",
+      "approvedQuotesHeading": "Citas aprobadas",
+      "brandAssetsHeading": "Recursos de marca",
+      "brandNameLabel": "Nombre de marca",
+      "founderReferenceLabel": "Referencia del fundador",
+      "pressBoilerplateHeading": "Texto estándar para prensa",
+      "storyAnglesWelcomedHeading": "Enfoques de historia que damos la bienvenida",
+      "storyAnglesDeclineHeading": "Enfoques que solemos declinar",
+      "contactFormCta": "Formulario de contacto",
+      "boilerplateLede": "Un párrafo, listo para insertar en comunicados de prensa. Aprobado para uso textual.",
+      "storyAnglesYesLede": "Si su historia se enmarca dentro de uno de estos ángulos, actuaremos rápidamente para que un fundador, ingeniero o líder de producto esté disponible — normalmente en un día hábil.",
+      "storyAnglesNoLede": "La honestidad por adelantado ahorra tiempo a todos. No proporcionaremos citas para los ángulos a continuación. Sin embargo, le indicaremos un periodista o analista cuyo trabajo se ajuste mejor a la historia."
+    },
+    "portfolio": {
+      "eyebrow": "Portfolio · El ecosistema Clap",
+      "titleLine1": "{count} herramientas.",
+      "titleLine2": "Una misión.",
+      "lede": "Intelligent Singularity es la empresa matriz del ecosistema Clap. Cada producto funciona en su propio dominio, bajo sus propios términos, con sus propios precios — pero comparten una sola pila de ingeniería, un solo presupuesto de accesibilidad, una sola postura de privacidad y un solo tejido de agentes de IA compartido. Etiquetas de estado honestas en todas partes: producción, staging, en espera de aprobación, infraestructura.",
+      "statToolsLabel": "Herramientas",
+      "statToolsHint": "En las siete categorías siguientes",
+      "statFlagshipsLabel": "Insignias",
+      "statFlagshipsHint": "Seleccionadas para el primer uso en la página de inicio",
+      "statProductionLabel": "En vivo · producción",
+      "statProductionHint": "Entregando a usuarios finales reales hoy",
+      "statStagingLabel": "En staging",
+      "statStagingHint": "Solo por invitación, fortaleciéndose antes del lanzamiento",
+      "statCategoriesLabel": "Categorías",
+      "statCategoriesHint": "Una pila compartida en cada dominio",
+      "statThirdPartyLabel": "Llamadas a terceros",
+      "statThirdPartyValue": "Cero",
+      "statThirdPartyHint": "Aplicado por CI en cada lanzamiento de producto",
+      "ecosystemStatsAria": "Estadísticas del ecosistema"
+    },
+    "contact": {
+      "eyebrow": "Contacto · Mesa del estudio",
+      "titleFallback": "Ponerse en contacto",
+      "directChannelsLabel": "Canales directos",
+      "channels": {
+        "general": {
+          "label": "General",
+          "hint": "Preguntas de producto, presentaciones, o solo para saludar."
+        },
+        "press": {
+          "label": "Prensa",
+          "hint": "Entrevistas, citas, disponibilidad del fundador, pistas de historias."
+        },
+        "partnerships": {
+          "label": "Asociaciones",
+          "hint": "ONG, gobiernos, colaboración empresarial, financiación por subvenciones."
+        },
+        "careers": {
+          "label": "Carreras",
+          "hint": "Vacantes, presentaciones, referencias."
+        },
+        "security": {
+          "label": "Seguridad",
+          "hint": "Informes de vulnerabilidad — reconocidos en un día hábil."
+        },
+        "accessibility": {
+          "label": "Accesibilidad",
+          "hint": "Informe una barrera en el sitio o en cualquier producto."
+        },
+        "privacy": {
+          "label": "Privacidad",
+          "hint": "Solicitudes de acceso, corrección, eliminación, portabilidad de datos."
+        },
+        "legal": {
+          "label": "Legal",
+          "hint": "DPAs, MSAs, notificaciones formales, consultas regulatorias."
+        }
+      },
+      "responseTimeLabel": "Tiempo de respuesta",
+      "responseTimeBody": "Un humano lee cada mensaje. Respondemos en dos días hábiles dentro del horario laboral UTC−07:00 (Mountain). Las consultas de seguridad y legales tienen prioridad — los informes de seguridad se reconocen en un día hábil. Podemos responder en cualquiera de los catorce idiomas que habla este sitio.",
+      "factHqLabel": "Sede",
+      "factHqLine1": "Alberta, Canadá",
+      "factHqLine2": "Constituida en 2024",
+      "factPrivacyLabel": "Privacidad",
+      "factPrivacyLine1": "Sin rastreadores.",
+      "factPrivacyLine2": "Solo entrega por correo electrónico.",
+      "factLanguagesLabel": "Idiomas",
+      "factLanguagesLine1": "14 idiomas en producción.",
+      "factLanguagesLine2": "Incluyendo árabe y urdu RTL.",
+      "factHostingLabel": "Alojamiento",
+      "factHostingLine1": "Un solo VPS, Edmonton.",
+      "factHostingLine2": "Sin CDN de terceros."
+    },
+    "security": {
+      "postureHeading": "Cómo gestionamos el sitio y la plataforma",
+      "dataHeading": "Cómo manejamos sus datos",
+      "complianceHeading": "Estándares a los que nos adherimos",
+      "complianceLede": "Seguimos un conjunto pequeño y nombrado de estándares — y somos honestos sobre las auditorías que aún no hemos obtenido.",
+      "privacyPolicyLink": "Leer la política de privacidad"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "Verde · Telemetría en vivo",
+      "statThisPageLabel": "Esta página",
+      "statThisPageHint": "HTML + CSS, sin rastreadores",
+      "statThisVisitLabel": "Esta visita",
+      "statThisVisitHint": "CO₂ · Green Web Foundation",
+      "statHostingLabel": "Alojamiento",
+      "statHostingValue": "Auto-alojado",
+      "statHostingHint": "Un solo VPS · red eléctrica de Alberta (~{percent}% renovable)",
+      "statThirdPartyLabel": "Terceros",
+      "statThirdPartyValue": "Cero",
+      "statThirdPartyHint": "Sin píxeles · sin fuentes · sin CDN",
+      "engineeringPracticesEyebrow": "Prácticas de ingeniería",
+      "byteBudgetHeading": "Cómo el presupuesto de bytes se mantiene pequeño",
+      "pledgeEyebrow": "El compromiso",
+      "pledgeHeading": "Publicamos todo. Usted nos hace responsables.",
+      "pledgeBody": "Cada número de esta página se calcula en vivo a partir de mediciones reales. El presupuesto de paquete es impuesto por CI; el conteo de terceros se audita en cada build; la estimación de carbono utiliza la metodología de Green Web Foundation contra el peso de página que realmente cargó. Si algo parece incorrecto, díganoslo — responderemos por escrito en cinco días hábiles, con los números subyacentes mostrados.",
+      "reportIssueCta": "Informar un problema",
+      "practices": {
+        "bundleBudget": {
+          "label": "Presupuesto de paquete",
+          "value": "≤ 50 KB / ruta",
+          "hint": "Comprimido con gzip. Impuesto por CI en cada pull request — un build que supera el presupuesto no puede lanzarse."
+        },
+        "thirdPartyCalls": {
+          "label": "Llamadas a terceros",
+          "value": "Cero",
+          "hint": "Sin analítica, fuentes, píxeles, embeds de video, widgets sociales o ida y vuelta a CDN. Auditado por build con no-third-party.mjs."
+        },
+        "renderer": {
+          "label": "Renderizado",
+          "value": "HTML del servidor primero",
+          "hint": "Las páginas se renderizan en el servidor y se transmiten al navegador. La hidratación es opcional, por componente, nunca global."
+        },
+        "mediaStrategy": {
+          "label": "Estrategia de medios",
+          "value": "Fuentes del sistema · SVG",
+          "hint": "Sin héroes rasterizados. Ilustraciones SVG en línea. Subconjuntos de fuentes por script cargados solo cuando ese script está en la página."
+        },
+        "hosting": {
+          "label": "Alojamiento",
+          "value": "VPS de bajo PUE",
+          "hint": "Auto-alojado en un solo VPS en Edmonton, Alberta. Sin CDN. Sin nodos edge. Un origen, un límite de confianza."
+        },
+        "offlineReach": {
+          "label": "Alcance sin conexión",
+          "value": "PWA · Service worker",
+          "hint": "HTML network-first · activos stale-while-revalidate · página de respaldo sin conexión en cada idioma."
+        },
+        "reducedMotion": {
+          "label": "Movimiento reducido",
+          "value": "Respetado en todas partes",
+          "hint": "Cada animación se pausa cuando prefers-reduced-motion está establecido. Sin excepciones, sin necesidad de opt-out."
+        },
+        "paperless": {
+          "label": "Sin papel por defecto",
+          "value": "En toda la plataforma",
+          "hint": "Facturas, expedientes médicos, recibos por defecto digitales. El papel de oficina, las tarjetas de visita y los materiales de marketing impresos no forman parte de cómo operamos."
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "Nueve no-negociables",
+      "commitmentsAria": "Los nueve compromisos"
     }
+  },
+  "topBar": {
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "drawerCurrentlyViewing": "Idioma actual",
+    "drawerLanguagesBlurb": "Catorce idiomas. Cambia desde la rueda de idiomas en la parte inferior de cualquier página.",
+    "primaryNavAria": "Principal",
+    "mobileNavAria": "Principal móvil",
+    "mobileDrawerAria": "Navegación del sitio"
+  },
+  "common": {
+    "loading": "Cargando…",
+    "honestNote": "Nota honesta",
+    "notFoundEyebrow": "404 · Página no encontrada",
+    "notFoundTitle": "No pudimos encontrar esa página.",
+    "notFoundBody": "El enlace puede ser antiguo, la página puede haberse movido o la dirección puede tener un error. Intenta la página de inicio o contáctanos si llegaste desde un enlace que escribimos.",
+    "goToHome": "Ir al inicio",
+    "contactUs": "Contáctanos",
+    "offlineEyebrow": "Sin conexión · Estás sin conexión",
+    "offlineTitle": "Diseñado para este momento.",
+    "offlineBody": "El acceso universal es nuestro objetivo. Este sitio sigue funcionando sin conexión — cada página que visitaste una vez está en caché y legible. Prueba una página que ya hayas visto, o vuelve a conectarte para cargar algo nuevo.",
+    "offlineReturnHome": "Volver a la página de inicio"
+  },
+  "languageWheel": {
+    "navAria": "Idioma",
+    "switchTo": "Cambiar idioma a {language}"
   }
 }

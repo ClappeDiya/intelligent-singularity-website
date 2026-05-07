@@ -1,10 +1,12 @@
 @import 'tailwindcss';
 @import '../styles/tokens.css';
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 html {
@@ -27,16 +29,19 @@ main {
   min-height: calc(100dvh - 320px);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 a:focus-visible,
 button:focus-visible,
 select:focus-visible,
 input:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible,
+summary:focus-visible {
   outline: 2px solid var(--color-emerald);
   outline-offset: 3px;
   border-radius: 4px;
@@ -170,7 +175,7 @@ textarea:focus-visible {
 .page-shell,
 .page-shell-wide {
   margin: clamp(48px, 6vw, 88px) auto clamp(96px, 10vw, 152px);
-  padding: clamp(40px, 6vw, 80px);
+  padding: clamp(20px, 6vw, 80px);
   background: #ffffff;
   border-radius: 24px;
   border: 1px solid rgba(167, 243, 208, 0.5);
@@ -273,6 +278,7 @@ textarea:focus-visible {
   margin-bottom: 0.85rem;
   font-weight: 600;
   text-wrap: balance;
+  scroll-margin-top: 80px;
 }
 
 .editorial-richtext h2 {
@@ -290,6 +296,20 @@ textarea:focus-visible {
   text-underline-offset: 4px;
   text-decoration-color: rgba(16, 185, 129, 0.4);
   transition: text-decoration-color 150ms;
+}
+
+.toc-link {
+  transition: color 150ms;
+}
+
+.toc-link:hover {
+  color: var(--color-emerald-ink) !important;
+}
+
+.toc-link:focus-visible {
+  outline: 2px solid var(--color-emerald-ink);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .editorial-richtext a:hover {

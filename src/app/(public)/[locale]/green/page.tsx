@@ -1,5 +1,7 @@
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { fetchGreen } from '@/lib/payload';
 import { bytesToGrams, formatCarbon, formatBytes } from '@/lib/carbon';
 import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
@@ -37,51 +39,20 @@ function StatCard({ label, value, hint, accent }: StatProps) {
   );
 }
 
-const PRACTICES = [
-  {
-    label: 'Bundle budget',
-    value: '≤ 50 KB / route',
-    hint: 'Gzipped. Enforced by CI on every pull request — a build that breaks the budget cannot ship.',
-  },
-  {
-    label: 'Third-party calls',
-    value: 'Zero',
-    hint: 'No analytics, fonts, pixels, video embeds, social widgets, or CDN round-trips. Audited per build by no-third-party.mjs.',
-  },
-  {
-    label: 'Renderer',
-    value: 'Server-first HTML',
-    hint: 'Pages render on the server and stream to the browser. Hydration is opt-in, per-component, never global.',
-  },
-  {
-    label: 'Media strategy',
-    value: 'System fonts · SVG',
-    hint: 'No raster heroes. Inline SVG illustrations. Per-script font subsets loaded only when that script is on the page.',
-  },
-  {
-    label: 'Hosting',
-    value: 'Low-PUE VPS',
-    hint: 'Self-hosted on a single VPS in Edmonton, Alberta. No CDN. No edge nodes. One origin, one trust boundary.',
-  },
-  {
-    label: 'Offline reach',
-    value: 'PWA · Service worker',
-    hint: 'Network-first HTML · stale-while-revalidate assets · offline fallback page on every locale.',
-  },
-  {
-    label: 'Reduced motion',
-    value: 'Honoured everywhere',
-    hint: 'Every animation pauses when prefers-reduced-motion is set. No exceptions, no opt-outs needed.',
-  },
-  {
-    label: 'Paperless by default',
-    value: 'Across the platform',
-    hint: 'Invoices, medical records, receipts default to digital. Office paper, business cards, and printed marketing collateral are not part of how we operate.',
-  },
-];
+const PRACTICE_SLUGS = [
+  'bundleBudget',
+  'thirdPartyCalls',
+  'renderer',
+  'mediaStrategy',
+  'hosting',
+  'offlineReach',
+  'reducedMotion',
+  'paperless',
+] as const;
 
 async function GreenContent({ locale }: { locale: string }) {
   const green = await fetchGreen(locale);
+  const t = await getTranslations('pages.green');
   const bytes = 42_000;
   const grams = bytesToGrams(bytes, green.hostingGreenRatio);
   const renewablePct = Math.round(green.hostingGreenRatio * 100);
@@ -104,7 +75,7 @@ async function GreenContent({ locale }: { locale: string }) {
     <article className="page-shell-wide">
       <JsonLd id={`green-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`green-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">Green · Live telemetry</div>
+      <div className="page-label">{t('liveTelemetryEyebrow')}</div>
       <h1 className="page-title">{green.title}</h1>
       <p className="page-lead">{green.lead}</p>
 
@@ -116,6 +87,8 @@ async function GreenContent({ locale }: { locale: string }) {
             'radial-gradient(800px 320px at 100% -30%, rgba(16,185,129,0.1), transparent 65%), var(--color-paper-soft)',
         }}
       >
+        {/* Decorative SVG: native <img> is leaner than next/image runtime against the 50 KB budget. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/illustrations/green-budget.svg"
           alt=""
@@ -136,15 +109,15 @@ async function GreenContent({ locale }: { locale: string }) {
         }}
       >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-          <StatCard label="This page" value={formatBytes(bytes)} hint="HTML + CSS, no trackers" accent />
-          <StatCard label="This visit" value={formatCarbon(grams)} hint="CO₂ · Green Web Foundation" />
-          <StatCard label="Hosting" value="Self-hosted" hint={`Single VPS · Alberta grid (~${renewablePct}% renewable)`} />
-          <StatCard label="Third-party" value="Zero" hint="No pixels · no fonts · no CDN" />
+          <StatCard label={t('statThisPageLabel')} value={formatBytes(bytes)} hint={t('statThisPageHint')} accent />
+          <StatCard label={t('statThisVisitLabel')} value={formatCarbon(grams)} hint={t('statThisVisitHint')} />
+          <StatCard label={t('statHostingLabel')} value={t('statHostingValue')} hint={t('statHostingHint', { percent: renewablePct })} />
+          <StatCard label={t('statThirdPartyLabel')} value={t('statThirdPartyValue')} hint={t('statThirdPartyHint')} />
         </div>
       </section>
 
       <section className="mb-14">
-        <div className="label-mono mb-4">Engineering practices</div>
+        <div className="label-mono mb-4">{t('engineeringPracticesEyebrow')}</div>
         <h2
           className="mb-6 text-[var(--color-paper-ink)]"
           style={{
@@ -155,21 +128,23 @@ async function GreenContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          How the byte budget stays small
+          {t('byteBudgetHeading')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-          {PRACTICES.map((p) => (
+          {PRACTICE_SLUGS.map((slug) => (
             <div
-              key={p.label}
+              key={slug}
               className="is-card rounded-[18px] p-5 flex flex-col gap-2"
             >
               <div className="label-mono">
-                {p.label}
+                {t(`practices.${slug}.label` as 'practices.bundleBudget.label')}
               </div>
               <h3 className="font-semibold mb-1.5" style={{ fontFamily: 'var(--font-serif)', fontSize: '18px', letterSpacing: '-0.015em', color: 'var(--color-paper-ink)', textWrap: 'balance' }}>
-                {p.value}
+                {t(`practices.${slug}.value` as 'practices.bundleBudget.value')}
               </h3>
-              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.78)' }}>{p.hint}</p>
+              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+                {t(`practices.${slug}.hint` as 'practices.bundleBudget.hint')}
+              </p>
             </div>
           ))}
         </div>
@@ -185,7 +160,7 @@ async function GreenContent({ locale }: { locale: string }) {
         }}
       >
         <div className="flex-1">
-          <div className="label-mono mb-2">The pledge</div>
+          <div className="label-mono mb-2">{t('pledgeEyebrow')}</div>
           <h2
             className="mb-3"
             style={{
@@ -197,10 +172,10 @@ async function GreenContent({ locale }: { locale: string }) {
               textWrap: 'balance',
             }}
           >
-            We publish everything. You hold us accountable.
+            {t('pledgeHeading')}
           </h2>
           <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
-            Every number on this page is computed live from real measurements. The bundle budget is enforced by CI; the third-party count is audited on every build; the carbon estimate uses Green Web Foundation methodology against the page weight you actually loaded. If something looks wrong, tell us — we will respond in writing within five business days, with the underlying numbers shown.
+            {t('pledgeBody')}
           </p>
         </div>
         <a
@@ -208,7 +183,7 @@ async function GreenContent({ locale }: { locale: string }) {
           className="btn-primary"
           style={{ fontFamily: 'var(--font-mono)' }}
         >
-          Report an issue
+          {t('reportIssueCta')}
           <span aria-hidden="true">→</span>
         </a>
       </section>
@@ -234,7 +209,7 @@ export async function generateMetadata({
 export default async function GreenPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <GreenContent locale={locale} />
     </Suspense>
   );

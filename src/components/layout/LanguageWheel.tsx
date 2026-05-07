@@ -1,8 +1,24 @@
 'use client';
 
-import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
-import { LOCALES, LOCALE_LABELS, LOCALE_NAMES, type Locale } from '@/i18n/config';
+import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
+import { usePathname, useSearchParams } from 'next/navigation';
+import { useSyncExternalStore } from 'react';
+import { LOCALES, LOCALE_LABELS, LOCALE_NAMES } from '@/i18n/config';
+
+function subscribeHash(callback: () => void) {
+  if (typeof window === 'undefined') return () => {};
+  window.addEventListener('hashchange', callback);
+  return () => window.removeEventListener('hashchange', callback);
+}
+
+function getHashSnapshot() {
+  return typeof window !== 'undefined' ? window.location.hash : '';
+}
+
+function getServerHashSnapshot() {
+  return '';
+}
 
 function setLocaleCookie(locale: string) {
   const oneYear = 60 * 60 * 24 * 365;
@@ -20,36 +36,35 @@ function replaceLocaleInPath(path: string, newLocale: string): string {
 
 export function LanguageWheel() {
   const current = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
-
-  function onPick(locale: Locale) {
-    setLocaleCookie(locale);
-    router.push(replaceLocaleInPath(pathname, locale));
-  }
+  const searchParams = useSearchParams();
+  const search = searchParams.toString();
+  const hash = useSyncExternalStore(subscribeHash, getHashSnapshot, getServerHashSnapshot);
+  const suffix = `${search ? `?${search}` : ''}${hash}`;
+  const t = useTranslations('languageWheel');
 
   return (
-    <div className="flex flex-wrap gap-2" role="group" aria-label="Language selector">
+    <nav className="flex flex-wrap gap-2" aria-label={t('navAria')}>
       {LOCALES.map((l) => {
         const active = l === current;
         return (
-          <button
+          <Link
             key={l}
-            type="button"
-            onClick={() => onPick(l)}
-            aria-label={`Switch language to ${LOCALE_NAMES[l]}`}
-            aria-pressed={active}
+            href={`${replaceLocaleInPath(pathname, l)}${suffix}`}
+            onClick={() => setLocaleCookie(l)}
+            aria-label={t('switchTo', { language: LOCALE_NAMES[l] })}
+            {...(active ? { 'aria-current': 'page' as const } : {})}
             title={LOCALE_NAMES[l]}
             className={`min-w-[36px] h-[32px] px-2 rounded-full border flex items-center justify-center text-[10.5px] font-[var(--font-mono)] uppercase tracking-[0.06em] transition ${
               active
                 ? 'bg-[var(--color-mint)] text-[var(--color-ink)] border-[var(--color-mint)]'
-                : 'border-[rgba(246,241,231,0.16)] text-[var(--color-cream-soft)] hover:border-[var(--color-mint)] hover:text-[var(--color-mint)]'
+                : 'border-[rgba(246,241,231,0.40)] text-[var(--color-cream-soft)] hover:border-[var(--color-mint)] hover:text-[var(--color-mint)]'
             }`}
           >
             {LOCALE_LABELS[l]}
-          </button>
+          </Link>
         );
       })}
-    </div>
+    </nav>
   );
 }

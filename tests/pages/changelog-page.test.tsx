@@ -23,6 +23,17 @@ const RELEASES = [
 vi.mock('@/lib/payload', () => ({ fetchReleaseNotes: async () => RELEASES }));
 vi.mock('@/lib/seo', () => ({ buildPageMetadata: () => ({ title: 't' }) }));
 vi.mock('@/lib/schema', () => ({ getWebPageSchema: () => ({}), getBreadcrumbSchema: () => ({}) }));
+vi.mock('next-intl/server', () => ({
+  getTranslations: async () => (key: string) => ({
+    honestNote: 'Honest note',
+    loading: 'Loading...',
+    feedLabel: 'Subscribe:',
+    rssFeed: 'RSS feed',
+    eyebrow: 'CHANGELOG · CORPORATE SITE',
+    title: 'What changed, in order.',
+    lede: 'Every visible change we have made to this corporate site, dated and tied to the commit behind it.',
+  }[key] ?? key),
+}));
 
 import ChangelogPage from '@/app/(public)/[locale]/changelog/page';
 

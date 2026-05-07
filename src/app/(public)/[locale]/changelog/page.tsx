@@ -1,6 +1,6 @@
 // src/app/(public)/[locale]/changelog/page.tsx
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 import { fetchReleaseNotes } from '@/lib/payload';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -8,6 +8,7 @@ import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
 import { PageHero } from '@/components/pages/shared/PageHero';
 import { TimelineEntry } from '@/components/pages/shared/TimelineEntry';
 import { EmptyState } from '@/components/pages/shared/EmptyState';
+import { OutboundLink } from '@/components/pages/shared/OutboundLink';
 import { getBuildCommitSha } from '@/lib/git-info';
 
 const REPO_URL = 'https://github.com/ClappeDiya/intelligent-singularity-website';
@@ -27,6 +28,8 @@ export async function generateMetadata({
 export default async function ChangelogPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const releases = ((await fetchReleaseNotes(locale)) as any[]) ?? [];
+  const t = await getTranslations('common');
+  const tChangelog = await getTranslations('pages.changelog');
   const buildSha = getBuildCommitSha();
   const shortBuildSha = buildSha ? buildSha.slice(0, 7) : 'local';
 
@@ -66,17 +69,24 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
       />
 
       <PageHero
-        eyebrow="CHANGELOG · CORPORATE SITE"
-        title="What changed, in order."
-        lede="Every visible change we have made to this corporate site, dated and tied to the commit behind it. Each product in the Clap ecosystem keeps its own changelog on its own domain — this page is the parent-company front door, nothing more, nothing hidden."
+        eyebrow={tChangelog('eyebrow')}
+        title={tChangelog('title')}
+        lede={tChangelog('lede')}
       />
 
       <p className="mb-10 text-[13px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}>
-        Subscribe: <Link href={`/${locale}/changelog/feed.xml`}>/changelog/feed.xml</Link>
+        {tChangelog('feedLabel')}{' '}
+        <a
+          href={`/${locale}/changelog/feed.xml`}
+          className="underline underline-offset-4 decoration-[rgba(16,185,129,0.4)] hover:decoration-[var(--color-emerald-ink)]"
+        >
+          {tChangelog('rssFeed')}
+        </a>
       </p>
 
       {releases.length === 0 ? (
         <EmptyState
+          eyebrow={t('honestNote')}
           title="This is the first version."
           body={`No tags have been cut yet. You are reading build ${shortBuildSha}. The first release entry will appear here once v1.0 is tagged.`}
           href={REPO_URL}
@@ -95,11 +105,11 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
               date={r.releaseDate}
               meta={
                 <>
-                  <Link href={`${REPO_URL}/releases/tag/${r.gitTag}`}>{r.gitTag}</Link>
+                  <OutboundLink href={`${REPO_URL}/releases/tag/${r.gitTag}`}>{r.gitTag}</OutboundLink>
                   {' · '}
-                  <Link href={`${REPO_URL}/commit/${r.gitSha}`}>
+                  <OutboundLink href={`${REPO_URL}/commit/${r.gitSha}`}>
                     <code style={{ fontFamily: 'var(--font-mono)' }}>{r.gitSha.slice(0, 7)}</code>
-                  </Link>
+                  </OutboundLink>
                   {r.authors?.length ? (
                     <>
                       {' · '}

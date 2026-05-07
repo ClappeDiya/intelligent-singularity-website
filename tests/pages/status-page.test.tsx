@@ -14,6 +14,29 @@ vi.mock('@/lib/payload', () => ({
 vi.mock('@/lib/seo', () => ({ buildPageMetadata: () => ({ title: 't' }) }));
 vi.mock('@/lib/schema', () => ({ getWebPageSchema: () => ({}), getBreadcrumbSchema: () => ({}) }));
 
+vi.mock('next-intl/server', () => ({
+  getTranslations: async (namespace: string) => (key: string) => {
+    const all: Record<string, Record<string, string>> = {
+      'pages.status': {
+        operational: 'All systems operational',
+        degraded: 'Degraded — at least one service affected',
+        unavailable: 'Live data unavailable — please retry',
+        serviceInterruption: 'Service interruption',
+        statusUnknown: 'Status unknown',
+        updatedPrefix: 'updated',
+        noLiveDataAttempt: 'no live data — last attempt just now',
+        connectionFailed: 'We could not reach our public status monitor just now.',
+        systemsHeading: 'Systems',
+        noData: 'no data',
+        sourceOfTruth: 'Source of truth:',
+        liveStatusDashboard: 'Live status dashboard',
+      },
+      'footer.links': { changelog: 'Changelog' },
+    };
+    return all[namespace]?.[key] ?? key;
+  },
+}));
+
 const ok = {
   overall: 'operational',
   fetchedAt: '2026-04-17T10:00:00Z',

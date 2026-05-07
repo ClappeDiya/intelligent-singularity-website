@@ -1,7 +1,7 @@
 {
   "name": "Intelligent Singularity",
   "short_name": "IS",
-  "start_url": "/en",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0F1712",
   "theme_color": "#0F1712",

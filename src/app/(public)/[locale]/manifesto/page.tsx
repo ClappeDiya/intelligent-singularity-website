@@ -1,5 +1,7 @@
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { fetchManifesto, fetchCommitments, fetchITUData } from '@/lib/payload';
 import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
 import { buildPageMetadata } from '@/lib/seo';
@@ -14,6 +16,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
     fetchCommitments(locale),
     fetchITUData(locale),
   ]);
+  const t = await getTranslations('pages.manifesto');
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/manifesto',
@@ -33,7 +36,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
     <article className="page-shell">
       <JsonLd id={`manifesto-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`manifesto-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">Manifesto · First principles</div>
+      <div className="page-label">{t('eyebrow')}</div>
       <h1 className="page-title">{manifesto.title}</h1>
       <p className="page-lead">{manifesto.lead}</p>
       <section className="max-w-none mb-20">
@@ -54,7 +57,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
             <OfflineGlobe size={220} />
           </div>
           <div className="flex-1">
-            <div className="label-mono mb-2">The 26 percent</div>
+            <div className="label-mono mb-2">{t('offlinePercentEyebrow')}</div>
             <h2
               id="globe-heading"
               className="mb-3"
@@ -68,10 +71,10 @@ async function ManifestoContent({ locale }: { locale: string }) {
                 textWrap: 'balance',
               }}
             >
-              Two-point-two billion people are still offline today.
+              {t('offlinePercentHeading')}
             </h2>
             <p className="text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-              The lighter dots above are the people already online. The darker, ringed dots are the people who are not. Ninety-six percent of the offline population lives in low- and middle-income countries. Universal-access engineering is what closes that gap. The nine commitments below are how we hold ourselves to it.
+              {t('offlinePercentBody')}
             </p>
           </div>
         </div>
@@ -99,10 +102,10 @@ async function ManifestoContent({ locale }: { locale: string }) {
                 textWrap: 'balance',
               }}
             >
-              The nine commitments
+              {t('commitmentsHeading')}
             </h2>
             <p className="mt-3 text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-              Nine concentric rings — every product ships against every one of them, every release. The list is not a wishlist. It is the engineering contract.
+              {t('commitmentsBody')}
             </p>
           </div>
           <div className="hidden md:block shrink-0" style={{ width: 200 }}>
@@ -151,7 +154,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
         style={{ borderColor: 'rgba(16,185,129,0.15)', fontFamily: 'var(--font-mono)' }}
       >
         <div className="label-mono mb-2">
-          Source data
+          {t('sourceData')}
         </div>
         {itu.sourceLabel}
         <a href={itu.sourceUrl} className="text-[var(--color-emerald-ink)] underline underline-offset-4 break-all">
@@ -180,7 +183,7 @@ export async function generateMetadata({
 export default async function ManifestoPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <ManifestoContent locale={locale} />
     </Suspense>
   );

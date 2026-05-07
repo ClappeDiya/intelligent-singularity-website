@@ -5,7 +5,11 @@
     "about": "关于",
     "green": "绿色",
     "contact": "联系",
-    "insights": "Insights"
+    "insights": "Insights",
+    "portfolio": "作品集",
+    "pricing": "价格",
+    "security": "安全",
+    "faq": "常见问题"
   },
   "status": {
     "production": "生产环境",
@@ -21,13 +25,30 @@
     "zeroTrackers": "0 个追踪器",
     "zeroThirdParty": "0 个第三方调用",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · 自托管于 100% 可再生能源",
-    "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "transparencyLabel": "透明度",
+    "helpLabel": "帮助",
+    "trustLabel": "信任",
+    "startConversation": "开始对话",
+    "languagesBlurb": "每个公开页面均以十四种语言发布，包括阿拉伯语、乌尔都语（纳斯塔利克体）、孟加拉语、印地语、豪萨语、斯瓦希里语和约鲁巴语。",
+    "selfHostedChip": "在单一 VPS 上自托管",
+    "links": {
+      "flagships": "旗舰产品",
+      "careers": "招聘",
+      "press": "新闻",
+      "changelog": "更新日志",
+      "status": "状态",
+      "roadmap": "路线图",
+      "greenPledge": "绿色承诺",
+      "privacy": "隐私",
+      "terms": "条款",
+      "accessibility": "无障碍",
+      "cookies": "Cookie"
+    }
   },
   "hero": {
     "skipToContent": "跳转至正文内容",
-    "scrollHint": "滚动"
+    "scrollHint": "滚动",
+    "scrollHintTarget": "数字中的差距"
   },
   "contactForm": {
     "routingLabel": "分类",
@@ -44,54 +65,347 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "更新日志 · 企业官网",
+      "title": "依次发生的变化。",
+      "lede": "我们对该企业官网所做的每一项可见更改，均附有日期及对应的提交记录。Clap 生态中的每个产品都在自己的域名下维护各自的更新日志——本页是母公司的入口，仅此而已，毫无隐藏。",
+      "feedLabel": "订阅：",
+      "feedTitle": "Intelligent Singularity — 更新日志",
+      "rssFeed": "RSS 订阅"
     },
     "status": {
       "eyebrow": "STATUS",
-      "title": "How everything is running.",
-      "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
-      "operational": "All systems operational",
-      "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "title": "运行状况。",
+      "lede": "此页面实时来自我们的公共状态监控。如果数字看起来不对，请告诉我们 — 这是保持这页面诚信的一部分。",
+      "operational": "所有系统运行正常",
+      "degraded": "降级 — 至少一个服务受影响",
+      "unavailable": "实时数据不可用 — 请重试",
+      "serviceInterruption": "服务中断",
+      "statusUnknown": "状态未知",
+      "updatedPrefix": "更新于",
+      "noLiveDataAttempt": "无实时数据 — 刚刚尝试",
+      "connectionFailed": "我们暂时无法连接到公共状态监控。页面将在后台刷新，待数据恢复后变绿。请一分钟后重试。",
+      "systemsHeading": "系统",
+      "noData": "无数据",
+      "sourceOfTruth": "权威来源：",
+      "liveStatusDashboard": "实时状态面板",
+      "overallStatusAria": "总体状态",
+      "externalNavAria": "外部",
+      "opensInNewTab": "（在新标签页中打开）"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "路线图 · 公开",
+      "title": "我们正在构建的内容。",
+      "lede": "公开。无空头承诺。每一项都属于工作室方面 — 企业网站工作、共享基础设施以及触及每个产品的横向承诺。Clap 生态系统中的每个产品都在自己的域名上维护自己的路线图。当这里的项目发布时，会链接到代码。",
+      "statusPlanned": "已计划",
+      "statusInProgress": "进行中",
+      "statusShipped": "已发布",
+      "statusPaused": "已暂停",
+      "emptyColumn": "此列暂时为空。新任务进入对应阶段时会显示在此处。",
+      "byStatusLabel": "按状态",
+      "ctaEyebrow": "还缺什么吗？",
+      "ctaHeading": "告诉我们您需要什么。",
+      "ctaBody": "如果有某项功能、工具或修复对您有实质性帮助，请告诉我们。我们会阅读每条消息，并根据实际需求确定优先级。",
+      "ctaButton": "发送一条信息"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "洞见 · 工作室的田野笔记",
+      "title": "公开思考。",
+      "lede": "关于普惠访问、AI 辅助工程、22 亿离线人群以及人工智能长期演进的田野笔记——为理解而写，不为炫技。我们慢慢写。每条主张都附引用。没有标题党，没有思想领袖式的雾气。",
+      "readMore": "阅读 →",
+      "minutesRead": "分钟阅读",
+      "sourcesHeading": "来源",
+      "backToIndex": "← 所有文章",
+      "subscribeLabel": "订阅：",
+      "rssFeed": "RSS 订阅",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "分页"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "信任",
+      "title": "在哪里可以找到证据。",
+      "lede": "我们关于安全、隐私、可持续性和访问的每一个声明都链接到证据。您永远不必只凭我们的话相信。",
+      "pillarsHeading": "信任支柱",
+      "subprocessorsHeading": "子处理方",
+      "certificationsHeading": "认证",
+      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence.",
+      "colName": "名称",
+      "colPurpose": "用途",
+      "colDataAccessed": "访问的数据",
+      "colLocation": "位置",
+      "certsEmptyTitle": "暂无",
+      "certsEmptyBody": "我们是一家小工作室。正式认证既昂贵又缓慢。当我们获得认证时，它将出现在这里，并附上颁发机构的链接。",
+      "subprocessorsLede": "可能接触您数据的每个第三方、他们访问的内容以及他们运营的地点。",
+      "lastReviewedLabel": "上次审查：",
+      "incidentEyebrow": "事件报告",
+      "incidentHeading": "发现问题？请先告诉我们。",
+      "incidentBody": "协调披露是我们认真对待的路径。请将描述和复现步骤发送至 security@intelligentsingularityinc.com。我们会在一个工作日内确认收到报告，三天内分类，并按照与您约定的时间表发布修复程序。当修复发布时，研究人员将在我们的事后分析中以姓名记入功劳——除非您希望保持匿名。我们不会威胁或起诉善意的安全研究人员，没有例外。",
+      "incidentCta": "报告事件",
+      "privacyPolicyLink": "隐私政策",
+      "learnMore": "了解更多"
     },
     "help": {
       "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "title": "通常一键即可获得帮助。",
+      "lede": "选择最接近您问题的那一行。每个链接都通向真实位置——没有封闭表单，没有聊天机器人。",
+      "emergencyLabel": "如果情况紧急",
+      "popularHeading": "常见问题",
+      "stillStuck": "仍未解决？",
+      "browseByTopic": "按主题浏览",
+      "checkStatus": "查看状态",
+      "contactEyebrow": "联系",
+      "contactFallbackCta": "联系我们"
+    },
+    "about": {
+      "eyebrow": "About · The studio",
+      "defaultTitle": "About Intelligent Singularity",
+      "ecosystemLabel": "The ecosystem at a glance",
+      "ecosystemHeading": "One parent company, seven product categories.",
+      "ataGlanceLabel": "At a glance",
+      "talkToStudioLabel": "Talk to the studio",
+      "talkToStudioBody": "Partnerships, press, or a product question — messages reach the founder directly, typically within two business days.",
+      "contactCta": "Contact · Open form",
+      "metaLabels": {
+        "legalEntity": "法律实体",
+        "founded": "成立时间",
+        "founder": "创始人",
+        "structure": "结构",
+        "operatingModel": "运营模式",
+        "capital": "资本",
+        "portfolio": "产品组合",
+        "languages": "语言",
+        "footprint": "占用空间"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · 加拿大艾伯塔省",
+        "founder": "Md Diya 博士，医学博士",
+        "structure": "Clap 生态系统的母公司",
+        "operatingModel": "小型、远程、AI 增强",
+        "capital": "自举 · 自筹资金 · 非卖品",
+        "portfolio": "不断增长的平台家族",
+        "languages": "14 种发布语言",
+        "footprint": "每页 ≤ 50 KB · 零跟踪器"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "宣言 · 基本原则",
+      "offlinePercentEyebrow": "百分之二十六",
+      "offlinePercentHeading": "今天仍有 22 亿人未联网。",
+      "offlinePercentBody": "上方较浅的点是已联网的人。较深的、带环的点是未联网的人。百分之九十六的离线人口生活在低收入和中等收入国家。普惠访问工程就是缩小这一差距的方式。下面的九项承诺是我们如何履行的方式。",
+      "commitmentsHeading": "九项承诺",
+      "commitmentsBody": "九个同心环——每个产品在每次发布时都要对每一项进行交付。这份清单不是愿望清单。它是工程合同。",
+      "sourceData": "数据来源"
+    },
+    "faq": {
+      "openTheForm": "打开表单",
+      "emailDirectly": "直接发邮件"
+    },
+    "pricing": {
+      "tierFree": "免费层：",
+      "tierPaid": "付费层：",
+      "tierEnterprise": "企业层：",
+      "sixRulesHeading": "每款产品遵循的六条规则",
+      "antiPatternsHeading": "我们绝不做的事",
+      "antiPatternsBody": "下列反模式在商业软件中很常见。我们事先以书面形式决定反对每一个 — 这样无论是现在还是未来的我们，都无法悄悄把它们带回来。",
+      "workedExampleHeading": "同一产品，三种客户",
+      "workedExampleBody": "一个实例 — 仅作说明，不是报价 — 用于展示六条规则在实践中如何运作。具体数字见每款产品自己的页面。",
+      "viewThePortfolio": "查看作品集",
+      "talkAboutPricing": "谈论定价"
+    },
+    "careers": {
+      "howWeWorkHeading": "我们实际上如何工作",
+      "whatYouWouldWorkOnHeading": "你实际会做什么",
+      "howWeHireHeading": "我们如何从头到尾招聘",
+      "openRolesFallback": "在招职位",
+      "updatedPrefix": "更新于",
+      "contactFormCta": "联系表单",
+      "whatYouWouldWorkOnLede": "Intelligent Singularity 是不断壮大的平台家族的母公司。新员工很少在一个产品上工作整整一年——大多数人会在两到三个产品之间轮换，取决于该季度正在发布什么以及最需要资深关注的是什么。",
+      "howWeHireLede": "四个步骤。如果双方都行动迅速，从首封邮件到书面录用最多两周。没有意外环节、没有无偿带回家任务、没有未给出书面理由的\"文化匹配\"拒绝。"
+    },
+    "press": {
+      "factSheetHeading": "情况说明",
+      "approvedQuotesHeading": "已批准引语",
+      "brandAssetsHeading": "品牌资源",
+      "brandNameLabel": "品牌名称",
+      "founderReferenceLabel": "创始人参考",
+      "pressBoilerplateHeading": "新闻稿模板",
+      "storyAnglesWelcomedHeading": "我们欢迎的报道角度",
+      "storyAnglesDeclineHeading": "我们通常婉拒的报道角度",
+      "contactFormCta": "联系表单",
+      "boilerplateLede": "一段话，可直接用于新闻稿。已批准逐字使用。",
+      "storyAnglesYesLede": "如果您的故事属于以下某个角度，我们将迅速安排创始人、工程师或产品负责人——通常在一个工作日内。",
+      "storyAnglesNoLede": "前期诚实为所有人节省时间。我们不会为下面的角度提供引言。但我们会向您推荐一位作品更适合该故事的记者或分析师。"
+    },
+    "portfolio": {
+      "eyebrow": "作品集 · Clap 生态系统",
+      "titleLine1": "{count} 个工具。",
+      "titleLine2": "一个使命。",
+      "lede": "Intelligent Singularity 是 Clap 生态系统的母公司。每个产品都在自己的域名上运行，按自己的条款，定自己的价格——但它们共享一个工程堆栈、一个无障碍预算、一个隐私立场和一个共享的 AI 代理结构。各处都有诚实的状态标签：生产、暂存、等待批准、基础设施。",
+      "statToolsLabel": "工具",
+      "statToolsHint": "覆盖以下七个类别",
+      "statFlagshipsLabel": "旗舰",
+      "statFlagshipsHint": "为首页首次使用而精选",
+      "statProductionLabel": "在线 · 生产",
+      "statProductionHint": "今天向真实终端用户交付",
+      "statStagingLabel": "暂存中",
+      "statStagingHint": "仅限邀请，发布前强化中",
+      "statCategoriesLabel": "类别",
+      "statCategoriesHint": "每个领域共享一个堆栈",
+      "statThirdPartyLabel": "第三方调用",
+      "statThirdPartyValue": "零",
+      "statThirdPartyHint": "在每次产品发布时由 CI 强制执行",
+      "ecosystemStatsAria": "生态系统统计"
+    },
+    "contact": {
+      "eyebrow": "联系 · 工作室前台",
+      "titleFallback": "联系我们",
+      "directChannelsLabel": "直接联系渠道",
+      "channels": {
+        "general": {
+          "label": "一般",
+          "hint": "产品问题、介绍，或只是问声好。"
+        },
+        "press": {
+          "label": "媒体",
+          "hint": "采访、引言、创始人档期、故事线索。"
+        },
+        "partnerships": {
+          "label": "合作",
+          "hint": "NGO、政府、企业合作、资助资金。"
+        },
+        "careers": {
+          "label": "职业",
+          "hint": "开放职位、介绍、推荐。"
+        },
+        "security": {
+          "label": "安全",
+          "hint": "漏洞报告——一个工作日内确认。"
+        },
+        "accessibility": {
+          "label": "无障碍",
+          "hint": "报告网站或任何产品中的障碍。"
+        },
+        "privacy": {
+          "label": "隐私",
+          "hint": "数据访问、更正、删除、可移植性请求。"
+        },
+        "legal": {
+          "label": "法律",
+          "hint": "DPA、MSA、正式通知、监管询问。"
+        }
+      },
+      "responseTimeLabel": "响应时间",
+      "responseTimeBody": "每一条消息都由人工阅读。我们在 UTC−07:00（山区时间）工作时间内的两个工作日内回复。安全和法律咨询优先处理——安全报告在一个工作日内确认。我们可以用本网站支持的十四种语言中的任何一种回复。",
+      "factHqLabel": "总部",
+      "factHqLine1": "加拿大艾伯塔省",
+      "factHqLine2": "2024 年注册",
+      "factPrivacyLabel": "隐私",
+      "factPrivacyLine1": "无跟踪器。",
+      "factPrivacyLine2": "仅通过电子邮件交付。",
+      "factLanguagesLabel": "语言",
+      "factLanguagesLine1": "14 种发布语言。",
+      "factLanguagesLine2": "包括阿拉伯语和乌尔都语 RTL。",
+      "factHostingLabel": "托管",
+      "factHostingLine1": "单一 VPS，埃德蒙顿。",
+      "factHostingLine2": "无第三方 CDN。"
+    },
+    "security": {
+      "postureHeading": "我们如何运营网站和平台",
+      "dataHeading": "我们如何处理您的数据",
+      "complianceHeading": "我们坚持的标准",
+      "complianceLede": "我们遵循一组小而具名的标准——并且我们对尚未获得的审计保持诚实。",
+      "privacyPolicyLink": "阅读隐私政策"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "绿色 · 实时遥测",
+      "statThisPageLabel": "本页",
+      "statThisPageHint": "HTML + CSS，无跟踪器",
+      "statThisVisitLabel": "本次访问",
+      "statThisVisitHint": "CO₂ · 绿色网页基金会",
+      "statHostingLabel": "托管",
+      "statHostingValue": "自托管",
+      "statHostingHint": "单一 VPS · 艾伯塔电网（约 {percent}% 可再生）",
+      "statThirdPartyLabel": "第三方",
+      "statThirdPartyValue": "零",
+      "statThirdPartyHint": "无像素 · 无字体 · 无 CDN",
+      "engineeringPracticesEyebrow": "工程实践",
+      "byteBudgetHeading": "字节预算如何保持精简",
+      "pledgeEyebrow": "承诺",
+      "pledgeHeading": "我们公开一切。您让我们负责。",
+      "pledgeBody": "本页面的每一个数字都根据真实测量实时计算。包预算由 CI 强制执行；第三方计数在每次构建时审计；碳估算使用绿色网页基金会方法学，针对您实际加载的页面重量。如果有任何看起来错误，请告诉我们——我们将在五个工作日内书面回复，并显示底层数字。",
+      "reportIssueCta": "报告问题",
+      "practices": {
+        "bundleBudget": {
+          "label": "包预算",
+          "value": "每路由 ≤ 50 KB",
+          "hint": "Gzip 压缩。每次拉取请求由 CI 强制执行——超过预算的构建无法发布。"
+        },
+        "thirdPartyCalls": {
+          "label": "第三方调用",
+          "value": "零",
+          "hint": "无分析、字体、像素、视频嵌入、社交小部件或 CDN 往返。每次构建由 no-third-party.mjs 审计。"
+        },
+        "renderer": {
+          "label": "渲染器",
+          "value": "服务器优先 HTML",
+          "hint": "页面在服务器上渲染并流式传输到浏览器。水化是可选的、按组件的，永不全局。"
+        },
+        "mediaStrategy": {
+          "label": "媒体策略",
+          "value": "系统字体 · SVG",
+          "hint": "无栅格主图。内联 SVG 插图。仅在该脚本位于页面时加载每个脚本的字体子集。"
+        },
+        "hosting": {
+          "label": "托管",
+          "value": "低 PUE VPS",
+          "hint": "自托管于艾伯塔省埃德蒙顿的单一 VPS。无 CDN。无边缘节点。一个源点，一个信任边界。"
+        },
+        "offlineReach": {
+          "label": "离线覆盖",
+          "value": "PWA · Service Worker",
+          "hint": "网络优先 HTML · 旧而即时验证资源 · 每种语言都有离线后备页面。"
+        },
+        "reducedMotion": {
+          "label": "减少动效",
+          "value": "处处尊重",
+          "hint": "设置 prefers-reduced-motion 时所有动画都暂停。没有例外，无需选择退出。"
+        },
+        "paperless": {
+          "label": "默认无纸化",
+          "value": "贯穿整个平台",
+          "hint": "发票、病历、收据默认数字化。办公用纸、名片和印刷营销物料不是我们运营的一部分。"
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "九项不可妥协",
+      "commitmentsAria": "九项承诺"
     }
+  },
+  "topBar": {
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "drawerCurrentlyViewing": "当前语言",
+    "drawerLanguagesBlurb": "十四种语言。在任何页面底部的语言轮中切换。",
+    "primaryNavAria": "主导航",
+    "mobileNavAria": "移动端主导航",
+    "mobileDrawerAria": "网站导航"
+  },
+  "common": {
+    "loading": "加载中…",
+    "honestNote": "诚实说明",
+    "notFoundEyebrow": "404 · 页面未找到",
+    "notFoundTitle": "未找到此页面。",
+    "notFoundBody": "链接可能已过期，页面可能已移动，或地址可能有拼写错误。请尝试首页，或者如果您是从我们撰写的链接到达此处，请联系我们。",
+    "goToHome": "返回首页",
+    "contactUs": "联系我们",
+    "offlineEyebrow": "无网络连接 · 您处于离线状态",
+    "offlineTitle": "为此刻而设计。",
+    "offlineBody": "普及无障碍访问是我们的使命。即使没有网络连接，本站也能继续运行——您访问过的每个页面都已缓存并可阅读。尝试访问您看过的页面，或重新连接以加载新内容。",
+    "offlineReturnHome": "返回首页"
+  },
+  "languageWheel": {
+    "navAria": "语言",
+    "switchTo": "将语言切换为 {language}"
   }
 }

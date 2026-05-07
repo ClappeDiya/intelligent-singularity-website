@@ -5,7 +5,11 @@
     "about": "Tentang",
     "green": "Hijau",
     "contact": "Kontak",
-    "insights": "Insights"
+    "insights": "Wawasan",
+    "portfolio": "Portofolio",
+    "pricing": "Harga",
+    "security": "Keamanan",
+    "faq": "Tanya Jawab"
   },
   "status": {
     "production": "Produksi",
@@ -21,13 +25,30 @@
     "zeroTrackers": "0 pelacak",
     "zeroThirdParty": "0 panggilan pihak ketiga",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada · Dihosting mandiri dengan 100% energi terbarukan",
-    "transparencyLabel": "Transparency",
-    "helpLabel": "Help",
-    "trustLabel": "Trust"
+    "transparencyLabel": "Transparansi",
+    "helpLabel": "Bantuan",
+    "trustLabel": "Kepercayaan",
+    "startConversation": "Mulai percakapan",
+    "languagesBlurb": "Setiap halaman publik tersedia dalam empat belas bahasa, termasuk Arab, Nastaliq Urdu, Bengali, Hindi, Hausa, Swahili, dan Yoruba.",
+    "selfHostedChip": "Di-hosting sendiri pada satu VPS",
+    "links": {
+      "flagships": "Produk unggulan",
+      "careers": "Karir",
+      "press": "Pers",
+      "changelog": "Catatan perubahan",
+      "status": "Status",
+      "roadmap": "Peta jalan",
+      "greenPledge": "Janji hijau",
+      "privacy": "Privasi",
+      "terms": "Ketentuan",
+      "accessibility": "Aksesibilitas",
+      "cookies": "Kuki"
+    }
   },
   "hero": {
     "skipToContent": "Langsung ke konten utama",
-    "scrollHint": "Gulir"
+    "scrollHint": "Gulir",
+    "scrollHintTarget": "celah dalam angka"
   },
   "contactForm": {
     "routingLabel": "Tujuan",
@@ -44,10 +65,12 @@
   },
   "pages": {
     "changelog": {
-      "eyebrow": "CHANGELOG",
-      "title": "What changed, in order.",
-      "lede": "Every visible change we have made to this site, with the release date and the commit behind it.",
-      "feedLabel": "Subscribe"
+      "eyebrow": "CHANGELOG · SITUS PERUSAHAAN",
+      "title": "Apa yang berubah, secara berurutan.",
+      "lede": "Setiap perubahan terlihat yang kami lakukan di situs perusahaan ini, dengan tanggal dan terhubung ke commit yang melatarbelakanginya. Setiap produk di ekosistem Clap memiliki changelog tersendiri di domain masing-masing — halaman ini adalah pintu masuk perusahaan induk, tidak lebih, tidak ada yang disembunyikan.",
+      "feedLabel": "Berlangganan:",
+      "feedTitle": "Intelligent Singularity — Changelog",
+      "rssFeed": "Umpan RSS"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -55,43 +78,334 @@
       "lede": "This page is pulled live from our public status monitor. If the numbers look wrong, tell us — that is part of keeping this honest.",
       "operational": "All systems operational",
       "degraded": "Degraded — at least one service affected",
-      "unavailable": "Live data unavailable — please retry"
+      "unavailable": "Live data unavailable — please retry",
+      "serviceInterruption": "Service interruption",
+      "statusUnknown": "Status unknown",
+      "updatedPrefix": "updated",
+      "noLiveDataAttempt": "no live data — last attempt just now",
+      "connectionFailed": "We could not reach our public status monitor just now. The page will refresh in the background and turn green once the data comes back. Please retry in a minute.",
+      "systemsHeading": "Systems",
+      "noData": "no data",
+      "sourceOfTruth": "Source of truth:",
+      "liveStatusDashboard": "Live status dashboard",
+      "overallStatusAria": "Overall status",
+      "externalNavAria": "External",
+      "opensInNewTab": " (opens in a new tab)"
     },
     "roadmap": {
-      "eyebrow": "ROADMAP",
-      "title": "What is next, and why.",
-      "lede": "We list what the studio is actually working on. No aspirational fluff, no dates we cannot hit — if it is not in motion, it is marked planned.",
-      "statusPlanned": "Planned",
-      "statusInProgress": "In progress",
-      "statusShipped": "Shipped",
-      "statusPaused": "Paused",
-      "emptyColumn": "(none)"
+      "eyebrow": "PETA JALAN · DI MUKA UMUM",
+      "title": "Apa yang sedang kami bangun.",
+      "lede": "Di muka umum. Tidak ada vaporware. Setiap item ada di sisi studio — pekerjaan situs perusahaan, infrastruktur bersama, dan komitmen lintas bidang yang menyentuh setiap produk. Setiap produk di ekosistem Clap memiliki peta jalan tersendiri di domain masing-masing. Item di sini terhubung ke kode saat dikirim.",
+      "statusPlanned": "Direncanakan",
+      "statusInProgress": "Sedang berjalan",
+      "statusShipped": "Sudah dirilis",
+      "statusPaused": "Dijeda",
+      "emptyColumn": "Tidak ada apa pun di kolom ini saat ini. Pekerjaan baru muncul di sini saat berpindah tahap.",
+      "byStatusLabel": "Berdasarkan status",
+      "ctaEyebrow": "Ada yang kurang?",
+      "ctaHeading": "Beritahu kami apa yang Anda butuhkan.",
+      "ctaBody": "Jika ada fitur, alat, atau perbaikan yang akan membuat perbedaan nyata bagi Anda, kirimkan pesan kepada kami. Kami membaca setiap pesan dan memprioritaskan berdasarkan kebutuhan nyata.",
+      "ctaButton": "Kirim pesan"
     },
     "insights": {
-      "eyebrow": "INSIGHTS",
-      "title": "Field notes from the studio.",
-      "lede": "Short, grounded essays. We write slowly. We cite everything. No clickbait, no thought-leadership fog.",
-      "readMore": "Read the essay",
-      "minutesRead": "min read",
-      "sourcesHeading": "Sources",
-      "backToIndex": "Back to insights"
+      "eyebrow": "INSIGHTS · CATATAN LAPANGAN DARI STUDIO",
+      "title": "Berpikir di muka umum.",
+      "lede": "Catatan lapangan tentang akses universal, rekayasa yang ditingkatkan AI, 2,2 miliar orang yang masih offline, dan lintasan panjang kecerdasan buatan — ditulis untuk dipahami, bukan untuk mengesankan. Kami menulis perlahan. Setiap klaim merujuk ke sumber. Tanpa clickbait, tanpa kabut kepemimpinan pemikiran.",
+      "readMore": "Baca →",
+      "minutesRead": "menit baca",
+      "sourcesHeading": "Sumber",
+      "backToIndex": "← Semua insights",
+      "subscribeLabel": "Berlangganan:",
+      "rssFeed": "Umpan RSS",
+      "feedTitle": "Intelligent Singularity — Insights",
+      "paginationAria": "Paginasi"
     },
     "trust": {
-      "eyebrow": "TRUST",
-      "title": "Where to find the proof.",
-      "lede": "Every claim we make about security, privacy, sustainability, and access links to the evidence. You should never have to take our word for it.",
-      "pillarsHeading": "The four pillars",
-      "subprocessorsHeading": "Subprocessors",
-      "certificationsHeading": "Certifications",
-      "certsEmpty": "None yet. When we are certified, it will show up here with a link to the evidence."
+      "eyebrow": "KEPERCAYAAN",
+      "title": "Tempat menemukan bukti.",
+      "lede": "Setiap klaim yang kami buat tentang keamanan, privasi, keberlanjutan, dan akses tertaut ke bukti. Anda tidak boleh harus mengandalkan kata-kata kami saja.",
+      "pillarsHeading": "Pilar kepercayaan",
+      "subprocessorsHeading": "Subproses",
+      "certificationsHeading": "Sertifikasi",
+      "certsEmpty": "Belum ada. Saat kami tersertifikasi, akan tampil di sini dengan tautan ke bukti.",
+      "colName": "Nama",
+      "colPurpose": "Tujuan",
+      "colDataAccessed": "Data yang diakses",
+      "colLocation": "Lokasi",
+      "certsEmptyTitle": "Belum ada",
+      "certsEmptyBody": "Kami adalah studio kecil. Sertifikasi formal mahal dan lambat. Saat kami memperolehnya, akan muncul di sini dengan tautan ke penerbit.",
+      "subprocessorsLede": "Setiap pihak ketiga yang mungkin menyentuh data Anda, apa yang mereka akses, dan di mana mereka beroperasi.",
+      "lastReviewedLabel": "Terakhir ditinjau:",
+      "incidentEyebrow": "Pelaporan insiden",
+      "incidentHeading": "Menemukan sesuatu? Beritahu kami terlebih dahulu.",
+      "incidentBody": "Pengungkapan terkoordinasi adalah jalan yang kami tempuh dengan serius. Kirim email ke security@intelligentsingularityinc.com dengan deskripsi dan langkah reproduksi. Kami mengakui laporan dalam satu hari kerja, melakukan triase dalam tiga hari, dan mengirimkan perbaikan sesuai timeline yang kami sepakati dengan Anda. Peneliti dikreditkan dengan nama di post-mortem kami saat perbaikan dirilis — kecuali Anda lebih memilih anonim. Kami tidak mengancam atau menuntut peneliti keamanan yang beritikad baik, titik.",
+      "incidentCta": "Laporkan insiden",
+      "privacyPolicyLink": "Kebijakan privasi",
+      "learnMore": "Pelajari lebih lanjut"
     },
     "help": {
-      "eyebrow": "HELP",
-      "title": "We can usually help in one click.",
-      "lede": "Pick the row that sounds most like your question. Every link goes somewhere real — no gated forms, no chatbots.",
-      "emergencyLabel": "If it is urgent",
-      "popularHeading": "Popular answers",
-      "stillStuck": "Still stuck?"
+      "eyebrow": "BANTUAN",
+      "title": "Biasanya kami bisa membantu dalam satu klik.",
+      "lede": "Pilih baris yang paling mirip dengan pertanyaan Anda. Setiap tautan mengarah ke tempat yang nyata — tanpa formulir terkunci, tanpa chatbot.",
+      "emergencyLabel": "Jika mendesak",
+      "popularHeading": "Pertanyaan populer",
+      "stillStuck": "Masih buntu?",
+      "browseByTopic": "Jelajahi berdasarkan topik",
+      "checkStatus": "Lihat status",
+      "contactEyebrow": "Kontak",
+      "contactFallbackCta": "Hubungi kami"
+    },
+    "about": {
+      "eyebrow": "Tentang · Studio",
+      "defaultTitle": "Tentang Intelligent Singularity",
+      "ecosystemLabel": "Ekosistem sekilas",
+      "ecosystemHeading": "Satu perusahaan induk, tujuh kategori produk.",
+      "ataGlanceLabel": "Sekilas",
+      "talkToStudioLabel": "Bicara dengan studio",
+      "talkToStudioBody": "Kemitraan, pers, atau pertanyaan produk — pesan mencapai pendiri langsung, biasanya dalam dua hari kerja.",
+      "contactCta": "Kontak · Buka formulir",
+      "metaLabels": {
+        "legalEntity": "Badan hukum",
+        "founded": "Didirikan",
+        "founder": "Pendiri",
+        "structure": "Struktur",
+        "operatingModel": "Model operasi",
+        "capital": "Modal",
+        "portfolio": "Portofolio",
+        "languages": "Bahasa",
+        "footprint": "Jejak"
+      },
+      "metaValues": {
+        "legalEntity": "Intelligent Singularity Inc.",
+        "founded": "2024 · Alberta, Kanada",
+        "founder": "Dr. Md Diya, MD",
+        "structure": "Induk dari ekosistem Clap",
+        "operatingModel": "Kecil, jarak jauh, ditingkatkan AI",
+        "capital": "Bootstrapped · mandiri · tidak dijual",
+        "portfolio": "Keluarga platform yang terus tumbuh",
+        "languages": "14 lokal yang dirilis",
+        "footprint": "≤ 50 KB per halaman · tanpa pelacak"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "Manifesto · Prinsip dasar",
+      "offlinePercentEyebrow": "26 persen itu",
+      "offlinePercentHeading": "Dua koma dua miliar orang masih offline hari ini.",
+      "offlinePercentBody": "Titik-titik lebih terang di atas adalah orang yang sudah online. Titik-titik lebih gelap dan bercincin adalah orang yang belum. Sembilan puluh enam persen populasi offline tinggal di negara berpenghasilan rendah dan menengah. Rekayasa akses universal adalah yang menutup kesenjangan itu. Sembilan komitmen di bawah adalah cara kami menetapinya.",
+      "commitmentsHeading": "Sembilan komitmen",
+      "commitmentsBody": "Sembilan cincin konsentris — setiap produk dirilis terhadap setiap dari mereka, di setiap rilis. Daftar ini bukan daftar keinginan. Ini adalah kontrak rekayasa.",
+      "sourceData": "Sumber data"
+    },
+    "faq": {
+      "openTheForm": "Open the form",
+      "emailDirectly": "Email directly"
+    },
+    "pricing": {
+      "tierFree": "Free tier:",
+      "tierPaid": "Paid tier:",
+      "tierEnterprise": "Enterprise:",
+      "sixRulesHeading": "Six rules every product ships under",
+      "antiPatternsHeading": "What we will not do",
+      "antiPatternsBody": "The anti-patterns below are common in business software. We have decided against each of them, in writing, in advance — so neither we nor a future us can quietly bring them back.",
+      "workedExampleHeading": "The same product, three customers",
+      "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
+      "viewThePortfolio": "View the portfolio",
+      "talkAboutPricing": "Talk about pricing"
+    },
+    "careers": {
+      "howWeWorkHeading": "Bagaimana kami benar-benar bekerja",
+      "whatYouWouldWorkOnHeading": "Apa yang akan benar-benar Anda kerjakan",
+      "howWeHireHeading": "Bagaimana kami merekrut, dari awal hingga akhir",
+      "openRolesFallback": "Lowongan terbuka",
+      "updatedPrefix": "Diperbarui",
+      "contactFormCta": "Formulir kontak",
+      "whatYouWouldWorkOnLede": "Intelligent Singularity adalah perusahaan induk dari keluarga platform yang terus berkembang. Karyawan baru jarang mengerjakan satu produk untuk satu tahun penuh — kebanyakan berpindah-pindah di antara dua atau tiga, tergantung pada apa yang sedang dirilis dan apa yang paling membutuhkan perhatian senior pada kuartal itu.",
+      "howWeHireLede": "Empat langkah. Maksimum dua minggu dari email pertama hingga tawaran tertulis jika kedua belah pihak bergerak cepat. Tidak ada tahap mengejutkan, tidak ada tugas rumah tanpa bayaran, tidak ada penolakan \"kecocokan budaya\" tanpa alasan tertulis."
+    },
+    "press": {
+      "factSheetHeading": "Lembar fakta",
+      "approvedQuotesHeading": "Kutipan yang disetujui",
+      "brandAssetsHeading": "Aset merek",
+      "brandNameLabel": "Nama merek",
+      "founderReferenceLabel": "Referensi pendiri",
+      "pressBoilerplateHeading": "Boilerplate pers",
+      "storyAnglesWelcomedHeading": "Sudut cerita yang kami sambut",
+      "storyAnglesDeclineHeading": "Sudut cerita yang biasanya kami tolak",
+      "contactFormCta": "Formulir kontak",
+      "boilerplateLede": "Satu paragraf, siap pasang untuk siaran pers. Disetujui untuk digunakan apa adanya.",
+      "storyAnglesYesLede": "Jika cerita Anda berada dalam salah satu sudut ini, kami akan bergerak cepat untuk menyediakan pendiri, insinyur, atau pemimpin produk — biasanya dalam satu hari kerja.",
+      "storyAnglesNoLede": "Kejujuran sejak awal menghemat waktu semua orang. Kami tidak akan memberikan kutipan untuk sudut-sudut di bawah ini. Namun, kami akan mengarahkan Anda kepada jurnalis atau analis yang karyanya lebih cocok dengan cerita tersebut."
+    },
+    "portfolio": {
+      "eyebrow": "Portofolio · Ekosistem Clap",
+      "titleLine1": "{count} alat.",
+      "titleLine2": "Satu misi.",
+      "lede": "Intelligent Singularity adalah induk perusahaan ekosistem Clap. Setiap produk berjalan di domainnya sendiri, dengan ketentuan sendiri, dengan harga sendiri — tetapi mereka berbagi satu tumpukan rekayasa, satu anggaran aksesibilitas, satu sikap privasi, dan satu kain AI-agent bersama. Label status jujur di mana-mana: produksi, staging, menunggu persetujuan, infrastruktur.",
+      "statToolsLabel": "Alat",
+      "statToolsHint": "Di tujuh kategori di bawah",
+      "statFlagshipsLabel": "Andalan",
+      "statFlagshipsHint": "Dipilih untuk penggunaan pertama di halaman beranda",
+      "statProductionLabel": "Langsung · produksi",
+      "statProductionHint": "Mengirim ke pengguna akhir nyata hari ini",
+      "statStagingLabel": "Di staging",
+      "statStagingHint": "Khusus undangan, dimantapkan sebelum diluncurkan",
+      "statCategoriesLabel": "Kategori",
+      "statCategoriesHint": "Satu tumpukan bersama di setiap domain",
+      "statThirdPartyLabel": "Panggilan pihak ketiga",
+      "statThirdPartyValue": "Nol",
+      "statThirdPartyHint": "Diberlakukan oleh CI di setiap rilis produk",
+      "ecosystemStatsAria": "Statistik ekosistem"
+    },
+    "contact": {
+      "eyebrow": "Kontak · Meja studio",
+      "titleFallback": "Hubungi kami",
+      "directChannelsLabel": "Saluran langsung",
+      "channels": {
+        "general": {
+          "label": "Umum",
+          "hint": "Pertanyaan produk, perkenalan, atau sekadar menyapa."
+        },
+        "press": {
+          "label": "Pers",
+          "hint": "Wawancara, kutipan, ketersediaan pendiri, ide cerita."
+        },
+        "partnerships": {
+          "label": "Kemitraan",
+          "hint": "NGO, pemerintah, kolaborasi enterprise, pendanaan hibah."
+        },
+        "careers": {
+          "label": "Karier",
+          "hint": "Lowongan, perkenalan, referensi."
+        },
+        "security": {
+          "label": "Keamanan",
+          "hint": "Laporan kerentanan — diakui dalam satu hari kerja."
+        },
+        "accessibility": {
+          "label": "Aksesibilitas",
+          "hint": "Laporkan penghalang di situs atau di produk apa pun."
+        },
+        "privacy": {
+          "label": "Privasi",
+          "hint": "Permintaan akses, koreksi, penghapusan, portabilitas data."
+        },
+        "legal": {
+          "label": "Hukum",
+          "hint": "DPA, MSA, pemberitahuan formal, pertanyaan regulasi."
+        }
+      },
+      "responseTimeLabel": "Waktu respons",
+      "responseTimeBody": "Manusia membaca setiap pesan. Kami membalas dalam dua hari kerja di jam kerja UTC−07:00 (Mountain). Pertanyaan keamanan dan hukum diprioritaskan — laporan keamanan diakui dalam satu hari kerja. Kami dapat membalas dalam salah satu dari empat belas bahasa yang situs ini bicarakan.",
+      "factHqLabel": "Kantor pusat",
+      "factHqLine1": "Alberta, Kanada",
+      "factHqLine2": "Didirikan 2024",
+      "factPrivacyLabel": "Privasi",
+      "factPrivacyLine1": "Tanpa pelacak.",
+      "factPrivacyLine2": "Pengiriman email saja.",
+      "factLanguagesLabel": "Bahasa",
+      "factLanguagesLine1": "14 lokal yang dirilis.",
+      "factLanguagesLine2": "Termasuk Arab & Urdu RTL.",
+      "factHostingLabel": "Hosting",
+      "factHostingLine1": "Satu VPS, Edmonton.",
+      "factHostingLine2": "Tanpa CDN pihak ketiga."
+    },
+    "security": {
+      "postureHeading": "Bagaimana kami menjalankan situs dan platform",
+      "dataHeading": "Bagaimana kami menangani data Anda",
+      "complianceHeading": "Standar yang kami pegang teguh",
+      "complianceLede": "Kami mengikuti seperangkat standar yang kecil dan bernama — dan kami jujur tentang audit mana yang belum kami peroleh.",
+      "privacyPolicyLink": "Baca kebijakan privasi"
+    },
+    "green": {
+      "liveTelemetryEyebrow": "Hijau · Telemetri langsung",
+      "statThisPageLabel": "Halaman ini",
+      "statThisPageHint": "HTML + CSS, tanpa pelacak",
+      "statThisVisitLabel": "Kunjungan ini",
+      "statThisVisitHint": "CO₂ · Green Web Foundation",
+      "statHostingLabel": "Hosting",
+      "statHostingValue": "Mandiri",
+      "statHostingHint": "Satu VPS · jaringan Alberta (~{percent}% terbarukan)",
+      "statThirdPartyLabel": "Pihak ketiga",
+      "statThirdPartyValue": "Nol",
+      "statThirdPartyHint": "Tanpa piksel · tanpa font · tanpa CDN",
+      "engineeringPracticesEyebrow": "Praktik rekayasa",
+      "byteBudgetHeading": "Bagaimana anggaran byte tetap kecil",
+      "pledgeEyebrow": "Janji",
+      "pledgeHeading": "Kami publikasikan semuanya. Anda yang menuntut tanggung jawab kami.",
+      "pledgeBody": "Setiap angka di halaman ini dihitung secara langsung dari pengukuran nyata. Anggaran bundle ditegakkan oleh CI; jumlah pihak ketiga diaudit di setiap build; estimasi karbon menggunakan metodologi Green Web Foundation terhadap berat halaman yang Anda muat. Jika ada yang tampak salah, beritahu kami — kami akan merespons secara tertulis dalam lima hari kerja, dengan menampilkan angka yang mendasarinya.",
+      "reportIssueCta": "Laporkan masalah",
+      "practices": {
+        "bundleBudget": {
+          "label": "Anggaran bundle",
+          "value": "≤ 50 KB / rute",
+          "hint": "Gzipped. Ditegakkan oleh CI di setiap pull request — build yang melanggar anggaran tidak dapat dirilis."
+        },
+        "thirdPartyCalls": {
+          "label": "Panggilan pihak ketiga",
+          "value": "Nol",
+          "hint": "Tanpa analitik, font, piksel, sematan video, widget sosial, atau perjalanan CDN. Diaudit per build oleh no-third-party.mjs."
+        },
+        "renderer": {
+          "label": "Renderer",
+          "value": "HTML server-pertama",
+          "hint": "Halaman dirender di server dan dialirkan ke browser. Hidrasi adalah opt-in, per komponen, tidak pernah global."
+        },
+        "mediaStrategy": {
+          "label": "Strategi media",
+          "value": "Font sistem · SVG",
+          "hint": "Tanpa hero raster. Ilustrasi SVG sebaris. Subset font per skrip dimuat hanya saat skrip itu ada di halaman."
+        },
+        "hosting": {
+          "label": "Hosting",
+          "value": "VPS PUE-rendah",
+          "hint": "Mandiri di satu VPS di Edmonton, Alberta. Tanpa CDN. Tanpa edge node. Satu asal, satu batas kepercayaan."
+        },
+        "offlineReach": {
+          "label": "Jangkauan offline",
+          "value": "PWA · Service worker",
+          "hint": "HTML network-pertama · aset stale-while-revalidate · halaman fallback offline di setiap lokal."
+        },
+        "reducedMotion": {
+          "label": "Gerakan dikurangi",
+          "value": "Dihormati di mana-mana",
+          "hint": "Setiap animasi berhenti saat prefers-reduced-motion diatur. Tanpa pengecualian, tanpa perlu opt-out."
+        },
+        "paperless": {
+          "label": "Tanpa kertas secara default",
+          "value": "Di seluruh platform",
+          "hint": "Faktur, catatan medis, kuitansi default ke digital. Kertas kantor, kartu nama, dan materi pemasaran cetak bukan bagian dari cara kami beroperasi."
+        }
+      }
+    },
+    "home": {
+      "commitmentsKicker": "Nine non-negotiables",
+      "commitmentsAria": "The nine commitments"
     }
+  },
+  "topBar": {
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "drawerCurrentlyViewing": "Bahasa saat ini",
+    "drawerLanguagesBlurb": "Empat belas bahasa. Ganti dari roda bahasa di bagian bawah halaman mana pun.",
+    "primaryNavAria": "Utama",
+    "mobileNavAria": "Utama seluler",
+    "mobileDrawerAria": "Navigasi situs"
+  },
+  "common": {
+    "contactUs": "Hubungi kami",
+    "goToHome": "Ke beranda",
+    "honestNote": "Catatan jujur",
+    "loading": "Memuat...",
+    "notFoundBody": "Tautan mungkin sudah lama, halaman mungkin telah dipindahkan, atau alamatnya mungkin salah ketik. Coba halaman beranda, atau hubungi kami jika Anda sampai di sini dari tautan yang kami tulis.",
+    "notFoundEyebrow": "404 · Halaman tidak ditemukan",
+    "notFoundTitle": "Kami tidak dapat menemukan halaman itu.",
+    "offlineBody": "Sepertinya Anda offline. Kami menyajikan halaman ini dari cache.",
+    "offlineEyebrow": "Offline",
+    "offlineReturnHome": "Kembali ke beranda",
+    "offlineTitle": "Tidak ada koneksi sekarang."
+  },
+  "languageWheel": {
+    "navAria": "Bahasa",
+    "switchTo": "Ganti bahasa ke {language}"
   }
 }

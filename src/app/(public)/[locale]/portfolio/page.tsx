@@ -1,5 +1,7 @@
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { PortfolioGrid } from '@/components/pages/PortfolioGrid';
 import { fetchAllProducts, fetchProductCategories } from '@/lib/payload';
 import type { Product, ProductCategory } from '@/types/cms';
@@ -17,6 +19,7 @@ async function PortfolioContent({ locale }: { locale: string }) {
   ]);
   const typedProducts = products as unknown as Product[];
   const typedCategories = categories as unknown as ProductCategory[];
+  const t = await getTranslations('pages.portfolio');
 
   const total = typedProducts.length;
   const flagshipCount = typedProducts.filter((p) => p.isFlagship).length;
@@ -27,12 +30,12 @@ async function PortfolioContent({ locale }: { locale: string }) {
   ).length;
 
   const stats: Stat[] = [
-    { label: 'Tools', value: total, hint: 'Across the seven categories below' },
-    { label: 'Flagships', value: flagshipCount, hint: 'Curated for first use on the home page' },
-    { label: 'Live · production', value: productionCount, hint: 'Shipping to real end users today' },
-    { label: 'In staging', value: stagingCount, hint: 'Invite-only, hardening before launch' },
-    { label: 'Categories', value: categoryCount, hint: 'One shared stack across every domain' },
-    { label: 'Third-party calls', value: 'Zero', hint: 'Enforced by CI on every product release' },
+    { label: t('statToolsLabel'), value: total, hint: t('statToolsHint') },
+    { label: t('statFlagshipsLabel'), value: flagshipCount, hint: t('statFlagshipsHint') },
+    { label: t('statProductionLabel'), value: productionCount, hint: t('statProductionHint') },
+    { label: t('statStagingLabel'), value: stagingCount, hint: t('statStagingHint') },
+    { label: t('statCategoriesLabel'), value: categoryCount, hint: t('statCategoriesHint') },
+    { label: t('statThirdPartyLabel'), value: t('statThirdPartyValue'), hint: t('statThirdPartyHint') },
   ];
 
   const webPageSchema = getWebPageSchema({
@@ -60,15 +63,13 @@ async function PortfolioContent({ locale }: { locale: string }) {
       <JsonLd id={`portfolio-schema-${locale}`} data={webPageSchema} />
       <JsonLd id={`portfolio-itemlist-schema-${locale}`} data={itemListSchema} />
       <JsonLd id={`portfolio-breadcrumb-schema-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">Portfolio · The Clap ecosystem</div>
+      <div className="page-label">{t('eyebrow')}</div>
       <h1 className="page-title max-w-none">
-        {total} tools.
+        {t('titleLine1', { count: total })}
         <br />
-        One mission.
+        {t('titleLine2')}
       </h1>
-      <p className="page-lead">
-        Intelligent Singularity is the parent company of the Clap ecosystem. Every product runs on its own domain, under its own terms, with its own pricing — but they share one engineering stack, one accessibility budget, one privacy posture, and one shared AI-agent fabric. Honest status labels throughout: production, staging, awaiting approval, infrastructure.
-      </p>
+      <p className="page-lead">{t('lede')}</p>
 
       <figure
         className="mb-12 rounded-[24px] overflow-hidden p-6 md:p-10"
@@ -82,7 +83,7 @@ async function PortfolioContent({ locale }: { locale: string }) {
       </figure>
 
       <section
-        aria-label="Ecosystem statistics"
+        aria-label={t('ecosystemStatsAria')}
         className="mb-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4"
       >
         {stats.map((s) => (
@@ -131,7 +132,7 @@ export async function generateMetadata({
 export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <PortfolioContent locale={locale} />
     </Suspense>
   );

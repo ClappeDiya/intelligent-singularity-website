@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
@@ -25,6 +27,7 @@ export async function generateMetadata({
 async function PressContent({ locale }: { locale: string }) {
   const cmsPage = (await fetchPressPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? PRESS_PAGE_SEED;
+  const t = await getTranslations('pages.press');
 
   const webPageSchema = getWebPageSchema({
     locale,
@@ -61,7 +64,7 @@ async function PressContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          Fact sheet
+          {t('factSheetHeading')}
         </h2>
         <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
           {(page.factSheet ?? []).map((f: any) => (
@@ -90,7 +93,7 @@ async function PressContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          Approved quotes
+          {t('approvedQuotesHeading')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.quotes ?? []).map((q: any, i: number) => (
@@ -111,7 +114,7 @@ async function PressContent({ locale }: { locale: string }) {
                 <div className="text-[14px]" style={{ fontFamily: 'var(--font-serif)', fontWeight: 600, color: 'var(--color-paper-ink)' }}>
                   {q.who}
                 </div>
-                <div className="label-mono mt-1 opacity-70">{q.role}</div>
+                <div className="label-mono label-mono--muted mt-1">{q.role}</div>
               </figcaption>
             </figure>
           ))}
@@ -119,15 +122,15 @@ async function PressContent({ locale }: { locale: string }) {
       </section>
 
       <section aria-labelledby="kit-heading" className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
-        <h2 id="kit-heading" className="sr-only">Brand assets</h2>
+        <h2 id="kit-heading" className="sr-only">{t('brandAssetsHeading')}</h2>
         <div className="is-card rounded-[22px] p-7 md:p-8 flex flex-col gap-4">
-          <div className="label-mono">Brand name</div>
+          <div className="label-mono">{t('brandNameLabel')}</div>
           <p className="text-[15px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.72)' }}>
             {page.brandGuidance?.brandName}
           </p>
         </div>
         <div className="is-card rounded-[22px] p-7 md:p-8 flex flex-col gap-4">
-          <div className="label-mono">Founder reference</div>
+          <div className="label-mono">{t('founderReferenceLabel')}</div>
           <p className="text-[15px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.72)' }}>
             {page.brandGuidance?.founderReference}
           </p>
@@ -146,10 +149,10 @@ async function PressContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          Press boilerplate
+          {t('pressBoilerplateHeading')}
         </h2>
         <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-          One paragraph, drop-in for press releases. Approved for verbatim use.
+          {t('boilerplateLede')}
         </p>
         <div
           className="rounded-[20px] p-7 md:p-8"
@@ -173,10 +176,10 @@ async function PressContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          Story angles we welcome
+          {t('storyAnglesWelcomedHeading')}
         </h2>
         <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-          If your story sits inside one of these angles, we will move quickly to make a founder, an engineer, or a product lead available — usually within a working day.
+          {t('storyAnglesYesLede')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.storyAnglesYes ?? []).map((a: any) => (
@@ -215,10 +218,10 @@ async function PressContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          Story angles we usually decline
+          {t('storyAnglesDeclineHeading')}
         </h2>
         <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-          Honesty up front saves everyone time. We will not provide quotes for the angles below. We will, however, point you to a journalist or analyst whose work fits the story better.
+          {t('storyAnglesNoLede')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
           {(page.storyAnglesNo ?? []).map((a: any) => (
@@ -275,6 +278,7 @@ async function PressContent({ locale }: { locale: string }) {
         <div className="flex flex-col sm:flex-row gap-3">
           <a
             href={`mailto:${page.contactCta?.email}`}
+            aria-label={`Email ${page.contactCta?.email}`}
             className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
             style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg,#059669,#0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
           >
@@ -282,11 +286,11 @@ async function PressContent({ locale }: { locale: string }) {
             <span aria-hidden="true">→</span>
           </a>
           <Link
-            href="/contact"
+            href={`/${locale}/contact`}
             className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[12px] uppercase font-semibold text-[var(--color-cream)] transition-colors hover:border-[var(--color-emerald)] hover:text-[var(--color-emerald)]"
             style={{ fontFamily: 'var(--font-mono)', borderColor: 'rgba(16,185,129,0.3)' }}
           >
-            Contact form
+            {t('contactFormCta')}
           </Link>
         </div>
       </section>
@@ -297,7 +301,7 @@ async function PressContent({ locale }: { locale: string }) {
 export default async function PressPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <PressContent locale={locale} />
     </Suspense>
   );

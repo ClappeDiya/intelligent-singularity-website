@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F1411"/>
+  <g transform="translate(120 250)">
+    <circle cx="115" cy="115" r="115" stroke="#6C8F7A" stroke-opacity="0.34" stroke-width="14"/>
+    <path d="M-60 192H290" stroke="#8FC9A0" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="115" cy="115" r="48" fill="#8FC9A0"/>
+  </g>
+  <g transform="translate(440 200)">
+    <text x="0" y="0" font-family="Georgia, 'Times New Roman', serif" font-size="74" fill="#F0FDF4" letter-spacing="-2">Intelligent Singularity</text>
+    <text x="0" y="68" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#A8E6CF" font-style="italic" letter-spacing="-0.5">Software for universal access.</text>
+    <text x="0" y="190" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="20" fill="#8FA89A" letter-spacing="3">14 LANGUAGES · 0 TRACKERS · SELF-HOSTED</text>
+    <text x="0" y="220" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="20" fill="#8FA89A" letter-spacing="3">ON 100% RENEWABLE ENERGY · ALBERTA, CANADA</text>
+  </g>
+</svg>

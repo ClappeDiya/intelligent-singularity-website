@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export function EmptyState({
-  title, body, href, linkText,
-}: { title: string; body: string; href?: string; linkText?: string }) {
+  title, body, href, linkText, eyebrow = 'Honest note',
+}: { title: string; body: string; href?: string; linkText?: string; eyebrow?: string }) {
   return (
     <div
       className="rounded-2xl p-8 md:p-10 text-center border border-dashed"
@@ -12,7 +12,7 @@ export function EmptyState({
         className="text-[11px] uppercase tracking-[0.24em] mb-3"
         style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
       >
-        Honest note
+        {eyebrow}
       </div>
       <h2
         className="text-[22px] leading-[1.25] mb-3"
@@ -32,7 +32,9 @@ export function EmptyState({
             className="inline-block mt-6 text-[13px] uppercase tracking-[0.16em]"
             style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
           >
-            {linkText} ↗
+            {linkText}
+            <span className="sr-only"> (opens in a new tab)</span>
+            <span aria-hidden="true"> ↗</span>
           </a>
         ) : (
           <Link

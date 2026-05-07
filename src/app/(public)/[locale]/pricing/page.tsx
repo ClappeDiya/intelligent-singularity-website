@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
@@ -23,6 +25,7 @@ export async function generateMetadata({
 }
 
 async function PricingContent({ locale }: { locale: string }) {
+  const t = await getTranslations('pages.pricing');
   const cmsPage = (await fetchPricingPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? PRICING_PAGE_SEED;
 
@@ -77,15 +80,15 @@ async function PricingContent({ locale }: { locale: string }) {
           </div>
           <div className="flex flex-col gap-4 text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.72)' }}>
             <p>
-              <strong style={{ color: 'var(--color-emerald-ink)' }}>Free tier:</strong>{' '}
+              <strong style={{ color: 'var(--color-emerald-ink)' }}>{t('tierFree')}</strong>{' '}
               {page.whyThisExists?.freeTierLine?.replace(/^Free tier — /i, '')}
             </p>
             <p>
-              <strong style={{ color: 'var(--color-emerald-ink)' }}>Paid tier:</strong>{' '}
+              <strong style={{ color: 'var(--color-emerald-ink)' }}>{t('tierPaid')}</strong>{' '}
               {page.whyThisExists?.paidTierLine?.replace(/^Paid tier — /i, '')}
             </p>
             <p>
-              <strong style={{ color: 'var(--color-emerald-ink)' }}>Enterprise:</strong>{' '}
+              <strong style={{ color: 'var(--color-emerald-ink)' }}>{t('tierEnterprise')}</strong>{' '}
               {page.whyThisExists?.enterpriseLine?.replace(/^Enterprise — /i, '')}
             </p>
           </div>
@@ -104,7 +107,7 @@ async function PricingContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          Six rules every product ships under
+          {t('sixRulesHeading')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.principles ?? []).map((p: any) => (
@@ -156,10 +159,10 @@ async function PricingContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          What we will not do
+          {t('antiPatternsHeading')}
         </h2>
         <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-          The anti-patterns below are common in business software. We have decided against each of them, in writing, in advance — so neither we nor a future us can quietly bring them back.
+          {t('antiPatternsBody')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {(page.antiPatterns ?? []).map((a: any) => (
@@ -202,10 +205,10 @@ async function PricingContent({ locale }: { locale: string }) {
             fontWeight: 600,
           }}
         >
-          The same product, three customers
+          {t('workedExampleHeading')}
         </h2>
         <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
-          A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product&rsquo;s own page.
+          {t('workedExampleBody')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
           {(page.workedExample ?? []).map((row: any) => (
@@ -228,7 +231,7 @@ async function PricingContent({ locale }: { locale: string }) {
               <p className="text-[14px] leading-[1.7] mb-3" style={{ color: 'rgba(17,24,39,0.72)' }}>
                 {row.what}
               </p>
-              <p className="text-[13px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.55)', fontStyle: 'italic' }}>
+              <p className="text-[13px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.72)', fontStyle: 'italic' }}>
                 {row.note}
               </p>
             </div>
@@ -262,12 +265,12 @@ async function PricingContent({ locale }: { locale: string }) {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3">
-          <Link href="/portfolio" className="btn-primary" style={{ fontFamily: 'var(--font-mono)' }}>
-            View the portfolio
+          <Link href={`/${locale}/portfolio`} className="btn-primary" style={{ fontFamily: 'var(--font-mono)' }}>
+            {t('viewThePortfolio')}
             <span aria-hidden="true">→</span>
           </Link>
-          <Link href="/contact" className="btn-outline" style={{ fontFamily: 'var(--font-mono)' }}>
-            Talk about pricing
+          <Link href={`/${locale}/contact`} className="btn-outline" style={{ fontFamily: 'var(--font-mono)' }}>
+            {t('talkAboutPricing')}
           </Link>
         </div>
       </section>
@@ -278,7 +281,7 @@ async function PricingContent({ locale }: { locale: string }) {
 export default async function PricingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <PricingContent locale={locale} />
     </Suspense>
   );

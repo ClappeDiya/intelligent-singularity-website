@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
+import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
@@ -25,6 +27,7 @@ export async function generateMetadata({
 async function FaqContent({ locale }: { locale: string }) {
   const cmsPage = (await fetchFaqPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? FAQ_PAGE_SEED;
+  const t = await getTranslations('pages.faq');
 
   const webPageSchema = getWebPageSchema({
     locale,
@@ -73,7 +76,7 @@ async function FaqContent({ locale }: { locale: string }) {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
               {(section.items ?? []).map((it: any, i: number) => (
-                <details key={i} className="is-card rounded-[20px] p-6 md:p-7">
+                <details key={i} className="is-card rounded-[20px] p-6 md:p-7 group">
                   <summary
                     className="cursor-pointer list-none flex items-start justify-between gap-4 text-[17px] md:text-[18px]"
                     style={{
@@ -87,7 +90,7 @@ async function FaqContent({ locale }: { locale: string }) {
                     <span>{it.q}</span>
                     <span
                       aria-hidden="true"
-                      className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full"
+                      className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full transition-transform group-open:rotate-45"
                       style={{
                         background: 'rgba(16,185,129,0.1)',
                         color: 'var(--color-emerald-ink)',
@@ -134,8 +137,8 @@ async function FaqContent({ locale }: { locale: string }) {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <Link href="/contact" className="btn-primary" style={{ fontFamily: 'var(--font-mono)' }}>
-            Open the form
+          <Link href={`/${locale}/contact`} className="btn-primary" style={{ fontFamily: 'var(--font-mono)' }}>
+            {t('openTheForm')}
             <span aria-hidden="true">→</span>
           </Link>
           <a
@@ -143,7 +146,7 @@ async function FaqContent({ locale }: { locale: string }) {
             className="btn-outline"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Email directly
+            {t('emailDirectly')}
           </a>
         </div>
       </section>
@@ -154,7 +157,7 @@ async function FaqContent({ locale }: { locale: string }) {
 export default async function FaqPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
-    <Suspense fallback={<div className="px-4 sm:px-6 md:px-8 lg:px-12 py-16 md:py-20 lg:py-[120px]">Loading...</div>}>
+    <Suspense fallback={<PageLoading />}>
       <FaqContent locale={locale} />
     </Suspense>
   );

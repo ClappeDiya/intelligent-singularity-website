@@ -1,16 +1,30 @@
 import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 import { FlagshipCard } from './FlagshipCard';
 import type { Product } from '@/types/cms';
 
 type Props = {
+  locale: string;
   title: string;
   lead: string;
   flagships: Product[];
   seeAllLine: string;
 };
 
-export function FlagshipsSection({ title, lead, flagships, seeAllLine }: Props) {
+const STATUS_KEY: Record<string, 'production' | 'staging' | 'awaitingApproval' | 'infrastructure'> = {
+  production: 'production',
+  staging: 'staging',
+  'awaiting-approval': 'awaitingApproval',
+  infrastructure: 'infrastructure',
+};
+
+export async function FlagshipsSection({ locale, title, lead, flagships, seeAllLine }: Props) {
   const [featured, ...rest] = flagships;
+  const tStatus = await getTranslations('status');
+  const labelFor = (s: string) => {
+    const k = STATUS_KEY[s];
+    return k ? tStatus(k) : s;
+  };
 
   return (
     <section id="flagships" className="px-4 sm:px-6 md:px-8 lg:px-12 py-2 md:py-4 lg:py-6">
@@ -21,9 +35,9 @@ export function FlagshipsSection({ title, lead, flagships, seeAllLine }: Props) 
           <p className="home-story-lead editorial-muted">{lead}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 mb-12">
-          {featured ? <FlagshipCard key={featured.slug} product={featured} index={0} featured /> : null}
+          {featured ? <FlagshipCard key={featured.slug} product={featured} index={0} featured statusLabel={labelFor(featured.productStatus)} /> : null}
           {rest.map((p, i) => (
-            <FlagshipCard key={p.slug} product={p} index={i + 1} />
+            <FlagshipCard key={p.slug} product={p} index={i + 1} statusLabel={labelFor(p.productStatus)} />
           ))}
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6" style={{ borderTop: '1px solid rgba(16,185,129,0.12)' }}>
@@ -31,7 +45,7 @@ export function FlagshipsSection({ title, lead, flagships, seeAllLine }: Props) 
             {seeAllLine}
           </p>
           <Link
-            href="/portfolio"
+            href={`/${locale}/portfolio`}
             className="inline-flex items-center gap-2 px-5 py-[10px] rounded-full text-[11.5px] uppercase font-semibold transition-all hover:-translate-y-0.5"
             style={{
               fontFamily: 'var(--font-mono)',

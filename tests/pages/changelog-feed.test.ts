@@ -7,6 +7,10 @@ vi.mock('@/lib/payload', () => ({
   ],
 }));
 
+vi.mock('next-intl/server', () => ({
+  getTranslations: async () => (key: string) => ({ feedTitle: 'Intelligent Singularity — Changelog' }[key] ?? key),
+}));
+
 describe('GET /changelog/feed.xml', () => {
   it('returns 200 with Atom XML body', async () => {
     const mod = await import('@/app/(public)/[locale]/changelog/feed.xml/route');

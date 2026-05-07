@@ -28,6 +28,9 @@ vi.mock('@/components/home/FlagshipsSection', () => ({ FlagshipsSection: () => n
 vi.mock('@/components/home/CommitmentsSection', () => ({ CommitmentsSection: () => null }));
 vi.mock('@/components/home/GreenStrip', () => ({ GreenStrip: () => null }));
 vi.mock('@/components/seo/JsonLd', () => ({ JsonLd: () => null }));
+vi.mock('next-intl/server', () => ({
+  getTranslations: async () => (key: string) => key,
+}));
 
 import { HomeContent } from '@/components/home/HomeContent';
 
