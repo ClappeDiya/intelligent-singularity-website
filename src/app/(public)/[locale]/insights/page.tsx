@@ -53,14 +53,14 @@ function FeatureCard({ post, locale, minutesRead, readMore }: { post: any; local
         {firstTag ? <TagChip label={firstTag} /> : null}
         <span
           className="text-[12px]"
-          style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}
         >
           {formatDate(post.publishedAt, locale)}
         </span>
         {post.readingTime ? (
           <span
             className="text-[12px]"
-            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}
           >
             {post.readingTime} {minutesRead}
           </span>
@@ -73,7 +73,7 @@ function FeatureCard({ post, locale, minutesRead, readMore }: { post: any; local
         {post.title}
       </h2>
       {post.subtitle ? (
-        <p className="text-[16px] leading-[1.65] max-w-[64ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>{post.subtitle}</p>
+        <p className="text-[16px] leading-[1.65] max-w-[64ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>{post.subtitle}</p>
       ) : null}
       <div
         className="mt-6 text-[12px] uppercase tracking-[0.18em]"
@@ -105,11 +105,11 @@ function PostCard({ post, locale, minutesRead }: { post: any; locale: string; mi
         {post.title}
       </h2>
       {post.subtitle ? (
-        <p className="text-[14px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.66)' }}>{post.subtitle}</p>
+        <p className="text-[14px] leading-[1.6]" style={{ color: 'var(--color-paper-ink-soft)' }}>{post.subtitle}</p>
       ) : null}
       <div
         className="mt-4 flex gap-3 text-[11px]"
-        style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
+        style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}
       >
         <span>{formatDate(post.publishedAt, locale)}</span>
         {post.readingTime ? <span>{post.readingTime} {minutesRead}</span> : null}
@@ -211,7 +211,7 @@ export default async function InsightsIndex({
               ) : null}
               <span
                 className="text-[13px]"
-                style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
+                style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}
               >
                 {currentPage} / {totalPages}
               </span>

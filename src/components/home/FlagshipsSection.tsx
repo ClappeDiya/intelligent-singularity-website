@@ -27,7 +27,11 @@ export async function FlagshipsSection({ locale, title, lead, flagships, seeAllL
   };
 
   return (
-    <section id="flagships" className="px-4 sm:px-6 md:px-8 lg:px-12 py-2 md:py-4 lg:py-6">
+    <section
+      id="flagships"
+      className="px-4 sm:px-6 md:px-8 lg:px-12 py-2 md:py-4 lg:py-6"
+      style={{ scrollMarginTop: '96px' }}
+    >
       <div className="home-story-panel">
         <div className="home-story-header mb-14">
           <div className="home-story-kicker">The Studio · 14 tools</div>
@@ -41,7 +45,7 @@ export async function FlagshipsSection({ locale, title, lead, flagships, seeAllL
           ))}
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6" style={{ borderTop: '1px solid rgba(16,185,129,0.12)' }}>
-          <p className="text-[15px] max-w-[52ch] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+          <p className="text-[15px] max-w-[52ch] leading-[1.7]" style={{ color: 'var(--color-paper-ink-soft)' }}>
             {seeAllLine}
           </p>
           <Link

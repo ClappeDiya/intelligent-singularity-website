@@ -44,7 +44,7 @@ export function ContactForm({ successMessage, errorMessage, privacyNote }: Props
 
   if (state === 'sent')
     return (
-      <p role="status" className="text-[var(--color-emerald-ink)] text-[18px]">
+      <p role="status" aria-live="polite" aria-atomic="true" className="text-[var(--color-emerald-ink)] text-[18px]">
         {successMessage}
       </p>
     );
@@ -119,11 +119,13 @@ export function ContactForm({ successMessage, errorMessage, privacyNote }: Props
           <>{t('sendButton')} <span aria-hidden="true">→</span></>
         )}
       </button>
-      {state === 'error' && (
-        <p role="alert" className="text-[#b04a3a]">
-          {errorMessage}
-        </p>
-      )}
+      <div aria-live="assertive" aria-atomic="true">
+        {state === 'error' && (
+          <p role="alert" className="text-[#b04a3a]">
+            {errorMessage}
+          </p>
+        )}
+      </div>
     </form>
   );
 }

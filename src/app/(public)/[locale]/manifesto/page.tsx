@@ -73,7 +73,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
             >
               {t('offlinePercentHeading')}
             </h2>
-            <p className="text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+            <p className="text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
               {t('offlinePercentBody')}
             </p>
           </div>
@@ -104,7 +104,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
             >
               {t('commitmentsHeading')}
             </h2>
-            <p className="mt-3 text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+            <p className="mt-3 text-[15px] leading-[1.7] max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
               {t('commitmentsBody')}
             </p>
           </div>
@@ -143,7 +143,7 @@ async function ManifestoContent({ locale }: { locale: string }) {
                 >
                   {c.title}
                 </h3>
-                <p className="text-[14.5px] leading-[1.78]" style={{ color: 'rgba(17,24,39,0.8)' }}>{c.body}</p>
+                <p className="text-[14.5px] leading-[1.78]" style={{ color: 'var(--color-paper-ink-muted)' }}>{c.body}</p>
               </div>
             </li>
           ))}

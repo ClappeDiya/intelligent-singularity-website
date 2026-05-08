@@ -48,6 +48,16 @@
   --color-rule: rgba(16, 185, 129, 0.12);
   --color-rule-light: rgba(17, 24, 39, 0.1);
 
+  /* Muted body-text tokens — fixed hex (no rgba/opacity) so axe can compute
+     a deterministic contrast ratio against any card or section background.
+     Three stops, all AA-passing on #ffffff:
+       --color-paper-ink-muted: gray-700, 10.7:1 (AAA) — body copy, replaces rgba(17,24,39, 0.78–0.80)
+       --color-paper-ink-soft : gray-600,  7.6:1 (AAA) — secondary/mono labels, replaces rgba(17,24,39, 0.66–0.72)
+       --color-paper-ink-faint: gray-500,  4.83:1 (AA) — small markers/numbering, replaces rgba(17,24,39, 0.45) */
+  --color-paper-ink-muted: #374151;
+  --color-paper-ink-soft: #4b5563;
+  --color-paper-ink-faint: #6b7280;
+
   /* ── Card / surface ──────────────────────────────────── */
   --color-card: #ffffff;
   --color-card-border: rgba(167, 243, 208, 0.45);

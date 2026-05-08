@@ -103,7 +103,7 @@ async function CareersContent({ locale }: { locale: string }) {
               >
                 {v.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+              <p className="text-[14.5px] leading-[1.75]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                 {v.body}
               </p>
             </div>
@@ -125,7 +125,7 @@ async function CareersContent({ locale }: { locale: string }) {
         >
           {t('whatYouWouldWorkOnHeading')}
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('whatYouWouldWorkOnLede')}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
@@ -143,7 +143,7 @@ async function CareersContent({ locale }: { locale: string }) {
               >
                 {p.name}
               </div>
-              <p className="text-[14px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+              <p className="text-[14px] leading-[1.6]" style={{ color: 'var(--color-paper-ink-soft)' }}>
                 {p.line}
               </p>
             </div>
@@ -165,7 +165,7 @@ async function CareersContent({ locale }: { locale: string }) {
         >
           {t('howWeHireHeading')}
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('howWeHireLede')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -174,7 +174,7 @@ async function CareersContent({ locale }: { locale: string }) {
               <div className="label-mono mb-2" style={{ color: 'var(--color-emerald-ink)' }}>
                 {p.stage}
               </div>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-soft)' }}>
                 {p.what}
               </p>
             </div>
@@ -211,7 +211,7 @@ async function CareersContent({ locale }: { locale: string }) {
             {t('updatedPrefix')} {new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date())}
           </div>
         </div>
-        <p className="text-[15.5px] leading-[1.75] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15.5px] leading-[1.75] max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {page.openings?.note}
         </p>
       </section>
@@ -239,7 +239,7 @@ async function CareersContent({ locale }: { locale: string }) {
           >
             {page.introduceYourself?.heading}
           </h3>
-          <p className="text-[14.5px] leading-[1.75] max-w-[52ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+          <p className="text-[14.5px] leading-[1.75] max-w-[52ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
             {page.introduceYourself?.body}
           </p>
         </div>

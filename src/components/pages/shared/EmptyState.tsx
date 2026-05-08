@@ -20,7 +20,7 @@ export function EmptyState({
       >
         {title}
       </h2>
-      <p className="text-[15px] leading-[1.7] max-w-[52ch] mx-auto" style={{ color: 'rgba(17,24,39,0.8)' }}>
+      <p className="text-[15px] leading-[1.7] max-w-[52ch] mx-auto" style={{ color: 'var(--color-paper-ink-muted)' }}>
         {body}
       </p>
       {href && linkText ? (

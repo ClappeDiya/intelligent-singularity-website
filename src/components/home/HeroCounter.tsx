@@ -33,7 +33,7 @@ export function HeroCounter({ locale, value, label, tagline, primaryCta, seconda
       />
       <div className="relative max-w-[1280px] mx-auto w-full">
         <div className="max-w-[980px] mx-auto text-center">
-          <div className="inline-flex items-center gap-2.5 mb-7 px-3 py-1.5 rounded-full"
+          <div className="hidden min-[420px]:inline-flex items-center gap-2.5 mb-7 px-3 py-1.5 rounded-full"
             style={{
               border: '1px solid rgba(16,185,129,0.2)',
               background: 'rgba(16,185,129,0.06)',

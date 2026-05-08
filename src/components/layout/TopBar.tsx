@@ -278,7 +278,7 @@ export function TopBar({ locale }: Props) {
             </div>
             <p
               className="text-[14px] leading-[1.7]"
-              style={{ color: isHomepage ? 'rgba(240,253,244,0.72)' : 'rgba(17,24,39,0.72)' }}
+              style={{ color: isHomepage ? 'rgba(240,253,244,0.72)' : 'var(--color-paper-ink-soft)' }}
             >
               {tBar('drawerLanguagesBlurb')}
             </p>

@@ -52,7 +52,7 @@ export default async function OfflinePage({
           fontFamily: 'var(--font-serif)',
           fontSize: 'clamp(17px, 1.6vw, 20px)',
           lineHeight: 1.55,
-          color: 'rgba(17,24,39,0.72)',
+          color: 'var(--color-paper-ink-soft)',
         }}
       >
         {t('offlineBody')}

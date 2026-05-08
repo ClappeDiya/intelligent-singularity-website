@@ -34,7 +34,7 @@ function StatCard({ label, value, hint, accent }: StatProps) {
       >
         {value}
       </div>
-      {hint ? <div className="text-[11px] leading-[1.5]" style={{ color: 'rgba(17,24,39,0.78)' }}>{hint}</div> : null}
+      {hint ? <div className="text-[11px] leading-[1.5]" style={{ color: 'var(--color-paper-ink-muted)' }}>{hint}</div> : null}
     </div>
   );
 }
@@ -142,7 +142,7 @@ async function GreenContent({ locale }: { locale: string }) {
               <h3 className="font-semibold mb-1.5" style={{ fontFamily: 'var(--font-serif)', fontSize: '18px', letterSpacing: '-0.015em', color: 'var(--color-paper-ink)', textWrap: 'balance' }}>
                 {t(`practices.${slug}.value` as 'practices.bundleBudget.value')}
               </h3>
-              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                 {t(`practices.${slug}.hint` as 'practices.bundleBudget.hint')}
               </p>
             </div>
@@ -174,7 +174,7 @@ async function GreenContent({ locale }: { locale: string }) {
           >
             {t('pledgeHeading')}
           </h2>
-          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-muted)' }}>
             {t('pledgeBody')}
           </p>
         </div>

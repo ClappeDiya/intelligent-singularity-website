@@ -94,7 +94,7 @@ export default async function RoadmapPage({
                 key={s.id}
                 className="text-[12px] uppercase tracking-[0.06em]"
                 style={{
-                  color: n > 0 ? 'var(--color-emerald-ink)' : 'rgba(17,24,39,0.78)',
+                  color: n > 0 ? 'var(--color-emerald-ink)' : 'var(--color-paper-ink-muted)',
                   fontWeight: n > 0 ? 600 : 500,
                 }}
               >
@@ -123,7 +123,7 @@ export default async function RoadmapPage({
                   <span
                     aria-hidden="true"
                     className="label-mono"
-                    style={{ color: 'rgba(17,24,39,0.78)', marginBottom: 0 }}
+                    style={{ color: 'var(--color-paper-ink-muted)', marginBottom: 0 }}
                   >
                     · {col.length}
                   </span>
@@ -132,7 +132,7 @@ export default async function RoadmapPage({
                 {col.length === 0 ? (
                   <p
                     className="text-[12.5px] leading-[1.55]"
-                    style={{ color: 'rgba(17,24,39,0.7)', fontFamily: 'var(--font-mono)' }}
+                    style={{ color: 'var(--color-paper-ink-soft)', fontFamily: 'var(--font-mono)' }}
                   >
                     {t('emptyColumn')}
                   </p>
@@ -157,7 +157,7 @@ export default async function RoadmapPage({
                         {item.summary && (
                           <p
                             className="text-[13px] leading-[1.6]"
-                            style={{ color: 'rgba(17,24,39,0.78)' }}
+                            style={{ color: 'var(--color-paper-ink-muted)' }}
                           >
                             {item.summary}
                           </p>
@@ -165,7 +165,7 @@ export default async function RoadmapPage({
                         {item.whyItMatters && (
                           <p
                             className="text-[12.5px] italic leading-[1.55]"
-                            style={{ color: 'rgba(17,24,39,0.72)', lineHeight: 1.6 }}
+                            style={{ color: 'var(--color-paper-ink-soft)', lineHeight: 1.6 }}
                           >
                             {item.whyItMatters}
                           </p>
@@ -221,7 +221,7 @@ export default async function RoadmapPage({
             >
               {t('ctaHeading')}
             </h2>
-            <p className="text-[14.5px] leading-[1.7] max-w-[54ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+            <p className="text-[14.5px] leading-[1.7] max-w-[54ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
               {t('ctaBody')}
             </p>
           </div>

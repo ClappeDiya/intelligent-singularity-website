@@ -41,7 +41,7 @@ export function CommitmentsSection({ title, lead, items, kicker, ariaLabel }: Pr
                   >
                     {c.title}
                   </h3>
-                  <p className="text-[15px] leading-[1.78]" style={{ color: 'rgba(17,24,39,0.8)' }}>{c.body}</p>
+                  <p className="text-[15px] leading-[1.78]" style={{ color: 'var(--color-paper-ink-muted)' }}>{c.body}</p>
                 </div>
               </article>
             </li>
