@@ -101,7 +101,7 @@ async function FaqContent({ locale }: { locale: string }) {
                       +
                     </span>
                   </summary>
-                  <p className="mt-4 text-[15px] leading-[1.78]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+                  <p className="mt-4 text-[15px] leading-[1.78]" style={{ color: 'var(--color-paper-ink-soft)' }}>
                     {it.a}
                   </p>
                 </details>
@@ -132,7 +132,7 @@ async function FaqContent({ locale }: { locale: string }) {
           >
             {page.stillStuckCta?.heading}
           </h3>
-          <p className="text-[15px] leading-[1.7] max-w-[50ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+          <p className="text-[15px] leading-[1.7] max-w-[50ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
             {page.stillStuckCta?.body}
           </p>
         </div>

@@ -74,11 +74,11 @@ async function PricingContent({ locale }: { locale: string }) {
             >
               {page.whyThisExists?.heading}
             </h2>
-            <p className="text-[15.5px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+            <p className="text-[15.5px] leading-[1.75]" style={{ color: 'var(--color-paper-ink-soft)' }}>
               {page.whyThisExists?.body}
             </p>
           </div>
-          <div className="flex flex-col gap-4 text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+          <div className="flex flex-col gap-4 text-[14.5px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-soft)' }}>
             <p>
               <strong style={{ color: 'var(--color-emerald-ink)' }}>{t('tierFree')}</strong>{' '}
               {page.whyThisExists?.freeTierLine?.replace(/^Free tier — /i, '')}
@@ -138,7 +138,7 @@ async function PricingContent({ locale }: { locale: string }) {
                 >
                   {p.title}
                 </h3>
-                <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+                <p className="text-[14.5px] leading-[1.72]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                   {p.body}
                 </p>
               </div>
@@ -161,7 +161,7 @@ async function PricingContent({ locale }: { locale: string }) {
         >
           {t('antiPatternsHeading')}
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('antiPatternsBody')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -185,7 +185,7 @@ async function PricingContent({ locale }: { locale: string }) {
               >
                 {a.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+              <p className="text-[14.5px] leading-[1.72]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                 {a.body}
               </p>
             </div>
@@ -207,7 +207,7 @@ async function PricingContent({ locale }: { locale: string }) {
         >
           {t('workedExampleHeading')}
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('workedExampleBody')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
@@ -228,10 +228,10 @@ async function PricingContent({ locale }: { locale: string }) {
               >
                 {row.who}
               </h3>
-              <p className="text-[14px] leading-[1.7] mb-3" style={{ color: 'rgba(17,24,39,0.72)' }}>
+              <p className="text-[14px] leading-[1.7] mb-3" style={{ color: 'var(--color-paper-ink-soft)' }}>
                 {row.what}
               </p>
-              <p className="text-[13px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.72)', fontStyle: 'italic' }}>
+              <p className="text-[13px] leading-[1.6]" style={{ color: 'var(--color-paper-ink-soft)', fontStyle: 'italic' }}>
                 {row.note}
               </p>
             </div>
@@ -260,7 +260,7 @@ async function PricingContent({ locale }: { locale: string }) {
           >
             {page.seePricesCta?.heading}
           </h3>
-          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+          <p className="text-[14.5px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-muted)' }}>
             {page.seePricesCta?.body}
           </p>
         </div>

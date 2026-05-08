@@ -61,7 +61,7 @@ export function FlagshipCard({
         </div>
         <div
           className={`${featured ? 'text-[16px] max-w-[52ch]' : 'text-[14.5px] max-w-[38ch]'} leading-[1.72]`}
-          style={{ color: featured ? 'rgba(240,253,244,0.72)' : 'rgba(17,24,39,0.8)' }}
+          style={{ color: featured ? 'rgba(240,253,244,0.72)' : 'var(--color-paper-ink-muted)' }}
         >
           {product.shortDescription}
         </div>
@@ -70,7 +70,7 @@ export function FlagshipCard({
             className="text-[13px] mt-4"
             style={{
               fontFamily: 'var(--font-mono)',
-              color: featured ? 'rgba(240,253,244,0.7)' : 'rgba(17,24,39,0.8)',
+              color: featured ? 'rgba(240,253,244,0.7)' : 'var(--color-paper-ink-muted)',
             }}
           >
             Ships live as <strong style={{ color: accentColor }}>{product.publicName}</strong>
@@ -83,7 +83,7 @@ export function FlagshipCard({
           style={{
             fontFamily: 'var(--font-mono)',
             fontWeight: 500,
-            color: featured ? 'rgba(240,253,244,0.65)' : 'rgba(17,24,39,0.72)',
+            color: featured ? 'rgba(240,253,244,0.65)' : 'var(--color-paper-ink-soft)',
           }}
         >
           {categoryName}

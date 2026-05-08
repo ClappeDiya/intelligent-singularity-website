@@ -125,13 +125,13 @@ async function PressContent({ locale }: { locale: string }) {
         <h2 id="kit-heading" className="sr-only">{t('brandAssetsHeading')}</h2>
         <div className="is-card rounded-[22px] p-7 md:p-8 flex flex-col gap-4">
           <div className="label-mono">{t('brandNameLabel')}</div>
-          <p className="text-[15px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+          <p className="text-[15px] leading-[1.75]" style={{ color: 'var(--color-paper-ink-soft)' }}>
             {page.brandGuidance?.brandName}
           </p>
         </div>
         <div className="is-card rounded-[22px] p-7 md:p-8 flex flex-col gap-4">
           <div className="label-mono">{t('founderReferenceLabel')}</div>
-          <p className="text-[15px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.72)' }}>
+          <p className="text-[15px] leading-[1.75]" style={{ color: 'var(--color-paper-ink-soft)' }}>
             {page.brandGuidance?.founderReference}
           </p>
         </div>
@@ -151,7 +151,7 @@ async function PressContent({ locale }: { locale: string }) {
         >
           {t('pressBoilerplateHeading')}
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('boilerplateLede')}
         </p>
         <div
@@ -178,7 +178,7 @@ async function PressContent({ locale }: { locale: string }) {
         >
           {t('storyAnglesWelcomedHeading')}
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('storyAnglesYesLede')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -198,7 +198,7 @@ async function PressContent({ locale }: { locale: string }) {
               >
                 {a.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                 {a.body}
               </p>
             </div>
@@ -220,7 +220,7 @@ async function PressContent({ locale }: { locale: string }) {
         >
           {t('storyAnglesDeclineHeading')}
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('storyAnglesNoLede')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
@@ -240,7 +240,7 @@ async function PressContent({ locale }: { locale: string }) {
               >
                 {a.title}
               </h3>
-              <p className="text-[14px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+              <p className="text-[14px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                 {a.body}
               </p>
             </div>

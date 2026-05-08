@@ -26,7 +26,7 @@ export default async function NotFound() {
       <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(34px, 5vw, 56px)', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: '1rem', textWrap: 'balance' }}>
         {t('notFoundTitle')}
       </h1>
-      <p style={{ fontSize: '17px', lineHeight: 1.65, color: 'rgba(17,24,39,0.78)', maxWidth: '54ch', marginBottom: '2rem' }}>
+      <p style={{ fontSize: '17px', lineHeight: 1.65, color: 'var(--color-paper-ink-muted)', maxWidth: '54ch', marginBottom: '2rem' }}>
         {t('notFoundBody')}
       </p>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', justifyContent: 'center' }}>

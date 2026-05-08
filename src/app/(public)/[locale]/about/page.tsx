@@ -72,7 +72,7 @@ async function AboutContent({ locale }: { locale: string }) {
           <LexicalRenderer content={about.founderStory} className="editorial-richtext mb-10" />
           <p
             className="text-[15px] leading-[1.9] mb-10 max-w-[60ch]"
-            style={{ color: 'rgba(17,24,39,0.72)' }}
+            style={{ color: 'var(--color-paper-ink-soft)' }}
           >
             {about.incorporationContext}
           </p>
@@ -115,7 +115,7 @@ async function AboutContent({ locale }: { locale: string }) {
                 <div key={key} className="transition-colors hover:bg-[rgba(16,185,129,0.03)] -mx-2 px-2 py-1 rounded-lg">
                   <dt
                     className="text-[10px] uppercase tracking-[0.1em] mb-1.5"
-                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
+                    style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}
                   >
                     {t(`metaLabels.${key}` as 'metaLabels.legalEntity')}
                   </dt>
@@ -134,7 +134,7 @@ async function AboutContent({ locale }: { locale: string }) {
             }}
           >
             <div className="label-mono mb-3">{t('talkToStudioLabel')}</div>
-            <p className="text-[14.5px] leading-[1.72] mb-5" style={{ color: 'rgba(17,24,39,0.78)' }}>
+            <p className="text-[14.5px] leading-[1.72] mb-5" style={{ color: 'var(--color-paper-ink-muted)' }}>
               {t('talkToStudioBody')}
             </p>
             <Link

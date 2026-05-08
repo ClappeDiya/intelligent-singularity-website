@@ -82,7 +82,7 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
         </p>
         <p
           className="text-[12.5px]"
-          style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}
         >
           {data
             ? <>{t('updatedPrefix')} <time dateTime={data.fetchedAt}>{new Date(data.fetchedAt).toISOString().replace('T', ' ').slice(0, 16)}Z</time></>
@@ -91,7 +91,7 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
       </section>
 
       {!data ? (
-        <p className="mb-10 text-[14px]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="mb-10 text-[14px]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('connectionFailed')}
         </p>
       ) : (
@@ -125,7 +125,7 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
       )}
 
       {settings.operationalCopy ? (
-        <p className="max-w-[60ch] text-[14.5px] leading-[1.75] mb-12" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="max-w-[60ch] text-[14.5px] leading-[1.75] mb-12" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {settings.operationalCopy}
         </p>
       ) : null}

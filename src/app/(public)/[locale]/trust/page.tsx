@@ -119,7 +119,7 @@ export default async function TrustPage({
                     {p.heading}
                   </h3>
                   {p.blurb && (
-                    <p className="text-[14.5px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+                    <p className="text-[14.5px] leading-[1.75]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                       {p.blurb}
                     </p>
                   )}
@@ -150,7 +150,7 @@ export default async function TrustPage({
         {subprocessors.length > 0 && (
           <section aria-labelledby="subprocessors-heading" className="mb-16">
             <SectionHeading id="subprocessors-heading">{tTrust('subprocessorsHeading')}</SectionHeading>
-            <p className="text-[14.5px] leading-[1.75] mb-6 max-w-[72ch]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+            <p className="text-[14.5px] leading-[1.75] mb-6 max-w-[72ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
               {tTrust('subprocessorsLede')}
             </p>
             <div className="overflow-x-auto rounded-[16px]" style={{ border: '1px solid rgba(16,185,129,0.15)' }}>
@@ -190,9 +190,9 @@ export default async function TrustPage({
                           sp.name
                         )}
                       </td>
-                      <td className="px-4 py-3" style={{ color: 'rgba(17,24,39,0.78)' }}>{sp.purpose}</td>
-                      <td className="px-4 py-3" style={{ color: 'rgba(17,24,39,0.78)' }}>{sp.dataAccessed}</td>
-                      <td className="px-4 py-3" style={{ color: 'rgba(17,24,39,0.78)' }}>{sp.location}</td>
+                      <td className="px-4 py-3" style={{ color: 'var(--color-paper-ink-muted)' }}>{sp.purpose}</td>
+                      <td className="px-4 py-3" style={{ color: 'var(--color-paper-ink-muted)' }}>{sp.dataAccessed}</td>
+                      <td className="px-4 py-3" style={{ color: 'var(--color-paper-ink-muted)' }}>{sp.location}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -276,7 +276,7 @@ export default async function TrustPage({
 
         {/* Last reviewed */}
         {reviewDate && (
-          <p className="text-[12.5px]" style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}>
+          <p className="text-[12.5px]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}>
             {tTrust('lastReviewedLabel')} <time dateTime={lastReviewedAt}>{reviewDate}</time>
           </p>
         )}

@@ -69,7 +69,7 @@ async function ContactContent({ locale }: { locale: string }) {
                 <li key={c.slug}>
                   <div
                     className="text-[10px] uppercase tracking-[0.1em] mb-1.5"
-                    style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
+                    style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}
                   >
                     {t(`channels.${c.slug}.label`)}
                   </div>
@@ -79,7 +79,7 @@ async function ContactContent({ locale }: { locale: string }) {
                   >
                     {c.email}
                   </a>
-                  <p className="text-[13px] leading-[1.6] mt-1.5" style={{ color: 'rgba(17,24,39,0.78)' }}>
+                  <p className="text-[13px] leading-[1.6] mt-1.5" style={{ color: 'var(--color-paper-ink-muted)' }}>
                     {t(`channels.${c.slug}.hint`)}
                   </p>
                 </li>
@@ -97,7 +97,7 @@ async function ContactContent({ locale }: { locale: string }) {
             <div className="label-mono mb-3">
               {t('responseTimeLabel')}
             </div>
-            <p className="text-[14px] leading-[1.75]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+            <p className="text-[14px] leading-[1.75]" style={{ color: 'var(--color-paper-ink-muted)' }}>
               {t('responseTimeBody')}
             </p>
           </div>
@@ -107,7 +107,7 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>{t('factHqLabel')}</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'var(--color-paper-ink-soft)', fontFamily: 'var(--font-mono)' }}>{t('factHqLabel')}</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 {t('factHqLine1')}
                 <br />
@@ -118,7 +118,7 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>{t('factPrivacyLabel')}</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'var(--color-paper-ink-soft)', fontFamily: 'var(--font-mono)' }}>{t('factPrivacyLabel')}</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 {t('factPrivacyLine1')}
                 <br />
@@ -129,7 +129,7 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>{t('factLanguagesLabel')}</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'var(--color-paper-ink-soft)', fontFamily: 'var(--font-mono)' }}>{t('factLanguagesLabel')}</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 {t('factLanguagesLine1')}
                 <br />
@@ -140,7 +140,7 @@ async function ContactContent({ locale }: { locale: string }) {
               className="rounded-2xl p-5"
               style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
             >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'rgba(17,24,39,0.72)', fontFamily: 'var(--font-mono)' }}>{t('factHostingLabel')}</div>
+              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'var(--color-paper-ink-soft)', fontFamily: 'var(--font-mono)' }}>{t('factHostingLabel')}</div>
               <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
                 {t('factHostingLine1')}
                 <br />

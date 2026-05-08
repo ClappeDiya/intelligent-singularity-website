@@ -188,7 +188,7 @@ export default async function HelpPageRoute({
                   </summary>
                   <div
                     className="px-6 pb-5 text-[14px] leading-[1.7]"
-                    style={{ color: 'rgba(17,24,39,0.8)' }}
+                    style={{ color: 'var(--color-paper-ink-muted)' }}
                   >
                     {item.answer}
                   </div>

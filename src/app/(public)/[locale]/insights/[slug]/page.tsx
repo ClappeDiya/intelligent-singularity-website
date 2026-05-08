@@ -59,7 +59,7 @@ export default async function PostPage({
   };
 
   return (
-    <div className="page-shell">
+    <article className="page-shell">
       <JsonLd
         id={`post-schema-${slug}-${locale}`}
         data={getWebPageSchema({
@@ -96,13 +96,13 @@ export default async function PostPage({
             {post.title}
           </h1>
           {post.subtitle ? (
-            <p className="mt-4 text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.78)' }}>
+            <p className="mt-4 text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.7]" style={{ color: 'var(--color-paper-ink-muted)' }}>
               {post.subtitle}
             </p>
           ) : null}
           <div
             className="mt-6 flex flex-wrap gap-x-4 gap-y-1 text-[12px]"
-            style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.72)' }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)' }}
           >
             {post.author?.name ? <span>{post.author.name}</span> : null}
             {post.publishedAt ? <span>{formatDate(post.publishedAt, locale)}</span> : null}
@@ -127,7 +127,7 @@ export default async function PostPage({
                   <li key={i} className="flex gap-3 text-[14px]">
                     <span
                       className="shrink-0 text-[11px] pt-[3px]"
-                      style={{ fontFamily: 'var(--font-mono)', color: 'rgba(17,24,39,0.45)' }}
+                      style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-faint)' }}
                     >
                       [{i + 1}]
                     </span>
@@ -136,7 +136,7 @@ export default async function PostPage({
                       target="_blank"
                       rel="noreferrer external"
                       className="underline underline-offset-2 transition-colors hover:text-[var(--color-emerald-ink)]"
-                      style={{ color: 'rgba(17,24,39,0.78)' }}
+                      style={{ color: 'var(--color-paper-ink-muted)' }}
                     >
                       {s.label}
                       <span className="sr-only"> (opens in a new tab)</span>
@@ -158,6 +158,6 @@ export default async function PostPage({
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

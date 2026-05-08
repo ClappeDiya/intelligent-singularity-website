@@ -80,7 +80,7 @@ async function SecurityContent({ locale }: { locale: string }) {
           >
             {page.postureSummary?.heading}
           </h2>
-          <p className="text-[14.5px] leading-[1.7] max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+          <p className="text-[14.5px] leading-[1.7] max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
             {page.postureSummary?.body}
           </p>
         </div>
@@ -96,7 +96,7 @@ async function SecurityContent({ locale }: { locale: string }) {
             >
               {s.value}
             </div>
-            <div className="text-[13.5px] leading-[1.6]" style={{ color: 'rgba(17,24,39,0.78)' }}>{s.hint}</div>
+            <div className="text-[13.5px] leading-[1.6]" style={{ color: 'var(--color-paper-ink-muted)' }}>{s.hint}</div>
           </div>
         ))}
       </section>
@@ -132,7 +132,7 @@ async function SecurityContent({ locale }: { locale: string }) {
               >
                 {p.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                 {p.body}
               </p>
             </div>
@@ -171,7 +171,7 @@ async function SecurityContent({ locale }: { locale: string }) {
               >
                 {p.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                 {p.body}
               </p>
             </div>
@@ -193,7 +193,7 @@ async function SecurityContent({ locale }: { locale: string }) {
         >
           {t('complianceHeading')}
         </h2>
-        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+        <p className="text-[15px] leading-[1.7] mb-6 max-w-[60ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
           {t('complianceLede')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -213,7 +213,7 @@ async function SecurityContent({ locale }: { locale: string }) {
               >
                 {c.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'rgba(17,24,39,0.8)' }}>
+              <p className="text-[14.5px] leading-[1.7]" style={{ color: 'var(--color-paper-ink-muted)' }}>
                 {c.body}
               </p>
             </div>

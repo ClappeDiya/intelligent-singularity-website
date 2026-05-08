@@ -27,7 +27,7 @@ function FactCard({ number, caption, comparison, accent }: FactCardProps) {
         >
           {number}
         </div>
-        <div className="text-[15.5px] leading-[1.72] text-[rgba(17,24,39,0.72)] max-w-[34ch]">{caption}</div>
+        <div className="text-[15.5px] leading-[1.72] max-w-[34ch]" style={{ color: 'var(--color-paper-ink-soft)' }}>{caption}</div>
       </div>
       <div
         className="mt-6 flex items-center justify-between gap-4 pt-5"
@@ -41,8 +41,8 @@ function FactCard({ number, caption, comparison, accent }: FactCardProps) {
         </div>
         {comparison ? (
           <div
-            className="text-[11px] uppercase text-right text-[rgba(17,24,39,0.78)] tracking-[0.06em]"
-            style={{ fontFamily: 'var(--font-mono)' }}
+            className="text-[11px] uppercase text-right tracking-[0.06em]"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-muted)' }}
           >
             {comparison}
           </div>
@@ -117,8 +117,8 @@ export function FactsSection({ title, lead, itu }: Props) {
           />
         </div>
         <div
-          className="mt-12 pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-[13px] text-[rgba(17,24,39,0.78)]"
-          style={{ borderTop: '1px solid rgba(16,185,129,0.12)', fontFamily: 'var(--font-mono)' }}
+          className="mt-12 pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-[13px]"
+          style={{ borderTop: '1px solid rgba(16,185,129,0.12)', fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-muted)' }}
         >
           <span className="uppercase text-[var(--color-emerald-ink)] tracking-[0.08em]" style={{ fontWeight: 600 }}>Source</span>
           <span className="uppercase">{itu.sourceLabel}</span>
