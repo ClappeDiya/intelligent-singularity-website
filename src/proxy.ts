@@ -4,6 +4,11 @@ import { NextResponse } from 'next/server';
 import { routing } from '@/i18n/routing';
 
 const intlMiddleware = createIntlMiddleware(routing);
+const HONEYPOT_PATHS = new Set(['/admin-login', '/wp-admin', '/phpmyadmin']);
+
+function isAdminPath(pathname: string): boolean {
+  return pathname === '/admin' || pathname.startsWith('/admin/');
+}
 
 function generateNonce(): string {
   const array = new Uint8Array(16);
@@ -15,8 +20,14 @@ export default function proxy(request: NextRequest) {
   const url = request.nextUrl;
   const host = request.headers.get('host') ?? '';
 
+  if (HONEYPOT_PATHS.has(url.pathname)) {
+    const response = NextResponse.next();
+    applySecurityHeaders(response);
+    return response;
+  }
+
   // Admin lockdown
-  if (url.pathname.startsWith('/admin') && !host.startsWith('admin.')) {
+  if (isAdminPath(url.pathname) && !host.startsWith('admin.')) {
     return NextResponse.redirect(new URL('/', `https://${host}`));
   }
   if (host.startsWith('admin.')) {
@@ -34,7 +45,7 @@ export default function proxy(request: NextRequest) {
   }
 
   // Skip intl middleware for admin/api routes
-  if (url.pathname.startsWith('/admin') || url.pathname.startsWith('/api')) {
+  if (isAdminPath(url.pathname) || url.pathname.startsWith('/api')) {
     const response = NextResponse.next();
     applySecurityHeaders(response);
     return response;
