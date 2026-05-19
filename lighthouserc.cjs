@@ -7,7 +7,6 @@ module.exports = {
         'https://intelligentsingularityinc.com/en/status',
         'https://intelligentsingularityinc.com/en/roadmap',
         'https://intelligentsingularityinc.com/en/insights',
-        'https://intelligentsingularityinc.com/en/insights/the-2-2-billion-gap',
         'https://intelligentsingularityinc.com/en/trust',
         'https://intelligentsingularityinc.com/en/help',
       ],

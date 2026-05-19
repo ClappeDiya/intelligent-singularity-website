@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import { formatCarbon } from '@/lib/carbon';
 
 type Props = { pageBytes: number; carbonGrams: number };
@@ -24,7 +25,7 @@ function Stat({ label, value, unit, hint }: StatProps) {
         {value}
         {unit && (
           <span
-            className="text-[0.4em] align-super ml-0.5"
+            className="text-[0.4em] align-super ms-0.5"
             style={{ color: 'var(--color-emerald)' }}
           >
             {unit}
@@ -40,7 +41,8 @@ function Stat({ label, value, unit, hint }: StatProps) {
   );
 }
 
-export function GreenStrip({ pageBytes, carbonGrams }: Props) {
+export async function GreenStrip({ pageBytes, carbonGrams }: Props) {
+  const t = await getTranslations('pages.home.greenStrip');
   const kb = (pageBytes / 1024).toFixed(1);
   return (
     <div
@@ -56,25 +58,23 @@ export function GreenStrip({ pageBytes, carbonGrams }: Props) {
             className="text-[10.5px] uppercase tracking-[0.12em] mb-4 text-[var(--color-emerald)]"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Live Carbon Receipt
+            {t('eyebrow')}
           </div>
           <div
             className="font-semibold tracking-[-0.035em] leading-[1.05] text-[var(--color-cream)] mb-4"
             style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(28px, 3.4vw, 44px)' }}
           >
-            Every visit leaves an energy footprint. This is ours.
+            {t('heading')}
           </div>
           <p className="text-[15px] leading-[1.8] text-[var(--color-cream-soft)] max-w-[48ch]">
-            We measure page weight in kilobytes and embodied carbon in grams. Both stay radically
-            small because we send nothing we do not need — no fonts from CDNs, no trackers, no
-            hidden scripts calling home.
+            {t('body')}
           </p>
         </div>
         <div className="grid grid-cols-2 gap-x-8 gap-y-8">
-          <Stat label="This page weighs" value={`${kb} KB`} hint="Budget: under 50 KB per route, gzip" />
-          <Stat label="Your visit emitted" value={formatCarbon(carbonGrams)} hint="Computed with the Green Web Foundation model" />
-          <Stat label="Our hosting" value="Self-hosted" hint="Single VPS · no CDN · Alberta grid" />
-          <Stat label="Third-party calls" value="Zero" hint="No CDNs, fonts, analytics, pixels" />
+          <Stat label={t('pageWeightLabel')} value={`${kb} ${t('pageWeightUnit')}`} hint={t('pageWeightHint')} />
+          <Stat label={t('carbonLabel')} value={formatCarbon(carbonGrams)} hint={t('carbonHint')} />
+          <Stat label={t('hostingLabel')} value={t('hostingValue')} hint={t('hostingHint')} />
+          <Stat label={t('thirdPartyLabel')} value={t('thirdPartyValue')} hint={t('thirdPartyHint')} />
         </div>
       </div>
     </div>

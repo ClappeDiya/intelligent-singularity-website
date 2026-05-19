@@ -20,7 +20,7 @@ const fieldStyle: React.CSSProperties = {
 };
 
 const RequiredMark = () => (
-  <span aria-hidden="true" className="text-[var(--color-emerald-ink)] ml-0.5">*</span>
+  <span aria-hidden="true" className="text-[var(--color-emerald-ink)] ms-0.5">*</span>
 );
 
 export function ContactForm({ successMessage, errorMessage, privacyNote }: Props) {
@@ -102,7 +102,7 @@ export function ContactForm({ successMessage, errorMessage, privacyNote }: Props
           </span>
           <textarea name="body" required aria-required="true" aria-describedby="contact-privacy-note" rows={8} className={fieldClass} style={fieldStyle} />
         </label>
-        <p id="contact-privacy-note" className="text-[13.5px] text-[rgba(20,20,19,0.66)] leading-[1.65]">{privacyNote}</p>
+        <p id="contact-privacy-note" className="text-[13.5px] text-[var(--color-paper-ink-muted)] leading-[1.65]">{privacyNote}</p>
       </div>
       <button
         type="submit"

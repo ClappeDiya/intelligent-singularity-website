@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { ContactForm } from '@/components/pages/ContactForm';
@@ -22,19 +20,19 @@ const CHANNEL_SLUGS = [
 async function ContactContent({ locale }: { locale: string }) {
   const contact = await fetchContactPage(locale);
   const t = await getTranslations('pages.contact');
+  const tCommon = await getTranslations('common');
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/contact',
-    name: 'Contact | Intelligent Singularity',
-    description:
-      'Contact Intelligent Singularity for partnerships, press, legal, or product inquiries about our universal-access software ecosystem.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
     type: 'ContactPage',
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Contact', pathname: '/contact' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/contact' },
     ],
   });
   return (
@@ -47,7 +45,7 @@ async function ContactContent({ locale }: { locale: string }) {
 
       <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_.9fr] gap-12 lg:gap-20">
         <section aria-labelledby="contact-form-heading">
-          <h2 id="contact-form-heading" className="sr-only">Contact form</h2>
+          <h2 id="contact-form-heading" className="sr-only">{t('formHeading')}</h2>
           <ContactForm
             successMessage={contact.successMessage}
             errorMessage={contact.errorMessage}
@@ -160,20 +158,16 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.contact' });
   return buildPageMetadata({
     locale,
     pathname: '/contact',
-    title: 'Contact | Intelligent Singularity',
-    description:
-      'Contact Intelligent Singularity for partnerships, press, legal, or product inquiries about our universal-access software ecosystem.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <ContactContent locale={locale} />
-    </Suspense>
-  );
+  return <ContactContent locale={locale} />;
 }

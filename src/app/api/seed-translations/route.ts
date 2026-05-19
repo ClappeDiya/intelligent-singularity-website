@@ -1,6 +1,6 @@
 import { getPayload } from 'payload';
 import config from '@payload-config';
-import { textToParagraph } from '@/lib/seed/translations/lexical-helper';
+import { textToParagraph, textToParagraphs } from '@/lib/seed/translations/lexical-helper';
 import type { LocaleTranslation } from '@/lib/seed/translations/types';
 
 import { TRANSLATION as zhCN } from '@/lib/seed/translations/zh-CN';
@@ -129,6 +129,18 @@ export async function POST(request: Request) {
       privacyNote: t.contact.privacyNote,
       successMessage: t.contact.successMessage,
       errorMessage: t.contact.errorMessage,
+    },
+  } as any).then(() => {}), log);
+
+  // trust-page: only the two free-form richText paragraphs are localized here.
+  // eyebrow/title/lede/pillars are handled by seedNewPagesTranslations so the
+  // public /trust page stays consistent across the two seed paths.
+  await safeUpdate('trust-page', () => payload.updateGlobal({
+    slug: 'trust-page',
+    locale,
+    data: {
+      dataResidency: textToParagraphs(t.trust.dataResidencyText, dir),
+      reportIncident: textToParagraphs(t.trust.reportIncidentText, dir),
     },
   } as any).then(() => {}), log);
 

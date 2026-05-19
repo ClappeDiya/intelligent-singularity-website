@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
@@ -28,19 +26,19 @@ async function FaqContent({ locale }: { locale: string }) {
   const cmsPage = (await fetchFaqPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? FAQ_PAGE_SEED;
   const t = await getTranslations('pages.faq');
+  const tCommon = await getTranslations('common');
 
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/faq',
-    name: 'FAQ | Intelligent Singularity',
-    description:
-      'Honest answers about the studio, our products, privacy practices, and how to partner with Intelligent Singularity.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'FAQ', pathname: '/faq' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/faq' },
     ],
   });
 
@@ -112,7 +110,7 @@ async function FaqContent({ locale }: { locale: string }) {
       </div>
 
       <section
-        className="mt-20 rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10"
+        className="mt-20 rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center gap-6 md:gap-10"
         style={{
           border: '1px solid rgba(16,185,129,0.18)',
           background: 'linear-gradient(135deg, rgba(16,185,129,0.06), rgba(20,184,166,0.04))',
@@ -156,9 +154,5 @@ async function FaqContent({ locale }: { locale: string }) {
 
 export default async function FaqPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <FaqContent locale={locale} />
-    </Suspense>
-  );
+  return <FaqContent locale={locale} />;
 }

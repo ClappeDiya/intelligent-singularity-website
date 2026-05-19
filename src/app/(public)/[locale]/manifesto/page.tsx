@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { fetchManifesto, fetchCommitments, fetchITUData } from '@/lib/payload';
@@ -17,18 +15,18 @@ async function ManifestoContent({ locale }: { locale: string }) {
     fetchITUData(locale),
   ]);
   const t = await getTranslations('pages.manifesto');
+  const tCommon = await getTranslations('common');
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/manifesto',
-    name: 'Manifesto | Intelligent Singularity',
-    description:
-      'Read our manifesto on making enterprise-grade software a basic right for every business and person, online or offline.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Manifesto', pathname: '/manifesto' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/manifesto' },
     ],
   });
 
@@ -54,7 +52,11 @@ async function ManifestoContent({ locale }: { locale: string }) {
       >
         <div className="flex flex-col md:flex-row md:items-center md:gap-10">
           <div className="shrink-0 mb-6 md:mb-0">
-            <OfflineGlobe size={220} />
+            <OfflineGlobe
+              size={220}
+              svgTitle={t('globeSvgTitle')}
+              ariaLabel={t('globeAriaLabel')}
+            />
           </div>
           <div className="flex-1">
             <div className="label-mono mb-2">{t('offlinePercentEyebrow')}</div>
@@ -109,7 +111,12 @@ async function ManifestoContent({ locale }: { locale: string }) {
             </p>
           </div>
           <div className="hidden md:block shrink-0" style={{ width: 200 }}>
-            <PledgeRings count={commitments.length || 9} size={200} />
+            <PledgeRings
+              count={commitments.length || 9}
+              size={200}
+              svgTitle={t('ringsSvgTitle')}
+              ariaLabel={t('ringsAriaLabelTemplate', { count: commitments.length || 9 })}
+            />
           </div>
         </div>
         <ol className="flex flex-col gap-5">
@@ -171,20 +178,16 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.manifesto' });
   return buildPageMetadata({
     locale,
     pathname: '/manifesto',
-    title: 'Manifesto | Intelligent Singularity',
-    description:
-      'Read our manifesto on making enterprise-grade software a basic right for every business and person, online or offline.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
 export default async function ManifestoPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <ManifestoContent locale={locale} />
-    </Suspense>
-  );
+  return <ManifestoContent locale={locale} />;
 }

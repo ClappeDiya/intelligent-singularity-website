@@ -1,23 +1,27 @@
 #!/usr/bin/env bash
 # =============================================================================
-# IS Website -- One-shot Production Deploy
-# Pattern: build on Dokploy host (faster than M-series + better network),
-# push to GHCR, then `docker service update` swarm rollout with rollback.
+# IS Website -- One-shot Production Deploy (compose-based on Dokploy host)
+# Pattern: build on Dokploy host, push to GHCR, redeploy via `docker compose
+# pull && up -d` using the stack at $REMOTE_PROJECT_DIR. The app's swarm
+# membership (overlay attach via dokploy-network labels) is preserved across
+# redeploys because compose recreates only the app container.
 #
 # Usage:
-#   IS_VPS_PASS='<password>' ./scripts/deploy-prod.sh
+#   ./scripts/deploy-prod.sh
 #
 # Prereqs:
-#   - sshpass installed locally (brew install sshpass)
+#   - SSH key at ${IS_VPS_KEY} (default ~/.ssh/id_ed25519) authorized for mddiya@vps
 #   - Dokploy host (184.70.179.66) already has GHCR creds in ~/.docker/config.json
+#   - Stack already bootstrapped at ${REMOTE_PROJECT_DIR} with .env populated
 #   - Working tree clean (or you confirm the dirty-tree prompt)
 # =============================================================================
 set -euo pipefail
 
 VPS_HOST="${IS_VPS_HOST:-184.70.179.66}"
-VPS_USER="${IS_VPS_USER:-md}"
-VPS_PASS="${IS_VPS_PASS:?Set IS_VPS_PASS env var}"
-SERVICE_NAME="${IS_SERVICE_NAME:-is-website-gbydeh}"
+VPS_PORT="${IS_VPS_PORT:-22022}"
+VPS_USER="${IS_VPS_USER:-mddiya}"
+VPS_KEY="${IS_VPS_KEY:-${HOME}/.ssh/id_ed25519}"
+REMOTE_PROJECT_DIR="${IS_REMOTE_DIR:-/home/mddiya/is-website-prod}"
 IMAGE_REPO="${IS_IMAGE_REPO:-ghcr.io/clappediya/intelligent-singularity-website}"
 DOMAIN="${IS_DOMAIN:-https://intelligentsingularityinc.com/en}"
 
@@ -27,16 +31,16 @@ SHA="$(git rev-parse --short HEAD)"
 UTC_TS="$(date -u +%Y%m%d-%H%M%S)"
 TAG="prod-${UTC_TS}-${SHA}"
 IMAGE_FULL="${IMAGE_REPO}:${TAG}"
-REMOTE_DIR="/tmp/is-build-${UTC_TS}"
+REMOTE_BUILD_DIR="/tmp/is-build-${UTC_TS}"
 
-SSH_OPTS=(-o StrictHostKeyChecking=no -o PreferredAuthentications=password -o PubkeyAuthentication=no)
-ssh_run() { sshpass -p "${VPS_PASS}" ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" "$@"; }
+SSH_OPTS=(-i "${VPS_KEY}" -p "${VPS_PORT}" -o BatchMode=yes -o StrictHostKeyChecking=accept-new)
+ssh_run() { ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" "$@"; }
 
 echo "============================================================"
 echo " IS Website Production Deploy"
 echo " Tag:    ${TAG}"
 echo " Image:  ${IMAGE_FULL}"
-echo " Target: ${VPS_USER}@${VPS_HOST} (service: ${SERVICE_NAME})"
+echo " Target: ${VPS_USER}@${VPS_HOST}:${VPS_PORT} (${REMOTE_PROJECT_DIR})"
 echo " Time:   $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 echo "============================================================"
 
@@ -56,37 +60,40 @@ scripts/pre-deploy-checks.sh
 
 # 2. Ship HEAD source to host (git archive — clean, no node_modules/.next/.git)
 echo ""
-echo "[2/5] Ship source to host (git archive HEAD -> ${REMOTE_DIR})"
-ssh_run "mkdir -p '${REMOTE_DIR}'"
+echo "[2/5] Ship source to host (git archive HEAD -> ${REMOTE_BUILD_DIR})"
+ssh_run "mkdir -p '${REMOTE_BUILD_DIR}'"
 git archive --format=tar HEAD | \
-  sshpass -p "${VPS_PASS}" ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" \
-    "tar -xf - -C '${REMOTE_DIR}'"
+  ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" \
+    "tar -xf - -C '${REMOTE_BUILD_DIR}'"
 
 # 3. Build + push on the host
 echo ""
 echo "[3/5] Build + push to GHCR (linux/amd64) -> ${IMAGE_FULL}"
-ssh_run "cd '${REMOTE_DIR}' && \
+ssh_run "cd '${REMOTE_BUILD_DIR}' && \
   docker buildx build --platform linux/amd64 --push \
     -t '${IMAGE_FULL}' \
     -t '${IMAGE_REPO}:latest' \
     --provenance=false \
     ."
 
-# 4. Swarm rolling update with auto-rollback
+# 4. Update .env APP_IMAGE on host and recreate the app container
 echo ""
-echo "[4/5] docker service update (rollback on failure)"
-ssh_run "docker service update \
-  --image '${IMAGE_FULL}' \
-  --update-parallelism 1 \
-  --update-delay 10s \
-  --update-failure-action rollback \
-  --update-monitor 30s \
-  '${SERVICE_NAME}'"
+echo "[4/5] Update APP_IMAGE pin in ${REMOTE_PROJECT_DIR}/.env and recreate app"
+ssh_run "set -e
+  cd '${REMOTE_PROJECT_DIR}'
+  cp .env .env.bak.\$(date -u +%Y%m%d-%H%M%S)
+  if grep -q '^APP_IMAGE=' .env; then
+    sed -i 's|^APP_IMAGE=.*|APP_IMAGE=${IMAGE_FULL}|' .env
+  else
+    echo 'APP_IMAGE=${IMAGE_FULL}' >> .env
+  fi
+  docker compose pull app
+  docker compose up -d --no-deps app"
 
 # 5. HTTP verify (200 + zero RSC error chunks)
 echo ""
 echo "[5/5] HTTP verify ${DOMAIN}"
-echo "Waiting 20s for service to settle..."
+echo "Waiting 20s for app to settle..."
 sleep 20
 verified=0
 for i in 1 2 3 4 5 6; do
@@ -103,12 +110,13 @@ for i in 1 2 3 4 5 6; do
 done
 
 # Cleanup remote build dir regardless of verify outcome
-ssh_run "rm -rf '${REMOTE_DIR}'" || true
+ssh_run "rm -rf '${REMOTE_BUILD_DIR}'" || true
 
 if [ "${verified}" -ne 1 ]; then
   echo ""
   echo "FAIL: production verification failed"
-  echo "Rollback: ssh ${VPS_USER}@${VPS_HOST} 'docker service rollback ${SERVICE_NAME}'"
+  echo "Rollback: ssh -i ${VPS_KEY} -p ${VPS_PORT} ${VPS_USER}@${VPS_HOST} \\"
+  echo "  \"cd ${REMOTE_PROJECT_DIR} && cp .env.bak.\$(ls -1t .env.bak.* | head -1 | sed 's|.*\\.env\\.bak\\.||') .env && docker compose up -d --no-deps app\""
   exit 1
 fi
 
@@ -118,6 +126,9 @@ echo " DEPLOY COMPLETE"
 echo " Tag:    ${TAG}"
 echo " Commit: $(git rev-parse HEAD)"
 echo ""
-echo " Rollback to previous image:"
-echo "   ssh ${VPS_USER}@${VPS_HOST} 'docker service rollback ${SERVICE_NAME}'"
+echo " Rollback to previous image (last .env.bak.* in ${REMOTE_PROJECT_DIR}):"
+echo "   ssh -i ${VPS_KEY} -p ${VPS_PORT} ${VPS_USER}@${VPS_HOST}"
+echo "   cd ${REMOTE_PROJECT_DIR}"
+echo "   cp \"\$(ls -1t .env.bak.* | head -1)\" .env"
+echo "   docker compose up -d --no-deps app"
 echo "============================================================"

@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { fetchGreen } from '@/lib/payload';
@@ -53,21 +51,21 @@ const PRACTICE_SLUGS = [
 async function GreenContent({ locale }: { locale: string }) {
   const green = await fetchGreen(locale);
   const t = await getTranslations('pages.green');
+  const tCommon = await getTranslations('common');
   const bytes = 42_000;
   const grams = bytesToGrams(bytes, green.hostingGreenRatio);
   const renewablePct = Math.round(green.hostingGreenRatio * 100);
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/green',
-    name: 'Green Pledge | Intelligent Singularity',
-    description:
-      'See our environmental commitments, page-weight transparency, and low-emission web performance approach.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Green', pathname: '/green' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/green' },
     ],
   });
 
@@ -153,7 +151,7 @@ async function GreenContent({ locale }: { locale: string }) {
       <LexicalRenderer content={green.environmentalStance} className="editorial-richtext mb-12" />
 
       <section
-        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
+        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center gap-6"
         style={{
           border: '1px solid rgba(16,185,129,0.18)',
           background: 'linear-gradient(135deg, rgba(16,185,129,0.06), rgba(20,184,166,0.04))',
@@ -197,20 +195,16 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.green' });
   return buildPageMetadata({
     locale,
     pathname: '/green',
-    title: 'Green Pledge | Intelligent Singularity',
-    description:
-      'See our environmental commitments, page-weight transparency, and low-emission web performance approach.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
 export default async function GreenPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <GreenContent locale={locale} />
-    </Suspense>
-  );
+  return <GreenContent locale={locale} />;
 }

@@ -10,18 +10,17 @@ function color(status: number): string {
 
 export function HeartbeatGrid({
   heartbeats,
-  uptime24h,
+  ariaLabel,
 }: {
   heartbeats: Heartbeat[];
-  uptime24h?: number;
+  ariaLabel: string;
 }) {
   const padded = heartbeats.slice(-90);
   while (padded.length < 90) padded.unshift({ status: 3, time: '' });
-  const pct = typeof uptime24h === 'number' ? `${(uptime24h * 100).toFixed(2)}%` : 'unknown';
   return (
     <div
       role="img"
-      aria-label={`Uptime over the last 90 days, ${pct} in the last 24 hours.`}
+      aria-label={ariaLabel}
       className="flex gap-[2px] items-stretch min-w-0"
       style={{ height: 28, overflow: 'hidden' }}
     >

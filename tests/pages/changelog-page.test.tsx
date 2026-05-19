@@ -32,6 +32,10 @@ vi.mock('next-intl/server', () => ({
     eyebrow: 'CHANGELOG · CORPORATE SITE',
     title: 'What changed, in order.',
     lede: 'Every visible change we have made to this corporate site, dated and tied to the commit behind it.',
+    firstVersionTitle: 'This is the first version.',
+    firstVersionBody: 'No tags have been cut yet. The first release entry will appear here once v1.0 is tagged.',
+    viewRepoCta: 'View the repository',
+    releasesHeading: 'Releases',
   }[key] ?? key),
 }));
 

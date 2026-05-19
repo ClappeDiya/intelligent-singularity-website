@@ -38,7 +38,7 @@ describe('Home', () => {
   it('renders a "Read our field notes" callout linking to /insights', async () => {
     const ui = await HomeContent({ locale: 'en' });
     render(ui as any);
-    const link = screen.getByRole('link', { name: /Read our field notes/i });
+    const link = screen.getByRole('link', { name: /(Read our field notes|fieldNotesCta)/i });
     expect(link.getAttribute('href')).toMatch(/\/insights$/);
   });
 });

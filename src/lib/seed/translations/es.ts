@@ -45,6 +45,13 @@ export const TRANSLATION: LocaleTranslation = {
     successMessage: 'Mensaje enviado. Gracias.',
     errorMessage: 'Algo salió mal. Por favor, inténtelo de nuevo.',
   },
+  trust: {
+    dataResidencyText:
+      'Este sitio web vive en un único servidor virtual en un centro de datos identificado en Edmonton, Alberta, Canadá. No hay una red de distribución de contenido delante. Cuando la página se carga en tu navegador, tu navegador habla directamente con nuestra máquina. Nada se interpone en medio para copiar, almacenar en caché o leer tu tráfico.\n\nNuestras copias de seguridad cifradas rotan en un ciclo de treinta días. Nunca salen de la región del centro de datos. Están protegidas en reposo con una clave que solo dos personas de nuestro equipo pueden desbloquear.',
+    reportIncidentText:
+      '¿Has encontrado una debilidad, un error o algo que simplemente parece incorrecto? Escribe a security@intelligentsingularityinc.com. Respondemos en un día laborable, trabajamos contigo en la corrección y damos crédito por su nombre a quien lo reporta en el aviso público una vez parcheado el problema — a menos que pidas lo contrario.\n\nNunca demandamos a investigadores que sigan los términos de divulgación responsable en /security.',
+  },
+
   commitments: [
     { title: 'Diseño universal, con capacidad sin conexión', body: 'Cada producto funciona impecablemente con fibra óptica y con conexión 2G intermitente. Las mismas funciones, la misma calidad. La conectividad no es un filtro de acceso.' },
     { title: 'Estándar de simplicidad', body: 'Si un estudiante de secundaria no puede completar un flujo de trabajo principal en 5 minutos sin capacitación, la función no está terminada.' },

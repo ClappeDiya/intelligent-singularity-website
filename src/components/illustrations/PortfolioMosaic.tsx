@@ -20,10 +20,12 @@ const H = ROWS * CELL + (ROWS - 1) * GAP;
 
 export function PortfolioMosaic({
   tiles = DEFAULT_TILES,
-  ariaLabel = 'A mosaic showing eight platforms across the Clap ecosystem: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, and Audiflo.',
+  svgTitle,
+  ariaLabel,
 }: {
   tiles?: Tile[];
-  ariaLabel?: string;
+  svgTitle: string;
+  ariaLabel: string;
 }) {
   return (
     <figure className="pmosaic" role="figure" aria-label={ariaLabel}>
@@ -33,7 +35,7 @@ export function PortfolioMosaic({
         aria-hidden="true"
         focusable="false"
       >
-        <title>Portfolio mosaic</title>
+        <title>{svgTitle}</title>
         <desc>{ariaLabel}</desc>
         {tiles.map((t, i) => {
           const w = (t.w ?? 1) * CELL + ((t.w ?? 1) - 1) * GAP;

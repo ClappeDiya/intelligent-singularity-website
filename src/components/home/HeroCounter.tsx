@@ -3,20 +3,29 @@ import Link from 'next/link';
 type Props = {
   locale: string;
   value: number;
+  offlinePercent: number;
   label: string;
   tagline: string;
   primaryCta: string;
   secondaryCta: string;
   scrollHint: string;
   scrollHintTarget: string;
+  source: string;
+  populationCaption: string;
+  counterAriaLabel: string;
 };
 
-function formatNumber(n: number): string {
-  return new Intl.NumberFormat('en-US').format(n);
+function formatNumber(n: number, locale: string): string {
+  return new Intl.NumberFormat(locale).format(n);
 }
 
-export function HeroCounter({ locale, value, label, tagline, primaryCta, secondaryCta, scrollHint, scrollHintTarget }: Props) {
-  const text = formatNumber(value);
+function formatPercent(p: number, locale: string): string {
+  return new Intl.NumberFormat(locale, { style: 'percent', maximumFractionDigits: 0 }).format(p / 100);
+}
+
+export function HeroCounter({ locale, value, offlinePercent, label, tagline, primaryCta, secondaryCta, scrollHint, scrollHintTarget, source, populationCaption, counterAriaLabel }: Props) {
+  const text = formatNumber(value, locale);
+  const percentText = formatPercent(offlinePercent, locale);
 
   return (
     <section className="relative px-4 sm:px-6 md:px-8 lg:px-12 pt-20 pb-16 md:pt-24 md:pb-20 lg:pt-28 lg:pb-24 min-h-[88dvh] flex items-center">
@@ -33,7 +42,7 @@ export function HeroCounter({ locale, value, label, tagline, primaryCta, seconda
       />
       <div className="relative max-w-[1280px] mx-auto w-full">
         <div className="max-w-[980px] mx-auto text-center">
-          <div className="hidden min-[420px]:inline-flex items-center gap-2.5 mb-7 px-3 py-1.5 rounded-full"
+          <div className="inline-flex items-center gap-2.5 mb-7 px-3 py-1.5 rounded-full"
             style={{
               border: '1px solid rgba(16,185,129,0.2)',
               background: 'rgba(16,185,129,0.06)',
@@ -44,11 +53,11 @@ export function HeroCounter({ locale, value, label, tagline, primaryCta, seconda
               className="text-[var(--color-emerald)] text-[10.5px] uppercase tracking-[0.12em]"
               style={{ fontFamily: 'var(--font-mono)' }}
             >
-              ITU 2025 · {label}
+              {source} · <bdi>{label}</bdi>
             </span>
           </div>
           <div
-            aria-label={`${value} people still offline, source ITU 2025`}
+            aria-label={counterAriaLabel}
             className="font-semibold leading-[0.92] tracking-[-0.055em] mb-4"
             style={{
               fontFamily: 'var(--font-serif)',
@@ -64,7 +73,7 @@ export function HeroCounter({ locale, value, label, tagline, primaryCta, seconda
           </div>
           <div className="flex items-center justify-center gap-4 mb-10 flex-wrap">
             <span className="text-[10.5px] uppercase tracking-[0.12em] text-[var(--color-cream-dim)]" style={{ fontFamily: 'var(--font-mono)' }}>
-              <span className="text-[var(--color-emerald)]">26%</span> of all people on Earth
+              <span className="text-[var(--color-emerald)]">{percentText}</span> {populationCaption}
             </span>
             <span
               aria-hidden="true"
@@ -72,7 +81,7 @@ export function HeroCounter({ locale, value, label, tagline, primaryCta, seconda
               style={{ background: 'rgba(16,185,129,0.2)' }}
             />
             <span className="text-[10.5px] uppercase tracking-[0.12em] text-[var(--color-cream-dim)]" style={{ fontFamily: 'var(--font-mono)' }}>
-              ITU 2025
+              {source}
             </span>
           </div>
           <h1
@@ -85,7 +94,7 @@ export function HeroCounter({ locale, value, label, tagline, primaryCta, seconda
               fontWeight: 600,
             }}
           >
-            {tagline}
+            <bdi>{tagline}</bdi>
           </h1>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-10">
             <Link
@@ -93,14 +102,14 @@ export function HeroCounter({ locale, value, label, tagline, primaryCta, seconda
               className="inline-flex items-center justify-center gap-2 px-7 py-[14px] text-[12px] tracking-[0.04em] uppercase font-semibold rounded-full transition-all hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg, #047857, #0f766e)', color: '#fff', boxShadow: '0 10px 28px rgba(16,185,129,0.32)' }}
             >
-              {primaryCta}
+              <bdi>{primaryCta}</bdi>
             </Link>
             <Link
               href="#flagships"
               className="inline-flex items-center justify-center gap-2 px-7 py-[14px] text-[12px] tracking-[0.04em] uppercase font-semibold rounded-full border transition-colors hover:border-[var(--color-emerald)] hover:text-[var(--color-emerald)] text-[var(--color-cream)]"
               style={{ borderColor: 'rgba(16,185,129,0.3)' }}
             >
-              {secondaryCta}
+              <bdi>{secondaryCta}</bdi>
             </Link>
           </div>
           <div className="mt-16 flex items-center justify-center gap-3 text-[10px] uppercase tracking-[0.2em] text-[var(--color-cream-faint)]" style={{ fontFamily: 'var(--font-mono)' }}>

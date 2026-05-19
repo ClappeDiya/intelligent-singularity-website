@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "跳转至正文内容",
     "scrollHint": "滚动",
-    "scrollHintTarget": "数字中的差距"
+    "scrollHintTarget": "数字中的差距",
+    "source": "ITU 2025",
+    "populationCaption": "占全球总人口",
+    "counterAriaLabel": "{count} 人仍然处于离线状态，来源：国际电信联盟 2025"
   },
   "contactForm": {
     "routingLabel": "分类",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "更新日志",
+      "schemaDescription": "公开发布说明。",
+      "breadcrumbCurrent": "更新日志",
       "eyebrow": "更新日志 · 企业官网",
       "title": "依次发生的变化。",
       "lede": "我们对该企业官网所做的每一项可见更改，均附有日期及对应的提交记录。Clap 生态中的每个产品都在自己的域名下维护各自的更新日志——本页是母公司的入口，仅此而已，毫无隐藏。",
       "feedLabel": "订阅：",
       "feedTitle": "Intelligent Singularity — 更新日志",
-      "rssFeed": "RSS 订阅"
+      "rssFeed": "RSS 订阅",
+      "firstVersionTitle": "这是第一个版本。",
+      "firstVersionBody": "尚未创建任何标签。您正在查看构建 {sha}。一旦 v1.0 被标记，第一个发布条目将显示在此处。",
+      "viewRepoCta": "查看代码仓库",
+      "releasesHeading": "发布版本",
+      "metaTitle": "更新日志 | Intelligent Singularity",
+      "metaDescription": "我们做出的每一项可见变更,附带日期和对应的提交。"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "实时状态面板",
       "overallStatusAria": "总体状态",
       "externalNavAria": "外部",
-      "opensInNewTab": "（在新标签页中打开）"
+      "opensInNewTab": "（在新标签页中打开）",
+      "uptimeGridAria": "过去 90 天的正常运行时间，过去 24 小时为 {pct}。",
+      "breadcrumbCurrent": "状态",
+      "schemaName": "状态 | Intelligent Singularity",
+      "schemaDescription": "网站及其基础设施的实时系统状态。",
+      "metaTitle": "状态 | Intelligent Singularity",
+      "metaDescription": "网站及其基础设施的实时系统状态。"
     },
     "roadmap": {
+      "schemaName": "路线图 | Intelligent Singularity",
+      "schemaDescription": "公开路线图：进行中、计划中、已发布与暂停的工作。",
+      "breadcrumbCurrent": "路线图",
       "eyebrow": "路线图 · 公开",
       "title": "我们正在构建的内容。",
       "lede": "公开。无空头承诺。每一项都属于工作室方面 — 企业网站工作、共享基础设施以及触及每个产品的横向承诺。Clap 生态系统中的每个产品都在自己的域名上维护自己的路线图。当这里的项目发布时，会链接到代码。",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "还缺什么吗？",
       "ctaHeading": "告诉我们您需要什么。",
       "ctaBody": "如果有某项功能、工具或修复对您有实质性帮助，请告诉我们。我们会阅读每条消息，并根据实际需求确定优先级。",
-      "ctaButton": "发送一条信息"
+      "ctaButton": "发送一条信息",
+      "metaTitle": "路线图 | Intelligent Singularity",
+      "metaDescription": "我们正在构建什么、计划了什么、已发布什么、暂停了什么——全部公开。"
     },
     "insights": {
+      "schemaName": "洞见 | Intelligent Singularity",
+      "schemaDescription": "公开思考：访问、对齐与 AI 的长弧。",
+      "breadcrumbCurrent": "洞见",
       "eyebrow": "洞见 · 工作室的田野笔记",
       "title": "公开思考。",
       "lede": "关于普惠访问、AI 辅助工程、22 亿离线人群以及人工智能长期演进的田野笔记——为理解而写，不为炫技。我们慢慢写。每条主张都附引用。没有标题党，没有思想领袖式的雾气。",
@@ -118,9 +144,23 @@
       "subscribeLabel": "订阅：",
       "rssFeed": "RSS 订阅",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "分页"
+      "paginationAria": "分页",
+      "paginationNewer": "← 较新",
+      "paginationOlder": "较旧 →",
+      "paginationNewerAria": "转到较新的文章",
+      "paginationOlderAria": "转到较旧的文章",
+      "emptyTitle": "暂未发布任何文章。",
+      "emptyBody": "第一篇文章准备就绪后会出现在这里。我们慢慢写、用心写。",
+      "emptyCta": "订阅 RSS 源",
+      "metaTitle": "洞见 | Intelligent Singularity",
+      "metaDescription": "公开思考:访问、对齐与 AI 的长弧。",
+      "metaTitleSuffix": "洞察 | Intelligent Singularity",
+      "eyebrowFallback": "洞察"
     },
     "trust": {
+      "schemaName": "信任 | Intelligent Singularity",
+      "schemaDescription": "我们的信任支柱、第三方子处理方、认证以及如何报告安全事件。",
+      "breadcrumbCurrent": "信任",
       "eyebrow": "信任",
       "title": "在哪里可以找到证据。",
       "lede": "我们关于安全、隐私、可持续性和访问的每一个声明都链接到证据。您永远不必只凭我们的话相信。",
@@ -141,9 +181,16 @@
       "incidentBody": "协调披露是我们认真对待的路径。请将描述和复现步骤发送至 security@intelligentsingularityinc.com。我们会在一个工作日内确认收到报告，三天内分类，并按照与您约定的时间表发布修复程序。当修复发布时，研究人员将在我们的事后分析中以姓名记入功劳——除非您希望保持匿名。我们不会威胁或起诉善意的安全研究人员，没有例外。",
       "incidentCta": "报告事件",
       "privacyPolicyLink": "隐私政策",
-      "learnMore": "了解更多"
+      "learnMore": "了解更多",
+      "dataResidencyHeading": "您的数据存放在哪里",
+      "disclosureHeading": "安全披露政策",
+      "metaTitle": "信任 | Intelligent Singularity",
+      "metaDescription": "信任的支柱、第三方子处理者、认证以及如何报告事件。"
     },
     "help": {
+      "schemaName": "帮助 | Intelligent Singularity",
+      "schemaDescription": "帮助中心 — 浏览分类、查看常见解答并直接联系我们。",
+      "breadcrumbCurrent": "帮助",
       "eyebrow": "HELP",
       "title": "通常一键即可获得帮助。",
       "lede": "选择最接近您问题的那一行。每个链接都通向真实位置——没有封闭表单，没有聊天机器人。",
@@ -153,13 +200,17 @@
       "browseByTopic": "按主题浏览",
       "checkStatus": "查看状态",
       "contactEyebrow": "联系",
-      "contactFallbackCta": "联系我们"
+      "contactFallbackCta": "联系我们",
+      "metaTitle": "帮助 | Intelligent Singularity",
+      "metaDescription": "快速获取帮助:浏览类别、阅读热门答案,或一键联系真人。"
     },
     "about": {
       "eyebrow": "About · The studio",
       "defaultTitle": "About Intelligent Singularity",
-      "ecosystemLabel": "The ecosystem at a glance",
-      "ecosystemHeading": "One parent company, seven product categories.",
+      "ecosystemLabel": "生态系统一览",
+      "ecosystemHeading": "一家母公司，七大产品类别。",
+      "ecosystemSvgTitle": "归属于一家母公司的 Clap 生态系统",
+      "ecosystemAriaLabelTemplate": "{rootLabel}，拥有 {count} 个产品分支的母公司：{list}。",
       "ataGlanceLabel": "At a glance",
       "talkToStudioLabel": "Talk to the studio",
       "talkToStudioBody": "Partnerships, press, or a product question — messages reach the founder directly, typically within two business days.",
@@ -185,6 +236,20 @@
         "portfolio": "不断增长的平台家族",
         "languages": "14 种发布语言",
         "footprint": "每页 ≤ 50 KB · 零跟踪器"
+      },
+      "breadcrumbCurrent": "关于",
+      "schemaName": "关于 | Intelligent Singularity",
+      "schemaDescription": "了解 Intelligent Singularity 背后的团队与使命：以 AI 增强的精简运营，构建面向普惠访问的软件。",
+      "metaTitle": "关于我们 | Intelligent Singularity",
+      "metaDescription": "了解 Intelligent Singularity 背后的团队与使命:以精简的 AI 增强运营方式构建普惠访问的软件。",
+      "ecosystemBranchLabels": {
+        "corePlatform": "核心平台",
+        "health": "健康",
+        "finance": "金融",
+        "work": "工作",
+        "agriculture": "农业",
+        "media": "媒体",
+        "commsData": "通信 / 数据"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "上方较浅的点是已联网的人。较深的、带环的点是未联网的人。百分之九十六的离线人口生活在低收入和中等收入国家。普惠访问工程就是缩小这一差距的方式。下面的九项承诺是我们如何履行的方式。",
       "commitmentsHeading": "九项承诺",
       "commitmentsBody": "九个同心环——每个产品在每次发布时都要对每一项进行交付。这份清单不是愿望清单。它是工程合同。",
-      "sourceData": "数据来源"
+      "sourceData": "数据来源",
+      "breadcrumbCurrent": "宣言",
+      "schemaName": "宣言 | Intelligent Singularity",
+      "schemaDescription": "阅读我们的宣言，关于让企业级软件成为每一家企业和每一个人的基本权利，无论在线或离线。",
+      "globeSvgTitle": "离线触及",
+      "globeAriaLabel": "一个简洁的地球示意图，突出显示 22 亿离线人群，呈现 ITU 的数字鸿沟数据。",
+      "ringsSvgTitle": "承诺",
+      "ringsAriaLabelTemplate": "{count} 项同心承诺，构成一个普遍可及的单一圆环——每个产品在每次发布时都遵循的工程准则。",
+      "metaTitle": "宣言 | Intelligent Singularity",
+      "metaDescription": "阅读我们的宣言:让企业级软件成为每个企业和每个人的基本权利,无论联网还是离线。"
     },
     "faq": {
+      "schemaName": "常见问题 | Intelligent Singularity",
+      "schemaDescription": "关于工作室、我们的产品、隐私做法,以及如何与 Intelligent Singularity 合作的诚实回答。",
+      "breadcrumbCurrent": "常见问题",
       "openTheForm": "打开表单",
       "emailDirectly": "直接发邮件"
     },
     "pricing": {
+      "schemaName": "定价理念 | Intelligent Singularity",
+      "schemaDescription": "我们的定价规则：免费层级、按地区公平定价、每个层级都有所有功能、无需联系销售。",
+      "breadcrumbCurrent": "价格",
       "tierFree": "免费层：",
       "tierPaid": "付费层：",
       "tierEnterprise": "企业层：",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "同一产品，三种客户",
       "workedExampleBody": "一个实例 — 仅作说明，不是报价 — 用于展示六条规则在实践中如何运作。具体数字见每款产品自己的页面。",
       "viewThePortfolio": "查看作品集",
-      "talkAboutPricing": "谈论定价"
+      "talkAboutPricing": "谈论定价",
+      "metaTitle": "定价理念 | Intelligent Singularity",
+      "metaDescription": "我们如何为每个产品定价:永久免费层、按购买力调整的费率、每层包含所有功能、价格公开、无销售联系。"
     },
     "careers": {
+      "schemaName": "招聘 | Intelligent Singularity",
+      "schemaDescription": "工作室如何招聘，以及在 Intelligent Singularity 工作是什么体验。",
+      "breadcrumbCurrent": "招聘",
       "howWeWorkHeading": "我们实际上如何工作",
       "whatYouWouldWorkOnHeading": "你实际会做什么",
       "howWeHireHeading": "我们如何从头到尾招聘",
@@ -220,7 +305,9 @@
       "updatedPrefix": "更新于",
       "contactFormCta": "联系表单",
       "whatYouWouldWorkOnLede": "Intelligent Singularity 是不断壮大的平台家族的母公司。新员工很少在一个产品上工作整整一年——大多数人会在两到三个产品之间轮换，取决于该季度正在发布什么以及最需要资深关注的是什么。",
-      "howWeHireLede": "四个步骤。如果双方都行动迅速，从首封邮件到书面录用最多两周。没有意外环节、没有无偿带回家任务、没有未给出书面理由的\"文化匹配\"拒绝。"
+      "howWeHireLede": "四个步骤。如果双方都行动迅速，从首封邮件到书面录用最多两周。没有意外环节、没有无偿带回家任务、没有未给出书面理由的\"文化匹配\"拒绝。",
+      "metaTitle": "招聘 | Intelligent Singularity",
+      "metaDescription": "工作室如何招人:小而远程、由 AI 增强的团队,交付普惠访问的软件。当前职位与随时欢迎你自我介绍的长期开放邀请。"
     },
     "press": {
       "factSheetHeading": "情况说明",
@@ -234,7 +321,10 @@
       "contactFormCta": "联系表单",
       "boilerplateLede": "一段话，可直接用于新闻稿。已批准逐字使用。",
       "storyAnglesYesLede": "如果您的故事属于以下某个角度，我们将迅速安排创始人、工程师或产品负责人——通常在一个工作日内。",
-      "storyAnglesNoLede": "前期诚实为所有人节省时间。我们不会为下面的角度提供引言。但我们会向您推荐一位作品更适合该故事的记者或分析师。"
+      "storyAnglesNoLede": "前期诚实为所有人节省时间。我们不会为下面的角度提供引言。但我们会向您推荐一位作品更适合该故事的记者或分析师。",
+      "breadcrumbCurrent": "新闻",
+      "schemaName": "新闻与媒体 | Intelligent Singularity",
+      "schemaDescription": "为报道 Intelligent Singularity 的记者与研究人员提供的新闻资料包、事实简报、获授权引文与直接联系方式。"
     },
     "portfolio": {
       "eyebrow": "作品集 · Clap 生态系统",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "第三方调用",
       "statThirdPartyValue": "零",
       "statThirdPartyHint": "在每次产品发布时由 CI 强制执行",
-      "ecosystemStatsAria": "生态系统统计"
+      "ecosystemStatsAria": "生态系统统计",
+      "verticalLabel": "垂直领域",
+      "publicAs": "公开名为",
+      "breadcrumbCurrent": "作品集",
+      "schemaName": "作品集 | Intelligent Singularity",
+      "schemaDescription": "探索覆盖业务运营、健康、金融、农业、媒体和通信的 14 款工具完整生态。",
+      "mosaicSvgTitle": "产品组合拼图",
+      "mosaicAriaLabel": "展示 Clap 生态八大平台的拼图：Clappe、ClapBill、ClapMed、ClapDiet、ClapPay、Clapwork、Apogee 和 Audiflo。",
+      "metaTitle": "产品组合 | Intelligent Singularity",
+      "metaDescription": "探索覆盖业务运营、健康、金融、农业、媒体与通信的 14 款产品组成的完整生态。",
+      "productCountLabel": "{count, plural, other {产品}}"
     },
     "contact": {
+      "schemaName": "联系 | Intelligent Singularity",
+      "schemaDescription": "就合作、媒体、法律或产品咨询联系 Intelligent Singularity——了解我们面向通用访问的软件生态系统。",
+      "breadcrumbCurrent": "联系",
       "eyebrow": "联系 · 工作室前台",
       "titleFallback": "联系我们",
+      "formHeading": "联系表单",
       "directChannelsLabel": "直接联系渠道",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "包括阿拉伯语和乌尔都语 RTL。",
       "factHostingLabel": "托管",
       "factHostingLine1": "单一 VPS，埃德蒙顿。",
-      "factHostingLine2": "无第三方 CDN。"
+      "factHostingLine2": "无第三方 CDN。",
+      "metaTitle": "联系我们 | Intelligent Singularity",
+      "metaDescription": "就合作、媒体、法律或我们的普惠访问软件生态的产品咨询,联系 Intelligent Singularity。"
+    },
+    "legal": {
+      "eyebrowLabel": "法律",
+      "lastUpdatedLabel": "最后更新：{date}",
+      "tocLabel": "本页内容"
     },
     "security": {
       "postureHeading": "我们如何运营网站和平台",
       "dataHeading": "我们如何处理您的数据",
       "complianceHeading": "我们坚持的标准",
       "complianceLede": "我们遵循一组小而具名的标准——并且我们对尚未获得的审计保持诚实。",
-      "privacyPolicyLink": "阅读隐私政策"
+      "privacyPolicyLink": "阅读隐私政策",
+      "breadcrumbCurrent": "安全",
+      "schemaName": "安全与信任 | Intelligent Singularity",
+      "schemaDescription": "Intelligent Singularity 各产品的安全与数据处理实践：加密、自托管、零第三方调用与短期保留。",
+      "shieldSvgTitle": "安全姿态",
+      "shieldAriaLabel": "一个简洁的盾牌图示，呈现安全姿态：TLS 加密、零第三方调用、隔离的产品环境、短期留存与具名分包处理者。",
+      "metaTitle": "安全与信任 | Intelligent Singularity",
+      "metaDescription": "我们如何保护本站及产品组合中的每个产品:TLS、零第三方调用、短期数据保留、加密备份与诚实的事件响应。"
     },
     "green": {
+      "schemaName": "绿色承诺 | Intelligent Singularity",
+      "schemaDescription": "查看我们的环境承诺、页面重量透明度，以及低排放的网页性能方案。",
+      "breadcrumbCurrent": "绿色",
       "liveTelemetryEyebrow": "绿色 · 实时遥测",
       "statThisPageLabel": "本页",
       "statThisPageHint": "HTML + CSS，无跟踪器",
@@ -375,11 +496,64 @@
           "value": "贯穿整个平台",
           "hint": "发票、病历、收据默认数字化。办公用纸、名片和印刷营销物料不是我们运营的一部分。"
         }
-      }
+      },
+      "metaTitle": "绿色承诺 | Intelligent Singularity",
+      "metaDescription": "了解我们的环境承诺、页面重量透明度以及低排放的网页性能方法。"
     },
     "home": {
       "commitmentsKicker": "九项不可妥协",
-      "commitmentsAria": "九项承诺"
+      "commitmentsAria": "九项承诺",
+      "ddKicker": "一百个人，按比例绘制",
+      "ddHeading": "全球每一百人中仍有二十六人完全没有任何数字接入。",
+      "ddOnlineCount": "59 亿",
+      "ddOfflineCount": "22 亿",
+      "ddSourceFallback": "国际电信联盟《事实与数字 2025》",
+      "ddSvgTitle": "谁在网上，谁不在网上",
+      "ddOnlineLabel": "在线",
+      "ddOfflineLabel": "仍处于离线",
+      "ddSourcePrefix": "来源",
+      "fieldNotesKicker": "现场笔记",
+      "fieldNotesTitle": "我们如何思考构建这件事。",
+      "fieldNotesBody": "来自工作室的简短、扎实的随笔。我们慢慢写作，并引用一切。没有标题党，没有思想领袖式的虚谈。",
+      "fieldNotesCta": "阅读我们的现场笔记",
+      "flagshipsKicker": "工作室 · 14 个工具",
+      "flagshipsSeeAllCta": "查看完整生态系统",
+      "flagshipCardLabel": "旗舰",
+      "facts": {
+        "kicker": "差距 · 已测量",
+        "sourceLabel": "ITU · 2025",
+        "sourceHeading": "来源",
+        "card1Caption": "从未使用过互联网的人。<accent>{pct}% 居住在中低收入国家。</accent>",
+        "card1Comparison": "≈ 26% 的人类",
+        "card2Caption": "低收入国家中在线人口的比例。<accent>高收入国家为 {pct}%。</accent>",
+        "card3Caption": "低收入国家的 5G 覆盖率。高收入国家为 <accent>{pct}%</accent>。差距达二十倍。",
+        "card3Comparison": "21× 差距",
+        "card4Caption": "全球在线的农村人口。城市为 <accent>{pct}%</accent>。城乡差距仍然巨大。"
+      },
+      "greenStrip": {
+        "eyebrow": "实时碳收据",
+        "heading": "每次访问都会留下能源足迹。这是我们的。",
+        "body": "我们以千字节衡量页面重量，以克衡量内含碳。两者都保持极小，因为我们不发送任何我们不需要的东西——没有来自 CDN 的字体，没有追踪器，没有隐藏的脚本回家。",
+        "pageWeightLabel": "此页面重",
+        "pageWeightUnit": "KB",
+        "pageWeightHint": "预算：每条路线 50 KB 以下，gzip",
+        "carbonLabel": "您的访问排放",
+        "carbonHint": "使用 Green Web Foundation 模型计算",
+        "hostingLabel": "我们的托管",
+        "hostingValue": "自托管",
+        "hostingHint": "单一 VPS · 无 CDN · 阿尔伯塔电网",
+        "thirdPartyLabel": "第三方调用",
+        "thirdPartyValue": "零",
+        "thirdPartyHint": "无 CDN、字体、分析、像素"
+      },
+      "schemaName": "Intelligent Singularity | 面向普惠访问的软件",
+      "schemaDescription": "一家使命驱动的工作室，构建由 AI 增强的软件，让商业、健康、金融和工作中的访问触手可及。",
+      "metaTitle": "Intelligent Singularity | 普惠访问的软件",
+      "metaDescription": "一个使命驱动的工作室,为商业、健康、金融和工作领域的普惠访问构建 AI 增强软件。"
+    },
+    "offline": {
+      "metaTitle": "离线 | Intelligent Singularity",
+      "metaDescription": "Intelligent Singularity 网页体验的离线回退页面。"
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineEyebrow": "无网络连接 · 您处于离线状态",
     "offlineTitle": "为此刻而设计。",
     "offlineBody": "普及无障碍访问是我们的使命。即使没有网络连接，本站也能继续运行——您访问过的每个页面都已缓存并可阅读。尝试访问您看过的页面，或重新连接以加载新内容。",
-    "offlineReturnHome": "返回首页"
+    "offlineReturnHome": "返回首页",
+    "opensInNewTab": "(在新标签页中打开)",
+    "emailLinkAriaLabel": "发送电子邮件至 {email}",
+    "breadcrumbHome": "首页",
+    "ogImageAlt": "Intelligent Singularity — 面向所有人的软件。",
+    "visit": "访问",
+    "schema": {
+      "organizationDescription": "一家为通用访问构建软件的工作室。",
+      "founderDescription": "Intelligent Singularity 创始人，通过 AI 增强的精益运营为通用访问构建软件。",
+      "portfolioListName": "Intelligent Singularity 产品组合"
+    }
   },
   "languageWheel": {
     "navAria": "语言",

@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "মূল বিষয়বস্তুতে যান",
     "scrollHint": "স্ক্রল করুন",
-    "scrollHintTarget": "সংখ্যায় ব্যবধান"
+    "scrollHintTarget": "সংখ্যায় ব্যবধান",
+    "source": "ITU 2025",
+    "populationCaption": "পৃথিবীর সকল মানুষের",
+    "counterAriaLabel": "{count} জন এখনও অফলাইন, সূত্র আইটিইউ 2025"
   },
   "contactForm": {
     "routingLabel": "রাউটিং",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "চেঞ্জলগ",
+      "schemaDescription": "সর্বজনীন রিলিজ নোট।",
+      "breadcrumbCurrent": "চেঞ্জলগ",
       "eyebrow": "চেঞ্জলগ · কর্পোরেট সাইট",
       "title": "ক্রমানুসারে যা পরিবর্তিত হয়েছে।",
       "lede": "এই কর্পোরেট সাইটে আমরা যা যা দৃশ্যমান পরিবর্তন করেছি, তারিখ ও সংশ্লিষ্ট কমিটের সঙ্গে যুক্ত। Clap ইকোসিস্টেমের প্রতিটি পণ্য তার নিজস্ব ডোমেইনে নিজস্ব চেঞ্জলগ রাখে — এই পৃষ্ঠা হলো মূল কোম্পানির প্রবেশদ্বার, এর বেশি কিছু নয়, কিছু লুকানো নেই।",
       "feedLabel": "সাবস্ক্রাইব:",
       "feedTitle": "Intelligent Singularity — চেঞ্জলগ",
-      "rssFeed": "RSS ফিড"
+      "rssFeed": "RSS ফিড",
+      "firstVersionTitle": "এটি প্রথম সংস্করণ।",
+      "firstVersionBody": "এখনও কোনো ট্যাগ কাটা হয়নি। আপনি বিল্ড {sha} পড়ছেন। v1.0 ট্যাগ হওয়ার পরে প্রথম রিলিজ এন্ট্রি এখানে প্রদর্শিত হবে।",
+      "viewRepoCta": "রিপোজিটরি দেখুন",
+      "releasesHeading": "রিলিজ",
+      "metaTitle": "পরিবর্তন তালিকা | Intelligent Singularity",
+      "metaDescription": "আমরা যে প্রতিটি দৃশ্যমান পরিবর্তন করেছি, তারিখ ও পেছনের কমিটসহ।"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "Live status dashboard",
       "overallStatusAria": "Overall status",
       "externalNavAria": "External",
-      "opensInNewTab": " (opens in a new tab)"
+      "opensInNewTab": " (opens in a new tab)",
+      "uptimeGridAria": "গত 90 দিনের আপটাইম, গত 24 ঘণ্টায় {pct}।",
+      "breadcrumbCurrent": "অবস্থা",
+      "schemaName": "অবস্থা | Intelligent Singularity",
+      "schemaDescription": "ওয়েবসাইট এবং এর অবকাঠামোর লাইভ সিস্টেম স্ট্যাটাস।",
+      "metaTitle": "অবস্থা | Intelligent Singularity",
+      "metaDescription": "ওয়েবসাইট ও এর অবকাঠামোর লাইভ সিস্টেম অবস্থা।"
     },
     "roadmap": {
+      "schemaName": "রোডম্যাপ | Intelligent Singularity",
+      "schemaDescription": "জনসাধারণের জন্য রোডম্যাপ যা চলমান, পরিকল্পিত, প্রকাশিত এবং স্থগিত কাজ দেখায়।",
+      "breadcrumbCurrent": "রোডম্যাপ",
       "eyebrow": "রোডম্যাপ · প্রকাশ্যে",
       "title": "আমরা যা তৈরি করছি।",
       "lede": "প্রকাশ্যে। কোনো ভ্যাপারওয়্যার নেই। প্রতিটি আইটেম স্টুডিও দিকে — কর্পোরেট-সাইটের কাজ, ভাগ করা পরিকাঠামো এবং প্রতিটি পণ্যকে স্পর্শ করে এমন ক্রসকাটিং প্রতিশ্রুতি। Clap ইকোসিস্টেমের প্রতিটি পণ্য তার নিজস্ব ডোমেইনে নিজস্ব রোডম্যাপ রাখে। এখানকার আইটেমগুলো শিপ হলে কোডে লিঙ্ক হয়।",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "কিছু বাদ পড়েছে?",
       "ctaHeading": "আপনার যা প্রয়োজন আমাদের জানান।",
       "ctaBody": "যদি এমন কোনো ফিচার, টুল, বা ফিক্স থাকে যা আপনার জন্য সত্যিকারের পার্থক্য তৈরি করবে, আমাদের একটি বার্তা পাঠান। আমরা প্রতিটি বার্তা পড়ি এবং প্রকৃত প্রয়োজনের ভিত্তিতে অগ্রাধিকার দিই।",
-      "ctaButton": "একটি বার্তা পাঠান"
+      "ctaButton": "একটি বার্তা পাঠান",
+      "metaTitle": "রোডম্যাপ | Intelligent Singularity",
+      "metaDescription": "আমরা কী তৈরি করছি, কী পরিকল্পনায় আছে, কী প্রকাশিত হয়েছে ও কী স্থগিত আছে — প্রকাশ্যে।"
     },
     "insights": {
+      "schemaName": "ইনসাইটস | Intelligent Singularity",
+      "schemaDescription": "প্রকাশ্যে চিন্তা: অ্যাক্সেস, প্রান্তিকীকরণ এবং এআই-এর দীর্ঘ পথ।",
+      "breadcrumbCurrent": "ইনসাইটস",
       "eyebrow": "ইনসাইটস · স্টুডিওর মাঠ থেকে নোট",
       "title": "প্রকাশ্যে চিন্তা।",
       "lede": "সর্বজনীন প্রবেশাধিকার, AI-সহায়ক প্রকৌশল, ইন্টারনেটহীন ২.২ বিলিয়ন মানুষ এবং কৃত্রিম বুদ্ধিমত্তার দীর্ঘ পথ নিয়ে মাঠের নোট — মুগ্ধ করার জন্য নয়, বোঝার জন্য লেখা। আমরা ধীরে লিখি। প্রতিটি দাবি সূত্রের সঙ্গে যুক্ত। কোনো ক্লিকবেইট নেই, কোনো চিন্তা-নেতৃত্বের কুয়াশা নেই।",
@@ -118,9 +144,23 @@
       "subscribeLabel": "সাবস্ক্রাইব:",
       "rssFeed": "RSS ফিড",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "পৃষ্ঠাবিন্যাস"
+      "paginationAria": "পৃষ্ঠাবিন্যাস",
+      "paginationNewer": "← নতুন",
+      "paginationOlder": "পুরোনো →",
+      "paginationNewerAria": "নতুন পোস্টে যান",
+      "paginationOlderAria": "পুরোনো পোস্টে যান",
+      "emptyTitle": "এখনো কিছু প্রকাশিত হয়নি।",
+      "emptyBody": "প্রথম প্রবন্ধ প্রস্তুত হলেই এখানে দেখা যাবে। আমরা ধীরে এবং যত্ন নিয়ে লিখি।",
+      "emptyCta": "RSS ফিড সাবস্ক্রাইব করুন",
+      "metaTitle": "চিন্তাভাবনা | Intelligent Singularity",
+      "metaDescription": "প্রকাশ্যে চিন্তা: প্রবেশাধিকার, সারিবদ্ধতা ও AI-এর দীর্ঘ পথ।",
+      "metaTitleSuffix": "অন্তর্দৃষ্টি | Intelligent Singularity",
+      "eyebrowFallback": "অন্তর্দৃষ্টি"
     },
     "trust": {
+      "schemaName": "ভরসা | Intelligent Singularity",
+      "schemaDescription": "আমাদের ভরসার স্তম্ভ, তৃতীয় পক্ষের সাবপ্রসেসর, সার্টিফিকেশন এবং কীভাবে নিরাপত্তা ঘটনা রিপোর্ট করবেন।",
+      "breadcrumbCurrent": "ভরসা",
       "eyebrow": "ভরসা",
       "title": "প্রমাণ কোথায় পাবেন।",
       "lede": "নিরাপত্তা, গোপনীয়তা, স্থায়িত্ব এবং প্রবেশাধিকার সম্পর্কে আমরা যা দাবি করি, তার প্রতিটি প্রমাণের সঙ্গে যুক্ত। আপনার কখনোই কেবল আমাদের কথায় বিশ্বাস করতে হবে না।",
@@ -141,9 +181,16 @@
       "incidentBody": "সমন্বিত প্রকাশই হলো আমরা গুরুত্ব সহকারে যে পথ অনুসরণ করি। বিবরণ ও পুনরুৎপাদনের ধাপসহ security@intelligentsingularityinc.com-এ ইমেইল করুন। আমরা এক কর্মদিবসের মধ্যে রিপোর্ট স্বীকার করি, তিন দিনের মধ্যে ট্রায়েজ করি এবং আপনার সঙ্গে সম্মত একটি সময়সীমায় ফিক্স পাঠাই। ফিক্স পাঠানো হলে আমাদের পোস্ট-মর্টেমে গবেষকদের নাম দিয়ে কৃতিত্ব দেওয়া হয় — যদি না আপনি বেনামী থাকতে চান। আমরা সদিচ্ছাপূর্ণ নিরাপত্তা গবেষকদের হুমকি দিই না বা মামলা করি না, কোনো ব্যতিক্রম নেই।",
       "incidentCta": "ঘটনা রিপোর্ট করুন",
       "privacyPolicyLink": "গোপনীয়তা নীতি",
-      "learnMore": "আরও জানুন"
+      "learnMore": "আরও জানুন",
+      "dataResidencyHeading": "আপনার ডেটা কোথায় থাকে",
+      "disclosureHeading": "নিরাপত্তা প্রকাশ নীতি",
+      "metaTitle": "আস্থা | Intelligent Singularity",
+      "metaDescription": "আস্থার স্তম্ভ, তৃতীয় পক্ষের উপ-প্রসেসর, সনদ ও কীভাবে কোনো ঘটনা রিপোর্ট করবেন।"
     },
     "help": {
+      "schemaName": "সহায়তা | Intelligent Singularity",
+      "schemaDescription": "সহায়তা কেন্দ্র — বিভাগ ব্রাউজ করুন, জনপ্রিয় উত্তর দেখুন এবং সরাসরি যোগাযোগ করুন।",
+      "breadcrumbCurrent": "সহায়তা",
       "eyebrow": "সহায়তা",
       "title": "সাধারণত এক ক্লিকেই সমাধান।",
       "lede": "যে সারিটি আপনার প্রশ্নের সবচেয়ে কাছাকাছি, সেটি বেছে নিন। প্রতিটি লিঙ্ক সত্যিকারের জায়গায় নিয়ে যাবে — কোনো গেট-করা ফর্ম নয়, কোনো চ্যাটবটও নয়।",
@@ -153,13 +200,17 @@
       "browseByTopic": "বিষয় অনুযায়ী দেখুন",
       "checkStatus": "স্থিতি দেখুন",
       "contactEyebrow": "যোগাযোগ",
-      "contactFallbackCta": "যোগাযোগ করুন"
+      "contactFallbackCta": "যোগাযোগ করুন",
+      "metaTitle": "সহায়তা | Intelligent Singularity",
+      "metaDescription": "দ্রুত সহায়তা খুঁজুন: বিভাগ ব্রাউজ করুন, জনপ্রিয় উত্তর পড়ুন বা এক ক্লিকে একজনের সাথে যোগাযোগ করুন।"
     },
     "about": {
       "eyebrow": "সম্পর্কে · স্টুডিও",
       "defaultTitle": "Intelligent Singularity সম্পর্কে",
       "ecosystemLabel": "এক নজরে ইকোসিস্টেম",
       "ecosystemHeading": "এক মূল কোম্পানি, সাতটি পণ্য বিভাগ।",
+      "ecosystemSvgTitle": "একটি মূল কোম্পানির অধীনে Clap ইকোসিস্টেম",
+      "ecosystemAriaLabelTemplate": "{rootLabel}, {count}টি পণ্য শাখাযুক্ত মূল কোম্পানি: {list}।",
       "ataGlanceLabel": "এক নজরে",
       "talkToStudioLabel": "স্টুডিওর সঙ্গে কথা বলুন",
       "talkToStudioBody": "অংশীদারিত্ব, প্রেস, বা পণ্য সংক্রান্ত প্রশ্ন — বার্তা সরাসরি প্রতিষ্ঠাতার কাছে পৌঁছায়, সাধারণত দুই কর্মদিবসের মধ্যে।",
@@ -185,6 +236,20 @@
         "portfolio": "প্ল্যাটফর্মের একটি ক্রমবর্ধমান পরিবার",
         "languages": "১৪টি শিপিং লোকেল",
         "footprint": "প্রতি পৃষ্ঠায় ≤ ৫০ KB · শূন্য ট্র্যাকার"
+      },
+      "breadcrumbCurrent": "পরিচিতি",
+      "schemaName": "পরিচিতি | Intelligent Singularity",
+      "schemaDescription": "Intelligent Singularity-এর পিছনের দল এবং লক্ষ্যের সাথে পরিচিত হন: AI-সমৃদ্ধ পরিচালনার মাধ্যমে সর্বজনীন প্রবেশাধিকারের জন্য সফ্টওয়্যার নির্মাণ।",
+      "metaTitle": "আমাদের সম্পর্কে | Intelligent Singularity",
+      "metaDescription": "Intelligent Singularity-র পেছনের দল ও লক্ষ্যের সাথে পরিচিত হোন: হালকা AI-সংবর্ধিত পরিচালনার সাথে সর্বজনীন প্রবেশাধিকারের জন্য সফ্টওয়্যার তৈরি।",
+      "ecosystemBranchLabels": {
+        "corePlatform": "মূল প্ল্যাটফর্ম",
+        "health": "স্বাস্থ্য",
+        "finance": "অর্থ",
+        "work": "কর্ম",
+        "agriculture": "কৃষি",
+        "media": "মিডিয়া",
+        "commsData": "যোগাযোগ / ডেটা"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "উপরের হালকা বিন্দুগুলো হলো সেইসব মানুষ যারা ইতিমধ্যে অনলাইনে আছেন। গাঢ়, রিং করা বিন্দুগুলো হলো সেইসব মানুষ যারা নেই। অফলাইন জনসংখ্যার ৯৬ শতাংশ নিম্ন ও মধ্যম-আয়ের দেশে বাস করেন। সর্বজনীন-প্রবেশাধিকার প্রকৌশল হলো সেই উপায় যা এই ব্যবধান বন্ধ করে। নিচের নয়টি প্রতিশ্রুতি হলো আমরা কীভাবে নিজেদের তাতে আবদ্ধ রাখি।",
       "commitmentsHeading": "নয়টি প্রতিশ্রুতি",
       "commitmentsBody": "নয়টি কেন্দ্রীভূত বলয় — প্রতিটি পণ্য প্রতিটি রিলিজে এর প্রতিটির বিপরীতে শিপ হয়। তালিকাটি ইচ্ছার তালিকা নয়। এটি হলো প্রকৌশল চুক্তি।",
-      "sourceData": "উৎস ডেটা"
+      "sourceData": "উৎস ডেটা",
+      "breadcrumbCurrent": "ম্যানিফেস্টো",
+      "schemaName": "ম্যানিফেস্টো | Intelligent Singularity",
+      "schemaDescription": "অনলাইনে বা অফলাইনে প্রতিটি ব্যবসা এবং ব্যক্তির জন্য এন্টারপ্রাইজ-গ্রেড সফ্টওয়্যারকে মৌলিক অধিকার করার বিষয়ে আমাদের ম্যানিফেস্টো পড়ুন।",
+      "globeSvgTitle": "অফলাইন পৌঁছানো",
+      "globeAriaLabel": "একটি সরল গ্লোব যেখানে ২.২ বিলিয়ন অফলাইন বিন্দু হাইলাইট করা হয়েছে, যা ডিজিটাল-বিভাজনের আইটিইউ পরিসংখ্যান চিত্রিত করে।",
+      "ringsSvgTitle": "প্রতিশ্রুতি",
+      "ringsAriaLabelTemplate": "{count}টি কেন্দ্রকেন্দ্রিক প্রতিশ্রুতি যা সর্বজনীন প্রবেশাধিকারের একটি একক বলয় গঠন করে — যে ইঞ্জিনিয়ারিং নিয়মগুলির বিরুদ্ধে প্রতিটি পণ্য প্রতিটি প্রকাশে আসে।",
+      "metaTitle": "ঘোষণাপত্র | Intelligent Singularity",
+      "metaDescription": "আমাদের ঘোষণাপত্র পড়ুন: প্রতিটি ব্যবসা ও ব্যক্তির জন্য এন্টারপ্রাইজ-গ্রেড সফ্টওয়্যারকে কীভাবে অনলাইনে বা অফলাইনে একটি মৌলিক অধিকারে পরিণত করা যায়।"
     },
     "faq": {
+      "schemaName": "FAQ | Intelligent Singularity",
+      "schemaDescription": "স্টুডিও, আমাদের পণ্য, গোপনীয়তা অনুশীলন এবং Intelligent Singularity-এর সাথে অংশীদারিত্বের সৎ উত্তর।",
+      "breadcrumbCurrent": "FAQ",
       "openTheForm": "Open the form",
       "emailDirectly": "Email directly"
     },
     "pricing": {
+      "schemaName": "মূল্য নির্ধারণ দর্শন | Intelligent Singularity",
+      "schemaDescription": "আমাদের মূল্য নির্ধারণের নিয়ম: ফ্রি টায়ার, অঞ্চল-ভিত্তিক ন্যায্য মূল্য, প্রতিটি টায়ারে প্রতিটি ফিচার, কোনো কন্টাক্ট-সেলস নেই।",
+      "breadcrumbCurrent": "মূল্য নির্ধারণ",
       "tierFree": "Free tier:",
       "tierPaid": "Paid tier:",
       "tierEnterprise": "Enterprise:",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "The same product, three customers",
       "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
       "viewThePortfolio": "View the portfolio",
-      "talkAboutPricing": "Talk about pricing"
+      "talkAboutPricing": "Talk about pricing",
+      "metaTitle": "মূল্য নির্ধারণ দর্শন | Intelligent Singularity",
+      "metaDescription": "আমরা কীভাবে প্রতিটি পণ্যের মূল্য নির্ধারণ করি: চিরকাল বিনামূল্যে স্তর, ক্রয়-ক্ষমতা-সমন্বিত হার, প্রতিটি স্তরে প্রতিটি বৈশিষ্ট্য, প্রকাশিত মূল্য, কোনো যোগাযোগ বিক্রয় নেই।"
     },
     "careers": {
+      "schemaName": "ক্যারিয়ার | Intelligent Singularity",
+      "schemaDescription": "স্টুডিও কীভাবে নিয়োগ করে এবং Intelligent Singularity-এ কাজ করা কেমন।",
+      "breadcrumbCurrent": "ক্যারিয়ার",
       "howWeWorkHeading": "আমরা আসলে কীভাবে কাজ করি",
       "whatYouWouldWorkOnHeading": "আপনি আসলে কী নিয়ে কাজ করবেন",
       "howWeHireHeading": "আমরা কীভাবে নিয়োগ করি, শুরু থেকে শেষ পর্যন্ত",
@@ -220,7 +305,9 @@
       "updatedPrefix": "আপডেট হয়েছে",
       "contactFormCta": "যোগাযোগ ফর্ম",
       "whatYouWouldWorkOnLede": "ইনটেলিজেন্ট সিঙ্গুলারিটি ক্রমবর্ধমান প্ল্যাটফর্ম পরিবারের প্যারেন্ট কোম্পানি। নতুন নিয়োগপ্রাপ্তরা সাধারণত পুরো এক বছর একটি পণ্যে কাজ করেন না — অধিকাংশই দুই বা তিনটির মধ্যে চক্রাকারে যান, কী শিপ হচ্ছে এবং সেই ত্রৈমাসিকে কোনটির সবচেয়ে বেশি সিনিয়র মনোযোগ প্রয়োজন তার ভিত্তিতে।",
-      "howWeHireLede": "চারটি ধাপ। উভয় পক্ষ দ্রুত এগোলে প্রথম ইমেইল থেকে লিখিত প্রস্তাব পর্যন্ত সর্বাধিক দুই সপ্তাহ। কোনো বিস্ময়কর পর্যায় নেই, কোনো অবৈতনিক টেক-হোম নেই, লিখিত কারণ ছাড়া কোনো \"কালচার ফিট\" প্রত্যাখ্যান নেই।"
+      "howWeHireLede": "চারটি ধাপ। উভয় পক্ষ দ্রুত এগোলে প্রথম ইমেইল থেকে লিখিত প্রস্তাব পর্যন্ত সর্বাধিক দুই সপ্তাহ। কোনো বিস্ময়কর পর্যায় নেই, কোনো অবৈতনিক টেক-হোম নেই, লিখিত কারণ ছাড়া কোনো \"কালচার ফিট\" প্রত্যাখ্যান নেই।",
+      "metaTitle": "কর্মজীবন | Intelligent Singularity",
+      "metaDescription": "স্টুডিও কীভাবে নিয়োগ করে: ছোট, দূরবর্তী, AI-সংবর্ধিত দল যা সর্বজনীন প্রবেশাধিকার সফ্টওয়্যার সরবরাহ করে। বর্তমান শূন্যপদ এবং নিজের পরিচয় দেওয়ার স্থায়ী আমন্ত্রণ।"
     },
     "press": {
       "factSheetHeading": "ফ্যাক্ট শিট",
@@ -234,7 +321,10 @@
       "contactFormCta": "যোগাযোগ ফর্ম",
       "boilerplateLede": "একটি অনুচ্ছেদ, প্রেস রিলিজে সরাসরি ব্যবহারের জন্য। হুবহু ব্যবহারের অনুমোদিত।",
       "storyAnglesYesLede": "আপনার গল্প যদি এই কোণগুলোর একটির মধ্যে থাকে, আমরা একজন প্রতিষ্ঠাতা, একজন ইঞ্জিনিয়ার বা একজন প্রোডাক্ট লিডকে উপলব্ধ করার জন্য দ্রুত কাজ করব — সাধারণত একটি কার্যদিবসের মধ্যে।",
-      "storyAnglesNoLede": "আগে থেকেই সততা সবার সময় বাঁচায়। নিচের কোণগুলোর জন্য আমরা উদ্ধৃতি প্রদান করব না। তবে আমরা আপনাকে এমন একজন সাংবাদিক বা বিশ্লেষকের কাছে নির্দেশ দেব যার কাজ গল্পের সাথে আরও ভালোভাবে মেলে।"
+      "storyAnglesNoLede": "আগে থেকেই সততা সবার সময় বাঁচায়। নিচের কোণগুলোর জন্য আমরা উদ্ধৃতি প্রদান করব না। তবে আমরা আপনাকে এমন একজন সাংবাদিক বা বিশ্লেষকের কাছে নির্দেশ দেব যার কাজ গল্পের সাথে আরও ভালোভাবে মেলে।",
+      "breadcrumbCurrent": "প্রেস",
+      "schemaName": "প্রেস ও মিডিয়া | Intelligent Singularity",
+      "schemaDescription": "Intelligent Singularity সম্পর্কে রিপোর্টকারী সাংবাদিক ও গবেষকদের জন্য প্রেস কিট, ফ্যাক্ট শিট, অনুমোদিত উদ্ধৃতি এবং সরাসরি যোগাযোগ।"
     },
     "portfolio": {
       "eyebrow": "পোর্টফোলিও · Clap ইকোসিস্টেম",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "তৃতীয় পক্ষের কল",
       "statThirdPartyValue": "শূন্য",
       "statThirdPartyHint": "প্রতিটি পণ্য রিলিজে CI দ্বারা প্রয়োগকৃত",
-      "ecosystemStatsAria": "ইকোসিস্টেম পরিসংখ্যান"
+      "ecosystemStatsAria": "ইকোসিস্টেম পরিসংখ্যান",
+      "verticalLabel": "ভার্টিক্যাল",
+      "publicAs": "নামে পরিচিত",
+      "breadcrumbCurrent": "পোর্টফোলিও",
+      "schemaName": "পোর্টফোলিও | Intelligent Singularity",
+      "schemaDescription": "ব্যবসায়িক কার্যক্রম, স্বাস্থ্য, অর্থ, কৃষি, মিডিয়া এবং যোগাযোগ জুড়ে ১৪টি টুলের সম্পূর্ণ ইকোসিস্টেম অন্বেষণ করুন।",
+      "mosaicSvgTitle": "পোর্টফোলিও মোজাইক",
+      "mosaicAriaLabel": "Clap ইকোসিস্টেমের আটটি প্ল্যাটফর্ম দেখানো একটি মোজাইক: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee এবং Audiflo।",
+      "metaTitle": "পোর্টফোলিও | Intelligent Singularity",
+      "metaDescription": "ব্যবসায়িক পরিচালনা, স্বাস্থ্য, আর্থিক, কৃষি, মিডিয়া ও যোগাযোগে ১৪টি সরঞ্জামের সম্পূর্ণ ইকোসিস্টেম দেখুন।",
+      "productCountLabel": "{count, plural, one {পণ্য} other {পণ্য}}"
     },
     "contact": {
+      "schemaName": "যোগাযোগ | Intelligent Singularity",
+      "schemaDescription": "অংশীদারিত্ব, প্রেস, আইনি, বা আমাদের সর্বজনীন-অ্যাক্সেস সফটওয়্যার ইকোসিস্টেম সম্পর্কে পণ্য অনুসন্ধানের জন্য Intelligent Singularity-এর সাথে যোগাযোগ করুন।",
+      "breadcrumbCurrent": "যোগাযোগ",
       "eyebrow": "যোগাযোগ · স্টুডিও ডেস্ক",
       "titleFallback": "যোগাযোগ করুন",
+      "formHeading": "যোগাযোগ ফর্ম",
       "directChannelsLabel": "সরাসরি চ্যানেল",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "আরবি ও উর্দু RTL সহ।",
       "factHostingLabel": "হোস্টিং",
       "factHostingLine1": "একক VPS, এডমন্টন।",
-      "factHostingLine2": "কোনো তৃতীয় পক্ষের CDN নেই।"
+      "factHostingLine2": "কোনো তৃতীয় পক্ষের CDN নেই।",
+      "metaTitle": "যোগাযোগ | Intelligent Singularity",
+      "metaDescription": "অংশীদারিত্ব, প্রেস, আইনি বা আমাদের সর্বজনীন প্রবেশাধিকার সফ্টওয়্যার ইকোসিস্টেম সম্পর্কে পণ্য জিজ্ঞাসার জন্য Intelligent Singularity-এর সাথে যোগাযোগ করুন।"
+    },
+    "legal": {
+      "eyebrowLabel": "আইনি",
+      "lastUpdatedLabel": "সর্বশেষ আপডেট: {date}",
+      "tocLabel": "এই পৃষ্ঠায়"
     },
     "security": {
       "postureHeading": "আমরা সাইট ও প্ল্যাটফর্ম কীভাবে চালাই",
       "dataHeading": "আমরা আপনার ডেটা কীভাবে পরিচালনা করি",
       "complianceHeading": "যে মানদণ্ডে আমরা নিজেদের ধরে রাখি",
       "complianceLede": "আমরা একটি ছোট, নামধারী মানদণ্ডের সেট অনুসরণ করি — এবং কোন কোন অডিট আমরা এখনো অর্জন করিনি, সে বিষয়ে আমরা সৎ।",
-      "privacyPolicyLink": "গোপনীয়তা নীতি পড়ুন"
+      "privacyPolicyLink": "গোপনীয়তা নীতি পড়ুন",
+      "breadcrumbCurrent": "নিরাপত্তা",
+      "schemaName": "নিরাপত্তা ও বিশ্বাস | Intelligent Singularity",
+      "schemaDescription": "Intelligent Singularity-জুড়ে নিরাপত্তা এবং ডেটা-পরিচালনা অনুশীলন: এনক্রিপশন, সেলফ-হোস্টিং, শূন্য তৃতীয়-পক্ষ কল এবং সংক্ষিপ্ত ধরে রাখার নীতি।",
+      "shieldSvgTitle": "সুরক্ষা অবস্থান",
+      "shieldAriaLabel": "সুরক্ষা অবস্থান চিত্রিত একটি সরল ঢাল: TLS এনক্রিপশন, শূন্য তৃতীয়-পক্ষ কল, পৃথক পণ্য পরিবেশ, সংক্ষিপ্ত ধরে রাখা এবং নামযুক্ত সাবপ্রসেসর।",
+      "metaTitle": "নিরাপত্তা ও আস্থা | Intelligent Singularity",
+      "metaDescription": "আমরা এই সাইট ও আমাদের পোর্টফোলিওর প্রতিটি পণ্যকে কীভাবে সুরক্ষিত রাখি: TLS, শূন্য তৃতীয় পক্ষের কল, সংক্ষিপ্ত ধারণ, এনক্রিপ্টেড ব্যাকআপ ও সৎ ঘটনা প্রতিক্রিয়া।"
     },
     "green": {
+      "schemaName": "সবুজ অঙ্গীকার | Intelligent Singularity",
+      "schemaDescription": "আমাদের পরিবেশগত প্রতিশ্রুতি, পৃষ্ঠার ওজনের স্বচ্ছতা এবং কম-নির্গমন ওয়েব পারফরম্যান্স পদ্ধতি দেখুন।",
+      "breadcrumbCurrent": "পরিবেশ",
       "liveTelemetryEyebrow": "সবুজ · লাইভ টেলিমেট্রি",
       "statThisPageLabel": "এই পৃষ্ঠা",
       "statThisPageHint": "HTML + CSS, কোনো ট্র্যাকার নেই",
@@ -375,11 +496,64 @@
           "value": "প্ল্যাটফর্ম জুড়ে",
           "hint": "চালান, মেডিকেল রেকর্ড, রসিদ ডিফল্টভাবে ডিজিটাল। অফিস কাগজ, ব্যবসায়িক কার্ড, এবং মুদ্রিত মার্কেটিং সংগ্রহ আমাদের কাজের অংশ নয়।"
         }
-      }
+      },
+      "metaTitle": "সবুজ অঙ্গীকার | Intelligent Singularity",
+      "metaDescription": "আমাদের পরিবেশগত প্রতিশ্রুতি, পৃষ্ঠা-ওজন স্বচ্ছতা এবং কম-নির্গমন ওয়েব পারফরম্যান্স পদ্ধতি দেখুন।"
     },
     "home": {
       "commitmentsKicker": "Nine non-negotiables",
-      "commitmentsAria": "The nine commitments"
+      "commitmentsAria": "The nine commitments",
+      "ddKicker": "একশো মানুষ, প্রকৃত মাপে আঁকা",
+      "ddHeading": "পৃথিবীর প্রতি একশো জনের মধ্যে ছাব্বিশ জনের এখনো কোনো ডিজিটাল প্রবেশাধিকার নেই।",
+      "ddOnlineCount": "৫.৯ বিলিয়ন",
+      "ddOfflineCount": "২.২ বিলিয়ন",
+      "ddSourceFallback": "ITU Facts and Figures 2025",
+      "ddSvgTitle": "কে অনলাইনে আছেন এবং কে নেই",
+      "ddOnlineLabel": "অনলাইন",
+      "ddOfflineLabel": "এখনও অফলাইন",
+      "ddSourcePrefix": "উৎস",
+      "fieldNotesKicker": "মাঠের নোট",
+      "fieldNotesTitle": "আমরা এটি তৈরি করার কথা কীভাবে ভাবি।",
+      "fieldNotesBody": "স্টুডিও থেকে সংক্ষিপ্ত, যথাযথ প্রবন্ধ। আমরা ধীরে লিখি এবং সবকিছু উদ্ধৃত করি। কোনো ক্লিকবেট নেই, কোনো থট-লিডারশিপ কুয়াশা নেই।",
+      "fieldNotesCta": "আমাদের মাঠের নোট পড়ুন",
+      "flagshipsKicker": "স্টুডিও · 14টি টুল",
+      "flagshipsSeeAllCta": "সম্পূর্ণ ইকোসিস্টেম দেখুন",
+      "flagshipCardLabel": "ফ্ল্যাগশিপ",
+      "facts": {
+        "kicker": "ফাঁক · পরিমাপিত",
+        "sourceLabel": "ITU · 2025",
+        "sourceHeading": "উৎস",
+        "card1Caption": "যারা কখনো ইন্টারনেট ব্যবহার করেননি। <accent>{pct}% নিম্ন ও মধ্যম আয়ের দেশে বাস করেন।</accent>",
+        "card1Comparison": "≈ মানবতার ২৬%",
+        "card2Caption": "নিম্ন আয়ের দেশে অনলাইনে থাকা মানুষের শতাংশ। <accent>উচ্চ আয়ের দেশে {pct}%।</accent>",
+        "card3Caption": "নিম্ন আয়ের দেশে 5G কভারেজ। উচ্চ আয়ের দেশ <accent>{pct}%</accent>। বিশগুণ ফাঁক।",
+        "card3Comparison": "২১× ব্যবধান",
+        "card4Caption": "বিশ্বব্যাপী অনলাইনে থাকা গ্রামীণ মানুষ। শহুরে হার <accent>{pct}%</accent>। শহর-গ্রাম ব্যবধান এখনও বিশাল।"
+      },
+      "greenStrip": {
+        "eyebrow": "লাইভ কার্বন রসিদ",
+        "heading": "প্রতিটি ভিজিট একটি শক্তির পদচিহ্ন রেখে যায়। এটি আমাদের।",
+        "body": "আমরা পৃষ্ঠার ওজন কিলোবাইটে এবং অন্তর্ভুক্ত কার্বন গ্রামে পরিমাপ করি। উভয়ই অত্যন্ত ছোট থাকে কারণ আমরা প্রয়োজনের বাইরে কিছু পাঠাই না — কোনও সিডিএন থেকে ফন্ট নয়, কোনও ট্র্যাকার নয়, কোনও লুকানো স্ক্রিপ্ট ঘরে কল করে না।",
+        "pageWeightLabel": "এই পৃষ্ঠার ওজন",
+        "pageWeightUnit": "কেবি",
+        "pageWeightHint": "বাজেট: প্রতি রুট ৫০ কেবি-এর নিচে, gzip",
+        "carbonLabel": "আপনার ভিজিট নির্গত করেছে",
+        "carbonHint": "গ্রিন ওয়েব ফাউন্ডেশন মডেল দিয়ে গণনা করা",
+        "hostingLabel": "আমাদের হোস্টিং",
+        "hostingValue": "স্ব-হোস্ট",
+        "hostingHint": "একক VPS · কোনও CDN নেই · অ্যালবার্টা গ্রিড",
+        "thirdPartyLabel": "তৃতীয় পক্ষের কল",
+        "thirdPartyValue": "শূন্য",
+        "thirdPartyHint": "কোনও CDN, ফন্ট, অ্যানালিটিক্স, পিক্সেল নেই"
+      },
+      "schemaName": "Intelligent Singularity | সর্বজনীন প্রবেশাধিকারের জন্য সফ্টওয়্যার",
+      "schemaDescription": "একটি লক্ষ্যকেন্দ্রিক স্টুডিও যা ব্যবসা, স্বাস্থ্য, অর্থ এবং কাজ জুড়ে সর্বজনীন প্রবেশাধিকারের জন্য AI-সমৃদ্ধ সফ্টওয়্যার তৈরি করে।",
+      "metaTitle": "Intelligent Singularity | সর্বজনীন প্রবেশাধিকারের জন্য সফ্টওয়্যার",
+      "metaDescription": "একটি লক্ষ্য-চালিত স্টুডিও যা ব্যবসা, স্বাস্থ্য, আর্থিক ও কাজে সর্বজনীন প্রবেশাধিকারের জন্য AI-সংবর্ধিত সফ্টওয়্যার তৈরি করে।"
+    },
+    "offline": {
+      "metaTitle": "অফলাইন | Intelligent Singularity",
+      "metaDescription": "Intelligent Singularity ওয়েব অভিজ্ঞতার জন্য অফলাইন ফলব্যাক পৃষ্ঠা।"
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineBody": "আপনি অফলাইনে আছেন বলে মনে হচ্ছে। আমরা এই পৃষ্ঠাটি ক্যাশ থেকে পরিবেশন করছি।",
     "offlineEyebrow": "অফলাইন",
     "offlineReturnHome": "হোমে ফিরে যান",
-    "offlineTitle": "এখন কোনো সংযোগ নেই।"
+    "offlineTitle": "এখন কোনো সংযোগ নেই।",
+    "opensInNewTab": "(নতুন ট্যাবে খোলে)",
+    "emailLinkAriaLabel": "{email} ঠিকানায় ইমেল পাঠান",
+    "breadcrumbHome": "হোম",
+    "ogImageAlt": "Intelligent Singularity — সর্বজনীন প্রবেশাধিকারের জন্য সফটওয়্যার।",
+    "visit": "দেখুন",
+    "schema": {
+      "organizationDescription": "সর্বজনীন প্রবেশযোগ্যতার জন্য সফটওয়্যার তৈরিকারী একটি স্টুডিও।",
+      "founderDescription": "Intelligent Singularity-এর প্রতিষ্ঠাতা, AI-সমৃদ্ধ লিন অপারেশনের সাথে সর্বজনীন প্রবেশযোগ্যতার জন্য সফটওয়্যার তৈরি করেন।",
+      "portfolioListName": "Intelligent Singularity পণ্য পোর্টফোলিও"
+    }
   },
   "languageWheel": {
     "navAria": "ভাষা",

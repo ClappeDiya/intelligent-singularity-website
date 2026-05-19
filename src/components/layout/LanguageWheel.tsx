@@ -52,7 +52,7 @@ export function LanguageWheel() {
             key={l}
             href={`${replaceLocaleInPath(pathname, l)}${suffix}`}
             onClick={() => setLocaleCookie(l)}
-            aria-label={t('switchTo', { language: LOCALE_NAMES[l] })}
+            aria-label={`${LOCALE_LABELS[l]} · ${t('switchTo', { language: LOCALE_NAMES[l] })}`}
             {...(active ? { 'aria-current': 'page' as const } : {})}
             title={LOCALE_NAMES[l]}
             className={`min-w-[36px] h-[32px] px-2 rounded-full border flex items-center justify-center text-[10.5px] font-[var(--font-mono)] uppercase tracking-[0.06em] transition ${

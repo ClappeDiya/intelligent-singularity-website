@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "Ruka hadi maudhui makuu",
     "scrollHint": "Sogeza",
-    "scrollHintTarget": "pengo katika takwimu"
+    "scrollHintTarget": "pengo katika takwimu",
+    "source": "ITU 2025",
+    "populationCaption": "ya watu wote duniani",
+    "counterAriaLabel": "Watu {count} bado wako nje ya mtandao, chanzo ITU 2025"
   },
   "contactForm": {
     "routingLabel": "Elekeza",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "Changelog",
+      "schemaDescription": "Maelezo ya matoleo ya umma.",
+      "breadcrumbCurrent": "Changelog",
       "eyebrow": "CHANGELOG · TOVUTI YA SHIRIKA",
       "title": "Kilichobadilika, kwa mpangilio.",
       "lede": "Kila mabadiliko yanayoonekana tuliyofanya kwenye tovuti hii ya shirika, yakiwa na tarehe na kuhusishwa na commit iliyo nyuma yake. Kila bidhaa katika mfumo wa Clap inahifadhi changelog yake mwenyewe katika kikoa chake — ukurasa huu ni mlango mkuu wa kampuni mama, si zaidi ya hapo, hakuna kilichofichwa.",
       "feedLabel": "Jisajili:",
       "feedTitle": "Intelligent Singularity — Changelog",
-      "rssFeed": "Mlisho wa RSS"
+      "rssFeed": "Mlisho wa RSS",
+      "firstVersionTitle": "Hii ndio toleo la kwanza.",
+      "firstVersionBody": "Hakuna lebo zilizokatwa bado. Unasoma jenga {sha}. Ingizo la kwanza la kutolewa litaonekana hapa mara tu v1.0 itakapowekewa lebo.",
+      "viewRepoCta": "Tazama hifadhi",
+      "releasesHeading": "Matoleo",
+      "metaTitle": "Kumbukumbu ya Mabadiliko | Intelligent Singularity",
+      "metaDescription": "Kila mabadiliko yanayoonekana ambayo tumefanya, na tarehe na commit nyuma yake."
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "Live status dashboard",
       "overallStatusAria": "Overall status",
       "externalNavAria": "External",
-      "opensInNewTab": " (opens in a new tab)"
+      "opensInNewTab": " (opens in a new tab)",
+      "uptimeGridAria": "Muda wa kufanya kazi katika siku 90 zilizopita, {pct} katika saa 24 zilizopita.",
+      "breadcrumbCurrent": "Hali",
+      "schemaName": "Hali | Intelligent Singularity",
+      "schemaDescription": "Hali ya mfumo ya moja kwa moja kwa tovuti na miundombinu yake.",
+      "metaTitle": "Hali | Intelligent Singularity",
+      "metaDescription": "Hali ya moja kwa moja ya tovuti na miundombinu yake."
     },
     "roadmap": {
+      "schemaName": "Ramani ya Safari | Intelligent Singularity",
+      "schemaDescription": "Ramani ya safari ya umma inayoonyesha kazi inayoendelea, iliyopangwa, iliyozinduliwa na iliyositishwa.",
+      "breadcrumbCurrent": "Ramani ya Safari",
       "eyebrow": "RAMANI YA SAFARI · HADHARANI",
       "title": "Tunachojenga.",
       "lede": "Hadharani. Hakuna vaporware. Kila kipengele kiko upande wa studio — kazi ya tovuti ya shirika, miundombinu inayoshirikiwa, na ahadi za kuvuka mipaka zinazogusa kila bidhaa. Kila bidhaa katika mfumo wa Clap inaweka ramani yake ya safari kwenye kikoa chake. Vipengele hapa hujiunga na msimbo vinapotumwa.",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "Kuna kinachokosekana?",
       "ctaHeading": "Tuambie unachohitaji.",
       "ctaBody": "Ikiwa kuna kipengele, zana, au marekebisho ambayo yatakuletea tofauti halisi, tutumie ujumbe. Tunasoma kila ujumbe na tunatoa kipaumbele kwa msingi wa hitaji halisi.",
-      "ctaButton": "Tuma ujumbe"
+      "ctaButton": "Tuma ujumbe",
+      "metaTitle": "Ramani ya Kazi | Intelligent Singularity",
+      "metaDescription": "Tunachojenga, kinachopangwa, kilichotolewa na kilichosimamishwa — hadharani."
     },
     "insights": {
+      "schemaName": "Insights | Intelligent Singularity",
+      "schemaDescription": "Kufikiri hadharani: ufikiaji, ulinganifu, na safari ndefu ya AI.",
+      "breadcrumbCurrent": "Insights",
       "eyebrow": "INSIGHTS · MAANDISHI YA UWANJANI YA STUDIO",
       "title": "Kufikiri hadharani.",
       "lede": "Maandishi ya uwanjani kuhusu ufikiaji kwa wote, uhandisi unaosaidiwa na AI, watu bilioni 2.2 wasio mtandaoni, na safari ndefu ya akili bandia — yameandikwa ili kueleweka, si kuvutia. Tunaandika polepole. Kila dai linaunganishwa na chanzo. Hakuna clickbait, hakuna ukungu wa uongozi wa fikra.",
@@ -118,9 +144,23 @@
       "subscribeLabel": "Jisajili:",
       "rssFeed": "Mlisho wa RSS",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "Ukurasa"
+      "paginationAria": "Ukurasa",
+      "paginationNewer": "← Mpya",
+      "paginationOlder": "Za zamani →",
+      "paginationNewerAria": "Nenda kwenye machapisho mapya",
+      "paginationOlderAria": "Nenda kwenye machapisho ya zamani",
+      "emptyTitle": "Hakuna kilichochapishwa bado.",
+      "emptyBody": "Insha ya kwanza itaonekana hapa mara tu itakapokuwa tayari. Tunaandika polepole na kwa uangalifu.",
+      "emptyCta": "Jisajili kwa mlolongo wa RSS",
+      "metaTitle": "Maoni | Intelligent Singularity",
+      "metaDescription": "Kufikiri hadharani: ufikiaji, upangaji, na safari ndefu ya AI.",
+      "metaTitleSuffix": "Maarifa | Intelligent Singularity",
+      "eyebrowFallback": "MAARIFA"
     },
     "trust": {
+      "schemaName": "Kuaminiana | Intelligent Singularity",
+      "schemaDescription": "Nguzo zetu za kuaminiana, wachakataji wa upande wa tatu, vyeti, na jinsi ya kuripoti tukio la usalama.",
+      "breadcrumbCurrent": "Kuaminiana",
       "eyebrow": "KUAMINIANA",
       "title": "Mahali pa kupata uthibitisho.",
       "lede": "Kila madai tunayoyatoa kuhusu usalama, faragha, uendelevu, na ufikiaji yameunganishwa na ushahidi. Hupaswi kamwe kulazimika kutuamini tu kwa neno letu.",
@@ -141,9 +181,16 @@
       "incidentBody": "Ufichuzi wa pamoja ndio njia tunayoichukulia kwa uzito. Tuma barua pepe kwa security@intelligentsingularityinc.com ikiwa na maelezo na hatua za kurudia. Tunatambua ripoti ndani ya siku moja ya kazi, tunazifanyia uchunguzi ndani ya siku tatu, na tunatuma marekebisho kwa ratiba tuliyokubaliana nawe. Watafiti hupewa heshima kwa jina katika ripoti yetu ya tafiti baada ya kosa wakati marekebisho yanatumwa — isipokuwa unapendelea kubaki bila jina. Hatutishi wala hatumshtaki mtafiti wa usalama mwenye nia njema, hapana zaidi.",
       "incidentCta": "Ripoti tukio",
       "privacyPolicyLink": "Sera ya faragha",
-      "learnMore": "Pata maelezo zaidi"
+      "learnMore": "Pata maelezo zaidi",
+      "dataResidencyHeading": "Mahali data yako inakaa",
+      "disclosureHeading": "Sera ya kufichua usalama",
+      "metaTitle": "Imani | Intelligent Singularity",
+      "metaDescription": "Nguzo za imani, watayarishaji wadogo wa upande wa tatu, vyeti, na jinsi ya kuripoti tukio."
     },
     "help": {
+      "schemaName": "Usaidizi | Intelligent Singularity",
+      "schemaDescription": "Kituo cha usaidizi — vinjari makundi, majibu maarufu, na mawasiliano ya moja kwa moja.",
+      "breadcrumbCurrent": "Usaidizi",
       "eyebrow": "USAIDIZI",
       "title": "Kawaida tunaweza kusaidia kwa mbofyo mmoja.",
       "lede": "Chagua mstari unaofanana zaidi na swali lako. Kila kiungo huenda mahali halisi — hakuna fomu zilizofungwa, hakuna chatbots.",
@@ -153,13 +200,17 @@
       "browseByTopic": "Vinjari kwa mada",
       "checkStatus": "Angalia hali",
       "contactEyebrow": "Mawasiliano",
-      "contactFallbackCta": "Wasiliana nasi"
+      "contactFallbackCta": "Wasiliana nasi",
+      "metaTitle": "Msaada | Intelligent Singularity",
+      "metaDescription": "Pata msaada haraka: vinjari kategoria, soma majibu maarufu, au wasiliana na mtu kwa kubofya mara moja."
     },
     "about": {
       "eyebrow": "Kuhusu · Studio",
       "defaultTitle": "Kuhusu Intelligent Singularity",
       "ecosystemLabel": "Mfumo kwa muhtasari",
       "ecosystemHeading": "Kampuni mama moja, makundi saba ya bidhaa.",
+      "ecosystemSvgTitle": "Mfumo wa Clap chini ya kampuni mama moja",
+      "ecosystemAriaLabelTemplate": "{rootLabel}, kampuni mama yenye matawi {count} ya bidhaa: {list}.",
       "ataGlanceLabel": "Kwa muhtasari",
       "talkToStudioLabel": "Ongea na studio",
       "talkToStudioBody": "Ushirikiano, vyombo vya habari, au swali la bidhaa — ujumbe unafika moja kwa moja kwa mwanzilishi, kwa kawaida ndani ya siku mbili za kazi.",
@@ -185,6 +236,20 @@
         "portfolio": "Familia inayokua ya majukwaa",
         "languages": "Lugha 14 zinazotumwa",
         "footprint": "≤ 50 KB kwa kila ukurasa · sifuri vifuatiliaji"
+      },
+      "breadcrumbCurrent": "Kuhusu",
+      "schemaName": "Kuhusu | Intelligent Singularity",
+      "schemaDescription": "Kutana na timu na dhamira nyuma ya Intelligent Singularity: kujenga programu kwa upatikanaji kwa wote kwa shughuli zilizosheheni AI.",
+      "metaTitle": "Kuhusu Sisi | Intelligent Singularity",
+      "metaDescription": "Kutana na timu na dhamira nyuma ya Intelligent Singularity: kujenga programu kwa ufikiaji wa wote na shughuli rahisi zilizoboreshwa kwa AI.",
+      "ecosystemBranchLabels": {
+        "corePlatform": "Jukwaa kuu",
+        "health": "Afya",
+        "finance": "Fedha",
+        "work": "Kazi",
+        "agriculture": "Kilimo",
+        "media": "Vyombo vya habari",
+        "commsData": "Mawasiliano / data"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "Madoa mepesi hapo juu ni watu walio mtandaoni tayari. Madoa meusi, yenye duara ni watu wasio mtandaoni. Asilimia 96 ya watu wasio mtandaoni wanaishi katika nchi za kipato cha chini na cha kati. Uhandisi wa upatikanaji wa watu wote ndio unaopiga marufuku pengo hilo. Ahadi tisa zilizoorodheshwa hapo chini ni jinsi tunavyojibinya navyo.",
       "commitmentsHeading": "Ahadi tisa",
       "commitmentsBody": "Pete tisa za kati moja — kila bidhaa hutumwa dhidi ya kila moja yao, katika kila toleo. Orodha hii sio orodha ya matakwa. Ni mkataba wa uhandisi.",
-      "sourceData": "Chanzo cha data"
+      "sourceData": "Chanzo cha data",
+      "breadcrumbCurrent": "Tamko",
+      "schemaName": "Tamko | Intelligent Singularity",
+      "schemaDescription": "Soma tamko letu kuhusu kufanya programu za kiwango cha biashara kuwa haki ya msingi kwa kila biashara na mtu, mtandaoni au nje ya mtandao.",
+      "globeSvgTitle": "Ufikiaji wa nje ya mtandao",
+      "globeAriaLabel": "Tufe rahisi lenye nukta bilioni 2.2 zilizo nje ya mtandao zikionyeshwa, kuonyesha takwimu za ITU kuhusu mgawanyiko wa kidijitali.",
+      "ringsSvgTitle": "Ahadi",
+      "ringsAriaLabelTemplate": "{count} ahadi za mzunguko zinazounda pete moja ya ufikiaji wa wote — kanuni za uhandisi ambazo kila bidhaa hupelekwa nazo katika kila toleo.",
+      "metaTitle": "Ilani | Intelligent Singularity",
+      "metaDescription": "Soma ilani yetu juu ya kufanya programu za kiwango cha biashara kuwa haki ya msingi kwa kila biashara na mtu, mtandaoni au nje ya mtandao."
     },
     "faq": {
+      "schemaName": "FAQ | Intelligent Singularity",
+      "schemaDescription": "Majibu ya kweli kuhusu studio, bidhaa zetu, mazoea ya faragha, na jinsi ya kushirikiana na Intelligent Singularity.",
+      "breadcrumbCurrent": "FAQ",
       "openTheForm": "Open the form",
       "emailDirectly": "Email directly"
     },
     "pricing": {
+      "schemaName": "Falsafa ya Bei | Intelligent Singularity",
+      "schemaDescription": "Sheria zetu za bei: kiwango cha bure, bei ya haki kwa eneo, kila kipengele katika kila kiwango, hakuna kuwasiliana na mauzo.",
+      "breadcrumbCurrent": "Bei",
       "tierFree": "Free tier:",
       "tierPaid": "Paid tier:",
       "tierEnterprise": "Enterprise:",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "The same product, three customers",
       "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
       "viewThePortfolio": "View the portfolio",
-      "talkAboutPricing": "Talk about pricing"
+      "talkAboutPricing": "Talk about pricing",
+      "metaTitle": "Falsafa ya Bei | Intelligent Singularity",
+      "metaDescription": "Jinsi tunavyopanga bei ya kila bidhaa: kiwango cha bure cha milele, viwango vilivyorekebishwa kulingana na nguvu ya kununua, kila kipengele katika kila kiwango, bei zilizochapishwa, hakuna mauzo ya mawasiliano."
     },
     "careers": {
+      "schemaName": "Ajira | Intelligent Singularity",
+      "schemaDescription": "Jinsi studio inavyoajiri na jinsi ilivyo kufanya kazi katika Intelligent Singularity.",
+      "breadcrumbCurrent": "Ajira",
       "howWeWorkHeading": "Jinsi tunavyofanya kazi kwa ukweli",
       "whatYouWouldWorkOnHeading": "Kile ungefanyia kazi kwa ukweli",
       "howWeHireHeading": "Jinsi tunavyoajiri, kuanzia mwanzo hadi mwisho",
@@ -220,7 +305,9 @@
       "updatedPrefix": "Imesasishwa",
       "contactFormCta": "Fomu ya mawasiliano",
       "whatYouWouldWorkOnLede": "Intelligent Singularity ni kampuni mama ya familia inayoongezeka ya majukwaa. Wafanyakazi wapya mara chache hufanya kazi kwenye bidhaa moja kwa mwaka mzima — wengi huzunguka kati ya mbili au tatu, kulingana na kinachosafirishwa na kile kinachohitaji uangalifu mkubwa wa wafanyakazi wakuu kwenye robo hiyo.",
-      "howWeHireLede": "Hatua nne. Upeo wa wiki mbili kutoka barua pepe ya kwanza hadi ofa iliyoandikwa ikiwa pande zote mbili zinaendelea haraka. Hakuna hatua za mshangao, hakuna kazi za nyumbani zisizolipwa, hakuna kukataliwa kwa \"kufaa kwa utamaduni\" bila sababu iliyoandikwa."
+      "howWeHireLede": "Hatua nne. Upeo wa wiki mbili kutoka barua pepe ya kwanza hadi ofa iliyoandikwa ikiwa pande zote mbili zinaendelea haraka. Hakuna hatua za mshangao, hakuna kazi za nyumbani zisizolipwa, hakuna kukataliwa kwa \"kufaa kwa utamaduni\" bila sababu iliyoandikwa.",
+      "metaTitle": "Kazi | Intelligent Singularity",
+      "metaDescription": "Jinsi studio inavyoajiri: timu ndogo, ya mbali, iliyoboreshwa kwa AI inayotoa programu za ufikiaji wa wote. Nafasi za sasa na mwaliko wa kudumu wa kujitambulisha."
     },
     "press": {
       "factSheetHeading": "Karatasi ya ukweli",
@@ -234,7 +321,10 @@
       "contactFormCta": "Fomu ya mawasiliano",
       "boilerplateLede": "Aya moja, tayari kuingiza katika taarifa za vyombo vya habari. Imeidhinishwa kutumika neno kwa neno.",
       "storyAnglesYesLede": "Ikiwa hadithi yako iko ndani ya mojawapo ya pembe hizi, tutahamia haraka kumweka mwanzilishi, mhandisi, au kiongozi wa bidhaa — kwa kawaida ndani ya siku moja ya kazi.",
-      "storyAnglesNoLede": "Unyoofu wa mapema huokoa muda wa kila mtu. Hatutatoa manukuu kwa pembe zilizo hapa chini. Hata hivyo, tutakuelekeza kwa mwandishi wa habari au mchambuzi ambaye kazi yake inafaa zaidi kwa hadithi."
+      "storyAnglesNoLede": "Unyoofu wa mapema huokoa muda wa kila mtu. Hatutatoa manukuu kwa pembe zilizo hapa chini. Hata hivyo, tutakuelekeza kwa mwandishi wa habari au mchambuzi ambaye kazi yake inafaa zaidi kwa hadithi.",
+      "breadcrumbCurrent": "Vyombo vya habari",
+      "schemaName": "Vyombo vya Habari na Media | Intelligent Singularity",
+      "schemaDescription": "Kifurushi cha waandishi wa habari, karatasi ya ukweli, nukuu zilizoidhinishwa, na mawasiliano ya moja kwa moja kwa waandishi wa habari na watafiti wanaoshughulikia Intelligent Singularity."
     },
     "portfolio": {
       "eyebrow": "Portofolio · Mfumo wa Clap",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "Simu za mtu wa tatu",
       "statThirdPartyValue": "Sifuri",
       "statThirdPartyHint": "Inatekelezwa na CI kwenye kila toleo la bidhaa",
-      "ecosystemStatsAria": "Takwimu za mfumo"
+      "ecosystemStatsAria": "Takwimu za mfumo",
+      "verticalLabel": "Wima",
+      "publicAs": "Inajulikana kama",
+      "breadcrumbCurrent": "Portofolio",
+      "schemaName": "Portofolio | Intelligent Singularity",
+      "schemaDescription": "Chunguza mfumo kamili wa zana 14 katika shughuli za biashara, afya, fedha, kilimo, vyombo vya habari, na mawasiliano.",
+      "mosaicSvgTitle": "Mchoro wa portfolio",
+      "mosaicAriaLabel": "Mchoro unaoonyesha majukwaa nane katika mfumo wa Clap: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee na Audiflo.",
+      "metaTitle": "Portifolio | Intelligent Singularity",
+      "metaDescription": "Chunguza mfumo kamili wa zana 14 kwenye shughuli za biashara, afya, fedha, kilimo, vyombo vya habari na mawasiliano.",
+      "productCountLabel": "{count, plural, one {Bidhaa} other {Bidhaa}}"
     },
     "contact": {
+      "schemaName": "Mawasiliano | Intelligent Singularity",
+      "schemaDescription": "Wasiliana na Intelligent Singularity kuhusu ushirikiano, vyombo vya habari, masuala ya kisheria, au maswali ya bidhaa kuhusu mfumo wetu wa programu wa upatikanaji wa kila mtu.",
+      "breadcrumbCurrent": "Mawasiliano",
       "eyebrow": "Mawasiliano · Dawati la studio",
       "titleFallback": "Wasiliana nasi",
+      "formHeading": "Fomu ya mawasiliano",
       "directChannelsLabel": "Njia za moja kwa moja",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "Pamoja na Kiarabu na Kiurdu RTL.",
       "factHostingLabel": "Hosting",
       "factHostingLine1": "VPS moja, Edmonton.",
-      "factHostingLine2": "Hakuna CDN ya mtu wa tatu."
+      "factHostingLine2": "Hakuna CDN ya mtu wa tatu.",
+      "metaTitle": "Wasiliana Nasi | Intelligent Singularity",
+      "metaDescription": "Wasiliana na Intelligent Singularity kwa ushirikiano, vyombo vya habari, sheria, au maswali ya bidhaa kuhusu mfumo wetu wa programu za ufikiaji wa wote."
+    },
+    "legal": {
+      "eyebrowLabel": "Kisheria",
+      "lastUpdatedLabel": "Imesasishwa mwisho: {date}",
+      "tocLabel": "Kwenye ukurasa huu"
     },
     "security": {
       "postureHeading": "Jinsi tunavyoendesha tovuti na jukwaa",
       "dataHeading": "Jinsi tunavyoshughulikia data yako",
       "complianceHeading": "Viwango tunavyojibinya navyo",
       "complianceLede": "Tunafuata seti ndogo, iliyotajwa ya viwango — na tunakiri kwa uwazi juu ya ukaguzi ambao bado hatujaupata.",
-      "privacyPolicyLink": "Soma sera ya faragha"
+      "privacyPolicyLink": "Soma sera ya faragha",
+      "breadcrumbCurrent": "Usalama",
+      "schemaName": "Usalama na Uaminifu | Intelligent Singularity",
+      "schemaDescription": "Mazoea ya usalama na kushughulikia data katika Intelligent Singularity: ufichaji, kujihifadhi wenyewe, simu sifuri za upande wa tatu, na uhifadhi mfupi.",
+      "shieldSvgTitle": "Mkao wa usalama",
+      "shieldAriaLabel": "Ngao rahisi inayoonyesha mkao wa usalama: usimbaji wa TLS, simu sifuri za upande wa tatu, mazingira ya bidhaa yaliyotengwa, uhifadhi mfupi, na wachakataji wadogo waliotajwa kwa jina.",
+      "metaTitle": "Usalama na Imani | Intelligent Singularity",
+      "metaDescription": "Jinsi tunavyolinda tovuti hii na kila bidhaa katika portifolio yetu: TLS, simu sifuri za upande wa tatu, uhifadhi mfupi, hifadhi rudufu zilizosimbwa, na mwitikio wa uaminifu wa matukio."
     },
     "green": {
+      "schemaName": "Ahadi ya Kijani | Intelligent Singularity",
+      "schemaDescription": "Angalia ahadi zetu za kimazingira, uwazi wa uzito wa ukurasa, na mkabala wetu wa utendaji wa wavuti wenye uzalishaji mdogo.",
+      "breadcrumbCurrent": "Kijani",
       "liveTelemetryEyebrow": "Kijani · Telemetria moja kwa moja",
       "statThisPageLabel": "Ukurasa huu",
       "statThisPageHint": "HTML + CSS, hakuna vifuatiliaji",
@@ -375,11 +496,64 @@
           "value": "Katika jukwaa lote",
           "hint": "Bili, rekodi za matibabu, risiti hulingana na dijiti kwa default. Karatasi za ofisi, kadi za biashara, na vifaa vya uuzaji vilivyochapishwa si sehemu ya jinsi tunavyofanya kazi."
         }
-      }
+      },
+      "metaTitle": "Ahadi ya Kijani | Intelligent Singularity",
+      "metaDescription": "Ona ahadi zetu za mazingira, uwazi wa uzito wa kurasa, na njia yetu ya utendaji wa wavuti yenye uzalishaji wa chini."
     },
     "home": {
       "commitmentsKicker": "Nine non-negotiables",
-      "commitmentsAria": "The nine commitments"
+      "commitmentsAria": "The nine commitments",
+      "ddKicker": "Watu mia moja, walioonyeshwa kwa ukubwa halisi",
+      "ddHeading": "Watu ishirini na sita kati ya kila mia moja duniani bado hawana ufikiaji wa kidijitali hata kidogo.",
+      "ddOnlineCount": "Bilioni 5.9",
+      "ddOfflineCount": "Bilioni 2.2",
+      "ddSourceFallback": "ITU Ukweli na Takwimu 2025",
+      "ddSvgTitle": "Nani yuko mtandaoni na nani hayuko",
+      "ddOnlineLabel": "mtandaoni",
+      "ddOfflineLabel": "bado nje ya mtandao",
+      "ddSourcePrefix": "Chanzo",
+      "fieldNotesKicker": "Maelezo ya uwanjani",
+      "fieldNotesTitle": "Jinsi tunavyofikiria kuhusu kujenga hili.",
+      "fieldNotesBody": "Insha fupi na zilizothibitishwa kutoka studio. Tunaandika polepole na kutaja vyanzo vyote. Hakuna mitego ya kubofya, hakuna ukungu wa uongozi wa mawazo.",
+      "fieldNotesCta": "Soma maelezo yetu ya uwanjani",
+      "flagshipsKicker": "Studio · Zana 14",
+      "flagshipsSeeAllCta": "Tazama mfumo wote wa ikolojia",
+      "flagshipCardLabel": "Bidhaa Kuu",
+      "facts": {
+        "kicker": "Pengo · Limepimwa",
+        "sourceLabel": "ITU · 2025",
+        "sourceHeading": "Chanzo",
+        "card1Caption": "Watu ambao hawajawahi kutumia mtandao. <accent>{pct}% wanaishi katika nchi za kipato cha chini na cha kati.</accent>",
+        "card1Comparison": "≈ 26% ya wanadamu",
+        "card2Caption": "Asilimia ya watu mtandaoni katika nchi za kipato cha chini. <accent>{pct}% katika nchi za kipato cha juu.</accent>",
+        "card3Caption": "Ufunikaji wa 5G katika nchi za kipato cha chini. Nchi za kipato cha juu ziko kwa <accent>{pct}%</accent>. Pengo la mara ishirini.",
+        "card3Comparison": "Pengo 21×",
+        "card4Caption": "Watu wa vijijini mtandaoni duniani kote. Idadi ya mijini iko kwa <accent>{pct}%</accent>. Pengo la mji–mashambani bado ni kubwa sana."
+      },
+      "greenStrip": {
+        "eyebrow": "Stakabadhi ya Kaboni Hai",
+        "heading": "Kila ziara inaacha alama ya nishati. Hii ni yetu.",
+        "body": "Tunapima uzito wa ukurasa katika kilobaiti na kaboni iliyowekwa katika gramu. Vyote vinabaki kuwa vidogo sana kwa sababu hatutumi chochote ambacho hatuhitaji — hakuna fonti kutoka CDN, hakuna wafuatiliaji, hakuna hati zilizofichwa zinazoita nyumbani.",
+        "pageWeightLabel": "Ukurasa huu una uzito",
+        "pageWeightUnit": "KB",
+        "pageWeightHint": "Bajeti: chini ya KB 50 kwa kila njia, gzip",
+        "carbonLabel": "Ziara yako ilitoa",
+        "carbonHint": "Imekokotolewa na muundo wa Green Web Foundation",
+        "hostingLabel": "Mwenyeji wetu",
+        "hostingValue": "Mwenyeji wa kibinafsi",
+        "hostingHint": "VPS moja · hakuna CDN · gridi ya Alberta",
+        "thirdPartyLabel": "Simu za upande wa tatu",
+        "thirdPartyValue": "Sifuri",
+        "thirdPartyHint": "Hakuna CDN, fonti, uchanganuzi, pikseli"
+      },
+      "schemaName": "Intelligent Singularity | Programu kwa upatikanaji kwa wote",
+      "schemaDescription": "Studio yenye dhamira maalum inayotengeneza programu zilizoboreshwa kwa AI kwa ajili ya upatikanaji wa wote katika biashara, afya, fedha, na kazi.",
+      "metaTitle": "Intelligent Singularity | Programu kwa Ufikiaji wa Wote",
+      "metaDescription": "Studio yenye dhamira inayojenga programu iliyoboreshwa kwa AI kwa ufikiaji wa wote katika biashara, afya, fedha na kazi."
+    },
+    "offline": {
+      "metaTitle": "Nje ya Mtandao | Intelligent Singularity",
+      "metaDescription": "Ukurasa wa hifadhi nje ya mtandao kwa uzoefu wa wavuti wa Intelligent Singularity."
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineBody": "Inaonekana uko nje ya mtandao. Tunakutumikia ukurasa huu kutoka kwenye akiba.",
     "offlineEyebrow": "Nje ya mtandao",
     "offlineReturnHome": "Rudi nyumbani",
-    "offlineTitle": "Hakuna muunganisho sasa."
+    "offlineTitle": "Hakuna muunganisho sasa.",
+    "opensInNewTab": "(inafunguliwa katika kichupo kipya)",
+    "emailLinkAriaLabel": "Tuma barua pepe kwa {email}",
+    "breadcrumbHome": "Nyumbani",
+    "ogImageAlt": "Intelligent Singularity — Programu kwa upatikanaji wa wote.",
+    "visit": "Tembelea",
+    "schema": {
+      "organizationDescription": "Studio inayojenga programu kwa upatikanaji wa wote.",
+      "founderDescription": "Mwanzilishi wa Intelligent Singularity, anajenga programu kwa upatikanaji wa wote na shughuli nyembamba zilizoboreshwa na AI.",
+      "portfolioListName": "Mkusanyiko wa Bidhaa za Intelligent Singularity"
+    }
   },
   "languageWheel": {
     "navAria": "Lugha",

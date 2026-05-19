@@ -52,7 +52,7 @@ describe('TimelineEntry', () => {
 describe('EmptyState', () => {
   it('renders title and body', () => {
     const { getByText } = render(
-      <EmptyState title="None yet" body="When one lands, it appears here." />
+      <EmptyState eyebrow="Honest note" title="None yet" body="When one lands, it appears here." />
     );
     expect(getByText('None yet')).toBeTruthy();
   });

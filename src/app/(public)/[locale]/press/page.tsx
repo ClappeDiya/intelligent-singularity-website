@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
@@ -28,19 +26,19 @@ async function PressContent({ locale }: { locale: string }) {
   const cmsPage = (await fetchPressPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? PRESS_PAGE_SEED;
   const t = await getTranslations('pages.press');
+  const tCommon = await getTranslations('common');
 
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/press',
-    name: 'Press & Media | Intelligent Singularity',
-    description:
-      'Press kit, fact sheet, approved quotes, and direct contact for journalists and researchers covering Intelligent Singularity.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Press', pathname: '/press' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/press' },
     ],
   });
 
@@ -108,7 +106,7 @@ async function PressContent({ locale }: { locale: string }) {
                   fontWeight: 500,
                 }}
               >
-                &ldquo;{q.text}&rdquo;
+                <q>{q.text}</q>
               </blockquote>
               <figcaption>
                 <div className="text-[14px]" style={{ fontFamily: 'var(--font-serif)', fontWeight: 600, color: 'var(--color-paper-ink)' }}>
@@ -249,7 +247,7 @@ async function PressContent({ locale }: { locale: string }) {
       </section>
 
       <section
-        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
+        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center gap-6"
         style={{ background: 'var(--color-ink)', color: 'var(--color-cream)', border: '1px solid rgba(16,185,129,0.2)' }}
       >
         <div className="flex-1">
@@ -276,15 +274,17 @@ async function PressContent({ locale }: { locale: string }) {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3">
-          <a
-            href={`mailto:${page.contactCta?.email}`}
-            aria-label={`Email ${page.contactCta?.email}`}
-            className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
-            style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg,#059669,#0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
-          >
-            press@…
-            <span aria-hidden="true">→</span>
-          </a>
+          {page.contactCta?.email ? (
+            <a
+              href={`mailto:${page.contactCta.email}`}
+              aria-label={tCommon('emailLinkAriaLabel', { email: page.contactCta.email })}
+              className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
+              style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg,#059669,#0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
+            >
+              press@…
+              <span aria-hidden="true">→</span>
+            </a>
+          ) : null}
           <Link
             href={`/${locale}/contact`}
             className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[12px] uppercase font-semibold text-[var(--color-cream)] transition-colors hover:border-[var(--color-emerald)] hover:text-[var(--color-emerald)]"
@@ -300,9 +300,5 @@ async function PressContent({ locale }: { locale: string }) {
 
 export default async function PressPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <PressContent locale={locale} />
-    </Suspense>
-  );
+  return <PressContent locale={locale} />;
 }

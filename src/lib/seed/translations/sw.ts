@@ -45,6 +45,13 @@ export const TRANSLATION: LocaleTranslation = {
     successMessage: 'Ujumbe umetumwa. Asante.',
     errorMessage: 'Kuna tatizo limetokea. Tafadhali jaribu tena.',
   },
+  trust: {
+    dataResidencyText:
+      'Tovuti hii inaishi kwenye seva moja ya kawaida katika kituo cha data kilichoorodheshwa Edmonton, Alberta, Kanada. Hakuna mtandao wa kusambaza maudhui mbele yake. Wakati ukurasa unapakuliwa kwenye kivinjari chako, kivinjari chako kinazungumza moja kwa moja na mashine yetu. Hakuna kitu kati ya kunakili, kuhifadhi katika kashe, au kusoma trafiki yako.\n\nNakala zetu za hifadhi zilizosimbwa hutembea kwenye mzunguko wa siku thelathini. Hazitoki kamwe katika eneo la kituo cha data. Zinalindwa zikiwa zimepumzika kwa ufunguo ambao watu wawili tu kwenye timu yetu wanaweza kuufungua.',
+    reportIncidentText:
+      'Umepata udhaifu, hitilafu, au kitu kinachoonekana kuwa kibaya tu? Andika kwa security@intelligentsingularityinc.com. Tunajibu ndani ya siku moja ya kazi, tunafanya kazi nawe katika urekebishaji, na kumtaja kwa jina mtoa habari katika tangazo la umma mara tu tatizo lirekebishwapo — isipokuwa utuombe tusifanye hivyo.\n\nKamwe hatuwashtaki watafiti wanaofuata masharti ya ufichuzi wenye uwajibikaji yaliyo kwenye /security.',
+  },
+
   commitments: [
     { title: 'Muundo wa wote, inafanya kazi nje ya mtandao', body: 'Kila bidhaa inafanya kazi sawa kwenye nyuzinyuzi ya macho na kwenye mtandao wa 2G usio thabiti. Vipengele sawa, ubora sawa. Muunganisho haupaswi kuwa kizuizi.' },
     { title: 'Kiwango cha urahisi', body: 'Ikiwa mwanafunzi wa darasa la nane hawezi kukamilisha mchakato mkuu bila mafunzo ndani ya dakika 5, kipengele hicho bado hakijakamilika.' },

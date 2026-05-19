@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
@@ -16,12 +14,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.security' });
   return buildPageMetadata({
     locale,
     pathname: '/security',
-    title: 'Security & Trust | Intelligent Singularity',
-    description:
-      'How we secure this site and every product in our portfolio: TLS, zero third-party calls, short retention, encrypted backups, and honest incident response.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
@@ -29,19 +27,19 @@ async function SecurityContent({ locale }: { locale: string }) {
   const cmsPage = (await fetchSecurityPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? SECURITY_PAGE_SEED;
   const t = await getTranslations('pages.security');
+  const tCommon = await getTranslations('common');
 
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/security',
-    name: 'Security & Trust | Intelligent Singularity',
-    description:
-      'Security and data-handling practices across Intelligent Singularity: encryption, self-hosting, zero third-party calls, and short retention.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Security', pathname: '/security' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/security' },
     ],
   });
 
@@ -62,7 +60,11 @@ async function SecurityContent({ locale }: { locale: string }) {
         }}
       >
         <div className="shrink-0">
-          <SecurityShield size={180} />
+          <SecurityShield
+            size={180}
+            svgTitle={t('shieldSvgTitle')}
+            ariaLabel={t('shieldAriaLabel')}
+          />
         </div>
         <div className="flex-1">
           <div className="label-mono mb-2">{page.postureSummary?.eyebrow}</div>
@@ -222,7 +224,7 @@ async function SecurityContent({ locale }: { locale: string }) {
       </section>
 
       <section
-        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
+        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center gap-6"
         style={{ background: 'var(--color-ink)', color: 'var(--color-cream)', border: '1px solid rgba(16,185,129,0.2)' }}
       >
         <div className="flex-1">
@@ -249,15 +251,17 @@ async function SecurityContent({ locale }: { locale: string }) {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3">
-          <a
-            href={`mailto:${page.reportCta?.email}`}
-            aria-label={`Email ${page.reportCta?.email}`}
-            className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
-            style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg, #059669, #0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
-          >
-            security@…
-            <span aria-hidden="true">→</span>
-          </a>
+          {page.reportCta?.email ? (
+            <a
+              href={`mailto:${page.reportCta.email}`}
+              aria-label={tCommon('emailLinkAriaLabel', { email: page.reportCta.email })}
+              className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
+              style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg, #059669, #0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
+            >
+              security@…
+              <span aria-hidden="true">→</span>
+            </a>
+          ) : null}
           <Link
             href={`/${locale}/legal/privacy`}
             className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full border text-[12px] uppercase font-semibold text-[var(--color-cream)] transition-colors hover:border-[var(--color-emerald)] hover:text-[var(--color-emerald)]"
@@ -273,9 +277,5 @@ async function SecurityContent({ locale }: { locale: string }) {
 
 export default async function SecurityPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <SecurityContent locale={locale} />
-    </Suspense>
-  );
+  return <SecurityContent locale={locale} />;
 }

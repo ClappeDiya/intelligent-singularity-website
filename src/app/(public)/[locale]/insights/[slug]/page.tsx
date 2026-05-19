@@ -6,8 +6,9 @@ import { getTranslations } from 'next-intl/server';
 import { fetchJournalPostBySlug } from '@/lib/payload';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
+import { getBreadcrumbSchema, getWebPageSchema, getBlogPostingSchema } from '@/lib/schema';
 import { RichTextBody } from '@/components/pages/insights/RichTextBody';
+import { SrOpensInNewTab } from '@/components/pages/shared/SrOpensInNewTab';
 
 export async function generateMetadata({
   params,
@@ -15,10 +16,11 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const post = (await fetchJournalPostBySlug(slug, locale)) as any;
   if (!post) return {};
+  const tInsights = await getTranslations({ locale, namespace: 'pages.insights' });
   return buildPageMetadata({
     locale,
     pathname: `/insights/${slug}`,
-    title: `${post.title} | Insights | Intelligent Singularity`,
+    title: `${post.title} | ${tInsights('metaTitleSuffix')}`,
     description: post.subtitle ?? '',
   });
 }
@@ -42,21 +44,20 @@ export default async function PostPage({
 
   if (!post) notFound();
   const t = await getTranslations('pages.insights');
+  const tCommon = await getTranslations('common');
 
-  const eyebrow = post.tags?.[0]?.tag?.toUpperCase() ?? 'INSIGHTS';
+  const eyebrow = post.tags?.[0]?.tag?.toUpperCase() ?? t('eyebrowFallback');
   const sources: Array<{ label: string; href: string }> = post.sources ?? [];
 
-  const blogPostingSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+  const blogPostingSchema = getBlogPostingSchema({
+    locale,
+    slug,
     headline: post.title,
     description: post.subtitle ?? '',
     datePublished: post.publishedAt,
-    author: post.author?.name
-      ? { '@type': 'Person', name: post.author.name }
-      : { '@type': 'Organization', name: 'Intelligent Singularity' },
-    url: `/${locale}/insights/${slug}`,
-  };
+    dateModified: post.updatedAt,
+    authorName: post.author?.name,
+  });
 
   return (
     <article className="page-shell">
@@ -74,8 +75,8 @@ export default async function PostPage({
         data={getBreadcrumbSchema({
           locale,
           crumbs: [
-            { name: 'Home', pathname: '/' },
-            { name: 'Insights', pathname: '/insights' },
+            { name: tCommon('breadcrumbHome'), pathname: '/' },
+            { name: t('breadcrumbCurrent'), pathname: '/insights' },
             { name: post.title, pathname: `/insights/${slug}` },
           ],
         })}
@@ -139,7 +140,7 @@ export default async function PostPage({
                       style={{ color: 'var(--color-paper-ink-muted)' }}
                     >
                       {s.label}
-                      <span className="sr-only"> (opens in a new tab)</span>
+                      <SrOpensInNewTab />
                       <span aria-hidden="true" className="ms-1">↗</span>
                     </a>
                   </li>

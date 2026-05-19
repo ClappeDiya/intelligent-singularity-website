@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "Ir para o conteúdo principal",
     "scrollHint": "Rolar",
-    "scrollHintTarget": "a lacuna em números"
+    "scrollHintTarget": "a lacuna em números",
+    "source": "ITU 2025",
+    "populationCaption": "de toda a população mundial",
+    "counterAriaLabel": "{count} pessoas ainda offline, fonte UIT 2025"
   },
   "contactForm": {
     "routingLabel": "Encaminhamento",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "Changelog",
+      "schemaDescription": "Notas de versão públicas.",
+      "breadcrumbCurrent": "Changelog",
       "eyebrow": "CHANGELOG · SITE INSTITUCIONAL",
       "title": "O que mudou, em ordem.",
       "lede": "Toda alteração visível que fizemos neste site institucional, datada e vinculada ao commit correspondente. Cada produto do ecossistema Clap mantém seu próprio changelog em seu próprio domínio — esta página é a porta principal da empresa-mãe, nada mais, nada oculto.",
       "feedLabel": "Inscreva-se:",
       "feedTitle": "Intelligent Singularity — Mudanças",
-      "rssFeed": "Feed RSS"
+      "rssFeed": "Feed RSS",
+      "firstVersionTitle": "Esta é a primeira versão.",
+      "firstVersionBody": "Ainda não foram criadas tags. Você está lendo a versão {sha}. A primeira entrada de lançamento aparecerá aqui assim que v1.0 for marcada.",
+      "viewRepoCta": "Ver o repositório",
+      "releasesHeading": "Versões",
+      "metaTitle": "Registo de alterações | Intelligent Singularity",
+      "metaDescription": "Cada alteração visível que fizemos, com a data e o commit por trás."
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "Painel de status ao vivo",
       "overallStatusAria": "Status geral",
       "externalNavAria": "Externo",
-      "opensInNewTab": " (abre em uma nova aba)"
+      "opensInNewTab": " (abre em uma nova aba)",
+      "uptimeGridAria": "Tempo de atividade nos últimos 90 dias, {pct} nas últimas 24 horas.",
+      "breadcrumbCurrent": "Status",
+      "schemaName": "Status | Intelligent Singularity",
+      "schemaDescription": "Status do sistema ao vivo para o site e sua infraestrutura.",
+      "metaTitle": "Estado | Intelligent Singularity",
+      "metaDescription": "Estado ao vivo do site e da sua infraestrutura."
     },
     "roadmap": {
+      "schemaName": "Roadmap | Intelligent Singularity",
+      "schemaDescription": "Roadmap público com o trabalho em curso, planeado, lançado e em pausa.",
+      "breadcrumbCurrent": "Roadmap",
       "eyebrow": "ROADMAP · EM PÚBLICO",
       "title": "O que estamos construindo.",
       "lede": "Em público. Sem vaporware. Cada item é do lado do estúdio — trabalho do site corporativo, infraestrutura compartilhada e os compromissos transversais que tocam cada produto. Cada produto do ecossistema Clap mantém seu próprio roadmap em seu próprio domínio. Os itens aqui ligam ao código quando são publicados.",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "Está faltando algo?",
       "ctaHeading": "Diga-nos do que você precisa.",
       "ctaBody": "Se houver um recurso, ferramenta ou correção que faria uma diferença real para você, envie-nos uma mensagem. Lemos cada mensagem e priorizamos com base em necessidades reais.",
-      "ctaButton": "Enviar uma nota"
+      "ctaButton": "Enviar uma nota",
+      "metaTitle": "Roadmap | Intelligent Singularity",
+      "metaDescription": "O que estamos construindo, o que está planejado, o que foi entregue e o que está em pausa — em público."
     },
     "insights": {
+      "schemaName": "Insights | Intelligent Singularity",
+      "schemaDescription": "Pensar em público: acesso, alinhamento e o longo arco da IA.",
+      "breadcrumbCurrent": "Insights",
       "eyebrow": "INSIGHTS · NOTAS DE CAMPO DO ESTÚDIO",
       "title": "Pensar em público.",
       "lede": "Notas de campo sobre acesso universal, engenharia aumentada por IA, os 2,2 bilhões offline e a longa trajetória da inteligência artificial — escritas para serem compreendidas, não para impressionar. Escrevemos devagar. Cada afirmação tem fonte. Sem clickbait, sem névoa de liderança intelectual.",
@@ -118,9 +144,23 @@
       "subscribeLabel": "Inscreva-se:",
       "rssFeed": "Feed RSS",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "Paginação"
+      "paginationAria": "Paginação",
+      "paginationNewer": "← Mais recentes",
+      "paginationOlder": "Anteriores →",
+      "paginationNewerAria": "Ir para publicações mais recentes",
+      "paginationOlderAria": "Ir para publicações anteriores",
+      "emptyTitle": "Nada publicado ainda.",
+      "emptyBody": "O primeiro artigo aparecerá aqui assim que estiver pronto. Escrevemos devagar e com cuidado.",
+      "emptyCta": "Assinar o feed RSS",
+      "metaTitle": "Reflexões | Intelligent Singularity",
+      "metaDescription": "Pensar em público: acesso, alinhamento e o longo arco da IA.",
+      "metaTitleSuffix": "Análises | Intelligent Singularity",
+      "eyebrowFallback": "ANÁLISES"
     },
     "trust": {
+      "schemaName": "Confiança | Intelligent Singularity",
+      "schemaDescription": "Os nossos pilares de confiança, subprocessadores de terceiros, certificações e como reportar um incidente de segurança.",
+      "breadcrumbCurrent": "Confiança",
       "eyebrow": "CONFIANÇA",
       "title": "Onde encontrar as provas.",
       "lede": "Cada afirmação que fazemos sobre segurança, privacidade, sustentabilidade e acesso liga à evidência. Você nunca deve ter que confiar apenas na nossa palavra.",
@@ -141,9 +181,16 @@
       "incidentBody": "A divulgação coordenada é o caminho que levamos a sério. Envie um e-mail para security@intelligentsingularityinc.com com uma descrição e passos de reprodução. Reconhecemos os relatos em um dia útil, triamos em três e lançamos uma correção em um cronograma acordado com você. Pesquisadores são creditados pelo nome em nosso post-mortem quando uma correção é publicada — a menos que você prefira permanecer anônimo. Não ameaçamos nem processamos pesquisadores de segurança de boa-fé, ponto.",
       "incidentCta": "Relatar incidente",
       "privacyPolicyLink": "Política de privacidade",
-      "learnMore": "Saiba mais"
+      "learnMore": "Saiba mais",
+      "dataResidencyHeading": "Onde os seus dados ficam",
+      "disclosureHeading": "Política de divulgação de segurança",
+      "metaTitle": "Confiança | Intelligent Singularity",
+      "metaDescription": "Pilares de confiança, subprocessadores terceiros, certificações e como reportar um incidente."
     },
     "help": {
+      "schemaName": "Ajuda | Intelligent Singularity",
+      "schemaDescription": "Central de ajuda — explore categorias, respostas populares e contacto direto.",
+      "breadcrumbCurrent": "Ajuda",
       "eyebrow": "HELP",
       "title": "Geralmente podemos ajudar em um clique.",
       "lede": "Escolha a linha que mais se parece com sua pergunta. Cada link leva a um lugar real — sem formulários fechados, sem chatbots.",
@@ -153,13 +200,17 @@
       "browseByTopic": "Procurar por tópico",
       "checkStatus": "Ver estado",
       "contactEyebrow": "Contato",
-      "contactFallbackCta": "Fale conosco"
+      "contactFallbackCta": "Fale conosco",
+      "metaTitle": "Ajuda | Intelligent Singularity",
+      "metaDescription": "Encontre ajuda rapidamente: navegue por categorias, leia respostas populares ou fale com uma pessoa num clique."
     },
     "about": {
       "eyebrow": "Sobre · O estúdio",
       "defaultTitle": "Sobre a Intelligent Singularity",
       "ecosystemLabel": "O ecossistema em resumo",
       "ecosystemHeading": "Uma empresa-mãe, sete categorias de produtos.",
+      "ecosystemSvgTitle": "O ecossistema Clap sob uma única empresa-mãe",
+      "ecosystemAriaLabelTemplate": "{rootLabel}, empresa-mãe com {count} ramos de produtos: {list}.",
       "ataGlanceLabel": "Em resumo",
       "talkToStudioLabel": "Fale com o estúdio",
       "talkToStudioBody": "Parcerias, imprensa ou perguntas sobre produtos — as mensagens chegam diretamente ao fundador, normalmente em dois dias úteis.",
@@ -185,6 +236,20 @@
         "portfolio": "Uma família crescente de plataformas",
         "languages": "14 idiomas em produção",
         "footprint": "≤ 50 KB por página · zero rastreadores"
+      },
+      "breadcrumbCurrent": "Sobre",
+      "schemaName": "Sobre | Intelligent Singularity",
+      "schemaDescription": "Conheça a equipa e a missão por trás da Intelligent Singularity: construir software para acesso universal com operações enxutas potenciadas por IA.",
+      "metaTitle": "Sobre | Intelligent Singularity",
+      "metaDescription": "Conheça a equipe e a missão por trás da Intelligent Singularity: criar software para acesso universal com operações enxutas aumentadas por IA.",
+      "ecosystemBranchLabels": {
+        "corePlatform": "Plataforma central",
+        "health": "Saúde",
+        "finance": "Finanças",
+        "work": "Trabalho",
+        "agriculture": "Agricultura",
+        "media": "Mídia",
+        "commsData": "Comm / dados"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "Os pontos mais claros acima são as pessoas já online. Os pontos mais escuros e com anéis são as pessoas que não estão. Noventa e seis por cento da população offline vive em países de renda baixa e média. A engenharia de acesso universal é o que fecha essa lacuna. Os nove compromissos abaixo são como nos comprometemos com isso.",
       "commitmentsHeading": "Os nove compromissos",
       "commitmentsBody": "Nove anéis concêntricos — cada produto entrega contra cada um deles, em cada versão. A lista não é uma lista de desejos. É o contrato de engenharia.",
-      "sourceData": "Fonte de dados"
+      "sourceData": "Fonte de dados",
+      "breadcrumbCurrent": "Manifesto",
+      "schemaName": "Manifesto | Intelligent Singularity",
+      "schemaDescription": "Leia o nosso manifesto sobre fazer do software de nível corporativo um direito básico para cada negócio e pessoa, online ou offline.",
+      "globeSvgTitle": "Alcance offline",
+      "globeAriaLabel": "Um globo simples com 2,2 mil milhões de pontos offline destacados, ilustrando a cifra UIT da exclusão digital.",
+      "ringsSvgTitle": "Compromissos",
+      "ringsAriaLabelTemplate": "{count} compromissos concêntricos formando um único anel de acesso universal — as regras de engenharia com que cada produto é entregue em cada lançamento.",
+      "metaTitle": "Manifesto | Intelligent Singularity",
+      "metaDescription": "Leia o nosso manifesto sobre tornar o software empresarial um direito básico para cada empresa e pessoa, online ou offline."
     },
     "faq": {
+      "schemaName": "FAQ | Intelligent Singularity",
+      "schemaDescription": "Respostas honestas sobre o estúdio, os nossos produtos, práticas de privacidade e como fazer parceria com a Intelligent Singularity.",
+      "breadcrumbCurrent": "FAQ",
       "openTheForm": "Abrir o formulário",
       "emailDirectly": "Enviar e-mail diretamente"
     },
     "pricing": {
+      "schemaName": "Filosofia de preços | Intelligent Singularity",
+      "schemaDescription": "As nossas regras de preços: nível gratuito, preços justos por região, todas as funcionalidades em todos os níveis, sem contacto comercial.",
+      "breadcrumbCurrent": "Preços",
       "tierFree": "Nível gratuito:",
       "tierPaid": "Nível pago:",
       "tierEnterprise": "Empresarial:",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "O mesmo produto, três clientes",
       "workedExampleBody": "Um exemplo prático — ilustrativo, não uma cotação de preço — para mostrar como as seis regras se aplicam na prática. Os números específicos ficam na página de cada produto.",
       "viewThePortfolio": "Ver o portfólio",
-      "talkAboutPricing": "Falar sobre preços"
+      "talkAboutPricing": "Falar sobre preços",
+      "metaTitle": "Filosofia de preços | Intelligent Singularity",
+      "metaDescription": "Como definimos o preço de cada produto: nível gratuito para sempre, tarifas ajustadas ao poder de compra, todas as funcionalidades em cada nível, preços publicados, sem vendas por contacto."
     },
     "careers": {
+      "schemaName": "Carreiras | Intelligent Singularity",
+      "schemaDescription": "Como o estúdio contrata e como é trabalhar na Intelligent Singularity.",
+      "breadcrumbCurrent": "Carreiras",
       "howWeWorkHeading": "Como trabalhamos de verdade",
       "whatYouWouldWorkOnHeading": "No que você realmente trabalharia",
       "howWeHireHeading": "Como contratamos, do início ao fim",
@@ -220,7 +305,9 @@
       "updatedPrefix": "Atualizado",
       "contactFormCta": "Formulário de contato",
       "whatYouWouldWorkOnLede": "Intelligent Singularity é a empresa-mãe de uma família crescente de plataformas. Novos contratados raramente trabalham em um único produto por um ano inteiro — a maioria alterna entre dois ou três, dependendo do que está sendo lançado e do que precisa de mais atenção sênior naquele trimestre.",
-      "howWeHireLede": "Quatro passos. Máximo de duas semanas do primeiro e-mail até a oferta por escrito, se ambas as partes agirem rapidamente. Sem etapas surpresa, sem tarefas para casa não remuneradas, sem rejeições por \"fit cultural\" sem uma razão por escrito."
+      "howWeHireLede": "Quatro passos. Máximo de duas semanas do primeiro e-mail até a oferta por escrito, se ambas as partes agirem rapidamente. Sem etapas surpresa, sem tarefas para casa não remuneradas, sem rejeições por \"fit cultural\" sem uma razão por escrito.",
+      "metaTitle": "Carreiras | Intelligent Singularity",
+      "metaDescription": "Como o estúdio contrata: equipa pequena, remota, aumentada por IA que entrega software de acesso universal. Vagas atuais e convite permanente para se apresentar."
     },
     "press": {
       "factSheetHeading": "Ficha técnica",
@@ -234,7 +321,10 @@
       "contactFormCta": "Formulário de contato",
       "boilerplateLede": "Um parágrafo, pronto para inserir em comunicados de imprensa. Aprovado para uso textual.",
       "storyAnglesYesLede": "Se sua história se encaixa em um destes ângulos, agiremos rapidamente para disponibilizar um fundador, engenheiro ou líder de produto — geralmente em um dia útil.",
-      "storyAnglesNoLede": "Honestidade antecipada economiza tempo de todos. Não forneceremos citações para os ângulos abaixo. No entanto, indicaremos um jornalista ou analista cujo trabalho se encaixe melhor na história."
+      "storyAnglesNoLede": "Honestidade antecipada economiza tempo de todos. Não forneceremos citações para os ângulos abaixo. No entanto, indicaremos um jornalista ou analista cujo trabalho se encaixe melhor na história.",
+      "breadcrumbCurrent": "Imprensa",
+      "schemaName": "Imprensa e Media | Intelligent Singularity",
+      "schemaDescription": "Kit de imprensa, ficha técnica, citações aprovadas e contacto direto para jornalistas e investigadores que cobrem a Intelligent Singularity."
     },
     "portfolio": {
       "eyebrow": "Portfolio · O ecossistema Clap",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "Chamadas de terceiros",
       "statThirdPartyValue": "Zero",
       "statThirdPartyHint": "Aplicado por CI em cada lançamento de produto",
-      "ecosystemStatsAria": "Estatísticas do ecossistema"
+      "ecosystemStatsAria": "Estatísticas do ecossistema",
+      "verticalLabel": "Vertical",
+      "publicAs": "Conhecido como",
+      "breadcrumbCurrent": "Portfólio",
+      "schemaName": "Portfólio | Intelligent Singularity",
+      "schemaDescription": "Explore o ecossistema completo de 14 ferramentas em operações de negócios, saúde, finanças, agricultura, mídia e comunicações.",
+      "mosaicSvgTitle": "Mosaico do portfólio",
+      "mosaicAriaLabel": "Um mosaico que mostra oito plataformas do ecossistema Clap: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee e Audiflo.",
+      "metaTitle": "Portfólio | Intelligent Singularity",
+      "metaDescription": "Explore o ecossistema completo de 14 ferramentas em operações empresariais, saúde, finanças, agricultura, mídia e comunicações.",
+      "productCountLabel": "{count, plural, one {Produto} other {Produtos}}"
     },
     "contact": {
+      "schemaName": "Contato | Intelligent Singularity",
+      "schemaDescription": "Contate a Intelligent Singularity para parcerias, imprensa, jurídico ou dúvidas de produto sobre o nosso ecossistema de software de acesso universal.",
+      "breadcrumbCurrent": "Contato",
       "eyebrow": "Contato · Mesa do estúdio",
       "titleFallback": "Entre em contato",
+      "formHeading": "Formulário de contato",
       "directChannelsLabel": "Canais diretos",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "Incluindo árabe e urdu RTL.",
       "factHostingLabel": "Hospedagem",
       "factHostingLine1": "Um único VPS, Edmonton.",
-      "factHostingLine2": "Sem CDN de terceiros."
+      "factHostingLine2": "Sem CDN de terceiros.",
+      "metaTitle": "Contacto | Intelligent Singularity",
+      "metaDescription": "Contacte a Intelligent Singularity para parcerias, imprensa, jurídico ou questões sobre o nosso ecossistema de software de acesso universal."
+    },
+    "legal": {
+      "eyebrowLabel": "Legal",
+      "lastUpdatedLabel": "Última atualização: {date}",
+      "tocLabel": "Nesta página"
     },
     "security": {
       "postureHeading": "Como gerimos o site e a plataforma",
       "dataHeading": "Como tratamos seus dados",
       "complianceHeading": "Padrões aos quais nos comprometemos",
       "complianceLede": "Seguimos um pequeno conjunto nomeado de padrões — e somos honestos sobre quais auditorias ainda não conquistamos.",
-      "privacyPolicyLink": "Ler política de privacidade"
+      "privacyPolicyLink": "Ler política de privacidade",
+      "breadcrumbCurrent": "Segurança",
+      "schemaName": "Segurança e confiança | Intelligent Singularity",
+      "schemaDescription": "Práticas de segurança e manuseio de dados na Intelligent Singularity: cifragem, auto-hospedagem, zero chamadas a terceiros e retenção curta.",
+      "shieldSvgTitle": "Postura de segurança",
+      "shieldAriaLabel": "Um escudo simples que ilustra a postura de segurança: cifragem TLS, zero chamadas a terceiros, ambientes de produto isolados, retenção curta e subprocessadores nomeados.",
+      "metaTitle": "Segurança e confiança | Intelligent Singularity",
+      "metaDescription": "Como protegemos este site e cada produto do nosso portfólio: TLS, zero chamadas a terceiros, retenção curta, backups criptografados e resposta honesta a incidentes."
     },
     "green": {
+      "schemaName": "Compromisso verde | Intelligent Singularity",
+      "schemaDescription": "Conheça os nossos compromissos ambientais, a transparência do peso das páginas e a nossa abordagem de desempenho web de baixas emissões.",
+      "breadcrumbCurrent": "Sustentabilidade",
       "liveTelemetryEyebrow": "Verde · Telemetria ao vivo",
       "statThisPageLabel": "Esta página",
       "statThisPageHint": "HTML + CSS, sem rastreadores",
@@ -375,11 +496,64 @@
           "value": "Em toda a plataforma",
           "hint": "Faturas, prontuários médicos, recibos por padrão digitais. Papel de escritório, cartões de visita e materiais de marketing impressos não fazem parte de como operamos."
         }
-      }
+      },
+      "metaTitle": "Compromisso verde | Intelligent Singularity",
+      "metaDescription": "Veja os nossos compromissos ambientais, transparência do peso das páginas e abordagem de desempenho web de baixas emissões."
     },
     "home": {
       "commitmentsKicker": "Nove inegociáveis",
-      "commitmentsAria": "Os nove compromissos"
+      "commitmentsAria": "Os nove compromissos",
+      "ddKicker": "Cem pessoas, desenhadas em escala",
+      "ddHeading": "Vinte e seis em cada cem pessoas na Terra ainda não têm nenhum acesso digital.",
+      "ddOnlineCount": "5,9 bilhões",
+      "ddOfflineCount": "2,2 bilhões",
+      "ddSourceFallback": "ITU Fatos e Números 2025",
+      "ddSvgTitle": "Quem está online e quem não está",
+      "ddOnlineLabel": "online",
+      "ddOfflineLabel": "ainda offline",
+      "ddSourcePrefix": "Fonte",
+      "fieldNotesKicker": "Notas de campo",
+      "fieldNotesTitle": "Como pensamos sobre construir isto.",
+      "fieldNotesBody": "Ensaios curtos e fundamentados do estúdio. Escrevemos devagar e citamos tudo. Sem clickbait, sem névoa de liderança de pensamento.",
+      "fieldNotesCta": "Ler nossas notas de campo",
+      "flagshipsKicker": "O estúdio · 14 ferramentas",
+      "flagshipsSeeAllCta": "Veja todo o ecossistema",
+      "flagshipCardLabel": "Carro-chefe",
+      "facts": {
+        "kicker": "A Diferença · Medida",
+        "sourceLabel": "UIT · 2025",
+        "sourceHeading": "Fonte",
+        "card1Caption": "Pessoas que nunca usaram a internet. <accent>{pct}% vivem em países de baixa e média renda.</accent>",
+        "card1Comparison": "≈ 26% da humanidade",
+        "card2Caption": "Proporção de pessoas online em países de baixa renda. <accent>{pct}% em países de alta renda.</accent>",
+        "card3Caption": "Cobertura 5G em países de baixa renda. Os países de alta renda estão em <accent>{pct}%</accent>. Uma diferença de vinte vezes.",
+        "card3Comparison": "Diferença 21×",
+        "card4Caption": "População rural online em todo o mundo. O número urbano está em <accent>{pct}%</accent>. A diferença entre cidade e campo continua enorme."
+      },
+      "greenStrip": {
+        "eyebrow": "Recibo de carbono ao vivo",
+        "heading": "Cada visita deixa uma pegada energética. Esta é a nossa.",
+        "body": "Medimos o peso da página em kilobytes e o carbono incorporado em gramas. Ambos permanecem radicalmente pequenos porque não enviamos nada que não precisamos — sem fontes de CDN, sem rastreadores, sem scripts ocultos chamando para casa.",
+        "pageWeightLabel": "Esta página pesa",
+        "pageWeightUnit": "KB",
+        "pageWeightHint": "Orçamento: menos de 50 KB por rota, gzip",
+        "carbonLabel": "Sua visita emitiu",
+        "carbonHint": "Calculado com o modelo da Green Web Foundation",
+        "hostingLabel": "Nossa hospedagem",
+        "hostingValue": "Auto-hospedado",
+        "hostingHint": "VPS único · sem CDN · rede de Alberta",
+        "thirdPartyLabel": "Chamadas de terceiros",
+        "thirdPartyValue": "Zero",
+        "thirdPartyHint": "Sem CDN, fontes, análises, pixels"
+      },
+      "schemaName": "Intelligent Singularity | Software para acesso universal",
+      "schemaDescription": "Um estúdio orientado por missão que constrói software reforçado por IA para acesso universal em negócios, saúde, finanças e trabalho.",
+      "metaTitle": "Intelligent Singularity | Software para acesso universal",
+      "metaDescription": "Um estúdio com propósito que cria software aumentado por IA para acesso universal em negócios, saúde, finanças e trabalho."
+    },
+    "offline": {
+      "metaTitle": "Offline | Intelligent Singularity",
+      "metaDescription": "Página de fallback offline para as experiências web da Intelligent Singularity."
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineEyebrow": "Sem conexão · Você está offline",
     "offlineTitle": "Pensado para este momento.",
     "offlineBody": "Acesso universal é o nosso compromisso. Este site continua funcionando sem conexão — cada página que você visitou uma vez está em cache e legível. Tente uma página que já viu, ou reconecte-se para carregar algo novo.",
-    "offlineReturnHome": "Voltar à página inicial"
+    "offlineReturnHome": "Voltar à página inicial",
+    "opensInNewTab": "(abre num novo separador)",
+    "emailLinkAriaLabel": "Enviar e-mail para {email}",
+    "breadcrumbHome": "Início",
+    "ogImageAlt": "Intelligent Singularity — Software para acesso universal.",
+    "visit": "Visitar",
+    "schema": {
+      "organizationDescription": "Um estúdio que cria software para acesso universal.",
+      "founderDescription": "Fundador da Intelligent Singularity, criando software para acesso universal com operações enxutas potencializadas por IA.",
+      "portfolioListName": "Portfólio de produtos Intelligent Singularity"
+    }
   },
   "languageWheel": {
     "navAria": "Idioma",

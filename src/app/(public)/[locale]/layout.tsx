@@ -42,9 +42,9 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const settings = await fetchSiteSettings(locale);
-  const organizationSchema = getOrganizationSchema();
+  const organizationSchema = await getOrganizationSchema(locale);
   const webSiteSchema = getWebSiteSchema(locale);
-  const founderSchema = getFounderSchema();
+  const founderSchema = await getFounderSchema(locale);
 
   return (
     <NextIntlClientProvider messages={messages}>

@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import { getSiteUrl } from '@/lib/seo';
 import type { Product } from '@/types/cms';
 
@@ -15,8 +16,9 @@ function pageUrl(locale: string, pathname: string): string {
   return new URL(`/${locale}${normalized}`, siteUrl).toString();
 }
 
-export function getOrganizationSchema() {
+export async function getOrganizationSchema(locale: string) {
   const siteUrl = getSiteUrl().toString().replace(/\/$/, '');
+  const t = await getTranslations({ locale, namespace: 'common.schema' });
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -24,7 +26,7 @@ export function getOrganizationSchema() {
     name: 'Intelligent Singularity',
     url: siteUrl,
     logo: `${siteUrl}/icons/icon-512.png`,
-    description: 'A studio building software for universal access.',
+    description: t('organizationDescription'),
     sameAs: [
       'https://github.com/intelligent-singularity',
       'https://clappe.com',
@@ -53,8 +55,9 @@ export function getWebSiteSchema(locale: string) {
   };
 }
 
-export function getFounderSchema() {
+export async function getFounderSchema(locale: string) {
   const siteUrl = getSiteUrl().toString().replace(/\/$/, '');
+  const t = await getTranslations({ locale, namespace: 'common.schema' });
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -64,8 +67,7 @@ export function getFounderSchema() {
     worksFor: {
       '@id': `${siteUrl}#organization`,
     },
-    description:
-      'Founder of Intelligent Singularity, building software for universal access with AI-augmented lean operations.',
+    description: t('founderDescription'),
   };
 }
 
@@ -91,7 +93,39 @@ export function getWebPageSchema(input: PageSchemaInput) {
   };
 }
 
-export function getPortfolioItemListSchema(params: {
+export function getBlogPostingSchema(params: {
+  locale: string;
+  slug: string;
+  headline: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  authorName?: string;
+}) {
+  const { locale, slug, headline, description, datePublished, dateModified, authorName } = params;
+  const siteUrl = getSiteUrl().toString().replace(/\/$/, '');
+  const url = pageUrl(locale, `/insights/${slug}`);
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${url}#blogposting`,
+    headline,
+    description,
+    datePublished,
+    ...(dateModified ? { dateModified } : {}),
+    inLanguage: locale,
+    url,
+    mainEntityOfPage: { '@id': `${url}#webpage` },
+    author: authorName
+      ? { '@type': 'Person', name: authorName }
+      : { '@id': `${siteUrl}#organization` },
+    publisher: { '@id': `${siteUrl}#organization` },
+    isPartOf: { '@id': `${siteUrl}#website` },
+  };
+}
+
+export async function getPortfolioItemListSchema(params: {
   locale: string;
   products: Product[];
 }) {
@@ -99,12 +133,13 @@ export function getPortfolioItemListSchema(params: {
   const siteUrl = getSiteUrl().toString().replace(/\/$/, '');
   const portfolioUrl = pageUrl(locale, '/portfolio');
   const sorted = [...products].sort((a, b) => a.ordering - b.ordering);
+  const t = await getTranslations({ locale, namespace: 'common.schema' });
 
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     '@id': `${portfolioUrl}#itemlist`,
-    name: 'Intelligent Singularity Product Portfolio',
+    name: t('portfolioListName'),
     numberOfItems: sorted.length,
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     isPartOf: {

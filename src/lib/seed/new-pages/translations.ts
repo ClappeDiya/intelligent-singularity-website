@@ -4028,8 +4028,10 @@ export async function seedNewPagesTranslations(payload: Payload, log: string[]):
       // Payload mocks in tests may not implement find/update; skip silently.
     }
 
-    // manifesto-page (chrome — title + lead; pass EN baseline richText body to satisfy required field;
-    // strip ids from sources array rows so Payload accepts new-locale row creation)
+    // manifesto-page (chrome — title + lead only; body is set by /api/seed-translations
+    // via textToParagraph(bodyText) per locale, so we deliberately omit it here to avoid
+    // overwriting the localized body with the EN baseline. Sources are still mirrored from
+    // EN with ids stripped so Payload accepts new-locale row creation.)
     const m = MANIFESTO[locale];
     try {
       const baseline = (await payload.findGlobal({ slug: 'manifesto-page', locale: 'en' as any })) as any;
@@ -4040,7 +4042,7 @@ export async function seedNewPagesTranslations(payload: Payload, log: string[]):
       await payload.updateGlobal({
         slug: 'manifesto-page',
         locale: locale as any,
-        data: { title: m.title, lead: m.lead, body: baseline?.body, sources } as any,
+        data: { title: m.title, lead: m.lead, sources } as any,
       });
     } catch (e: any) {
       log.push(`manifesto ${locale} failed: ${e?.message ?? e}`);

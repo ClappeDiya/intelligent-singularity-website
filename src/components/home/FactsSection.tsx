@@ -1,13 +1,15 @@
 import type { ITUData } from '@/types/cms';
+import { getTranslations } from 'next-intl/server';
 
 type FactCardProps = {
   number: string;
   caption: React.ReactNode;
   comparison?: React.ReactNode;
+  sourceLabel: string;
   accent?: boolean;
 };
 
-function FactCard({ number, caption, comparison, accent }: FactCardProps) {
+function FactCard({ number, caption, comparison, sourceLabel, accent }: FactCardProps) {
   return (
     <div
       className={`is-card relative rounded-[24px] p-7 md:p-9 flex flex-col justify-between min-h-[280px] overflow-hidden${accent ? ' is-card-accent' : ''}`}
@@ -37,7 +39,7 @@ function FactCard({ number, caption, comparison, accent }: FactCardProps) {
           className="text-[11px] uppercase text-[var(--color-emerald-ink)] tracking-[0.08em]"
           style={{ fontFamily: 'var(--font-mono)', fontWeight: 600 }}
         >
-          ITU · 2025
+          {sourceLabel}
         </div>
         {comparison ? (
           <div
@@ -58,12 +60,18 @@ type Props = {
   itu: ITUData;
 };
 
-export function FactsSection({ title, lead, itu }: Props) {
+export async function FactsSection({ title, lead, itu }: Props) {
+  const t = await getTranslations('pages.home.facts');
+  const sourceLabel = t('sourceLabel');
+  const emph = (chunks: React.ReactNode) => (
+    <strong style={{ color: 'var(--color-emerald-ink)' }}>{chunks}</strong>
+  );
+
   return (
     <section className="px-4 sm:px-6 md:px-8 lg:px-12 pt-6 pb-24 md:pt-10 md:pb-28 lg:pt-14 lg:pb-32">
       <div className="home-story-panel">
         <div className="home-story-header mb-14">
-          <div className="home-story-kicker">The Gap · Measured</div>
+          <div className="home-story-kicker">{t('kicker')}</div>
           <h2 className="home-story-title">{title}</h2>
           <p className="home-story-lead editorial-muted">{lead}</p>
         </div>
@@ -71,48 +79,38 @@ export function FactsSection({ title, lead, itu }: Props) {
           <FactCard
             accent
             number={`${(itu.offlineCount / 1e9).toFixed(2)}B`}
-            caption={
-              <>
-                People who have never used the internet.{' '}
-                <strong style={{ color: 'var(--color-emerald-ink)' }}>
-                  {itu.offlineInLowMiddleIncomePercent}% live in low- and middle-income countries.
-                </strong>
-              </>
-            }
-            comparison="≈ 26% of humanity"
+            sourceLabel={sourceLabel}
+            caption={t.rich('card1Caption', {
+              pct: itu.offlineInLowMiddleIncomePercent,
+              accent: emph,
+            })}
+            comparison={t('card1Comparison')}
           />
           <FactCard
             number={`${itu.lowIncomePercent}%`}
-            caption={
-              <>
-                Share of people online in low-income countries.{' '}
-                <strong style={{ color: 'var(--color-emerald-ink)' }}>
-                  {itu.highIncomePercent}% in high-income countries.
-                </strong>
-              </>
-            }
+            sourceLabel={sourceLabel}
+            caption={t.rich('card2Caption', {
+              pct: itu.highIncomePercent,
+              accent: emph,
+            })}
             comparison={`${itu.highIncomePercent}% ↔ ${itu.lowIncomePercent}%`}
           />
           <FactCard
             number={`${itu.lowIncome5G}%`}
-            caption={
-              <>
-                5G coverage in low-income countries. High-income countries sit at{' '}
-                <strong style={{ color: 'var(--color-emerald-ink)' }}>{itu.highIncome5G}%</strong>. A
-                twenty-fold gap.
-              </>
-            }
-            comparison="21× disparity"
+            sourceLabel={sourceLabel}
+            caption={t.rich('card3Caption', {
+              pct: itu.highIncome5G,
+              accent: emph,
+            })}
+            comparison={t('card3Comparison')}
           />
           <FactCard
             number={`${itu.ruralPercent}%`}
-            caption={
-              <>
-                Rural people online worldwide. Urban figure sits at{' '}
-                <strong style={{ color: 'var(--color-emerald-ink)' }}>{itu.urbanPercent}%</strong>.
-                The city–countryside gap is still enormous.
-              </>
-            }
+            sourceLabel={sourceLabel}
+            caption={t.rich('card4Caption', {
+              pct: itu.urbanPercent,
+              accent: emph,
+            })}
             comparison={`${itu.urbanPercent}% ↔ ${itu.ruralPercent}%`}
           />
         </div>
@@ -120,7 +118,7 @@ export function FactsSection({ title, lead, itu }: Props) {
           className="mt-12 pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-[13px]"
           style={{ borderTop: '1px solid rgba(16,185,129,0.12)', fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-muted)' }}
         >
-          <span className="uppercase text-[var(--color-emerald-ink)] tracking-[0.08em]" style={{ fontWeight: 600 }}>Source</span>
+          <span className="uppercase text-[var(--color-emerald-ink)] tracking-[0.08em]" style={{ fontWeight: 600 }}>{t('sourceHeading')}</span>
           <span className="uppercase">{itu.sourceLabel}</span>
           <a
             href={itu.sourceUrl}

@@ -76,7 +76,6 @@ function applySecurityHeaders(response: NextResponse) {
     'max-age=63072000; includeSubDomains; preload',
   );
   response.headers.set('X-Nonce', nonce);
-  response.headers.set('X-Page-Bytes-Source', 'proxy');
 }
 
 export const config = {

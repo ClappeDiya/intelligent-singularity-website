@@ -25,7 +25,7 @@ export const JournalPosts: CollectionConfig = {
     { name: 'publishedAt', type: 'date', required: true },
     { name: 'updatedAt', type: 'date' },
     { name: 'readingTime', type: 'number' },
-    { name: 'body', type: 'richText', required: true, localized: true },
+    { name: 'body', type: 'richText', required: true },
     {
       name: 'sources',
       type: 'array',

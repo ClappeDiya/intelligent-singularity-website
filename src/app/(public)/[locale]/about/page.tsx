@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
@@ -25,19 +23,19 @@ const META_KEYS = [
 async function AboutContent({ locale }: { locale: string }) {
   const about = await fetchAbout(locale);
   const t = await getTranslations('pages.about');
+  const tCommon = await getTranslations('common');
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/about',
-    name: 'About | Intelligent Singularity',
-    description:
-      'Meet the team and mission behind Intelligent Singularity: building software for universal access with lean AI-augmented operations.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
     type: 'AboutPage',
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'About', pathname: '/about' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/about' },
     ],
   });
   return (
@@ -102,7 +100,19 @@ async function AboutContent({ locale }: { locale: string }) {
             >
               {t('ecosystemHeading')}
             </h2>
-            <EcosystemTree />
+            <EcosystemTree
+              svgTitle={t('ecosystemSvgTitle')}
+              ariaLabelTemplate={t('ecosystemAriaLabelTemplate')}
+              branches={[
+                { label: t('ecosystemBranchLabels.corePlatform'), tag: 'Clappe · ClapBill' },
+                { label: t('ecosystemBranchLabels.health'), tag: 'ClapMed · ClapDiet · ClapMove' },
+                { label: t('ecosystemBranchLabels.finance'), tag: 'ClapPay' },
+                { label: t('ecosystemBranchLabels.work'), tag: 'Clapwork' },
+                { label: t('ecosystemBranchLabels.agriculture'), tag: 'Apogee' },
+                { label: t('ecosystemBranchLabels.media'), tag: 'Audiflo · Nestbitt · DailyWorship' },
+                { label: t('ecosystemBranchLabels.commsData'), tag: 'Gclap · FileManager · RateAds' },
+              ]}
+            />
           </section>
         </div>
         <div className="lg:sticky lg:top-28 self-start">
@@ -158,20 +168,16 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.about' });
   return buildPageMetadata({
     locale,
     pathname: '/about',
-    title: 'About | Intelligent Singularity',
-    description:
-      'Meet the team and mission behind Intelligent Singularity: building software for universal access with lean AI-augmented operations.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <AboutContent locale={locale} />
-    </Suspense>
-  );
+  return <AboutContent locale={locale} />;
 }

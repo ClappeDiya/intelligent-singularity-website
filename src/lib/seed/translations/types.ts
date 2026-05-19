@@ -43,6 +43,10 @@ export type LocaleTranslation = {
     successMessage: string;
     errorMessage: string;
   };
+  trust: {
+    dataResidencyText: string;
+    reportIncidentText: string;
+  };
   commitments: Array<{ title: string; body: string }>;
   products: Array<{ slug: string; tagline: string; shortDescription: string }>;
   categories: Array<{ slug: string; name: string; description: string }>;

@@ -1,15 +1,20 @@
 import type { Product } from '@/types/cms';
+import { SrOpensInNewTab } from '@/components/pages/shared/SrOpensInNewTab';
 
 export function FlagshipCard({
   product,
   index,
   featured = false,
   statusLabel,
+  flagshipLabel,
+  visitLabel,
 }: {
   product: Product;
   index: number;
   featured?: boolean;
   statusLabel: string;
+  flagshipLabel: string;
+  visitLabel: string;
 }) {
   const categoryName = typeof product.category === 'object' ? product.category?.name : '';
   const accentColor = featured ? 'var(--color-emerald)' : 'var(--color-emerald-ink)';
@@ -31,7 +36,7 @@ export function FlagshipCard({
             color: accentColor,
           }}
         >
-          {String(index + 1).padStart(2, '0')} · Flagship
+          {String(index + 1).padStart(2, '0')} · {flagshipLabel}
         </div>
         <div
           className="text-[11px] uppercase px-2.5 py-1 rounded-full tracking-[0.08em]"
@@ -51,31 +56,20 @@ export function FlagshipCard({
           className={`${featured ? 'text-[48px] md:text-[64px]' : 'text-[34px] md:text-[38px]'} font-semibold leading-[0.98] tracking-[-0.05em] mb-3 text-wrap-balance`}
           style={{ fontFamily: 'var(--font-serif)' }}
         >
-          {product.name}
+          <bdi>{product.publicName || product.name}</bdi>
         </div>
         <div
           className={`${featured ? 'text-[18px]' : 'text-[15px]'} mb-4 font-semibold`}
           style={{ color: accentColor }}
         >
-          {product.tagline}
+          <bdi>{product.tagline}</bdi>
         </div>
         <div
           className={`${featured ? 'text-[16px] max-w-[52ch]' : 'text-[14.5px] max-w-[38ch]'} leading-[1.72]`}
           style={{ color: featured ? 'rgba(240,253,244,0.72)' : 'var(--color-paper-ink-muted)' }}
         >
-          {product.shortDescription}
+          <bdi>{product.shortDescription}</bdi>
         </div>
-        {product.publicName && (
-          <div
-            className="text-[13px] mt-4"
-            style={{
-              fontFamily: 'var(--font-mono)',
-              color: featured ? 'rgba(240,253,244,0.7)' : 'var(--color-paper-ink-muted)',
-            }}
-          >
-            Ships live as <strong style={{ color: accentColor }}>{product.publicName}</strong>
-          </div>
-        )}
       </div>
       <div className="relative flex justify-between items-end mt-7">
         <div
@@ -96,8 +90,8 @@ export function FlagshipCard({
             color: accentColor,
           }}
         >
-          <span>Visit</span>
-          <span className="sr-only"> (opens in a new tab)</span>
+          <span>{visitLabel}</span>
+          <SrOpensInNewTab />
           <span className="transition-transform group-hover:translate-x-1.5" aria-hidden="true">↗</span>
         </div>
       </div>
