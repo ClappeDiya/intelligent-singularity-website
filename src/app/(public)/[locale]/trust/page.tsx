@@ -10,6 +10,7 @@ import { SectionHeading } from '@/components/pages/shared/SectionHeading';
 import { ProofChip } from '@/components/pages/shared/ProofChip';
 import { EmptyState } from '@/components/pages/shared/EmptyState';
 import { OutboundLink } from '@/components/pages/shared/OutboundLink';
+import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
 
 export async function generateMetadata({
   params,
@@ -17,12 +18,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.trust' });
   return buildPageMetadata({
     locale,
     pathname: '/trust',
-    title: 'Trust | Intelligent Singularity',
-    description:
-      'Pillars of trust, third-party subprocessors, certifications, and how to report an incident.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
@@ -40,14 +41,14 @@ export default async function TrustPage({
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/trust',
-    name: 'Trust | Intelligent Singularity',
-    description: 'Pillars of trust, subprocessors, certifications, and incident reporting.',
+    name: tTrust('schemaName'),
+    description: tTrust('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Trust', pathname: '/trust' },
+      { name: t('breadcrumbHome'), pathname: '/' },
+      { name: tTrust('breadcrumbCurrent'), pathname: '/trust' },
     ],
   });
 
@@ -55,6 +56,8 @@ export default async function TrustPage({
   const certifications = (page as any).certifications ?? [];
   const subprocessors = (page as any).subprocessors ?? [];
   const lastReviewedAt = (page as any).lastReviewedAt as string | undefined;
+  const dataResidency = (page as any).dataResidency;
+  const reportIncident = (page as any).reportIncident;
 
   const reviewDate = lastReviewedAt
     ? new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(lastReviewedAt))
@@ -133,10 +136,10 @@ export default async function TrustPage({
                   {p.href && (
                     <div className="mt-auto">
                       <OutboundLink
-                        href={p.href}
+                        href={/^https?:\/\//.test(p.href) ? p.href : `/${locale}${p.href.startsWith('/') ? p.href : `/${p.href}`}`}
                         className="inline-block py-2 text-[12.5px] uppercase tracking-[0.14em]"
                       >
-                        {tTrust('learnMore')}
+                        {tTrust('learnMore')}: {p.heading}
                       </OutboundLink>
                     </div>
                   )}
@@ -206,6 +209,7 @@ export default async function TrustPage({
           <SectionHeading id="certifications-heading">{tTrust('certificationsHeading')}</SectionHeading>
           {certifications.length === 0 ? (
             <EmptyState
+              as="h3"
               eyebrow={t('honestNote')}
               title={tTrust('certsEmptyTitle')}
               body={tTrust('certsEmptyBody')}
@@ -227,9 +231,25 @@ export default async function TrustPage({
           )}
         </section>
 
+        {/* Data residency (CMS richText, light background) */}
+        {dataResidency && (
+          <section aria-labelledby="data-residency-heading" className="mb-16">
+            <SectionHeading id="data-residency-heading">{tTrust('dataResidencyHeading')}</SectionHeading>
+            <LexicalRenderer content={dataResidency} className="editorial-richtext max-w-[72ch]" />
+          </section>
+        )}
+
+        {/* Security disclosure policy (CMS richText, light background — full policy prose) */}
+        {reportIncident && (
+          <section aria-labelledby="disclosure-heading" className="mb-16">
+            <SectionHeading id="disclosure-heading">{tTrust('disclosureHeading')}</SectionHeading>
+            <LexicalRenderer content={reportIncident} className="editorial-richtext max-w-[72ch]" />
+          </section>
+        )}
+
         {/* Report incident CTA */}
         <section
-          className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 mb-10"
+          className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center gap-6 mb-10"
           style={{ background: 'var(--color-ink)', color: 'var(--color-cream)', border: '1px solid rgba(16,185,129,0.2)' }}
         >
           <div className="flex-1">

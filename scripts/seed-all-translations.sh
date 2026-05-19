@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BASE_URL="${1:-http://localhost:3000}"
+BASE_URL="${1:-${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}}"
 LOCALES=(zh-CN es hi ar fr pt bn ru ur id sw yo ha)
 
 echo "Seeding translations into Payload CMS..."

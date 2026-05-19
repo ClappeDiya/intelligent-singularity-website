@@ -21,11 +21,12 @@ export async function generateMetadata({
   params,
 }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.status' });
   return buildPageMetadata({
     locale,
     pathname: '/status',
-    title: 'Status | Intelligent Singularity',
-    description: 'Live system status for the website and its infrastructure.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
@@ -42,6 +43,7 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
   const settings = (await fetchStatusPage(locale)) as any;
   const data = await getCachedKuma(settings.kumaBaseUrl, settings.kumaSlug);
   const t = await getTranslations('pages.status');
+  const tCommon = await getTranslations('common');
   const tFooterLinks = await getTranslations('footer.links');
   const pill = overallPill(data, t);
 
@@ -49,15 +51,20 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
     <article className="page-shell-wide">
       <JsonLd
         id={`status-schema-${locale}`}
-        data={getWebPageSchema({ locale, pathname: '/status', name: 'Status', description: 'Live systems status.' })}
+        data={getWebPageSchema({
+          locale,
+          pathname: '/status',
+          name: t('schemaName'),
+          description: t('schemaDescription'),
+        })}
       />
       <JsonLd
         id={`status-breadcrumb-${locale}`}
         data={getBreadcrumbSchema({
           locale,
           crumbs: [
-            { name: 'Home', pathname: '/' },
-            { name: 'Status', pathname: '/status' },
+            { name: tCommon('breadcrumbHome'), pathname: '/' },
+            { name: t('breadcrumbCurrent'), pathname: '/status' },
           ],
         })}
       />
@@ -113,7 +120,14 @@ export default async function StatusPageRoute({ params }: { params: Promise<{ lo
                         </span>
                       </div>
                       <div className="mt-2">
-                        <HeartbeatGrid heartbeats={m.heartbeats} uptime24h={m.uptime24h} />
+                        <HeartbeatGrid
+                          heartbeats={m.heartbeats}
+                          ariaLabel={t('uptimeGridAria', {
+                            pct: typeof m.uptime24h === 'number'
+                              ? `${(m.uptime24h * 100).toFixed(2)}%`
+                              : t('noData'),
+                          })}
+                        />
                       </div>
                     </li>
                   ))}

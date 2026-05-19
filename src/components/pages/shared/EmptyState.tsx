@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SrOpensInNewTab } from './SrOpensInNewTab';
 
 export function EmptyState({
-  title, body, href, linkText, eyebrow = 'Honest note',
-}: { title: string; body: string; href?: string; linkText?: string; eyebrow?: string }) {
+  title, body, href, linkText, eyebrow, as: Tag = 'h2',
+}: { title: string; body: string; href?: string; linkText?: string; eyebrow: string; as?: 'h2' | 'h3' }) {
   return (
     <div
       className="rounded-2xl p-8 md:p-10 text-center border border-dashed"
@@ -14,12 +15,12 @@ export function EmptyState({
       >
         {eyebrow}
       </div>
-      <h2
+      <Tag
         className="text-[22px] leading-[1.25] mb-3"
         style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-paper-ink)' }}
       >
         {title}
-      </h2>
+      </Tag>
       <p className="text-[15px] leading-[1.7] max-w-[52ch] mx-auto" style={{ color: 'var(--color-paper-ink-muted)' }}>
         {body}
       </p>
@@ -33,7 +34,7 @@ export function EmptyState({
             style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
           >
             {linkText}
-            <span className="sr-only"> (opens in a new tab)</span>
+            <SrOpensInNewTab />
             <span aria-hidden="true"> ↗</span>
           </a>
         ) : (

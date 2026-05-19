@@ -73,6 +73,13 @@ export const TRANSLATION: LocaleTranslation = {
       'Une erreur s\u2019est produite. Veuillez r\u00e9essayer.',
   },
 
+  trust: {
+    dataResidencyText:
+      "Ce site Web réside sur un seul serveur virtuel dans un centre de données nommé à Edmonton, en Alberta, au Canada. Aucun réseau de diffusion de contenu ne se trouve devant. Lorsque la page se charge dans votre navigateur, votre navigateur parle directement à notre machine. Rien ne s’interpose pour copier, mettre en cache ou lire votre trafic.\n\nNos sauvegardes chiffrées tournent sur un cycle de trente jours. Elles ne quittent jamais la région du centre de données. Elles sont protégées au repos par une clé que seules deux personnes de notre équipe peuvent déverrouiller.",
+    reportIncidentText:
+      "Vous avez trouvé une faille, un bogue ou quelque chose qui semble simplement anormal ? Écrivez à security@intelligentsingularityinc.com. Nous répondons sous un jour ouvré, travaillons avec vous sur le correctif et créditons nommément le rapporteur dans l’avis public une fois le problème corrigé — sauf si vous nous demandez de ne pas le faire.\n\nNous ne poursuivons jamais en justice les chercheurs qui respectent les conditions de divulgation responsable sur /security.",
+  },
+
   commitments: [
     {
       title: 'Hors ligne en priorit\u00e9',

@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
@@ -15,12 +13,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.careers' });
   return buildPageMetadata({
     locale,
     pathname: '/careers',
-    title: 'Careers | Intelligent Singularity',
-    description:
-      'How the studio hires: small, remote, AI-augmented team shipping universal-access software. Current openings and the permanent invitation to introduce yourself.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
@@ -28,18 +26,19 @@ async function CareersContent({ locale }: { locale: string }) {
   const cmsPage = (await fetchCareersPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? CAREERS_PAGE_SEED;
   const t = await getTranslations('pages.careers');
+  const tCommon = await getTranslations('common');
 
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/careers',
-    name: 'Careers | Intelligent Singularity',
-    description: 'How the studio hires and what it is like to work at Intelligent Singularity.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Careers', pathname: '/careers' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/careers' },
     ],
   });
 
@@ -217,7 +216,7 @@ async function CareersContent({ locale }: { locale: string }) {
       </section>
 
       <section
-        className="rounded-[24px] p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-8"
+        className="rounded-[24px] p-8 md:p-12 flex flex-col md:flex-row items-stretch md:items-center gap-8"
         style={{
           border: '1px solid rgba(16,185,129,0.18)',
           background: 'linear-gradient(135deg, rgba(16,185,129,0.06), rgba(20,184,166,0.04))',
@@ -244,15 +243,17 @@ async function CareersContent({ locale }: { locale: string }) {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3">
-          <a
-            href={`mailto:${page.introduceYourself?.email}`}
-            aria-label={`Email ${page.introduceYourself?.email}`}
-            className="btn-primary"
-            style={{ fontFamily: 'var(--font-mono)' }}
-          >
-            careers@…
-            <span aria-hidden="true">→</span>
-          </a>
+          {page.introduceYourself?.email ? (
+            <a
+              href={`mailto:${page.introduceYourself.email}`}
+              aria-label={tCommon('emailLinkAriaLabel', { email: page.introduceYourself.email })}
+              className="btn-primary"
+              style={{ fontFamily: 'var(--font-mono)' }}
+            >
+              careers@…
+              <span aria-hidden="true">→</span>
+            </a>
+          ) : null}
           <Link href={`/${locale}/contact`} className="btn-outline" style={{ fontFamily: 'var(--font-mono)' }}>
             {t('contactFormCta')}
           </Link>
@@ -264,9 +265,5 @@ async function CareersContent({ locale }: { locale: string }) {
 
 export default async function CareersPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <CareersContent locale={locale} />
-    </Suspense>
-  );
+  return <CareersContent locale={locale} />;
 }

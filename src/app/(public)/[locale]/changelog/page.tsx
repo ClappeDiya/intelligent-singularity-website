@@ -17,11 +17,12 @@ export async function generateMetadata({
   params,
 }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.changelog' });
   return buildPageMetadata({
     locale,
     pathname: '/changelog',
-    title: 'Changelog | Intelligent Singularity',
-    description: 'Every visible change we have made, with the date and the commit behind it.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
@@ -40,8 +41,8 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
         data={getWebPageSchema({
           locale,
           pathname: '/changelog',
-          name: 'Changelog',
-          description: 'Public release notes.',
+          name: tChangelog('schemaName'),
+          description: tChangelog('schemaDescription'),
         })}
       />
       <JsonLd
@@ -49,8 +50,8 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
         data={getBreadcrumbSchema({
           locale,
           crumbs: [
-            { name: 'Home', pathname: '/' },
-            { name: 'Changelog', pathname: '/changelog' },
+            { name: t('breadcrumbHome'), pathname: '/' },
+            { name: tChangelog('breadcrumbCurrent'), pathname: '/changelog' },
           ],
         })}
       />
@@ -87,14 +88,14 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
       {releases.length === 0 ? (
         <EmptyState
           eyebrow={t('honestNote')}
-          title="This is the first version."
-          body={`No tags have been cut yet. You are reading build ${shortBuildSha}. The first release entry will appear here once v1.0 is tagged.`}
+          title={tChangelog('firstVersionTitle')}
+          body={tChangelog('firstVersionBody', { sha: shortBuildSha })}
           href={REPO_URL}
-          linkText="View the repository"
+          linkText={tChangelog('viewRepoCta')}
         />
       ) : (
         <>
-          <h2 className="sr-only">Releases</h2>
+          <h2 className="sr-only">{tChangelog('releasesHeading')}</h2>
         <ol className="flex flex-col gap-14 list-none p-0">
           {releases.map((r: any) => (
             <TimelineEntry
@@ -125,7 +126,7 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
                   {r.changes.map((c: any, i: number) => (
                     <li key={i}>
                       <span
-                        className="inline-block mr-2 px-2 py-px rounded-full text-[11px] uppercase"
+                        className="inline-block me-2 px-2 py-px rounded-full text-[11px] uppercase"
                         style={{ fontFamily: 'var(--font-mono)', background: 'rgba(16,185,129,0.1)', color: 'var(--color-emerald-ink)' }}
                       >
                         {c.type}

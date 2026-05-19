@@ -1,6 +1,7 @@
 type Props = {
   size?: number;
-  ariaLabel?: string;
+  svgTitle: string;
+  ariaLabel: string;
 };
 
 const POPULATIONS = [
@@ -20,7 +21,8 @@ const POPULATIONS = [
 
 export function OfflineGlobe({
   size = 220,
-  ariaLabel = 'A simple globe with two-point-two billion offline dots highlighted, illustrating the digital-divide ITU figure.',
+  svgTitle,
+  ariaLabel,
 }: Props) {
   return (
     <figure className="oglobe" role="figure" aria-label={ariaLabel}>
@@ -32,7 +34,7 @@ export function OfflineGlobe({
         aria-hidden="true"
         focusable="false"
       >
-        <title>Offline reach</title>
+        <title>{svgTitle}</title>
         <desc>{ariaLabel}</desc>
         <defs>
           <radialGradient id="og-bg" cx="50%" cy="50%" r="50%">

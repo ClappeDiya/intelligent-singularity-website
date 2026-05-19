@@ -8,12 +8,16 @@ describe('HeroCounter', () => {
       <HeroCounter
         locale="en"
         value={2_199_847_302}
+        offlinePercent={27}
         label="People still offline, worldwide"
         tagline="We exist until this number is zero."
         primaryCta="Read the manifesto →"
         secondaryCta="Meet the studio"
         scrollHint="Scroll"
         scrollHintTarget="the gap in numbers"
+        source="ITU 2025"
+        populationCaption="of all people on Earth"
+        counterAriaLabel="2,199,847,302 people still offline, source ITU 2025"
       />
     );
     expect(container.textContent).toContain('2,199,847,302');
@@ -26,12 +30,16 @@ describe('HeroCounter', () => {
       <HeroCounter
         locale="zh-CN"
         value={2_199_847_302}
+        offlinePercent={27}
         label="X"
         tagline="Y"
         primaryCta="A"
         secondaryCta="B"
         scrollHint="Scroll"
         scrollHintTarget="the gap in numbers"
+        source="ITU 2025"
+        populationCaption="of all people on Earth"
+        counterAriaLabel="2,199,847,302 people still offline, source ITU 2025"
       />
     );
     const manifestoLink = container.querySelector('a[href="/zh-CN/manifesto"]');
@@ -43,12 +51,16 @@ describe('HeroCounter', () => {
       <HeroCounter
         locale="en"
         value={2_199_847_302}
+        offlinePercent={27}
         label="X"
         tagline="Y"
         primaryCta="A"
         secondaryCta="B"
         scrollHint="Scroll"
         scrollHintTarget="the gap in numbers"
+        source="ITU 2025"
+        populationCaption="of all people on Earth"
+        counterAriaLabel="2,199,847,302 people still offline, source ITU 2025"
       />
     );
     const labelled = container.querySelector('[aria-label*="2199847302"], [aria-label*="people still offline"]');

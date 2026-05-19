@@ -47,9 +47,8 @@ export async function HomeContent({ locale }: { locale: string }) {
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/',
-    name: 'Intelligent Singularity | Software For Universal Access',
-    description:
-      'A mission-driven studio building AI-augmented software for universal access across business, health, finance, and work.',
+    name: tHome('schemaName'),
+    description: tHome('schemaDescription'),
   });
 
   return (
@@ -58,12 +57,16 @@ export async function HomeContent({ locale }: { locale: string }) {
       <HeroCounter
         locale={locale}
         value={itu.offlineCount}
+        offlinePercent={itu.offlinePercent}
         label={hp.heroLabel}
         tagline={hp.heroTagline}
         primaryCta={hp.heroCtaPrimary}
         secondaryCta={hp.heroCtaSecondary}
         scrollHint={tHero('scrollHint')}
         scrollHintTarget={tHero('scrollHintTarget')}
+        source={tHero('source')}
+        populationCaption={tHero('populationCaption')}
+        counterAriaLabel={tHero('counterAriaLabel', { count: new Intl.NumberFormat(locale).format(itu.offlineCount) })}
       />
       <FactsSection title={hp.factsTitle} lead={hp.factsLead} itu={itu} />
       <section
@@ -72,7 +75,7 @@ export async function HomeContent({ locale }: { locale: string }) {
       >
         <div className="max-w-[1100px] mx-auto">
           <p className="label-mono" style={{ marginBottom: '0.75rem' }}>
-            One hundred people, drawn to scale
+            {tHome('ddKicker')}
           </p>
           <h2
             id="dd-heading"
@@ -87,14 +90,18 @@ export async function HomeContent({ locale }: { locale: string }) {
               maxWidth: '22ch',
             }}
           >
-            Twenty-six out of every hundred people on Earth still have no digital access at all.
+            {tHome('ddHeading')}
           </h2>
           <DigitalDivideIllustration
             onlinePercent={Math.round(itu.onlinePercent)}
             offlinePercent={Math.round(itu.offlinePercent)}
-            onlineCount="5.9 billion"
-            offlineCount="2.2 billion"
-            source={itu.sourceLabel || 'ITU Facts and Figures 2025'}
+            onlineCount={tHome('ddOnlineCount')}
+            offlineCount={tHome('ddOfflineCount')}
+            source={itu.sourceLabel || tHome('ddSourceFallback')}
+            svgTitle={tHome('ddSvgTitle')}
+            onlineLabel={tHome('ddOnlineLabel')}
+            offlineLabel={tHome('ddOfflineLabel')}
+            sourcePrefix={tHome('ddSourcePrefix')}
           />
         </div>
       </section>
@@ -129,7 +136,7 @@ export async function HomeContent({ locale }: { locale: string }) {
         >
           <div className="flex-1">
             <div className="label-mono" style={{ marginBottom: '0.5rem' }}>
-              Field notes
+              {tHome('fieldNotesKicker')}
             </div>
             <h2
               id="insights-callout"
@@ -143,10 +150,10 @@ export async function HomeContent({ locale }: { locale: string }) {
                 color: 'var(--color-paper-ink)',
               }}
             >
-              How we think about building this.
+              {tHome('fieldNotesTitle')}
             </h2>
             <p className="text-[15px] leading-[1.7] max-w-[52ch]" style={{ color: 'var(--color-paper-ink-muted)' }}>
-              Short, grounded essays from the studio. We write slowly and cite everything. No clickbait, no thought-leadership fog.
+              {tHome('fieldNotesBody')}
             </p>
           </div>
           <Link
@@ -154,7 +161,7 @@ export async function HomeContent({ locale }: { locale: string }) {
             className="btn-primary"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Read our field notes →
+            {tHome('fieldNotesCta')} <span aria-hidden="true">→</span>
           </Link>
         </div>
       </section>

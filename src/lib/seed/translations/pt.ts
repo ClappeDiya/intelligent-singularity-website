@@ -45,6 +45,13 @@ export const TRANSLATION: LocaleTranslation = {
     successMessage: 'Mensagem enviada. Obrigado.',
     errorMessage: 'Ocorreu um erro. Por favor, tente novamente.',
   },
+  trust: {
+    dataResidencyText:
+      'Este sítio Web vive num único servidor virtual num centro de dados identificado em Edmonton, Alberta, Canadá. Não há nenhuma rede de distribuição de conteúdos à frente. Quando a página carrega no seu navegador, o seu navegador fala diretamente com a nossa máquina. Nada se intromete pelo meio para copiar, colocar em cache ou ler o seu tráfego.\n\nAs nossas cópias de segurança encriptadas rodam num ciclo de trinta dias. Nunca saem da região do centro de dados. Estão protegidas em repouso com uma chave que apenas duas pessoas da nossa equipa conseguem desbloquear.',
+    reportIncidentText:
+      'Encontrou uma fragilidade, um erro ou algo que simplesmente parece estar errado? Escreva para security@intelligentsingularityinc.com. Respondemos no prazo de um dia útil, trabalhamos consigo na correção e creditamos pelo nome quem reportou no aviso público assim que o problema for corrigido — a menos que nos peça o contrário.\n\nNunca processamos investigadores que sigam os termos de divulgação responsável em /security.',
+  },
+
   commitments: [
     { title: 'Design universal, compatível com modo offline', body: 'Cada produto funciona perfeitamente tanto em fibra óptica quanto em 2G instável. Mesmas funcionalidades, mesma qualidade. A conectividade não deve ser uma barreira.' },
     { title: 'Padrão de simplicidade', body: 'Se um estudante do ensino fundamental não conseguir concluir o fluxo principal em 5 minutos sem treinamento, a funcionalidade ainda não está pronta.' },

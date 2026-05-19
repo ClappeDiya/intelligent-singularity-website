@@ -25,12 +25,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.roadmap' });
   return buildPageMetadata({
     locale,
     pathname: '/roadmap',
-    title: 'Roadmap | Intelligent Singularity',
-    description:
-      'What we are building, what is planned, what shipped, and what is paused — in public.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
@@ -41,20 +41,21 @@ export default async function RoadmapPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations('pages.roadmap');
+  const tCommon = await getTranslations('common');
 
   const items = await fetchRoadmapItems(locale);
 
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/roadmap',
-    name: 'Roadmap | Intelligent Singularity',
-    description: 'Public roadmap showing in-progress, planned, shipped, and paused work.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Roadmap', pathname: '/roadmap' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/roadmap' },
     ],
   });
 
@@ -201,7 +202,7 @@ export default async function RoadmapPage({
 
         {/* Trailing CTA */}
         <section
-          className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
+          className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center gap-6"
         style={{
             border: '1px solid rgba(16,185,129,0.18)',
             background: 'linear-gradient(135deg, rgba(16,185,129,0.06), rgba(20,184,166,0.04))',

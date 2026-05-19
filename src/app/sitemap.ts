@@ -40,6 +40,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     postSlugs = [];
   }
 
+  const alternatesFor = (pathTemplate: string): Record<string, string> => {
+    const suffix = pathTemplate === '/' ? '' : pathTemplate;
+    const map = LOCALES.reduce<Record<string, string>>((acc, l) => {
+      acc[l] = new URL(`/${l}${suffix}`, siteUrl).toString();
+      return acc;
+    }, {});
+    map['x-default'] = new URL(`/en${suffix}`, siteUrl).toString();
+    return map;
+  };
+
   for (const locale of LOCALES) {
     for (const route of ROUTES) {
       entries.push({
@@ -47,6 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: now,
         changeFrequency: route === '/' ? 'weekly' : 'monthly',
         priority: route === '/' ? 1 : 0.7,
+        alternates: { languages: alternatesFor(route) },
       });
     }
 
@@ -56,6 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: now,
         changeFrequency: 'yearly',
         priority: 0.4,
+        alternates: { languages: alternatesFor(`/legal/${slug}`) },
       });
     }
 
@@ -65,6 +77,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: now,
         changeFrequency: 'monthly',
         priority: 0.6,
+        alternates: { languages: alternatesFor(`/insights/${slug}`) },
       });
     }
   }

@@ -20,9 +20,13 @@ const RADIUS_Y = H - 110;
 export function EcosystemTree({
   branches = DEFAULT_BRANCHES,
   rootLabel = 'Intelligent Singularity',
+  svgTitle,
+  ariaLabelTemplate,
 }: {
   branches?: Branch[];
   rootLabel?: string;
+  svgTitle: string;
+  ariaLabelTemplate: string;
 }) {
   const n = branches.length;
   const positions = branches.map((b, i) => {
@@ -33,9 +37,11 @@ export function EcosystemTree({
     return { ...b, x, y, i };
   });
 
-  const ariaLabel = `${rootLabel} parent company with ${n} product branches: ${branches
-    .map((b) => `${b.label} (${b.tag})`)
-    .join('; ')}.`;
+  const branchList = branches.map((b) => `${b.label} (${b.tag})`).join('; ');
+  const ariaLabel = ariaLabelTemplate
+    .replace('{rootLabel}', rootLabel)
+    .replace('{count}', String(n))
+    .replace('{list}', branchList);
 
   return (
     <figure className="ecotree" role="figure" aria-label={ariaLabel}>
@@ -45,7 +51,7 @@ export function EcosystemTree({
         aria-hidden="true"
         focusable="false"
       >
-        <title>The Clap ecosystem under one parent company</title>
+        <title>{svgTitle}</title>
         <desc>{ariaLabel}</desc>
 
         {positions.map((p) => (

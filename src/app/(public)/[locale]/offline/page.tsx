@@ -10,11 +10,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.offline' });
   return buildPageMetadata({
     locale,
     pathname: '/offline',
-    title: 'Offline | Intelligent Singularity',
-    description: 'Offline fallback page for Intelligent Singularity web experiences.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     noindex: true,
   });
 }

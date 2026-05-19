@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "Langsung ke konten utama",
     "scrollHint": "Gulir",
-    "scrollHintTarget": "celah dalam angka"
+    "scrollHintTarget": "celah dalam angka",
+    "source": "ITU 2025",
+    "populationCaption": "dari seluruh penduduk Bumi",
+    "counterAriaLabel": "{count} orang masih offline, sumber ITU 2025"
   },
   "contactForm": {
     "routingLabel": "Tujuan",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "Changelog",
+      "schemaDescription": "Catatan rilis publik.",
+      "breadcrumbCurrent": "Changelog",
       "eyebrow": "CHANGELOG · SITUS PERUSAHAAN",
       "title": "Apa yang berubah, secara berurutan.",
       "lede": "Setiap perubahan terlihat yang kami lakukan di situs perusahaan ini, dengan tanggal dan terhubung ke commit yang melatarbelakanginya. Setiap produk di ekosistem Clap memiliki changelog tersendiri di domain masing-masing — halaman ini adalah pintu masuk perusahaan induk, tidak lebih, tidak ada yang disembunyikan.",
       "feedLabel": "Berlangganan:",
       "feedTitle": "Intelligent Singularity — Changelog",
-      "rssFeed": "Umpan RSS"
+      "rssFeed": "Umpan RSS",
+      "firstVersionTitle": "Ini adalah versi pertama.",
+      "firstVersionBody": "Belum ada tag yang dibuat. Anda sedang membaca build {sha}. Entri rilis pertama akan muncul di sini setelah v1.0 ditandai.",
+      "viewRepoCta": "Lihat repositori",
+      "releasesHeading": "Rilis",
+      "metaTitle": "Catatan Perubahan | Intelligent Singularity",
+      "metaDescription": "Setiap perubahan terlihat yang telah kami buat, dengan tanggal dan commit di baliknya."
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "Live status dashboard",
       "overallStatusAria": "Overall status",
       "externalNavAria": "External",
-      "opensInNewTab": " (opens in a new tab)"
+      "opensInNewTab": " (opens in a new tab)",
+      "uptimeGridAria": "Waktu aktif selama 90 hari terakhir, {pct} dalam 24 jam terakhir.",
+      "breadcrumbCurrent": "Status",
+      "schemaName": "Status | Intelligent Singularity",
+      "schemaDescription": "Status sistem langsung untuk situs web dan infrastrukturnya.",
+      "metaTitle": "Status | Intelligent Singularity",
+      "metaDescription": "Status sistem langsung dari situs dan infrastrukturnya."
     },
     "roadmap": {
+      "schemaName": "Peta Jalan | Intelligent Singularity",
+      "schemaDescription": "Peta jalan publik yang menampilkan pekerjaan yang sedang berjalan, direncanakan, dirilis, dan dihentikan sementara.",
+      "breadcrumbCurrent": "Peta Jalan",
       "eyebrow": "PETA JALAN · DI MUKA UMUM",
       "title": "Apa yang sedang kami bangun.",
       "lede": "Di muka umum. Tidak ada vaporware. Setiap item ada di sisi studio — pekerjaan situs perusahaan, infrastruktur bersama, dan komitmen lintas bidang yang menyentuh setiap produk. Setiap produk di ekosistem Clap memiliki peta jalan tersendiri di domain masing-masing. Item di sini terhubung ke kode saat dikirim.",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "Ada yang kurang?",
       "ctaHeading": "Beritahu kami apa yang Anda butuhkan.",
       "ctaBody": "Jika ada fitur, alat, atau perbaikan yang akan membuat perbedaan nyata bagi Anda, kirimkan pesan kepada kami. Kami membaca setiap pesan dan memprioritaskan berdasarkan kebutuhan nyata.",
-      "ctaButton": "Kirim pesan"
+      "ctaButton": "Kirim pesan",
+      "metaTitle": "Peta Jalan | Intelligent Singularity",
+      "metaDescription": "Apa yang sedang kami bangun, apa yang direncanakan, apa yang sudah dirilis, dan apa yang dijeda — secara terbuka."
     },
     "insights": {
+      "schemaName": "Insights | Intelligent Singularity",
+      "schemaDescription": "Berpikir di muka umum: akses, alignment, dan busur panjang AI.",
+      "breadcrumbCurrent": "Insights",
       "eyebrow": "INSIGHTS · CATATAN LAPANGAN DARI STUDIO",
       "title": "Berpikir di muka umum.",
       "lede": "Catatan lapangan tentang akses universal, rekayasa yang ditingkatkan AI, 2,2 miliar orang yang masih offline, dan lintasan panjang kecerdasan buatan — ditulis untuk dipahami, bukan untuk mengesankan. Kami menulis perlahan. Setiap klaim merujuk ke sumber. Tanpa clickbait, tanpa kabut kepemimpinan pemikiran.",
@@ -118,9 +144,23 @@
       "subscribeLabel": "Berlangganan:",
       "rssFeed": "Umpan RSS",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "Paginasi"
+      "paginationAria": "Paginasi",
+      "paginationNewer": "← Lebih baru",
+      "paginationOlder": "Lebih lama →",
+      "paginationNewerAria": "Buka kiriman lebih baru",
+      "paginationOlderAria": "Buka kiriman lebih lama",
+      "emptyTitle": "Belum ada yang diterbitkan.",
+      "emptyBody": "Tulisan pertama akan muncul di sini begitu siap. Kami menulis dengan perlahan dan hati-hati.",
+      "emptyCta": "Berlangganan umpan RSS",
+      "metaTitle": "Wawasan | Intelligent Singularity",
+      "metaDescription": "Berpikir di depan publik: akses, penyelarasan, dan busur panjang AI.",
+      "metaTitleSuffix": "Wawasan | Intelligent Singularity",
+      "eyebrowFallback": "WAWASAN"
     },
     "trust": {
+      "schemaName": "Kepercayaan | Intelligent Singularity",
+      "schemaDescription": "Pilar kepercayaan kami, subprosesor pihak ketiga, sertifikasi, dan cara melaporkan insiden keamanan.",
+      "breadcrumbCurrent": "Kepercayaan",
       "eyebrow": "KEPERCAYAAN",
       "title": "Tempat menemukan bukti.",
       "lede": "Setiap klaim yang kami buat tentang keamanan, privasi, keberlanjutan, dan akses tertaut ke bukti. Anda tidak boleh harus mengandalkan kata-kata kami saja.",
@@ -141,9 +181,16 @@
       "incidentBody": "Pengungkapan terkoordinasi adalah jalan yang kami tempuh dengan serius. Kirim email ke security@intelligentsingularityinc.com dengan deskripsi dan langkah reproduksi. Kami mengakui laporan dalam satu hari kerja, melakukan triase dalam tiga hari, dan mengirimkan perbaikan sesuai timeline yang kami sepakati dengan Anda. Peneliti dikreditkan dengan nama di post-mortem kami saat perbaikan dirilis — kecuali Anda lebih memilih anonim. Kami tidak mengancam atau menuntut peneliti keamanan yang beritikad baik, titik.",
       "incidentCta": "Laporkan insiden",
       "privacyPolicyLink": "Kebijakan privasi",
-      "learnMore": "Pelajari lebih lanjut"
+      "learnMore": "Pelajari lebih lanjut",
+      "dataResidencyHeading": "Tempat data Anda berada",
+      "disclosureHeading": "Kebijakan pengungkapan keamanan",
+      "metaTitle": "Kepercayaan | Intelligent Singularity",
+      "metaDescription": "Pilar kepercayaan, subprosesor pihak ketiga, sertifikasi, dan cara melaporkan insiden."
     },
     "help": {
+      "schemaName": "Bantuan | Intelligent Singularity",
+      "schemaDescription": "Pusat bantuan — jelajahi kategori, jawaban populer, dan kontak langsung.",
+      "breadcrumbCurrent": "Bantuan",
       "eyebrow": "BANTUAN",
       "title": "Biasanya kami bisa membantu dalam satu klik.",
       "lede": "Pilih baris yang paling mirip dengan pertanyaan Anda. Setiap tautan mengarah ke tempat yang nyata — tanpa formulir terkunci, tanpa chatbot.",
@@ -153,13 +200,17 @@
       "browseByTopic": "Jelajahi berdasarkan topik",
       "checkStatus": "Lihat status",
       "contactEyebrow": "Kontak",
-      "contactFallbackCta": "Hubungi kami"
+      "contactFallbackCta": "Hubungi kami",
+      "metaTitle": "Bantuan | Intelligent Singularity",
+      "metaDescription": "Temukan bantuan dengan cepat: jelajahi kategori, baca jawaban populer, atau hubungi orang dengan satu klik."
     },
     "about": {
       "eyebrow": "Tentang · Studio",
       "defaultTitle": "Tentang Intelligent Singularity",
       "ecosystemLabel": "Ekosistem sekilas",
       "ecosystemHeading": "Satu perusahaan induk, tujuh kategori produk.",
+      "ecosystemSvgTitle": "Ekosistem Clap di bawah satu perusahaan induk",
+      "ecosystemAriaLabelTemplate": "{rootLabel}, perusahaan induk dengan {count} cabang produk: {list}.",
       "ataGlanceLabel": "Sekilas",
       "talkToStudioLabel": "Bicara dengan studio",
       "talkToStudioBody": "Kemitraan, pers, atau pertanyaan produk — pesan mencapai pendiri langsung, biasanya dalam dua hari kerja.",
@@ -185,6 +236,20 @@
         "portfolio": "Keluarga platform yang terus tumbuh",
         "languages": "14 lokal yang dirilis",
         "footprint": "≤ 50 KB per halaman · tanpa pelacak"
+      },
+      "breadcrumbCurrent": "Tentang",
+      "schemaName": "Tentang | Intelligent Singularity",
+      "schemaDescription": "Kenali tim dan misi di balik Intelligent Singularity: membangun perangkat lunak untuk akses universal dengan operasi ramping yang diperkaya AI.",
+      "metaTitle": "Tentang Kami | Intelligent Singularity",
+      "metaDescription": "Kenali tim dan misi di balik Intelligent Singularity: membangun perangkat lunak untuk akses universal dengan operasi ramping yang diperkuat AI.",
+      "ecosystemBranchLabels": {
+        "corePlatform": "Platform inti",
+        "health": "Kesehatan",
+        "finance": "Keuangan",
+        "work": "Pekerjaan",
+        "agriculture": "Pertanian",
+        "media": "Media",
+        "commsData": "Komunikasi / data"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "Titik-titik lebih terang di atas adalah orang yang sudah online. Titik-titik lebih gelap dan bercincin adalah orang yang belum. Sembilan puluh enam persen populasi offline tinggal di negara berpenghasilan rendah dan menengah. Rekayasa akses universal adalah yang menutup kesenjangan itu. Sembilan komitmen di bawah adalah cara kami menetapinya.",
       "commitmentsHeading": "Sembilan komitmen",
       "commitmentsBody": "Sembilan cincin konsentris — setiap produk dirilis terhadap setiap dari mereka, di setiap rilis. Daftar ini bukan daftar keinginan. Ini adalah kontrak rekayasa.",
-      "sourceData": "Sumber data"
+      "sourceData": "Sumber data",
+      "breadcrumbCurrent": "Manifesto",
+      "schemaName": "Manifesto | Intelligent Singularity",
+      "schemaDescription": "Baca manifesto kami tentang menjadikan perangkat lunak kelas enterprise sebagai hak dasar setiap bisnis dan orang, online maupun offline.",
+      "globeSvgTitle": "Jangkauan offline",
+      "globeAriaLabel": "Sebuah globe sederhana dengan 2,2 miliar titik offline yang disorot, mengilustrasikan angka kesenjangan digital dari ITU.",
+      "ringsSvgTitle": "Komitmen",
+      "ringsAriaLabelTemplate": "{count} komitmen konsentris yang membentuk satu cincin akses universal — aturan rekayasa yang dipatuhi setiap produk di setiap rilis.",
+      "metaTitle": "Manifesto | Intelligent Singularity",
+      "metaDescription": "Baca manifesto kami tentang menjadikan perangkat lunak kelas enterprise sebagai hak dasar bagi setiap bisnis dan setiap orang, online maupun offline."
     },
     "faq": {
+      "schemaName": "FAQ | Intelligent Singularity",
+      "schemaDescription": "Jawaban jujur tentang studio, produk kami, praktik privasi, dan cara bermitra dengan Intelligent Singularity.",
+      "breadcrumbCurrent": "FAQ",
       "openTheForm": "Open the form",
       "emailDirectly": "Email directly"
     },
     "pricing": {
+      "schemaName": "Filosofi Harga | Intelligent Singularity",
+      "schemaDescription": "Aturan harga kami: tingkat gratis, harga adil per wilayah, setiap fitur di setiap tingkat, tanpa hubungi sales.",
+      "breadcrumbCurrent": "Harga",
       "tierFree": "Free tier:",
       "tierPaid": "Paid tier:",
       "tierEnterprise": "Enterprise:",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "The same product, three customers",
       "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
       "viewThePortfolio": "View the portfolio",
-      "talkAboutPricing": "Talk about pricing"
+      "talkAboutPricing": "Talk about pricing",
+      "metaTitle": "Filosofi Harga | Intelligent Singularity",
+      "metaDescription": "Cara kami menetapkan harga setiap produk: tingkat gratis selamanya, tarif disesuaikan daya beli, semua fitur di setiap tingkat, harga dipublikasikan, tanpa penjualan kontak."
     },
     "careers": {
+      "schemaName": "Karier | Intelligent Singularity",
+      "schemaDescription": "Bagaimana studio merekrut dan seperti apa rasanya bekerja di Intelligent Singularity.",
+      "breadcrumbCurrent": "Karier",
       "howWeWorkHeading": "Bagaimana kami benar-benar bekerja",
       "whatYouWouldWorkOnHeading": "Apa yang akan benar-benar Anda kerjakan",
       "howWeHireHeading": "Bagaimana kami merekrut, dari awal hingga akhir",
@@ -220,7 +305,9 @@
       "updatedPrefix": "Diperbarui",
       "contactFormCta": "Formulir kontak",
       "whatYouWouldWorkOnLede": "Intelligent Singularity adalah perusahaan induk dari keluarga platform yang terus berkembang. Karyawan baru jarang mengerjakan satu produk untuk satu tahun penuh — kebanyakan berpindah-pindah di antara dua atau tiga, tergantung pada apa yang sedang dirilis dan apa yang paling membutuhkan perhatian senior pada kuartal itu.",
-      "howWeHireLede": "Empat langkah. Maksimum dua minggu dari email pertama hingga tawaran tertulis jika kedua belah pihak bergerak cepat. Tidak ada tahap mengejutkan, tidak ada tugas rumah tanpa bayaran, tidak ada penolakan \"kecocokan budaya\" tanpa alasan tertulis."
+      "howWeHireLede": "Empat langkah. Maksimum dua minggu dari email pertama hingga tawaran tertulis jika kedua belah pihak bergerak cepat. Tidak ada tahap mengejutkan, tidak ada tugas rumah tanpa bayaran, tidak ada penolakan \"kecocokan budaya\" tanpa alasan tertulis.",
+      "metaTitle": "Karier | Intelligent Singularity",
+      "metaDescription": "Cara studio merekrut: tim kecil, jarak jauh, diperkuat AI yang merilis perangkat lunak akses universal. Lowongan saat ini dan undangan permanen untuk memperkenalkan diri."
     },
     "press": {
       "factSheetHeading": "Lembar fakta",
@@ -234,7 +321,10 @@
       "contactFormCta": "Formulir kontak",
       "boilerplateLede": "Satu paragraf, siap pasang untuk siaran pers. Disetujui untuk digunakan apa adanya.",
       "storyAnglesYesLede": "Jika cerita Anda berada dalam salah satu sudut ini, kami akan bergerak cepat untuk menyediakan pendiri, insinyur, atau pemimpin produk — biasanya dalam satu hari kerja.",
-      "storyAnglesNoLede": "Kejujuran sejak awal menghemat waktu semua orang. Kami tidak akan memberikan kutipan untuk sudut-sudut di bawah ini. Namun, kami akan mengarahkan Anda kepada jurnalis atau analis yang karyanya lebih cocok dengan cerita tersebut."
+      "storyAnglesNoLede": "Kejujuran sejak awal menghemat waktu semua orang. Kami tidak akan memberikan kutipan untuk sudut-sudut di bawah ini. Namun, kami akan mengarahkan Anda kepada jurnalis atau analis yang karyanya lebih cocok dengan cerita tersebut.",
+      "breadcrumbCurrent": "Pers",
+      "schemaName": "Pers & Media | Intelligent Singularity",
+      "schemaDescription": "Press kit, lembar fakta, kutipan resmi, dan kontak langsung untuk jurnalis serta peneliti yang meliput Intelligent Singularity."
     },
     "portfolio": {
       "eyebrow": "Portofolio · Ekosistem Clap",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "Panggilan pihak ketiga",
       "statThirdPartyValue": "Nol",
       "statThirdPartyHint": "Diberlakukan oleh CI di setiap rilis produk",
-      "ecosystemStatsAria": "Statistik ekosistem"
+      "ecosystemStatsAria": "Statistik ekosistem",
+      "verticalLabel": "Vertikal",
+      "publicAs": "Dikenal sebagai",
+      "breadcrumbCurrent": "Portofolio",
+      "schemaName": "Portofolio | Intelligent Singularity",
+      "schemaDescription": "Jelajahi ekosistem lengkap 14 perangkat di bidang operasi bisnis, kesehatan, keuangan, pertanian, media, dan komunikasi.",
+      "mosaicSvgTitle": "Mosaik portofolio",
+      "mosaicAriaLabel": "Mosaik yang menampilkan delapan platform di ekosistem Clap: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, dan Audiflo.",
+      "metaTitle": "Portofolio | Intelligent Singularity",
+      "metaDescription": "Jelajahi ekosistem lengkap 14 alat di seluruh operasi bisnis, kesehatan, keuangan, pertanian, media, dan komunikasi.",
+      "productCountLabel": "{count, plural, other {Produk}}"
     },
     "contact": {
+      "schemaName": "Kontak | Intelligent Singularity",
+      "schemaDescription": "Hubungi Intelligent Singularity untuk kemitraan, pers, hukum, atau pertanyaan produk tentang ekosistem perangkat lunak akses universal kami.",
+      "breadcrumbCurrent": "Kontak",
       "eyebrow": "Kontak · Meja studio",
       "titleFallback": "Hubungi kami",
+      "formHeading": "Formulir kontak",
       "directChannelsLabel": "Saluran langsung",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "Termasuk Arab & Urdu RTL.",
       "factHostingLabel": "Hosting",
       "factHostingLine1": "Satu VPS, Edmonton.",
-      "factHostingLine2": "Tanpa CDN pihak ketiga."
+      "factHostingLine2": "Tanpa CDN pihak ketiga.",
+      "metaTitle": "Kontak | Intelligent Singularity",
+      "metaDescription": "Hubungi Intelligent Singularity untuk kemitraan, pers, hukum, atau pertanyaan produk tentang ekosistem perangkat lunak akses universal kami."
+    },
+    "legal": {
+      "eyebrowLabel": "Hukum",
+      "lastUpdatedLabel": "Terakhir diperbarui: {date}",
+      "tocLabel": "Di halaman ini"
     },
     "security": {
       "postureHeading": "Bagaimana kami menjalankan situs dan platform",
       "dataHeading": "Bagaimana kami menangani data Anda",
       "complianceHeading": "Standar yang kami pegang teguh",
       "complianceLede": "Kami mengikuti seperangkat standar yang kecil dan bernama — dan kami jujur tentang audit mana yang belum kami peroleh.",
-      "privacyPolicyLink": "Baca kebijakan privasi"
+      "privacyPolicyLink": "Baca kebijakan privasi",
+      "breadcrumbCurrent": "Keamanan",
+      "schemaName": "Keamanan & Kepercayaan | Intelligent Singularity",
+      "schemaDescription": "Praktik keamanan dan penanganan data di Intelligent Singularity: enkripsi, swakelola, nol panggilan pihak ketiga, dan retensi singkat.",
+      "shieldSvgTitle": "Postur keamanan",
+      "shieldAriaLabel": "Perisai sederhana yang mengilustrasikan postur keamanan: enkripsi TLS, nol panggilan pihak ketiga, lingkungan produk terisolasi, retensi singkat, dan subprosesor bernama.",
+      "metaTitle": "Keamanan & Kepercayaan | Intelligent Singularity",
+      "metaDescription": "Cara kami mengamankan situs ini dan setiap produk di portofolio: TLS, nol panggilan pihak ketiga, retensi singkat, cadangan terenkripsi, dan respons insiden yang jujur."
     },
     "green": {
+      "schemaName": "Janji Hijau | Intelligent Singularity",
+      "schemaDescription": "Lihat komitmen lingkungan kami, transparansi bobot halaman, dan pendekatan kinerja web rendah emisi.",
+      "breadcrumbCurrent": "Hijau",
       "liveTelemetryEyebrow": "Hijau · Telemetri langsung",
       "statThisPageLabel": "Halaman ini",
       "statThisPageHint": "HTML + CSS, tanpa pelacak",
@@ -375,11 +496,64 @@
           "value": "Di seluruh platform",
           "hint": "Faktur, catatan medis, kuitansi default ke digital. Kertas kantor, kartu nama, dan materi pemasaran cetak bukan bagian dari cara kami beroperasi."
         }
-      }
+      },
+      "metaTitle": "Janji Hijau | Intelligent Singularity",
+      "metaDescription": "Lihat komitmen lingkungan kami, transparansi bobot halaman, dan pendekatan kinerja web emisi rendah."
     },
     "home": {
       "commitmentsKicker": "Nine non-negotiables",
-      "commitmentsAria": "The nine commitments"
+      "commitmentsAria": "The nine commitments",
+      "ddKicker": "Seratus orang, digambar sesuai skala",
+      "ddHeading": "Dua puluh enam dari setiap seratus orang di Bumi masih sama sekali belum punya akses digital.",
+      "ddOnlineCount": "5,9 miliar",
+      "ddOfflineCount": "2,2 miliar",
+      "ddSourceFallback": "ITU Fakta dan Angka 2025",
+      "ddSvgTitle": "Siapa yang online dan siapa yang tidak",
+      "ddOnlineLabel": "online",
+      "ddOfflineLabel": "masih offline",
+      "ddSourcePrefix": "Sumber",
+      "fieldNotesKicker": "Catatan lapangan",
+      "fieldNotesTitle": "Bagaimana cara kami berpikir tentang membangun ini.",
+      "fieldNotesBody": "Esai pendek dan beralasan dari studio. Kami menulis perlahan dan mengutip segalanya. Tanpa clickbait, tanpa kabut pemikiran palsu.",
+      "fieldNotesCta": "Baca catatan lapangan kami",
+      "flagshipsKicker": "Studio · 14 alat",
+      "flagshipsSeeAllCta": "Lihat seluruh ekosistem",
+      "flagshipCardLabel": "Andalan",
+      "facts": {
+        "kicker": "Kesenjangan · Terukur",
+        "sourceLabel": "ITU · 2025",
+        "sourceHeading": "Sumber",
+        "card1Caption": "Orang yang belum pernah menggunakan internet. <accent>{pct}% tinggal di negara berpenghasilan rendah dan menengah.</accent>",
+        "card1Comparison": "≈ 26% umat manusia",
+        "card2Caption": "Persentase orang online di negara berpenghasilan rendah. <accent>{pct}% di negara berpenghasilan tinggi.</accent>",
+        "card3Caption": "Cakupan 5G di negara berpenghasilan rendah. Negara berpenghasilan tinggi berada di <accent>{pct}%</accent>. Kesenjangan dua puluh kali lipat.",
+        "card3Comparison": "Kesenjangan 21×",
+        "card4Caption": "Penduduk pedesaan online di seluruh dunia. Angka perkotaan berada di <accent>{pct}%</accent>. Kesenjangan kota–desa masih sangat besar."
+      },
+      "greenStrip": {
+        "eyebrow": "Tanda Terima Karbon Langsung",
+        "heading": "Setiap kunjungan meninggalkan jejak energi. Ini milik kami.",
+        "body": "Kami mengukur bobot halaman dalam kilobyte dan karbon tertanam dalam gram. Keduanya tetap sangat kecil karena kami tidak mengirim apa pun yang tidak kami butuhkan — tidak ada font dari CDN, tidak ada pelacak, tidak ada skrip tersembunyi yang menelepon ke rumah.",
+        "pageWeightLabel": "Halaman ini berbobot",
+        "pageWeightUnit": "KB",
+        "pageWeightHint": "Anggaran: di bawah 50 KB per rute, gzip",
+        "carbonLabel": "Kunjungan Anda memancarkan",
+        "carbonHint": "Dihitung dengan model Green Web Foundation",
+        "hostingLabel": "Hosting kami",
+        "hostingValue": "Self-hosted",
+        "hostingHint": "VPS tunggal · tanpa CDN · grid Alberta",
+        "thirdPartyLabel": "Panggilan pihak ketiga",
+        "thirdPartyValue": "Nol",
+        "thirdPartyHint": "Tanpa CDN, font, analitik, piksel"
+      },
+      "schemaName": "Intelligent Singularity | Perangkat lunak untuk akses universal",
+      "schemaDescription": "Sebuah studio berbasis misi yang membangun perangkat lunak yang diperkaya AI untuk akses universal di bidang bisnis, kesehatan, keuangan, dan kerja.",
+      "metaTitle": "Intelligent Singularity | Perangkat Lunak untuk Akses Universal",
+      "metaDescription": "Studio dengan misi membangun perangkat lunak yang diperkuat AI untuk akses universal di bisnis, kesehatan, keuangan, dan pekerjaan."
+    },
+    "offline": {
+      "metaTitle": "Offline | Intelligent Singularity",
+      "metaDescription": "Halaman fallback offline untuk pengalaman web Intelligent Singularity."
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineBody": "Sepertinya Anda offline. Kami menyajikan halaman ini dari cache.",
     "offlineEyebrow": "Offline",
     "offlineReturnHome": "Kembali ke beranda",
-    "offlineTitle": "Tidak ada koneksi sekarang."
+    "offlineTitle": "Tidak ada koneksi sekarang.",
+    "opensInNewTab": "(membuka di tab baru)",
+    "emailLinkAriaLabel": "Kirim email ke {email}",
+    "breadcrumbHome": "Beranda",
+    "ogImageAlt": "Intelligent Singularity — Perangkat lunak untuk akses semua orang.",
+    "visit": "Buka",
+    "schema": {
+      "organizationDescription": "Studio yang membuat perangkat lunak untuk akses universal.",
+      "founderDescription": "Pendiri Intelligent Singularity, membangun perangkat lunak untuk akses universal dengan operasi ramping yang ditingkatkan AI.",
+      "portfolioListName": "Portofolio Produk Intelligent Singularity"
+    }
   },
   "languageWheel": {
     "navAria": "Bahasa",

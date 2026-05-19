@@ -30,7 +30,10 @@ async function main() {
         await page.close();
         continue;
       }
-      const results = await new AxeBuilder(page).analyze();
+      const results = await new AxeBuilder(page)
+        .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice', 'experimental'])
+        .options({ rules: { 'target-size': { enabled: true } } })
+        .analyze();
       if (results.violations.length > 0) {
         console.error(`\n${path}: ${results.violations.length} violation(s)`);
         for (const v of results.violations) {

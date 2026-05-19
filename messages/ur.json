@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "بنیادی مواد پر جائیں",
     "scrollHint": "نیچے سکرول کریں",
-    "scrollHintTarget": "اعداد میں خلا"
+    "scrollHintTarget": "اعداد میں خلا",
+    "source": "ITU 2025",
+    "populationCaption": "زمین کے تمام لوگوں میں سے",
+    "counterAriaLabel": "{count} لوگ اب بھی آف لائن ہیں، ماخذ آئی ٹی یو 2025"
   },
   "contactForm": {
     "routingLabel": "شعبہ",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "تبدیلیوں کا لاگ",
+      "schemaDescription": "عوامی ریلیز نوٹس۔",
+      "breadcrumbCurrent": "تبدیلیوں کا لاگ",
       "eyebrow": "تبدیلیوں کا لاگ · کارپوریٹ سائٹ",
       "title": "کیا تبدیل ہوا، ترتیب سے۔",
       "lede": "اس کارپوریٹ سائٹ پر ہم نے جو بھی نظر آنے والی تبدیلی کی، تاریخ کے ساتھ اور اس کے پیچھے موجود کمٹ سے منسلک۔ Clap ایکوسسٹم کا ہر پروڈکٹ اپنے ڈومین پر اپنا الگ چینج لاگ رکھتا ہے — یہ صفحہ مادر کمپنی کا مرکزی دروازہ ہے، اس سے زیادہ کچھ نہیں، کچھ بھی چھپا ہوا نہیں۔",
       "feedLabel": "سبسکرائب کریں:",
       "feedTitle": "Intelligent Singularity — تبدیلیوں کا لاگ",
-      "rssFeed": "RSS فیڈ"
+      "rssFeed": "RSS فیڈ",
+      "firstVersionTitle": "یہ پہلا ورژن ہے۔",
+      "firstVersionBody": "ابھی تک کوئی ٹیگ نہیں بنایا گیا۔ آپ بلڈ {sha} پڑھ رہے ہیں۔ v1.0 کو ٹیگ کرنے کے بعد پہلی ریلیز اندراج یہاں ظاہر ہوگی۔",
+      "viewRepoCta": "ریپوزٹری دیکھیں",
+      "releasesHeading": "ریلیز",
+      "metaTitle": "تبدیلیوں کا لاگ | Intelligent Singularity",
+      "metaDescription": "ہر مرئی تبدیلی جو ہم نے کی ہے، تاریخ اور اس کے پیچھے کے کمٹ کے ساتھ۔"
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "Live status dashboard",
       "overallStatusAria": "Overall status",
       "externalNavAria": "External",
-      "opensInNewTab": " (opens in a new tab)"
+      "opensInNewTab": " (opens in a new tab)",
+      "uptimeGridAria": "پچھلے 90 دنوں کا اپ ٹائم، پچھلے 24 گھنٹوں میں {pct}۔",
+      "breadcrumbCurrent": "سٹیٹس",
+      "schemaName": "سٹیٹس | Intelligent Singularity",
+      "schemaDescription": "ویب سائٹ اور اس کے بنیادی ڈھانچے کا لائیو سسٹم اسٹیٹس۔",
+      "metaTitle": "حالت | Intelligent Singularity",
+      "metaDescription": "ویب سائٹ اور اس کے انفراسٹرکچر کی لائیو سسٹم حالت۔"
     },
     "roadmap": {
+      "schemaName": "نقشہ راہ | Intelligent Singularity",
+      "schemaDescription": "عوامی نقشہ راہ جو جاری، منصوبہ بند، جاری شدہ اور روکے گئے کام کو ظاہر کرتا ہے۔",
+      "breadcrumbCurrent": "نقشہ راہ",
       "eyebrow": "نقشہ راہ · علانیہ",
       "title": "ہم کیا بنا رہے ہیں۔",
       "lede": "علانیہ۔ کوئی ویپر ویئر نہیں۔ ہر آئٹم سٹوڈیو کی طرف ہے — کارپوریٹ سائٹ کا کام، مشترکہ بنیادی ڈھانچہ، اور وہ کراس کٹنگ وعدے جو ہر پروڈکٹ کو چھوتے ہیں۔ Clap ایکوسسٹم کا ہر پروڈکٹ اپنے ڈومین پر اپنا الگ نقشہ راہ رکھتا ہے۔ یہاں کے آئٹمز جب شپ ہوتے ہیں تو کوڈ سے منسلک ہو جاتے ہیں۔",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "کیا کچھ کم ہے؟",
       "ctaHeading": "ہمیں بتائیں آپ کو کیا چاہیے۔",
       "ctaBody": "اگر کوئی فیچر، ٹول، یا فکس ایسا ہے جو آپ کے لیے حقیقی فرق پیدا کرے گا، تو ہمیں ایک پیغام بھیجیں۔ ہم ہر پیغام پڑھتے ہیں اور حقیقی ضرورت کی بنیاد پر ترجیح دیتے ہیں۔",
-      "ctaButton": "پیغام بھیجیں"
+      "ctaButton": "پیغام بھیجیں",
+      "metaTitle": "روڈ میپ | Intelligent Singularity",
+      "metaDescription": "ہم کیا بنا رہے ہیں، کیا منصوبہ بند ہے، کیا جاری ہو چکا ہے اور کیا روکا گیا ہے — عوام کے سامنے۔"
     },
     "insights": {
+      "schemaName": "بصیرتیں | Intelligent Singularity",
+      "schemaDescription": "علانیہ سوچنا: رسائی، ہم آہنگی، اور اے آئی کا طویل قوس۔",
+      "breadcrumbCurrent": "بصیرتیں",
       "eyebrow": "بصیرتیں · سٹوڈیو سے میدانی نوٹس",
       "title": "علانیہ سوچنا۔",
       "lede": "ہمہ گیر رسائی، AI سے مدد یافتہ انجینئرنگ، 2.2 ارب آف لائن لوگوں، اور مصنوعی ذہانت کے طویل سفر پر میدانی نوٹس — متاثر کرنے کے لیے نہیں، بلکہ سمجھے جانے کے لیے لکھے گئے۔ ہم آہستہ آہستہ لکھتے ہیں۔ ہر دعویٰ کسی ماخذ سے جڑا ہوتا ہے۔ کوئی کلک بیٹ نہیں، کوئی فکری قیادت کی دھند نہیں۔",
@@ -118,9 +144,23 @@
       "subscribeLabel": "سبسکرائب کریں:",
       "rssFeed": "RSS فیڈ",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "صفحہ بندی"
+      "paginationAria": "صفحہ بندی",
+      "paginationNewer": "→ نئے",
+      "paginationOlder": "پرانے ←",
+      "paginationNewerAria": "نئی پوسٹس پر جائیں",
+      "paginationOlderAria": "پرانی پوسٹس پر جائیں",
+      "emptyTitle": "ابھی تک کچھ شائع نہیں ہوا۔",
+      "emptyBody": "پہلا مضمون تیار ہوتے ہی یہاں ظاہر ہوگا۔ ہم آہستہ اور احتیاط سے لکھتے ہیں۔",
+      "emptyCta": "RSS فیڈ سبسکرائب کریں",
+      "metaTitle": "تبصرے | Intelligent Singularity",
+      "metaDescription": "عوامی طور پر سوچنا: رسائی، صف بندی اور AI کا طویل قوس۔",
+      "metaTitleSuffix": "بصیرتیں | Intelligent Singularity",
+      "eyebrowFallback": "بصیرتیں"
     },
     "trust": {
+      "schemaName": "اعتماد | Intelligent Singularity",
+      "schemaDescription": "ہمارے اعتماد کے ستون، تیسرے فریق کے ذیلی پروسیسرز، سرٹیفکیشنز، اور سیکیورٹی واقعے کی رپورٹ کیسے کریں۔",
+      "breadcrumbCurrent": "اعتماد",
       "eyebrow": "اعتماد",
       "title": "ثبوت کہاں ملے گا۔",
       "lede": "سیکیورٹی، رازداری، پائیداری، اور رسائی کے بارے میں ہم جو بھی دعویٰ کرتے ہیں، وہ ثبوت سے جڑا ہوا ہے۔ آپ کو کبھی بھی صرف ہماری بات پر بھروسہ کرنا نہیں پڑے گا۔",
@@ -141,9 +181,16 @@
       "incidentBody": "مربوط انکشاف وہ راستہ ہے جسے ہم سنجیدگی سے لیتے ہیں۔ تفصیل اور دوبارہ پیش کرنے کے اقدامات کے ساتھ security@intelligentsingularityinc.com پر ای میل کریں۔ ہم ایک کاروباری دن کے اندر رپورٹس کو تسلیم کرتے ہیں، تین دنوں کے اندر ٹرائج کرتے ہیں، اور آپ کے ساتھ طے شدہ شیڈول پر فکس بھیجتے ہیں۔ جب فکس بھیجا جاتا ہے تو ہمارے پوسٹ مارٹم میں محققین کو نام سے کریڈٹ دیا جاتا ہے — تاوقتیکہ آپ گمنام رہنا پسند کریں۔ ہم نیک نیتی والے سیکیورٹی محققین کو دھمکی نہیں دیتے یا ان پر مقدمہ نہیں چلاتے، بس اتنا۔",
       "incidentCta": "حادثے کی رپورٹ",
       "privacyPolicyLink": "رازداری پالیسی",
-      "learnMore": "مزید جانیں"
+      "learnMore": "مزید جانیں",
+      "dataResidencyHeading": "آپ کا ڈیٹا کہاں رہتا ہے",
+      "disclosureHeading": "حفاظتی انکشاف کی پالیسی",
+      "metaTitle": "اعتماد | Intelligent Singularity",
+      "metaDescription": "اعتماد کے ستون، تیسرے فریق کے ذیلی پروسیسرز، سرٹیفکیٹس اور واقعہ کی رپورٹ کیسے کریں۔"
     },
     "help": {
+      "schemaName": "مدد | Intelligent Singularity",
+      "schemaDescription": "مدد سینٹر — زمرے دیکھیں، مقبول جوابات پڑھیں، اور براہِ راست رابطہ کریں۔",
+      "breadcrumbCurrent": "مدد",
       "eyebrow": "مدد",
       "title": "عام طور پر ہم ایک کلک میں مدد کر سکتے ہیں۔",
       "lede": "اس قطار کا انتخاب کریں جو آپ کے سوال سے سب سے زیادہ مماثل ہو۔ ہر لنک ایک حقیقی جگہ لے کر جاتا ہے — کوئی بند فارم نہیں، کوئی چیٹ بوٹ نہیں۔",
@@ -153,13 +200,17 @@
       "browseByTopic": "موضوع کے لحاظ سے دیکھیں",
       "checkStatus": "حیثیت چیک کریں",
       "contactEyebrow": "رابطہ",
-      "contactFallbackCta": "ہم سے رابطہ کریں"
+      "contactFallbackCta": "ہم سے رابطہ کریں",
+      "metaTitle": "مدد | Intelligent Singularity",
+      "metaDescription": "تیزی سے مدد حاصل کریں: زمرے دیکھیں، مشہور جوابات پڑھیں یا ایک کلک میں کسی انسان سے رابطہ کریں۔"
     },
     "about": {
       "eyebrow": "ہمارے بارے میں · سٹوڈیو",
       "defaultTitle": "Intelligent Singularity کے بارے میں",
       "ecosystemLabel": "ایک نظر میں ایکوسسٹم",
       "ecosystemHeading": "ایک پیرنٹ کمپنی، سات پروڈکٹ زمرے۔",
+      "ecosystemSvgTitle": "ایک ہی والدین کمپنی کے تحت Clap ایکو سسٹم",
+      "ecosystemAriaLabelTemplate": "{rootLabel}، {count} مصنوعات کی شاخوں کے ساتھ والدین کمپنی: {list}۔",
       "ataGlanceLabel": "ایک نظر میں",
       "talkToStudioLabel": "سٹوڈیو سے بات کریں",
       "talkToStudioBody": "شراکت داری، پریس، یا پروڈکٹ کا سوال — پیغامات بانی تک براہ راست پہنچتے ہیں، عام طور پر دو کاروباری دنوں کے اندر۔",
@@ -185,6 +236,20 @@
         "portfolio": "پلیٹ فارمز کا بڑھتا ہوا خاندان",
         "languages": "14 شپنگ مقامات",
         "footprint": "≤ 50 KB فی صفحہ · صفر ٹریکرز"
+      },
+      "breadcrumbCurrent": "ہمارے بارے میں",
+      "schemaName": "ہمارے بارے میں | Intelligent Singularity",
+      "schemaDescription": "Intelligent Singularity کے پیچھے ٹیم اور مشن سے ملیں: AI سے بہتر بنائے گئے ہموار آپریشنز کے ساتھ عالمی رسائی کے لیے سافٹ ویئر بنانا۔",
+      "metaTitle": "ہمارے بارے میں | Intelligent Singularity",
+      "metaDescription": "Intelligent Singularity کے پیچھے ٹیم اور مشن سے ملیں: AI سے بہتر بنائے گئے ہلکے آپریشن کے ساتھ عالمی رسائی کا سافٹ ویئر بنانا۔",
+      "ecosystemBranchLabels": {
+        "corePlatform": "بنیادی پلیٹ فارم",
+        "health": "صحت",
+        "finance": "مالیات",
+        "work": "کام",
+        "agriculture": "زراعت",
+        "media": "میڈیا",
+        "commsData": "رابطہ / ڈیٹا"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "اوپر ہلکے نقطے وہ لوگ ہیں جو پہلے ہی آن لائن ہیں۔ گہرے، حلقے دار نقطے وہ لوگ ہیں جو نہیں ہیں۔ آف لائن آبادی کا 96 فیصد کم اور درمیانی آمدنی والے ممالک میں رہتا ہے۔ ہمہ گیر رسائی کی انجینئرنگ وہ چیز ہے جو اس فرق کو بند کرتی ہے۔ ذیل میں نو وعدے ہیں جو ہمیں ان کا پابند رکھتے ہیں۔",
       "commitmentsHeading": "نو وعدے",
       "commitmentsBody": "نو مرکوزی حلقے — ہر پروڈکٹ ہر اِن میں سے ایک کے خلاف، ہر ریلیز پر بھیجا جاتا ہے۔ یہ فہرست خواہشات کی فہرست نہیں ہے۔ یہ انجینئرنگ کا معاہدہ ہے۔",
-      "sourceData": "ماخذ ڈیٹا"
+      "sourceData": "ماخذ ڈیٹا",
+      "breadcrumbCurrent": "بیانیہ",
+      "schemaName": "بیانیہ | Intelligent Singularity",
+      "schemaDescription": "ہر کاروبار اور فرد کے لیے، آن لائن یا آف لائن، انٹرپرائز گریڈ سافٹ ویئر کو بنیادی حق بنانے پر ہمارا بیانیہ پڑھیں۔",
+      "globeSvgTitle": "آف لائن رسائی",
+      "globeAriaLabel": "ایک سادہ گلوب جس میں 2.2 ارب آف لائن نکات نمایاں ہیں، جو ڈیجیٹل تقسیم پر ITU کے اعداد و شمار کو ظاہر کرتا ہے۔",
+      "ringsSvgTitle": "وعدے",
+      "ringsAriaLabelTemplate": "{count} ہم مرکز وعدے جو عالمی رسائی کا ایک واحد حلقہ بناتے ہیں — وہ انجینئرنگ اصول جن کے خلاف ہر مصنوع ہر ریلیز میں جاری کی جاتی ہے۔",
+      "metaTitle": "منشور | Intelligent Singularity",
+      "metaDescription": "ہمارا منشور پڑھیں: انٹرپرائز گریڈ سافٹ ویئر کو ہر کاروبار اور ہر شخص کے لیے، آن لائن یا آف لائن، بنیادی حق بنانے کے بارے میں۔"
     },
     "faq": {
+      "schemaName": "FAQ | Intelligent Singularity",
+      "schemaDescription": "اسٹوڈیو، ہماری مصنوعات، رازداری کے طریقوں، اور Intelligent Singularity کے ساتھ شراکت داری کے بارے میں ایماندار جوابات۔",
+      "breadcrumbCurrent": "FAQ",
       "openTheForm": "Open the form",
       "emailDirectly": "Email directly"
     },
     "pricing": {
+      "schemaName": "قیمت کا فلسفہ | Intelligent Singularity",
+      "schemaDescription": "ہمارے قیمتوں کے اصول: مفت ٹیئر، خطے کے لحاظ سے منصفانہ قیمتیں، ہر ٹیئر میں ہر فیچر، سیلز سے رابطہ نہیں۔",
+      "breadcrumbCurrent": "قیمتیں",
       "tierFree": "Free tier:",
       "tierPaid": "Paid tier:",
       "tierEnterprise": "Enterprise:",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "The same product, three customers",
       "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
       "viewThePortfolio": "View the portfolio",
-      "talkAboutPricing": "Talk about pricing"
+      "talkAboutPricing": "Talk about pricing",
+      "metaTitle": "قیمتوں کا فلسفہ | Intelligent Singularity",
+      "metaDescription": "ہم ہر پروڈکٹ کی قیمت کیسے طے کرتے ہیں: ہمیشہ کے لیے مفت درجہ، قوت خرید کے مطابق ترتیب شدہ نرخ، ہر درجے میں ہر خصوصیت، شائع شدہ قیمتیں، کوئی رابطہ فروخت نہیں۔"
     },
     "careers": {
+      "schemaName": "کیریئر | Intelligent Singularity",
+      "schemaDescription": "اسٹوڈیو کس طرح بھرتی کرتا ہے اور Intelligent Singularity میں کام کرنا کیسا ہے۔",
+      "breadcrumbCurrent": "کیریئر",
       "howWeWorkHeading": "ہم اصل میں کیسے کام کرتے ہیں",
       "whatYouWouldWorkOnHeading": "آپ اصل میں کس پر کام کریں گے",
       "howWeHireHeading": "ہم کیسے بھرتی کرتے ہیں، آغاز سے اختتام تک",
@@ -220,7 +305,9 @@
       "updatedPrefix": "اپڈیٹ ہوا",
       "contactFormCta": "رابطہ فارم",
       "whatYouWouldWorkOnLede": "انٹیلیجنٹ سنگولیریٹی پلیٹ فارمز کے بڑھتے ہوئے خاندان کی پیرنٹ کمپنی ہے۔ نئے بھرتی شدہ افراد شاذ و نادر ہی پورا سال ایک مصنوع پر کام کرتے ہیں — زیادہ تر دو یا تین کے درمیان چکر لگاتے ہیں، اس بات پر منحصر ہے کہ کیا شپ ہو رہا ہے اور اس سہ ماہی میں کس کو سب سے زیادہ سینیئر توجہ کی ضرورت ہے۔",
-      "howWeHireLede": "چار مراحل۔ پہلے ای میل سے تحریری پیشکش تک زیادہ سے زیادہ دو ہفتے اگر دونوں فریق تیزی سے آگے بڑھیں۔ کوئی حیرت انگیز مرحلہ نہیں، کوئی غیر معاوضہ ٹیک ہوم نہیں، تحریری وجہ کے بغیر کوئی \"ثقافتی فٹ\" مسترد کرنا نہیں۔"
+      "howWeHireLede": "چار مراحل۔ پہلے ای میل سے تحریری پیشکش تک زیادہ سے زیادہ دو ہفتے اگر دونوں فریق تیزی سے آگے بڑھیں۔ کوئی حیرت انگیز مرحلہ نہیں، کوئی غیر معاوضہ ٹیک ہوم نہیں، تحریری وجہ کے بغیر کوئی \"ثقافتی فٹ\" مسترد کرنا نہیں۔",
+      "metaTitle": "کیریئر | Intelligent Singularity",
+      "metaDescription": "اسٹوڈیو کیسے بھرتی کرتا ہے: چھوٹی، دور دراز، AI سے بہتر بنائی گئی ٹیم جو عالمی رسائی کا سافٹ ویئر فراہم کرتی ہے۔ موجودہ آسامیاں اور خود کو متعارف کرانے کی مستقل دعوت۔"
     },
     "press": {
       "factSheetHeading": "حقائق کی شیٹ",
@@ -234,7 +321,10 @@
       "contactFormCta": "رابطہ فارم",
       "boilerplateLede": "ایک پیراگراف، پریس ریلیز میں شامل کرنے کے لیے تیار۔ لفظ بہ لفظ استعمال کے لیے منظور شدہ۔",
       "storyAnglesYesLede": "اگر آپ کی کہانی ان پہلوؤں میں سے کسی ایک کے اندر ہے، تو ہم تیزی سے کسی بانی، انجینیئر یا پروڈکٹ لیڈ کو دستیاب کرنے کے لیے کام کریں گے — عام طور پر ایک کاروباری دن کے اندر۔",
-      "storyAnglesNoLede": "پہلے سے ایمانداری سب کا وقت بچاتی ہے۔ ہم نیچے دیے گئے پہلوؤں کے لیے اقتباسات فراہم نہیں کریں گے۔ تاہم، ہم آپ کو کسی ایسے صحافی یا تجزیہ کار کی طرف رہنمائی کریں گے جس کا کام کہانی کے ساتھ بہتر طور پر میل کھاتا ہو۔"
+      "storyAnglesNoLede": "پہلے سے ایمانداری سب کا وقت بچاتی ہے۔ ہم نیچے دیے گئے پہلوؤں کے لیے اقتباسات فراہم نہیں کریں گے۔ تاہم، ہم آپ کو کسی ایسے صحافی یا تجزیہ کار کی طرف رہنمائی کریں گے جس کا کام کہانی کے ساتھ بہتر طور پر میل کھاتا ہو۔",
+      "breadcrumbCurrent": "پریس",
+      "schemaName": "پریس اور میڈیا | Intelligent Singularity",
+      "schemaDescription": "Intelligent Singularity پر کام کرنے والے صحافیوں اور محققین کے لیے پریس کٹ، فیکٹ شیٹ، منظور شدہ اقتباسات اور براہ راست رابطہ۔"
     },
     "portfolio": {
       "eyebrow": "پورٹ فولیو · Clap ایکوسسٹم",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "تیسرے فریق کی کالز",
       "statThirdPartyValue": "صفر",
       "statThirdPartyHint": "ہر پروڈکٹ ریلیز پر CI کے ذریعہ نافذ",
-      "ecosystemStatsAria": "ایکوسسٹم اعداد و شمار"
+      "ecosystemStatsAria": "ایکوسسٹم اعداد و شمار",
+      "verticalLabel": "عمودی",
+      "publicAs": "کے نام سے",
+      "breadcrumbCurrent": "پورٹ فولیو",
+      "schemaName": "پورٹ فولیو | Intelligent Singularity",
+      "schemaDescription": "کاروباری آپریشنز، صحت، مالیات، زراعت، میڈیا اور مواصلات میں پھیلے 14 ٹولز کے مکمل ماحولیاتی نظام کو دریافت کریں۔",
+      "mosaicSvgTitle": "پورٹفولیو موزیک",
+      "mosaicAriaLabel": "Clap ماحولیاتی نظام کے آٹھ پلیٹ فارمز دکھانے والا موزیک: Clappe، ClapBill، ClapMed، ClapDiet، ClapPay، Clapwork، Apogee اور Audiflo۔",
+      "metaTitle": "پورٹ فولیو | Intelligent Singularity",
+      "metaDescription": "کاروباری آپریشن، صحت، مالیات، زراعت، میڈیا اور رابطوں میں 14 ٹولز کا مکمل ماحولیاتی نظام دیکھیں۔",
+      "productCountLabel": "{count, plural, one {پروڈکٹ} other {پروڈکٹس}}"
     },
     "contact": {
+      "schemaName": "رابطہ | Intelligent Singularity",
+      "schemaDescription": "شراکت داری، پریس، قانونی، یا ہمارے عالمی-رسائی والے سافٹ ویئر ایکو سسٹم کے بارے میں مصنوعات سے متعلق سوالات کے لیے Intelligent Singularity سے رابطہ کریں۔",
+      "breadcrumbCurrent": "رابطہ",
       "eyebrow": "رابطہ · سٹوڈیو ڈیسک",
       "titleFallback": "رابطہ کریں",
+      "formHeading": "رابطہ فارم",
       "directChannelsLabel": "براہ راست چینلز",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "بشمول عربی اور اردو RTL۔",
       "factHostingLabel": "ہوسٹنگ",
       "factHostingLine1": "ایک VPS، ایڈمنٹن۔",
-      "factHostingLine2": "کوئی تھرڈ پارٹی CDN نہیں۔"
+      "factHostingLine2": "کوئی تھرڈ پارٹی CDN نہیں۔",
+      "metaTitle": "رابطہ | Intelligent Singularity",
+      "metaDescription": "شراکت داری، پریس، قانونی یا ہمارے عالمی رسائی والے سافٹ ویئر ایکوسسٹم کے بارے میں پروڈکٹ کے سوالات کے لیے Intelligent Singularity سے رابطہ کریں۔"
+    },
+    "legal": {
+      "eyebrowLabel": "قانونی",
+      "lastUpdatedLabel": "آخری تجدید: {date}",
+      "tocLabel": "اس صفحے پر"
     },
     "security": {
       "postureHeading": "ہم سائٹ اور پلیٹ فارم کیسے چلاتے ہیں",
       "dataHeading": "ہم آپ کے ڈیٹا کو کیسے سنبھالتے ہیں",
       "complianceHeading": "وہ معیار جن پر ہم خود کو پابند رکھتے ہیں",
       "complianceLede": "ہم معیارات کے ایک چھوٹے، مخصوص گروہ پر عمل پیرا ہیں — اور جو آڈٹ ہم نے ابھی تک حاصل نہیں کیے، اس بارے میں ایماندار ہیں۔",
-      "privacyPolicyLink": "رازداری پالیسی پڑھیں"
+      "privacyPolicyLink": "رازداری پالیسی پڑھیں",
+      "breadcrumbCurrent": "سیکیورٹی",
+      "schemaName": "سیکیورٹی اور اعتماد | Intelligent Singularity",
+      "schemaDescription": "Intelligent Singularity میں سیکیورٹی اور ڈیٹا ہینڈلنگ کے طریقے: انکرپشن، خود میزبانی، صفر فریق ثالث کالز اور مختصر برقراری۔",
+      "shieldSvgTitle": "سیکیورٹی پوزیشن",
+      "shieldAriaLabel": "سیکیورٹی پوزیشن کی نمائندگی کرنے والی ایک سادہ ڈھال: TLS انکرپشن، صفر فریق ثالث کالز، الگ تھلگ پروڈکٹ ماحول، مختصر برقراری اور نام زدہ ذیلی پروسیسرز۔",
+      "metaTitle": "سلامتی اور اعتماد | Intelligent Singularity",
+      "metaDescription": "ہم اس سائٹ اور اپنے پورٹ فولیو کی ہر پروڈکٹ کو کیسے محفوظ رکھتے ہیں: TLS، فریق ثالث کالز صفر، مختصر برقراری، خفیہ کاری شدہ بیک اپ اور ایماندارانہ واقعہ ردعمل۔"
     },
     "green": {
+      "schemaName": "سبز عہد | Intelligent Singularity",
+      "schemaDescription": "ہماری ماحولیاتی وابستگیاں، صفحہ کے وزن کی شفافیت، اور کم اخراج والی ویب کارکردگی کا طریقہ کار دیکھیں۔",
+      "breadcrumbCurrent": "ماحولیات",
       "liveTelemetryEyebrow": "سبز · لائیو ٹیلی میٹری",
       "statThisPageLabel": "یہ صفحہ",
       "statThisPageHint": "HTML + CSS، کوئی ٹریکر نہیں",
@@ -375,11 +496,64 @@
           "value": "پلیٹ فارم میں",
           "hint": "بل، طبی ریکارڈز، رسیدیں default طور پر ڈیجیٹل ہیں۔ آفس کاغذ، بزنس کارڈز، اور پرنٹ شدہ مارکیٹنگ مواد ہمارے کام کا حصہ نہیں۔"
         }
-      }
+      },
+      "metaTitle": "سبز عہد | Intelligent Singularity",
+      "metaDescription": "ہمارے ماحولیاتی عزم، صفحہ وزن کی شفافیت اور کم اخراج والے ویب کارکردگی نقطہ نظر کو دیکھیں۔"
     },
     "home": {
       "commitmentsKicker": "Nine non-negotiables",
-      "commitmentsAria": "The nine commitments"
+      "commitmentsAria": "The nine commitments",
+      "ddKicker": "ایک سو لوگ، صحیح پیمانے پر بنائے گئے",
+      "ddHeading": "زمین پر ہر سو میں سے چھبیس افراد کے پاس اب بھی کوئی ڈیجیٹل رسائی نہیں ہے۔",
+      "ddOnlineCount": "5.9 ارب",
+      "ddOfflineCount": "2.2 ارب",
+      "ddSourceFallback": "ITU Facts and Figures 2025",
+      "ddSvgTitle": "کون آن لائن ہے اور کون نہیں",
+      "ddOnlineLabel": "آن لائن",
+      "ddOfflineLabel": "اب بھی آف لائن",
+      "ddSourcePrefix": "ماخذ",
+      "fieldNotesKicker": "میدان کی یاداشتیں",
+      "fieldNotesTitle": "ہم اسے بنانے کے بارے میں کیسے سوچتے ہیں۔",
+      "fieldNotesBody": "اسٹوڈیو سے مختصر اور حقیقت پر مبنی مضامین۔ ہم آہستہ لکھتے ہیں اور ہر چیز کا حوالہ دیتے ہیں۔ نہ کلک بیٹ، نہ خیالی قیادت کی دھند۔",
+      "fieldNotesCta": "ہماری میدانی یاداشتیں پڑھیں",
+      "flagshipsKicker": "اسٹوڈیو · 14 ٹولز",
+      "flagshipsSeeAllCta": "پورا ایکو سسٹم دیکھیں",
+      "flagshipCardLabel": "پرچم بردار",
+      "facts": {
+        "kicker": "فرق · ناپا گیا",
+        "sourceLabel": "ITU · 2025",
+        "sourceHeading": "ماخذ",
+        "card1Caption": "وہ لوگ جنہوں نے کبھی انٹرنیٹ استعمال نہیں کیا۔ <accent>{pct}٪ کم اور درمیانی آمدنی والے ممالک میں رہتے ہیں۔</accent>",
+        "card1Comparison": "≈ بنی نوع انسان کا 26٪",
+        "card2Caption": "کم آمدنی والے ممالک میں آن لائن لوگوں کا حصہ۔ <accent>زیادہ آمدنی والے ممالک میں {pct}٪۔</accent>",
+        "card3Caption": "کم آمدنی والے ممالک میں 5G کوریج۔ زیادہ آمدنی والے ممالک <accent>{pct}٪</accent> پر۔ بیس گنا فرق۔",
+        "card3Comparison": "21× فرق",
+        "card4Caption": "دنیا بھر میں دیہی آن لائن لوگ۔ شہری اعداد و شمار <accent>{pct}٪</accent>۔ شہر اور دیہات کا فرق اب بھی بہت بڑا ہے۔"
+      },
+      "greenStrip": {
+        "eyebrow": "لائیو کاربن رسید",
+        "heading": "ہر دورہ توانائی کا نقش چھوڑتا ہے۔ یہ ہمارا ہے۔",
+        "body": "ہم صفحے کا وزن کلوبائٹس میں اور سرایت شدہ کاربن گرام میں ناپتے ہیں۔ دونوں انتہائی چھوٹے رہتے ہیں کیونکہ ہم وہ کچھ نہیں بھیجتے جس کی ہمیں ضرورت نہیں — سی ڈی این سے کوئی فونٹ نہیں، کوئی ٹریکر نہیں، کوئی چھپی ہوئی اسکرپٹ گھر کال نہیں کرتی۔",
+        "pageWeightLabel": "یہ صفحہ وزن کرتا ہے",
+        "pageWeightUnit": "کے بی",
+        "pageWeightHint": "بجٹ: فی روٹ 50 کے بی سے کم، gzip",
+        "carbonLabel": "آپ کے دورے نے خارج کیا",
+        "carbonHint": "گرین ویب فاؤنڈیشن ماڈل سے حساب کیا گیا",
+        "hostingLabel": "ہماری میزبانی",
+        "hostingValue": "خود میزبان",
+        "hostingHint": "واحد VPS · کوئی CDN نہیں · البرٹا گرڈ",
+        "thirdPartyLabel": "تیسرے فریق کی کالیں",
+        "thirdPartyValue": "صفر",
+        "thirdPartyHint": "کوئی CDN، فونٹس، تجزیات، پکسلز نہیں"
+      },
+      "schemaName": "Intelligent Singularity | عالمی رسائی کے لیے سافٹ ویئر",
+      "schemaDescription": "ایک مشن سے چلنے والا اسٹوڈیو جو کاروبار، صحت، مالیات اور کام میں عالمی رسائی کے لیے AI سے بہتر بنایا گیا سافٹ ویئر تیار کرتا ہے۔",
+      "metaTitle": "Intelligent Singularity | عالمی رسائی کے لیے سافٹ ویئر",
+      "metaDescription": "ایک مشن پر مبنی اسٹوڈیو جو کاروبار، صحت، مالیات اور کام میں عالمی رسائی کے لیے AI سے بہتر بنایا گیا سافٹ ویئر بناتا ہے۔"
+    },
+    "offline": {
+      "metaTitle": "آف لائن | Intelligent Singularity",
+      "metaDescription": "Intelligent Singularity ویب تجربات کے لیے آف لائن فال بیک صفحہ۔"
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineBody": "ایسا لگتا ہے کہ آپ آف لائن ہیں۔ ہم آپ کو یہ صفحہ کیشے سے فراہم کر رہے ہیں۔",
     "offlineEyebrow": "آف لائن",
     "offlineReturnHome": "ہوم پیج پر واپس جائیں",
-    "offlineTitle": "ابھی کوئی کنکشن نہیں۔"
+    "offlineTitle": "ابھی کوئی کنکشن نہیں۔",
+    "opensInNewTab": "(نئے ٹیب میں کھلتا ہے)",
+    "emailLinkAriaLabel": "{email} پر ای میل بھیجیں",
+    "breadcrumbHome": "ہوم",
+    "ogImageAlt": "Intelligent Singularity — سب کے لیے قابلِ رسائی سافٹ ویئر۔",
+    "visit": "ملاحظہ کریں",
+    "schema": {
+      "organizationDescription": "عالمی رسائی کے لیے سافٹ ویئر بنانے والا اسٹوڈیو۔",
+      "founderDescription": "Intelligent Singularity کے بانی، AI سے بہتر بنائے گئے لین آپریشنز کے ساتھ عالمی رسائی کے لیے سافٹ ویئر بناتے ہیں۔",
+      "portfolioListName": "Intelligent Singularity مصنوعات کا پورٹ فولیو"
+    }
   },
   "languageWheel": {
     "navAria": "زبان",

@@ -1,5 +1,4 @@
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
+import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { fetchLegalPage } from '@/lib/payload';
 import { notFound } from 'next/navigation';
@@ -28,6 +27,8 @@ function formatLastUpdated(value: string | Date | null | undefined, locale: stri
 async function LegalContent({ locale, slug }: { locale: string; slug: string }) {
   const page = await fetchLegalPage(slug);
   if (!page) notFound();
+  const t = await getTranslations('pages.legal');
+  const tCommon = await getTranslations('common');
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: `/legal/${slug}`,
@@ -37,7 +38,7 @@ async function LegalContent({ locale, slug }: { locale: string; slug: string }) 
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
       { name: page.title, pathname: `/legal/${slug}` },
     ],
   });
@@ -45,15 +46,15 @@ async function LegalContent({ locale, slug }: { locale: string; slug: string }) 
     <article className="page-shell">
       <JsonLd id={`legal-schema-${slug}-${locale}`} data={webPageSchema} />
       <JsonLd id={`legal-breadcrumb-schema-${slug}-${locale}`} data={breadcrumbSchema} />
-      <div className="page-label">Legal</div>
+      <div className="page-label">{t('eyebrowLabel')}</div>
       <h1 className="page-title">{page.title}</h1>
-      <RichTextTOC content={page.body} />
+      <RichTextTOC content={page.body} label={t('tocLabel')} />
       <LexicalRenderer content={page.body} className="editorial-richtext" />
       <div
         className="mt-14 text-[11px]"
         style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-paper-ink-soft)', borderTop: '1px solid rgba(16,185,129,0.12)', paddingTop: '1.25rem' }}
       >
-        Last updated: {formatLastUpdated(page.lastUpdated, locale)}
+        {t('lastUpdatedLabel', { date: formatLastUpdated(page.lastUpdated, locale) })}
       </div>
     </article>
   );
@@ -81,9 +82,5 @@ export async function generateMetadata({
 
 export default async function LegalSlugPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <LegalContent locale={locale} slug={slug} />
-    </Suspense>
-  );
+  return <LegalContent locale={locale} slug={slug} />;
 }

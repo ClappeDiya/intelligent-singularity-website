@@ -21,10 +21,14 @@ const STATUS_KEY: Record<string, 'production' | 'staging' | 'awaitingApproval' |
 export async function FlagshipsSection({ locale, title, lead, flagships, seeAllLine }: Props) {
   const [featured, ...rest] = flagships;
   const tStatus = await getTranslations('status');
+  const tHome = await getTranslations('pages.home');
+  const tCommon = await getTranslations('common');
   const labelFor = (s: string) => {
     const k = STATUS_KEY[s];
     return k ? tStatus(k) : s;
   };
+  const flagshipLabel = tHome('flagshipCardLabel');
+  const visitLabel = tCommon('visit');
 
   return (
     <section
@@ -34,14 +38,14 @@ export async function FlagshipsSection({ locale, title, lead, flagships, seeAllL
     >
       <div className="home-story-panel">
         <div className="home-story-header mb-14">
-          <div className="home-story-kicker">The Studio · 14 tools</div>
+          <div className="home-story-kicker">{tHome('flagshipsKicker')}</div>
           <h2 className="home-story-title">{title}</h2>
           <p className="home-story-lead editorial-muted">{lead}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 mb-12">
-          {featured ? <FlagshipCard key={featured.slug} product={featured} index={0} featured statusLabel={labelFor(featured.productStatus)} /> : null}
+          {featured ? <FlagshipCard key={featured.slug} product={featured} index={0} featured statusLabel={labelFor(featured.productStatus)} flagshipLabel={flagshipLabel} visitLabel={visitLabel} /> : null}
           {rest.map((p, i) => (
-            <FlagshipCard key={p.slug} product={p} index={i + 1} statusLabel={labelFor(p.productStatus)} />
+            <FlagshipCard key={p.slug} product={p} index={i + 1} statusLabel={labelFor(p.productStatus)} flagshipLabel={flagshipLabel} visitLabel={visitLabel} />
           ))}
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6" style={{ borderTop: '1px solid rgba(16,185,129,0.12)' }}>
@@ -58,7 +62,7 @@ export async function FlagshipsSection({ locale, title, lead, flagships, seeAllL
               boxShadow: '0 4px 14px rgba(16,185,129,0.25)',
             }}
           >
-            See the full ecosystem
+            {tHome('flagshipsSeeAllCta')}
             <span aria-hidden="true">→</span>
           </Link>
         </div>

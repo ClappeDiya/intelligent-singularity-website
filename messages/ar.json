@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "انتقل إلى المحتوى الرئيسي",
     "scrollHint": "مرّر",
-    "scrollHintTarget": "الفجوة بالأرقام"
+    "scrollHintTarget": "الفجوة بالأرقام",
+    "source": "ITU 2025",
+    "populationCaption": "من سكان الأرض جميعًا",
+    "counterAriaLabel": "{count} شخص لا يزالون غير متصلين بالإنترنت، المصدر الاتحاد الدولي للاتصالات 2025"
   },
   "contactForm": {
     "routingLabel": "التوجيه",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "سجل التغييرات",
+      "schemaDescription": "ملاحظات الإصدارات العامة.",
+      "breadcrumbCurrent": "سجل التغييرات",
       "eyebrow": "سجل التغييرات · الموقع المؤسسي",
       "title": "ما الذي تغيّر، بالترتيب.",
       "lede": "كل تغيير ظاهر أجريناه على هذا الموقع المؤسسي، مع التاريخ والـ commit المرتبط به. يحتفظ كل منتج في نظام Clap بسجل التغييرات الخاص به على نطاقه الخاص — هذه الصفحة هي البوابة الرئيسية للشركة الأم، لا أكثر ولا أقل.",
       "feedLabel": "اشترك:",
       "feedTitle": "Intelligent Singularity — السجل",
-      "rssFeed": "خلاصة RSS"
+      "rssFeed": "خلاصة RSS",
+      "firstVersionTitle": "هذه هي النسخة الأولى.",
+      "firstVersionBody": "لم يتم إصدار أي علامات بعد. أنت تقرأ البناء {sha}. سيظهر أول إدخال إصدار هنا بمجرد إصدار v1.0.",
+      "viewRepoCta": "عرض المستودع",
+      "releasesHeading": "الإصدارات",
+      "metaTitle": "سجل التغييرات | Intelligent Singularity",
+      "metaDescription": "كل تغيير مرئي قمنا به، مع التاريخ والإيداع الذي يدعمه."
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "لوحة الحالة المباشرة",
       "overallStatusAria": "الحالة العامة",
       "externalNavAria": "خارجي",
-      "opensInNewTab": " (يفتح في علامة تبويب جديدة)"
+      "opensInNewTab": " (يفتح في علامة تبويب جديدة)",
+      "uptimeGridAria": "وقت التشغيل خلال آخر 90 يومًا، {pct} في آخر 24 ساعة.",
+      "breadcrumbCurrent": "الحالة",
+      "schemaName": "الحالة | Intelligent Singularity",
+      "schemaDescription": "حالة النظام المباشرة للموقع وبنيته التحتية.",
+      "metaTitle": "الحالة | Intelligent Singularity",
+      "metaDescription": "الحالة المباشرة لنظام الموقع وبنيته التحتية."
     },
     "roadmap": {
+      "schemaName": "خارطة الطريق | Intelligent Singularity",
+      "schemaDescription": "خارطة طريق علنية تعرض العمل قيد التنفيذ والمخطط له والذي تم شحنه والمتوقف.",
+      "breadcrumbCurrent": "خارطة الطريق",
       "eyebrow": "خارطة الطريق · علنًا",
       "title": "ما نقوم ببنائه.",
       "lede": "علنًا. لا برامج وهمية. كل عنصر يتعلق بالاستوديو — عمل الموقع المؤسسي، البنية التحتية المشتركة، والالتزامات الشاملة التي تمس كل منتج. يحتفظ كل منتج في نظام Clap البيئي بخارطة الطريق الخاصة به على نطاقه الخاص. ترتبط العناصر هنا بالكود عند إطلاقها.",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "تفتقد شيئًا؟",
       "ctaHeading": "أخبرنا بما تحتاج إليه.",
       "ctaBody": "إن كانت هناك ميزة أو أداة أو إصلاح سيُحدث فرقًا حقيقيًا لك، أرسل لنا رسالة. نقرأ كل رسالة ونرتّب حسب الاحتياج الفعلي.",
-      "ctaButton": "أرسل ملاحظة"
+      "ctaButton": "أرسل ملاحظة",
+      "metaTitle": "خارطة الطريق | Intelligent Singularity",
+      "metaDescription": "ما نبنيه، وما هو مُخطَّط له، وما تمَّ إطلاقه، وما هو متوقَّف — على الملأ."
     },
     "insights": {
+      "schemaName": "إنسايتس | Intelligent Singularity",
+      "schemaDescription": "التفكير في العلن: الوصول، المواءمة، والقوس الطويل للذكاء الاصطناعي.",
+      "breadcrumbCurrent": "إنسايتس",
       "eyebrow": "إنسايتس · ملاحظات ميدانية من الاستوديو",
       "title": "التفكير في العلن.",
       "lede": "ملاحظات ميدانية حول الوصول الشامل، والهندسة المعزّزة بالذكاء الاصطناعي، والـ 2.2 مليار شخص غير المتصلين بالإنترنت، والقوس الطويل للذكاء الاصطناعي — مكتوبة لتُفهم، لا لتُبهر. نكتب ببطء. كل ادعاء يُربط بمصدره. لا عناوين مثيرة، ولا ضباب قيادة فكرية.",
@@ -118,9 +144,23 @@
       "subscribeLabel": "اشترك:",
       "rssFeed": "خلاصة RSS",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "ترقيم الصفحات"
+      "paginationAria": "ترقيم الصفحات",
+      "paginationNewer": "→ الأحدث",
+      "paginationOlder": "الأقدم ←",
+      "paginationNewerAria": "الانتقال إلى أحدث المنشورات",
+      "paginationOlderAria": "الانتقال إلى المنشورات الأقدم",
+      "emptyTitle": "لم يُنشَر شيء بعد.",
+      "emptyBody": "سيظهر أول مقال هنا فور أن يصبح جاهزًا. نكتب ببطء وعناية.",
+      "emptyCta": "اشترك في خلاصة RSS",
+      "metaTitle": "رؤى | Intelligent Singularity",
+      "metaDescription": "التفكير على الملأ: الوصول والمحاذاة والقوس الطويل للذكاء الاصطناعي.",
+      "metaTitleSuffix": "رؤى | Intelligent Singularity",
+      "eyebrowFallback": "رؤى"
     },
     "trust": {
+      "schemaName": "الثقة | Intelligent Singularity",
+      "schemaDescription": "أركان الثقة لدينا، والمعالجون الفرعيون من جهات خارجية، والشهادات، وكيفية الإبلاغ عن حادث أمني.",
+      "breadcrumbCurrent": "الثقة",
       "eyebrow": "الثقة",
       "title": "أين تجد الدليل.",
       "lede": "كل ادعاء نقدمه بشأن الأمان والخصوصية والاستدامة والوصول يرتبط بالأدلة. يجب ألا تضطر أبدًا إلى تصديقنا على كلامنا.",
@@ -141,9 +181,16 @@
       "incidentBody": "الإفصاح المنسق هو المسار الذي نتخذه على محمل الجد. أرسل بريدًا إلكترونيًا إلى security@intelligentsingularityinc.com مع وصف وخطوات إعادة الإنتاج. نقر باستلام التقارير في غضون يوم عمل واحد، ونصنفها في غضون ثلاثة، ونطلق إصلاحًا وفق جدول زمني نتفق عليه معك. يتم اعتماد الباحثين بأسمائهم في تقريرنا اللاحق عند شحن الإصلاح — ما لم تفضل البقاء مجهول الهوية. نحن لا نهدد ولا نقاضي باحثي الأمن ذوي النية الحسنة، نقطة.",
       "incidentCta": "الإبلاغ عن حادث",
       "privacyPolicyLink": "سياسة الخصوصية",
-      "learnMore": "اعرف المزيد"
+      "learnMore": "اعرف المزيد",
+      "dataResidencyHeading": "أين تعيش بياناتك",
+      "disclosureHeading": "سياسة الإفصاح الأمني",
+      "metaTitle": "الثقة | Intelligent Singularity",
+      "metaDescription": "ركائز الثقة، المعالجون الفرعيون الخارجيون، الشهادات، وكيفية الإبلاغ عن حادثة."
     },
     "help": {
+      "schemaName": "المساعدة | Intelligent Singularity",
+      "schemaDescription": "مركز المساعدة — تصفح الفئات والأسئلة الشائعة والتواصل المباشر.",
+      "breadcrumbCurrent": "المساعدة",
       "eyebrow": "HELP",
       "title": "يمكننا المساعدة عادةً بنقرة واحدة.",
       "lede": "اختر الصف الأقرب إلى سؤالك. كل رابط يقود إلى مكان حقيقي — لا نماذج مغلقة، ولا روبوتات محادثة.",
@@ -153,13 +200,17 @@
       "browseByTopic": "تصفح حسب الموضوع",
       "checkStatus": "عرض الحالة",
       "contactEyebrow": "تواصل",
-      "contactFallbackCta": "تواصل معنا"
+      "contactFallbackCta": "تواصل معنا",
+      "metaTitle": "المساعدة | Intelligent Singularity",
+      "metaDescription": "اعثر على المساعدة بسرعة: تصفَّح الفئات، واقرأ الإجابات الشائعة، أو تواصل مع شخص بنقرة واحدة."
     },
     "about": {
       "eyebrow": "About · The studio",
       "defaultTitle": "About Intelligent Singularity",
-      "ecosystemLabel": "The ecosystem at a glance",
-      "ecosystemHeading": "One parent company, seven product categories.",
+      "ecosystemLabel": "النظام البيئي في لمحة",
+      "ecosystemHeading": "شركة أم واحدة، سبع فئات منتجات.",
+      "ecosystemSvgTitle": "منظومة Clap تحت شركة أم واحدة",
+      "ecosystemAriaLabelTemplate": "{rootLabel}، شركة أم لديها {count} فروع منتجات: {list}.",
       "ataGlanceLabel": "At a glance",
       "talkToStudioLabel": "Talk to the studio",
       "talkToStudioBody": "Partnerships, press, or a product question — messages reach the founder directly, typically within two business days.",
@@ -185,6 +236,20 @@
         "portfolio": "عائلة متنامية من المنصات",
         "languages": "14 لغة في الإنتاج",
         "footprint": "≤ 50 كيلوبايت لكل صفحة · لا متتبعات"
+      },
+      "breadcrumbCurrent": "من نحن",
+      "schemaName": "من نحن | Intelligent Singularity",
+      "schemaDescription": "تعرّف على الفريق والرسالة وراء Intelligent Singularity: نبني برمجيات للوصول الشامل بعمليات رشيقة معزَّزة بالذكاء الاصطناعي.",
+      "metaTitle": "من نحن | Intelligent Singularity",
+      "metaDescription": "تعرَّف على الفريق والرسالة وراء Intelligent Singularity: بناء برمجيات للوصول الشامل بعمليات رشيقة معزَّزة بالذكاء الاصطناعي.",
+      "ecosystemBranchLabels": {
+        "corePlatform": "المنصة الأساسية",
+        "health": "الصحة",
+        "finance": "المالية",
+        "work": "العمل",
+        "agriculture": "الزراعة",
+        "media": "الإعلام",
+        "commsData": "الاتصالات / البيانات"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "النقاط الأفتح أعلاه هي الأشخاص المتصلون بالفعل. النقاط الأغمق والمطوقة هي الأشخاص غير المتصلين. ستة وتسعون بالمئة من السكان غير المتصلين يعيشون في البلدان منخفضة الدخل والبلدان متوسطة الدخل. هندسة الوصول الشامل هي ما يسد هذه الفجوة. الالتزامات التسعة أدناه هي كيف نلزم أنفسنا بها.",
       "commitmentsHeading": "الالتزامات التسعة",
       "commitmentsBody": "تسع حلقات متحدة المركز — كل منتج يتم تسليمه مقابل كل واحدة منها، في كل إصدار. القائمة ليست قائمة أمنيات. إنها عقد الهندسة.",
-      "sourceData": "مصدر البيانات"
+      "sourceData": "مصدر البيانات",
+      "breadcrumbCurrent": "البيان",
+      "schemaName": "البيان | Intelligent Singularity",
+      "schemaDescription": "اقرأ بياننا حول جعل برامج المؤسسات حقًا أساسيًا لكل عمل وشخص، متصلًا أو غير متصل بالإنترنت.",
+      "globeSvgTitle": "الوصول دون اتصال",
+      "globeAriaLabel": "كرة أرضية بسيطة مع تسليط الضوء على 2.2 مليار نقطة غير متصلة، توضح رقم الفجوة الرقمية الصادر عن الاتحاد الدولي للاتصالات.",
+      "ringsSvgTitle": "الالتزامات",
+      "ringsAriaLabelTemplate": "{count} التزامات متحدة المركز تشكّل حلقة واحدة للوصول الشامل — قواعد الهندسة التي يلتزم بها كل منتج في كل إصدار.",
+      "metaTitle": "البيان | Intelligent Singularity",
+      "metaDescription": "اقرأ بياننا حول جعل برمجيات المؤسسات حقاً أساسياً لكل عمل وكل شخص، سواء عبر الإنترنت أو دون اتصال."
     },
     "faq": {
+      "schemaName": "الأسئلة الشائعة | Intelligent Singularity",
+      "schemaDescription": "إجابات صادقة عن الاستوديو، ومنتجاتنا، وممارسات الخصوصية، وكيفية الشراكة مع Intelligent Singularity.",
+      "breadcrumbCurrent": "الأسئلة الشائعة",
       "openTheForm": "افتح النموذج",
       "emailDirectly": "أرسل بريدًا إلكترونيًا مباشرة"
     },
     "pricing": {
+      "schemaName": "فلسفة التسعير | Intelligent Singularity",
+      "schemaDescription": "قواعد التسعير لدينا: مستوى مجاني، أسعار عادلة حسب المنطقة، كل ميزة في كل مستوى، لا اتصال بالمبيعات.",
+      "breadcrumbCurrent": "الأسعار",
       "tierFree": "المستوى المجاني:",
       "tierPaid": "المستوى المدفوع:",
       "tierEnterprise": "المؤسسات:",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "نفس المنتج، ثلاثة عملاء",
       "workedExampleBody": "مثال عملي — توضيحي، وليس عرض سعر — لإظهار كيف تنطبق القواعد الست في الممارسة. الأرقام المحددة موجودة في صفحة كل منتج.",
       "viewThePortfolio": "عرض الأعمال",
-      "talkAboutPricing": "تحدث عن الأسعار"
+      "talkAboutPricing": "تحدث عن الأسعار",
+      "metaTitle": "فلسفة التسعير | Intelligent Singularity",
+      "metaDescription": "كيف نُسعِّر كل منتج: مستوى مجاني للأبد، أسعار معدَّلة وفق القوة الشرائية، كل ميزة في كل مستوى، أسعار منشورة، دون مبيعات اتصال."
     },
     "careers": {
+      "schemaName": "وظائف | Intelligent Singularity",
+      "schemaDescription": "كيف يوظّف الاستوديو وكيف هي تجربة العمل في Intelligent Singularity.",
+      "breadcrumbCurrent": "وظائف",
       "howWeWorkHeading": "كيف نعمل فعلاً",
       "whatYouWouldWorkOnHeading": "على ماذا ستعمل فعلاً",
       "howWeHireHeading": "كيف نُعيّن، من البداية إلى النهاية",
@@ -220,7 +305,9 @@
       "updatedPrefix": "تم التحديث",
       "contactFormCta": "نموذج التواصل",
       "whatYouWouldWorkOnLede": "Intelligent Singularity هي الشركة الأم لعائلة متنامية من المنصات. نادرًا ما يعمل الموظفون الجدد على منتج واحد لمدة عام كامل — يتنقل معظمهم بين منتجين أو ثلاثة، حسب ما يتم إطلاقه وما يحتاج إلى أكبر قدر من اهتمام كبار المهندسين في ذلك الربع.",
-      "howWeHireLede": "أربع خطوات. أقصى مدة أسبوعان من البريد الإلكتروني الأول إلى عرض مكتوب إذا تحرك الطرفان بسرعة. لا مراحل مفاجئة، لا واجبات منزلية غير مدفوعة، لا رفض بسبب \"التوافق الثقافي\" دون سبب مكتوب."
+      "howWeHireLede": "أربع خطوات. أقصى مدة أسبوعان من البريد الإلكتروني الأول إلى عرض مكتوب إذا تحرك الطرفان بسرعة. لا مراحل مفاجئة، لا واجبات منزلية غير مدفوعة، لا رفض بسبب \"التوافق الثقافي\" دون سبب مكتوب.",
+      "metaTitle": "الوظائف | Intelligent Singularity",
+      "metaDescription": "كيف يُوظِّف الاستوديو: فريق صغير، عن بُعد، معزَّز بالذكاء الاصطناعي يُقدِّم برمجيات للوصول الشامل. الوظائف الحالية ودعوة دائمة لتقديم نفسك."
     },
     "press": {
       "factSheetHeading": "ورقة الحقائق",
@@ -234,7 +321,10 @@
       "contactFormCta": "نموذج التواصل",
       "boilerplateLede": "فقرة واحدة، جاهزة للإدراج في البيانات الصحفية. معتمدة للاستخدام الحرفي.",
       "storyAnglesYesLede": "إذا كانت قصتك تندرج ضمن إحدى هذه الزوايا، فسنتحرك بسرعة لإتاحة مؤسس أو مهندس أو قائد منتج — عادةً خلال يوم عمل.",
-      "storyAnglesNoLede": "الصدق المبكر يوفر الوقت على الجميع. لن نقدم اقتباسات للزوايا أدناه. ولكن سنوجهك إلى صحفي أو محلل يناسب عمله القصة بشكل أفضل."
+      "storyAnglesNoLede": "الصدق المبكر يوفر الوقت على الجميع. لن نقدم اقتباسات للزوايا أدناه. ولكن سنوجهك إلى صحفي أو محلل يناسب عمله القصة بشكل أفضل.",
+      "breadcrumbCurrent": "الصحافة",
+      "schemaName": "الصحافة والإعلام | Intelligent Singularity",
+      "schemaDescription": "حقيبة صحفية، صحيفة معلومات، اقتباسات معتمدة، وقناة اتصال مباشرة للصحفيين والباحثين الذين يغطّون Intelligent Singularity."
     },
     "portfolio": {
       "eyebrow": "المحفظة · نظام Clap البيئي",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "مكالمات الطرف الثالث",
       "statThirdPartyValue": "صفر",
       "statThirdPartyHint": "يفرضه CI في كل إصدار منتج",
-      "ecosystemStatsAria": "إحصائيات النظام البيئي"
+      "ecosystemStatsAria": "إحصائيات النظام البيئي",
+      "verticalLabel": "عمودي",
+      "publicAs": "معروف باسم",
+      "breadcrumbCurrent": "أعمالنا",
+      "schemaName": "أعمالنا | Intelligent Singularity",
+      "schemaDescription": "استكشف المنظومة الكاملة لأربع عشرة أداة عبر عمليات الأعمال والصحة والمالية والزراعة والإعلام والاتصالات.",
+      "mosaicSvgTitle": "فسيفساء المحفظة",
+      "mosaicAriaLabel": "فسيفساء تُظهر ثماني منصات من منظومة Clap: Clappe، ClapBill، ClapMed، ClapDiet، ClapPay، Clapwork، Apogee، وAudiflo.",
+      "metaTitle": "المحفظة | Intelligent Singularity",
+      "metaDescription": "اكتشف المنظومة الكاملة المؤلَّفة من 14 أداة عبر عمليات الأعمال والصحة والمال والزراعة والإعلام والاتصالات.",
+      "productCountLabel": "{count, plural, zero {منتج} one {منتج} two {منتجان} few {منتجات} many {منتجاً} other {منتجات}}"
     },
     "contact": {
+      "schemaName": "اتصل | Intelligent Singularity",
+      "schemaDescription": "تواصل مع Intelligent Singularity للشراكات أو الصحافة أو الشؤون القانونية أو استفسارات المنتجات حول منظومتنا البرمجية للوصول الشامل.",
+      "breadcrumbCurrent": "اتصل",
       "eyebrow": "اتصل · مكتب الاستوديو",
       "titleFallback": "تواصل معنا",
+      "formHeading": "نموذج الاتصال",
       "directChannelsLabel": "القنوات المباشرة",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "بما في ذلك العربية والأردية RTL.",
       "factHostingLabel": "الاستضافة",
       "factHostingLine1": "خادم VPS واحد، إدمونتون.",
-      "factHostingLine2": "لا CDN طرف ثالث."
+      "factHostingLine2": "لا CDN طرف ثالث.",
+      "metaTitle": "تواصل | Intelligent Singularity",
+      "metaDescription": "تواصل مع Intelligent Singularity للشراكات أو الصحافة أو الشؤون القانونية أو استفسارات المنتج حول منظومتنا البرمجية للوصول الشامل."
+    },
+    "legal": {
+      "eyebrowLabel": "قانوني",
+      "lastUpdatedLabel": "آخر تحديث: {date}",
+      "tocLabel": "في هذه الصفحة"
     },
     "security": {
       "postureHeading": "كيف ندير الموقع والمنصة",
       "dataHeading": "كيف نتعامل مع بياناتك",
       "complianceHeading": "المعايير التي نلتزم بها",
       "complianceLede": "نتبع مجموعة صغيرة ومحددة من المعايير — ونحن صادقون بشأن عمليات التدقيق التي لم نحققها بعد.",
-      "privacyPolicyLink": "قراءة سياسة الخصوصية"
+      "privacyPolicyLink": "قراءة سياسة الخصوصية",
+      "breadcrumbCurrent": "الأمان",
+      "schemaName": "الأمان والثقة | Intelligent Singularity",
+      "schemaDescription": "ممارسات الأمان والتعامل مع البيانات عبر Intelligent Singularity: التشفير، الاستضافة الذاتية، صفر طلبات لأطراف ثالثة، وفترات احتفاظ قصيرة.",
+      "shieldSvgTitle": "وضعية الأمان",
+      "shieldAriaLabel": "درع بسيط يوضّح وضعية الأمان: تشفير TLS، صفر طلبات لأطراف ثالثة، بيئات منتجات معزولة، احتفاظ قصير، ومعالجون فرعيون مُسمَّون.",
+      "metaTitle": "الأمان والثقة | Intelligent Singularity",
+      "metaDescription": "كيف نُؤمِّن هذا الموقع وكل منتج في محفظتنا: TLS، صفر استدعاءات لأطراف ثالثة، احتفاظ قصير، نُسَخ احتياطية مشفَّرة، واستجابة صادقة للحوادث."
     },
     "green": {
+      "schemaName": "العهد البيئي | Intelligent Singularity",
+      "schemaDescription": "اطلع على التزاماتنا البيئية وشفافية وزن الصفحة ونهجنا في أداء ويب منخفض الانبعاثات.",
+      "breadcrumbCurrent": "البيئة",
       "liveTelemetryEyebrow": "أخضر · قياس عن بُعد مباشر",
       "statThisPageLabel": "هذه الصفحة",
       "statThisPageHint": "HTML + CSS، بدون متتبعات",
@@ -375,11 +496,64 @@
           "value": "عبر المنصة بأكملها",
           "hint": "الفواتير والسجلات الطبية والإيصالات رقمية افتراضيًا. ورق المكتب وبطاقات العمل والمواد التسويقية المطبوعة ليست جزءًا من طريقة عملنا."
         }
-      }
+      },
+      "metaTitle": "التعهد الأخضر | Intelligent Singularity",
+      "metaDescription": "اطَّلِع على التزاماتنا البيئية، وشفافية وزن الصفحات، ونهجنا في أداء الويب منخفض الانبعاثات."
     },
     "home": {
       "commitmentsKicker": "تسعة ثوابت غير قابلة للتفاوض",
-      "commitmentsAria": "الالتزامات التسعة"
+      "commitmentsAria": "الالتزامات التسعة",
+      "ddKicker": "مائة شخص، مرسومون بنفس الحجم",
+      "ddHeading": "ستة وعشرون من كل مائة شخص على وجه الأرض لا يزالون بلا أي وصول رقمي على الإطلاق.",
+      "ddOnlineCount": "٥٫٩ مليار",
+      "ddOfflineCount": "٢٫٢ مليار",
+      "ddSourceFallback": "ITU Facts and Figures 2025",
+      "ddSvgTitle": "من هو متصل بالإنترنت ومن هو غير متصل",
+      "ddOnlineLabel": "متصل",
+      "ddOfflineLabel": "لا يزال غير متصل",
+      "ddSourcePrefix": "المصدر",
+      "fieldNotesKicker": "ملاحظات ميدانية",
+      "fieldNotesTitle": "كيف نفكر في بناء هذا.",
+      "fieldNotesBody": "مقالات قصيرة ومتأنية من الاستوديو. نكتب ببطء ونوثّق كل شيء. لا عناوين مغرية ولا ضباب القيادة الفكرية.",
+      "fieldNotesCta": "اقرأ ملاحظاتنا الميدانية",
+      "flagshipsKicker": "الاستوديو · 14 أداة",
+      "flagshipsSeeAllCta": "استكشف النظام البيئي الكامل",
+      "flagshipCardLabel": "منتج رئيسي",
+      "facts": {
+        "kicker": "الفجوة · مُقاسة",
+        "sourceLabel": "ITU · 2025",
+        "sourceHeading": "المصدر",
+        "card1Caption": "الأشخاص الذين لم يستخدموا الإنترنت أبدًا. <accent>{pct}٪ يعيشون في الدول المنخفضة والمتوسطة الدخل.</accent>",
+        "card1Comparison": "≈ 26٪ من البشرية",
+        "card2Caption": "نسبة المتصلين بالإنترنت في الدول منخفضة الدخل. <accent>{pct}٪ في الدول مرتفعة الدخل.</accent>",
+        "card3Caption": "تغطية الجيل الخامس في الدول منخفضة الدخل. الدول مرتفعة الدخل عند <accent>{pct}٪</accent>. فجوة بعشرين ضعفًا.",
+        "card3Comparison": "فجوة 21×",
+        "card4Caption": "نسبة سكان الريف المتصلين عالميًا. النسبة الحضرية عند <accent>{pct}٪</accent>. الفجوة بين المدينة والريف لا تزال هائلة."
+      },
+      "greenStrip": {
+        "eyebrow": "إيصال الكربون الحي",
+        "heading": "كل زيارة تترك بصمة طاقة. وهذه بصمتنا.",
+        "body": "نقيس وزن الصفحة بالكيلوبايت والكربون المتجسد بالغرامات. كلاهما يبقى صغيرًا جدًا لأننا لا نُرسِل شيئًا لا نحتاجه — لا خطوط من شبكات التوزيع، ولا متتبعات، ولا نصوص خفية تتصل بالخارج.",
+        "pageWeightLabel": "تزن هذه الصفحة",
+        "pageWeightUnit": "ك.ب",
+        "pageWeightHint": "الميزانية: أقل من 50 كيلوبايت لكل صفحة، مضغوطة",
+        "carbonLabel": "زيارتك أصدرت",
+        "carbonHint": "محسوبة بنموذج مؤسسة الويب الأخضر",
+        "hostingLabel": "استضافتنا",
+        "hostingValue": "مُستضافة ذاتيًا",
+        "hostingHint": "خادم افتراضي واحد · بدون شبكة توزيع · شبكة ألبرتا",
+        "thirdPartyLabel": "استدعاءات خارجية",
+        "thirdPartyValue": "صفر",
+        "thirdPartyHint": "لا شبكات توزيع، ولا خطوط، ولا تحليلات، ولا بكسلات"
+      },
+      "schemaName": "Intelligent Singularity | برمجيات للوصول الشامل",
+      "schemaDescription": "استوديو موجَّه برسالة يبني برمجيات معزَّزة بالذكاء الاصطناعي لإتاحة الوصول الشامل في الأعمال والصحة والمالية والعمل.",
+      "metaTitle": "Intelligent Singularity | برمجيات للوصول الشامل",
+      "metaDescription": "استوديو موجَّه برسالة يبني برمجيات معزَّزة بالذكاء الاصطناعي للوصول الشامل عبر الأعمال والصحة والمال والعمل."
+    },
+    "offline": {
+      "metaTitle": "دون اتصال | Intelligent Singularity",
+      "metaDescription": "صفحة احتياطية دون اتصال لتجارب الويب من Intelligent Singularity."
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineEyebrow": "لا يوجد اتصال · أنت غير متصل",
     "offlineTitle": "مصمَّم لهذه اللحظة.",
     "offlineBody": "الوصول الشامل هو هدفنا. يستمر هذا الموقع في العمل دون اتصال — كل صفحة زرتها مرة محفوظة في الذاكرة المؤقتة وقابلة للقراءة. جرّب صفحة سبق أن رأيتها، أو أعد الاتصال لتحميل صفحة جديدة.",
-    "offlineReturnHome": "العودة إلى الصفحة الرئيسية"
+    "offlineReturnHome": "العودة إلى الصفحة الرئيسية",
+    "opensInNewTab": "(يُفتح في علامة تبويب جديدة)",
+    "emailLinkAriaLabel": "أرسل بريدًا إلكترونيًا إلى {email}",
+    "breadcrumbHome": "الرئيسية",
+    "ogImageAlt": "Intelligent Singularity — برمجيات في متناول الجميع.",
+    "visit": "زيارة",
+    "schema": {
+      "organizationDescription": "استوديو يبني برمجيات للوصول الشامل.",
+      "founderDescription": "مؤسس Intelligent Singularity، يبني برمجيات للوصول الشامل بعمليات رشيقة معززة بالذكاء الاصطناعي.",
+      "portfolioListName": "محفظة منتجات Intelligent Singularity"
+    }
   },
   "languageWheel": {
     "navAria": "اللغة",

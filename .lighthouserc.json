@@ -6,7 +6,12 @@
       "url": [
         "http://localhost:3000/en",
         "http://localhost:3000/en/manifesto",
-        "http://localhost:3000/en/about"
+        "http://localhost:3000/en/about",
+        "http://localhost:3000/en/portfolio",
+        "http://localhost:3000/en/insights",
+        "http://localhost:3000/en/trust",
+        "http://localhost:3000/zh-CN/portfolio",
+        "http://localhost:3000/ar/about"
       ],
       "numberOfRuns": 1,
       "settings": {

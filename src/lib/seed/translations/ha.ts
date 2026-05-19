@@ -45,6 +45,13 @@ export const TRANSLATION: LocaleTranslation = {
     successMessage: "An aika saƙo. Na gode.",
     errorMessage: "Wani abu ya faru ba daidai ba. Da fatan za a sake gwadawa.",
   },
+  trust: {
+    dataResidencyText:
+      "Wannan gidan yanar gizo yana zama akan sabar ɗaya ta ƙirar gani a wani sanannen cibiyar bayanai a Edmonton, Alberta, Kanada. Babu hanyar isar da abun ciki a gabansa. Lokacin da shafin ya ɗauka cikin mai bincikenku, mai bincikenku yana magana kai tsaye da na'urar mu. Babu wani abu da yake tsakanin don kwafe, ajiyewa, ko karanta zirga-zirgar ku.\n\nBackup ɗinmu da aka ɓoye suna juyawa cikin zagayowar kwana talatin. Ba sa fita daga yankin cibiyar bayanai. Ana kare su a hutawa da maɓalli wanda mutane biyu kawai a cikin ƙungiyarmu za su iya buɗewa.",
+    reportIncidentText:
+      "Kun gano rauni, kuskure, ko wani abu da kawai yake bayyana ba daidai ba? Rubuta zuwa security@intelligentsingularityinc.com. Muna amsa cikin ranar aiki ɗaya, muna aiki tare da ku akan gyaran, kuma muna ƙididdige sunan mai bayar da rahoto a cikin sanarwa ta jama'a da zarar an gyara matsalar — sai dai idan kun nemi mu kar mu yi haka.\n\nBa za mu taɓa kai masu bincike kotu ba waɗanda suke bin sharuɗɗan bayyana lallashi a /security.",
+  },
+
   commitments: [
     { title: "Tsarin da ya dace da kowa, yana aiki ba tare da haɗin yanar gizo ba", body: "Kowace manhaja tana aiki daidai da fiber optic da kuma haɗin 2G mai yankewa. Ayyuka ɗaya ne, inganci ɗaya ne. Haɗin yanar gizo ba tace ba ne na samun dama." },
     { title: "Maʼaunin sauƙi", body: "Idan ɗalibin sakandare ba zai iya kammala babban aikin cikin minti 5 ba tare da horo ba, to aikin bai cika ba." },

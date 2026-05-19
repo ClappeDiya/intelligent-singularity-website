@@ -16,12 +16,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.help' });
   return buildPageMetadata({
     locale,
     pathname: '/help',
-    title: 'Help | Intelligent Singularity',
-    description:
-      'Find help fast: browse categories, read popular answers, or reach a human in one click.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
@@ -32,20 +32,21 @@ export default async function HelpPageRoute({
 }) {
   const { locale } = await params;
   const t = await getTranslations('pages.help');
+  const tCommon = await getTranslations('common');
 
   const page = await fetchHelpPage(locale);
 
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/help',
-    name: 'Help | Intelligent Singularity',
-    description: 'Help centre — browse categories, popular answers, and direct contact.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Help', pathname: '/help' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/help' },
     ],
   });
 
@@ -201,7 +202,7 @@ export default async function HelpPageRoute({
         {/* Contact fallback CTA */}
         {contactFallback && (
           <section
-            className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
+            className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center gap-6"
             style={{ background: 'var(--color-ink)', color: 'var(--color-cream)', border: '1px solid rgba(16,185,129,0.2)' }}
           >
             <div className="flex-1">

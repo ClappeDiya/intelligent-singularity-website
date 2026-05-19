@@ -65,11 +65,11 @@
   /* ── Fonts ───────────────────────────────────────────── */
   --font-serif: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
   --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, 'Noto Sans Variable', 'Noto Sans', system-ui, sans-serif;
-  --font-sans-cjk: 'Noto Sans SC Variable', 'Noto Sans SC', var(--font-sans);
-  --font-sans-arabic: 'Noto Sans Arabic Variable', 'Noto Sans Arabic', var(--font-sans);
-  --font-sans-devanagari: 'Noto Sans Devanagari Variable', 'Noto Sans Devanagari', var(--font-sans);
-  --font-sans-bengali: 'Noto Sans Bengali Variable', 'Noto Sans Bengali', var(--font-sans);
-  --font-sans-nastaliq: 'Noto Nastaliq Urdu Variable', 'Noto Nastaliq Urdu', var(--font-sans-arabic);
+  --font-sans-cjk: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'Noto Sans SC Variable', 'Noto Sans SC', var(--font-sans);
+  --font-sans-arabic: 'Geeza Pro', 'Tahoma', 'Noto Sans Arabic Variable', 'Noto Sans Arabic', var(--font-sans);
+  --font-sans-devanagari: 'Kohinoor Devanagari', 'Nirmala UI', 'Noto Sans Devanagari Variable', 'Noto Sans Devanagari', var(--font-sans);
+  --font-sans-bengali: 'Bangla Sangam MN', 'Vrinda', 'Noto Sans Bengali Variable', 'Noto Sans Bengali', var(--font-sans);
+  --font-sans-nastaliq: 'Noto Nastaliq Urdu Variable', 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', var(--font-sans-arabic);
   --font-mono: 'SF Mono', Menlo, Consolas, monospace;
 
   /* ── Spacing scale ───────────────────────────────────── */

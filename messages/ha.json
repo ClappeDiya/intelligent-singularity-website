@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "Tsallaka zuwa babban abun ciki",
     "scrollHint": "Gungura",
-    "scrollHintTarget": "rata a cikin lambobi"
+    "scrollHintTarget": "rata a cikin lambobi",
+    "source": "ITU 2025",
+    "populationCaption": "na dukan mutanen duniya",
+    "counterAriaLabel": "Mutane {count} har yanzu basa kan layi, tushe ITU 2025"
   },
   "contactForm": {
     "routingLabel": "Sashe",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "Changelog",
+      "schemaDescription": "Bayanan saki na jama'a.",
+      "breadcrumbCurrent": "Changelog",
       "eyebrow": "CHANGELOG · GIDAN YANAR GIZON KAMFANI",
       "title": "Abin da ya canza, bisa tsari.",
       "lede": "Kowane canjin da aka gani da muka yi a wannan gidan yanar gizon kamfani, da kwanan wata da kuma haɗe da commit ɗin da ke baya. Kowane samfuri a tsarin Clap yana riƙe da nasa changelog a kan nasa yanki — wannan shafin ƙofar gida ce ta babban kamfani, babu fiye da haka, babu abin da aka ɓoye.",
       "feedLabel": "Yi rajista:",
       "feedTitle": "Intelligent Singularity — Changelog",
-      "rssFeed": "RSS feed"
+      "rssFeed": "RSS feed",
+      "firstVersionTitle": "Wannan ita ce sigar farko.",
+      "firstVersionBody": "Babu wani lakabin da aka yi har yanzu. Kuna karanta gini {sha}. Shigarwar fitarwa ta farko za ta bayyana a nan da zarar an yi wa v1.0 lakabi.",
+      "viewRepoCta": "Duba ma'ajiyar",
+      "releasesHeading": "Fitarwa",
+      "metaTitle": "Tarihin Canje-canje | Intelligent Singularity",
+      "metaDescription": "Kowane canji da ake gani da muka yi, tare da kwanan watan da commit ɗin da ke bayansa."
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "Live status dashboard",
       "overallStatusAria": "Overall status",
       "externalNavAria": "External",
-      "opensInNewTab": " (opens in a new tab)"
+      "opensInNewTab": " (opens in a new tab)",
+      "uptimeGridAria": "Lokacin aiki na kwanaki 90 da suka gabata, {pct} a cikin awanni 24 da suka gabata.",
+      "breadcrumbCurrent": "Matsayi",
+      "schemaName": "Matsayi | Intelligent Singularity",
+      "schemaDescription": "Matsayin tsarin kai tsaye don gidan yanar gizo da kayan aikinta.",
+      "metaTitle": "Matsayi | Intelligent Singularity",
+      "metaDescription": "Matsayin tsarin kai tsaye na shafin yanar gizo da kayan aikinsa."
     },
     "roadmap": {
+      "schemaName": "Tsarin Aiki | Intelligent Singularity",
+      "schemaDescription": "Tsarin aiki na jama'a wanda ke nuna ayyukan da ake yi, waɗanda aka tsara, waɗanda aka kaddamar, da waɗanda aka dakatar.",
+      "breadcrumbCurrent": "Tsarin Aiki",
       "eyebrow": "TSARIN AIKI · A FILI",
       "title": "Abin da muke ginawa.",
       "lede": "A fili. Babu vaporware. Kowane abu na ɓangaren studio ne — aikin gidan yanar gizo na kamfani, abubuwan da ake raba, da alkawura masu yaduwa da suka shafi kowane samfuri. Kowane samfuri a tsarin Clap yana riƙe da nasa tsarin aiki a kan nasa yanki. Abubuwan da ke nan suna haɗawa da code lokacin da aka tura su.",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "Wani abu ya rasa?",
       "ctaHeading": "Gaya mana abin da kake bukata.",
       "ctaBody": "Idan akwai fasali, kayan aiki, ko gyara da zai yi bambanci na gaske a gare ka, aiko mana sako. Mukan karanta kowane sako kuma mukan ba da fifiko bisa la'akari da bukata ta gaske.",
-      "ctaButton": "Aiko sako"
+      "ctaButton": "Aiko sako",
+      "metaTitle": "Taswirar Aiki | Intelligent Singularity",
+      "metaDescription": "Abin da muke ginawa, abin da aka tsara, abin da aka fitar da abin da aka dakatar — a sarari."
     },
     "insights": {
+      "schemaName": "Insights | Intelligent Singularity",
+      "schemaDescription": "Tunani a fili: samun dama, daidaitawa, da dogon tafarki na AI.",
+      "breadcrumbCurrent": "Insights",
       "eyebrow": "INSIGHTS · BAYANAI DAGA STUDIO",
       "title": "Tunani a fili.",
       "lede": "Bayanai daga fili kan damar duniya gaba ɗaya, injiniyancin da AI ke taimakawa, mutum biliyan 2.2 da ke waje da yanar gizo, da kuma dogon tafiyar basirar wucin gadi — an rubuta su don a fahimce su, ba don a burge ba. Muna rubuta a hankali. Kowace iƙirari tana da maɓuɓɓuga. Babu clickbait, babu hayaƙin shugabancin tunani.",
@@ -118,9 +144,23 @@
       "subscribeLabel": "Yi rajista:",
       "rssFeed": "RSS feed",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "Lambar shafuka"
+      "paginationAria": "Lambar shafuka",
+      "paginationNewer": "← Sababbi",
+      "paginationOlder": "Tsofaffi →",
+      "paginationNewerAria": "Je zuwa sabbin sakonni",
+      "paginationOlderAria": "Je zuwa tsofaffin sakonni",
+      "emptyTitle": "Babu abin da aka buga tukuna.",
+      "emptyBody": "Rubutu na farko zai bayyana a nan da zarar an shirya shi. Muna rubutu a hankali da kuma kulawa.",
+      "emptyCta": "Yi rajista zuwa RSS feed",
+      "metaTitle": "Fahimta | Intelligent Singularity",
+      "metaDescription": "Yin tunani a fili: shiga, daidaitawa, da dogon tafiya na AI.",
+      "metaTitleSuffix": "Fahimta | Intelligent Singularity",
+      "eyebrowFallback": "FAHIMTA"
     },
     "trust": {
+      "schemaName": "Aminci | Intelligent Singularity",
+      "schemaDescription": "Ginshiƙan amincinmu, masu sarrafa na uku, takaddun shaida, da yadda ake bayar da rahoton wani lamarin tsaro.",
+      "breadcrumbCurrent": "Aminci",
       "eyebrow": "AMINCI",
       "title": "Inda za ka samu hujja.",
       "lede": "Kowane iƙirari da muke yi game da tsaro, sirri, dorewa, da damar shiga yana haɗawa da hujja. Ba za ka taɓa zama dole ka yarda da kalmarmu kawai ba.",
@@ -141,9 +181,16 @@
       "incidentBody": "Bayyanawa cikin haɗin gwiwa shi ne hanyar da muke ɗauka da muhimmanci. Aiko email zuwa security@intelligentsingularityinc.com tare da bayanin da matakan sake gwadawa. Muna karɓar rahotanni a cikin ranar aiki ɗaya, muna tantance su cikin uku, kuma muna aikawa da gyara a cikin lokacin da muka yarda da ku. Ana ba masu bincike yabo da sunansu a cikin tsananin bayanmu lokacin da gyara ya tashi — sai dai idan kun fi son zama anonymous. Ba mu yi barazana ko shigar da kara wa masu binciken tsaro masu kyakkyawar niyya ba, ƙarshen labarin.",
       "incidentCta": "Bayar da rahoton ta'addanci",
       "privacyPolicyLink": "Manufar sirri",
-      "learnMore": "Ƙara koyo"
+      "learnMore": "Ƙara koyo",
+      "dataResidencyHeading": "Inda bayanan ku ke zama",
+      "disclosureHeading": "Manufar bayyana tsaro",
+      "metaTitle": "Amincewa | Intelligent Singularity",
+      "metaDescription": "Ginshiƙan amincewa, masu sarrafa na ɓangare na uku, takaddun shaida, da yadda za a ba da rahoton wani lamari."
     },
     "help": {
+      "schemaName": "Taimako | Intelligent Singularity",
+      "schemaDescription": "Cibiyar taimako — bincika kategori, shahararrun amsoshi, da tuntuɓa kai tsaye.",
+      "breadcrumbCurrent": "Taimako",
       "eyebrow": "TAIMAKO",
       "title": "Yawanci muna iya taimaka da dannawa ɗaya kawai.",
       "lede": "Zaɓi layin da ya fi kama da tambayarka. Kowane mahaɗi yana zuwa wuri na gaske — babu fom ɗin da aka rufe, babu chatbots.",
@@ -153,13 +200,17 @@
       "browseByTopic": "Bincika ta jigon",
       "checkStatus": "Duba matsayin",
       "contactEyebrow": "Tuntuɓa",
-      "contactFallbackCta": "Tuntuɓe mu"
+      "contactFallbackCta": "Tuntuɓe mu",
+      "metaTitle": "Taimako | Intelligent Singularity",
+      "metaDescription": "Sami taimako da sauri: bincika rukunoni, karanta amsoshi shahararru, ko tuntubi mutum a danna ɗaya."
     },
     "about": {
       "eyebrow": "Game da mu · Studio",
       "defaultTitle": "Game da Intelligent Singularity",
       "ecosystemLabel": "Tsarin a kalla guda",
       "ecosystemHeading": "Mahaifiyar kamfani guda, nau'ikan samfuri bakwai.",
+      "ecosystemSvgTitle": "Tsarin Clap a ƙarƙashin kamfani uba ɗaya",
+      "ecosystemAriaLabelTemplate": "{rootLabel}, kamfani uba mai rassan kayayyaki {count}: {list}.",
       "ataGlanceLabel": "A kalla guda",
       "talkToStudioLabel": "Yi magana da studio",
       "talkToStudioBody": "Haɗin gwiwa, jarida, ko tambayar samfuri — saƙonni suna isa kai-tsaye ga wanda ya kafa, yawanci a cikin kwanaki biyu na aiki.",
@@ -185,6 +236,20 @@
         "portfolio": "Iyalin dandalin da ke girma",
         "languages": "Yanki 14 na turawa",
         "footprint": "≤ 50 KB kowane shafi · sifili masu binciko"
+      },
+      "breadcrumbCurrent": "Game da Mu",
+      "schemaName": "Game da Mu | Intelligent Singularity",
+      "schemaDescription": "Sadu da tawaga da manufa a bayan Intelligent Singularity: gina software don samun damar duniya tare da ayyukan ƙwararru waɗanda AI ke ɗaukaka.",
+      "metaTitle": "Game da Mu | Intelligent Singularity",
+      "metaDescription": "Hadu da tawagar da manufa a bayan Intelligent Singularity: ƙirƙirar software don samun damar duniya tare da ayyuka masu sauƙi waɗanda AI ta haɓaka.",
+      "ecosystemBranchLabels": {
+        "corePlatform": "Babbar dandali",
+        "health": "Lafiya",
+        "finance": "Kuɗi",
+        "work": "Aiki",
+        "agriculture": "Noma",
+        "media": "Kafofin watsa labarai",
+        "commsData": "Sadarwa / bayanai"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "Ɗigogi masu haske a sama mutane ne waɗanda ke kan layi. Ɗigogi masu duhu, masu zobe mutane ne waɗanda ba sa kan layi. Kashi 96 cikin ɗari na waɗanda ba sa kan layi suna zaune ne a ƙasashe masu ƙarancin kuɗin shiga da matsakaicin kuɗin shiga. Injiniyancin damar duniya gaba ɗaya shi ne abin da ke rufe wannan giɓin. Alkawura tara da ke ƙasa su ne yadda muke riƙe da kanmu.",
       "commitmentsHeading": "Alkawura tara",
       "commitmentsBody": "Zoba tara masu tsakiya guda — kowane samfuri yana shiga ne bisa kowane ɗayansu, a kowane lokaci. Jerin ba jerin abubuwan da ake so ba ne. Kwangilar injiniyanci ce.",
-      "sourceData": "Tushen bayanai"
+      "sourceData": "Tushen bayanai",
+      "breadcrumbCurrent": "Sanarwa",
+      "schemaName": "Sanarwa | Intelligent Singularity",
+      "schemaDescription": "Karanta sanarwarmu game da mai da software na manyan kamfanoni a matsayin hakki na asali ga kowane kasuwanci da mutum, ta yanar gizo ko ba tare da intanet ba.",
+      "globeSvgTitle": "Isarwa ba tare da intanet ba",
+      "globeAriaLabel": "Sauƙin duniya tare da haskaka maki biliyan 2.2 da ba a kan layi ba, suna nuna ƙididdigar ITU akan rabuwar dijital.",
+      "ringsSvgTitle": "Alkawura",
+      "ringsAriaLabelTemplate": "Alkawura {count} masu wuri ɗaya da suka samar da zobe ɗaya na samun isa ga kowa — ƙa'idodin injiniya da kowace samfur ke fitarwa a kowane fitarwa.",
+      "metaTitle": "Sanarwa | Intelligent Singularity",
+      "metaDescription": "Karanta sanarwarmu game da maida software na ma'aikatu zama hakki na kowane kasuwanci da kowane mutum, a kan layi ko ba a kan layi ba."
     },
     "faq": {
+      "schemaName": "FAQ | Intelligent Singularity",
+      "schemaDescription": "Amsoshi na gaskiya game da studio, samfuranmu, ayyukan sirri, da yadda za a haɗa hannu da Intelligent Singularity.",
+      "breadcrumbCurrent": "FAQ",
       "openTheForm": "Open the form",
       "emailDirectly": "Email directly"
     },
     "pricing": {
+      "schemaName": "Falsafar Farashi | Intelligent Singularity",
+      "schemaDescription": "Ka'idodin farashinmu: matakin kyauta, farashi mai adalci bisa yanki, kowane fasali a kowane mataki, babu tuntubar tallace-tallace.",
+      "breadcrumbCurrent": "Farashi",
       "tierFree": "Free tier:",
       "tierPaid": "Paid tier:",
       "tierEnterprise": "Enterprise:",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "The same product, three customers",
       "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
       "viewThePortfolio": "View the portfolio",
-      "talkAboutPricing": "Talk about pricing"
+      "talkAboutPricing": "Talk about pricing",
+      "metaTitle": "Falsafar Farashi | Intelligent Singularity",
+      "metaDescription": "Yadda muke ƙayyade farashin kowane samfur: matakin kyauta har abada, farashi da aka daidaita da ikon siyan kuɗi, kowane fasali a kowane mataki, farashin da aka buga, babu sayar da tuntuɓa."
     },
     "careers": {
+      "schemaName": "Sana'o'i | Intelligent Singularity",
+      "schemaDescription": "Yadda ɗakin yake ɗaukar ma'aikata da kuma yadda ake aiki a Intelligent Singularity.",
+      "breadcrumbCurrent": "Sana'o'i",
       "howWeWorkHeading": "Yadda muke aiki da gaske",
       "whatYouWouldWorkOnHeading": "Abin da za ka yi aiki a kai da gaske",
       "howWeHireHeading": "Yadda muke ɗaukar ma'aikata, daga farko zuwa ƙarshe",
@@ -220,7 +305,9 @@
       "updatedPrefix": "An sabunta",
       "contactFormCta": "Fom na sadarwa",
       "whatYouWouldWorkOnLede": "Intelligent Singularity ita ce kamfanin uba ga dangi mai girma na dandamali. Sabbin ma'aikata ba sa yawan aiki kan samfuri ɗaya na cikakken shekara — galibi suna juyawa tsakanin biyu ko uku, ya danganta da abin da ake aikawa da kuma abin da ke buƙatar fiye da kulawar manyan ma'aikata a wancan kwata.",
-      "howWeHireLede": "Matakai huɗu. Mafi yawa makonni biyu daga imel na farko zuwa tayin da aka rubuta idan ɓangarorin biyu suka yi sauri. Babu matakai masu ban mamaki, babu ayyukan gida marasa biyan kuɗi, babu ƙin yarda na \"dacewa da al'ada\" ba tare da dalilai a rubuce ba."
+      "howWeHireLede": "Matakai huɗu. Mafi yawa makonni biyu daga imel na farko zuwa tayin da aka rubuta idan ɓangarorin biyu suka yi sauri. Babu matakai masu ban mamaki, babu ayyukan gida marasa biyan kuɗi, babu ƙin yarda na \"dacewa da al'ada\" ba tare da dalilai a rubuce ba.",
+      "metaTitle": "Aiki | Intelligent Singularity",
+      "metaDescription": "Yadda studiyo ke ɗaukar ma'aikata: ƙaramin ƙungiya, mai nesa, da AI ta haɓaka wadda ke fitar da software na samun damar duniya. Bukatun ma'aikata na yanzu da gayyatar dindindin don gabatar da kanka."
     },
     "press": {
       "factSheetHeading": "Fakitin bayanai",
@@ -234,7 +321,10 @@
       "contactFormCta": "Fom na sadarwa",
       "boilerplateLede": "Sakin layi ɗaya, mai shirye-shiryen shigarwa cikin sakon manema labarai. An amince da amfani kalma-kalma.",
       "storyAnglesYesLede": "Idan labarinka ya zauna a cikin ɗaya daga cikin waɗannan kusurwoyi, za mu yi sauri don sa wanda ya kafa, injiniya, ko shugaban samfuri ya kasance — yawanci a cikin rana ɗaya ta aiki.",
-      "storyAnglesNoLede": "Gaskiya tun farko tana ceton kowa lokaci. Ba za mu ba da maganganu don kusurwoyin da ke ƙasa ba. Duk da haka, za mu nuna maka ɗan jarida ko mai bincike wanda aikinsa ya fi dacewa da labarin."
+      "storyAnglesNoLede": "Gaskiya tun farko tana ceton kowa lokaci. Ba za mu ba da maganganu don kusurwoyin da ke ƙasa ba. Duk da haka, za mu nuna maka ɗan jarida ko mai bincike wanda aikinsa ya fi dacewa da labarin.",
+      "breadcrumbCurrent": "Manema labarai",
+      "schemaName": "Manema labarai & Kafofin watsa labarai | Intelligent Singularity",
+      "schemaDescription": "Kayan aikin manema labarai, takardar gaskiya, kalmomi da aka amince da su, da hanyar tuntuɓar manema labarai da masu bincike masu rufe Intelligent Singularity."
     },
     "portfolio": {
       "eyebrow": "Tarihin Aikin · Tsarin Clap",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "Kira na ɓangare na uku",
       "statThirdPartyValue": "Sifili",
       "statThirdPartyHint": "An tilasta shi ta CI a kowane saki na samfuri",
-      "ecosystemStatsAria": "Ƙididdigar tsarin"
+      "ecosystemStatsAria": "Ƙididdigar tsarin",
+      "verticalLabel": "Tsaye",
+      "publicAs": "Sananne da",
+      "breadcrumbCurrent": "Tarihin Aikin",
+      "schemaName": "Tarihin Aikin | Intelligent Singularity",
+      "schemaDescription": "Bincika cikakkun tsarin halittu na kayan aiki 14 a fannin ayyukan kasuwanci, lafiya, kudi, noma, kafofin watsa labarai, da sadarwa.",
+      "mosaicSvgTitle": "Hoton portfolio",
+      "mosaicAriaLabel": "Hoton da yake nuna dandamali takwas a tsarin Clap: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee da Audiflo.",
+      "metaTitle": "Portfolio | Intelligent Singularity",
+      "metaDescription": "Bincika cikakken yanayin kayan aiki 14 a duk ayyukan kasuwanci, lafiya, kuɗi, noma, kafofin watsa labarai da sadarwa.",
+      "productCountLabel": "{count, plural, one {Kaya} other {Kayayyaki}}"
     },
     "contact": {
+      "schemaName": "Tuntuɓa | Intelligent Singularity",
+      "schemaDescription": "Tuntuɓi Intelligent Singularity don haɗin gwiwa, manema labarai, shari'a, ko tambayoyin samfura game da tsarin software namu na samun damar duniya.",
+      "breadcrumbCurrent": "Tuntuɓa",
       "eyebrow": "Tuntuɓa · Tebur na studio",
       "titleFallback": "Tuntuɓe mu",
+      "formHeading": "Fom ɗin tuntuɓa",
       "directChannelsLabel": "Tashoshi kai-tsaye",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "Hadawa da Larabci da Urdu RTL.",
       "factHostingLabel": "Hosting",
       "factHostingLine1": "VPS guda ɗaya, Edmonton.",
-      "factHostingLine2": "Babu CDN na ɓangare na uku."
+      "factHostingLine2": "Babu CDN na ɓangare na uku.",
+      "metaTitle": "Tuntube Mu | Intelligent Singularity",
+      "metaDescription": "Tuntubi Intelligent Singularity don haɗin gwiwa, manema labarai, shari'a, ko tambayoyin samfur game da yanayin software namu na samun damar duniya."
+    },
+    "legal": {
+      "eyebrowLabel": "Doka",
+      "lastUpdatedLabel": "An sabunta na ƙarshe: {date}",
+      "tocLabel": "A wannan shafi"
     },
     "security": {
       "postureHeading": "Yadda muke gudanar da gidan yanar gizo da dandalin",
       "dataHeading": "Yadda muke kula da bayanan ka",
       "complianceHeading": "Ka'idodin da muke riƙe wa kanmu",
       "complianceLede": "Muna bin ƙananan, sunaye masu suna na ƙa'idodi — kuma muna gaskiya game da binciken da ba mu samu ba tukuna.",
-      "privacyPolicyLink": "Karanta manufar sirri"
+      "privacyPolicyLink": "Karanta manufar sirri",
+      "breadcrumbCurrent": "Tsaro",
+      "schemaName": "Tsaro da Aminci | Intelligent Singularity",
+      "schemaDescription": "Hanyoyin tsaro da gudanar da bayanai a duk faɗin Intelligent Singularity: encryption, masaukin kanmu, sifili kira na ɓangare na uku, da gajeren ajiyar bayanai.",
+      "shieldSvgTitle": "Matsayin tsaro",
+      "shieldAriaLabel": "Garkuwa mai sauƙi da ke nuna matsayin tsaro: rufa TLS, sifili kira na ɓangare na uku, yanayin samfura masu keɓe, gajeren ajiyar bayanai, da wakilan sake sarrafa bayanai da aka ambata.",
+      "metaTitle": "Tsaro da Amincewa | Intelligent Singularity",
+      "metaDescription": "Yadda muke kare wannan rukunin yanar gizo da kowane samfur a portfolio: TLS, sifili na kira na ɓangare na uku, riƙe gajere, ajiya da aka ɓoye, da amsa mai gaskiya ga abubuwan da suka faru."
     },
     "green": {
+      "schemaName": "Alkawarin Muhalli | Intelligent Singularity",
+      "schemaDescription": "Duba alkawuranmu na muhalli, gaskiya kan nauyin shafi, da hanyarmu ta aikin yanar gizo mai ƙarancin hayaƙi.",
+      "breadcrumbCurrent": "Muhalli",
       "liveTelemetryEyebrow": "Kore · Telemetry kai-tsaye",
       "statThisPageLabel": "Wannan shafin",
       "statThisPageHint": "HTML + CSS, babu masu binciko",
@@ -375,11 +496,64 @@
           "value": "A duk dandalin",
           "hint": "Daftari, bayanan likita, rasit suna zuwa dijital ta tsohuwa. Takardar ofis, kati na kasuwanci, da kayan tallace-tallace na bugawa ba sa cikin yadda muke aiki."
         }
-      }
+      },
+      "metaTitle": "Alkawarin Kore | Intelligent Singularity",
+      "metaDescription": "Duba alkawuran muhalli, nuna gaskiya na nauyin shafuka, da kuma hanyar mu ta yin aikin yanar gizo da ƙananan iskar gas."
     },
     "home": {
       "commitmentsKicker": "Nine non-negotiables",
-      "commitmentsAria": "The nine commitments"
+      "commitmentsAria": "The nine commitments",
+      "ddKicker": "Mutum dari, an zana su daidai gwargwado",
+      "ddHeading": "Mutum ashirin da shida cikin kowanne ɗari a duniya har yanzu ba su da damar dijital ko kaɗan.",
+      "ddOnlineCount": "Biliyan 5.9",
+      "ddOfflineCount": "Biliyan 2.2",
+      "ddSourceFallback": "ITU Bayanai da Lambobi 2025",
+      "ddSvgTitle": "Wanda yake kan layi da wanda ba ya kan layi ba",
+      "ddOnlineLabel": "kan layi",
+      "ddOfflineLabel": "har yanzu ba ya kan layi ba",
+      "ddSourcePrefix": "Tushe",
+      "fieldNotesKicker": "Bayanan filin aiki",
+      "fieldNotesTitle": "Yadda muke tunani game da gina wannan.",
+      "fieldNotesBody": "Gajerun rubuce-rubuce daga ɗakin studio. Muna rubutu a hankali kuma muna ambata komai. Babu kamun-tunani, babu hayaƙin shugabancin tunani.",
+      "fieldNotesCta": "Karanta bayanan filinmu",
+      "flagshipsKicker": "Ɗakin Studio · Kayan aiki 14",
+      "flagshipsSeeAllCta": "Duba dukkan tsarin halittu",
+      "flagshipCardLabel": "Babban Samfur",
+      "facts": {
+        "kicker": "Gibin · An Auna",
+        "sourceLabel": "ITU · 2025",
+        "sourceHeading": "Tushe",
+        "card1Caption": "Mutanen da ba su taɓa amfani da intanet ba. <accent>{pct}% suna zaune a ƙasashe masu ƙarancin kuɗi da na tsakiya.</accent>",
+        "card1Comparison": "≈ 26% na 'yan adam",
+        "card2Caption": "Kashi na mutanen da ke kan layi a ƙasashe masu ƙarancin kuɗi. <accent>{pct}% a ƙasashe masu kuɗi.</accent>",
+        "card3Caption": "Ɗaukar 5G a ƙasashe masu ƙarancin kuɗi. Ƙasashe masu kuɗi suna a <accent>{pct}%</accent>. Gibi sau ashirin.",
+        "card3Comparison": "Gibin 21×",
+        "card4Caption": "Mutanen ƙauye da ke kan layi a duniya. Adadin birane yana a <accent>{pct}%</accent>. Gibin birane-ƙauye har yanzu yana da yawa."
+      },
+      "greenStrip": {
+        "eyebrow": "Rasit ɗin Carbon Mai Rai",
+        "heading": "Kowace ziyara tana barin sawun makamashi. Wannan namu ne.",
+        "body": "Muna auna nauyin shafi a kilobytes da carbon a grams. Duka biyun suna kasancewa ƙanana sosai saboda ba ma aikawa da abin da ba mu buƙata ba — babu rubutu daga CDN, babu masu bibiya, babu rubutaccen tsari da ke kira gida.",
+        "pageWeightLabel": "Wannan shafi yana auna",
+        "pageWeightUnit": "KB",
+        "pageWeightHint": "Kasafin kuɗi: ƙasa da KB 50 a kowace hanya, gzip",
+        "carbonLabel": "Ziyararku ta fitar da",
+        "carbonHint": "An ƙididdige tare da samfurin Green Web Foundation",
+        "hostingLabel": "Masaukinmu",
+        "hostingValue": "Mai-masaukin kai",
+        "hostingHint": "VPS guda ɗaya · babu CDN · grid na Alberta",
+        "thirdPartyLabel": "Kira na ɓangare na uku",
+        "thirdPartyValue": "Sifili",
+        "thirdPartyHint": "Babu CDN, rubutu, nazari, pixels"
+      },
+      "schemaName": "Intelligent Singularity | Software don samun damar duniya",
+      "schemaDescription": "Wani ɗakin ayyuka mai dogaro da manufa wanda ke gina software wadda AI ke ɗaukaka don samun damar duniya a kasuwanci, lafiya, kudɗi, da aiki.",
+      "metaTitle": "Intelligent Singularity | Manhajar Software don Samun Damar Duniya",
+      "metaDescription": "Ɗakin studiyo mai manufa wanda yake ƙirƙirar software da AI ta haɓaka don samun damar duniya a kasuwanci, lafiya, kuɗi da aiki."
+    },
+    "offline": {
+      "metaTitle": "Ba a Layi ba | Intelligent Singularity",
+      "metaDescription": "Shafin madadin ba a layi ba don ƙwarewar yanar gizo na Intelligent Singularity."
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineBody": "Da alama kun fita kan layi. Muna ba ku wannan shafin daga ma'ajiyar ƙwaƙwalwa.",
     "offlineEyebrow": "Kan layi",
     "offlineReturnHome": "Komawa babban shafin",
-    "offlineTitle": "Babu haɗi yanzu."
+    "offlineTitle": "Babu haɗi yanzu.",
+    "opensInNewTab": "(yana buɗewa a sabon shafi)",
+    "emailLinkAriaLabel": "Aika imel zuwa {email}",
+    "breadcrumbHome": "Gida",
+    "ogImageAlt": "Intelligent Singularity — Manhajojin samun damar kowa.",
+    "visit": "Ziyarci",
+    "schema": {
+      "organizationDescription": "Studio mai gina manhajoji don samun damar duniya.",
+      "founderDescription": "Wanda ya kafa Intelligent Singularity, yana gina manhajoji don samun damar duniya tare da ayyukan lean da AI ta ƙarfafa.",
+      "portfolioListName": "Tarin Kayayyakin Intelligent Singularity"
+    }
   },
   "languageWheel": {
     "navAria": "Harshe",

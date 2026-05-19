@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import type { Product } from '@/types/cms';
 import { ProductRow } from './ProductRow';
 
@@ -9,9 +10,25 @@ type Category = {
   description?: string;
 };
 
+const STATUS_KEY: Record<string, 'production' | 'staging' | 'awaitingApproval' | 'infrastructure'> = {
+  production: 'production',
+  staging: 'staging',
+  'awaiting-approval': 'awaitingApproval',
+  infrastructure: 'infrastructure',
+};
+
 type Props = { categories: Category[]; products: Product[] };
 
-export function PortfolioGrid({ categories, products }: Props) {
+export async function PortfolioGrid({ categories, products }: Props) {
+  const t = await getTranslations('pages.portfolio');
+  const tStatus = await getTranslations('status');
+  const tCommon = await getTranslations('common');
+  const publicAsLabel = t('publicAs');
+  const visitLabel = tCommon('visit');
+  const statusLabelFor = (s: string) => {
+    const k = STATUS_KEY[s];
+    return k ? tStatus(k) : s;
+  };
   return (
     <div className="flex flex-col gap-20">
       {categories.map((cat, catIdx) => {
@@ -34,7 +51,7 @@ export function PortfolioGrid({ categories, products }: Props) {
                   className="text-[12.5px] uppercase text-[var(--color-mint-ink)] mb-3"
                   style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
                 >
-                  {index} · Vertical
+                  {index} · {t('verticalLabel')}
                 </div>
                 <h2
                   id={`cat-${cat.slug}`}
@@ -69,12 +86,18 @@ export function PortfolioGrid({ categories, products }: Props) {
               >
                 <span>{String(catProducts.length).padStart(2, '0')}</span>
                 <span aria-hidden="true" style={{ opacity: 0.5 }}>·</span>
-                <span>{catProducts.length === 1 ? 'Product' : 'Products'}</span>
+                <span>{t('productCountLabel', { count: catProducts.length })}</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
               {catProducts.map((p) => (
-                <ProductRow key={p.slug} product={p} />
+                <ProductRow
+                  key={p.slug}
+                  product={p}
+                  publicAsLabel={publicAsLabel}
+                  statusLabel={statusLabelFor(p.productStatus)}
+                  visitLabel={visitLabel}
+                />
               ))}
             </div>
           </section>

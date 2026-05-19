@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { SrOpensInNewTab } from './SrOpensInNewTab';
 
 export function OutboundLink({
   href, children, className, style,
@@ -11,7 +12,7 @@ export function OutboundLink({
   return (
     <a href={href} target="_blank" rel="noreferrer external" className={className} style={style}>
       {children}
-      <span className="sr-only"> (opens in a new tab)</span>
+      <SrOpensInNewTab />
       <span aria-hidden="true" className="inline-block ms-1">↗</span>
     </a>
   );

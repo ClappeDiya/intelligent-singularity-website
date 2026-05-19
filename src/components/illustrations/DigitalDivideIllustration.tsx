@@ -4,6 +4,10 @@ type Props = {
   onlineCount?: string;
   offlineCount?: string;
   source?: string;
+  svgTitle: string;
+  onlineLabel: string;
+  offlineLabel: string;
+  sourcePrefix: string;
 };
 
 const COLS = 10;
@@ -23,6 +27,10 @@ export function DigitalDivideIllustration({
   onlineCount = '5.9 billion',
   offlineCount = '2.2 billion',
   source = 'ITU Facts and Figures 2025',
+  svgTitle,
+  onlineLabel,
+  offlineLabel,
+  sourcePrefix,
 }: Props) {
   const totalDots = COLS * ROWS;
   const onlineDots = Math.round((onlinePercent / 100) * totalDots);
@@ -36,7 +44,7 @@ export function DigitalDivideIllustration({
     return { i, cx, cy, isOnline };
   });
 
-  const ariaLabel = `${onlinePercent} percent of humanity is online (${onlineCount}). ${offlinePercent} percent is offline (${offlineCount}). Source: ${source}.`;
+  const ariaLabel = `${onlinePercent}% ${onlineLabel} (${onlineCount}). ${offlinePercent}% ${offlineLabel} (${offlineCount}). ${sourcePrefix}: ${source}.`;
 
   return (
     <figure className="digital-divide" aria-label={ariaLabel} role="figure">
@@ -47,7 +55,7 @@ export function DigitalDivideIllustration({
           aria-hidden="true"
           focusable="false"
         >
-          <title>Who is online and who is not</title>
+          <title>{svgTitle}</title>
           <desc>{ariaLabel}</desc>
           {dots.map((d) => (
             <circle
@@ -67,18 +75,18 @@ export function DigitalDivideIllustration({
             <span className="digital-divide__swatch digital-divide__swatch--on" aria-hidden="true" />
             <span className="digital-divide__num">{onlinePercent}%</span>
             <span className="digital-divide__label">
-              online — {onlineCount}
+              {onlineLabel} — {onlineCount}
             </span>
           </div>
           <div className="digital-divide__row">
             <span className="digital-divide__swatch digital-divide__swatch--off" aria-hidden="true" />
             <span className="digital-divide__num">{offlinePercent}%</span>
             <span className="digital-divide__label">
-              still offline — {offlineCount}
+              {offlineLabel} — {offlineCount}
             </span>
           </div>
         </div>
-        <p className="digital-divide__source">Source: {source}.</p>
+        <p className="digital-divide__source">{sourcePrefix}: {source}.</p>
       </figcaption>
 
       <style>{`

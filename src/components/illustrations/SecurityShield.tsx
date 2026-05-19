@@ -1,11 +1,13 @@
 type Props = {
   size?: number;
-  ariaLabel?: string;
+  svgTitle: string;
+  ariaLabel: string;
 };
 
 export function SecurityShield({
   size = 200,
-  ariaLabel = 'A simple shield illustrating the security posture: TLS encryption, zero third-party calls, isolated product environments, short retention, and named subprocessors.',
+  svgTitle,
+  ariaLabel,
 }: Props) {
   return (
     <figure className="securityshield" role="figure" aria-label={ariaLabel}>
@@ -17,7 +19,7 @@ export function SecurityShield({
         aria-hidden="true"
         focusable="false"
       >
-        <title>Security posture</title>
+        <title>{svgTitle}</title>
         <desc>{ariaLabel}</desc>
         <defs>
           <linearGradient id="ss-grad" x1="0" y1="0" x2="0" y2="1">

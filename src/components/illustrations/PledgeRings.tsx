@@ -1,13 +1,15 @@
 type Props = {
   count?: number;
   size?: number;
-  ariaLabel?: string;
+  svgTitle: string;
+  ariaLabel: string;
 };
 
 export function PledgeRings({
   count = 9,
   size = 220,
-  ariaLabel = 'Nine concentric commitments forming a single ring of universal access — the engineering rules every product ships against.',
+  svgTitle,
+  ariaLabel,
 }: Props) {
   const cx = size / 2;
   const cy = size / 2;
@@ -28,7 +30,7 @@ export function PledgeRings({
         aria-hidden="true"
         focusable="false"
       >
-        <title>Nine commitments</title>
+        <title>{svgTitle}</title>
         <desc>{ariaLabel}</desc>
         {rings.map((r) => (
           <circle

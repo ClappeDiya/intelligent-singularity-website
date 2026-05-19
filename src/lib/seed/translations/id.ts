@@ -45,6 +45,13 @@ export const TRANSLATION: LocaleTranslation = {
     successMessage: 'Pesan terkirim. Terima kasih.',
     errorMessage: 'Terjadi kesalahan. Silakan coba lagi.',
   },
+  trust: {
+    dataResidencyText:
+      'Situs web ini tinggal di satu server virtual di pusat data bernama di Edmonton, Alberta, Kanada. Tidak ada jaringan pengiriman konten di depannya. Ketika halaman dimuat di peramban Anda, peramban Anda berbicara langsung dengan mesin kami. Tidak ada apa pun di tengah yang menyalin, menyimpan dalam cache, atau membaca lalu lintas Anda.\n\nCadangan terenkripsi kami berputar dalam siklus tiga puluh hari. Cadangan itu tidak pernah meninggalkan wilayah pusat data. Cadangan dilindungi saat diam dengan kunci yang hanya dapat dibuka oleh dua orang di tim kami.',
+    reportIncidentText:
+      'Menemukan kelemahan, bug, atau sesuatu yang sekadar terlihat salah? Tulis ke security@intelligentsingularityinc.com. Kami menjawab dalam satu hari kerja, bekerja sama dengan Anda untuk memperbaikinya, dan menyebut nama pelapor dalam pengumuman publik setelah masalah ditambal — kecuali Anda meminta sebaliknya.\n\nKami tidak pernah menuntut peneliti yang mengikuti ketentuan pengungkapan bertanggung jawab di /security.',
+  },
+
   commitments: [
     { title: 'Desain universal, mampu bekerja offline', body: 'Setiap produk berfungsi sempurna di jaringan serat optik maupun 2G yang tidak stabil. Fitur yang sama, kualitas yang sama. Konektivitas bukan penjaga gerbang.' },
     { title: 'Standar kesederhanaan', body: 'Jika seorang siswa kelas delapan tidak dapat menyelesaikan alur kerja inti dalam 5 menit tanpa pelatihan, fitur tersebut belum selesai.' },

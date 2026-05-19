@@ -18,3 +18,10 @@ vi.mock('next/cache', () => ({
 vi.mock('@/components/seo/JsonLd', () => ({
   JsonLd: ({ id }: { id: string }) => null,
 }));
+
+// Mock SrOpensInNewTab — async server component that fetches a translation;
+// rendering it via React Testing Library returns a Promise, which the test renderer
+// cannot resolve in nested children. In production, the real component renders fine.
+vi.mock('@/components/pages/shared/SrOpensInNewTab', () => ({
+  SrOpensInNewTab: () => null,
+}));

@@ -52,6 +52,21 @@ summary:focus-visible {
   color: var(--color-paper-ink);
 }
 
+/* Locale-aware <q> quotation chars. The browser inserts open/close-quote via
+   q::before / q::after using the active `quotes` property. Default is Latin
+   curly; guillemet languages (es, fr, ru, ar, pt) override. CSS :lang() matches
+   the html[lang=...] attribute set in src/app/layout.tsx. */
+:root {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+:lang(es),
+:lang(fr),
+:lang(ru),
+:lang(ar),
+:lang(pt) {
+  quotes: "\00AB" "\00BB" "\2039" "\203A";
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

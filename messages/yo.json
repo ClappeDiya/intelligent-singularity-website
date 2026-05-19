@@ -48,7 +48,10 @@
   "hero": {
     "skipToContent": "Fò lọ sí àkóónú àkọ́kọ́",
     "scrollHint": "Yí",
-    "scrollHintTarget": "àlàfo nínú àwọn nọ́mbà"
+    "scrollHintTarget": "àlàfo nínú àwọn nọ́mbà",
+    "source": "ITU 2025",
+    "populationCaption": "nínú gbogbo ènìyàn lórí ilẹ̀ ayé",
+    "counterAriaLabel": "Eniyan {count} ṣì wà ní ìtàjọ, orisun ITU 2025"
   },
   "contactForm": {
     "routingLabel": "Ìtọ́sọ́nà",
@@ -65,12 +68,21 @@
   },
   "pages": {
     "changelog": {
+      "schemaName": "Ìwé Ìyípadà",
+      "schemaDescription": "Àwọn àkọsílẹ̀ ìtujáde fún àwùjọ.",
+      "breadcrumbCurrent": "Ìwé Ìyípadà",
       "eyebrow": "ÌWÉ ÌYÍPADÀ · OJÚ-ÌWÉ ILÉ-IṢẸ́",
       "title": "Ohun tó yí padà, ní ìtẹ̀lẹ̀.",
       "lede": "Gbogbo ìyípadà tí a lè rí tí a ti ṣe lórí ojú-ìwé ilé-iṣẹ́ yìí, pẹ̀lú ọjọ́ àti ìsopọ̀ pẹ̀lú commit tí ó wà lẹ́yìn rẹ̀. Olúkúlùkù ọjà nínú àjọ Clap ní ìwé ìyípadà tirẹ̀ lórí àgbègbè tirẹ̀ — ojú-ìwé yìí jẹ́ ẹnu-ọ̀nà àkọ́kọ́ ti ilé-iṣẹ́ òbí, kò sí mọ́, kò sí ohun tí a fi pamọ́.",
       "feedLabel": "Forúkọ sílẹ̀:",
       "feedTitle": "Intelligent Singularity — Ìwé Ìyípadà",
-      "rssFeed": "Ìpèsè RSS"
+      "rssFeed": "Ìpèsè RSS",
+      "firstVersionTitle": "Èyí ni ẹ̀dà àkọ́kọ́.",
+      "firstVersionBody": "Kò sí àmì kankan tí a ti gé síbẹ̀. O ń ka build {sha}. Ìṣàjáde àkọ́kọ́ yóò farahàn níbí lẹ́yìn tí a bá ti samì v1.0.",
+      "viewRepoCta": "Wo ibi ìpamọ́",
+      "releasesHeading": "Àwọn ìṣàjáde",
+      "metaTitle": "Àkọsílẹ̀ Àyípadà | Intelligent Singularity",
+      "metaDescription": "Gbogbo àyípadà tí a ti ṣe tí ó hàn, pẹ̀lú ọjọ́ àti commit tí ó wà lẹ́yìn rẹ̀."
     },
     "status": {
       "eyebrow": "STATUS",
@@ -90,9 +102,18 @@
       "liveStatusDashboard": "Live status dashboard",
       "overallStatusAria": "Overall status",
       "externalNavAria": "External",
-      "opensInNewTab": " (opens in a new tab)"
+      "opensInNewTab": " (opens in a new tab)",
+      "uptimeGridAria": "Àkókò àbáláyé ní ọjọ́ 90 sẹhin, {pct} ní wákàtí 24 sẹ́yìn.",
+      "breadcrumbCurrent": "Ipo",
+      "schemaName": "Ipo | Intelligent Singularity",
+      "schemaDescription": "Ipo eto laaye fun oju opo wẹẹbu ati awọn amayederun rẹ.",
+      "metaTitle": "Ipò | Intelligent Singularity",
+      "metaDescription": "Ipò ètò àkókò gidi fún ojú-òpó àti àwọn òhun-ìní rẹ̀."
     },
     "roadmap": {
+      "schemaName": "Ìlànà Ìrìnnà | Intelligent Singularity",
+      "schemaDescription": "Ìlànà ìrìnnà ní gbangba tí ó ń fi iṣẹ́ tó ń lọ, tí a gbé kalẹ̀, tí a ti tẹ̀jáde, àti tí a dáwọ́dúró hàn.",
+      "breadcrumbCurrent": "Ìlànà Ìrìnnà",
       "eyebrow": "ÌLÀNÀ ÌRÌNNÀ · NÍ GBANGBA",
       "title": "Ohun tí à ń kọ́.",
       "lede": "Ní gbangba. Kò sí vaporware. Olúkúlùkù ohun wà ní ẹ̀gbẹ́ studio — iṣẹ́ ojú-ìwé ilé-iṣẹ́, ètò àjùmọ̀-pín, àti àdéhùn àgbéléwò tí ó kan olúkúlùkù ọjà. Olúkúlùkù ọjà nínú àjọ Clap ní ìlànà ìrìnnà tirẹ̀ lórí àgbègbè tirẹ̀. Àwọn ohun níbí so mọ́ kóòdù nígbà tí wọ́n bá fi ránṣẹ́.",
@@ -105,9 +126,14 @@
       "ctaEyebrow": "Ohun kan kùrú?",
       "ctaHeading": "Sọ ohun tí o nilò fún wa.",
       "ctaBody": "Tí ìlànà-iṣẹ́, irinṣẹ́, tàbí àtúnṣe kan bá wà tí yóò ṣe ìyàtọ̀ tòótọ́ fún ọ, fi ọ̀rọ̀ ránṣẹ́ sí wa. À ń ka olúkúlùkù iṣẹ́, à sì ń pinnu ní ìbámu pẹ̀lú àìní gídígbà.",
-      "ctaButton": "Fi ọ̀rọ̀ ránṣẹ́"
+      "ctaButton": "Fi ọ̀rọ̀ ránṣẹ́",
+      "metaTitle": "Maapu Iṣẹ́ | Intelligent Singularity",
+      "metaDescription": "Ohun tí a ń kọ́, ohun tí a wéwèé, ohun tí a ti tú jáde àti ohun tí a fi sí ìdúró — lójú gbogbo ènìyàn."
     },
     "insights": {
+      "schemaName": "Àkójọ Àrò | Intelligent Singularity",
+      "schemaDescription": "Ronú ní gbangba: ìráyè, ìbámu, àti ọ̀nà gígùn ti AI.",
+      "breadcrumbCurrent": "Àkójọ Àrò",
       "eyebrow": "ÀKÓJỌ ÀRÒ · ÀKÌYÈSÍ LÁTI ILÉ-IṢẸ́",
       "title": "Ronú ní gbangba.",
       "lede": "Àkìyèsí láti orí pápá nípa àǹfààní kárí ayé, ìmọ̀-ẹ̀rọ tí AI ń ràn lọ́wọ́, ènìyàn bílíọ̀nù 2.2 tí kò sí lórí ayélujára, àti ọ̀nà gígùn ti ọgbọ́n atọ́ka — a kọ wọ́n láti yé wọn, kì í ṣe láti dájì. À ń kọ́ wọn lọ́nà tó lọ́ra. Olúkúlùkù ẹ̀rí ní àyọkà rẹ̀. Kò sí clickbait, kò sí ìkùukù olórí ìrònú.",
@@ -118,9 +144,23 @@
       "subscribeLabel": "Forúkọ sílẹ̀:",
       "rssFeed": "Ìpèsè RSS",
       "feedTitle": "Intelligent Singularity — Insights",
-      "paginationAria": "Àtòkun-ìwé"
+      "paginationAria": "Àtòkun-ìwé",
+      "paginationNewer": "← Tuntun",
+      "paginationOlder": "Àtijọ́ →",
+      "paginationNewerAria": "Lọ sí àwọn ìfìránṣẹ́ tuntun",
+      "paginationOlderAria": "Lọ sí àwọn ìfìránṣẹ́ àtijọ́",
+      "emptyTitle": "Kò sí ohun tí a tí ṣe àtẹjáde rárá.",
+      "emptyBody": "Àpilẹ̀kọ àkọ́kọ́ yóò farahàn níbí nígbà tí ó bá ti ṣetán. À ń kọ̀wé pẹ̀lẹ́pẹ̀lẹ́ àti pẹ̀lú ìṣọ́ra.",
+      "emptyCta": "Ṣe àbápadà sí RSS feed",
+      "metaTitle": "Ìmọ̀ràn | Intelligent Singularity",
+      "metaDescription": "Èrò ní gbangba: wíwọlé, ìbámu, àti àpẹ̀rẹ̀ gígùn ti AI.",
+      "metaTitleSuffix": "Òye | Intelligent Singularity",
+      "eyebrowFallback": "ÒYE"
     },
     "trust": {
+      "schemaName": "Ìgbẹ́kẹ̀lẹ́ | Intelligent Singularity",
+      "schemaDescription": "Òpó ìgbẹ́kẹ̀lẹ́ wa, awọn alaṣiṣẹ́ ẹgbẹ́ kẹta, ìwé-ẹ̀rí, àti bí a ṣe lè ròyìn ìṣẹlẹ̀ ààbò.",
+      "breadcrumbCurrent": "Ìgbẹ́kẹ̀lẹ́",
       "eyebrow": "ÌGBẸ́KẸ̀LẸ́",
       "title": "Ibi tí o ti lè rí ẹ̀rí.",
       "lede": "Olúkúlùkù àdéhùn tí à ń ṣe nípa ààbò, ìkọ̀kọ̀, ìdúró, àti àǹfààní so mọ́ ẹ̀rí. Kò yẹ kí o ní láti gba ọ̀rọ̀ wa kọ̀ọ̀kan.",
@@ -141,9 +181,16 @@
       "incidentBody": "Ìṣípayá tí a fi ọwọ́ ṣíṣẹ́pọ̀ ni ọ̀nà tí à ń tẹ̀lé tọkàntọkàn. Fi imeèlì ránṣẹ́ sí security@intelligentsingularityinc.com pẹ̀lú àpèjúwe àti àwọn ìgbésẹ̀ ìtúngbé. À ń jẹ́wọ́ àwọn ìròyìn nínú ọjọ́ iṣẹ́ kan, à ń ṣe ìpín nínú ọjọ́ mẹta, a sì ń fi àtúnṣe ránṣẹ́ ní àkókò tí à fi gbà pẹ̀lú rẹ. À ń sọ ti àwọn olùwadìí pẹ̀lú orúkọ wọn nínú ìròyìn lẹ́yìn-tí-ó-bára-tó-bá-ṣẹlẹ̀ wa nígbà tí àtúnṣe bá tó — àyàfi tí o bá fẹ́ kí orúkọ rẹ má farahàn. Kò ní halẹ̀ bá tàbí pe ẹjọ́ àwọn olùwadìí ààbò tí ó ní ọkàn rere, ìparí ọ̀rọ̀.",
       "incidentCta": "Ròhìn ìṣẹ̀lẹ̀",
       "privacyPolicyLink": "Ìlànà àbáwọlé",
-      "learnMore": "Kọ́ síi"
+      "learnMore": "Kọ́ síi",
+      "dataResidencyHeading": "Ibi tí ìròyìn rẹ ń gbé",
+      "disclosureHeading": "Ìlànà ìfihàn ààbò",
+      "metaTitle": "Ìgbẹ́kẹ̀lé | Intelligent Singularity",
+      "metaDescription": "Òpó ìgbẹ́kẹ̀lé, àwọn olùṣe-ìṣẹ̀dá ẹlòmíràn, ìwé-ẹ̀rí, àti bí a ṣe ń ròyìn ìṣẹ̀lẹ̀."
     },
     "help": {
+      "schemaName": "Ìrànlọ́wọ́ | Intelligent Singularity",
+      "schemaDescription": "Ààyè ìrànlọ́wọ́ — ṣàwárí àwọn ẹ̀ka, àwọn ìdáhùn gbajúmọ̀, àti ìbáraẹnisọ̀rọ̀ tààrà.",
+      "breadcrumbCurrent": "Ìrànlọ́wọ́",
       "eyebrow": "ÌRÀNLỌ́WỌ́",
       "title": "A sábà máa ń ràn ọ́ lọ́wọ́ ní ìfọwọ́kàn kan.",
       "lede": "Yan ila tó dà bí ìbéèrè rẹ jù lọ. Gbogbo ìjápọ̀ ń lọ sí ibi gidi — kò sí fọ́mù tí a ti pa, kò sí chatbots.",
@@ -153,13 +200,17 @@
       "browseByTopic": "Wo nípa àkòrí",
       "checkStatus": "Ṣàyẹ̀wò ipò",
       "contactEyebrow": "Olùbáwí",
-      "contactFallbackCta": "Bá wa sọ̀rọ̀"
+      "contactFallbackCta": "Bá wa sọ̀rọ̀",
+      "metaTitle": "Ìrànlọ́wọ́ | Intelligent Singularity",
+      "metaDescription": "Rí ìrànlọ́wọ́ kíákíá: ṣàwárí àwọn ẹ̀ka, ka àwọn ìdáhùn olókìkí, tàbí kàn sí ènìyàn pẹ̀lú ìtẹ̀ kan."
     },
     "about": {
       "eyebrow": "Nípa wa · Studio",
       "defaultTitle": "Nípa Intelligent Singularity",
       "ecosystemLabel": "Ìṣàfihàn àjọ ní oju kan",
       "ecosystemHeading": "Ilé-iṣẹ́ òbí kan, ẹka ọjà méje.",
+      "ecosystemSvgTitle": "Ètò àyíkó Clap labẹ́ ilé-iṣẹ́ òbí kan",
+      "ecosystemAriaLabelTemplate": "{rootLabel}, ilé-iṣẹ́ òbí pẹlu ẹ̀ka ọjà {count}: {list}.",
       "ataGlanceLabel": "Ní ojú kan",
       "talkToStudioLabel": "Bá studio sọ̀rọ̀",
       "talkToStudioBody": "Àjọṣepọ̀, ìròyìn, tàbí ìbéèrè ọjà — àwọn ọ̀rọ̀ ó jẹ́wọ́ olùdá tààrà, lójú-pípadá nínú ọjọ́ iṣẹ́ méjì.",
@@ -185,6 +236,20 @@
         "portfolio": "Ìdílé pẹpẹ tó ń dàgbàsókè",
         "languages": "Àwọn àyè 14 tó ti tu sílẹ̀",
         "footprint": "≤ 50 KB fún ojú-ìwé kọ̀ọ̀kan · òfò àwọn olùtọpa"
+      },
+      "breadcrumbCurrent": "Nípa Wa",
+      "schemaName": "Nípa Wa | Intelligent Singularity",
+      "schemaDescription": "Mọ ẹgbẹ́ àti ìpinnu lẹ́yìn Intelligent Singularity: kíkọ́ sọ́fítíwérì fún àyè gbogbo gbò pẹ̀lú àwọn iṣẹ́ tó rọrùn tó ní AI ṣe iranlọ́wọ́.",
+      "metaTitle": "Nípa Wa | Intelligent Singularity",
+      "metaDescription": "Pàdé ẹgbẹ́ àti ète tí ó wà lẹ́yìn Intelligent Singularity: kíkọ́ sọ́fítíwérì fún wíwọlé káríayé pẹ̀lú àwọn iṣẹ́ tútù tí AI ti dí lágbára.",
+      "ecosystemBranchLabels": {
+        "corePlatform": "Ojú-òpó pàtàkì",
+        "health": "Ìlera",
+        "finance": "Ìnáwó",
+        "work": "Iṣẹ́",
+        "agriculture": "Iṣẹ́-àgbẹ̀",
+        "media": "Ìròyìn",
+        "commsData": "Ìbánisọ̀rọ̀ / dátà"
       }
     },
     "manifesto": {
@@ -194,13 +259,28 @@
       "offlinePercentBody": "Àwọn àmì tó fẹ́lẹ̀fẹ́ ní òkè jẹ́ àwọn ènìyàn tí wọ́n wà lórí ayélujára. Àwọn àmì tí ó dúdú jù tí wọ́n sì ní àyíká jẹ́ àwọn tí kò sí. Ìpín 96 nínú ọgọ́rùn-ún àwọn tí kò sí lórí ayélujára ń gbé ní àwọn orílẹ̀-èdè tó ní owó-orí kékeré àti aláàárín. Ìmọ̀-ẹ̀rọ àǹfààní kárí ayé ni èyí tí ó pa àlàfo náà mọ́ra. Àwọn àdéhùn mẹ́sàn-án tó wà nísàlẹ̀ ni bí à ṣe ń di ara wa lọ́wọ́.",
       "commitmentsHeading": "Àwọn àdéhùn mẹ́sàn-án",
       "commitmentsBody": "Àyíká mẹ́sàn-án tó wà ní àárín kannáà — gbogbo ọjà ni a kọ́ lòdì sí ọ̀kọ̀ọ̀kan wọn, ní gbogbo ìkọsílẹ̀. Àkójọpọ̀ kì í ṣe àwọn ohun tí à ń fẹ́. Òfin iṣẹ́-ẹ̀rọ ni.",
-      "sourceData": "Orísun dátà"
+      "sourceData": "Orísun dátà",
+      "breadcrumbCurrent": "Ìpolongo",
+      "schemaName": "Ìpolongo | Intelligent Singularity",
+      "schemaDescription": "Ka ìpolongo wa nípa sísọ sọ́fítíwérì onípele-iṣòwò sí ẹ̀tọ́ ìpilẹ̀ fún olúkúlùkù iṣòwò àti ènìyàn, lórí ayélujára tàbí láìsí ayélujára.",
+      "globeSvgTitle": "Ìjáde lóríta",
+      "globeAriaLabel": "Àgbáyé tó rọrùn pẹ̀lú àwọn àmì bilíọ̀nù 2.2 tó wà lóríta tí a fi hàn, ní àpẹẹrẹ òǹkà ìpinya dígítà ti ITU.",
+      "ringsSvgTitle": "Àwọn ìlérí",
+      "ringsAriaLabelTemplate": "Àwọn ìlérí {count} tó wà ní àárín tó ń di òrùn kan ti ìráyé gbogbo gbòò — àwọn òfin ìmọ̀ ẹ̀rọ tí àwọn ọjà gbogbo ń pèsè ní ìtújáde kọ̀ọ̀kan.",
+      "metaTitle": "Ìpèjúwe | Intelligent Singularity",
+      "metaDescription": "Ka ìpèjúwe wa lórí ṣíṣe sọ́fítíwérì ìpele-ilé-iṣẹ́ ní ẹ̀tọ́ ìpilẹ̀ṣẹ̀ fún òwò àti ènìyàn kọ̀ọ̀kan, lórí ayélujára tàbí láìsí ìsopọ̀."
     },
     "faq": {
+      "schemaName": "FAQ | Intelligent Singularity",
+      "schemaDescription": "Àwọn ìdáhùn olódodo nípa studio, àwọn ọjà wa, àwọn àṣà ìpamọ́, àti bí a ṣe lè bá Intelligent Singularity dá hùn.",
+      "breadcrumbCurrent": "FAQ",
       "openTheForm": "Open the form",
       "emailDirectly": "Email directly"
     },
     "pricing": {
+      "schemaName": "Imọ-ìmọ̀ Iye | Intelligent Singularity",
+      "schemaDescription": "Àwọn òfin iye wa: ìpele ọfẹ́, iye tó tọ́ fún àgbègbè, gbogbo ẹ̀yà nínú gbogbo ìpele, kò sí àjọṣe-ọjà.",
+      "breadcrumbCurrent": "Iye",
       "tierFree": "Free tier:",
       "tierPaid": "Paid tier:",
       "tierEnterprise": "Enterprise:",
@@ -210,9 +290,14 @@
       "workedExampleHeading": "The same product, three customers",
       "workedExampleBody": "A worked example — illustrative, not a price quote — to show how the six rules play out in practice. Specific numbers live on each product’s own page.",
       "viewThePortfolio": "View the portfolio",
-      "talkAboutPricing": "Talk about pricing"
+      "talkAboutPricing": "Talk about pricing",
+      "metaTitle": "Èrò Ìdiyele | Intelligent Singularity",
+      "metaDescription": "Bí a ṣe ń pinnu iye gbogbo ọjà: ìpele ọ̀fẹ́ títí láé, iye tí a ṣe àtúnṣe sí agbára ríra, gbogbo àwọn ohun-ìní nínú ìpele kọ̀ọ̀kan, iye tí a ti tẹ̀ jáde, kò sí ìtà nípasẹ̀ ìfọwọ́sí."
     },
     "careers": {
+      "schemaName": "Iṣẹ́ | Intelligent Singularity",
+      "schemaDescription": "Bí ilé iṣẹ́ ṣe ń gba ènìyàn àti bí ó ti rí láti ṣiṣẹ́ ní Intelligent Singularity.",
+      "breadcrumbCurrent": "Iṣẹ́",
       "howWeWorkHeading": "Bí a ṣe ń ṣiṣẹ́ ní gidi",
       "whatYouWouldWorkOnHeading": "Ohun tí ìwọ yóò ṣiṣẹ́ lórí ní gidi",
       "howWeHireHeading": "Bí a ṣe ń gba òṣìṣẹ́ jọ, láti ìbẹ̀rẹ̀ dé òpin",
@@ -220,7 +305,9 @@
       "updatedPrefix": "Ti ṣe àyípadà",
       "contactFormCta": "Fọ́ọ̀mù olùbátà",
       "whatYouWouldWorkOnLede": "Intelligent Singularity ni ilé-iṣẹ́ ìyá ti ìdílé tí ń dàgbà ti àwọn pèpéle. Àwọn òṣìṣẹ́ tuntun kì í ṣiṣẹ́ lórí ọjà kan ṣoṣo fún gbogbo ọdún — púpọ̀ ń yí láàárín méjì tàbí mẹ́ta, dá lórí ohun tí ń lọ ìfìsí àti ohun tí ó ṣe pàtàkì jù sí àwọn òṣìṣẹ́ àgbà ní àkókò mẹ́ta-mẹ́ta yẹn.",
-      "howWeHireLede": "Ìgbésẹ̀ mẹ́rin. Ó pọ̀jù ọ̀sẹ̀ méjì láti ìmẹ́ìlì àkọ́kọ́ dé ìfọ̀rọ̀wánilẹ́nuwò tí a kọ tí àwọn ẹ̀gbẹ́ méjèèjì bá yára. Kò sí ìgbésẹ̀ ìyàlẹ́nu, kò sí iṣẹ́ ilé tí kò ní owó, kò sí ìkọ̀sí \"ìbámu àṣà\" láì sí ìdí tí a kọ."
+      "howWeHireLede": "Ìgbésẹ̀ mẹ́rin. Ó pọ̀jù ọ̀sẹ̀ méjì láti ìmẹ́ìlì àkọ́kọ́ dé ìfọ̀rọ̀wánilẹ́nuwò tí a kọ tí àwọn ẹ̀gbẹ́ méjèèjì bá yára. Kò sí ìgbésẹ̀ ìyàlẹ́nu, kò sí iṣẹ́ ilé tí kò ní owó, kò sí ìkọ̀sí \"ìbámu àṣà\" láì sí ìdí tí a kọ.",
+      "metaTitle": "Iṣẹ́ | Intelligent Singularity",
+      "metaDescription": "Bí ilé-iṣẹ́ ṣe ń gba ènìyàn: ẹgbẹ́ kékeré, jíjìnnà, tí AI ti dí lágbára tí ó ń tú àwọn sọ́fítíwérì wíwọlé káríayé jáde. Àwọn ipò ìṣiṣẹ́ lọ́wọ́lọ́wọ́ àti ìpè títẹ̀síwájú láti fi ara rẹ hàn."
     },
     "press": {
       "factSheetHeading": "Ìwé àkọsílẹ̀ òtítọ́",
@@ -234,7 +321,10 @@
       "contactFormCta": "Fọ́ọ̀mù olùbátà",
       "boilerplateLede": "Àyọ̀kà kan, tí ó ṣetán fún ìfisí láti rán síta ìtàn ìròyìn. A ti fọwọ́sí lílò ọ̀rọ̀-ọ̀rọ̀.",
       "storyAnglesYesLede": "Tí ìtàn rẹ bá wà nínú ọ̀kan lára àwọn igun wọnyi, a ó yára láti jẹ́ kí olùdásílẹ̀, ènjíníà, tàbí olùdarí ọjà wà — sábà nínú ọjọ́ iṣẹ́ kan.",
-      "storyAnglesNoLede": "Òtítọ́ ní ìbẹ̀rẹ̀ ń tu àkókò gbogbo ènìyàn. A kì yóò pèsè àyọkà fún àwọn igun nísàlẹ̀. Sibẹsibẹ, a ó tọ́ ọ sí oníròyìn tàbí olùṣàyẹ̀wò tí iṣẹ́ rẹ̀ bá ìtàn náà mu jù lọ."
+      "storyAnglesNoLede": "Òtítọ́ ní ìbẹ̀rẹ̀ ń tu àkókò gbogbo ènìyàn. A kì yóò pèsè àyọkà fún àwọn igun nísàlẹ̀. Sibẹsibẹ, a ó tọ́ ọ sí oníròyìn tàbí olùṣàyẹ̀wò tí iṣẹ́ rẹ̀ bá ìtàn náà mu jù lọ.",
+      "breadcrumbCurrent": "Atẹ̀wé",
+      "schemaName": "Atẹ̀wé àti Media | Intelligent Singularity",
+      "schemaDescription": "Ìwé ìròhìn, ìwé òtítọ́, àwọn àlàyé tí a fọwọ́sí, àti olùbáṣepọ̀ tààrà fún àwọn akọ̀ròhìn àti olùṣèwádìí tó ń bo Intelligent Singularity."
     },
     "portfolio": {
       "eyebrow": "Àkójọpọ̀ iṣẹ́ · Àjọ Clap",
@@ -254,11 +344,25 @@
       "statThirdPartyLabel": "Ìpè ti ẹlẹ́gbẹ́ kẹta",
       "statThirdPartyValue": "Òfò",
       "statThirdPartyHint": "Tí a fi agbára múlò nípasẹ̀ CI ní gbogbo ìtu ọjà sílẹ̀",
-      "ecosystemStatsAria": "Ìṣirò ti àjọ"
+      "ecosystemStatsAria": "Ìṣirò ti àjọ",
+      "verticalLabel": "Inaro",
+      "publicAs": "Mọ̀ bí",
+      "breadcrumbCurrent": "Àkójọpọ̀ iṣẹ́",
+      "schemaName": "Àkójọpọ̀ iṣẹ́ | Intelligent Singularity",
+      "schemaDescription": "Ṣàwárí gbogbo ètò ìṣòro ti àwọn irinṣẹ́ 14 nínú àwọn iṣẹ́ ìṣòwò, ìlera, ìnáwó, ìṣẹ́ àgbẹ̀, ìròhìn, àti ìbáraẹnisọ̀rọ̀.",
+      "mosaicSvgTitle": "Àkójọpọ̀ àwòrán portfolio",
+      "mosaicAriaLabel": "Àwòrán àkójọpọ̀ tó ń fi àwọn pẹpẹ mẹ́jọ hàn nínú ètò Clap: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee àti Audiflo.",
+      "metaTitle": "Àpamọ́wọ́ | Intelligent Singularity",
+      "metaDescription": "Ṣàwárí ẹ̀rọ-àyíká pípé ti irinṣẹ́ 14 ní àwọn iṣẹ́ òwò, ìlera, owó, ọ̀gbìn, ìròyìn àti ìbániṣọ̀rọ̀.",
+      "productCountLabel": "{count, plural, other {Ọjà}}"
     },
     "contact": {
+      "schemaName": "Olùbáwí | Intelligent Singularity",
+      "schemaDescription": "Bá Intelligent Singularity sọ̀rọ̀ fún àjọṣepọ̀, ìròyìn, òfin, tàbí ìbéèrè ọjà nípa ètò sọfutiwia ìráyè-fún-gbogbo wa.",
+      "breadcrumbCurrent": "Olùbáwí",
       "eyebrow": "Olùbáwí · Ojú-tábìlì studio",
       "titleFallback": "Bá wa sọ̀rọ̀",
+      "formHeading": "Fọọmu olubasọrọ",
       "directChannelsLabel": "Àwọn orísun tààrà",
       "channels": {
         "general": {
@@ -307,16 +411,33 @@
       "factLanguagesLine2": "Pẹ̀lú Lárúbáwá àti Urdu RTL.",
       "factHostingLabel": "Hosting",
       "factHostingLine1": "VPS kanṣoṣo, Edmonton.",
-      "factHostingLine2": "Kò sí CDN ti ẹlẹ́gbẹ́ kẹta."
+      "factHostingLine2": "Kò sí CDN ti ẹlẹ́gbẹ́ kẹta.",
+      "metaTitle": "Kàn Sí Wa | Intelligent Singularity",
+      "metaDescription": "Kàn sí Intelligent Singularity fún àjọṣe, ìròyìn, ofin, tàbí ìbéèrè ọjà nípa ètò-àyíká sọ́fítíwérì wíwọlé káríayé wa."
+    },
+    "legal": {
+      "eyebrowLabel": "Òfin",
+      "lastUpdatedLabel": "Ìmúdòótun tó kẹ́yìn: {date}",
+      "tocLabel": "Lórí ojú-ìwé yìí"
     },
     "security": {
       "postureHeading": "Báwo ní à ṣe ń ṣàkóso ojú-opó àti pẹpẹ",
       "dataHeading": "Báwo ní à ṣe ń bójútó dátà rẹ",
       "complianceHeading": "Àwọn ìlànà tí à fọwọ́ rẹ̀ pàápàá",
       "complianceLede": "À ń tẹ̀lé àkójọ kéékèèké, tí a sọ orúkọ rẹ̀ ti àwọn ìlànà — a sì ń sọ òtítọ́ nípa àyẹ̀wò tí a kò tíì gbà.",
-      "privacyPolicyLink": "Ka ìlànà àbáwọlé"
+      "privacyPolicyLink": "Ka ìlànà àbáwọlé",
+      "breadcrumbCurrent": "Ààbò",
+      "schemaName": "Ààbò àti Ìgbẹ́kẹ̀lé | Intelligent Singularity",
+      "schemaDescription": "Àwọn iṣẹ́ ààbò àti ìṣàkóso dátà jákèjádò Intelligent Singularity: encryption, ìgbé-hosting fún ara wa, ọ̀rọ̀ pípè kẹ́ta odo, àti ìpamọ́ kúkúrú.",
+      "shieldSvgTitle": "Ipo ààbò",
+      "shieldAriaLabel": "Àpáta tó rọrùn tó ń ṣe àyàwòrán ipo ààbò: ìṣàkàwé TLS, ọ̀rọ̀ pípè kẹ́ta odo, àwọn àyíká ọjà ìyàsọ́tọ̀, ìpamọ́ kúkúrú àti àwọn olùṣe alábọ̀ tí a sọ orúkọ.",
+      "metaTitle": "Ààbò àti Ìgbẹ́kẹ̀lé | Intelligent Singularity",
+      "metaDescription": "Bí a ṣe ń dáàbò bo ojú-òpó yìí àti ọjà kọ̀ọ̀kan nínú àpamọ́wọ́ wa: TLS, kò sí ìpè sí ẹlòmíràn, ìpamọ́ kúkúrú, àdàkọ́ tí a ti dín, àti ìdáhùn òdodo sí àwọn ìṣẹ̀lẹ̀."
     },
     "green": {
+      "schemaName": "Ìpinnu Àyíká | Intelligent Singularity",
+      "schemaDescription": "Wo àwọn ìṣèlérí àyíká wa, ìmọ̀lára ìwúwo ojú-ìwé, àti ọ̀nà iṣẹ́ ayélujára wa tí ó ní àtẹ̀jáde kékeré.",
+      "breadcrumbCurrent": "Àyíká",
       "liveTelemetryEyebrow": "Aláwọ̀-ewé · Telemetry láàyè",
       "statThisPageLabel": "Ojú-ìwé yìí",
       "statThisPageHint": "HTML + CSS, kò sí olùtọpa",
@@ -375,11 +496,64 @@
           "value": "Lórí pẹpẹ",
           "hint": "Bíìì, àkọsílẹ̀ ìṣègùn, rasiti ń di díjítà bí àṣàrò. Bébà ọ́fíìsì, káàdì iṣẹ́, àti àwọn ohun-èlò ìpolówó ti a tẹ̀ jáde kò sí lára bí ó ṣe ń ṣiṣẹ́ wa."
         }
-      }
+      },
+      "metaTitle": "Ìṣèlérí Aláwọ̀-ewé | Intelligent Singularity",
+      "metaDescription": "Wo àwọn ìṣèlérí àyíká wa, fífúnni-ní-òye ìwúwo ojú-ìwé, àti ọ̀nà ìṣiṣẹ́ ojú-òpó pẹ̀lú ìmúsọfò kékeré."
     },
     "home": {
       "commitmentsKicker": "Nine non-negotiables",
-      "commitmentsAria": "The nine commitments"
+      "commitmentsAria": "The nine commitments",
+      "ddKicker": "Ọgọ́rùn-ún ènìyàn, tí a yà ní ìwọn",
+      "ddHeading": "Mẹ́rìndínlọ́gbọ̀n nínú gbogbo ọgọ́rùn-ún ènìyàn lórí ilẹ̀ ayé kò tíì ní ìríra dígítà rárá.",
+      "ddOnlineCount": "Bilíọ̀nù 5.9",
+      "ddOfflineCount": "Bilíọ̀nù 2.2",
+      "ddSourceFallback": "ITU Òtítọ́ àti Nọ́mbà 2025",
+      "ddSvgTitle": "Ta ni o wa lori ayelujara ati ta ni ko si",
+      "ddOnlineLabel": "lori ayelujara",
+      "ddOfflineLabel": "ko si lori ayelujara síbẹ̀",
+      "ddSourcePrefix": "Orisun",
+      "fieldNotesKicker": "Àkọsílẹ̀ ojúlówó",
+      "fieldNotesTitle": "Bí a ṣe ń ronú nípa kíkọ̀ èyí.",
+      "fieldNotesBody": "Àwọn àpilẹ̀kọ kúkurú àti tí ó dúró ṣinṣin láti ilé-iṣẹ́. À ń kọ̀wé pẹ̀lẹ́pẹ̀lẹ́ á sì ń ṣàfihàn ìpilẹ̀ orísun gbogbo nǹkan. Kò sí ìdánwò títẹ̀, kò sí kùuru ìdarí ọ̀rọ̀.",
+      "fieldNotesCta": "Ka àkọsílẹ̀ ojúlówó wa",
+      "flagshipsKicker": "Ile-iṣẹ́ · Irinṣẹ́ 14",
+      "flagshipsSeeAllCta": "Wo gbogbo ètò ìgbé",
+      "flagshipCardLabel": "Olórí",
+      "facts": {
+        "kicker": "Ìyàtọ̀ · Wíwọ̀n",
+        "sourceLabel": "ITU · 2025",
+        "sourceHeading": "Orísun",
+        "card1Caption": "Àwọn ènìyàn tí kò tí ì lo Íńtánẹ́ẹ̀tì. <accent>{pct}% ń gbé ní àwọn orílẹ̀-èdè tó wà nínú òṣì àti ààrín-ìpele.</accent>",
+        "card1Comparison": "≈ 26% ènìyàn",
+        "card2Caption": "Ìpín àwọn ènìyàn lórí ayélujára ní àwọn orílẹ̀-èdè òṣì. <accent>{pct}% ní àwọn orílẹ̀-èdè ọlọ́rọ̀.</accent>",
+        "card3Caption": "Ìbòmọ́lẹ̀ 5G ní àwọn orílẹ̀-èdè òṣì. Àwọn orílẹ̀-èdè ọlọ́rọ̀ wà ní <accent>{pct}%</accent>. Ìyàtọ̀ ìlọ́po ogún.",
+        "card3Comparison": "Ìyàtọ̀ 21×",
+        "card4Caption": "Àwọn ènìyàn ìgbèríko lórí ayélujára kárí ayé. Iye ìlú wà ní <accent>{pct}%</accent>. Ìyàtọ̀ láàárín ìlú àti ìgbèríko ṣì pọ̀."
+      },
+      "greenStrip": {
+        "eyebrow": "Risiiti Erogba Lailai",
+        "heading": "Gbogbo ìbẹ̀wò ní ń fi ipasẹ̀ agbára sílẹ̀. Èyí ni tiwa.",
+        "body": "A ṣe ìwọ̀n ìwúwo ojú-ìwé ní kilobytes àti carbon àyíká ní gram. Méjèèjì ń wà ní kékeré gan-an nítorí pé a kò fi ohunkóhun ránṣẹ́ tí a kò nílò — kò sí ránpẹ́ láti CDN, kò sí ìtọpa, kò sí àkọsílẹ̀ ìpamọ́ tí ń pe ilé.",
+        "pageWeightLabel": "Ojú-ìwé yìí wúwo",
+        "pageWeightUnit": "KB",
+        "pageWeightHint": "Owó-ìnáwó: ní isalẹ KB 50 fún ọ̀nà kọ̀ọ̀kan, gzip",
+        "carbonLabel": "Ìbẹ̀wò rẹ tu jáde",
+        "carbonHint": "Iṣiro pẹ̀lú àwòkọ́ṣe Green Web Foundation",
+        "hostingLabel": "Iṣẹ́ ìgbàlejò wa",
+        "hostingValue": "Ìgbà-ara-ẹni",
+        "hostingHint": "VPS kan ṣoṣo · kò sí CDN · grid Alberta",
+        "thirdPartyLabel": "Awọn ìpè ẹgbẹ́ kẹta",
+        "thirdPartyValue": "Òfo",
+        "thirdPartyHint": "Kò sí CDN, ránpẹ́, ìtúpalẹ̀, pixels"
+      },
+      "schemaName": "Intelligent Singularity | Sọ́fítíwérì fún àyè gbogbo gbò",
+      "schemaDescription": "Ilé-iṣẹ́ tó ní ìpinnu kan tó ń kọ́ sọ́fítíwérì tó ní AI ṣe iranlọ́wọ́ fún àyè gbogbo gbò ní iṣòwò, ìlera, ìnáwó, àti iṣẹ́.",
+      "metaTitle": "Intelligent Singularity | Sọ́fítíwérì fún Wíwọlé Káríayé",
+      "metaDescription": "Ilé-iṣẹ́ aláìnífẹ̀ẹ́-fún-èrè kan tí ó ń kọ́ sọ́fítíwérì tí AI ti dí lágbára fún wíwọlé káríayé nínú òwò, ìlera, owó àti iṣẹ́."
+    },
+    "offline": {
+      "metaTitle": "Lágbáyé | Intelligent Singularity",
+      "metaDescription": "Ojú-ìwé pínpín lágbáyé fún àwọn ìrírí ojú-òpó Intelligent Singularity."
     }
   },
   "topBar": {
@@ -402,7 +576,17 @@
     "offlineBody": "Ó dàbí pé o wà lódì sí ìkànnì. À ń ṣe ìránṣẹ́ ojú-ìwé yìí láti inú àkójọ ìmọ̀.",
     "offlineEyebrow": "Lódì sí ìkànnì",
     "offlineReturnHome": "Padà sí ilé",
-    "offlineTitle": "Kò sí ìsopọ̀ báyìí."
+    "offlineTitle": "Kò sí ìsopọ̀ báyìí.",
+    "opensInNewTab": "(ó ṣí ní àpótí tuntun)",
+    "emailLinkAriaLabel": "Fi imeeli ranṣẹ sí {email}",
+    "breadcrumbHome": "Ile",
+    "ogImageAlt": "Intelligent Singularity — Ètò-ìbánilò fún gbogbo ènìyàn.",
+    "visit": "Ṣàbẹ̀wò",
+    "schema": {
+      "organizationDescription": "Sítúdíò tó ń kọ́ sọ́fítíwérì fún ìráyà gbogbo ènìyàn.",
+      "founderDescription": "Olùdásílẹ̀ Intelligent Singularity, ń kọ́ sọ́fítíwérì fún ìráyà gbogbo ènìyàn pẹ̀lú iṣẹ́ tó ní ìjáfáfá tí AI ti pọ̀ sí i.",
+      "portfolioListName": "Àkójọpọ̀ Àwọn Ọjà Intelligent Singularity"
+    }
   },
   "languageWheel": {
     "navAria": "Èdè",

@@ -13,11 +13,12 @@ export async function generateMetadata({
   params,
 }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.insights' });
   return buildPageMetadata({
     locale,
     pathname: '/insights',
-    title: 'Insights | Intelligent Singularity',
-    description: 'Thinking in public: access, alignment, and the long arc of AI.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
@@ -145,8 +146,8 @@ export default async function InsightsIndex({
         data={getWebPageSchema({
           locale,
           pathname: '/insights',
-          name: 'Insights',
-          description: 'Thinking in public: access, alignment, and the long arc of AI.',
+          name: tInsights('schemaName'),
+          description: tInsights('schemaDescription'),
         })}
       />
       <JsonLd
@@ -154,8 +155,8 @@ export default async function InsightsIndex({
         data={getBreadcrumbSchema({
           locale,
           crumbs: [
-            { name: 'Home', pathname: '/' },
-            { name: 'Insights', pathname: '/insights' },
+            { name: t('breadcrumbHome'), pathname: '/' },
+            { name: tInsights('breadcrumbCurrent'), pathname: '/insights' },
           ],
         })}
       />
@@ -179,8 +180,10 @@ export default async function InsightsIndex({
       {docs.length === 0 ? (
         <EmptyState
           eyebrow={t('honestNote')}
-          title="Nothing published yet."
-          body="The first insight will appear here once it is ready. We write slowly and carefully."
+          title={tInsights('emptyTitle')}
+          body={tInsights('emptyBody')}
+          href={`/${locale}/insights/feed.xml`}
+          linkText={tInsights('emptyCta')}
         />
       ) : (
         <>
@@ -203,10 +206,11 @@ export default async function InsightsIndex({
               {currentPage > 1 ? (
                 <Link
                   href={`/${locale}/insights?page=${currentPage - 1}`}
+                  aria-label={tInsights('paginationNewerAria')}
                   className="text-[13px] uppercase tracking-[0.14em] transition-opacity hover:opacity-70"
                   style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
                 >
-                  ← Newer
+                  {tInsights('paginationNewer')}
                 </Link>
               ) : null}
               <span
@@ -218,10 +222,11 @@ export default async function InsightsIndex({
               {currentPage < totalPages ? (
                 <Link
                   href={`/${locale}/insights?page=${currentPage + 1}`}
+                  aria-label={tInsights('paginationOlderAria')}
                   className="text-[13px] uppercase tracking-[0.14em] transition-opacity hover:opacity-70"
                   style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-emerald-ink)' }}
                 >
-                  Older →
+                  {tInsights('paginationOlder')}
                 </Link>
               ) : null}
             </nav>

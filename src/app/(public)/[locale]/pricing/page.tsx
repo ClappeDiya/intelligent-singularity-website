@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { buildPageMetadata } from '@/lib/seo';
@@ -15,32 +13,32 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.pricing' });
   return buildPageMetadata({
     locale,
     pathname: '/pricing',
-    title: 'Pricing Philosophy | Intelligent Singularity',
-    description:
-      'How we price every product: free-forever tier, purchasing-power-adjusted rates, every feature in every tier, published prices, no contact sales.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
 async function PricingContent({ locale }: { locale: string }) {
   const t = await getTranslations('pages.pricing');
+  const tCommon = await getTranslations('common');
   const cmsPage = (await fetchPricingPage(locale).catch(() => null)) as any;
   const page: any = cmsPage ?? PRICING_PAGE_SEED;
 
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/pricing',
-    name: 'Pricing Philosophy | Intelligent Singularity',
-    description:
-      'Our pricing rules: free tier, fair-by-region pricing, every feature in every tier, no contact-sales.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Pricing', pathname: '/pricing' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/pricing' },
     ],
   });
 
@@ -240,7 +238,7 @@ async function PricingContent({ locale }: { locale: string }) {
       </section>
 
       <section
-        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6"
+        className="rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center gap-6"
         style={{
           border: '1px solid rgba(16,185,129,0.18)',
           background: 'linear-gradient(135deg, rgba(16,185,129,0.06), rgba(20,184,166,0.04))',
@@ -280,9 +278,5 @@ async function PricingContent({ locale }: { locale: string }) {
 
 export default async function PricingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <PricingContent locale={locale} />
-    </Suspense>
-  );
+  return <PricingContent locale={locale} />;
 }

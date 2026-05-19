@@ -2,10 +2,10 @@ import { extractHeadings } from '@/lib/richtext';
 
 export function RichTextTOC({
   content,
-  label = 'On this page',
+  label,
 }: {
   content: unknown;
-  label?: string;
+  label: string;
 }) {
   const headings = extractHeadings(content);
   if (headings.length < 3) return null;

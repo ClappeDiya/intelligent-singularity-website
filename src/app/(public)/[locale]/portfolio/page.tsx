@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-import { PageLoading } from '@/components/pages/shared/PageLoading';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { PortfolioGrid } from '@/components/pages/PortfolioGrid';
@@ -20,6 +18,7 @@ async function PortfolioContent({ locale }: { locale: string }) {
   const typedProducts = products as unknown as Product[];
   const typedCategories = categories as unknown as ProductCategory[];
   const t = await getTranslations('pages.portfolio');
+  const tCommon = await getTranslations('common');
 
   const total = typedProducts.length;
   const flagshipCount = typedProducts.filter((p) => p.isFlagship).length;
@@ -41,20 +40,19 @@ async function PortfolioContent({ locale }: { locale: string }) {
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/portfolio',
-    name: 'Portfolio | Intelligent Singularity',
-    description:
-      'Explore the full ecosystem of 14 tools across business operations, health, finance, agriculture, media, and communications.',
+    name: t('schemaName'),
+    description: t('schemaDescription'),
     type: 'CollectionPage',
   });
-  const itemListSchema = getPortfolioItemListSchema({
+  const itemListSchema = await getPortfolioItemListSchema({
     locale,
     products: typedProducts,
   });
   const breadcrumbSchema = getBreadcrumbSchema({
     locale,
     crumbs: [
-      { name: 'Home', pathname: '/' },
-      { name: 'Portfolio', pathname: '/portfolio' },
+      { name: tCommon('breadcrumbHome'), pathname: '/' },
+      { name: t('breadcrumbCurrent'), pathname: '/portfolio' },
     ],
   });
 
@@ -79,7 +77,10 @@ async function PortfolioContent({ locale }: { locale: string }) {
             'radial-gradient(900px 340px at 50% -20%, rgba(16,185,129,0.1), transparent 70%), var(--color-paper-soft)',
         }}
       >
-        <PortfolioMosaic />
+        <PortfolioMosaic
+          svgTitle={t('mosaicSvgTitle')}
+          ariaLabel={t('mosaicAriaLabel')}
+        />
       </figure>
 
       <section
@@ -120,20 +121,16 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.portfolio' });
   return buildPageMetadata({
     locale,
     pathname: '/portfolio',
-    title: 'Portfolio | Intelligent Singularity',
-    description:
-      'Explore the full ecosystem of 14 tools across business operations, health, finance, agriculture, media, and communications.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   });
 }
 
 export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <PortfolioContent locale={locale} />
-    </Suspense>
-  );
+  return <PortfolioContent locale={locale} />;
 }

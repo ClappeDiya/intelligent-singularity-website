@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { LOCALES } from '@/i18n/config';
 
 const DEV_FALLBACK_SITE_URL = 'http://localhost:3000';
@@ -48,17 +49,18 @@ export function buildLocaleAlternates(pathname: string): Record<string, string> 
   }, {});
 }
 
-export function buildPageMetadata(params: {
+export async function buildPageMetadata(params: {
   locale: string;
   pathname: string;
   title: string;
   description: string;
   noindex?: boolean;
-}): Metadata {
+}): Promise<Metadata> {
   const { locale, pathname, title, description, noindex = false } = params;
   const siteUrl = getSiteUrl();
   const canonical = new URL(localePath(locale, pathname), siteUrl).toString();
   const alternates = buildLocaleAlternates(pathname);
+  const tCommon = await getTranslations({ locale, namespace: 'common' });
 
   return {
     title,
@@ -79,7 +81,7 @@ export function buildPageMetadata(params: {
           url: new URL('/icons/og-image.png', siteUrl).toString(),
           width: 1200,
           height: 630,
-          alt: 'Intelligent Singularity — Software for universal access.',
+          alt: tCommon('ogImageAlt'),
         },
       ],
     },

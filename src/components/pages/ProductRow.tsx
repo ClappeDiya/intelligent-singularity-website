@@ -1,4 +1,5 @@
 import type { Product } from '@/types/cms';
+import { SrOpensInNewTab } from './shared/SrOpensInNewTab';
 
 const STATUS_DOT: Record<string, string> = {
   production: 'var(--color-mint)',
@@ -7,16 +8,18 @@ const STATUS_DOT: Record<string, string> = {
   infrastructure: '#7a8b9e',
 };
 
-const STATUS_LABEL: Record<string, string> = {
-  production: 'Live',
-  staging: 'Staging',
-  'awaiting-approval': 'Awaiting',
-  infrastructure: 'Infra',
-};
-
-export function ProductRow({ product }: { product: Product }) {
+export function ProductRow({
+  product,
+  publicAsLabel,
+  statusLabel,
+  visitLabel,
+}: {
+  product: Product;
+  publicAsLabel: string;
+  statusLabel: string;
+  visitLabel: string;
+}) {
   const dotColor = STATUS_DOT[product.productStatus] ?? 'rgba(26,22,18,0.3)';
-  const statusLabel = STATUS_LABEL[product.productStatus] ?? product.productStatus;
   const categoryName = typeof product.category === 'object' ? product.category?.name : '';
 
   return (
@@ -53,7 +56,7 @@ export function ProductRow({ product }: { product: Product }) {
           className="text-[12.5px] uppercase mb-3 -mt-1"
           style={{ fontFamily: 'var(--font-mono)', color: 'rgba(20,20,19,0.66)' }}
         >
-          Public as <span className="text-[var(--color-mint-ink)]">{product.publicName}</span>
+          {publicAsLabel} <span className="text-[var(--color-mint-ink)]">{product.publicName}</span>
         </div>
       ) : null}
       {product.tagline ? (
@@ -81,8 +84,8 @@ export function ProductRow({ product }: { product: Product }) {
           className="flex items-center gap-1.5 text-[12.5px] uppercase text-[var(--color-mint-ink)]"
           style={{ fontFamily: 'var(--font-mono)', fontWeight: 500 }}
         >
-          <span>Visit</span>
-          <span className="sr-only"> (opens in a new tab)</span>
+          <span>{visitLabel}</span>
+          <SrOpensInNewTab />
           <span className="transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
         </div>
       </div>
