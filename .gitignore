@@ -14,5 +14,6 @@ coverage/
 .ci/seed-snapshots/
 test-results/
 playwright-report/
+output/
 .lighthouse-results/
 .lighthouseci/
