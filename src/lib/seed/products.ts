@@ -61,16 +61,16 @@ export const PRODUCTS_SEED: ProductSeed[] = [
     outboundURL: 'https://nestbitt.com', productStatus: 'staging', isFlagship: false, ordering: 17 },
   { name: 'DailyWorship', slug: 'dailyworship', categorySlug: 'media-creative',
     tagline: 'Worship music for every community.', shortDescription: 'AI-powered worship music generation, open source.',
-    outboundURL: 'https://dailyworship.com', productStatus: 'staging', isFlagship: false, ordering: 18 },
+    outboundURL: 'https://dailyworship.net', productStatus: 'staging', isFlagship: false, ordering: 18 },
 
   // Communications & Infra
   { name: 'Gclap', slug: 'gclap', categorySlug: 'communications-data',
     tagline: 'Email for everyone.', shortDescription: 'Open-source AI-integrated email & marketing platform.',
-    outboundURL: 'https://gclap.com', productStatus: 'staging', isFlagship: false, ordering: 20 },
+    outboundURL: 'https://staging.gclap.com', productStatus: 'staging', isFlagship: false, ordering: 20 },
   { name: 'FileManager', slug: 'filemanager', categorySlug: 'communications-data',
     tagline: 'Organize everything.', shortDescription: 'Unified cross-platform file operations, transfer, sync, governance.',
     outboundURL: 'https://filemanager.clappe.com', productStatus: 'staging', isFlagship: false, ordering: 21 },
   { name: 'RateAds / Feedback Hub', slug: 'rateads', categorySlug: 'communications-data',
     tagline: 'Listen to your community.', shortDescription: 'Survey and feedback platform for every community — enterprise, citizen, underserved.',
-    outboundURL: 'https://rateads.com', productStatus: 'staging', isFlagship: false, ordering: 22 },
+    outboundURL: 'https://rateads.us', productStatus: 'staging', isFlagship: false, ordering: 22 },
 ];
