@@ -42,7 +42,7 @@ export const TRUST_PAGE_SEED = {
         { label: 'First-paint budget per route', value: '50 KB, gzip' },
         { label: 'External fonts loaded', value: '0 — all fonts served from our origin' },
         { label: 'External images loaded', value: '0' },
-        { label: 'Renewable-energy commitment', value: 'match 100% of grid power at the hosting partner' },
+        { label: 'Hosting grid mix', value: 'mixed grid · watching for a cleaner option' },
       ],
     },
     {
@@ -55,7 +55,7 @@ export const TRUST_PAGE_SEED = {
         { label: 'Automated axe-core violations', value: '0' },
         { label: 'Languages shipped on day one', value: '14' },
         { label: 'Minimum body-text contrast ratio', value: '7 : 1' },
-        { label: 'External accessibility audits per year', value: '2' },
+        { label: 'Accessibility target', value: 'WCAG 2.2 AA · enforced by axe-core on every build' },
       ],
     },
   ],
