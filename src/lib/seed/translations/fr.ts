@@ -56,8 +56,7 @@ export const TRANSLATION: LocaleTranslation = {
       'Ce site Web est le plus petit exemple de ce que nous construisons. Mesur\u00e9 en direct, ci-dessous.',
     environmentalStanceText:
       'Chaque page de ce site p\u00e8se moins de 50\u00a0Ko au premier affichage. Aucun traqueur tiers, aucun appel analytique, aucune publicit\u00e9 \u2014 uniquement du contenu. C\u2019est notre norme : la l\u00e9g\u00e8ret\u00e9 est une forme de respect, tant pour vos donn\u00e9es que pour la plan\u00e8te.',
-    hostingStoryText:
-      'H\u00e9berg\u00e9 sur un seul VPS Contabo Cloud dans le centre des \u00c9tats-Unis, aliment\u00e9 \u00e0 100\u00a0% par de l\u2019\u00e9nergie renouvelable. Pas de CDN, pas de d\u00e9pendance \u00e0 un hyperscaler, pas de centres de donn\u00e9es r\u00e9partis sur trois continents \u2014 un seul serveur, auto-h\u00e9berg\u00e9, simple.',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText:
       'Tout ce que nous construisons doit servir les g\u00e9n\u00e9rations qui suivent. C\u2019est la contrainte que nous nous imposons, pour toujours.',
   },
@@ -75,7 +74,7 @@ export const TRANSLATION: LocaleTranslation = {
 
   trust: {
     dataResidencyText:
-      "Ce site Web réside sur un seul serveur virtuel dans un centre de données nommé à Edmonton, en Alberta, au Canada. Aucun réseau de diffusion de contenu ne se trouve devant. Lorsque la page se charge dans votre navigateur, votre navigateur parle directement à notre machine. Rien ne s’interpose pour copier, mettre en cache ou lire votre trafic.\n\nNos sauvegardes chiffrées tournent sur un cycle de trente jours. Elles ne quittent jamais la région du centre de données. Elles sont protégées au repos par une clé que seules deux personnes de notre équipe peuvent déverrouiller.",
+      "This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.",
     reportIncidentText:
       "Vous avez trouvé une faille, un bogue ou quelque chose qui semble simplement anormal ? Écrivez à security@intelligentsingularityinc.com. Nous répondons sous un jour ouvré, travaillons avec vous sur le correctif et créditons nommément le rapporteur dans l’avis public une fois le problème corrigé — sauf si vous nous demandez de ne pas le faire.\n\nNous ne poursuivons jamais en justice les chercheurs qui respectent les conditions de divulgation responsable sur /security.",
   },
@@ -106,8 +105,8 @@ export const TRANSLATION: LocaleTranslation = {
       body: 'Aucun pixel de suivi, aucun script analytique, aucune r\u00e9gie publicitaire. Votre activit\u00e9 vous appartient.',
     },
     {
-      title: 'Auto-h\u00e9berg\u00e9 sur \u00e9nergie renouvelable',
-      body: 'Toute l\u2019infrastructure fonctionne sur un h\u00e9bergement aliment\u00e9 \u00e0 100\u00a0% par de l\u2019\u00e9nergie renouvelable.',
+      title: 'Transparence carbone par visite',
+      body: 'Chaque visite est mesur\u00e9e en grammes de CO\u2082 et affich\u00e9e dans la barre de statut. Pas de cr\u00e9dits carbone ni de compensations.',
     },
     {
       title: 'Seuil fonctionnel sur appareils \u00e0 50\u00a0$',

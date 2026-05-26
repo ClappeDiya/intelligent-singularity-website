@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: 'আমাদের সবুজ অঙ্গীকার',
     lead: 'এই ওয়েবসাইট আমরা যা তৈরি করি তার ক্ষুদ্রতম প্রতিচ্ছবি। নিচে সরাসরি পরিমাপের তথ্য দেওয়া হলো।',
-    environmentalStanceText: 'এই সাইটের প্রতিটি পৃষ্ঠার প্রথম লোড 50 KB-র বেশি নয়। প্রতিটি ভিজিটে কার্বন নির্গমন গ্রামে পরিমাপ করা হয় এবং উপরের স্ট্যাটাস বারে আপনাকে দেখানো হয়। আমরা নবায়নযোগ্য জ্বালানি ব্যবহার করে হোস্ট করি। আমরা শূন্য তৃতীয়-পক্ষ ট্র্যাকার ব্যবহার করি। আমরা আমাদের কার্বন নির্গমন সম্পর্কে সম্পূর্ণ স্বচ্ছ, কারণ পরবর্তী প্রজন্ম আমাদের দিকে তাকিয়ে আছে।',
-    hostingStoryText: 'মার্কিন যুক্তরাষ্ট্রের মধ্যাঞ্চলে একটিমাত্র Contabo ক্লাউড VPS-এ হোস্টেড। কোনো CDN নেই। কোনো তৃতীয়-পক্ষ সেবা নেই। একটিমাত্র অরিজিন, CrowdSec, Traefik এবং Let\'s Encrypt দিয়ে সুরক্ষিত।',
+    environmentalStanceText: 'এই সাইটের প্রতিটি পৃষ্ঠার প্রথম লোড 50 KB-র বেশি নয়। প্রতিটি ভিজিটে কার্বন নির্গমন গ্রামে পরিমাপ করা হয় এবং উপরের স্ট্যাটাস বারে আপনাকে দেখানো হয়। আমরা শূন্য তৃতীয়-পক্ষ ট্র্যাকার ব্যবহার করি। আমরা আমাদের কার্বন নির্গমন সম্পর্কে সম্পূর্ণ স্বচ্ছ, কারণ পরবর্তী প্রজন্ম আমাদের দিকে তাকিয়ে আছে।',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText: 'আমরা যা কিছু তৈরি করি, তা অবশ্যই পরবর্তী প্রজন্মের সেবায় নিয়োজিত হতে হবে। এটি এমন একটি বাধ্যবাধকতা যা আমরা চিরকাল ধরে রাখব।',
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      'এই ওয়েবসাইটটি কানাডার আলবার্টার এডমন্টনে একটি নির্দিষ্ট ডেটা সেন্টারে একটি একক ভার্চুয়াল সার্ভারে অবস্থান করে। এর সামনে কোনো কন্টেন্ট ডেলিভারি নেটওয়ার্ক নেই। যখন পৃষ্ঠাটি আপনার ব্রাউজারে লোড হয়, আপনার ব্রাউজার সরাসরি আমাদের মেশিনের সঙ্গে কথা বলে। মাঝখানে আপনার ট্র্যাফিক অনুলিপি, ক্যাশ বা পড়ার জন্য কিছুই বসে নেই।\n\nআমাদের এনক্রিপ্টেড ব্যাকআপগুলি ত্রিশ দিনের চক্রে ঘোরে। সেগুলি কখনো ডেটাসেন্টার অঞ্চল ছেড়ে যায় না। সেগুলি বিশ্রামে এমন একটি কী দিয়ে সুরক্ষিত যা আমাদের দলের মাত্র দু’জন মানুষ আনলক করতে পারে।',
+      'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
       'কোনো দুর্বলতা, বাগ বা এমন কিছু পেয়েছেন যা কেবল ভুল মনে হচ্ছে? security@intelligentsingularityinc.com-এ লিখুন। আমরা এক কার্যদিবসের মধ্যে উত্তর দিই, সমাধানে আপনার সাথে কাজ করি, এবং সমস্যা প্যাচ হওয়ার পরে সর্বজনীন পরামর্শে রিপোর্টকারীকে নাম ধরে কৃতিত্ব দিই — যদি না আপনি আমাদের তা না করতে বলেন।\n\nযে গবেষকরা /security-এর দায়িত্বশীল-প্রকাশের শর্তাবলী অনুসরণ করেন আমরা তাদের কখনো মামলা করি না।',
   },

@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: 'Ìlérí Àyíká Wa',
     lead: 'Oju-ìwé ayélujára yìí jẹ́ àpẹẹrẹ tó kéré jùlọ ti ohun tí a ń kọ́. Nísàlẹ̀ ni àwọn ìwọ̀n gidi.',
-    environmentalStanceText: 'Gbogbo ojú-ìwé lórí oju-ìwé ayélujára yìí ń gba kò tó 50 KB fún ìgbàkọ́kọ́. Carbon tí ìbẹ̀wò kọ̀ọ̀kan ń mú jáde ni a ń wọ̀n ní giráàmù, a sì ṣàfihàn rẹ̀ ní ìlà ìpò ní okè fún ẹ. A ń lo agbára ìṣàtúnṣe láti gbé oju-ìwé wa. A ní olùtọpinpin ẹlẹ́kẹta lásán. A ṣe kedere pátápátá nípa ìtújáde carbon wa, nítorí ìràn tó ń bọ̀ ń wò wá.',
-    hostingStoryText: 'Tí a gbé sórí ológùn Contabo VPS kan ṣoṣo ní àárín ilẹ̀ Amẹ́ríkà. Kò sí CDN. Kò sí iṣẹ́ ẹlẹ́kẹta. Orísun kan ṣoṣo, tí a fi CrowdSec, Traefik àti Let\'s Encrypt dáàbò bò.',
+    environmentalStanceText: 'Gbogbo ojú-ìwé lórí oju-ìwé ayélujára yìí ń gba kò tó 50 KB fún ìgbàkọ́kọ́. Carbon tí ìbẹ̀wò kọ̀ọ̀kan ń mú jáde ni a ń wọ̀n ní giráàmù, a sì ṣàfihàn rẹ̀ ní ìlà ìpò ní okè fún ẹ. A ní olùtọpinpin ẹlẹ́kẹta lásán. A ṣe kedere pátápátá nípa ìtújáde carbon wa, nítorí ìràn tó ń bọ̀ ń wò wá.',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText: 'Gbogbo ohun tí a bá kọ́ gbọ́dọ̀ sin àwọn ìràn tó ń bọ̀ lẹ́yìn wa. Ìhámọ́ yìí ni a ó máa kó fún ara wa láìlái.',
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      'Ìkànnì wẹ́ẹ̀bù yìí ń gbé lórí olùsìn ìṣẹ̀dá kan ṣoṣo nínú ilé ìkàwé dátà kan tó ní orúkọ ní Edmonton, Alberta, Canada. Kò sí nẹ́tíwọ́ọ̀kì ìpèsè àkóónú ní iwájú rẹ̀. Nígbà tí ojú-òpó wẹ́ẹ̀bù bá kojú nínú aṣàwákiri rẹ, aṣàwákiri rẹ ń sọ̀rọ̀ tààrà pẹ̀lú ẹ̀rọ wa. Kò sí ohun tó dúró láàrín láti dàbí, fi pamọ́ sí ibi ìpamọ́ tó tó tàbí láti ka ìjókòó rẹ.\n\nÀwọn ẹ̀dà ìpamọ́ wa tí a ti fi ìkọ̀kọ̀ kọwé ń yí lórí ìyípadà ọgbọ̀n ọjọ́. Wọn kì í fi agbègbè ilé-ìkàwé dátà sílẹ̀ rí. Wọ́n ní ààbò ní ìsinmi pẹ̀lú kọ́kọ́rọ́ kan tí ènìyàn méjì péré nínú ẹgbẹ́ wa lè ṣí.',
+      'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
       'Ṣé o ti rí àìlera, àbùkù, tàbí ohunkóhun tó kàn dàbí pé ó tàsé? Kọ ìwé sí security@intelligentsingularityinc.com. A ó dáhùn nínú ọjọ́ iṣẹ́ kan, a ó bá ọ ṣe àtúnṣe, a ó sì darí orúkọ olùròyìn ní ìṣípayá gbangba lẹ́yìn tí a bá ti tún ìṣòro náà ṣe — àyàfi tí o bá béèrè pé kí a má ṣe bẹ́ẹ̀.\n\nA kì í pe àwọn olùṣèwádìí lẹ́jọ́ tí wọ́n bá tẹ̀lé àwọn ìtọ́kasí ìṣípayá tó nírònú lórí /security.',
   },

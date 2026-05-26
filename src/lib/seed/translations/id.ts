@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: 'Ikrar Hijau Kami',
     lead: 'Situs web ini adalah contoh terkecil dari apa yang kami bangun. Diukur secara langsung, di bawah ini.',
-    environmentalStanceText: 'Setiap halaman di situs ini berukuran kurang dari 50 KB pada pemuatan pertama. Setiap kunjungan diukur dalam gram CO\u2082 dan ditampilkan kepada Anda secara jujur di bilah status atas. Kami menggunakan hosting energi terbarukan. Kami menggunakan nol pelacak pihak ketiga. Kami transparan secara radikal tentang emisi kami, karena generasi berikutnya sedang mengawasi.',
-    hostingStoryText: 'Dihosting pada satu VPS Cloud Contabo di US Central. Tanpa CDN. Tanpa pihak ketiga. Satu server asal, diperkuat dengan CrowdSec, Traefik, dan Let\'s Encrypt.',
+    environmentalStanceText: 'Setiap halaman di situs ini berukuran kurang dari 50 KB pada pemuatan pertama. Setiap kunjungan diukur dalam gram CO\u2082 dan ditampilkan kepada Anda secara jujur di bilah status atas. Kami menggunakan nol pelacak pihak ketiga. Kami transparan secara radikal tentang emisi kami, karena generasi berikutnya sedang mengawasi.',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText: 'Semua yang kami bangun harus melayani generasi yang datang setelah kita. Itulah batasan yang kami pegang teguh, selamanya.',
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      'Situs web ini tinggal di satu server virtual di pusat data bernama di Edmonton, Alberta, Kanada. Tidak ada jaringan pengiriman konten di depannya. Ketika halaman dimuat di peramban Anda, peramban Anda berbicara langsung dengan mesin kami. Tidak ada apa pun di tengah yang menyalin, menyimpan dalam cache, atau membaca lalu lintas Anda.\n\nCadangan terenkripsi kami berputar dalam siklus tiga puluh hari. Cadangan itu tidak pernah meninggalkan wilayah pusat data. Cadangan dilindungi saat diam dengan kunci yang hanya dapat dibuka oleh dua orang di tim kami.',
+      'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
       'Menemukan kelemahan, bug, atau sesuatu yang sekadar terlihat salah? Tulis ke security@intelligentsingularityinc.com. Kami menjawab dalam satu hari kerja, bekerja sama dengan Anda untuk memperbaikinya, dan menyebut nama pelapor dalam pengumuman publik setelah masalah ditambal — kecuali Anda meminta sebaliknya.\n\nKami tidak pernah menuntut peneliti yang mengikuti ketentuan pengungkapan bertanggung jawab di /security.',
   },

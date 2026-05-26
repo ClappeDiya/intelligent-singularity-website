@@ -90,7 +90,7 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'Where is my data stored?',
-          a: 'When you contact us, your message is sent by email to a self-hosted inbox in Alberta, Canada. We do not store it in a database on this site. Product-specific data (when you sign up for one of our tools) is described in that product’s own privacy policy on its own domain.',
+          a: 'When you contact us, your message is sent by email to an inbox in Alberta, Canada. We do not store it in a database on this site. Product-specific data (when you sign up for one of our tools) is described in that product’s own privacy policy on its own domain.',
         },
         {
           q: 'Can I delete data you hold about me?',

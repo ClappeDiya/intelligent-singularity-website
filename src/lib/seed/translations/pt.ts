@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: 'Nosso Compromisso Verde',
     lead: 'Este site é o menor reflexo daquilo que construímos. Abaixo, dados medidos em tempo real.',
-    environmentalStanceText: 'Cada página deste site carrega menos de 50 KB no primeiro acesso. As emissões de carbono por visita são medidas em gramas e exibidas com transparência na barra de status superior. Utilizamos hospedagem com energia renovável. Utilizamos zero rastreadores de terceiros. Somos radicalmente transparentes com nossas emissões de carbono, porque a próxima geração está observando.',
-    hostingStoryText: 'Hospedado em um único VPS Contabo na região central dos Estados Unidos. Sem CDN. Sem serviços de terceiros. Origem única, protegida com CrowdSec, Traefik e Let\'s Encrypt.',
+    environmentalStanceText: 'Cada página deste site carrega menos de 50 KB no primeiro acesso. As emissões de carbono por visita são medidas em gramas e exibidas com transparência na barra de status superior. Utilizamos zero rastreadores de terceiros. Somos radicalmente transparentes com nossas emissões de carbono, porque a próxima geração está observando.',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText: 'Tudo o que construímos deve servir às gerações que virão depois de nós. Essa é a restrição que jamais flexibilizaremos.',
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      'Este sítio Web vive num único servidor virtual num centro de dados identificado em Edmonton, Alberta, Canadá. Não há nenhuma rede de distribuição de conteúdos à frente. Quando a página carrega no seu navegador, o seu navegador fala diretamente com a nossa máquina. Nada se intromete pelo meio para copiar, colocar em cache ou ler o seu tráfego.\n\nAs nossas cópias de segurança encriptadas rodam num ciclo de trinta dias. Nunca saem da região do centro de dados. Estão protegidas em repouso com uma chave que apenas duas pessoas da nossa equipa conseguem desbloquear.',
+      'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
       'Encontrou uma fragilidade, um erro ou algo que simplesmente parece estar errado? Escreva para security@intelligentsingularityinc.com. Respondemos no prazo de um dia útil, trabalhamos consigo na correção e creditamos pelo nome quem reportou no aviso público assim que o problema for corrigido — a menos que nos peça o contrário.\n\nNunca processamos investigadores que sigam os termos de divulgação responsável em /security.',
   },

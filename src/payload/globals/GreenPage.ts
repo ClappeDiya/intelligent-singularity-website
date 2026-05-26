@@ -14,7 +14,7 @@ export const GreenPage: GlobalConfig = {
     { name: 'hostingStory', type: 'richText', required: true, localized: true },
     { name: 'futureGenerationPledge', type: 'richText', required: true, localized: true },
     { name: 'hostingGreenRatio', type: 'number', required: true, defaultValue: 0.8, admin: {
-      description: 'Used for carbon calculation. Update when Contabo DC mix is verified.',
+      description: 'Used for carbon calculation. Update when an independent grid-mix figure is verified.',
     } },
   ],
 };

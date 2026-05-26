@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: "Alkawarinmu na Kore",
     lead: "Wannan gidan yanar gizon shi ne mafi ƙaramin misali na abin da muke ginawa. Ana aunsa a kai a kai, a ƙasa.",
-    environmentalStanceText: "Kowace shafi a wannan gidan yanar gizon tana da nauyi ƙasa da 50 KB a farkon lodi. Ana auna kowace ziyara a cikin giramu na CO₂ kuma ana nuna ta a fili a saman shafin. Muna ɗaukar nauyin manhaja a kan makamashin da ake sabuntawa. Muna amfani da sifili na masu bin diddigi na waje. Muna da cikakken gaskiya game da abin da muke fitarwa, domin tsara mai zuwa tana kallo.",
-    hostingStoryText: "Ana ɗaukar nauyi a kan VPS ɗaya na Contabo Cloud a tsakiyar Amurka. Babu CDN. Babu na waje. Asali ɗaya, an ƙarfafa shi da CrowdSec, Traefik da Let\u2019s Encrypt.",
+    environmentalStanceText: "Kowace shafi a wannan gidan yanar gizon tana da nauyi ƙasa da 50 KB a farkon lodi. Ana auna kowace ziyara a cikin giramu na CO₂ kuma ana nuna ta a fili a saman shafin. Muna amfani da sifili na masu bin diddigi na waje. Muna da cikakken gaskiya game da abin da muke fitarwa, domin tsara mai zuwa tana kallo.",
+    hostingStoryText: "Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let's Encrypt.",
     futureGenerationPledgeText: "Duk abin da muke ginawa dole ne ya yi hidima ga tsararraki masu zuwa bayanmu. Wannan ita ce ƙa'ida da muka ɗora wa kanmu, har abada.",
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      "Wannan gidan yanar gizo yana zama akan sabar ɗaya ta ƙirar gani a wani sanannen cibiyar bayanai a Edmonton, Alberta, Kanada. Babu hanyar isar da abun ciki a gabansa. Lokacin da shafin ya ɗauka cikin mai bincikenku, mai bincikenku yana magana kai tsaye da na'urar mu. Babu wani abu da yake tsakanin don kwafe, ajiyewa, ko karanta zirga-zirgar ku.\n\nBackup ɗinmu da aka ɓoye suna juyawa cikin zagayowar kwana talatin. Ba sa fita daga yankin cibiyar bayanai. Ana kare su a hutawa da maɓalli wanda mutane biyu kawai a cikin ƙungiyarmu za su iya buɗewa.",
+      "This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.",
     reportIncidentText:
       "Kun gano rauni, kuskure, ko wani abu da kawai yake bayyana ba daidai ba? Rubuta zuwa security@intelligentsingularityinc.com. Muna amsa cikin ranar aiki ɗaya, muna aiki tare da ku akan gyaran, kuma muna ƙididdige sunan mai bayar da rahoto a cikin sanarwa ta jama'a da zarar an gyara matsalar — sai dai idan kun nemi mu kar mu yi haka.\n\nBa za mu taɓa kai masu bincike kotu ba waɗanda suke bin sharuɗɗan bayyana lallashi a /security.",
   },

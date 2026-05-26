@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: 'ہمارا سبز عزم',
     lead: 'یہ ویب سائٹ ہماری تعمیرات کا ایک چھوٹا نمونہ ہے۔ یہ اعداد و شمار حقیقی وقت میں ماپے گئے ہیں۔',
-    environmentalStanceText: 'اس سائٹ کا ہر صفحہ پہلی لوڈنگ میں ۵۰ کلو بائٹ سے کم ہے۔ ہر وزٹ سے پیدا ہونے والا کاربن اخراج گراموں میں ماپا جاتا ہے اور اوپر اسٹیٹس بار میں آپ کو دکھایا جاتا ہے۔ ہم قابلِ تجدید توانائی پر میزبانی کرتے ہیں۔ ہم صفر فریقِ ثالث ٹریکرز استعمال کرتے ہیں۔ ہم اپنے کاربن اخراج کے بارے میں مکمل طور پر شفاف ہیں — کیونکہ آنے والی نسلیں ہمیں دیکھ رہی ہیں۔',
-    hostingStoryText: 'امریکہ کے وسطی حصے میں واحد Contabo کلاؤڈ VPS پر میزبانی۔ کوئی CDN نہیں۔ کوئی فریقِ ثالث خدمات نہیں۔ واحد اصل سرور، CrowdSec، Traefik اور Let\'s Encrypt سے محفوظ۔',
+    environmentalStanceText: 'اس سائٹ کا ہر صفحہ پہلی لوڈنگ میں ۵۰ کلو بائٹ سے کم ہے۔ ہر وزٹ سے پیدا ہونے والا کاربن اخراج گراموں میں ماپا جاتا ہے اور اوپر اسٹیٹس بار میں آپ کو دکھایا جاتا ہے۔ ہم صفر فریقِ ثالث ٹریکرز استعمال کرتے ہیں۔ ہم اپنے کاربن اخراج کے بارے میں مکمل طور پر شفاف ہیں — کیونکہ آنے والی نسلیں ہمیں دیکھ رہی ہیں۔',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText: 'ہم جو کچھ بھی تعمیر کرتے ہیں، اسے آنے والی نسلوں کی خدمت کرنی چاہیے۔ یہ وہ شرط ہے جو ہم اپنے آپ پر ہمیشہ قائم رکھیں گے۔',
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      'یہ ویب سائٹ کینیڈا کے البرٹا میں ایڈمنٹن کے ایک نامزد ڈیٹا سینٹر میں ایک ہی ورچوئل سرور پر رہتی ہے۔ اس کے سامنے کوئی کانٹینٹ ڈلیوری نیٹ ورک نہیں ہے۔ جب پیج آپ کے براؤزر میں لوڈ ہوتا ہے، تو آپ کا براؤزر براہ راست ہماری مشین سے بات کر رہا ہوتا ہے۔ درمیان میں آپ کی ٹریفک کو نقل، کیش یا پڑھنے کے لیے کچھ بھی نہیں بیٹھا۔\n\nہمارا انکرپٹڈ بیک اپ تیس دن کے سائیکل پر گھومتا ہے۔ یہ کبھی ڈیٹا سینٹر کے علاقے سے باہر نہیں جاتا۔ یہ آرام کی حالت میں ایک ایسی کلید سے محفوظ ہے جسے ہماری ٹیم میں صرف دو لوگ کھول سکتے ہیں۔',
+      'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
       'کوئی کمزوری، بگ، یا کوئی ایسی چیز ملی جو محض غلط لگتی ہو؟ security@intelligentsingularityinc.com پر لکھیں۔ ہم ایک کاروباری دن کے اندر جواب دیتے ہیں، آپ کے ساتھ مل کر اسے درست کرتے ہیں، اور مسئلہ پیچ ہونے کے بعد عوامی مشورہ نامے میں رپورٹ کرنے والے کا نام لے کر اعتراف کرتے ہیں — جب تک کہ آپ ہم سے ایسا نہ کرنے کو نہ کہیں۔\n\nہم ان محققین پر کبھی مقدمہ نہیں چلاتے جو /security پر ذمہ دارانہ افشا کی شرائط کی پیروی کرتے ہیں۔',
   },

@@ -158,7 +158,7 @@ const PRIVACY = doc([
 
   h('h2', 'Where your information lives'),
   p(
-    'Our servers sit inside Alberta, Canada, in a named datacentre we rent from our hosting partner. Email passes through our self-hosted mail server on the same network, protected with TLS. There is no content delivery network in front of the website, so when the page loads in your browser it is speaking directly to our machine and nothing in the middle.',
+    'Our servers and mail infrastructure are located in Canada, with traffic protected by TLS. There is no content delivery network in front of the website, so when the page loads in your browser it is speaking directly to our origin and nothing in the middle.',
   ),
   p(
     'If you are writing to us from outside Canada, your message will travel to Canada to be read. We treat that message with the same care we would for a person sending it from next door. Canada is a country recognised by the European Union as offering an "adequate" level of data protection, so personal data sent from the European Economic Area or the United Kingdom moves under that adequacy decision.',

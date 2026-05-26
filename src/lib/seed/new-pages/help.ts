@@ -102,7 +102,7 @@ export const HELP_PAGE_SEED = {
     {
       question: 'Where is the company based?',
       answer:
-        'We are incorporated in Alberta, Canada. The team is fully remote and works across time zones. Our servers run in Edmonton, Alberta.',
+        'We are incorporated in Alberta, Canada. The team is fully remote and works across time zones.',
     },
     {
       question: 'Are you a charity or a for-profit company?',

@@ -40,7 +40,7 @@ export const TRUST_PAGE_SEED = {
       href: '/green',
       proof: [
         { label: 'First-paint budget per route', value: '50 KB, gzip' },
-        { label: 'External fonts loaded', value: '0 — every font is self-hosted' },
+        { label: 'External fonts loaded', value: '0 — all fonts served from our origin' },
         { label: 'External images loaded', value: '0' },
         { label: 'Renewable-energy commitment', value: 'match 100% of grid power at the hosting partner' },
       ],
@@ -71,30 +71,30 @@ export const TRUST_PAGE_SEED = {
       href: 'https://letsencrypt.org',
     },
     {
-      name: 'Mailcow (self-hosted)',
+      name: 'Mailcow',
       purpose:
-        'Delivers email between our contact form and our reply inbox, on a mail server we run ourselves.',
+        'Delivers email between our contact form and our reply inbox.',
       dataAccessed:
         'The message you send, only while we are reading and answering it.',
-      location: 'Our own server in Edmonton, Alberta, Canada',
+      location: 'Canada',
       href: 'https://mailcow.email',
     },
     {
       name: 'Contabo',
       purpose:
-        'Rents us the physical server and encrypted storage where the website lives.',
+        'Provides the physical server and encrypted storage where the website lives.',
       dataAccessed:
         'Encrypted disk volumes only. The hosting team does not read site content.',
-      location: 'Edmonton, Alberta, Canada (data centre region)',
+      location: 'Canada (data centre region)',
       href: 'https://contabo.com',
     },
     {
       name: 'Dokploy',
       purpose:
-        'Releases new versions of the website onto our own server, in our own network.',
+        'Releases new versions of the website onto our infrastructure.',
       dataAccessed:
-        'Runs inside our VPS. It never sends data outside the machine it runs on.',
-      location: 'Our own server',
+        'Runs inside our infrastructure. It never sends data outside the machine it runs on.',
+      location: 'Our infrastructure',
       href: 'https://dokploy.com',
     },
   ],
@@ -106,7 +106,7 @@ export const TRUST_PAGE_SEED = {
           type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0,
           children: [{
             type: 'text', version: 1, mode: 'normal', detail: 0, format: 0, style: '',
-            text: 'This website lives on one virtual server in a named data centre in Edmonton, Alberta, Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our machine. Nothing sits in the middle to copy, cache, or read your traffic.',
+            text: 'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.',
           }],
         },
         {

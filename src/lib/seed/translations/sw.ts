@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: 'Ahadi Yetu ya Mazingira',
     lead: 'Tovuti hii ni kielelezo kidogo cha kile tunachokijenga. Hizi ni vipimo vya wakati halisi.',
-    environmentalStanceText: 'Kila ukurasa wa tovuti hii unapakia chini ya KB 50 kwa mzigo wa kwanza. Kaboni inayotolewa kwa kila ziara hupimwa kwa gramu na kuonyeshwa kwenye mstari wa hali hapo juu. Tunahifadhi kwenye nishati mbadala. Tunatumia vifuatiliaji sifuri vya wahusika wa nje. Tuna uwazi kamili kuhusu kaboni yetu kwa sababu kizazi kijacho kinatutazama.',
-    hostingStoryText: 'Inahifadhiwa kwenye VPS moja ya Contabo katikati ya Marekani. Hakuna CDN. Hakuna huduma za wahusika wa nje. Seva moja ya asili, iliyoimarishwa na CrowdSec, Traefik na Let\'s Encrypt.',
+    environmentalStanceText: 'Kila ukurasa wa tovuti hii unapakia chini ya KB 50 kwa mzigo wa kwanza. Kaboni inayotolewa kwa kila ziara hupimwa kwa gramu na kuonyeshwa kwenye mstari wa hali hapo juu. Tunatumia vifuatiliaji sifuri vya wahusika wa nje. Tuna uwazi kamili kuhusu kaboni yetu kwa sababu kizazi kijacho kinatutazama.',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText: 'Kila kitu tunachokijenga lazima kitumike vizazi vinavyofuata. Hii ni sifa ambayo kamwe hatutailegeza.',
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      'Tovuti hii inaishi kwenye seva moja ya kawaida katika kituo cha data kilichoorodheshwa Edmonton, Alberta, Kanada. Hakuna mtandao wa kusambaza maudhui mbele yake. Wakati ukurasa unapakuliwa kwenye kivinjari chako, kivinjari chako kinazungumza moja kwa moja na mashine yetu. Hakuna kitu kati ya kunakili, kuhifadhi katika kashe, au kusoma trafiki yako.\n\nNakala zetu za hifadhi zilizosimbwa hutembea kwenye mzunguko wa siku thelathini. Hazitoki kamwe katika eneo la kituo cha data. Zinalindwa zikiwa zimepumzika kwa ufunguo ambao watu wawili tu kwenye timu yetu wanaweza kuufungua.',
+      'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
       'Umepata udhaifu, hitilafu, au kitu kinachoonekana kuwa kibaya tu? Andika kwa security@intelligentsingularityinc.com. Tunajibu ndani ya siku moja ya kazi, tunafanya kazi nawe katika urekebishaji, na kumtaja kwa jina mtoa habari katika tangazo la umma mara tu tatizo lirekebishwapo — isipokuwa utuombe tusifanye hivyo.\n\nKamwe hatuwashtaki watafiti wanaofuata masharti ya ufichuzi wenye uwajibikaji yaliyo kwenye /security.',
   },

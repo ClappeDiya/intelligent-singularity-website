@@ -311,14 +311,14 @@ export const GREEN_SEED = {
           type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0,
           children: [{
             type: 'text', version: 1,
-            text: 'The site lives on one virtual server in Edmonton, Alberta. There is no content delivery network in front of it. One origin, protected by a reverse proxy and a free TLS certificate. Alberta\u2019s grid is still heavy on natural gas with a growing share of wind and hydro. We say so openly. When a provably cleaner option becomes available in Canada, we will move.',
+            text: 'The site is hosted in Canada. There is no content delivery network in front of it. One origin, protected by a reverse proxy and a free TLS certificate. Alberta\u2019s grid is still heavy on natural gas with a growing share of wind and hydro. We say so openly. When a provably cleaner option becomes available in Canada, we will move.',
           }],
         },
         {
           type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0,
           children: [{
             type: 'text', version: 1,
-            text: 'A single-origin server has trade-offs. A page served from Edmonton reaches Toronto fast and Singapore slowly. We accept that for the corporate site because the alternative \u2014 caching the page across a global content delivery network \u2014 would mean handing your visit to a third party we do not control, and that is a worse trade for your privacy than a slightly slower load. Our product domains are different: where a product genuinely needs low latency for users in Asia, Africa, or South America, we deploy regional read replicas under our own control, never through a third-party CDN that logs your visit.',
+            text: 'A single-region origin has trade-offs. A page served from Canada reaches Toronto fast and Singapore slowly. We accept that for the corporate site because the alternative \u2014 caching the page across a global content delivery network \u2014 would mean handing your visit to a third party we do not control, and that is a worse trade for your privacy than a slightly slower load. Our product domains are different: where a product genuinely needs low latency for users in Asia, Africa, or South America, we deploy regional read replicas under our own control, never through a third-party CDN that logs your visit.',
           }],
         },
         {

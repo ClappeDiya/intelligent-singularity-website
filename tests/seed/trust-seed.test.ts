@@ -9,7 +9,7 @@ describe('trust page seed', () => {
     expect(names).toEqual(
       expect.arrayContaining([
         "Let's Encrypt",
-        'Mailcow (self-hosted)',
+        'Mailcow',
         'Contabo',
         'Dokploy',
       ])

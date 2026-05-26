@@ -89,8 +89,8 @@ export const INSIGHTS_SEED: InsightPost[] = [
   },
   {
     slug: 'one-vps-zero-trackers',
-    title: 'One VPS, zero trackers: what we run and why',
-    subtitle: 'No CDN, no analytics SaaS, no third-party fonts. The whole site answers from one server we control.',
+    title: 'Zero trackers, on this site: what we promise and what we audit',
+    subtitle: 'No CDN, no analytics SaaS, no third-party fonts. The marketing site answers from our own origin — audited per build by CI.',
     publishedAt: '2026-04-10T00:00:00.000Z',
     status: 'published',
     tags: [{ tag: 'Transparency' }, { tag: 'Infrastructure' }],
@@ -99,10 +99,6 @@ export const INSIGHTS_SEED: InsightPost[] = [
         label: 'Green Web Foundation — check a host',
         href: 'https://www.thegreenwebfoundation.org/tools/green-web-check/',
       },
-      {
-        label: 'Contabo VPS specs',
-        href: 'https://contabo.com/en/vps/',
-      },
     ],
     body: {
       root: {
@@ -110,16 +106,16 @@ export const INSIGHTS_SEED: InsightPost[] = [
         version: 1,
         children: [
           para(
-            'The whole site runs on one virtual server that we rent and manage ourselves. There is no content delivery network in front of it. There is no analytics vendor. There are no outside font hosts. Every page you see is sent from a single machine in a single named datacentre, with nothing in the middle to read the traffic.'
+            'This page used to walk through the exact hosting topology behind intelligentsingularityinc.com \u2014 the number of servers, the city, the provider. We have stopped advertising that detail. As the company grows, the right number of servers and the right region will change, and tying our brand to a single topology turns an engineering decision into a marketing promise we may not want to keep.'
           ),
           para(
-            'That simplicity is not a shortcut. It is the whole product story. When a visitor asks what we do with their data, we can point at one log file that lives for fourteen days and then disappears. When a regulator asks where the information lives, the answer is a sentence, not a map.'
+            'What we still promise and audit on this marketing site is much narrower, and we like it that way. Your browser only talks to our origin when you load these pages. No analytics, no pixels, no ad networks, no external fonts, no embedded video, no social-media widgets. A CI script named no-third-party.mjs scans every production build and fails the release if any forbidden host appears in the bundle. The promise is a unit test, not a marketing line.'
           ),
           para(
-            'We used to carry a "one hundred percent renewable hosting" claim on the green page. We removed it. The server is in a part of Canada whose grid is still heavy on natural gas, and we had not yet confirmed the datacentre energy mix with an independent source. Until that confirmation lands, the honest sentence is that we run on a mixed grid and are watching for a cleaner option.'
+            'We also used to carry a "one hundred percent renewable hosting" claim on the green page. We removed it. The honest sentence is that our hosting runs on a mixed grid and we are watching for a cleaner option \u2014 see the green page for the current numbers.'
           ),
           para(
-            'Running one server is a constraint and a choice. It keeps the data flow simple, the cost low, the carbon cost measurable, and the privacy story short enough to read aloud in a meeting. If the site outgrows this setup, the next step is to add a second server that we also manage \u2014 not to hide behind an outside platform.'
+            'Products inside our portfolio are a separate story. ClapPay needs a payment processor. Audiflo needs a model provider. Gclap needs an SMTP relay. Each product page names its own subprocessors and discloses the data flows. The two scopes \u2014 this marketing site, and the individual products \u2014 should be read separately, and we will keep them readable.'
           ),
         ],
       },

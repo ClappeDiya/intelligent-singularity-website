@@ -14,9 +14,9 @@ export type RoadmapItem = {
 export const ROADMAP_SEED: RoadmapItem[] = [
   {
     slug: 'plausible-analytics',
-    title: 'Self-hosted page counts, without third parties',
+    title: 'Page counts without third parties',
     summary:
-      'Run an open-source page-counter on our own server. Send page views to it through a proxy we control. No outside script ever runs in your browser.',
+      'Run an open-source page-counter on our own infrastructure. Send page views to it through a proxy we control. No outside script ever runs in your browser.',
     whyItMatters:
       'We want to know which pages help people the most, but we do not want your visit to feed an outside company. Running the tool ourselves keeps the question and the answer inside our walls. The zero-tracker rule in our build pipeline stays green while we learn from the numbers.',
     status: 'planned',
@@ -38,11 +38,11 @@ export const ROADMAP_SEED: RoadmapItem[] = [
   },
   {
     slug: 'glitchtip-telemetry',
-    title: 'Self-hosted error reporting',
+    title: 'First-party error reporting',
     summary:
-      'Set up an open-source error tracker on our own server. Wire the site to it with a small drop-in library.',
+      'Set up an open-source error tracker on our own infrastructure. Wire the site to it with a small drop-in library.',
     whyItMatters:
-      'Runtime errors get caught, grouped, and explained without waiting for a user to tell us. Bugs get fixed sooner. Nothing leaves our own machines, which keeps the privacy story the same as before.',
+      'Runtime errors get caught, grouped, and explained without waiting for a user to tell us. Bugs get fixed sooner. Nothing leaves our own infrastructure, which keeps the privacy story the same as before.',
     status: 'planned',
     category: 'infra',
     gitRefs: [],

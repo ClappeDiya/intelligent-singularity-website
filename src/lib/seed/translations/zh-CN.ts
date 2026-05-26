@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: '我们的绿色承诺',
     lead: '本网站是我们所构建之物的最小缩影。以下为实时测量数据。',
-    environmentalStanceText: '本站每一个页面的首屏加载体积不超过 50 KB。每次访问产生的碳排放以克为单位计量，并在顶部状态栏如实展示给您。我们使用可再生能源托管。我们使用零第三方追踪器。我们对自身的碳排放保持彻底透明，因为下一代人正在注视着我们。',
-    hostingStoryText: '托管于美国中部的单台 Contabo 云 VPS。无 CDN。无第三方服务。单一源站，采用 CrowdSec、Traefik 和 Let\'s Encrypt 加固。',
+    environmentalStanceText: '本站每一个页面的首屏加载体积不超过 50 KB。每次访问产生的碳排放以克为单位计量，并在顶部状态栏如实展示给您。我们使用零第三方追踪器。我们对自身的碳排放保持彻底透明，因为下一代人正在注视着我们。',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText: '我们所构建的一切，都必须服务于后来的世代。这是我们对自己永远坚守的约束。',
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      '本网站托管在加拿大艾伯塔省埃德蒙顿一家指定数据中心的一台虚拟服务器上。前端没有内容分发网络。当页面在您的浏览器中加载时，您的浏览器直接与我们的机器对话。中间没有任何中转环节来复制、缓存或读取您的流量。\n\n我们的加密备份按三十天周期滚动。它们从未离开数据中心所在区域。它们在静态存储中受到保护，密钥仅由我们团队中的两人掌握。',
+      'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
       '发现了漏洞、缺陷或看起来不对劲的地方？请写信至 security@intelligentsingularityinc.com。我们将在一个工作日内回复，与您一起完成修复，并在问题修复后在公开公告中署名感谢报告者——除非您要求我们不要这样做。\n\n对于遵守 /security 上负责任披露条款的研究人员，我们绝不起诉。',
   },

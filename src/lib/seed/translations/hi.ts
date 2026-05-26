@@ -34,8 +34,8 @@ export const TRANSLATION: LocaleTranslation = {
   green: {
     title: 'हमारा हरित संकल्प',
     lead: 'यह वेबसाइट हमारे निर्माण का सबसे छोटा उदाहरण है। नीचे प्रत्यक्ष मापित।',
-    environmentalStanceText: 'इस साइट का प्रत्येक पृष्ठ प्रथम प्रदर्शन पर 50 KB से कम है। प्रत्येक विज़िट CO₂ के ग्रामों में मापी जाती है और आपको शीर्ष स्थिति पट्टी में ईमानदारी से दिखाई जाती है। हम नवीकरणीय ऊर्जा पर होस्ट करते हैं। हम शून्य तृतीय-पक्ष ट्रैकर का उपयोग करते हैं। हम अपने उत्सर्जन के बारे में पूर्णतया पारदर्शी हैं, क्योंकि अगली पीढ़ी देख रही है।',
-    hostingStoryText: 'यूएस सेंट्रल में एकल Contabo Cloud VPS पर होस्टेड। कोई CDN नहीं। कोई तृतीय पक्ष नहीं। एक मूल सर्वर, CrowdSec, Traefik और Let\u2019s Encrypt से सुदृढ़।',
+    environmentalStanceText: 'इस साइट का प्रत्येक पृष्ठ प्रथम प्रदर्शन पर 50 KB से कम है। प्रत्येक विज़िट CO₂ के ग्रामों में मापी जाती है और आपको शीर्ष स्थिति पट्टी में ईमानदारी से दिखाई जाती है। हम शून्य तृतीय-पक्ष ट्रैकर का उपयोग करते हैं। हम अपने उत्सर्जन के बारे में पूर्णतया पारदर्शी हैं, क्योंकि अगली पीढ़ी देख रही है।',
+    hostingStoryText: 'Hosted in Canada. No CDN, no third-party services. One origin, hardened with CrowdSec, Traefik and Let\'s Encrypt.',
     futureGenerationPledgeText: 'हम जो कुछ भी निर्मित करते हैं, वह आने वाली पीढ़ियों की सेवा करे। यह वह बाध्यता है जिसे हम सदैव स्वयं पर लागू रखते हैं।',
   },
   contact: {
@@ -47,7 +47,7 @@ export const TRANSLATION: LocaleTranslation = {
   },
   trust: {
     dataResidencyText:
-      'यह वेबसाइट कनाडा के अल्बर्टा के एडमंटन में स्थित एक नामित डेटा सेंटर में एक एकल वर्चुअल सर्वर पर रहती है। इसके आगे कोई कंटेंट डिलीवरी नेटवर्क नहीं है। जब पेज आपके ब्राउज़र में लोड होता है, तो आपका ब्राउज़र सीधे हमारी मशीन से बात करता है। बीच में कुछ भी आपके ट्रैफ़िक को कॉपी, कैश या पढ़ने के लिए नहीं बैठा है।\n\nहमारे एन्क्रिप्टेड बैकअप तीस-दिन के चक्र पर घूमते हैं। वे कभी डेटासेंटर क्षेत्र से बाहर नहीं जाते। वे एक कुंजी के साथ विश्राम पर सुरक्षित हैं जिसे हमारी टीम में केवल दो लोग खोल सकते हैं।',
+      'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
       'कोई कमज़ोरी, बग, या ऐसी चीज़ मिली जो बस ग़लत लगती है? security@intelligentsingularityinc.com पर लिखें। हम एक कार्य दिवस के भीतर उत्तर देते हैं, आपके साथ सुधार पर काम करते हैं, और समस्या पैच होने के बाद सार्वजनिक सलाह में रिपोर्ट करने वाले को नाम से श्रेय देते हैं — जब तक आप हमें ऐसा न करने के लिए न कहें।\n\nहम उन शोधकर्ताओं पर कभी मुक़दमा नहीं करते जो /security पर ज़िम्मेदार-प्रकटीकरण शर्तों का पालन करते हैं।',
   },
