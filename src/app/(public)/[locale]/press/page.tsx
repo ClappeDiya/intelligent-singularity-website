@@ -65,7 +65,9 @@ async function PressContent({ locale }: { locale: string }) {
           {t('factSheetHeading')}
         </h2>
         <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
-          {(page.factSheet ?? []).map((f: any) => (
+          {(page.factSheet ?? [])
+            .filter((f: any) => !/host/i.test(f?.label ?? '') && !/(vps|self-host)/i.test(f?.value ?? ''))
+            .map((f: any) => (
             <div key={f.label} className="is-card rounded-[18px] p-5 flex flex-col gap-2">
               <dt className="label-mono">{f.label}</dt>
               <dd

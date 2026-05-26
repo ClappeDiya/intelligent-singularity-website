@@ -42,7 +42,6 @@ const PRACTICE_SLUGS = [
   'thirdPartyCalls',
   'renderer',
   'mediaStrategy',
-  'hosting',
   'offlineReach',
   'reducedMotion',
   'paperless',
@@ -106,10 +105,9 @@ async function GreenContent({ locale }: { locale: string }) {
             'radial-gradient(800px 320px at 90% -30%, rgba(16,185,129,0.1), transparent 60%), linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(240,253,244,0.96) 100%)',
         }}
       >
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           <StatCard label={t('statThisPageLabel')} value={formatBytes(bytes)} hint={t('statThisPageHint')} accent />
           <StatCard label={t('statThisVisitLabel')} value={formatCarbon(grams)} hint={t('statThisVisitHint')} />
-          <StatCard label={t('statHostingLabel')} value={t('statHostingValue')} hint={t('statHostingHint', { percent: renewablePct })} />
           <StatCard label={t('statThirdPartyLabel')} value={t('statThirdPartyValue')} hint={t('statThirdPartyHint')} />
         </div>
       </section>

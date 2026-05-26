@@ -830,7 +830,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: '语言', value: '14 种发行语言 · 超过 40 亿母语使用者' },
       { label: '技术栈', value: '跨所有产品的同一共享平台' },
       { label: '网站占用', value: '每页 50 KB 以下 · 零第三方调用' },
-      { label: '托管', value: '加拿大艾伯塔省埃德蒙顿的单台 VPS · 无第三方 CDN' },
     ],
     storyAnglesYes: [
       { title: '通用访问的实践', body: '单一产品如何在同一引擎上为财富 500 强买家和一人市场摊位提供服务,没有针对新兴市场的"精简版"。具体示例、真实工作流程、可应要求提供录屏。' },
@@ -876,7 +875,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'Idiomas', value: '14 idiomas de lanzamiento · más de 4 mil millones de hablantes nativos' },
       { label: 'Stack', value: 'Una plataforma compartida para cada producto' },
       { label: 'Huella del sitio', value: 'Menos de 50 KB por página · cero llamadas a terceros' },
-      { label: 'Hosting', value: 'Un VPS único en Edmonton, Alberta · sin CDN de terceros' },
     ],
     storyAnglesYes: [
       { title: 'Acceso universal en la práctica', body: 'Cómo un único producto se construye para atender a un comprador Fortune 500 y a un puesto de mercado unipersonal en el mismo motor, sin versiones "lite" para mercados emergentes. Ejemplos concretos, flujos de trabajo reales, grabaciones de pantalla a petición.' },
@@ -922,7 +920,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'भाषाएँ', value: '14 शिपिंग भाषाएँ · 4 अरब से अधिक प्रथम-भाषा बोलने वाले' },
       { label: 'स्टैक', value: 'हर उत्पाद में एक साझा प्लेटफ़ॉर्म' },
       { label: 'वेबसाइट फुटप्रिंट', value: 'प्रति पृष्ठ 50 KB से कम · शून्य तृतीय-पक्ष कॉल' },
-      { label: 'होस्टिंग', value: 'एडमंटन, अल्बर्टा में एकल VPS · कोई तृतीय-पक्ष CDN नहीं' },
     ],
     storyAnglesYes: [
       { title: 'सार्वभौमिक पहुँच व्यवहार में', body: 'कैसे एक ही उत्पाद Fortune 500 खरीदार और एक-व्यक्ति बाज़ार-स्टॉल की उसी इंजन पर सेवा करने के लिए बनाया गया है, उभरते बाज़ारों के लिए "लाइट" संस्करण के बिना। ठोस उदाहरण, वास्तविक वर्कफ़्लो, अनुरोध पर स्क्रीन रिकॉर्डिंग।' },
@@ -968,7 +965,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'اللغات', value: '14 لغة إطلاق · أكثر من 4 مليارات متحدث أصلي' },
       { label: 'الحزمة التقنية', value: 'منصة واحدة مشتركة عبر كل المنتجات' },
       { label: 'بصمة الموقع', value: 'أقل من 50 ك.ب لكل صفحة · صفر مكالمات لطرف ثالث' },
-      { label: 'الاستضافة', value: 'خادم VPS واحد في إدمونتون، ألبرتا · بدون CDN لطرف ثالث' },
     ],
     storyAnglesYes: [
       { title: 'الوصول الشامل في الممارسة', body: 'كيف يُبنى منتج واحد ليخدم مشتريًا من Fortune 500 وكشكًا تجاريًا لشخص واحد على المحرك ذاته، دون إصدارات "خفيفة" للأسواق الناشئة. أمثلة محددة، تدفقات عمل حقيقية، تسجيلات شاشة عند الطلب.' },
@@ -1014,7 +1010,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'Langues', value: '14 langues de lancement · plus de 4 milliards de locuteurs natifs' },
       { label: 'Stack', value: 'Une seule plateforme partagée pour chaque produit' },
       { label: 'Empreinte du site', value: 'Moins de 50 Ko par page · zéro appel tiers' },
-      { label: 'Hébergement', value: 'Un seul VPS à Edmonton, Alberta · pas de CDN tiers' },
     ],
     storyAnglesYes: [
       { title: "L'accès universel en pratique", body: "Comment un produit unique est construit pour servir un acheteur Fortune 500 et un stand de marché individuel sur le même moteur, sans versions « lite » pour les marchés émergents. Exemples concrets, flux de travail réels, enregistrements d'écran sur demande." },
@@ -1060,7 +1055,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'Idiomas', value: '14 idiomas de lançamento · mais de 4 mil milhões de falantes nativos' },
       { label: 'Stack', value: 'Uma plataforma partilhada em cada produto' },
       { label: 'Pegada do site', value: 'Menos de 50 KB por página · zero chamadas a terceiros' },
-      { label: 'Alojamento', value: 'Um único VPS em Edmonton, Alberta · sem CDN de terceiros' },
     ],
     storyAnglesYes: [
       { title: 'Acesso universal na prática', body: 'Como um único produto é construído para servir um comprador Fortune 500 e uma banca de mercado de uma só pessoa no mesmo motor, sem versões "lite" para mercados emergentes. Exemplos concretos, fluxos de trabalho reais, gravações de ecrã a pedido.' },
@@ -1106,7 +1100,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'ভাষা', value: '14টি শিপিং ভাষা · 4 বিলিয়নের বেশি প্রথম-ভাষাভাষী' },
       { label: 'স্ট্যাক', value: 'প্রতিটি পণ্যে একটি ভাগাভাগি প্ল্যাটফর্ম' },
       { label: 'ওয়েবসাইট ফুটপ্রিন্ট', value: 'প্রতি পৃষ্ঠা 50 KB-এর কম · শূন্য তৃতীয়-পক্ষ কল' },
-      { label: 'হোস্টিং', value: 'এডমন্টন, আলবার্টায় একক VPS · কোনো তৃতীয়-পক্ষ CDN নয়' },
     ],
     storyAnglesYes: [
       { title: 'বাস্তবে সর্বজনীন প্রবেশাধিকার', body: 'কীভাবে একটি একক পণ্য একই ইঞ্জিনে Fortune 500 ক্রেতা এবং একজন-ব্যক্তির বাজার-স্টলকে সেবা দেওয়ার জন্য তৈরি, উদীয়মান বাজারের জন্য "লাইট" সংস্করণ ছাড়াই। নির্দিষ্ট উদাহরণ, বাস্তব ওয়ার্কফ্লো, অনুরোধে স্ক্রিন রেকর্ডিং।' },
@@ -1152,7 +1145,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'Языки', value: '14 языков выпуска · более 4 миллиардов носителей первого языка' },
       { label: 'Стек', value: 'Одна общая платформа для всех продуктов' },
       { label: 'Размер сайта', value: 'Менее 50 КБ на страницу · ноль вызовов сторонних' },
-      { label: 'Хостинг', value: 'Один VPS в Эдмонтоне, Альберта · без сторонних CDN' },
     ],
     storyAnglesYes: [
       { title: 'Универсальный доступ на практике', body: 'Как один продукт построен, чтобы обслуживать покупателя из Fortune 500 и одиночный рыночный прилавок на одном движке, без «облегчённых» версий для развивающихся рынков. Конкретные примеры, реальные рабочие процессы, записи экрана по запросу.' },
@@ -1198,7 +1190,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'زبانیں', value: '14 شپنگ زبانیں · 4 ارب سے زیادہ پہلی زبان بولنے والے' },
       { label: 'اسٹیک', value: 'ہر پروڈکٹ میں ایک مشترکہ پلیٹ فارم' },
       { label: 'ویب سائٹ فٹ پرنٹ', value: 'فی صفحہ 50 KB سے کم · صفر تھرڈ-پارٹی کالز' },
-      { label: 'ہوسٹنگ', value: 'ایڈمنٹن، البرٹا میں واحد VPS · کوئی تھرڈ-پارٹی CDN نہیں' },
     ],
     storyAnglesYes: [
       { title: 'عملی طور پر عالمی رسائی', body: 'کیسے ایک ہی پروڈکٹ Fortune 500 خریدار اور ایک شخص کے بازار کے اسٹال کو ایک ہی انجن پر خدمت کے لیے بنائی گئی ہے، بغیر ابھرتی منڈیوں کے لیے "لائٹ" ورژن کے۔ ٹھوس مثالیں، حقیقی ورک فلوز، درخواست پر اسکرین ریکارڈنگز۔' },
@@ -1244,7 +1235,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'Bahasa', value: '14 bahasa rilis · lebih dari 4 miliar penutur asli' },
       { label: 'Stack', value: 'Satu platform bersama untuk setiap produk' },
       { label: 'Jejak situs', value: 'Kurang dari 50 KB per halaman · nol panggilan pihak ketiga' },
-      { label: 'Hosting', value: 'Satu VPS di Edmonton, Alberta · tanpa CDN pihak ketiga' },
     ],
     storyAnglesYes: [
       { title: 'Akses universal dalam praktik', body: 'Bagaimana satu produk dibangun untuk melayani pembeli Fortune 500 dan kios pasar satu orang pada mesin yang sama, tanpa versi "lite" untuk pasar berkembang. Contoh konkret, alur kerja nyata, rekaman layar atas permintaan.' },
@@ -1290,7 +1280,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'Lugha', value: 'Lugha 14 za usafirishaji · zaidi ya wazungumzaji wa lugha ya kwanza bilioni 4' },
       { label: 'Stack', value: 'Jukwaa moja lililoshirikiwa kwa kila bidhaa' },
       { label: 'Alama ya tovuti', value: 'Chini ya 50 KB kwa ukurasa · sifuri simu za mtu wa tatu' },
-      { label: 'Mwenyeji', value: 'VPS moja huko Edmonton, Alberta · bila CDN wa mtu wa tatu' },
     ],
     storyAnglesYes: [
       { title: 'Ufikiaji wa wote kwa vitendo', body: 'Jinsi bidhaa moja inavyojengwa kuhudumia mnunuzi wa Fortune 500 na duka la mtu mmoja kwenye injini ile ile, bila matoleo ya "lite" kwa masoko yanayoibuka. Mifano halisi, mtiririko halisi wa kazi, rekodi za skrini kwa ombi.' },
@@ -1336,7 +1325,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'Èdè', value: 'Èdè 14 tí a ṣe ìfilọ̀ · ju olùsọ̀rọ̀ èdè àkọ́kọ́ bilionu 4 lọ' },
       { label: 'Stack', value: 'Pèpéle kan tí a pín kárí gbogbo ọjà' },
       { label: 'Ìpasẹ̀ ojú-òpó', value: 'Kéré sí 50 KB fún ojú-ìwé · òfo àwọn ìpè ẹgbẹ́ kẹta' },
-      { label: 'Olùgbàlejò', value: 'VPS kan ní Edmonton, Alberta · láìsí CDN ẹgbẹ́ kẹta' },
     ],
     storyAnglesYes: [
       { title: 'Àǹfààní ayé ńláńlá ní iṣe', body: 'Báwo ni a ṣe kọ́ ọjà kan láti ṣe iṣẹ́ fún olùra Fortune 500 àti ìpẹ̀ja oníkàńṣoṣo lórí ẹ̀rọ kannáà, láìsí àwọn ẹ̀dà "lite" fún àwọn ọjà tí ń dìde. Àwọn àpẹẹrẹ tó kàn, ìṣàn iṣẹ́ gidi, gbígba àwòrán ojú-ìran ní ìbéèrè.' },
@@ -1382,7 +1370,6 @@ const PRESS: Record<LocaleCode, PressStrings> = {
       { label: 'Harsuna', value: 'Harsuna 14 na aikawa · sama da masu jin yare na asali biliyan 4' },
       { label: 'Stack', value: 'Dandamali ɗaya da aka raba a kowane samfuri' },
       { label: 'Sawu na shafin', value: 'Ƙasa da KB 50 a kowane shafi · sifili kiraye-kiraye na ɓangare na uku' },
-      { label: 'Hosting', value: 'VPS ɗaya a Edmonton, Alberta · ba tare da CDN na ɓangare na uku ba' },
     ],
     storyAnglesYes: [
       { title: 'Damar samun duniya a aikace', body: 'Yadda aka gina samfuri ɗaya don hidima ga mai siye na Fortune 500 da kwalin kasuwa na mutum ɗaya akan injin guda, ba tare da nau\'ikan "lite" na kasuwannin masu tasowa ba. Misalai na zahiri, kwararar aiki na hakika, faifan rikodin allo akan buƙata.' },
@@ -1420,7 +1407,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: '每条线路加密', body: '所有公共页面和产品流量都通过 TLS 1.3 与现代密码套件传输。证书由 Let\'s Encrypt 颁发并自动轮换。HTTP 严格传输安全(HSTS)设置了较长的 max-age。你输入的任何内容都不会以明文穿越开放互联网。在网络路径可能被观察到的地方,内部服务间调用使用相互 TLS。' },
-      { title: '自托管,不分散', body: '本站运行在加拿大艾伯塔省埃德蒙顿的一台 VPS 上。请求路径中没有第三方 CDN。没有边缘缓存在二十个区域保留你的数据副本。当产品需要在远区域降低延迟时,我们运行自己的只读副本。从不使用会顺便记录你访问的第三方 CDN。' },
       { title: '零第三方调用', body: '无分析工具、无像素、无广告网络、无外部字体、无嵌入视频、无社交媒体小部件。你的浏览器只与我们的源通信。这一点由持续集成中的一个名为 no-third-party.mjs 的脚本强制执行,它扫描构建后的站点,如果包中出现任何外部主机就让发布失败。承诺是一个单元测试,不是一句营销语。' },
       { title: '签名并验证的构建', body: '我们交付的每个容器镜像都由锁定的部件集合构建。锁文件在 git 中。我们在升级任何部件之前会审阅相关公告。发布在运行前会被签名并在主机上校验。任何未通过门禁——包大小、可访问性、第三方——的构建都无法进入生产。' },
       { title: '短保留窗口', body: '服务器日志保留十四天用于调试,然后删除。联系表单邮件仅保留到我们回复并归档对话所需的时间,之后为存档目的最多保存二十四个月,然后删除。备份按三十天周期滚动,并在静态时加密。' },
@@ -1463,7 +1449,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'Cifrado en cada cable', body: "Todas las páginas públicas y el tráfico de los productos viajan por TLS 1.3 con cifrados modernos. Los certificados los emite Let's Encrypt y se rotan automáticamente. HTTP Strict Transport Security está configurado con un max-age largo. Nada de lo que escribes cruza la web abierta en texto claro. Las llamadas internas servicio a servicio usan TLS mutuo cuando la ruta de red podría ser observada." },
-      { title: 'Auto-alojados, no dispersos', body: 'Este sitio corre sobre un VPS en Edmonton, Alberta. Sin CDN de terceros en el camino de la petición. Sin caché de borde guardando copias de tus datos en veinte regiones. Cuando un producto necesita menor latencia en una región lejana, montamos nuestras propias réplicas de lectura. Nunca un CDN de terceros que registre tu visita por el lado.' },
       { title: 'Cero llamadas a terceros', body: 'Sin analíticas, sin píxeles, sin redes de publicidad, sin fuentes externas, sin video embebido, sin widgets de redes sociales. Tu navegador solo habla con nuestro origen. Esto se aplica en integración continua por un script llamado no-third-party.mjs que escanea el sitio compilado y hace fallar el lanzamiento si aparece cualquier host externo en el bundle. La promesa es una prueba unitaria, no una línea de marketing.' },
       { title: 'Builds firmadas y verificadas', body: 'Cada imagen de contenedor que enviamos se construye con un conjunto bloqueado de partes. El lockfile está en git. Revisamos avisos antes de actualizar cualquier parte. Los lanzamientos se firman y comprueban en el host antes de ejecutarse. Una build que falle cualquier check — tamaño del bundle, a11y, terceros — no puede llegar a producción.' },
       { title: 'Ventanas de retención cortas', body: 'Los logs del servidor se guardan catorce días para depuración y luego se borran. Los emails del formulario de contacto se mantienen solo lo necesario para responder y archivar la conversación; luego se archivan hasta veinticuatro meses para registro y luego se borran. Los backups rotan en un ciclo de treinta días y están cifrados en reposo.' },
@@ -1506,7 +1491,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'हर तार पर एन्क्रिप्शन', body: 'सभी सार्वजनिक पृष्ठ और उत्पाद ट्रैफ़िक आधुनिक साइफरों के साथ TLS 1.3 पर यात्रा करता है। प्रमाणपत्र Let\'s Encrypt द्वारा जारी किए जाते हैं और स्वचालित रूप से रोटेट होते हैं। HTTP Strict Transport Security एक लंबे max-age के साथ सेट है। आपका टाइप किया कुछ भी कभी प्लेन टेक्स्ट में खुले वेब को पार नहीं करता। आंतरिक सेवा-से-सेवा कॉल वहाँ म्युचुअल TLS का उपयोग करते हैं जहाँ नेटवर्क पथ देखा जा सकता है।' },
-      { title: 'स्व-होस्टेड, बिखरा हुआ नहीं', body: 'यह साइट एडमंटन, अल्बर्टा में एक VPS पर चलती है। अनुरोध पथ में कोई तृतीय-पक्ष CDN नहीं। बीस क्षेत्रों में आपके डेटा की प्रतियाँ रखने वाला कोई एज कैश नहीं। जब किसी उत्पाद को दूर के क्षेत्र में कम विलंबता की ज़रूरत होती है, हम अपनी रीड रेप्लिकाएँ चलाते हैं। कभी कोई तृतीय-पक्ष CDN नहीं जो आपकी यात्रा को बगल में लॉग करे।' },
       { title: 'शून्य तृतीय-पक्ष कॉल', body: 'कोई एनालिटिक्स नहीं, कोई पिक्सेल नहीं, कोई विज्ञापन नेटवर्क नहीं, कोई बाहरी फ़ॉन्ट नहीं, कोई एम्बेडेड वीडियो नहीं, कोई सोशल-मीडिया विजेट नहीं। आपका ब्राउज़र सिर्फ़ हमारे ओरिजिन से बात करता है। यह निरंतर एकीकरण में no-third-party.mjs नामक एक स्क्रिप्ट द्वारा लागू किया जाता है जो निर्मित साइट को स्कैन करती है और अगर बंडल में कोई बाहरी होस्ट दिखे तो रिलीज़ को विफल कर देती है। वादा एक यूनिट टेस्ट है, मार्केटिंग की लाइन नहीं।' },
       { title: 'हस्ताक्षरित और सत्यापित बिल्ड', body: 'हम जो हर कंटेनर इमेज भेजते हैं वह लॉक किए हुए हिस्सों के सेट से बनी है। लॉकफ़ाइल git में है। हम कोई भी हिस्सा बदलने से पहले सलाहकारी समीक्षा करते हैं। रिलीज़ें चलने से पहले हस्ताक्षरित और मेज़बान पर जाँची जाती हैं। कोई भी बिल्ड जो किसी गेट — बंडल आकार, a11y, तृतीय पक्ष — पर विफल होती है, उत्पादन तक नहीं पहुँच सकती।' },
       { title: 'छोटी प्रतिधारण विंडो', body: 'सर्वर लॉग चौदह दिन डीबगिंग के लिए रखे जाते हैं और फिर हटा दिए जाते हैं। संपर्क-फ़ॉर्म ईमेल केवल इतने समय रखे जाते हैं जितना जवाब देने और बातचीत फ़ाइल करने में लगे, फिर अधिकतम चौबीस महीनों तक रिकॉर्ड के लिए संग्रहित, फिर हटा दिए जाते हैं। बैकअप तीस दिन के चक्र पर रोल करते हैं और स्टैटिक पर एन्क्रिप्टेड हैं।' },
@@ -1549,7 +1533,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'تشفير على كل خط', body: "تنتقل جميع الصفحات العامة وحركة المنتجات عبر TLS 1.3 مع شفرات حديثة. تُصدر الشهادات Let's Encrypt وتُجدَّد تلقائيًا. HTTP Strict Transport Security مضبوط بقيمة max-age طويلة. لا شيء تكتبه يعبر الويب المفتوح كنص واضح. تستخدم الاستدعاءات الداخلية بين الخدمات TLS متبادلًا حيث قد يُلاحَظ مسار الشبكة." },
-      { title: 'مستضاف ذاتيًا، غير متناثر', body: 'يعمل هذا الموقع على خادم VPS واحد في إدمونتون، ألبرتا. لا CDN لطرف ثالث في مسار الطلب. لا ذاكرة تخزين مؤقت طرفية تحتفظ بنسخ من بياناتك في عشرين منطقة. عندما يحتاج منتج إلى زمن استجابة أقل في منطقة بعيدة، نُشغّل نسخًا للقراءة الخاصة بنا. لا CDN لطرف ثالث على الإطلاق يسجل زيارتك جانبًا.' },
       { title: 'صفر مكالمات لطرف ثالث', body: 'لا تحليلات، لا بكسلات، لا شبكات إعلانات، لا خطوط خارجية، لا فيديوهات مضمَّنة، لا أدوات وسائل تواصل اجتماعي. متصفحك يتحدث فقط مع مصدرنا. يُفرَض ذلك في التكامل المستمر عبر سكربت اسمه no-third-party.mjs يفحص الموقع المبني ويُفشل الإصدار إذا ظهر أي مضيف خارجي في الحزمة. الوعد اختبار وحدة، لا جملة تسويقية.' },
       { title: 'إصدارات موقَّعة ومُتحقَّق منها', body: 'كل صورة حاوية نُطلِقها مبنية من مجموعة مغلقة من الأجزاء. ملف القفل في git. نراجع التنبيهات قبل تحديث أي جزء. الإصدارات موقَّعة وتُفحَص على المضيف قبل التشغيل. أي إصدار يفشل في أي بوابة — حجم الحزمة، إمكانية الوصول، طرف ثالث — لا يمكن أن يصل إلى الإنتاج.' },
       { title: 'نوافذ احتفاظ قصيرة', body: 'تُحفَظ سجلات الخادم لمدة أربعة عشر يومًا للتصحيح ثم تُحذف. تُحفَظ رسائل نموذج الاتصال فقط طوال المدة اللازمة للرد وحفظ المحادثة، ثم تُؤرشَف لمدة أقصاها أربعة وعشرون شهرًا لأغراض السجلات، ثم تُحذف. النسخ الاحتياطية تتدور بدورة ثلاثين يومًا ومشفَّرة في حالة الراحة.' },
@@ -1592,7 +1575,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'Chiffrement sur chaque câble', body: "Toutes les pages publiques et le trafic produit voyagent en TLS 1.3 avec des chiffres modernes. Les certificats sont émis par Let's Encrypt et renouvelés automatiquement. HTTP Strict Transport Security est configuré avec un max-age long. Rien de ce que vous tapez ne traverse jamais le web ouvert en clair. Les appels internes de service à service utilisent du TLS mutuel là où le chemin réseau pourrait être observé." },
-      { title: 'Auto-hébergés, pas éparpillés', body: "Ce site tourne sur un VPS à Edmonton, Alberta. Aucun CDN tiers dans le chemin de la requête. Aucun cache de bord conservant des copies de vos données dans vingt régions. Quand un produit a besoin d'une latence plus faible dans une région lointaine, nous faisons tourner nos propres répliques en lecture. Jamais un CDN tiers qui enregistre votre visite à côté." },
       { title: 'Zéro appel tiers', body: "Pas d'analytique, pas de pixels, pas de réseaux publicitaires, pas de polices externes, pas de vidéo embarquée, pas de widgets de réseaux sociaux. Votre navigateur ne parle qu'à notre origine. C'est appliqué en intégration continue par un script appelé no-third-party.mjs qui scanne le site construit et fait échouer la livraison si un hôte externe apparaît dans le bundle. La promesse est un test unitaire, pas une ligne marketing." },
       { title: 'Builds signés et vérifiés', body: "Chaque image de conteneur que nous livrons est construite à partir d'un ensemble verrouillé de pièces. Le lockfile est dans git. Nous examinons les avis avant de bouger toute pièce. Les livraisons sont signées et vérifiées sur l'hôte avant d'être lancées. Un build qui échoue à n'importe quelle barrière — taille du bundle, a11y, tiers — ne peut atteindre la production." },
       { title: 'Fenêtres de rétention courtes', body: "Les logs serveur sont conservés quatorze jours pour le débogage puis supprimés. Les emails du formulaire de contact ne sont gardés que le temps nécessaire pour répondre et classer la conversation, puis archivés jusqu'à vingt-quatre mois à des fins d'archivage, puis supprimés. Les sauvegardes tournent sur un cycle de trente jours et sont chiffrées au repos." },
@@ -1635,7 +1617,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'Encriptação em cada fio', body: "Todas as páginas públicas e o tráfego dos produtos viajam por TLS 1.3 com cifras modernas. Os certificados são emitidos pela Let's Encrypt e rodam automaticamente. HTTP Strict Transport Security está configurado com um max-age longo. Nada do que escreve atravessa a web aberta em texto simples. As chamadas internas serviço a serviço usam TLS mútuo onde o caminho de rede possa ser observado." },
-      { title: 'Auto-alojados, não dispersos', body: 'Este site corre num VPS em Edmonton, Alberta. Sem CDN de terceiros no caminho do pedido. Sem cache de borda a guardar cópias dos seus dados em vinte regiões. Quando um produto precisa de menor latência numa região distante, corremos as nossas próprias réplicas de leitura. Nunca um CDN de terceiros que registe a sua visita pelo caminho.' },
       { title: 'Zero chamadas a terceiros', body: 'Sem analítica, sem pixels, sem redes de publicidade, sem fontes externas, sem vídeo embebido, sem widgets de redes sociais. O seu browser só fala com a nossa origem. Isto é aplicado em integração contínua por um script chamado no-third-party.mjs que faz scan do site construído e faz falhar o lançamento se algum host externo aparecer no bundle. A promessa é um teste unitário, não uma linha de marketing.' },
       { title: 'Builds assinados e verificados', body: 'Cada imagem de contentor que enviamos é construída a partir de um conjunto bloqueado de partes. O lockfile está no git. Revemos avisos antes de atualizar qualquer parte. Os lançamentos são assinados e verificados no anfitrião antes de correrem. Um build que falhe qualquer porta — tamanho do bundle, a11y, terceiros — não pode chegar à produção.' },
       { title: 'Janelas de retenção curtas', body: 'Os logs do servidor são guardados durante catorze dias para depuração e depois apagados. Os emails do formulário de contacto são mantidos apenas o tempo necessário para responder e arquivar a conversa, depois arquivados até vinte e quatro meses para registo, depois apagados. Os backups rolam num ciclo de trinta dias e estão encriptados em repouso.' },
@@ -1678,7 +1659,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'প্রতিটি তারে এনক্রিপশন', body: "সকল সর্বজনীন পৃষ্ঠা এবং পণ্য ট্র্যাফিক আধুনিক সাইফারের সাথে TLS 1.3-এ ভ্রমণ করে। সার্টিফিকেটগুলো Let's Encrypt দ্বারা জারি এবং স্বয়ংক্রিয়ভাবে রোটেট করা হয়। HTTP Strict Transport Security একটি দীর্ঘ max-age সহ সেট করা। আপনি যা টাইপ করেন তা কখনো প্লেইন টেক্সটে খোলা ওয়েব অতিক্রম করে না। অভ্যন্তরীণ পরিষেবা-থেকে-পরিষেবা কলগুলো mutual TLS ব্যবহার করে যেখানে নেটওয়ার্ক পথ পর্যবেক্ষণ করা যেতে পারে।" },
-      { title: 'স্ব-হোস্টেড, ছড়ানো নয়', body: 'এই সাইট এডমন্টন, আলবার্টায় একটি VPS-এ চলে। অনুরোধ পথে কোনো তৃতীয়-পক্ষ CDN নেই। বিশটি অঞ্চলে আপনার ডেটার কপি রাখা কোনো এজ ক্যাশ নেই। যখন কোনো পণ্যের দূর অঞ্চলে কম লেটেন্সি প্রয়োজন, আমরা আমাদের নিজস্ব রিড রেপ্লিকা চালাই। কখনো এমন তৃতীয়-পক্ষ CDN নয় যা আপনার ভিজিটকে পাশাপাশি লগ করে।' },
       { title: 'শূন্য তৃতীয়-পক্ষ কল', body: 'কোনো অ্যানালিটিক্স নেই, কোনো পিক্সেল নেই, কোনো বিজ্ঞাপন নেটওয়ার্ক নেই, কোনো বাহ্যিক ফন্ট নেই, কোনো এমবেডেড ভিডিও নেই, কোনো সোশ্যাল-মিডিয়া উইজেট নেই। আপনার ব্রাউজার শুধু আমাদের অরিজিনের সাথে কথা বলে। এটি ক্রমাগত ইন্টিগ্রেশনে no-third-party.mjs নামক একটি স্ক্রিপ্ট দ্বারা প্রয়োগ করা হয় যা নির্মিত সাইট স্ক্যান করে এবং বান্ডলে কোনো বাহ্যিক হোস্ট দেখা গেলে রিলিজ ব্যর্থ করে। প্রতিশ্রুতি একটি ইউনিট টেস্ট, মার্কেটিং লাইন নয়।' },
       { title: 'স্বাক্ষরিত এবং যাচাইকৃত বিল্ড', body: 'আমরা যে প্রতিটি কন্টেইনার ইমেজ পাঠাই তা তালাবদ্ধ অংশের একটি সেট থেকে তৈরি। লকফাইল git-এ আছে। আমরা যেকোনো অংশ আপগ্রেড করার আগে পরামর্শাবলী পর্যালোচনা করি। রিলিজগুলো স্বাক্ষরিত এবং চলার আগে হোস্টে যাচাই করা হয়। যেকোনো গেট — বান্ডল আকার, a11y, তৃতীয় পক্ষ — ব্যর্থ হওয়া বিল্ড উৎপাদনে পৌঁছাতে পারে না।' },
       { title: 'ছোট ধারণ উইন্ডো', body: 'সার্ভার লগগুলো ডিবাগিংয়ের জন্য চৌদ্দ দিন রাখা হয় এবং তারপর মুছে ফেলা হয়। যোগাযোগ-ফর্ম ইমেইলগুলো কেবল ততক্ষণই রাখা হয় যতক্ষণ উত্তর দিতে এবং কথোপকথন ফাইল করতে লাগে, তারপর সর্বোচ্চ চব্বিশ মাস পর্যন্ত রেকর্ড-রক্ষার জন্য সংরক্ষিত, তারপর মুছে ফেলা। ব্যাকআপ ত্রিশ-দিনের চক্রে রোল করে এবং রেস্টে এনক্রিপ্ট করা।' },
@@ -1721,7 +1701,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'Шифрование на каждом проводе', body: "Все публичные страницы и трафик продуктов идут через TLS 1.3 с современными шифрами. Сертификаты выпускаются Let's Encrypt и автоматически обновляются. HTTP Strict Transport Security настроен с длинным max-age. Ничто из того, что вы вводите, никогда не пересекает открытый интернет в виде открытого текста. Внутренние вызовы между сервисами используют взаимный TLS там, где сетевой путь можно наблюдать." },
-      { title: 'Самохостинг, не разбросанные', body: 'Этот сайт работает на одном VPS в Эдмонтоне, Альберта. Нет стороннего CDN в пути запроса. Нет edge-кеша, хранящего копии ваших данных в двадцати регионах. Когда продукту нужна меньшая задержка в дальнем регионе, мы разворачиваем собственные реплики чтения. Никогда — сторонний CDN, который попутно логирует ваш визит.' },
       { title: 'Ноль вызовов сторонних', body: 'Никакой аналитики, никаких пикселей, никаких рекламных сетей, никаких внешних шрифтов, никакого встроенного видео, никаких виджетов соцсетей. Ваш браузер общается только с нашим источником. Это обеспечивается в непрерывной интеграции скриптом no-third-party.mjs, который сканирует собранный сайт и проваливает релиз, если в бандле появляется внешний хост. Обещание — это юнит-тест, а не маркетинговая строка.' },
       { title: 'Подписанные и проверенные сборки', body: 'Каждый контейнерный образ, который мы выпускаем, собран из заблокированного набора частей. Lockfile в git. Мы изучаем уведомления, прежде чем поднять любую часть. Релизы подписаны и проверяются на хосте перед запуском. Сборка, которая не проходит хотя бы один шлюз — размер бандла, доступность, сторонние, — не может попасть в продакшен.' },
       { title: 'Короткие окна хранения', body: 'Серверные логи хранятся четырнадцать дней для отладки, потом удаляются. Письма с контактной формы хранятся ровно столько, сколько нужно, чтобы ответить и заархивировать переписку, далее архивируются до двадцати четырёх месяцев для учёта, затем удаляются. Резервные копии идут циклом тридцать дней и зашифрованы в покое.' },
@@ -1764,7 +1743,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'ہر تار پر انکرپشن', body: "تمام عوامی صفحات اور پروڈکٹ ٹریفک جدید سائفرز کے ساتھ TLS 1.3 پر سفر کرتا ہے۔ سرٹیفکیٹس Let's Encrypt جاری کرتا ہے اور خودکار طور پر روٹیٹ ہوتے ہیں۔ HTTP Strict Transport Security ایک طویل max-age کے ساتھ سیٹ ہے۔ آپ جو ٹائپ کرتے ہیں وہ کبھی پلین ٹیکسٹ میں کھلا ویب پار نہیں کرتا۔ اندرونی سروس-سے-سروس کالیں وہاں mutual TLS استعمال کرتی ہیں جہاں نیٹ ورک کا راستہ دیکھا جا سکتا ہے۔" },
-      { title: 'خود-ہوسٹڈ، بکھرے ہوئے نہیں', body: 'یہ سائٹ ایڈمنٹن، البرٹا میں ایک VPS پر چلتی ہے۔ درخواست کے راستے میں کوئی تھرڈ-پارٹی CDN نہیں۔ بیس علاقوں میں آپ کے ڈیٹا کی کاپیاں رکھنے والا کوئی ایج کیش نہیں۔ جب کسی پروڈکٹ کو دور علاقے میں کم لیٹنسی کی ضرورت ہو، ہم اپنی ریڈ ریپلیکا چلاتے ہیں۔ کبھی ایسا تھرڈ-پارٹی CDN نہیں جو آپ کے دورے کو ساتھ ساتھ لاگ کرے۔' },
       { title: 'صفر تھرڈ-پارٹی کالز', body: 'کوئی اینالٹکس نہیں، کوئی پکسلز نہیں، کوئی ایڈ نیٹ ورک نہیں، کوئی بیرونی فونٹس نہیں، کوئی ایمبیڈڈ ویڈیو نہیں، کوئی سوشل میڈیا ویجٹس نہیں۔ آپ کا براؤزر صرف ہمارے اوریجن سے بات کرتا ہے۔ یہ مسلسل انٹیگریشن میں no-third-party.mjs نامی ایک اسکرپٹ کے ذریعے نافذ کیا جاتا ہے جو بنی ہوئی سائٹ کو اسکین کرتا ہے اور بنڈل میں کوئی بیرونی ہوسٹ ظاہر ہونے پر ریلیز ناکام کر دیتا ہے۔ وعدہ ایک یونٹ ٹیسٹ ہے، مارکیٹنگ لائن نہیں۔' },
       { title: 'سائن شدہ اور تصدیق شدہ بلڈز', body: 'ہم جو ہر کنٹینر امیج بھیجتے ہیں وہ تالا لگائے ہوئے حصوں کے ایک سیٹ سے بنی ہے۔ لاک فائل git میں ہے۔ ہم کسی بھی حصے کو اپ گریڈ کرنے سے پہلے ایڈوائزری کا جائزہ لیتے ہیں۔ ریلیز چلنے سے پہلے سائن کی جاتی ہیں اور میزبان پر چیک کی جاتی ہیں۔ کوئی بھی بلڈ جو کسی گیٹ — بنڈل سائز، a11y، تھرڈ پارٹی — میں ناکام ہو، پروڈکشن تک نہیں پہنچ سکتی۔' },
       { title: 'مختصر برقراری ونڈوز', body: 'سرور لاگز ڈیبگنگ کے لیے چودہ دن رکھے جاتے ہیں اور پھر ڈلیٹ کر دیے جاتے ہیں۔ رابطہ-فارم ای میلز صرف اتنی دیر تک رکھی جاتی ہیں جتنی جواب دینے اور گفتگو فائل کرنے میں لگے، پھر ریکارڈ کیپنگ کے لیے زیادہ سے زیادہ چوبیس ماہ تک محفوظ، پھر ڈلیٹ۔ بیک اپس تیس دن کے سائیکل پر رول کرتے ہیں اور ریسٹ پر انکرپٹڈ ہیں۔' },
@@ -1807,7 +1785,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'Enkripsi di setiap kabel', body: "Semua halaman publik dan lalu lintas produk berjalan melalui TLS 1.3 dengan cipher modern. Sertifikat dikeluarkan oleh Let's Encrypt dan dirotasi otomatis. HTTP Strict Transport Security diatur dengan max-age yang panjang. Apa pun yang Anda ketik tidak pernah melintasi web terbuka dalam teks polos. Panggilan internal antar layanan menggunakan TLS timbal balik di tempat di mana jalur jaringan dapat diamati." },
-      { title: 'Self-hosted, tidak tersebar', body: 'Situs ini berjalan di satu VPS di Edmonton, Alberta. Tidak ada CDN pihak ketiga di jalur permintaan. Tidak ada cache edge yang menyimpan salinan data Anda di dua puluh wilayah. Saat produk membutuhkan latensi yang lebih rendah di wilayah jauh, kami menjalankan replika baca milik kami sendiri. Tidak pernah CDN pihak ketiga yang mencatat kunjungan Anda di samping.' },
       { title: 'Nol panggilan pihak ketiga', body: 'Tidak ada analitik, tidak ada piksel, tidak ada jaringan iklan, tidak ada font eksternal, tidak ada video tertanam, tidak ada widget media sosial. Browser Anda hanya berbicara dengan asal kami. Ini ditegakkan dalam continuous integration oleh skrip bernama no-third-party.mjs yang memindai situs yang dibangun dan menggagalkan rilis jika ada host eksternal muncul di bundel. Janji adalah unit test, bukan baris pemasaran.' },
       { title: 'Build yang ditandatangani dan diverifikasi', body: 'Setiap image kontainer yang kami kirim dibuat dari kumpulan bagian yang dikunci. Lockfile ada di git. Kami meninjau saran sebelum memutakhirkan bagian apa pun. Rilis ditandatangani dan diperiksa di host sebelum berjalan. Build yang gagal di gerbang mana pun — ukuran bundle, a11y, pihak ketiga — tidak dapat mencapai produksi.' },
       { title: 'Jendela retensi singkat', body: 'Log server disimpan selama empat belas hari untuk debugging dan kemudian dihapus. Email formulir kontak disimpan hanya selama waktu yang dibutuhkan untuk membalas dan mengarsipkan percakapan, lalu diarsipkan hingga dua puluh empat bulan untuk pencatatan, kemudian dihapus. Backup berputar dalam siklus tiga puluh hari dan dienkripsi saat istirahat.' },
@@ -1850,7 +1827,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'Usimbaji kwenye kila waya', body: "Kurasa zote za umma na trafiki ya bidhaa husafiri kupitia TLS 1.3 na cipher za kisasa. Vyeti hutolewa na Let's Encrypt na huzungushwa kiotomatiki. HTTP Strict Transport Security imewekwa na max-age ndefu. Hakuna unachoandika ambacho hupita kwenye wavuti wazi katika maandishi wazi. Simu za ndani za huduma kwa huduma hutumia TLS ya pande mbili pale njia ya mtandao inaweza kuonekana." },
-      { title: 'Hujihifadhi, sio kutawanyika', body: 'Tovuti hii inaendesha kwenye VPS moja huko Edmonton, Alberta. Hakuna CDN ya nje katika njia ya ombi. Hakuna kache ya ukingo inayohifadhi nakala za data yako katika maeneo ishirini. Bidhaa inapohitaji muda mfupi wa kusubiri katika eneo la mbali, tunaendesha replika zetu za kusoma. Kamwe sio CDN ya nje inayoweka kumbukumbu za ziara yako kando.' },
       { title: 'Sifuri simu za nje', body: 'Hakuna uchanganuzi, hakuna pikseli, hakuna mitandao ya matangazo, hakuna fonti za nje, hakuna video iliyopachikwa, hakuna vijenzi vya mitandao ya kijamii. Kivinjari chako huzungumza tu na asili yetu. Hii inatekelezwa katika continuous integration na hati iitwayo no-third-party.mjs ambayo huchunguza tovuti iliyojengwa na kushinda kutolewa ikiwa mwenyeji wowote wa nje atatokea kwenye bundle. Ahadi ni mtihani wa kitengo, sio mstari wa masoko.' },
       { title: 'Builds zilizotiwa saini na kuthibitishwa', body: 'Kila picha ya kontena tunayotuma imejengwa kutoka seti iliyofungwa ya sehemu. Faili la kufunga liko kwenye git. Tunakagua ushauri kabla ya kubadilisha sehemu yoyote. Matoleo yanasainwa na kukaguliwa kwenye mwenyeji kabla ya kuendeshwa. Build inayoshindwa kwenye lango lolote — ukubwa wa bundle, a11y, wa nje — haiwezi kufikia uzalishaji.' },
       { title: 'Madirisha mafupi ya uhifadhi', body: 'Kumbukumbu za seva huhifadhiwa kwa siku kumi na nne kwa utatuzi wa makosa kisha hufutwa. Barua pepe za fomu ya mawasiliano huhifadhiwa tu kwa muda inaochukua kujibu na kuhifadhi mazungumzo, kisha huhifadhiwa hadi miezi ishirini na minne kwa kuhifadhi rekodi, kisha hufutwa. Hifadhi rudufu huzungushwa katika mzunguko wa siku thelathini na zimefichwa kwenye mahali zinapokaa.' },
@@ -1893,7 +1869,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'Ìpamọ́ lórí gbogbo okùn', body: "Gbogbo àwọn ojú-ìwé ti gbangba àti àwọn ríràn ọjà rin nípasẹ̀ TLS 1.3 pẹ̀lú àwọn àmì òkun ìpamọ́ ti òde-òní. Àwọn ìjẹ́rìí jẹ́ tí Let's Encrypt ṣe àti tí ó yí ara rẹ̀ pa lódódo. HTTP Strict Transport Security ti tan pẹ̀lú max-age tí ó gùn. Ohunkóhun tí o tẹ̀ kì í gba ojú-òpó tí ó ṣí sílẹ̀ ní ọ̀rọ̀ tó ṣàlàyé. Àwọn ìpè inú-iṣẹ́-sí-iṣẹ́ ń lo TLS olùpínkiri níbi tí a lè wo ìpa ọ̀nà nẹ́tíwọ́kì." },
-      { title: 'Tí a fúnra-rẹ̀ gbalejò, kì í ṣe pínpín kárí', body: 'Ojú-òpó yìí ń ṣiṣẹ́ lórí VPS kan ní Edmonton, Alberta. Kò sí CDN ẹgbẹ́ kẹta ní ìpa ọ̀nà ìbéèrè. Kò sí àkójọpọ̀ ìpamọ́ etíkun tí ó ní àwọn ẹ̀dà ti déètà rẹ ní àwọn agbègbè ogún. Nígbà tí ọjà kan bá nílò àkókò ìdáhùn kéré ní agbègbè jíjìn, a ń ṣe àwọn ẹ̀dà ìkàwé wa fúnra-wa. Láìpẹ́ kò sí CDN ẹgbẹ́ kẹta tí ó ń kọ ìbẹ̀wò rẹ sílẹ̀ lẹ́gbẹ̀ẹ́.' },
       { title: 'Òfo àwọn ìpè ẹgbẹ́ kẹta', body: 'Kò sí àyẹ̀wò, kò sí àwọn àmì-òṣùwọ̀n, kò sí àwọn nẹ́tíwọ́kì ìpolongò, kò sí àwọn fonti òde, kò sí àwọn fíìmù tí a fi pọ̀, kò sí àwọn ohun-èlò ojú-ìwé àjọ. Bíráùsà rẹ ń bá orísun wa nìkan sọ̀rọ̀. A ń fi sílẹ̀ lágbára nínú ìpapọ̀ tí ń tẹ̀síwájú nípa ìwé tí orúkọ rẹ̀ ní no-third-party.mjs tí ó ń yẹ ojú-òpó tí a kọ́ wò àti pé ó ń ja ìfilọ̀ kuna bí ó bá ní agbalejò òde tí ó han nínú àkójọpọ̀. Ìlérí náà jẹ́ ìdánwò ẹyọ, kì í ṣe ìlà ìpolongò.' },
       { title: 'Àwọn ìkọ́ tí a fọwọ́sí àti tí a ti rí dájú', body: 'Gbogbo àwòrán kontenẹ̀ tí à ń jádelé jẹ́ tí a kọ́ láti orí ètò àwọn apá tí a ti títì. Ìwé títì wà nínú git. A ń ṣe àyẹ̀wò àwọn imọ̀ràn kí á tó yí apá kankan padà. Àwọn ìfilọ̀ ni a fọwọ́sí àti àyẹ̀wò lórí olùgbàlejò kí wọ́n tó ṣiṣẹ́. Ìkọ́ tí ó kùnà ní ẹnu ọ̀nà kankan — ìwọ̀n àkójọpọ̀, a11y, ẹgbẹ́ kẹta — kò lè dé sí iṣẹ́.' },
       { title: 'Awọn fèrèsé ìfipamọ́ kúkúrú', body: 'A pa àwọn àkọsílẹ̀ olùpèsè mọ́ fún ọjọ́ mẹ́rìnlá fún ìbáworan kí á tó parẹ́. A ń pa àwọn ìmẹ́ìlì fọ́ọ̀mù ìbárasọ̀rọ̀ mọ́ fún àkókò tí ó wù láti dáhùn àti tọrọ ìfọ̀rọ̀wánilẹ́nuwò sílẹ̀, lẹ́yìn náà a fi sí àkójọ títí di oṣù mẹ́rìnlélógún fún àkọsílẹ̀ ìpamọ́, lẹ́yìn náà a parẹ́. Àwọn àdàkọpamọ́ ń yí pa ní ọmọ ìjì ọjọ́ mẹ́talá àti pé wọ́n ti ṣe ìpamọ́ pẹ̀lú nínú ìsinmi.' },
@@ -1936,7 +1911,6 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     },
     posture: [
       { title: 'Ɓoyewa akan kowane waya', body: "Dukkan shafukan jama'a da zirga-zirgar samfuri suna tafiya ta TLS 1.3 tare da cipher na zamani. Takaddun shaida ana ba da su ne ta Let's Encrypt kuma ana juyawa ta atomatik. HTTP Strict Transport Security an saita ta da max-age mai tsayi. Babu abin da kuke buga wanda ya taɓa ƙetare gidan yanar gizo a sarari. Kira na sabis-zuwa-sabis na ciki suna amfani da TLS na biyu inda hanyar sadarwa za a iya gani." },
-      { title: 'Mai kasancewa da kanta, ba a watse ba', body: 'Wannan shafin yana gudana akan VPS ɗaya a Edmonton, Alberta. Babu CDN na ɓangare na uku a hanyar buƙata. Babu cache na gefe da ke riƙe da kwafin bayanan ku a yankuna ashirin. Lokacin da samfuri ya buƙaci ƙarancin lokaci a yanki mai nisa, muna gudanar da kwafin karatu namu. Babu wani CDN na ɓangare na uku da ke yin rajistar ziyarar ku a gefe.' },
       { title: 'Sifili na kira na ɓangare na uku', body: 'Babu nazari, babu pixels, babu hanyoyin tallace-tallace, babu rubutun waje, babu bidiyo da aka shigar, babu kayan aikin kafofin watsa labarun. Mai binciken ku yana magana ne kawai tare da asalin mu. Wannan an aiwatar da shi a cikin haɗin gwiwa mai ci gaba ta wani rubutu mai suna no-third-party.mjs wanda ke duba shafin da aka gina kuma ya gaza fitarwa idan wani mai dauke da bayanan na waje ya fito a cikin bundle. Alkawarin shi ne gwajin sashi, ba layin tallace-tallace ba ne.' },
       { title: 'Builds masu sa hannu da aka tabbatar', body: 'Kowane hoton kwantena da muke aikawa an gina shi ne daga saitin kullun da aka kulle. Lockfile yana cikin git. Muna nazarin shawarwari kafin mu sabunta kowane bangare. Ana sanya hannu kan fitarwa kuma ana duba akan mai masaukin kafin su gudana. Ginin da ya gaza a kowane ƙofa — girman bundle, a11y, ɓangare na uku — ba zai iya kaiwa zuwa samarwa ba.' },
       { title: 'Tagogin riƙewa gajere', body: 'Ana ajiye logs na uwar garke kwanaki goma sha huɗu don gyaran kuskure sannan a goge. Ana ajiye imel na fom ɗin tuntuɓa kawai a tsawon lokacin da ya kamata don amsawa da ajiye tattaunawar, sannan a ajiye har watanni ashirin da huɗu don kiyaye rikodi, sannan a goge. Backups suna juyawa a cikin sake zagayowar kwanaki talatin kuma an boye su a hutawa.' },

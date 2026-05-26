@@ -23,7 +23,6 @@ vi.mock('next-intl/server', () => ({
         alberta: '© 2026 Intelligent Singularity Inc.',
         startConversation: 'Start a conversation',
         languagesBlurb: 'Every public page ships in fourteen languages.',
-        selfHostedChip: 'Self-hosted on a single VPS',
         'links.flagships': 'Flagships',
         'links.careers': 'Careers',
         'links.press': 'Press',

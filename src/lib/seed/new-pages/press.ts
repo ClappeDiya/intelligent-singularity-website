@@ -17,7 +17,6 @@ export const PRESS_PAGE_SEED = {
     { label: 'Languages', value: '14 shipping locales · over 4 billion first-language speakers' },
     { label: 'Stack', value: 'One shared platform across every product' },
     { label: 'Website footprint', value: 'Under 50 KB per page · zero third-party calls' },
-    { label: 'Hosting', value: 'Single VPS in Edmonton, Alberta · no third-party CDN' },
   ],
   quotes: [
     {

@@ -118,7 +118,9 @@ async function SecurityContent({ locale }: { locale: string }) {
           {t('postureHeading')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-          {(page.posture ?? []).map((p: any) => (
+          {(page.posture ?? [])
+            .filter((p: any) => !/(vps|self-host|edmonton)/i.test(`${p?.title ?? ''} ${p?.body ?? ''}`))
+            .map((p: any) => (
             <div key={p.title} className="is-card rounded-[20px] p-6 md:p-7">
               <h3
                 className="mb-2"

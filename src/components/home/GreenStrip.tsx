@@ -73,7 +73,6 @@ export async function GreenStrip({ pageBytes, carbonGrams }: Props) {
         <div className="grid grid-cols-2 gap-x-8 gap-y-8">
           <Stat label={t('pageWeightLabel')} value={`${kb} ${t('pageWeightUnit')}`} hint={t('pageWeightHint')} />
           <Stat label={t('carbonLabel')} value={formatCarbon(carbonGrams)} hint={t('carbonHint')} />
-          <Stat label={t('hostingLabel')} value={t('hostingValue')} hint={t('hostingHint')} />
           <Stat label={t('thirdPartyLabel')} value={t('thirdPartyValue')} hint={t('thirdPartyHint')} />
         </div>
       </div>

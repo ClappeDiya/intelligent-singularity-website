@@ -50,7 +50,7 @@ export const PRODUCTS_SEED: ProductSeed[] = [
   // Agriculture
   { name: 'Apogee', slug: 'apogee', categorySlug: 'agriculture-food',
     tagline: 'Manage your farm.', shortDescription: 'Goat farming management system for commercial farms and smallholders alike.',
-    outboundURL: 'https://apogee.farm', productStatus: 'staging', isFlagship: false, ordering: 15 },
+    outboundURL: 'https://apogee.farm', productStatus: 'production', isFlagship: false, ordering: 15 },
 
   // Media & Creative
   { name: 'Audiflo / SlideFlow', slug: 'audiflo', categorySlug: 'media-creative',
@@ -58,7 +58,7 @@ export const PRODUCTS_SEED: ProductSeed[] = [
     outboundURL: 'https://audiflo.com', productStatus: 'production', isFlagship: false, ordering: 16 },
   { name: 'Nestbitt', slug: 'nestbitt', categorySlug: 'media-creative',
     tagline: 'Make music.', shortDescription: 'AI music generation and voice cloning.',
-    outboundURL: 'https://nestbitt.com', productStatus: 'staging', isFlagship: false, ordering: 17 },
+    outboundURL: 'https://nestbitt.com', productStatus: 'production', isFlagship: false, ordering: 17 },
   { name: 'DailyWorship', slug: 'dailyworship', categorySlug: 'media-creative',
     tagline: 'Worship music for every community.', shortDescription: 'AI-powered worship music generation, open source.',
     outboundURL: 'https://dailyworship.net', productStatus: 'staging', isFlagship: false, ordering: 18 },
@@ -72,5 +72,5 @@ export const PRODUCTS_SEED: ProductSeed[] = [
     outboundURL: 'https://filemanager.clappe.com', productStatus: 'staging', isFlagship: false, ordering: 21 },
   { name: 'RateAds / Feedback Hub', slug: 'rateads', categorySlug: 'communications-data',
     tagline: 'Listen to your community.', shortDescription: 'Survey and feedback platform for every community — enterprise, citizen, underserved.',
-    outboundURL: 'https://rateads.us', productStatus: 'staging', isFlagship: false, ordering: 22 },
+    outboundURL: 'https://rateads.us', productStatus: 'production', isFlagship: false, ordering: 22 },
 ];

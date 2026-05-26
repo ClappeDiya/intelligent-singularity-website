@@ -134,17 +134,6 @@ async function ContactContent({ locale }: { locale: string }) {
                 {t('factLanguagesLine2')}
               </div>
             </div>
-            <div
-              className="rounded-2xl p-5"
-              style={{ border: '1px solid rgba(16,185,129,0.15)', background: 'rgba(255,255,255,0.95)' }}
-            >
-              <div className="text-[10px] uppercase tracking-[0.1em] mb-2" style={{ color: 'var(--color-paper-ink-soft)', fontFamily: 'var(--font-mono)' }}>{t('factHostingLabel')}</div>
-              <div className="text-[13.5px] leading-[1.5]" style={{ color: 'var(--color-paper-ink)' }}>
-                {t('factHostingLine1')}
-                <br />
-                {t('factHostingLine2')}
-              </div>
-            </div>
           </div>
         </div>
       </div>

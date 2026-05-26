@@ -37,8 +37,6 @@ export async function Footer({ locale, studioBlurb }: { locale: string; studioBl
               <span>{t('zeroTrackers')}</span>
               <span aria-hidden="true" style={{ color: 'rgba(16,185,129,0.35)' }}>·</span>
               <span>{t('zeroThirdParty')}</span>
-              <span aria-hidden="true" style={{ color: 'rgba(16,185,129,0.35)' }}>·</span>
-              <span>{t('selfHostedChip')}</span>
             </div>
           </div>
 

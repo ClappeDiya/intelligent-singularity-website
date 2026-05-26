@@ -23,11 +23,6 @@ export const SECURITY_PAGE_SEED = {
         'All public pages and product traffic travel over TLS 1.3 with modern ciphers. Certificates are issued by Let’s Encrypt and rotated automatically. HTTP Strict Transport Security is set with a long max-age. Nothing you type ever crosses the open web in plain text. Internal service-to-service calls use mutual TLS where the network path could be observed.',
     },
     {
-      title: 'Self-hosted, not scattered',
-      body:
-        'This site runs on one VPS in Edmonton, Alberta. No third-party CDN in the request path. No edge cache holding copies of your data in twenty regions. When a product needs lower latency in a far region, we run our own read replicas. Never a third-party CDN that logs your visit on the side.',
-    },
-    {
       title: 'Zero third-party calls',
       body:
         'No analytics, no pixels, no ad networks, no external fonts, no embedded video, no social-media widgets. Your browser only talks to our origin. This is enforced in continuous integration by a script called no-third-party.mjs that scans the built site and fails the release if any external host appears in the bundle. The promise is a unit test, not a marketing line.',
