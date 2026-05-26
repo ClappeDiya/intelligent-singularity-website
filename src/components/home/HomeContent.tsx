@@ -13,6 +13,7 @@ import {
   fetchCommitments,
 } from '@/lib/payload';
 import { bytesToGrams } from '@/lib/carbon';
+import { getPageBytes, PAGE_SIZE_BUDGET } from '@/lib/page-sizes';
 import type { ITUData, Product, CommitmentItem } from '@/types/cms';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { getWebPageSchema } from '@/lib/schema';
@@ -42,8 +43,8 @@ export async function HomeContent({ locale }: { locale: string }) {
   const tHero = await getTranslations('hero');
   const tHome = await getTranslations('pages.home');
 
-  const estBytes = 48_000;
-  const grams = bytesToGrams(estBytes, 0.8);
+  const pageBytes = getPageBytes(`/${locale}`) ?? PAGE_SIZE_BUDGET;
+  const grams = bytesToGrams(pageBytes, 0.8);
   const webPageSchema = getWebPageSchema({
     locale,
     pathname: '/',
@@ -113,7 +114,7 @@ export async function HomeContent({ locale }: { locale: string }) {
         seeAllLine={hp.seeAllPortfolioLine}
       />
       <section className="px-4 sm:px-6 md:px-8 lg:px-12 py-4 md:py-6 lg:py-8">
-        <GreenStrip pageBytes={estBytes} carbonGrams={grams} />
+        <GreenStrip pageBytes={pageBytes} carbonGrams={grams} />
       </section>
       <CommitmentsSection
         title={hp.commitmentsTitle}
