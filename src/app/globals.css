@@ -357,9 +357,9 @@ summary:focus-visible {
 /* ─── Card helpers ──────────────────────────────────────────── */
 
 .is-card {
-  background: #ffffff;
+  background: rgba(16, 185, 129, 0.05);
   border-radius: 20px;
-  border: 1px solid rgba(167, 243, 208, 0.45);
+  border: 1px solid rgba(16, 185, 129, 0.2);
   box-shadow: 0 4px 16px rgba(16, 185, 129, 0.06);
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
@@ -367,11 +367,6 @@ summary:focus-visible {
 .is-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 28px rgba(16, 185, 129, 0.12);
-}
-
-.is-card-accent {
-  background: rgba(16, 185, 129, 0.05);
-  border-color: rgba(16, 185, 129, 0.2);
 }
 
 /* ─── Label mono (inside cards) ─────────────────────────────── */

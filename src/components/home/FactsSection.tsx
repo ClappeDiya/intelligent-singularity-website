@@ -6,13 +6,12 @@ type FactCardProps = {
   caption: React.ReactNode;
   comparison?: React.ReactNode;
   sourceLabel: string;
-  accent?: boolean;
 };
 
-function FactCard({ number, caption, comparison, sourceLabel, accent }: FactCardProps) {
+function FactCard({ number, caption, comparison, sourceLabel }: FactCardProps) {
   return (
     <div
-      className={`is-card relative rounded-[24px] p-7 md:p-9 flex flex-col justify-between min-h-[280px] overflow-hidden${accent ? ' is-card-accent' : ''}`}
+      className="is-card relative rounded-[24px] p-7 md:p-9 flex flex-col justify-between min-h-[280px] overflow-hidden"
     >
       <div>
         <div
@@ -20,11 +19,11 @@ function FactCard({ number, caption, comparison, sourceLabel, accent }: FactCard
           style={{
             fontFamily: 'var(--font-serif)',
             fontSize: 'clamp(52px, 6.4vw, 84px)',
-            background: accent ? 'linear-gradient(135deg, #059669, #0d9488)' : 'var(--color-paper-ink)',
-            WebkitBackgroundClip: accent ? 'text' : undefined,
-            backgroundClip: accent ? 'text' : undefined,
-            WebkitTextFillColor: accent ? 'transparent' : undefined,
-            color: accent ? 'transparent' : 'var(--color-paper-ink)',
+            background: 'linear-gradient(135deg, #059669, #0d9488)',
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            color: 'transparent',
           }}
         >
           {number}
@@ -77,7 +76,6 @@ export async function FactsSection({ title, lead, itu }: Props) {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-7">
           <FactCard
-            accent
             number={`${(itu.offlineCount / 1e9).toFixed(2)}B`}
             sourceLabel={sourceLabel}
             caption={t.rich('card1Caption', {
