@@ -408,9 +408,6 @@
       "factLanguagesLabel": "اللغات",
       "factLanguagesLine1": "14 لغة في الإنتاج.",
       "factLanguagesLine2": "بما في ذلك العربية والأردية RTL.",
-      "factHostingLabel": "الاستضافة",
-      "factHostingLine1": "خادم VPS واحد، إدمونتون.",
-      "factHostingLine2": "لا CDN طرف ثالث.",
       "metaTitle": "تواصل | Intelligent Singularity",
       "metaDescription": "تواصل مع Intelligent Singularity للشراكات أو الصحافة أو الشؤون القانونية أو استفسارات المنتج حول منظومتنا البرمجية للوصول الشامل."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS، بدون متتبعات",
       "statThisVisitLabel": "هذه الزيارة",
       "statThisVisitHint": "CO₂ · مؤسسة الويب الأخضر",
-      "statHostingLabel": "الاستضافة",
-      "statHostingValue": "استضافة ذاتية",
-      "statHostingHint": "خادم VPS واحد · شبكة ألبرتا (~{percent}% متجدد)",
       "statThirdPartyLabel": "طرف ثالث",
       "statThirdPartyValue": "صفر",
       "statThirdPartyHint": "لا بكسلات · لا خطوط · لا CDN on this site",
@@ -474,11 +468,6 @@
           "label": "استراتيجية الوسائط",
           "value": "خطوط النظام · SVG",
           "hint": "لا أبطال نقطية. رسوم SVG مضمّنة. مجموعات فرعية من الخطوط لكل سكربت تُحمَّل فقط عندما يكون السكربت على الصفحة."
-        },
-        "hosting": {
-          "label": "الاستضافة",
-          "value": "خادم VPS منخفض PUE",
-          "hint": "استضافة ذاتية على خادم VPS واحد في إدمونتون، ألبرتا. لا CDN. لا عقد طرفية. أصل واحد، حد ثقة واحد."
         },
         "offlineReach": {
           "label": "الوصول دون اتصال",
@@ -538,9 +527,6 @@
         "pageWeightHint": "الميزانية: أقل من 50 كيلوبايت لكل صفحة، مضغوطة",
         "carbonLabel": "زيارتك أصدرت",
         "carbonHint": "محسوبة بنموذج مؤسسة الويب الأخضر",
-        "hostingLabel": "استضافتنا",
-        "hostingValue": "مُستضافة ذاتيًا",
-        "hostingHint": "خادم افتراضي واحد · بدون شبكة توزيع · شبكة ألبرتا",
         "thirdPartyLabel": "استدعاءات خارجية",
         "thirdPartyValue": "صفر",
         "thirdPartyHint": "لا شبكات توزيع، ولا خطوط، ولا تحليلات، ولا بكسلات on this site"

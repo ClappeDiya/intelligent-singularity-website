@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Bahasa",
       "factLanguagesLine1": "14 lokal yang dirilis.",
       "factLanguagesLine2": "Termasuk Arab & Urdu RTL.",
-      "factHostingLabel": "Hosting",
-      "factHostingLine1": "Satu VPS, Edmonton.",
-      "factHostingLine2": "Tanpa CDN pihak ketiga.",
       "metaTitle": "Kontak | Intelligent Singularity",
       "metaDescription": "Hubungi Intelligent Singularity untuk kemitraan, pers, hukum, atau pertanyaan produk tentang ekosistem perangkat lunak akses universal kami."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, tanpa pelacak",
       "statThisVisitLabel": "Kunjungan ini",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Hosting",
-      "statHostingValue": "Mandiri",
-      "statHostingHint": "Satu VPS · jaringan Alberta (~{percent}% terbarukan)",
       "statThirdPartyLabel": "Pihak ketiga",
       "statThirdPartyValue": "Nol",
       "statThirdPartyHint": "Tanpa piksel · tanpa font · tanpa CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Strategi media",
           "value": "Font sistem · SVG",
           "hint": "Tanpa hero raster. Ilustrasi SVG sebaris. Subset font per skrip dimuat hanya saat skrip itu ada di halaman."
-        },
-        "hosting": {
-          "label": "Hosting",
-          "value": "VPS PUE-rendah",
-          "hint": "Mandiri di satu VPS di Edmonton, Alberta. Tanpa CDN. Tanpa edge node. Satu asal, satu batas kepercayaan."
         },
         "offlineReach": {
           "label": "Jangkauan offline",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Anggaran: di bawah 50 KB per rute, gzip",
         "carbonLabel": "Kunjungan Anda memancarkan",
         "carbonHint": "Dihitung dengan model Green Web Foundation",
-        "hostingLabel": "Hosting kami",
-        "hostingValue": "Self-hosted",
-        "hostingHint": "VPS tunggal · tanpa CDN · grid Alberta",
         "thirdPartyLabel": "Panggilan pihak ketiga",
         "thirdPartyValue": "Nol",
         "thirdPartyHint": "Tanpa CDN, font, analitik, piksel on this site"

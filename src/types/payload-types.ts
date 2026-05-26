@@ -1015,7 +1015,7 @@ export interface GreenPage {
     [k: string]: unknown;
   };
   /**
-   * Used for carbon calculation. Update when Contabo DC mix is verified.
+   * Used for carbon calculation. Update when an independent grid-mix figure is verified.
    */
   hostingGreenRatio: number;
   _status?: ('draft' | 'published') | null;

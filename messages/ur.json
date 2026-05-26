@@ -408,9 +408,6 @@
       "factLanguagesLabel": "زبانیں",
       "factLanguagesLine1": "14 شپنگ مقامات۔",
       "factLanguagesLine2": "بشمول عربی اور اردو RTL۔",
-      "factHostingLabel": "ہوسٹنگ",
-      "factHostingLine1": "ایک VPS، ایڈمنٹن۔",
-      "factHostingLine2": "کوئی تھرڈ پارٹی CDN نہیں۔",
       "metaTitle": "رابطہ | Intelligent Singularity",
       "metaDescription": "شراکت داری، پریس، قانونی یا ہمارے عالمی رسائی والے سافٹ ویئر ایکوسسٹم کے بارے میں پروڈکٹ کے سوالات کے لیے Intelligent Singularity سے رابطہ کریں۔"
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS، کوئی ٹریکر نہیں",
       "statThisVisitLabel": "یہ وزٹ",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "ہوسٹنگ",
-      "statHostingValue": "خود ہوسٹڈ",
-      "statHostingHint": "ایک VPS · البرٹا گرڈ (~{percent}% قابل تجدید)",
       "statThirdPartyLabel": "تیسرا فریق",
       "statThirdPartyValue": "صفر",
       "statThirdPartyHint": "کوئی pixels نہیں · کوئی fonts نہیں · کوئی CDN نہیں on this site",
@@ -474,11 +468,6 @@
           "label": "میڈیا حکمت عملی",
           "value": "سسٹم fonts · SVG",
           "hint": "کوئی raster heroes نہیں۔ Inline SVG illustrations۔ فی script کی font subsets صرف اس وقت لوڈ ہوتی ہیں جب وہ script صفحے پر ہوتی ہے۔"
-        },
-        "hosting": {
-          "label": "ہوسٹنگ",
-          "value": "کم PUE والا VPS",
-          "hint": "Edmonton، Alberta میں ایک VPS پر خود ہوسٹڈ۔ کوئی CDN نہیں۔ کوئی edge nodes نہیں۔ ایک origin، ایک trust حد۔"
         },
         "offlineReach": {
           "label": "آف لائن رسائی",
@@ -538,9 +527,6 @@
         "pageWeightHint": "بجٹ: فی روٹ 50 کے بی سے کم، gzip",
         "carbonLabel": "آپ کے دورے نے خارج کیا",
         "carbonHint": "گرین ویب فاؤنڈیشن ماڈل سے حساب کیا گیا",
-        "hostingLabel": "ہماری میزبانی",
-        "hostingValue": "خود میزبان",
-        "hostingHint": "واحد VPS · کوئی CDN نہیں · البرٹا گرڈ",
         "thirdPartyLabel": "تیسرے فریق کی کالیں",
         "thirdPartyValue": "صفر",
         "thirdPartyHint": "کوئی CDN، فونٹس، تجزیات، پکسلز نہیں on this site"

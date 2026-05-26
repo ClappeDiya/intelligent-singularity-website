@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Àwọn èdè",
       "factLanguagesLine1": "Àwọn àyè 14 tó ti tu sílẹ̀.",
       "factLanguagesLine2": "Pẹ̀lú Lárúbáwá àti Urdu RTL.",
-      "factHostingLabel": "Hosting",
-      "factHostingLine1": "VPS kanṣoṣo, Edmonton.",
-      "factHostingLine2": "Kò sí CDN ti ẹlẹ́gbẹ́ kẹta.",
       "metaTitle": "Kàn Sí Wa | Intelligent Singularity",
       "metaDescription": "Kàn sí Intelligent Singularity fún àjọṣe, ìròyìn, ofin, tàbí ìbéèrè ọjà nípa ètò-àyíká sọ́fítíwérì wíwọlé káríayé wa."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, kò sí olùtọpa",
       "statThisVisitLabel": "Ìbẹ̀wò yìí",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Hosting",
-      "statHostingValue": "Tí a fi ara wa hósúù",
-      "statHostingHint": "VPS kanṣoṣo · gírídì Alberta (~{percent}% tí a lè tún ṣe)",
       "statThirdPartyLabel": "Ẹlẹ́gbẹ́ kẹta",
       "statThirdPartyValue": "Òfò",
       "statThirdPartyHint": "Kò sí pixels · kò sí fonts · kò sí CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Ìlànà media",
           "value": "Fonts ti tẹ́tẹ́ · SVG",
           "hint": "Kò sí àwọn akọni raster. Àwọn àṣàrò SVG inline. Àwọn ìpín fonts kòòkan ní gbogbo iṣẹ́ tí a fi sílẹ̀ kì í kàn lóòdì pẹ̀lú script."
-        },
-        "hosting": {
-          "label": "Hosting",
-          "value": "VPS PUE-kéékèèké",
-          "hint": "Tí a fi-ara-wa-hósúù lórí VPS kanṣoṣo ní Edmonton, Alberta. Kò sí CDN. Kò sí àwọn edge nodes. Orísun kan, ààlà ìgbẹ́kẹ̀lẹ́ kan."
         },
         "offlineReach": {
           "label": "Ipa-ọ̀nà offline",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Owó-ìnáwó: ní isalẹ KB 50 fún ọ̀nà kọ̀ọ̀kan, gzip",
         "carbonLabel": "Ìbẹ̀wò rẹ tu jáde",
         "carbonHint": "Iṣiro pẹ̀lú àwòkọ́ṣe Green Web Foundation",
-        "hostingLabel": "Iṣẹ́ ìgbàlejò wa",
-        "hostingValue": "Ìgbà-ara-ẹni",
-        "hostingHint": "VPS kan ṣoṣo · kò sí CDN · grid Alberta",
         "thirdPartyLabel": "Awọn ìpè ẹgbẹ́ kẹta",
         "thirdPartyValue": "Òfo",
         "thirdPartyHint": "Kò sí CDN, ránpẹ́, ìtúpalẹ̀, pixels on this site"

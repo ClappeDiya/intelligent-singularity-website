@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Языки",
       "factLanguagesLine1": "14 языков в продакшене.",
       "factLanguagesLine2": "Включая арабский и урду RTL.",
-      "factHostingLabel": "Хостинг",
-      "factHostingLine1": "Один VPS, Эдмонтон.",
-      "factHostingLine2": "Без сторонних CDN.",
       "metaTitle": "Контакты | Intelligent Singularity",
       "metaDescription": "Свяжитесь с Intelligent Singularity по вопросам партнёрства, прессы, юридических или продуктовых запросов о нашей экосистеме программного обеспечения для всеобщего доступа."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, без трекеров",
       "statThisVisitLabel": "Этот визит",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Хостинг",
-      "statHostingValue": "Самохостинг",
-      "statHostingHint": "Один VPS · сеть Альберты (~{percent}% возобновляемой)",
       "statThirdPartyLabel": "Сторонние",
       "statThirdPartyValue": "Ноль",
       "statThirdPartyHint": "Без пикселей · без шрифтов · без CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Стратегия медиа",
           "value": "Системные шрифты · SVG",
           "hint": "Никаких растровых героев. Встроенные SVG-иллюстрации. Подмножества шрифтов по скриптам загружаются только когда этот скрипт на странице."
-        },
-        "hosting": {
-          "label": "Хостинг",
-          "value": "VPS с низким PUE",
-          "hint": "Самохостинг на одном VPS в Эдмонтоне, Альберта. Без CDN. Без edge-узлов. Один источник, одна граница доверия."
         },
         "offlineReach": {
           "label": "Охват офлайн",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Бюджет: менее 50 КБ на маршрут, gzip",
         "carbonLabel": "Ваш визит выделил",
         "carbonHint": "Рассчитано по модели Green Web Foundation",
-        "hostingLabel": "Наш хостинг",
-        "hostingValue": "Самостоятельный хостинг",
-        "hostingHint": "Единственный VPS · без CDN · сеть Альберты",
         "thirdPartyLabel": "Сторонние вызовы",
         "thirdPartyValue": "Ноль",
         "thirdPartyHint": "Никаких CDN, шрифтов, аналитики, пикселей on this site"

@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Harsuna",
       "factLanguagesLine1": "Yanki 14 na turawa.",
       "factLanguagesLine2": "Hadawa da Larabci da Urdu RTL.",
-      "factHostingLabel": "Hosting",
-      "factHostingLine1": "VPS guda ɗaya, Edmonton.",
-      "factHostingLine2": "Babu CDN na ɓangare na uku.",
       "metaTitle": "Tuntube Mu | Intelligent Singularity",
       "metaDescription": "Tuntubi Intelligent Singularity don haɗin gwiwa, manema labarai, shari'a, ko tambayoyin samfur game da yanayin software namu na samun damar duniya."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, babu masu binciko",
       "statThisVisitLabel": "Wannan ziyarar",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Hosting",
-      "statHostingValue": "Mai gida",
-      "statHostingHint": "VPS guda · grid na Alberta (~{percent}% mai sabuntawa)",
       "statThirdPartyLabel": "Ɓangare na uku",
       "statThirdPartyValue": "Sifili",
       "statThirdPartyHint": "Babu pixels · babu fonts · babu CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Dabarar media",
           "value": "Fonts na tsarin · SVG",
           "hint": "Babu masu jarumai na raster. Hotunan SVG na cikin layi. Ƙananan fonts na kowane script suna lodawa kawai lokacin da wannan script yake a shafin."
-        },
-        "hosting": {
-          "label": "Hosting",
-          "value": "VPS mai-ƙarancin-PUE",
-          "hint": "Mai-gida a kan VPS guda a Edmonton, Alberta. Babu CDN. Babu edge nodes. Asali ɗaya, iyaka amincewa ɗaya."
         },
         "offlineReach": {
           "label": "Cimma na offline",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Kasafin kuɗi: ƙasa da KB 50 a kowace hanya, gzip",
         "carbonLabel": "Ziyararku ta fitar da",
         "carbonHint": "An ƙididdige tare da samfurin Green Web Foundation",
-        "hostingLabel": "Masaukinmu",
-        "hostingValue": "Mai-masaukin kai",
-        "hostingHint": "VPS guda ɗaya · babu CDN · grid na Alberta",
         "thirdPartyLabel": "Kira na ɓangare na uku",
         "thirdPartyValue": "Sifili",
         "thirdPartyHint": "Babu CDN, rubutu, nazari, pixels on this site"

@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Languages",
       "factLanguagesLine1": "14 shipping locales.",
       "factLanguagesLine2": "Including Arabic & Urdu RTL.",
-      "factHostingLabel": "Hosting",
-      "factHostingLine1": "Single VPS, Edmonton.",
-      "factHostingLine2": "No third-party CDN.",
       "metaTitle": "Contact | Intelligent Singularity",
       "metaDescription": "Contact Intelligent Singularity for partnerships, press, legal, or product inquiries about our universal-access software ecosystem."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, no trackers",
       "statThisVisitLabel": "This visit",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Hosting",
-      "statHostingValue": "Self-hosted",
-      "statHostingHint": "Single VPS · Alberta grid (~{percent}% renewable)",
       "statThirdPartyLabel": "Third-party",
       "statThirdPartyValue": "Zero",
       "statThirdPartyHint": "No pixels · no fonts · no CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Media strategy",
           "value": "System fonts · SVG",
           "hint": "No raster heroes. Inline SVG illustrations. Per-script font subsets loaded only when that script is on the page."
-        },
-        "hosting": {
-          "label": "Hosting",
-          "value": "Low-PUE VPS",
-          "hint": "Self-hosted on a single VPS in Edmonton, Alberta. No CDN. No edge nodes. One origin, one trust boundary."
         },
         "offlineReach": {
           "label": "Offline reach",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Budget: under 50 KB per route, gzip",
         "carbonLabel": "Your visit emitted",
         "carbonHint": "Computed with the Green Web Foundation model",
-        "hostingLabel": "Our hosting",
-        "hostingValue": "Self-hosted",
-        "hostingHint": "Single VPS · no CDN · Alberta grid",
         "thirdPartyLabel": "Third-party calls",
         "thirdPartyValue": "Zero",
         "thirdPartyHint": "No CDNs, fonts, analytics, pixels on this site"

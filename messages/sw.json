@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Lugha",
       "factLanguagesLine1": "Lugha 14 zinazotumwa.",
       "factLanguagesLine2": "Pamoja na Kiarabu na Kiurdu RTL.",
-      "factHostingLabel": "Hosting",
-      "factHostingLine1": "VPS moja, Edmonton.",
-      "factHostingLine2": "Hakuna CDN ya mtu wa tatu.",
       "metaTitle": "Wasiliana Nasi | Intelligent Singularity",
       "metaDescription": "Wasiliana na Intelligent Singularity kwa ushirikiano, vyombo vya habari, sheria, au maswali ya bidhaa kuhusu mfumo wetu wa programu za ufikiaji wa wote."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, hakuna vifuatiliaji",
       "statThisVisitLabel": "Ziara hii",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Hosting",
-      "statHostingValue": "Iliyojitegemea",
-      "statHostingHint": "VPS moja · gridi ya Alberta (~{percent}% inayoweza kufanywa upya)",
       "statThirdPartyLabel": "Mtu wa tatu",
       "statThirdPartyValue": "Sifuri",
       "statThirdPartyHint": "Hakuna pixels · hakuna fonti · hakuna CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Mkakati wa media",
           "value": "Fonti za mfumo · SVG",
           "hint": "Hakuna mashujaa wa raster. Mchoro wa SVG wa ndani. Vipande vya fonti kwa kila skripti hupakuliwa tu wakati skripti hiyo iko kwenye ukurasa."
-        },
-        "hosting": {
-          "label": "Hosting",
-          "value": "VPS yenye PUE-ndogo",
-          "hint": "Iliyojitegemea kwenye VPS moja huko Edmonton, Alberta. Hakuna CDN. Hakuna nodi za edge. Asili moja, mpaka mmoja wa imani."
         },
         "offlineReach": {
           "label": "Ufikiaji wa offline",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Bajeti: chini ya KB 50 kwa kila njia, gzip",
         "carbonLabel": "Ziara yako ilitoa",
         "carbonHint": "Imekokotolewa na muundo wa Green Web Foundation",
-        "hostingLabel": "Mwenyeji wetu",
-        "hostingValue": "Mwenyeji wa kibinafsi",
-        "hostingHint": "VPS moja · hakuna CDN · gridi ya Alberta",
         "thirdPartyLabel": "Simu za upande wa tatu",
         "thirdPartyValue": "Sifuri",
         "thirdPartyHint": "Hakuna CDN, fonti, uchanganuzi, pikseli on this site"

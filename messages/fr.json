@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Langues",
       "factLanguagesLine1": "14 langues en production.",
       "factLanguagesLine2": "Y compris arabe et ourdou RTL.",
-      "factHostingLabel": "Hébergement",
-      "factHostingLine1": "Un seul VPS, Edmonton.",
-      "factHostingLine2": "Aucun CDN tiers.",
       "metaTitle": "Contact | Intelligent Singularity",
       "metaDescription": "Contactez Intelligent Singularity pour des partenariats, la presse, le juridique ou des questions produit sur notre écosystème de logiciels d'accès universel."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, sans traqueurs",
       "statThisVisitLabel": "Cette visite",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Hébergement",
-      "statHostingValue": "Auto-hébergé",
-      "statHostingHint": "Un VPS · réseau de l'Alberta (~{percent}% renouvelable)",
       "statThirdPartyLabel": "Tiers",
       "statThirdPartyValue": "Zéro",
       "statThirdPartyHint": "Pas de pixels · pas de polices · pas de CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Stratégie médias",
           "value": "Polices système · SVG",
           "hint": "Pas de héros matriciels. Illustrations SVG en ligne. Sous-ensembles de polices par script chargés uniquement quand ce script est sur la page."
-        },
-        "hosting": {
-          "label": "Hébergement",
-          "value": "VPS à faible PUE",
-          "hint": "Auto-hébergé sur un seul VPS à Edmonton, Alberta. Pas de CDN. Pas de nœuds edge. Une origine, une frontière de confiance."
         },
         "offlineReach": {
           "label": "Portée hors ligne",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Budget : moins de 50 Ko par route, gzip",
         "carbonLabel": "Votre visite a émis",
         "carbonHint": "Calculé avec le modèle de la Green Web Foundation",
-        "hostingLabel": "Notre hébergement",
-        "hostingValue": "Auto-hébergé",
-        "hostingHint": "VPS unique · sans CDN · réseau de l'Alberta",
         "thirdPartyLabel": "Appels tiers",
         "thirdPartyValue": "Zéro",
         "thirdPartyHint": "Aucun CDN, police, analytique, pixel on this site"

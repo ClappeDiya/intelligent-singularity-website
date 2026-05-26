@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Idiomas",
       "factLanguagesLine1": "14 idiomas em produção.",
       "factLanguagesLine2": "Incluindo árabe e urdu RTL.",
-      "factHostingLabel": "Hospedagem",
-      "factHostingLine1": "Um único VPS, Edmonton.",
-      "factHostingLine2": "Sem CDN de terceiros.",
       "metaTitle": "Contacto | Intelligent Singularity",
       "metaDescription": "Contacte a Intelligent Singularity para parcerias, imprensa, jurídico ou questões sobre o nosso ecossistema de software de acesso universal."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, sem rastreadores",
       "statThisVisitLabel": "Esta visita",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Hospedagem",
-      "statHostingValue": "Auto-hospedado",
-      "statHostingHint": "Um único VPS · rede de Alberta (~{percent}% renovável)",
       "statThirdPartyLabel": "Terceiros",
       "statThirdPartyValue": "Zero",
       "statThirdPartyHint": "Sem pixels · sem fontes · sem CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Estratégia de mídia",
           "value": "Fontes do sistema · SVG",
           "hint": "Sem heróis rasterizados. Ilustrações SVG inline. Subconjuntos de fontes por script carregados apenas quando esse script está na página."
-        },
-        "hosting": {
-          "label": "Hospedagem",
-          "value": "VPS de baixo PUE",
-          "hint": "Auto-hospedado em um único VPS em Edmonton, Alberta. Sem CDN. Sem nós de borda. Uma origem, uma fronteira de confiança."
         },
         "offlineReach": {
           "label": "Alcance offline",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Orçamento: menos de 50 KB por rota, gzip",
         "carbonLabel": "Sua visita emitiu",
         "carbonHint": "Calculado com o modelo da Green Web Foundation",
-        "hostingLabel": "Nossa hospedagem",
-        "hostingValue": "Auto-hospedado",
-        "hostingHint": "VPS único · sem CDN · rede de Alberta",
         "thirdPartyLabel": "Chamadas de terceiros",
         "thirdPartyValue": "Zero",
         "thirdPartyHint": "Sem CDN, fontes, análises, pixels on this site"

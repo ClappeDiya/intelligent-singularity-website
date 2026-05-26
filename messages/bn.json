@@ -408,9 +408,6 @@
       "factLanguagesLabel": "ভাষা",
       "factLanguagesLine1": "১৪টি শিপিং লোকেল।",
       "factLanguagesLine2": "আরবি ও উর্দু RTL সহ।",
-      "factHostingLabel": "হোস্টিং",
-      "factHostingLine1": "একক VPS, এডমন্টন।",
-      "factHostingLine2": "কোনো তৃতীয় পক্ষের CDN নেই।",
       "metaTitle": "যোগাযোগ | Intelligent Singularity",
       "metaDescription": "অংশীদারিত্ব, প্রেস, আইনি বা আমাদের সর্বজনীন প্রবেশাধিকার সফ্টওয়্যার ইকোসিস্টেম সম্পর্কে পণ্য জিজ্ঞাসার জন্য Intelligent Singularity-এর সাথে যোগাযোগ করুন।"
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, কোনো ট্র্যাকার নেই",
       "statThisVisitLabel": "এই ভিজিট",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "হোস্টিং",
-      "statHostingValue": "নিজস্ব হোস্টেড",
-      "statHostingHint": "একটি VPS · আলবার্টা গ্রিড (~{percent}% নবায়নযোগ্য)",
       "statThirdPartyLabel": "তৃতীয় পক্ষ",
       "statThirdPartyValue": "শূন্য",
       "statThirdPartyHint": "কোনো পিক্সেল নেই · কোনো ফন্ট নেই · কোনো CDN নেই on this site",
@@ -474,11 +468,6 @@
           "label": "মিডিয়া কৌশল",
           "value": "সিস্টেম ফন্ট · SVG",
           "hint": "কোনো রাস্টার হিরো নেই। ইনলাইন SVG ইলাস্ট্রেশন। প্রতি স্ক্রিপ্ট ফন্ট সাবসেট শুধু সেই স্ক্রিপ্ট পৃষ্ঠায় থাকলেই লোড হয়।"
-        },
-        "hosting": {
-          "label": "হোস্টিং",
-          "value": "কম-PUE VPS",
-          "hint": "এডমন্টন, আলবার্টায় একটি VPS-এ স্ব-হোস্টেড। কোনো CDN নেই। কোনো এজ নোড নেই। একটি অরিজিন, একটি ট্রাস্ট সীমা।"
         },
         "offlineReach": {
           "label": "অফলাইন রিচ",
@@ -538,9 +527,6 @@
         "pageWeightHint": "বাজেট: প্রতি রুট ৫০ কেবি-এর নিচে, gzip",
         "carbonLabel": "আপনার ভিজিট নির্গত করেছে",
         "carbonHint": "গ্রিন ওয়েব ফাউন্ডেশন মডেল দিয়ে গণনা করা",
-        "hostingLabel": "আমাদের হোস্টিং",
-        "hostingValue": "স্ব-হোস্ট",
-        "hostingHint": "একক VPS · কোনও CDN নেই · অ্যালবার্টা গ্রিড",
         "thirdPartyLabel": "তৃতীয় পক্ষের কল",
         "thirdPartyValue": "শূন্য",
         "thirdPartyHint": "কোনও CDN, ফন্ট, অ্যানালিটিক্স, পিক্সেল নেই on this site"

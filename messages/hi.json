@@ -408,9 +408,6 @@
       "factLanguagesLabel": "भाषाएँ",
       "factLanguagesLine1": "14 शिपिंग भाषाएँ।",
       "factLanguagesLine2": "अरबी और उर्दू RTL सहित।",
-      "factHostingLabel": "होस्टिंग",
-      "factHostingLine1": "एक VPS, एडमोंटन।",
-      "factHostingLine2": "कोई तृतीय-पक्ष CDN नहीं।",
       "metaTitle": "संपर्क | Intelligent Singularity",
       "metaDescription": "साझेदारी, प्रेस, कानूनी या हमारे सार्वभौमिक पहुँच सॉफ़्टवेयर इकोसिस्टम के बारे में उत्पाद पूछताछ के लिए Intelligent Singularity से संपर्क करें।"
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, कोई ट्रैकर नहीं",
       "statThisVisitLabel": "यह यात्रा",
       "statThisVisitHint": "CO₂ · ग्रीन वेब फाउंडेशन",
-      "statHostingLabel": "होस्टिंग",
-      "statHostingValue": "स्व-होस्टेड",
-      "statHostingHint": "एकल VPS · अल्बर्टा ग्रिड (~{percent}% नवीकरणीय)",
       "statThirdPartyLabel": "तृतीय-पक्ष",
       "statThirdPartyValue": "शून्य",
       "statThirdPartyHint": "कोई पिक्सेल नहीं · कोई फ़ॉन्ट नहीं · कोई CDN नहीं on this site",
@@ -474,11 +468,6 @@
           "label": "मीडिया रणनीति",
           "value": "सिस्टम फ़ॉन्ट्स · SVG",
           "hint": "कोई रास्टर हीरो नहीं। इनलाइन SVG चित्र। प्रति-स्क्रिप्ट फ़ॉन्ट सबसेट केवल तब लोड होते हैं जब वह स्क्रिप्ट पेज पर होती है।"
-        },
-        "hosting": {
-          "label": "होस्टिंग",
-          "value": "कम PUE वाला VPS",
-          "hint": "एडमॉन्टन, अल्बर्टा में एकल VPS पर स्व-होस्टेड। कोई CDN नहीं। कोई एज नोड्स नहीं। एक मूल, एक विश्वास सीमा।"
         },
         "offlineReach": {
           "label": "ऑफ़लाइन पहुंच",
@@ -538,9 +527,6 @@
         "pageWeightHint": "बजट: प्रति रूट 50 केबी से कम, gzip",
         "carbonLabel": "आपकी विज़िट से उत्सर्जन",
         "carbonHint": "ग्रीन वेब फ़ाउंडेशन मॉडल से गणना",
-        "hostingLabel": "हमारी होस्टिंग",
-        "hostingValue": "स्व-होस्टेड",
-        "hostingHint": "एकल VPS · कोई CDN नहीं · अल्बर्टा ग्रिड",
         "thirdPartyLabel": "तृतीय-पक्ष कॉल",
         "thirdPartyValue": "शून्य",
         "thirdPartyHint": "कोई CDN, फ़ॉन्ट, एनालिटिक्स, पिक्सेल नहीं on this site"

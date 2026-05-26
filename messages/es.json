@@ -408,9 +408,6 @@
       "factLanguagesLabel": "Idiomas",
       "factLanguagesLine1": "14 idiomas en producción.",
       "factLanguagesLine2": "Incluyendo árabe y urdu RTL.",
-      "factHostingLabel": "Alojamiento",
-      "factHostingLine1": "Un solo VPS, Edmonton.",
-      "factHostingLine2": "Sin CDN de terceros.",
       "metaTitle": "Contacto | Intelligent Singularity",
       "metaDescription": "Contacta a Intelligent Singularity para alianzas, prensa, legal o consultas sobre nuestro ecosistema de software de acceso universal."
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS, sin rastreadores",
       "statThisVisitLabel": "Esta visita",
       "statThisVisitHint": "CO₂ · Green Web Foundation",
-      "statHostingLabel": "Alojamiento",
-      "statHostingValue": "Auto-alojado",
-      "statHostingHint": "Un solo VPS · red eléctrica de Alberta (~{percent}% renovable)",
       "statThirdPartyLabel": "Terceros",
       "statThirdPartyValue": "Cero",
       "statThirdPartyHint": "Sin píxeles · sin fuentes · sin CDN on this site",
@@ -474,11 +468,6 @@
           "label": "Estrategia de medios",
           "value": "Fuentes del sistema · SVG",
           "hint": "Sin héroes rasterizados. Ilustraciones SVG en línea. Subconjuntos de fuentes por script cargados solo cuando ese script está en la página."
-        },
-        "hosting": {
-          "label": "Alojamiento",
-          "value": "VPS de bajo PUE",
-          "hint": "Auto-alojado en un solo VPS en Edmonton, Alberta. Sin CDN. Sin nodos edge. Un origen, un límite de confianza."
         },
         "offlineReach": {
           "label": "Alcance sin conexión",
@@ -538,9 +527,6 @@
         "pageWeightHint": "Presupuesto: menos de 50 KB por ruta, gzip",
         "carbonLabel": "Tu visita emitió",
         "carbonHint": "Calculado con el modelo de la Green Web Foundation",
-        "hostingLabel": "Nuestro alojamiento",
-        "hostingValue": "Auto-alojado",
-        "hostingHint": "VPS único · sin CDN · red de Alberta",
         "thirdPartyLabel": "Llamadas a terceros",
         "thirdPartyValue": "Cero",
         "thirdPartyHint": "Sin CDN, fuentes, analíticas, píxeles on this site"

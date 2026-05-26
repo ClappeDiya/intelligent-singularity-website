@@ -193,7 +193,13 @@ export async function seedInsights(payload: Payload, log: string[]): Promise<voi
       await payload.update({
         collection: 'journal-posts',
         id: existingId,
-        data: { subtitle: post.subtitle } as any,
+        data: {
+          title: post.title,
+          subtitle: post.subtitle,
+          tags: post.tags,
+          sources: post.sources,
+          body: post.body,
+        } as any,
       });
       updated += 1;
     }

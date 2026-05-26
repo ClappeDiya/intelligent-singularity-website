@@ -408,9 +408,6 @@
       "factLanguagesLabel": "语言",
       "factLanguagesLine1": "14 种发布语言。",
       "factLanguagesLine2": "包括阿拉伯语和乌尔都语 RTL。",
-      "factHostingLabel": "托管",
-      "factHostingLine1": "单一 VPS，埃德蒙顿。",
-      "factHostingLine2": "无第三方 CDN。",
       "metaTitle": "联系我们 | Intelligent Singularity",
       "metaDescription": "就合作、媒体、法律或我们的普惠访问软件生态的产品咨询,联系 Intelligent Singularity。"
     },
@@ -442,9 +439,6 @@
       "statThisPageHint": "HTML + CSS，无跟踪器",
       "statThisVisitLabel": "本次访问",
       "statThisVisitHint": "CO₂ · 绿色网页基金会",
-      "statHostingLabel": "托管",
-      "statHostingValue": "自托管",
-      "statHostingHint": "单一 VPS · 艾伯塔电网（约 {percent}% 可再生）",
       "statThirdPartyLabel": "第三方",
       "statThirdPartyValue": "零",
       "statThirdPartyHint": "无像素 · 无字体 · 无 CDN on this site",
@@ -474,11 +468,6 @@
           "label": "媒体策略",
           "value": "系统字体 · SVG",
           "hint": "无栅格主图。内联 SVG 插图。仅在该脚本位于页面时加载每个脚本的字体子集。"
-        },
-        "hosting": {
-          "label": "托管",
-          "value": "低 PUE VPS",
-          "hint": "自托管于艾伯塔省埃德蒙顿的单一 VPS。无 CDN。无边缘节点。一个源点，一个信任边界。"
         },
         "offlineReach": {
           "label": "离线覆盖",
@@ -538,9 +527,6 @@
         "pageWeightHint": "预算：每条路线 50 KB 以下，gzip",
         "carbonLabel": "您的访问排放",
         "carbonHint": "使用 Green Web Foundation 模型计算",
-        "hostingLabel": "我们的托管",
-        "hostingValue": "自托管",
-        "hostingHint": "单一 VPS · 无 CDN · 阿尔伯塔电网",
         "thirdPartyLabel": "第三方调用",
         "thirdPartyValue": "零",
         "thirdPartyHint": "无 CDN、字体、分析、像素 on this site"
