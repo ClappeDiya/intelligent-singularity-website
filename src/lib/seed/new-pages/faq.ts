@@ -31,7 +31,7 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'How big is the team?',
-          a: 'Small enough that a new hire learns every face in week one, large enough to keep more than a dozen platforms shipping. The exact headcount is in the press fact sheet on /press. We deliberately do not advertise a size race; the AI-agent fabric is part of the team in a real sense.',
+          a: 'Small enough that a new hire learns every face in week one, large enough to keep more than a dozen platforms shipping. We deliberately do not advertise a size race; the AI-agent fabric is part of the team in a real sense.',
         },
       ],
     },
