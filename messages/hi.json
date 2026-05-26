@@ -22,8 +22,8 @@
     "studioLabel": "कार्यशाला",
     "legalLabel": "विधिक",
     "languagesLabel": "14 भाषाएँ",
-    "zeroTrackers": "0 ट्रैकर",
-    "zeroThirdParty": "0 तृतीय-पक्ष कॉल",
+    "zeroTrackers": "0 ट्रैकर on this site",
+    "zeroThirdParty": "0 तृतीय-पक्ष कॉल on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "पारदर्शिता",
     "helpLabel": "सहायता",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "हर डोमेन में एक साझा स्टैक",
       "statThirdPartyLabel": "तृतीय-पक्ष कॉल",
       "statThirdPartyValue": "शून्य",
-      "statThirdPartyHint": "हर उत्पाद रिलीज पर CI द्वारा प्रवर्तित",
+      "statThirdPartyHint": "हर उत्पाद रिलीज पर CI द्वारा प्रवर्तित on this site",
       "ecosystemStatsAria": "इकोसिस्टम आँकड़े",
       "verticalLabel": "वर्टिकल",
       "publicAs": "के नाम से",
@@ -447,7 +447,7 @@
       "statHostingHint": "एकल VPS · अल्बर्टा ग्रिड (~{percent}% नवीकरणीय)",
       "statThirdPartyLabel": "तृतीय-पक्ष",
       "statThirdPartyValue": "शून्य",
-      "statThirdPartyHint": "कोई पिक्सेल नहीं · कोई फ़ॉन्ट नहीं · कोई CDN नहीं",
+      "statThirdPartyHint": "कोई पिक्सेल नहीं · कोई फ़ॉन्ट नहीं · कोई CDN नहीं on this site",
       "engineeringPracticesEyebrow": "इंजीनियरिंग प्रथाएँ",
       "byteBudgetHeading": "बाइट बजट कैसे छोटा रहता है",
       "pledgeEyebrow": "प्रतिज्ञा",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "तृतीय-पक्ष कॉल",
           "value": "शून्य",
-          "hint": "कोई एनालिटिक्स, फ़ॉन्ट, पिक्सेल, वीडियो एम्बेड, सोशल विजेट, या CDN राउंड-ट्रिप नहीं। हर बिल्ड पर no-third-party.mjs द्वारा ऑडिट किया गया।"
+          "hint": "कोई एनालिटिक्स, फ़ॉन्ट, पिक्सेल, वीडियो एम्बेड, सोशल विजेट, या CDN राउंड-ट्रिप नहीं on this site। हर बिल्ड पर no-third-party.mjs द्वारा ऑडिट किया गया।"
         },
         "renderer": {
           "label": "रेंडरर",
@@ -543,7 +543,7 @@
         "hostingHint": "एकल VPS · कोई CDN नहीं · अल्बर्टा ग्रिड",
         "thirdPartyLabel": "तृतीय-पक्ष कॉल",
         "thirdPartyValue": "शून्य",
-        "thirdPartyHint": "कोई CDN, फ़ॉन्ट, एनालिटिक्स, पिक्सेल नहीं"
+        "thirdPartyHint": "कोई CDN, फ़ॉन्ट, एनालिटिक्स, पिक्सेल नहीं on this site"
       },
       "schemaName": "Intelligent Singularity | सार्वभौमिक पहुँच के लिए सॉफ़्टवेयर",
       "schemaDescription": "एक मिशन-संचालित स्टूडियो जो व्यवसाय, स्वास्थ्य, वित्त और कार्य में सार्वभौमिक पहुँच के लिए AI-संवर्धित सॉफ़्टवेयर बनाता है।",

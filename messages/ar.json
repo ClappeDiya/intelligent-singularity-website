@@ -22,8 +22,8 @@
     "studioLabel": "الاستوديو",
     "legalLabel": "قانوني",
     "languagesLabel": "١٤ لغة",
-    "zeroTrackers": "٠ متتبعات",
-    "zeroThirdParty": "٠ اتصالات بأطراف ثالثة",
+    "zeroTrackers": "٠ متتبعات on this site",
+    "zeroThirdParty": "٠ اتصالات بأطراف ثالثة on this site",
     "alberta": "© ٢٠٢٦ Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "الشفافية",
     "helpLabel": "المساعدة",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "مكدس واحد مشترك في كل مجال",
       "statThirdPartyLabel": "مكالمات الطرف الثالث",
       "statThirdPartyValue": "صفر",
-      "statThirdPartyHint": "يفرضه CI في كل إصدار منتج",
+      "statThirdPartyHint": "يفرضه CI في كل إصدار منتج on this site",
       "ecosystemStatsAria": "إحصائيات النظام البيئي",
       "verticalLabel": "عمودي",
       "publicAs": "معروف باسم",
@@ -447,7 +447,7 @@
       "statHostingHint": "خادم VPS واحد · شبكة ألبرتا (~{percent}% متجدد)",
       "statThirdPartyLabel": "طرف ثالث",
       "statThirdPartyValue": "صفر",
-      "statThirdPartyHint": "لا بكسلات · لا خطوط · لا CDN",
+      "statThirdPartyHint": "لا بكسلات · لا خطوط · لا CDN on this site",
       "engineeringPracticesEyebrow": "ممارسات الهندسة",
       "byteBudgetHeading": "كيف تظل ميزانية البايت صغيرة",
       "pledgeEyebrow": "التعهد",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "مكالمات الطرف الثالث",
           "value": "صفر",
-          "hint": "لا تحليلات، خطوط، بكسلات، تضمينات فيديو، أدوات اجتماعية، أو رحلات CDN. مدقق لكل بناء بواسطة no-third-party.mjs."
+          "hint": "لا تحليلات، خطوط، بكسلات، تضمينات فيديو، أدوات اجتماعية، أو رحلات CDN on this site. مدقق لكل بناء بواسطة no-third-party.mjs."
         },
         "renderer": {
           "label": "العرض",
@@ -543,7 +543,7 @@
         "hostingHint": "خادم افتراضي واحد · بدون شبكة توزيع · شبكة ألبرتا",
         "thirdPartyLabel": "استدعاءات خارجية",
         "thirdPartyValue": "صفر",
-        "thirdPartyHint": "لا شبكات توزيع، ولا خطوط، ولا تحليلات، ولا بكسلات"
+        "thirdPartyHint": "لا شبكات توزيع، ولا خطوط، ولا تحليلات، ولا بكسلات on this site"
       },
       "schemaName": "Intelligent Singularity | برمجيات للوصول الشامل",
       "schemaDescription": "استوديو موجَّه برسالة يبني برمجيات معزَّزة بالذكاء الاصطناعي لإتاحة الوصول الشامل في الأعمال والصحة والمالية والعمل.",

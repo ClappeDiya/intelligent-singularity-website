@@ -22,8 +22,8 @@
     "studioLabel": "Studio",
     "legalLabel": "Kisheria",
     "languagesLabel": "Lugha 14",
-    "zeroTrackers": "Vifuatiliaji 0",
-    "zeroThirdParty": "Simu 0 za wahusika wa nje",
+    "zeroTrackers": "Vifuatiliaji 0 on this site",
+    "zeroThirdParty": "Simu 0 za wahusika wa nje on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Transparency",
     "helpLabel": "Msaada",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "Rundo moja la kushiriki kwenye kila kikoa",
       "statThirdPartyLabel": "Simu za mtu wa tatu",
       "statThirdPartyValue": "Sifuri",
-      "statThirdPartyHint": "Inatekelezwa na CI kwenye kila toleo la bidhaa",
+      "statThirdPartyHint": "Inatekelezwa na CI kwenye kila toleo la bidhaa on this site",
       "ecosystemStatsAria": "Takwimu za mfumo",
       "verticalLabel": "Wima",
       "publicAs": "Inajulikana kama",
@@ -447,7 +447,7 @@
       "statHostingHint": "VPS moja · gridi ya Alberta (~{percent}% inayoweza kufanywa upya)",
       "statThirdPartyLabel": "Mtu wa tatu",
       "statThirdPartyValue": "Sifuri",
-      "statThirdPartyHint": "Hakuna pixels · hakuna fonti · hakuna CDN",
+      "statThirdPartyHint": "Hakuna pixels · hakuna fonti · hakuna CDN on this site",
       "engineeringPracticesEyebrow": "Mazoea ya uhandisi",
       "byteBudgetHeading": "Jinsi bajeti ya baiti inavyobaki ndogo",
       "pledgeEyebrow": "Ahadi",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Simu za mtu wa tatu",
           "value": "Sifuri",
-          "hint": "Hakuna analytics, fonti, pixels, embeds za video, vidude vya kijamii, au safari za CDN. Hukaguliwa kwa kila build na no-third-party.mjs."
+          "hint": "Hakuna analytics, fonti, pixels, embeds za video, vidude vya kijamii, au safari za CDN on this site. Hukaguliwa kwa kila build na no-third-party.mjs."
         },
         "renderer": {
           "label": "Mtoa sura",
@@ -543,7 +543,7 @@
         "hostingHint": "VPS moja · hakuna CDN · gridi ya Alberta",
         "thirdPartyLabel": "Simu za upande wa tatu",
         "thirdPartyValue": "Sifuri",
-        "thirdPartyHint": "Hakuna CDN, fonti, uchanganuzi, pikseli"
+        "thirdPartyHint": "Hakuna CDN, fonti, uchanganuzi, pikseli on this site"
       },
       "schemaName": "Intelligent Singularity | Programu kwa upatikanaji kwa wote",
       "schemaDescription": "Studio yenye dhamira maalum inayotengeneza programu zilizoboreshwa kwa AI kwa ajili ya upatikanaji wa wote katika biashara, afya, fedha, na kazi.",

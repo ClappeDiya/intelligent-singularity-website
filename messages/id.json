@@ -22,8 +22,8 @@
     "studioLabel": "Studio",
     "legalLabel": "Hukum",
     "languagesLabel": "14 Bahasa",
-    "zeroTrackers": "0 pelacak",
-    "zeroThirdParty": "0 panggilan pihak ketiga",
+    "zeroTrackers": "0 pelacak on this site",
+    "zeroThirdParty": "0 panggilan pihak ketiga on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Transparansi",
     "helpLabel": "Bantuan",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "Satu tumpukan bersama di setiap domain",
       "statThirdPartyLabel": "Panggilan pihak ketiga",
       "statThirdPartyValue": "Nol",
-      "statThirdPartyHint": "Diberlakukan oleh CI di setiap rilis produk",
+      "statThirdPartyHint": "Diberlakukan oleh CI di setiap rilis produk on this site",
       "ecosystemStatsAria": "Statistik ekosistem",
       "verticalLabel": "Vertikal",
       "publicAs": "Dikenal sebagai",
@@ -447,7 +447,7 @@
       "statHostingHint": "Satu VPS · jaringan Alberta (~{percent}% terbarukan)",
       "statThirdPartyLabel": "Pihak ketiga",
       "statThirdPartyValue": "Nol",
-      "statThirdPartyHint": "Tanpa piksel · tanpa font · tanpa CDN",
+      "statThirdPartyHint": "Tanpa piksel · tanpa font · tanpa CDN on this site",
       "engineeringPracticesEyebrow": "Praktik rekayasa",
       "byteBudgetHeading": "Bagaimana anggaran byte tetap kecil",
       "pledgeEyebrow": "Janji",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Panggilan pihak ketiga",
           "value": "Nol",
-          "hint": "Tanpa analitik, font, piksel, sematan video, widget sosial, atau perjalanan CDN. Diaudit per build oleh no-third-party.mjs."
+          "hint": "Tanpa analitik, font, piksel, sematan video, widget sosial, atau perjalanan CDN on this site. Diaudit per build oleh no-third-party.mjs."
         },
         "renderer": {
           "label": "Renderer",
@@ -543,7 +543,7 @@
         "hostingHint": "VPS tunggal · tanpa CDN · grid Alberta",
         "thirdPartyLabel": "Panggilan pihak ketiga",
         "thirdPartyValue": "Nol",
-        "thirdPartyHint": "Tanpa CDN, font, analitik, piksel"
+        "thirdPartyHint": "Tanpa CDN, font, analitik, piksel on this site"
       },
       "schemaName": "Intelligent Singularity | Perangkat lunak untuk akses universal",
       "schemaDescription": "Sebuah studio berbasis misi yang membangun perangkat lunak yang diperkaya AI untuk akses universal di bidang bisnis, kesehatan, keuangan, dan kerja.",

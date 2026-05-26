@@ -22,8 +22,8 @@
     "studioLabel": "Estudio",
     "legalLabel": "Legal",
     "languagesLabel": "14 idiomas",
-    "zeroTrackers": "0 rastreadores",
-    "zeroThirdParty": "0 llamadas a terceros",
+    "zeroTrackers": "0 rastreadores on this site",
+    "zeroThirdParty": "0 llamadas a terceros on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Transparencia",
     "helpLabel": "Ayuda",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "Una pila compartida en cada dominio",
       "statThirdPartyLabel": "Llamadas a terceros",
       "statThirdPartyValue": "Cero",
-      "statThirdPartyHint": "Aplicado por CI en cada lanzamiento de producto",
+      "statThirdPartyHint": "Aplicado por CI en cada lanzamiento de producto on this site",
       "ecosystemStatsAria": "Estadísticas del ecosistema",
       "verticalLabel": "Vertical",
       "publicAs": "Conocido como",
@@ -447,7 +447,7 @@
       "statHostingHint": "Un solo VPS · red eléctrica de Alberta (~{percent}% renovable)",
       "statThirdPartyLabel": "Terceros",
       "statThirdPartyValue": "Cero",
-      "statThirdPartyHint": "Sin píxeles · sin fuentes · sin CDN",
+      "statThirdPartyHint": "Sin píxeles · sin fuentes · sin CDN on this site",
       "engineeringPracticesEyebrow": "Prácticas de ingeniería",
       "byteBudgetHeading": "Cómo el presupuesto de bytes se mantiene pequeño",
       "pledgeEyebrow": "El compromiso",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Llamadas a terceros",
           "value": "Cero",
-          "hint": "Sin analítica, fuentes, píxeles, embeds de video, widgets sociales o ida y vuelta a CDN. Auditado por build con no-third-party.mjs."
+          "hint": "Sin analítica, fuentes, píxeles, embeds de video, widgets sociales o ida y vuelta a CDN on this site. Auditado por build con no-third-party.mjs."
         },
         "renderer": {
           "label": "Renderizado",
@@ -543,7 +543,7 @@
         "hostingHint": "VPS único · sin CDN · red de Alberta",
         "thirdPartyLabel": "Llamadas a terceros",
         "thirdPartyValue": "Cero",
-        "thirdPartyHint": "Sin CDN, fuentes, analíticas, píxeles"
+        "thirdPartyHint": "Sin CDN, fuentes, analíticas, píxeles on this site"
       },
       "schemaName": "Intelligent Singularity | Software para el acceso universal",
       "schemaDescription": "Un estudio con misión que crea software potenciado por IA para un acceso universal en empresa, salud, finanzas y trabajo.",

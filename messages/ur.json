@@ -22,8 +22,8 @@
     "studioLabel": "اسٹوڈیو",
     "legalLabel": "قانونی",
     "languagesLabel": "۱۴ زبانیں",
-    "zeroTrackers": "۰ ٹریکرز",
-    "zeroThirdParty": "۰ فریقِ ثالث کالز",
+    "zeroTrackers": "۰ ٹریکرز on this site",
+    "zeroThirdParty": "۰ فریقِ ثالث کالز on this site",
     "alberta": "© ۲۰۲۶ Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "شفافیت",
     "helpLabel": "مدد",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "ہر ڈومین میں ایک مشترکہ اسٹیک",
       "statThirdPartyLabel": "تیسرے فریق کی کالز",
       "statThirdPartyValue": "صفر",
-      "statThirdPartyHint": "ہر پروڈکٹ ریلیز پر CI کے ذریعہ نافذ",
+      "statThirdPartyHint": "ہر پروڈکٹ ریلیز پر CI کے ذریعہ نافذ on this site",
       "ecosystemStatsAria": "ایکوسسٹم اعداد و شمار",
       "verticalLabel": "عمودی",
       "publicAs": "کے نام سے",
@@ -447,7 +447,7 @@
       "statHostingHint": "ایک VPS · البرٹا گرڈ (~{percent}% قابل تجدید)",
       "statThirdPartyLabel": "تیسرا فریق",
       "statThirdPartyValue": "صفر",
-      "statThirdPartyHint": "کوئی pixels نہیں · کوئی fonts نہیں · کوئی CDN نہیں",
+      "statThirdPartyHint": "کوئی pixels نہیں · کوئی fonts نہیں · کوئی CDN نہیں on this site",
       "engineeringPracticesEyebrow": "انجینئرنگ کے طریقے",
       "byteBudgetHeading": "بائٹ بجٹ چھوٹا کیسے رہتا ہے",
       "pledgeEyebrow": "وعدہ",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "تیسرے فریق کی کالز",
           "value": "صفر",
-          "hint": "کوئی analytics، fonts، pixels، video embeds، social widgets، یا CDN round-trips نہیں۔ ہر بلڈ پر no-third-party.mjs کے ذریعہ آڈٹ کیا جاتا ہے۔"
+          "hint": "کوئی analytics، fonts، pixels، video embeds، social widgets، یا CDN round-trips نہیں on this site۔ ہر بلڈ پر no-third-party.mjs کے ذریعہ آڈٹ کیا جاتا ہے۔"
         },
         "renderer": {
           "label": "رینڈرر",
@@ -543,7 +543,7 @@
         "hostingHint": "واحد VPS · کوئی CDN نہیں · البرٹا گرڈ",
         "thirdPartyLabel": "تیسرے فریق کی کالیں",
         "thirdPartyValue": "صفر",
-        "thirdPartyHint": "کوئی CDN، فونٹس، تجزیات، پکسلز نہیں"
+        "thirdPartyHint": "کوئی CDN، فونٹس، تجزیات، پکسلز نہیں on this site"
       },
       "schemaName": "Intelligent Singularity | عالمی رسائی کے لیے سافٹ ویئر",
       "schemaDescription": "ایک مشن سے چلنے والا اسٹوڈیو جو کاروبار، صحت، مالیات اور کام میں عالمی رسائی کے لیے AI سے بہتر بنایا گیا سافٹ ویئر تیار کرتا ہے۔",

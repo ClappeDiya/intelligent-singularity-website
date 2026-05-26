@@ -22,8 +22,8 @@
     "studioLabel": "Estúdio",
     "legalLabel": "Jurídico",
     "languagesLabel": "14 idiomas",
-    "zeroTrackers": "0 rastreadores",
-    "zeroThirdParty": "0 chamadas a terceiros",
+    "zeroTrackers": "0 rastreadores on this site",
+    "zeroThirdParty": "0 chamadas a terceiros on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Transparência",
     "helpLabel": "Ajuda",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "Uma pilha compartilhada em cada domínio",
       "statThirdPartyLabel": "Chamadas de terceiros",
       "statThirdPartyValue": "Zero",
-      "statThirdPartyHint": "Aplicado por CI em cada lançamento de produto",
+      "statThirdPartyHint": "Aplicado por CI em cada lançamento de produto on this site",
       "ecosystemStatsAria": "Estatísticas do ecossistema",
       "verticalLabel": "Vertical",
       "publicAs": "Conhecido como",
@@ -447,7 +447,7 @@
       "statHostingHint": "Um único VPS · rede de Alberta (~{percent}% renovável)",
       "statThirdPartyLabel": "Terceiros",
       "statThirdPartyValue": "Zero",
-      "statThirdPartyHint": "Sem pixels · sem fontes · sem CDN",
+      "statThirdPartyHint": "Sem pixels · sem fontes · sem CDN on this site",
       "engineeringPracticesEyebrow": "Práticas de engenharia",
       "byteBudgetHeading": "Como o orçamento de bytes se mantém pequeno",
       "pledgeEyebrow": "O compromisso",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Chamadas de terceiros",
           "value": "Zero",
-          "hint": "Sem analytics, fontes, pixels, embeds de vídeo, widgets sociais ou idas e vindas a CDN. Auditado por build com no-third-party.mjs."
+          "hint": "Sem analytics, fontes, pixels, embeds de vídeo, widgets sociais ou idas e vindas a CDN on this site. Auditado por build com no-third-party.mjs."
         },
         "renderer": {
           "label": "Renderização",
@@ -543,7 +543,7 @@
         "hostingHint": "VPS único · sem CDN · rede de Alberta",
         "thirdPartyLabel": "Chamadas de terceiros",
         "thirdPartyValue": "Zero",
-        "thirdPartyHint": "Sem CDN, fontes, análises, pixels"
+        "thirdPartyHint": "Sem CDN, fontes, análises, pixels on this site"
       },
       "schemaName": "Intelligent Singularity | Software para acesso universal",
       "schemaDescription": "Um estúdio orientado por missão que constrói software reforçado por IA para acesso universal em negócios, saúde, finanças e trabalho.",

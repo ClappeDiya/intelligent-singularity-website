@@ -22,8 +22,8 @@
     "studioLabel": "Ɗakin Aiki",
     "legalLabel": "Shari'a",
     "languagesLabel": "Harsuna 14",
-    "zeroTrackers": "Babu mai bin diddigi",
-    "zeroThirdParty": "Babu kiran na waje",
+    "zeroTrackers": "Babu mai bin diddigi on this site",
+    "zeroThirdParty": "Babu kiran na waje on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Transparency",
     "helpLabel": "Taimako",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "Tarin haɗin gwiwa ɗaya a ko'ina",
       "statThirdPartyLabel": "Kira na ɓangare na uku",
       "statThirdPartyValue": "Sifili",
-      "statThirdPartyHint": "An tilasta shi ta CI a kowane saki na samfuri",
+      "statThirdPartyHint": "An tilasta shi ta CI a kowane saki na samfuri on this site",
       "ecosystemStatsAria": "Ƙididdigar tsarin",
       "verticalLabel": "Tsaye",
       "publicAs": "Sananne da",
@@ -447,7 +447,7 @@
       "statHostingHint": "VPS guda · grid na Alberta (~{percent}% mai sabuntawa)",
       "statThirdPartyLabel": "Ɓangare na uku",
       "statThirdPartyValue": "Sifili",
-      "statThirdPartyHint": "Babu pixels · babu fonts · babu CDN",
+      "statThirdPartyHint": "Babu pixels · babu fonts · babu CDN on this site",
       "engineeringPracticesEyebrow": "Ayyukan injiniyanci",
       "byteBudgetHeading": "Yadda kasafin byte ke zama ƙanƙanta",
       "pledgeEyebrow": "Alkawari",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Kira na ɓangare na uku",
           "value": "Sifili",
-          "hint": "Babu analytics, fonts, pixels, video embeds, social widgets, ko CDN round-trips. Ana duba kowane gini ta no-third-party.mjs."
+          "hint": "Babu analytics, fonts, pixels, video embeds, social widgets, ko CDN round-trips on this site. Ana duba kowane gini ta no-third-party.mjs."
         },
         "renderer": {
           "label": "Mai bayarwa",
@@ -543,7 +543,7 @@
         "hostingHint": "VPS guda ɗaya · babu CDN · grid na Alberta",
         "thirdPartyLabel": "Kira na ɓangare na uku",
         "thirdPartyValue": "Sifili",
-        "thirdPartyHint": "Babu CDN, rubutu, nazari, pixels"
+        "thirdPartyHint": "Babu CDN, rubutu, nazari, pixels on this site"
       },
       "schemaName": "Intelligent Singularity | Software don samun damar duniya",
       "schemaDescription": "Wani ɗakin ayyuka mai dogaro da manufa wanda ke gina software wadda AI ke ɗaukaka don samun damar duniya a kasuwanci, lafiya, kudɗi, da aiki.",

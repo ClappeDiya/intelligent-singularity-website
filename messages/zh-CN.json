@@ -22,8 +22,8 @@
     "studioLabel": "工作室",
     "legalLabel": "法律条款",
     "languagesLabel": "14 种语言",
-    "zeroTrackers": "0 个追踪器",
-    "zeroThirdParty": "0 个第三方调用",
+    "zeroTrackers": "0 个追踪器 on this site",
+    "zeroThirdParty": "0 个第三方调用 on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "透明度",
     "helpLabel": "帮助",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "每个领域共享一个堆栈",
       "statThirdPartyLabel": "第三方调用",
       "statThirdPartyValue": "零",
-      "statThirdPartyHint": "在每次产品发布时由 CI 强制执行",
+      "statThirdPartyHint": "在每次产品发布时由 CI 强制执行 on this site",
       "ecosystemStatsAria": "生态系统统计",
       "verticalLabel": "垂直领域",
       "publicAs": "公开名为",
@@ -447,7 +447,7 @@
       "statHostingHint": "单一 VPS · 艾伯塔电网（约 {percent}% 可再生）",
       "statThirdPartyLabel": "第三方",
       "statThirdPartyValue": "零",
-      "statThirdPartyHint": "无像素 · 无字体 · 无 CDN",
+      "statThirdPartyHint": "无像素 · 无字体 · 无 CDN on this site",
       "engineeringPracticesEyebrow": "工程实践",
       "byteBudgetHeading": "字节预算如何保持精简",
       "pledgeEyebrow": "承诺",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "第三方调用",
           "value": "零",
-          "hint": "无分析、字体、像素、视频嵌入、社交小部件或 CDN 往返。每次构建由 no-third-party.mjs 审计。"
+          "hint": "无分析、字体、像素、视频嵌入、社交小部件或 CDN 往返 on this site。每次构建由 no-third-party.mjs 审计。"
         },
         "renderer": {
           "label": "渲染器",
@@ -543,7 +543,7 @@
         "hostingHint": "单一 VPS · 无 CDN · 阿尔伯塔电网",
         "thirdPartyLabel": "第三方调用",
         "thirdPartyValue": "零",
-        "thirdPartyHint": "无 CDN、字体、分析、像素"
+        "thirdPartyHint": "无 CDN、字体、分析、像素 on this site"
       },
       "schemaName": "Intelligent Singularity | 面向普惠访问的软件",
       "schemaDescription": "一家使命驱动的工作室，构建由 AI 增强的软件，让商业、健康、金融和工作中的访问触手可及。",

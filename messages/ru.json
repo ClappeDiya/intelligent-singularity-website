@@ -22,8 +22,8 @@
     "studioLabel": "Студия",
     "legalLabel": "Юридическая информация",
     "languagesLabel": "14 языков",
-    "zeroTrackers": "0 трекеров",
-    "zeroThirdParty": "0 сторонних вызовов",
+    "zeroTrackers": "0 трекеров on this site",
+    "zeroThirdParty": "0 сторонних вызовов on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Прозрачность",
     "helpLabel": "Помощь",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "Один общий стек во всех доменах",
       "statThirdPartyLabel": "Сторонние вызовы",
       "statThirdPartyValue": "Ноль",
-      "statThirdPartyHint": "Принудительно проверяется CI в каждом релизе продукта",
+      "statThirdPartyHint": "Принудительно проверяется CI в каждом релизе продукта on this site",
       "ecosystemStatsAria": "Статистика экосистемы",
       "verticalLabel": "Вертикаль",
       "publicAs": "Известно как",
@@ -447,7 +447,7 @@
       "statHostingHint": "Один VPS · сеть Альберты (~{percent}% возобновляемой)",
       "statThirdPartyLabel": "Сторонние",
       "statThirdPartyValue": "Ноль",
-      "statThirdPartyHint": "Без пикселей · без шрифтов · без CDN",
+      "statThirdPartyHint": "Без пикселей · без шрифтов · без CDN on this site",
       "engineeringPracticesEyebrow": "Инженерные практики",
       "byteBudgetHeading": "Как байтовый бюджет остаётся малым",
       "pledgeEyebrow": "Обещание",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Сторонние вызовы",
           "value": "Ноль",
-          "hint": "Без аналитики, шрифтов, пикселей, видео-эмбедов, социальных виджетов или походов на CDN. Аудитируется на каждой сборке с помощью no-third-party.mjs."
+          "hint": "Без аналитики, шрифтов, пикселей, видео-эмбедов, социальных виджетов или походов на CDN on this site. Аудитируется на каждой сборке с помощью no-third-party.mjs."
         },
         "renderer": {
           "label": "Рендерер",
@@ -543,7 +543,7 @@
         "hostingHint": "Единственный VPS · без CDN · сеть Альберты",
         "thirdPartyLabel": "Сторонние вызовы",
         "thirdPartyValue": "Ноль",
-        "thirdPartyHint": "Никаких CDN, шрифтов, аналитики, пикселей"
+        "thirdPartyHint": "Никаких CDN, шрифтов, аналитики, пикселей on this site"
       },
       "schemaName": "Intelligent Singularity | Программное обеспечение для всеобщего доступа",
       "schemaDescription": "Студия, движимая миссией, создающая программное обеспечение с ИИ для всеобщего доступа в бизнесе, здравоохранении, финансах и труде.",

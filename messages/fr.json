@@ -22,8 +22,8 @@
     "studioLabel": "Studio",
     "legalLabel": "Juridique",
     "languagesLabel": "14 langues",
-    "zeroTrackers": "0 traqueur",
-    "zeroThirdParty": "0 appel tiers",
+    "zeroTrackers": "0 traqueur on this site",
+    "zeroThirdParty": "0 appel tiers on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Transparence",
     "helpLabel": "Aide",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "Une seule pile partagée dans tous les domaines",
       "statThirdPartyLabel": "Appels tiers",
       "statThirdPartyValue": "Zéro",
-      "statThirdPartyHint": "Imposé par la CI à chaque sortie de produit",
+      "statThirdPartyHint": "Imposé par la CI à chaque sortie de produit on this site",
       "ecosystemStatsAria": "Statistiques de l'écosystème",
       "verticalLabel": "Verticale",
       "publicAs": "Connu sous",
@@ -447,7 +447,7 @@
       "statHostingHint": "Un VPS · réseau de l'Alberta (~{percent}% renouvelable)",
       "statThirdPartyLabel": "Tiers",
       "statThirdPartyValue": "Zéro",
-      "statThirdPartyHint": "Pas de pixels · pas de polices · pas de CDN",
+      "statThirdPartyHint": "Pas de pixels · pas de polices · pas de CDN on this site",
       "engineeringPracticesEyebrow": "Pratiques d'ingénierie",
       "byteBudgetHeading": "Comment le budget d'octets reste petit",
       "pledgeEyebrow": "L'engagement",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Appels tiers",
           "value": "Zéro",
-          "hint": "Pas d'analytics, polices, pixels, intégrations vidéo, widgets sociaux, ou aller-retours CDN. Audité par build via no-third-party.mjs."
+          "hint": "Pas d'analytics, polices, pixels, intégrations vidéo, widgets sociaux, ou aller-retours CDN on this site. Audité par build via no-third-party.mjs."
         },
         "renderer": {
           "label": "Rendu",
@@ -543,7 +543,7 @@
         "hostingHint": "VPS unique · sans CDN · réseau de l'Alberta",
         "thirdPartyLabel": "Appels tiers",
         "thirdPartyValue": "Zéro",
-        "thirdPartyHint": "Aucun CDN, police, analytique, pixel"
+        "thirdPartyHint": "Aucun CDN, police, analytique, pixel on this site"
       },
       "schemaName": "Intelligent Singularity | Logiciels pour un accès universel",
       "schemaDescription": "Un studio misé sur sa mission, qui développe des logiciels enrichis par l’IA pour l’accès universel dans l’entreprise, la santé, la finance et le travail.",

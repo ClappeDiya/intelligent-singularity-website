@@ -22,8 +22,8 @@
     "studioLabel": "Ilé Iṣẹ́",
     "legalLabel": "Òfin",
     "languagesLabel": "Èdè 14",
-    "zeroTrackers": "Olùtọpinpin 0",
-    "zeroThirdParty": "Ìpè ẹlẹ́kẹta 0",
+    "zeroTrackers": "Olùtọpinpin 0 on this site",
+    "zeroThirdParty": "Ìpè ẹlẹ́kẹta 0 on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Transparency",
     "helpLabel": "Iranlọ́wọ́",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "Ìpele kanṣoṣo tí a pín ní gbogbo àgbègbè",
       "statThirdPartyLabel": "Ìpè ti ẹlẹ́gbẹ́ kẹta",
       "statThirdPartyValue": "Òfò",
-      "statThirdPartyHint": "Tí a fi agbára múlò nípasẹ̀ CI ní gbogbo ìtu ọjà sílẹ̀",
+      "statThirdPartyHint": "Tí a fi agbára múlò nípasẹ̀ CI ní gbogbo ìtu ọjà sílẹ̀ on this site",
       "ecosystemStatsAria": "Ìṣirò ti àjọ",
       "verticalLabel": "Inaro",
       "publicAs": "Mọ̀ bí",
@@ -447,7 +447,7 @@
       "statHostingHint": "VPS kanṣoṣo · gírídì Alberta (~{percent}% tí a lè tún ṣe)",
       "statThirdPartyLabel": "Ẹlẹ́gbẹ́ kẹta",
       "statThirdPartyValue": "Òfò",
-      "statThirdPartyHint": "Kò sí pixels · kò sí fonts · kò sí CDN",
+      "statThirdPartyHint": "Kò sí pixels · kò sí fonts · kò sí CDN on this site",
       "engineeringPracticesEyebrow": "Àwọn àṣà ìmọ̀-ẹ̀rọ",
       "byteBudgetHeading": "Bí ìnáwó byte ṣe ń wà ní kéékèèké",
       "pledgeEyebrow": "Àdéhùn",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Ìpè ti ẹlẹ́gbẹ́ kẹta",
           "value": "Òfò",
-          "hint": "Kò sí analytics, fonts, pixels, video embeds, àwọn widgets ti agbègbè, tàbí ìrìn CDN. Ó wà ní àyẹ̀wò ní gbogbo ìkọ́ nípasẹ̀ no-third-party.mjs."
+          "hint": "Kò sí analytics, fonts, pixels, video embeds, àwọn widgets ti agbègbè, tàbí ìrìn CDN on this site. Ó wà ní àyẹ̀wò ní gbogbo ìkọ́ nípasẹ̀ no-third-party.mjs."
         },
         "renderer": {
           "label": "Mọ́nà",
@@ -543,7 +543,7 @@
         "hostingHint": "VPS kan ṣoṣo · kò sí CDN · grid Alberta",
         "thirdPartyLabel": "Awọn ìpè ẹgbẹ́ kẹta",
         "thirdPartyValue": "Òfo",
-        "thirdPartyHint": "Kò sí CDN, ránpẹ́, ìtúpalẹ̀, pixels"
+        "thirdPartyHint": "Kò sí CDN, ránpẹ́, ìtúpalẹ̀, pixels on this site"
       },
       "schemaName": "Intelligent Singularity | Sọ́fítíwérì fún àyè gbogbo gbò",
       "schemaDescription": "Ilé-iṣẹ́ tó ní ìpinnu kan tó ń kọ́ sọ́fítíwérì tó ní AI ṣe iranlọ́wọ́ fún àyè gbogbo gbò ní iṣòwò, ìlera, ìnáwó, àti iṣẹ́.",

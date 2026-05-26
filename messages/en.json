@@ -22,8 +22,8 @@
     "studioLabel": "Studio",
     "legalLabel": "Legal",
     "languagesLabel": "14 Languages",
-    "zeroTrackers": "0 trackers",
-    "zeroThirdParty": "0 third-party calls",
+    "zeroTrackers": "0 trackers on this site",
+    "zeroThirdParty": "0 third-party calls on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "Transparency",
     "helpLabel": "Help",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "One shared stack across every domain",
       "statThirdPartyLabel": "Third-party calls",
       "statThirdPartyValue": "Zero",
-      "statThirdPartyHint": "Enforced by CI on every product release",
+      "statThirdPartyHint": "Enforced by CI on every product release on this site",
       "ecosystemStatsAria": "Ecosystem statistics",
       "verticalLabel": "Vertical",
       "publicAs": "Public as",
@@ -447,7 +447,7 @@
       "statHostingHint": "Single VPS · Alberta grid (~{percent}% renewable)",
       "statThirdPartyLabel": "Third-party",
       "statThirdPartyValue": "Zero",
-      "statThirdPartyHint": "No pixels · no fonts · no CDN",
+      "statThirdPartyHint": "No pixels · no fonts · no CDN on this site",
       "engineeringPracticesEyebrow": "Engineering practices",
       "byteBudgetHeading": "How the byte budget stays small",
       "pledgeEyebrow": "The pledge",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "Third-party calls",
           "value": "Zero",
-          "hint": "No analytics, fonts, pixels, video embeds, social widgets, or CDN round-trips. Audited per build by no-third-party.mjs."
+          "hint": "No analytics, fonts, pixels, video embeds, social widgets, or CDN round-trips on this site. Audited per build by no-third-party.mjs."
         },
         "renderer": {
           "label": "Renderer",
@@ -543,7 +543,7 @@
         "hostingHint": "Single VPS · no CDN · Alberta grid",
         "thirdPartyLabel": "Third-party calls",
         "thirdPartyValue": "Zero",
-        "thirdPartyHint": "No CDNs, fonts, analytics, pixels"
+        "thirdPartyHint": "No CDNs, fonts, analytics, pixels on this site"
       },
       "schemaName": "Intelligent Singularity | Software For Universal Access",
       "schemaDescription": "A mission-driven studio building AI-augmented software for universal access across business, health, finance, and work.",

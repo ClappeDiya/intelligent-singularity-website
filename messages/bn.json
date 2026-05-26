@@ -22,8 +22,8 @@
     "studioLabel": "স্টুডিও",
     "legalLabel": "আইনি",
     "languagesLabel": "14টি ভাষা",
-    "zeroTrackers": "0 ট্র্যাকার",
-    "zeroThirdParty": "0 তৃতীয়-পক্ষ কল",
+    "zeroTrackers": "0 ট্র্যাকার on this site",
+    "zeroThirdParty": "0 তৃতীয়-পক্ষ কল on this site",
     "alberta": "© 2026 Intelligent Singularity Inc. · Alberta, Canada",
     "transparencyLabel": "স্বচ্ছতা",
     "helpLabel": "সাহায্য",
@@ -342,7 +342,7 @@
       "statCategoriesHint": "প্রতিটি ডোমেইন জুড়ে একটি ভাগ করা স্ট্যাক",
       "statThirdPartyLabel": "তৃতীয় পক্ষের কল",
       "statThirdPartyValue": "শূন্য",
-      "statThirdPartyHint": "প্রতিটি পণ্য রিলিজে CI দ্বারা প্রয়োগকৃত",
+      "statThirdPartyHint": "প্রতিটি পণ্য রিলিজে CI দ্বারা প্রয়োগকৃত on this site",
       "ecosystemStatsAria": "ইকোসিস্টেম পরিসংখ্যান",
       "verticalLabel": "ভার্টিক্যাল",
       "publicAs": "নামে পরিচিত",
@@ -447,7 +447,7 @@
       "statHostingHint": "একটি VPS · আলবার্টা গ্রিড (~{percent}% নবায়নযোগ্য)",
       "statThirdPartyLabel": "তৃতীয় পক্ষ",
       "statThirdPartyValue": "শূন্য",
-      "statThirdPartyHint": "কোনো পিক্সেল নেই · কোনো ফন্ট নেই · কোনো CDN নেই",
+      "statThirdPartyHint": "কোনো পিক্সেল নেই · কোনো ফন্ট নেই · কোনো CDN নেই on this site",
       "engineeringPracticesEyebrow": "প্রকৌশল অনুশীলন",
       "byteBudgetHeading": "কীভাবে বাইট বাজেট ছোট থাকে",
       "pledgeEyebrow": "প্রতিশ্রুতি",
@@ -463,7 +463,7 @@
         "thirdPartyCalls": {
           "label": "তৃতীয় পক্ষের কল",
           "value": "শূন্য",
-          "hint": "কোনো অ্যানালিটিকস, ফন্ট, পিক্সেল, ভিডিও এমবেড, সোশ্যাল উইজেট, বা CDN রাউন্ড-ট্রিপ নেই। প্রতি বিল্ডে no-third-party.mjs দ্বারা অডিট করা হয়।"
+          "hint": "কোনো অ্যানালিটিকস, ফন্ট, পিক্সেল, ভিডিও এমবেড, সোশ্যাল উইজেট, বা CDN রাউন্ড-ট্রিপ নেই on this site। প্রতি বিল্ডে no-third-party.mjs দ্বারা অডিট করা হয়।"
         },
         "renderer": {
           "label": "রেন্ডারার",
@@ -543,7 +543,7 @@
         "hostingHint": "একক VPS · কোনও CDN নেই · অ্যালবার্টা গ্রিড",
         "thirdPartyLabel": "তৃতীয় পক্ষের কল",
         "thirdPartyValue": "শূন্য",
-        "thirdPartyHint": "কোনও CDN, ফন্ট, অ্যানালিটিক্স, পিক্সেল নেই"
+        "thirdPartyHint": "কোনও CDN, ফন্ট, অ্যানালিটিক্স, পিক্সেল নেই on this site"
       },
       "schemaName": "Intelligent Singularity | সর্বজনীন প্রবেশাধিকারের জন্য সফ্টওয়্যার",
       "schemaDescription": "একটি লক্ষ্যকেন্দ্রিক স্টুডিও যা ব্যবসা, স্বাস্থ্য, অর্থ এবং কাজ জুড়ে সর্বজনীন প্রবেশাধিকারের জন্য AI-সমৃদ্ধ সফ্টওয়্যার তৈরি করে।",

@@ -12,8 +12,8 @@ export const SECURITY_PAGE_SEED = {
       'The five lines above are the whole posture in one breath. Everything below is the supporting evidence — what each line means, how it is enforced, and how to report a problem when something goes wrong.',
   },
   topStats: [
-    { label: 'Trackers', value: '0', hint: 'On this site and every product page' },
-    { label: 'Third-party calls', value: '0', hint: 'Enforced by CI on every commit' },
+    { label: 'Trackers', value: '0', hint: 'On this site. Products disclose their own.' },
+    { label: 'Third-party calls', value: '0', hint: 'On this site. Enforced by CI on every build.' },
     { label: 'Server log retention', value: '14 days', hint: 'Then permanently deleted' },
   ],
   posture: [
@@ -25,7 +25,7 @@ export const SECURITY_PAGE_SEED = {
     {
       title: 'Zero third-party calls',
       body:
-        'No analytics, no pixels, no ad networks, no external fonts, no embedded video, no social-media widgets. Your browser only talks to our origin. This is enforced in continuous integration by a script called no-third-party.mjs that scans the built site and fails the release if any external host appears in the bundle. The promise is a unit test, not a marketing line.',
+        'On this marketing site, your browser only talks to our origin. No analytics, no pixels, no ad networks, no external fonts, no embedded video, no social-media widgets. This is enforced in continuous integration by a script called no-third-party.mjs that scans the built site and fails the release if any external host appears in the bundle. The promise is a unit test, not a marketing line. Individual products in our portfolio may use named subprocessors — see each product’s privacy notice for the full list.',
     },
     {
       title: 'Signed and verified builds',
