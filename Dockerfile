@@ -23,6 +23,10 @@ ENV DATABASE_URL=postgres://placeholder:placeholder@localhost:5432/placeholder
 ENV PAYLOAD_SECRET=build-time-placeholder-secret-that-is-at-least-32-characters-long
 ENV NEXT_PUBLIC_SITE_URL=https://intelligentsingularityinc.com
 RUN pnpm exec next build --webpack
+# Per-route gzip measurements consumed at runtime by src/lib/page-sizes.ts
+# so the /green and homepage "Live telemetry" stats show real numbers
+# instead of falling back to PAGE_SIZE_BUDGET.
+RUN node scripts/measure-page-sizes.mjs
 
 FROM base AS runner
 LABEL org.opencontainers.image.source="https://github.com/ClappeDiya/intelligent-singularity-website"
@@ -35,6 +39,7 @@ RUN addgroup --system --gid 1001 nodejs && \
 COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/.next/page-sizes.json ./.next/page-sizes.json
 # Keep full node_modules + source + payload config so `payload migrate:*`
 # commands can run inside the container (needed for schema push on deploy).
 COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./full-node_modules
