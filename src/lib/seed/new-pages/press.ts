@@ -14,7 +14,7 @@ export const PRESS_PAGE_SEED = {
     { label: 'Team', value: 'Small, remote, AI-augmented' },
     { label: 'Funding', value: 'Bootstrapped · self-funded · not for sale' },
     { label: 'Portfolio', value: 'A growing family of platforms across 7 categories' },
-    { label: 'Languages', value: '14 shipping locales · over 4 billion first-language speakers' },
+    { label: 'Languages', value: '14 shipping locales · reachable to more than 6 billion people' },
     { label: 'Stack', value: 'One shared platform across every product' },
     { label: 'Website footprint', value: 'Under 50 KB per page · zero third-party calls on this site' },
   ],

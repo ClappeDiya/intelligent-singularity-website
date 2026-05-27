@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { fetchGreen } from '@/lib/payload';
 import { bytesToGrams, formatCarbon, formatBytes } from '@/lib/carbon';
+import { getPageBytes, PAGE_SIZE_BUDGET } from '@/lib/page-sizes';
 import { LexicalRenderer } from '@/components/richtext/LexicalRenderer';
 import { buildPageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -51,7 +52,8 @@ async function GreenContent({ locale }: { locale: string }) {
   const green = await fetchGreen(locale);
   const t = await getTranslations('pages.green');
   const tCommon = await getTranslations('common');
-  const bytes = 42_000;
+  const measuredBytes = getPageBytes(`/${locale}/green`);
+  const bytes = measuredBytes ?? PAGE_SIZE_BUDGET;
   const grams = bytesToGrams(bytes, green.hostingGreenRatio);
   const renewablePct = Math.round(green.hostingGreenRatio * 100);
   const webPageSchema = getWebPageSchema({
