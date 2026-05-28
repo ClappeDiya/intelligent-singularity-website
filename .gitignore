@@ -17,3 +17,8 @@ playwright-report/
 output/
 .lighthouse-results/
 .lighthouseci/
+
+# Codex CLI local overrides and caches — never commit secrets
+.codex/local.toml
+.codex/.cache/
+.codex/sessions/

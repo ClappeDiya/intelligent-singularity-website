@@ -1,0 +1,10 @@
+# Codex CLI configuration — IS website.
+# Reference: https://github.com/openai/codex
+# Local overrides belong in .codex/local.toml (gitignored). Never put secrets here.
+
+model = "gpt-5-codex"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+# Project knowledge: see ./AGENTS.md (which points to ./CLAUDE.md as the source of truth).
+# Skills: real files in .agents/skills/, symlinked from .claude/skills/.
