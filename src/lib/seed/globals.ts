@@ -372,5 +372,5 @@ export const CONTACT_SEED = {
   privacyNote:
     'We do not store contact-form messages in a marketing database. Your note is delivered by email to the small team that answers it, and nowhere else.',
   successMessage: 'Your message has been sent. Thank you for writing.',
-  errorMessage: 'Something went wrong on our side. Please try again, or email us directly at hello@intelligentsingularityinc.com.',
+  errorMessage: 'Something went wrong on our side. Please try again, or email us directly at hello@intelligentsingularityai.com.',
 };

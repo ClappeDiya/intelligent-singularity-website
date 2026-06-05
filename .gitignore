@@ -11,6 +11,7 @@ coverage/
 *.tsbuildinfo
 .pnpm-store/
 .env.local
+credentials.md
 .ci/seed-snapshots/
 test-results/
 playwright-report/

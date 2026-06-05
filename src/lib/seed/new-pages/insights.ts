@@ -106,7 +106,7 @@ export const INSIGHTS_SEED: InsightPost[] = [
         version: 1,
         children: [
           para(
-            'This page used to list the hosting setup behind intelligentsingularityinc.com \u2014 the number of servers, the city, the provider. We stopped doing that. As we grow, those numbers will change. Pinning our brand to one setup turns a build choice into a promise we may not keep.'
+            'This page used to list the hosting setup behind intelligentsingularityai.com \u2014 the number of servers, the city, the provider. We stopped doing that. As we grow, those numbers will change. Pinning our brand to one setup turns a build choice into a promise we may not keep.'
           ),
           para(
             'What we still promise and audit on this marketing site is much narrower, and we like it that way. Your browser only talks to our origin when you load these pages. No analytics, no pixels, no ad networks, no external fonts, no embedded video, no social-media widgets. A CI script named no-third-party.mjs scans every production build and fails the release if any forbidden host appears in the bundle. The promise is a unit test, not a marketing line.'

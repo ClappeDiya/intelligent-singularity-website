@@ -177,7 +177,7 @@ async function GreenContent({ locale }: { locale: string }) {
           </p>
         </div>
         <a
-          href="mailto:green@intelligentsingularityinc.com"
+          href="mailto:green@intelligentsingularityai.com"
           className="btn-primary"
           style={{ fontFamily: 'var(--font-mono)' }}
         >

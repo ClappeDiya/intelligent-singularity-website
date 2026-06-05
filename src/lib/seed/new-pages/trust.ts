@@ -127,7 +127,7 @@ export const TRUST_PAGE_SEED = {
           type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0,
           children: [{
             type: 'text', version: 1, mode: 'normal', detail: 0, format: 0, style: '',
-            text: 'Found a weakness, a bug, or something that simply looks wrong? Write to security@intelligentsingularityinc.com. We answer within one business day, work with you on the fix, and credit the reporter by name in the public advisory once the issue is patched — unless you ask us not to.',
+            text: 'Found a weakness, a bug, or something that simply looks wrong? Write to security@intelligentsingularityai.com. We answer within one business day, work with you on the fix, and credit the reporter by name in the public advisory once the issue is patched — unless you ask us not to.',
           }],
         },
         {

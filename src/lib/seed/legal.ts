@@ -61,7 +61,7 @@ function doc(children: Node[]) {
 // ──────────────────────────────────────────────────────────────────────────────
 const PRIVACY = doc([
   p(
-    'Your privacy matters to us. This page explains in plain words what data we take when you visit intelligentsingularityinc.com, what we do with it, how long we keep it, who can see it, and how you can take it back. We wrote it so a grade-8 student can read it without a dictionary.',
+    'Your privacy matters to us. This page explains in plain words what data we take when you visit intelligentsingularityai.com, what we do with it, how long we keep it, who can see it, and how you can take it back. We wrote it so a grade-8 student can read it without a dictionary.',
   ),
   p(
     'We are Intelligent Singularity Inc., the parent company of the Clap ecosystem and its sister projects, based in Alberta, Canada. We build software that aims to work for every person in every country, without picking favourites. The same belief shapes this policy: one rule book, read the same way, whether you live in Toronto or Nairobi.',
@@ -73,12 +73,12 @@ const PRIVACY = doc([
     'We do not sell your information. We have never sold it. We never plan to.',
     'We only receive information that you choose to send us, for example through the contact form.',
     'One tiny cookie remembers your language so the site opens in the language you picked last time.',
-    'You can ask us for a copy of what we hold, fix it, or erase it, by writing to privacy@intelligentsingularityinc.com.',
+    'You can ask us for a copy of what we hold, fix it, or erase it, by writing to privacy@intelligentsingularityai.com.',
   ]),
 
   h('h2', 'Who this policy covers'),
   p(
-    'This policy covers intelligentsingularityinc.com and any subdomain that links back here. Each product in our wider family (for example our healthcare, payments, freelance, and farm management tools) runs on its own domain and has its own privacy notice that fits what that product actually does. If you move from this site to one of those products, please read that product’s notice before signing up.',
+    'This policy covers intelligentsingularityai.com and any subdomain that links back here. Each product in our wider family (for example our healthcare, payments, freelance, and farm management tools) runs on its own domain and has its own privacy notice that fits what that product actually does. If you move from this site to one of those products, please read that product’s notice before signing up.',
   ),
   p(
     'When a word is written like "we", it means Intelligent Singularity Inc. When a word is written like "you", it means the person reading the page — a visitor, a customer, a partner, a journalist, or anyone else.',
@@ -92,7 +92,7 @@ const PRIVACY = doc([
     'A few things are shared across the family. Single sign-on lets you use one Clap account across products that opt in. Customer-support tickets are routed through one help desk so a question about ClapBill can be picked up by the same team that maintains ClapPay. Fraud detection and abuse signals are shared between products, but only as anonymised patterns — never as the underlying personal data. The detail of what is shared, with which product, and for how long is documented on each product’s own privacy page.',
   ),
   p(
-    'If you would like a complete map of which Clap product holds which piece of your data, write to privacy@intelligentsingularityinc.com from the email address linked to your account. We will reply within thirty days with a single, plain-language report you can save or print.',
+    'If you would like a complete map of which Clap product holds which piece of your data, write to privacy@intelligentsingularityai.com from the email address linked to your account. We will reply within thirty days with a single, plain-language report you can save or print.',
   ),
 
   h('h2', 'What we collect and why'),
@@ -196,12 +196,12 @@ const PRIVACY = doc([
     'Complain — bring a concern to your local privacy regulator.',
   ]),
   p(
-    'To use any of these rights, send an email to privacy@intelligentsingularityinc.com from the address you used when you first contacted us. We reply within three working days and complete the request within thirty days. There is no charge for any of these steps.',
+    'To use any of these rights, send an email to privacy@intelligentsingularityai.com from the address you used when you first contacted us. We reply within three working days and complete the request within thirty days. There is no charge for any of these steps.',
   ),
 
   h('h2', 'Children and young people'),
   p(
-    'This website is meant for a general audience aged thirteen and up. We do not knowingly collect personal data from children under thirteen. If a parent or guardian believes we have received data from a child under that age, please write to privacy@intelligentsingularityinc.com and we will delete it as soon as we can confirm the request.',
+    'This website is meant for a general audience aged thirteen and up. We do not knowingly collect personal data from children under thirteen. If a parent or guardian believes we have received data from a child under that age, please write to privacy@intelligentsingularityai.com and we will delete it as soon as we can confirm the request.',
   ),
 
   h('h2', 'If something goes wrong'),
@@ -222,7 +222,7 @@ const PRIVACY = doc([
   h('h2', 'Regional notes'),
   h('h3', 'If you live in the European Economic Area or the United Kingdom'),
   p(
-    'Our data controller for your personal data is Intelligent Singularity Inc. You may contact our privacy office at privacy@intelligentsingularityinc.com. If your question is not fully answered, you may contact your national data-protection authority.',
+    'Our data controller for your personal data is Intelligent Singularity Inc. You may contact our privacy office at privacy@intelligentsingularityai.com. If your question is not fully answered, you may contact your national data-protection authority.',
   ),
   h('h3', 'If you live in Canada'),
   p(
@@ -244,7 +244,7 @@ const PRIVACY = doc([
 
   h('h2', 'Contact us'),
   p(
-    'The simplest way to reach us is through the form at /contact. If you would prefer an email, write to privacy@intelligentsingularityinc.com. For legal service of notices, write to legal@intelligentsingularityinc.com. We reply in English by default and can reply in any of the fourteen languages this site already speaks.',
+    'The simplest way to reach us is through the form at /contact. If you would prefer an email, write to privacy@intelligentsingularityai.com. For legal service of notices, write to legal@intelligentsingularityai.com. We reply in English by default and can reply in any of the fourteen languages this site already speaks.',
   ),
   p(
     'Thank you for reading. Treating you well starts with telling you the truth in a voice you can follow.',
@@ -256,7 +256,7 @@ const PRIVACY = doc([
 // ──────────────────────────────────────────────────────────────────────────────
 const TERMS = doc([
   p(
-    'These Terms of Service are the agreement between you and Intelligent Singularity Inc. for using this website. They are written in plain English so you can follow them without a law degree. By opening any page on intelligentsingularityinc.com you agree to the rules below.',
+    'These Terms of Service are the agreement between you and Intelligent Singularity Inc. for using this website. They are written in plain English so you can follow them without a law degree. By opening any page on intelligentsingularityai.com you agree to the rules below.',
   ),
   p(
     'Our individual products — for example our healthcare, invoicing, payments, trading, or farm software — each live on their own domain and carry their own product terms, which are designed to match what that product actually does. If you sign up for a product, the product’s terms take priority over these site terms for that product only.',
@@ -309,7 +309,7 @@ const TERMS = doc([
     'A few parts carry their own open-source or Creative Commons licences. Where they do, the page explains the licence clearly. Anything not marked as openly licensed is covered by the general rule above.',
   ),
   p(
-    'If you would like to reproduce a whole page, translate it for a public project, or use our brand mark in a presentation, please write to legal@intelligentsingularityinc.com with a short description. We reply quickly and are often happy to say yes.',
+    'If you would like to reproduce a whole page, translate it for a public project, or use our brand mark in a presentation, please write to legal@intelligentsingularityai.com with a short description. We reply quickly and are often happy to say yes.',
   ),
 
   h('h2', 'Our brand'),
@@ -322,7 +322,7 @@ const TERMS = doc([
     'If you send us a message, a CV, a suggestion, or a survey answer, you keep ownership of what you sent. You grant us a limited, royalty-free permission to read it, reply to it, act on it internally, and, where a suggestion is used, to build on it. We do not publish messages without your consent.',
   ),
   p(
-    'Please do not send us confidential information, trade secrets, or ideas you wish to keep secret. If you are unsure whether to send something, write to legal@intelligentsingularityinc.com first and we will set up the right kind of agreement.',
+    'Please do not send us confidential information, trade secrets, or ideas you wish to keep secret. If you are unsure whether to send something, write to legal@intelligentsingularityai.com first and we will set up the right kind of agreement.',
   ),
 
   h('h2', 'Third-party links'),
@@ -340,7 +340,7 @@ const TERMS = doc([
 
   h('h2', 'Feedback, bug reports, and security reports'),
   p(
-    'Kind feedback is always welcome. Security reports are especially appreciated. If you find a weakness in how the site handles data, please write to security@intelligentsingularityinc.com. We answer within one working day, work with you to fix the issue, and credit you by name in the public advisory once it is patched (unless you prefer to stay anonymous).',
+    'Kind feedback is always welcome. Security reports are especially appreciated. If you find a weakness in how the site handles data, please write to security@intelligentsingularityai.com. We answer within one working day, work with you to fix the issue, and credit you by name in the public advisory once it is patched (unless you prefer to stay anonymous).',
   ),
 
   h('h2', 'Suspension and termination'),
@@ -371,7 +371,7 @@ const TERMS = doc([
     'These terms are governed by the laws of the Province of Alberta and the federal laws of Canada that apply there. Disputes linked to this website will be heard by the courts located in Calgary, Alberta, unless the law where you live requires another forum.',
   ),
   p(
-    'Before turning to court, please write to legal@intelligentsingularityinc.com and give us a reasonable chance to sort things out directly. In our experience, a five-minute conversation settles most concerns.',
+    'Before turning to court, please write to legal@intelligentsingularityai.com and give us a reasonable chance to sort things out directly. In our experience, a five-minute conversation settles most concerns.',
   ),
 
   h('h2', 'Export and sanctions compliance'),
@@ -390,12 +390,12 @@ const TERMS = doc([
     'A delay in enforcing a right does not waive that right.',
     'You may not transfer your rights or duties under these terms to anyone else without our written agreement; we may transfer ours as part of a normal business reorganisation.',
     'Notices to you are given on this website, in your dashboard (for products that have one), or to the email address you gave us.',
-    'Notices to us should be sent to legal@intelligentsingularityinc.com and to our registered office in Alberta.',
+    'Notices to us should be sent to legal@intelligentsingularityai.com and to our registered office in Alberta.',
   ]),
 
   h('h2', 'Contact'),
   p(
-    'Questions about these terms? Write to legal@intelligentsingularityinc.com or use the form at /contact. We answer in plain English and we answer quickly.',
+    'Questions about these terms? Write to legal@intelligentsingularityai.com or use the form at /contact. We answer in plain English and we answer quickly.',
   ),
 ]);
 
@@ -477,7 +477,7 @@ const ACCESSIBILITY = doc([
 
   h('h2', 'Report an accessibility problem'),
   p(
-    'If you hit a barrier of any kind — a missing label, a trap, a contrast problem, a feature that does not work with your assistive tool — please write to accessibility@intelligentsingularityinc.com with the page address and a short description of what went wrong. You may attach a recording or screenshot if that is easier.',
+    'If you hit a barrier of any kind — a missing label, a trap, a contrast problem, a feature that does not work with your assistive tool — please write to accessibility@intelligentsingularityai.com with the page address and a short description of what went wrong. You may attach a recording or screenshot if that is easier.',
   ),
   p(
     'We reply within two working days and treat accessibility reports as high-priority bugs. When a fix is shipped, we credit the reporter in the release notes unless they prefer to stay anonymous.',
@@ -499,7 +499,7 @@ const ACCESSIBILITY = doc([
 // ──────────────────────────────────────────────────────────────────────────────
 const COOKIES = doc([
   p(
-    'Cookies are tiny pieces of text that websites ask your browser to keep so they can remember small settings from one visit to the next. This page tells you the full truth about the cookies and other small storage that Intelligent Singularity uses on intelligentsingularityinc.com.',
+    'Cookies are tiny pieces of text that websites ask your browser to keep so they can remember small settings from one visit to the next. This page tells you the full truth about the cookies and other small storage that Intelligent Singularity uses on intelligentsingularityai.com.',
   ),
   p(
     'We wrote this page to be boring on purpose. A good cookie story should not surprise anyone.',
@@ -563,7 +563,7 @@ const COOKIES = doc([
 
   h('h2', 'Questions'),
   p(
-    'If you would like more detail than this page gives, write to privacy@intelligentsingularityinc.com. We reply in plain English, quickly, and in any language this website already speaks.',
+    'If you would like more detail than this page gives, write to privacy@intelligentsingularityai.com. We reply in plain English, quickly, and in any language this website already speaks.',
   ),
 ]);
 

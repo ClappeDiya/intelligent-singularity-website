@@ -177,7 +177,7 @@
       "lastReviewedLabel": "Last reviewed:",
       "incidentEyebrow": "Incident reporting",
       "incidentHeading": "Found something? Please tell us first.",
-      "incidentBody": "Coordinated disclosure is the path we take seriously. Email security@intelligentsingularityinc.com with a description and reproduction steps. We acknowledge reports within one business day, triage within three, and ship a fix on a timeline we agree with you. Researchers are credited by name in our post-mortem when a fix ships — unless you prefer to remain anonymous. We do not threaten or sue good-faith security researchers, full stop.",
+      "incidentBody": "Coordinated disclosure is the path we take seriously. Email security@intelligentsingularityai.com with a description and reproduction steps. We acknowledge reports within one business day, triage within three, and ship a fix on a timeline we agree with you. Researchers are credited by name in our post-mortem when a fix ships — unless you prefer to remain anonymous. We do not threaten or sue good-faith security researchers, full stop.",
       "incidentCta": "Report incident",
       "privacyPolicyLink": "Privacy policy",
       "learnMore": "Learn more",

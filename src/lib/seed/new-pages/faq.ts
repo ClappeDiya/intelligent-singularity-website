@@ -48,7 +48,7 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'Why do products link out to other domains?',
-          a: 'Each product is its own service with its own terms, pricing, sign-up, and privacy notice. Sending you directly to the product domain is faster, and it makes the boundaries clear: clappe.com is governed by Clappe’s terms, clappay.com by ClapPay’s, and so on. The corporate site at intelligentsingularityinc.com is the front door, not a billing system.',
+          a: 'Each product is its own service with its own terms, pricing, sign-up, and privacy notice. Sending you directly to the product domain is faster, and it makes the boundaries clear: clappe.com is governed by Clappe’s terms, clappay.com by ClapPay’s, and so on. The corporate site at intelligentsingularityai.com is the front door, not a billing system.',
         },
         {
           q: 'Can I use your products offline?',
@@ -94,7 +94,7 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'Can I delete data you hold about me?',
-          a: 'Yes. Email legal@intelligentsingularityinc.com from the address you used. We confirm receipt in three business days. We finish the deletion within thirty days. The same right applies to every product, under PIPEDA and GDPR-equivalent rules.',
+          a: 'Yes. Email legal@intelligentsingularityai.com from the address you used. We confirm receipt in three business days. We finish the deletion within thirty days. The same right applies to every product, under PIPEDA and GDPR-equivalent rules.',
         },
         {
           q: 'Do you train AI models on my content?',
@@ -128,15 +128,15 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'Where can I find a press kit?',
-          a: 'Visit /press for the fact sheet, the approved quotes, the brand guidance, the founder reference, and the press boilerplate. Need a logo file, a high-res founder portrait, or a custom statement? Email press@intelligentsingularityinc.com with your deadline.',
+          a: 'Visit /press for the fact sheet, the approved quotes, the brand guidance, the founder reference, and the press boilerplate. Need a logo file, a high-res founder portrait, or a custom statement? Email press@intelligentsingularityai.com with your deadline.',
         },
         {
           q: 'Do you speak at conferences?',
-          a: 'Sometimes. We talk about universal access, AI-augmented teams, healthcare software, and lean software economics. Write to press@intelligentsingularityinc.com with the event details and the audience size. We tell you honestly whether we can show up.',
+          a: 'Sometimes. We talk about universal access, AI-augmented teams, healthcare software, and lean software economics. Write to press@intelligentsingularityai.com with the event details and the audience size. We tell you honestly whether we can show up.',
         },
         {
           q: 'Do you take donations or grants?',
-          a: 'We do not ask users for donations. We do welcome grants. Grants must come from foundations or banks. The grant must be tied to access software in markets where full prices do not yet work. Email partners@intelligentsingularityinc.com.',
+          a: 'We do not ask users for donations. We do welcome grants. Grants must come from foundations or banks. The grant must be tied to access software in markets where full prices do not yet work. Email partners@intelligentsingularityai.com.',
         },
       ],
     },
@@ -161,8 +161,8 @@ export const FAQ_PAGE_SEED = {
   stillStuckCta: {
     eyebrow: 'Still have a question?',
     heading: 'A human reads every message.',
-    body: 'We usually reply within two business days. Send a note through the form. Or write to hello@intelligentsingularityinc.com.',
-    email: 'hello@intelligentsingularityinc.com',
+    body: 'We usually reply within two business days. Send a note through the form. Or write to hello@intelligentsingularityai.com.',
+    email: 'hello@intelligentsingularityai.com',
   },
 };
 

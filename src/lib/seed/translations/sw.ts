@@ -49,7 +49,7 @@ export const TRANSLATION: LocaleTranslation = {
     dataResidencyText:
       'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
-      'Umepata udhaifu, hitilafu, au kitu kinachoonekana kuwa kibaya tu? Andika kwa security@intelligentsingularityinc.com. Tunajibu ndani ya siku moja ya kazi, tunafanya kazi nawe katika urekebishaji, na kumtaja kwa jina mtoa habari katika tangazo la umma mara tu tatizo lirekebishwapo — isipokuwa utuombe tusifanye hivyo.\n\nKamwe hatuwashtaki watafiti wanaofuata masharti ya ufichuzi wenye uwajibikaji yaliyo kwenye /security.',
+      'Umepata udhaifu, hitilafu, au kitu kinachoonekana kuwa kibaya tu? Andika kwa security@intelligentsingularityai.com. Tunajibu ndani ya siku moja ya kazi, tunafanya kazi nawe katika urekebishaji, na kumtaja kwa jina mtoa habari katika tangazo la umma mara tu tatizo lirekebishwapo — isipokuwa utuombe tusifanye hivyo.\n\nKamwe hatuwashtaki watafiti wanaofuata masharti ya ufichuzi wenye uwajibikaji yaliyo kwenye /security.',
   },
 
   commitments: [

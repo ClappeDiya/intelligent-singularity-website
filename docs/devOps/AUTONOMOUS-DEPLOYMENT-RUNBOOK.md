@@ -20,8 +20,8 @@ or explicitly marked N/A.
 |---|---|---|
 | `{{PROJECT_NAME}}` | `is-website` | Directory name / GitHub repo |
 | `{{PROJECT_ROOT}}` | `/Users/md/Documents/Md/Intelligent-singularity/intelligent-singularity-website` | Local absolute path |
-| `{{DOMAIN}}` | `intelligentsingularityinc.com` | Traefik host on Dokploy |
-| `{{STATUS_SUBDOMAIN}}` | `status.intelligentsingularityinc.com` | Uptime Kuma host |
+| `{{DOMAIN}}` | `intelligentsingularityai.com` | Traefik host on Dokploy |
+| `{{STATUS_SUBDOMAIN}}` | `status.intelligentsingularityai.com` | Uptime Kuma host |
 | `{{VPS_IP}}` | `184.70.179.66` | VPS public IP |
 | `{{VPS_USER}}` | `md` | SSH user with Docker group membership |
 | `{{VPS_PASSWORD}}` | `••••••••` | From CLAUDE.md or password manager |

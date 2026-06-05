@@ -7,14 +7,14 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema, getWebPageSchema } from '@/lib/schema';
 
 const CHANNEL_SLUGS = [
-  { slug: 'general', email: 'hello@intelligentsingularityinc.com' },
-  { slug: 'press', email: 'press@intelligentsingularityinc.com' },
-  { slug: 'partnerships', email: 'partners@intelligentsingularityinc.com' },
-  { slug: 'careers', email: 'careers@intelligentsingularityinc.com' },
-  { slug: 'security', email: 'security@intelligentsingularityinc.com' },
-  { slug: 'accessibility', email: 'accessibility@intelligentsingularityinc.com' },
-  { slug: 'privacy', email: 'privacy@intelligentsingularityinc.com' },
-  { slug: 'legal', email: 'legal@intelligentsingularityinc.com' },
+  { slug: 'general', email: 'hello@intelligentsingularityai.com' },
+  { slug: 'press', email: 'press@intelligentsingularityai.com' },
+  { slug: 'partnerships', email: 'partners@intelligentsingularityai.com' },
+  { slug: 'careers', email: 'careers@intelligentsingularityai.com' },
+  { slug: 'security', email: 'security@intelligentsingularityai.com' },
+  { slug: 'accessibility', email: 'accessibility@intelligentsingularityai.com' },
+  { slug: 'privacy', email: 'privacy@intelligentsingularityai.com' },
+  { slug: 'legal', email: 'legal@intelligentsingularityai.com' },
 ] as const;
 
 async function ContactContent({ locale }: { locale: string }) {

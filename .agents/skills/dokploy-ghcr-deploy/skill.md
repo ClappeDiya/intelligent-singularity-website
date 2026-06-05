@@ -1,6 +1,6 @@
 ---
 name: dokploy-ghcr-deploy
-description: "GHCR + Dokploy + Docker Swarm deploy pipeline for the Intelligent Singularity (IS) website. Use when setting up or executing a deploy, when asked to 'deploy IS', 'ship to prod', 'run dokploy-ghcr-deploy', 'release IS website', or when configuring/running the Next.js + Payload CMS production pipeline at intelligentsingularityinc.com. Tech stack: Next.js 16 + Payload CMS 3.82 + PostgreSQL + Docker Swarm + GHCR + Dokploy (Traefik only)."
+description: "GHCR + Dokploy + Docker Swarm deploy pipeline for the Intelligent Singularity (IS) website. Use when setting up or executing a deploy, when asked to 'deploy IS', 'ship to prod', 'run dokploy-ghcr-deploy', 'release IS website', or when configuring/running the Next.js + Payload CMS production pipeline at intelligentsingularityai.com. Tech stack: Next.js 16 + Payload CMS 3.82 + PostgreSQL + Docker Swarm + GHCR + Dokploy (Traefik only)."
 user_invocable: true
 ---
 
@@ -19,7 +19,7 @@ user_invocable: true
 > - One local command (`scripts/deploy-prod.sh`) ships end-to-end
 > - Local quality gates instead of remote CI
 >
-> **Status:** Live, battle-tested on production at intelligentsingularityinc.com.
+> **Status:** Live, battle-tested on production at intelligentsingularityai.com.
 > Last verified deploy: image `prod-20260502-012045-26cea1e` on 2026-05-02.
 >
 > **Why this shape:** Build on the Dokploy host (faster than M-series Mac
@@ -55,7 +55,7 @@ user_invocable: true
 Use this skill when **all** of the following are true:
 
 - The target is the Intelligent Singularity website (this repo)
-- A deploy is wanted to production (`intelligentsingularityinc.com`)
+- A deploy is wanted to production (`intelligentsingularityai.com`)
 - The operator has SSH credentials for the Dokploy host
 - The operator has `gh` CLI authed with `write:packages`
 - The deploy must be operator-driven (no remote CI)
@@ -95,7 +95,7 @@ If the change has not yet been committed, **commit first** unless the operator e
 |       |        --update-failure-action rollback                          |
 |       |        is-website-gbydeh                                         |
 |       |                                                                  |
-|       +- 5. curl https://intelligentsingularityinc.com/en (200 + 0 RSC   |
+|       +- 5. curl https://intelligentsingularityai.com/en (200 + 0 RSC   |
 |       |     error chunks, retried 6 × 15s)                               |
 |       |                                                                  |
 |       +- 6. cleanup: rm -rf /tmp/is-build-<utc> on host                  |
@@ -145,7 +145,7 @@ These are the **resolved** values. Do not use placeholders — use these literal
 |---|---|
 | `PROJECT_NAME` | `intelligent-singularity-website` |
 | `GH_NAMESPACE` | `clappediya` (lowercase used in image refs; user is `ClappeDiya`) |
-| `DOMAIN` | `intelligentsingularityinc.com` |
+| `DOMAIN` | `intelligentsingularityai.com` |
 | `LOCALE_PREFIX_PATH` | `/en` (homepage = `/en/`, never `/`) |
 | `VPS_HOST` | `184.70.179.66` |
 | `VPS_USER` | `md` |
@@ -222,7 +222,7 @@ Required files (all already committed to this repo):
 
 ### 4.4 DNS
 
-`intelligentsingularityinc.com` (and `www`) point to `184.70.179.66`. Traefik provisions LE certs automatically. No action needed during routine deploys.
+`intelligentsingularityai.com` (and `www`) point to `184.70.179.66`. Traefik provisions LE certs automatically. No action needed during routine deploys.
 
 ---
 
@@ -271,7 +271,7 @@ Out of scope for routine deploys. The high-level steps:
 2. Install Dokploy: `curl -sSL https://dokploy.com/install.sh | sh`
 3. Deploy a Postgres compose service named `is-db-*` and capture the password into a Dokploy secret.
 4. Create a Docker service `is-website-gbydeh` pointing at `ghcr.io/clappediya/intelligent-singularity-website:latest` with env vars (`DATABASE_URL`, `PAYLOAD_SECRET`, `REVALIDATE_SECRET`, `NEXT_PUBLIC_SITE_URL`, `ADMIN_ALLOWED_IPS`, `SMTP_*`).
-5. Add Traefik labels in Dokploy for `intelligentsingularityinc.com`.
+5. Add Traefik labels in Dokploy for `intelligentsingularityai.com`.
 6. `gh auth token | docker login ghcr.io -u clappediya --password-stdin` on the host.
 7. From the operator machine: `IS_VPS_PASS='<pw>' ./scripts/deploy-prod.sh`.
 
@@ -360,7 +360,7 @@ Run after every deploy (the script does the first three automatically; the rest 
 ### 9.1 HTTP reachability (homepage + a sampling)
 
 ```bash
-DOMAIN=https://intelligentsingularityinc.com
+DOMAIN=https://intelligentsingularityai.com
 for p in /en /en/about /en/portfolio /en/pricing /en/contact /en/manifesto \
          /en/insights /en/roadmap /en/changelog /en/press /en/careers \
          /en/security /en/trust /en/help /en/status /en/green \

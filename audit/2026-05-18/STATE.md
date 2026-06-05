@@ -488,7 +488,7 @@ Test result on first end-to-end run: all 26 routes within budget; largest payloa
 
 ### Item 2: Fresh Lighthouse — uncovered the bug
 
-`.lighthouserc.cjs` was overriding `.lighthouserc.json` (lhci precedence: `.cjs` > `.json`) and pointing at the **production URL** `https://intelligentsingularityinc.com` — meaning every Lighthouse run was measuring DEPLOYED code, not local changes. Bypassed via `npx lhci autorun --config=.lighthouserc.json`.
+`.lighthouserc.cjs` was overriding `.lighthouserc.json` (lhci precedence: `.cjs` > `.json`) and pointing at the **production URL** `https://intelligentsingularityai.com` — meaning every Lighthouse run was measuring DEPLOYED code, not local changes. Bypassed via `npx lhci autorun --config=.lighthouserc.json`.
 
 **Initial scores (PRE-FIX)**:
 
@@ -587,11 +587,11 @@ LH audit `canonical.score = 0` with explanation "Points to another `hreflang` lo
 const canonical = new URL(localePath(locale, pathname), siteUrl).toString();
 ```
 
-`siteUrl` resolves from `NEXT_PUBLIC_SITE_URL=https://intelligentsingularityinc.com` (both `.env` and `.env.local`). So canonical always equals the production URL. During localhost LH runs:
+`siteUrl` resolves from `NEXT_PUBLIC_SITE_URL=https://intelligentsingularityai.com` (both `.env` and `.env.local`). So canonical always equals the production URL. During localhost LH runs:
 
-- `canonical` = `https://intelligentsingularityinc.com/en/about`
+- `canonical` = `https://intelligentsingularityai.com/en/about`
 - `documentURL` = `http://localhost:3000/en/about` (LH-loaded URL)
-- `hreflang['en']` = `https://intelligentsingularityinc.com/en/about` (= canonical)
+- `hreflang['en']` = `https://intelligentsingularityai.com/en/about` (= canonical)
 
 LH's `canonical.js` audit fires this branch:
 ```js
@@ -1274,7 +1274,7 @@ None — pure verification.
 
 ### Item 1: Production LH revealed a 404 article
 
-`pnpm lighthouse` selected `.lighthouserc.cjs` over `.lighthouserc.json` per LH-CI config precedence (same gotcha discovered in C65). The cjs config targets PRODUCTION (`https://intelligentsingularityinc.com`), not localhost. So this run gave us actual prod scores.
+`pnpm lighthouse` selected `.lighthouserc.cjs` over `.lighthouserc.json` per LH-CI config precedence (same gotcha discovered in C65). The cjs config targets PRODUCTION (`https://intelligentsingularityai.com`), not localhost. So this run gave us actual prod scores.
 
 **Today's prod scores (2026-05-19)**:
 

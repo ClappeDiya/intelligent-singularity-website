@@ -2,7 +2,7 @@
 import { getTranslations } from 'next-intl/server';
 import { fetchReleaseNotes } from '@/lib/payload';
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://intelligentsingularityinc.com';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://intelligentsingularityai.com';
 
 function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

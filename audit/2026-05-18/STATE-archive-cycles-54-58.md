@@ -247,7 +247,7 @@ Cycle 53 audited only `src/components/{home,pages,brand}` for hardcoded English.
   - `/en/insights/grade-8-is-the-ceiling` → `Grade 8 is the ceiling... | Insights | Intelligent Singularity` ✓
   - `/ar/insights/grade-8-is-the-ceiling` → `الصف الثامن هو السقف... | رؤى | Intelligent Singularity` ✓
   - `/fr/insights/grade-8-is-the-ceiling` → `La 4ᵉ est le plafond... | Analyses | Intelligent Singularity` ✓
-- BlogPosting JSON-LD now embeds `"@id":"https://intelligentsingularityinc.com/en/insights/grade-8-is-the-ceiling#blogposting"` (absolute) instead of relative path.
+- BlogPosting JSON-LD now embeds `"@id":"https://intelligentsingularityai.com/en/insights/grade-8-is-the-ceiling#blogposting"` (absolute) instead of relative path.
 
 ### Score deltas
 

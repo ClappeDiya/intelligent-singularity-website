@@ -7,7 +7,7 @@ export default defineConfig({
   fullyParallel: true,
   reporter: [['list']],
   use: {
-    baseURL: process.env.BASE_URL ?? 'https://intelligentsingularityinc.com',
+    baseURL: process.env.BASE_URL ?? 'https://intelligentsingularityai.com',
     trace: 'retain-on-failure',
   },
 });

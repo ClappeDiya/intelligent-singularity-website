@@ -177,7 +177,7 @@
       "lastReviewedLabel": "Dernière révision :",
       "incidentEyebrow": "Signalement d'incident",
       "incidentHeading": "Vous avez trouvé quelque chose ? Dites-le-nous en premier.",
-      "incidentBody": "La divulgation coordonnée est la voie que nous prenons au sérieux. Envoyez un email à security@intelligentsingularityinc.com avec une description et les étapes de reproduction. Nous accusons réception des rapports dans un délai d'un jour ouvrable, les trions dans les trois jours et déployons un correctif selon un calendrier convenu avec vous. Les chercheurs sont crédités par leur nom dans notre post-mortem lorsqu'un correctif est livré — à moins que vous ne préfériez rester anonyme. Nous ne menaçons ni ne poursuivons les chercheurs de sécurité de bonne foi, point final.",
+      "incidentBody": "La divulgation coordonnée est la voie que nous prenons au sérieux. Envoyez un email à security@intelligentsingularityai.com avec une description et les étapes de reproduction. Nous accusons réception des rapports dans un délai d'un jour ouvrable, les trions dans les trois jours et déployons un correctif selon un calendrier convenu avec vous. Les chercheurs sont crédités par leur nom dans notre post-mortem lorsqu'un correctif est livré — à moins que vous ne préfériez rester anonyme. Nous ne menaçons ni ne poursuivons les chercheurs de sécurité de bonne foi, point final.",
       "incidentCta": "Signaler un incident",
       "privacyPolicyLink": "Politique de confidentialité",
       "learnMore": "En savoir plus",

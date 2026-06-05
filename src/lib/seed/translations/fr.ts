@@ -76,7 +76,7 @@ export const TRANSLATION: LocaleTranslation = {
     dataResidencyText:
       "This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.",
     reportIncidentText:
-      "Vous avez trouvé une faille, un bogue ou quelque chose qui semble simplement anormal ? Écrivez à security@intelligentsingularityinc.com. Nous répondons sous un jour ouvré, travaillons avec vous sur le correctif et créditons nommément le rapporteur dans l’avis public une fois le problème corrigé — sauf si vous nous demandez de ne pas le faire.\n\nNous ne poursuivons jamais en justice les chercheurs qui respectent les conditions de divulgation responsable sur /security.",
+      "Vous avez trouvé une faille, un bogue ou quelque chose qui semble simplement anormal ? Écrivez à security@intelligentsingularityai.com. Nous répondons sous un jour ouvré, travaillons avec vous sur le correctif et créditons nommément le rapporteur dans l’avis public une fois le problème corrigé — sauf si vous nous demandez de ne pas le faire.\n\nNous ne poursuivons jamais en justice les chercheurs qui respectent les conditions de divulgation responsable sur /security.",
   },
 
   commitments: [

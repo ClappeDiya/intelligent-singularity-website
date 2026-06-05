@@ -2,13 +2,13 @@ module.exports = {
   ci: {
     collect: {
       url: [
-        'https://intelligentsingularityinc.com/en',
-        'https://intelligentsingularityinc.com/en/changelog',
-        'https://intelligentsingularityinc.com/en/status',
-        'https://intelligentsingularityinc.com/en/roadmap',
-        'https://intelligentsingularityinc.com/en/insights',
-        'https://intelligentsingularityinc.com/en/trust',
-        'https://intelligentsingularityinc.com/en/help',
+        'https://intelligentsingularityai.com/en',
+        'https://intelligentsingularityai.com/en/changelog',
+        'https://intelligentsingularityai.com/en/status',
+        'https://intelligentsingularityai.com/en/roadmap',
+        'https://intelligentsingularityai.com/en/insights',
+        'https://intelligentsingularityai.com/en/trust',
+        'https://intelligentsingularityai.com/en/help',
       ],
       numberOfRuns: 1,
       settings: { preset: 'desktop' },

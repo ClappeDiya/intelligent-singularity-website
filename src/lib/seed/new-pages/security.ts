@@ -105,8 +105,8 @@ export const SECURITY_PAGE_SEED = {
     eyebrow: 'Report a vulnerability',
     heading: 'Found something? Please tell us first.',
     body:
-      'Email security@intelligentsingularityinc.com with a description and steps to reproduce. We confirm reports within one business day. We triage within three. We credit researchers by name in the post-mortem when a fix ships, unless they ask to stay anonymous. We do not threaten or sue good-faith security researchers, full stop.',
-    email: 'security@intelligentsingularityinc.com',
+      'Email security@intelligentsingularityai.com with a description and steps to reproduce. We confirm reports within one business day. We triage within three. We credit researchers by name in the post-mortem when a fix ships, unless they ask to stay anonymous. We do not threaten or sue good-faith security researchers, full stop.',
+    email: 'security@intelligentsingularityai.com',
   },
 };
 

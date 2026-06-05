@@ -801,7 +801,7 @@ const CAREERS: Record<LocaleCode, CareersStrings> = {
 const PRESS: Record<LocaleCode, PressStrings> = {
   'zh-CN': {
     eyebrow: '新闻 · 媒体室', title: '写一些关于我们的真实内容。',
-    lede: '此处的一切都已获准发布。请注明我们。需要更多?发邮件至 press@intelligentsingularityinc.com。真人在一个工作日内回复。',
+    lede: '此处的一切都已获准发布。请注明我们。需要更多?发邮件至 press@intelligentsingularityai.com。真人在一个工作日内回复。',
     boilerplate: 'Intelligent Singularity Inc. 是一家母公司和软件工作室。公司于 2024 年在加拿大艾伯塔省成立。它是 Clap 生态系统的母公司。Clap 生态系统是一个不断壮大的平台家族。它涵盖商业、健康、金融、工作、农业、创意媒体和共享基础设施。团队规模小、完全远程、AI 增强。每个产品都为通用访问而构建。同一旗舰产品同时服务于发达和发展中市场的客户。公司是自筹资金,不出售。',
     brandGuidance: {
       brandName: '首次使用时写 Intelligent Singularity。之后写 the studio。法律名称是 Intelligent Singularity Inc.,总部位于加拿大艾伯塔省。',
@@ -810,7 +810,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: '直接联系',
       heading: '需要引语、背景信息或创始人采访?',
-      body: '请将您的截止日期发邮件至 press@intelligentsingularityinc.com。每条消息都有真人阅读。我们在一个工作日内回复。',
+      body: '请将您的截止日期发邮件至 press@intelligentsingularityai.com。每条消息都有真人阅读。我们在一个工作日内回复。',
     },
     quotes: [
       { text: '伟大的软件不是奢侈品。它是世界上任何地方每一家企业、每一位在做诚实工作的人的基本权利。', role: '创始人,Intelligent Singularity' },
@@ -846,7 +846,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   es: {
     eyebrow: 'PRENSA · SALA DE MEDIOS', title: 'Escribe algo verdadero sobre nosotros.',
-    lede: 'Todo aquí está aprobado para publicar. Por favor, atribúyenos. ¿Necesitas más? Envía un email a press@intelligentsingularityinc.com. Una persona responde en un día laborable.',
+    lede: 'Todo aquí está aprobado para publicar. Por favor, atribúyenos. ¿Necesitas más? Envía un email a press@intelligentsingularityai.com. Una persona responde en un día laborable.',
     boilerplate: 'Intelligent Singularity Inc. es una empresa matriz y un estudio de software. Se fundó en Alberta, Canadá, en 2024. Es la matriz del ecosistema Clap. El ecosistema Clap es una familia creciente de plataformas. Cubre negocio, salud, finanzas, trabajo, agricultura, medios creativos e infraestructura compartida. El equipo es pequeño, totalmente remoto y aumentado por IA. Cada producto está construido para acceso universal. El mismo producto principal sirve a clientes en mercados desarrollados y en desarrollo. La empresa es bootstrapped y no está a la venta.',
     brandGuidance: {
       brandName: 'Escribe Intelligent Singularity en el primer uso. Después, the studio. El nombre legal es Intelligent Singularity Inc. Con sede en Alberta, Canadá.',
@@ -855,7 +855,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'Contacto directo',
       heading: '¿Necesitas una cita, contexto o una entrevista con el fundador?',
-      body: 'Envía un email a press@intelligentsingularityinc.com con tu plazo. Una persona lee cada mensaje. Respondemos en un día laborable.',
+      body: 'Envía un email a press@intelligentsingularityai.com con tu plazo. Una persona lee cada mensaje. Respondemos en un día laborable.',
     },
     quotes: [
       { text: 'El gran software no es un bien de lujo. Es un derecho básico para cada empresa y cada persona que hace un trabajo honesto en cualquier parte del mundo.', role: 'Fundador, Intelligent Singularity' },
@@ -891,7 +891,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   hi: {
     eyebrow: 'प्रेस · मीडिया कक्ष', title: 'हमारे बारे में कुछ सच लिखें।',
-    lede: 'यहाँ सब कुछ प्रकाशन के लिए स्वीकृत है। कृपया हमें श्रेय दें। और चाहिए? press@intelligentsingularityinc.com पर ईमेल करें। एक इंसान एक कार्य दिवस के भीतर जवाब देता है।',
+    lede: 'यहाँ सब कुछ प्रकाशन के लिए स्वीकृत है। कृपया हमें श्रेय दें। और चाहिए? press@intelligentsingularityai.com पर ईमेल करें। एक इंसान एक कार्य दिवस के भीतर जवाब देता है।',
     boilerplate: 'Intelligent Singularity Inc. एक मूल कंपनी और सॉफ़्टवेयर स्टूडियो है। इसे 2024 में अल्बर्टा, कनाडा में स्थापित किया गया। यह Clap इकोसिस्टम की मूल कंपनी है। Clap इकोसिस्टम बढ़ता हुआ प्लेटफ़ॉर्म परिवार है। यह व्यवसाय, स्वास्थ्य, वित्त, कार्य, कृषि, रचनात्मक मीडिया और साझा बुनियादी ढाँचे को कवर करता है। टीम छोटी, पूर्णतः दूरस्थ और AI-संवर्धित है। हर उत्पाद सार्वभौमिक पहुँच के लिए बनाया गया है। वही प्रमुख उत्पाद विकसित और विकासशील बाज़ारों दोनों के ग्राहकों की सेवा करता है। कंपनी बूटस्ट्रैप्ड है और बिक्री के लिए नहीं है।',
     brandGuidance: {
       brandName: 'पहली बार के उपयोग में Intelligent Singularity लिखें। फिर the studio। कानूनी नाम Intelligent Singularity Inc. है। मुख्यालय अल्बर्टा, कनाडा में।',
@@ -900,7 +900,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'सीधा संपर्क',
       heading: 'उद्धरण, पृष्ठभूमि या संस्थापक साक्षात्कार चाहिए?',
-      body: 'अपनी समय-सीमा के साथ press@intelligentsingularityinc.com पर ईमेल करें। हर संदेश एक इंसान पढ़ता है। हम एक कार्य दिवस में जवाब देते हैं।',
+      body: 'अपनी समय-सीमा के साथ press@intelligentsingularityai.com पर ईमेल करें। हर संदेश एक इंसान पढ़ता है। हम एक कार्य दिवस में जवाब देते हैं।',
     },
     quotes: [
       { text: 'बेहतरीन सॉफ़्टवेयर कोई विलासिता की वस्तु नहीं है। यह दुनिया में कहीं भी ईमानदारी से काम करने वाले हर व्यवसाय और हर व्यक्ति का बुनियादी अधिकार है।', role: 'संस्थापक, Intelligent Singularity' },
@@ -936,7 +936,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   ar: {
     eyebrow: 'الصحافة · غرفة الإعلام', title: 'اكتب شيئًا صادقًا عنّا.',
-    lede: 'كل ما هنا معتمد للنشر. يرجى نسب الفضل إلينا. تحتاج إلى المزيد؟ راسل press@intelligentsingularityinc.com. يردّ إنسان خلال يوم عمل واحد.',
+    lede: 'كل ما هنا معتمد للنشر. يرجى نسب الفضل إلينا. تحتاج إلى المزيد؟ راسل press@intelligentsingularityai.com. يردّ إنسان خلال يوم عمل واحد.',
     boilerplate: 'Intelligent Singularity Inc. شركة أم واستوديو برمجيات. تأسست في ألبرتا، كندا عام 2024. وهي الشركة الأم لمنظومة Clap. منظومة Clap عائلة متنامية من المنصات. تغطي الأعمال والصحة والتمويل والعمل والزراعة والإعلام الإبداعي والبنية التحتية المشتركة. الفريق صغير، عن بُعد بالكامل، ومُعزَّز بالذكاء الاصطناعي. كل منتج مبني للوصول الشامل. المنتج الرئيسي نفسه يخدم العملاء في الأسواق المتقدمة والنامية على حد سواء. الشركة ممولة ذاتيًا وغير معروضة للبيع.',
     brandGuidance: {
       brandName: 'اكتب Intelligent Singularity في أول استخدام. ثم اكتب the studio. الاسم القانوني هو Intelligent Singularity Inc. ومقرها ألبرتا، كندا.',
@@ -945,7 +945,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'تواصل مباشر',
       heading: 'هل تحتاج إلى اقتباس، أو خلفية، أو مقابلة مع المؤسس؟',
-      body: 'راسل press@intelligentsingularityinc.com مع موعد التسليم. إنسان يقرأ كل ملاحظة. نرد خلال يوم عمل واحد.',
+      body: 'راسل press@intelligentsingularityai.com مع موعد التسليم. إنسان يقرأ كل ملاحظة. نرد خلال يوم عمل واحد.',
     },
     quotes: [
       { text: 'البرمجيات العظيمة ليست سلعة كمالية. هي حق أساسي لكل عمل ولكل إنسان يقوم بعمل صادق في أي مكان من العالم.', role: 'المؤسس، Intelligent Singularity' },
@@ -981,7 +981,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   fr: {
     eyebrow: 'PRESSE · SALLE DE PRESSE', title: 'Écrivez quelque chose de vrai sur nous.',
-    lede: "Tout ici est approuvé pour la publication. Merci de nous créditer. Besoin de plus ? Envoyez un email à press@intelligentsingularityinc.com. Une personne répond sous un jour ouvré.",
+    lede: "Tout ici est approuvé pour la publication. Merci de nous créditer. Besoin de plus ? Envoyez un email à press@intelligentsingularityai.com. Une personne répond sous un jour ouvré.",
     boilerplate: "Intelligent Singularity Inc. est une société mère et un studio logiciel. Elle a été créée en Alberta, au Canada, en 2024. Elle est la société mère de l'écosystème Clap. L'écosystème Clap est une famille croissante de plateformes. Il couvre business, santé, finance, travail, agriculture, médias créatifs et infrastructure partagée. L'équipe est petite, entièrement à distance, et augmentée par l'IA. Chaque produit est construit pour un accès universel. Le même produit phare sert les clients des marchés développés et en développement. La société est bootstrapped et n'est pas à vendre.",
     brandGuidance: {
       brandName: "Écrivez Intelligent Singularity à la première utilisation. Ensuite, the studio. Le nom légal est Intelligent Singularity Inc. Basée en Alberta, au Canada.",
@@ -990,7 +990,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'Contact direct',
       heading: "Besoin d'une citation, d'un contexte ou d'une interview du fondateur ?",
-      body: "Envoyez un email à press@intelligentsingularityinc.com avec votre échéance. Une personne lit chaque message. Nous répondons sous un jour ouvré.",
+      body: "Envoyez un email à press@intelligentsingularityai.com avec votre échéance. Une personne lit chaque message. Nous répondons sous un jour ouvré.",
     },
     quotes: [
       { text: "Un excellent logiciel n'est pas un bien de luxe. C'est un droit fondamental pour chaque entreprise et chaque personne qui fait un travail honnête, où que ce soit dans le monde.", role: 'Fondateur, Intelligent Singularity' },
@@ -1026,7 +1026,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   pt: {
     eyebrow: 'IMPRENSA · SALA DE MEDIA', title: 'Escreva algo verdadeiro sobre nós.',
-    lede: 'Tudo aqui está aprovado para publicação. Por favor, dê-nos crédito. Precisa de mais? Envie um email para press@intelligentsingularityinc.com. Uma pessoa responde dentro de um dia útil.',
+    lede: 'Tudo aqui está aprovado para publicação. Por favor, dê-nos crédito. Precisa de mais? Envie um email para press@intelligentsingularityai.com. Uma pessoa responde dentro de um dia útil.',
     boilerplate: 'A Intelligent Singularity Inc. é uma empresa-mãe e um estúdio de software. Foi criada em Alberta, Canadá, em 2024. É a empresa-mãe do ecossistema Clap. O ecossistema Clap é uma família crescente de plataformas. Cobre negócio, saúde, finanças, trabalho, agricultura, media criativa e infraestrutura partilhada. A equipa é pequena, totalmente remota e aumentada por IA. Cada produto é construído para acesso universal. O mesmo produto principal serve clientes em mercados desenvolvidos e em desenvolvimento. A empresa é bootstrapped e não está à venda.',
     brandGuidance: {
       brandName: 'Escreva Intelligent Singularity na primeira utilização. Depois, the studio. O nome legal é Intelligent Singularity Inc. Sediada em Alberta, Canadá.',
@@ -1035,7 +1035,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'Contacto direto',
       heading: 'Precisa de uma citação, contexto, ou de uma entrevista com o fundador?',
-      body: 'Envie um email para press@intelligentsingularityinc.com com o seu prazo. Uma pessoa lê cada mensagem. Respondemos dentro de um dia útil.',
+      body: 'Envie um email para press@intelligentsingularityai.com com o seu prazo. Uma pessoa lê cada mensagem. Respondemos dentro de um dia útil.',
     },
     quotes: [
       { text: 'O bom software não é um bem de luxo. É um direito básico para cada empresa e cada pessoa que faz um trabalho honesto em qualquer parte do mundo.', role: 'Fundador, Intelligent Singularity' },
@@ -1071,7 +1071,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   bn: {
     eyebrow: 'প্রেস · মিডিয়া কক্ষ', title: 'আমাদের সম্পর্কে কিছু সত্য লিখুন।',
-    lede: 'এখানে সবকিছু প্রকাশের জন্য অনুমোদিত। অনুগ্রহ করে আমাদের কৃতিত্ব দিন। আরও দরকার? press@intelligentsingularityinc.com-এ ইমেইল করুন। একজন মানুষ এক কার্যদিবসের মধ্যে উত্তর দেয়।',
+    lede: 'এখানে সবকিছু প্রকাশের জন্য অনুমোদিত। অনুগ্রহ করে আমাদের কৃতিত্ব দিন। আরও দরকার? press@intelligentsingularityai.com-এ ইমেইল করুন। একজন মানুষ এক কার্যদিবসের মধ্যে উত্তর দেয়।',
     boilerplate: 'Intelligent Singularity Inc. একটি মূল কোম্পানি এবং সফটওয়্যার স্টুডিও। এটি 2024 সালে কানাডার আলবার্টায় প্রতিষ্ঠিত হয়েছিল। এটি Clap ইকোসিস্টেমের মূল কোম্পানি। Clap ইকোসিস্টেম একটি ক্রমবর্ধমান প্ল্যাটফর্ম পরিবার। এটি ব্যবসা, স্বাস্থ্য, অর্থ, কাজ, কৃষি, সৃজনশীল মিডিয়া এবং ভাগাভাগি অবকাঠামো কভার করে। দলটি ছোট, সম্পূর্ণ রিমোট এবং AI-সংবর্ধিত। প্রতিটি পণ্য সর্বজনীন প্রবেশের জন্য তৈরি। একই প্রধান পণ্য উন্নত এবং উন্নয়নশীল বাজার উভয়ের গ্রাহকদের সেবা করে। কোম্পানিটি বুটস্ট্র্যাপড এবং বিক্রির জন্য নয়।',
     brandGuidance: {
       brandName: 'প্রথম ব্যবহারে Intelligent Singularity লিখুন। তারপর the studio। আইনি নাম Intelligent Singularity Inc.। কানাডার আলবার্টায় অবস্থিত।',
@@ -1080,7 +1080,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'সরাসরি যোগাযোগ',
       heading: 'উদ্ধৃতি, পটভূমি, বা প্রতিষ্ঠাতার সাক্ষাৎকার দরকার?',
-      body: 'আপনার সময়সীমা সহ press@intelligentsingularityinc.com-এ ইমেইল করুন। প্রতিটি বার্তা একজন মানুষ পড়েন। আমরা এক কার্যদিবসে উত্তর দিই।',
+      body: 'আপনার সময়সীমা সহ press@intelligentsingularityai.com-এ ইমেইল করুন। প্রতিটি বার্তা একজন মানুষ পড়েন। আমরা এক কার্যদিবসে উত্তর দিই।',
     },
     quotes: [
       { text: 'উৎকৃষ্ট সফটওয়্যার বিলাসদ্রব্য নয়। এটি বিশ্বের যে কোনো জায়গায় সৎ কাজ করা প্রতিটি ব্যবসা এবং প্রতিটি ব্যক্তির মৌলিক অধিকার।', role: 'প্রতিষ্ঠাতা, Intelligent Singularity' },
@@ -1116,7 +1116,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   ru: {
     eyebrow: 'ПРЕССА · МЕДИА-ЦЕНТР', title: 'Напишите о нас что-то правдивое.',
-    lede: 'Всё здесь одобрено к публикации. Пожалуйста, упоминайте нас. Нужно больше? Напишите на press@intelligentsingularityinc.com. Живой человек отвечает в течение одного рабочего дня.',
+    lede: 'Всё здесь одобрено к публикации. Пожалуйста, упоминайте нас. Нужно больше? Напишите на press@intelligentsingularityai.com. Живой человек отвечает в течение одного рабочего дня.',
     boilerplate: 'Intelligent Singularity Inc. — материнская компания и софт-студия. Основана в Альберте, Канада, в 2024 году. Является материнской для экосистемы Clap. Экосистема Clap — растущее семейство платформ. Охватывает бизнес, здоровье, финансы, работу, сельское хозяйство, креативные медиа и общую инфраструктуру. Команда небольшая, полностью удалённая и усиленная ИИ. Каждый продукт создан для универсального доступа. Один и тот же флагманский продукт обслуживает клиентов как на развитых, так и на развивающихся рынках. Компания самофинансируемая и не продаётся.',
     brandGuidance: {
       brandName: 'При первом упоминании пишите Intelligent Singularity. Затем — the studio. Юридическое название — Intelligent Singularity Inc. Базируется в Альберте, Канада.',
@@ -1125,7 +1125,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'Прямой контакт',
       heading: 'Нужна цитата, бэкграунд или интервью с основателем?',
-      body: 'Напишите на press@intelligentsingularityinc.com и укажите дедлайн. Каждое письмо читает человек. Мы отвечаем в течение одного рабочего дня.',
+      body: 'Напишите на press@intelligentsingularityai.com и укажите дедлайн. Каждое письмо читает человек. Мы отвечаем в течение одного рабочего дня.',
     },
     quotes: [
       { text: 'Хорошее ПО — не предмет роскоши. Это базовое право каждой компании и каждого человека, занятого честным трудом, где бы он ни находился.', role: 'Основатель, Intelligent Singularity' },
@@ -1161,7 +1161,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   ur: {
     eyebrow: 'پریس · میڈیا روم', title: 'ہمارے بارے میں کچھ سچ لکھیں۔',
-    lede: 'یہاں سب کچھ شائع کرنے کے لیے منظور شدہ ہے۔ براہ کرم ہمیں کریڈٹ دیں۔ مزید چاہیے؟ press@intelligentsingularityinc.com پر ای میل کریں۔ ایک حقیقی شخص ایک کاروباری دن کے اندر جواب دیتا ہے۔',
+    lede: 'یہاں سب کچھ شائع کرنے کے لیے منظور شدہ ہے۔ براہ کرم ہمیں کریڈٹ دیں۔ مزید چاہیے؟ press@intelligentsingularityai.com پر ای میل کریں۔ ایک حقیقی شخص ایک کاروباری دن کے اندر جواب دیتا ہے۔',
     boilerplate: 'Intelligent Singularity Inc. ایک پیرنٹ کمپنی اور سافٹ ویئر اسٹوڈیو ہے۔ اسے 2024 میں البرٹا، کینیڈا میں قائم کیا گیا۔ یہ Clap ایکوسسٹم کی پیرنٹ کمپنی ہے۔ Clap ایکوسسٹم پلیٹ فارمز کا ایک بڑھتا ہوا خاندان ہے۔ یہ کاروبار، صحت، مالیات، کام، زراعت، تخلیقی میڈیا اور مشترکہ بنیادی ڈھانچے کو احاطہ کرتا ہے۔ ٹیم چھوٹی، مکمل طور پر ریموٹ، اور AI سے بڑھائی گئی ہے۔ ہر پروڈکٹ عالمی رسائی کے لیے بنائی گئی ہے۔ وہی فلیگ شپ پروڈکٹ ترقی یافتہ اور ترقی پذیر مارکیٹوں دونوں کے گاہکوں کی خدمت کرتی ہے۔ کمپنی خود فنڈڈ ہے اور برائے فروخت نہیں ہے۔',
     brandGuidance: {
       brandName: 'پہلے استعمال میں Intelligent Singularity لکھیں۔ پھر the studio۔ قانونی نام Intelligent Singularity Inc. ہے۔ ہیڈکوارٹر البرٹا، کینیڈا میں۔',
@@ -1170,7 +1170,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'براہ راست رابطہ',
       heading: 'اقتباس، پس منظر، یا بانی کے انٹرویو کی ضرورت ہے؟',
-      body: 'اپنی ڈیڈ لائن کے ساتھ press@intelligentsingularityinc.com پر ای میل کریں۔ ہر پیغام ایک حقیقی شخص پڑھتا ہے۔ ہم ایک کاروباری دن میں جواب دیتے ہیں۔',
+      body: 'اپنی ڈیڈ لائن کے ساتھ press@intelligentsingularityai.com پر ای میل کریں۔ ہر پیغام ایک حقیقی شخص پڑھتا ہے۔ ہم ایک کاروباری دن میں جواب دیتے ہیں۔',
     },
     quotes: [
       { text: 'بہترین سافٹ ویئر کوئی عیش و عشرت کی شے نہیں ہے۔ یہ دنیا میں کہیں بھی ایمانداری سے کام کرنے والے ہر کاروبار اور ہر شخص کا بنیادی حق ہے۔', role: 'بانی، Intelligent Singularity' },
@@ -1206,7 +1206,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   id: {
     eyebrow: 'PERS · RUANG MEDIA', title: 'Tulis sesuatu yang benar tentang kami.',
-    lede: 'Semua di sini disetujui untuk dipublikasikan. Mohon mencantumkan kami. Butuh lebih? Email press@intelligentsingularityinc.com. Seorang manusia menjawab dalam satu hari kerja.',
+    lede: 'Semua di sini disetujui untuk dipublikasikan. Mohon mencantumkan kami. Butuh lebih? Email press@intelligentsingularityai.com. Seorang manusia menjawab dalam satu hari kerja.',
     boilerplate: 'Intelligent Singularity Inc. adalah perusahaan induk dan studio perangkat lunak. Didirikan di Alberta, Kanada, pada tahun 2024. Ini adalah induk dari ekosistem Clap. Ekosistem Clap adalah keluarga platform yang terus berkembang. Mencakup bisnis, kesehatan, keuangan, kerja, pertanian, media kreatif, dan infrastruktur bersama. Tim kecil, sepenuhnya remote, dan diperkuat AI. Setiap produk dibangun untuk akses universal. Produk unggulan yang sama melayani pelanggan di pasar maju dan berkembang. Perusahaan ini bootstrapped dan tidak dijual.',
     brandGuidance: {
       brandName: 'Tulis Intelligent Singularity pada penggunaan pertama. Kemudian the studio. Nama hukum adalah Intelligent Singularity Inc. Berbasis di Alberta, Kanada.',
@@ -1215,7 +1215,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'Kontak langsung',
       heading: 'Butuh kutipan, latar belakang, atau wawancara pendiri?',
-      body: 'Email press@intelligentsingularityinc.com dengan tenggat waktu Anda. Seorang manusia membaca setiap pesan. Kami membalas dalam satu hari kerja.',
+      body: 'Email press@intelligentsingularityai.com dengan tenggat waktu Anda. Seorang manusia membaca setiap pesan. Kami membalas dalam satu hari kerja.',
     },
     quotes: [
       { text: 'Perangkat lunak yang hebat bukan barang mewah. Ia adalah hak dasar bagi setiap usaha dan setiap orang yang bekerja jujur di mana pun di dunia.', role: 'Pendiri, Intelligent Singularity' },
@@ -1251,7 +1251,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   sw: {
     eyebrow: 'VYOMBO VYA HABARI · CHUMBA CHA HABARI', title: 'Andika kitu cha kweli kuhusu sisi.',
-    lede: 'Kila kitu hapa kimeidhinishwa kuchapishwa. Tafadhali tutaje. Unahitaji zaidi? Tuma barua pepe kwa press@intelligentsingularityinc.com. Mtu halisi anajibu ndani ya siku moja ya kazi.',
+    lede: 'Kila kitu hapa kimeidhinishwa kuchapishwa. Tafadhali tutaje. Unahitaji zaidi? Tuma barua pepe kwa press@intelligentsingularityai.com. Mtu halisi anajibu ndani ya siku moja ya kazi.',
     boilerplate: 'Intelligent Singularity Inc. ni kampuni mama na studio ya programu. Ilianzishwa Alberta, Kanada, mwaka wa 2024. Ni kampuni mama ya mfumo wa Clap. Mfumo wa Clap ni familia inayoongezeka ya majukwaa. Inashughulikia biashara, afya, fedha, kazi, kilimo, vyombo vya habari vya ubunifu, na miundombinu ya pamoja. Timu ni ndogo, mbali kabisa, na imeimarishwa na AI. Kila bidhaa imejengwa kwa ajili ya ufikiaji wa wote. Bidhaa kuu ile ile inahudumia wateja katika masoko yaliyoendelea na yanayoendelea. Kampuni imejifadhili na haiuzwi.',
     brandGuidance: {
       brandName: 'Andika Intelligent Singularity wakati wa kwanza. Kisha the studio. Jina la kisheria ni Intelligent Singularity Inc. Iko Alberta, Kanada.',
@@ -1260,7 +1260,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'Mawasiliano ya moja kwa moja',
       heading: 'Unahitaji nukuu, asili, au mahojiano na mwanzilishi?',
-      body: 'Tuma barua pepe kwa press@intelligentsingularityinc.com pamoja na muda wako wa mwisho. Kila ujumbe husomwa na mtu halisi. Tunajibu ndani ya siku moja ya kazi.',
+      body: 'Tuma barua pepe kwa press@intelligentsingularityai.com pamoja na muda wako wa mwisho. Kila ujumbe husomwa na mtu halisi. Tunajibu ndani ya siku moja ya kazi.',
     },
     quotes: [
       { text: 'Programu nzuri si bidhaa ya anasa. Ni haki ya msingi kwa kila biashara na kila mtu anayefanya kazi ya uaminifu mahali popote duniani.', role: 'Mwanzilishi, Intelligent Singularity' },
@@ -1296,7 +1296,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   yo: {
     eyebrow: 'IṢẸ́ ÌRÒYÌN · YÀRÁ ÌTÀN', title: 'Kọ ohun kan tó jẹ́ òtítọ́ nípa wa.',
-    lede: 'Gbogbo nǹkan níbí ti gba ìfọwọ́sí láti tẹ̀ jáde. Jọ̀wọ́, sọ orúkọ wa. Ó nílò sí i? Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityinc.com. Ènìyàn gidi ń dáhùn nínú ọjọ́ iṣẹ́ kan.',
+    lede: 'Gbogbo nǹkan níbí ti gba ìfọwọ́sí láti tẹ̀ jáde. Jọ̀wọ́, sọ orúkọ wa. Ó nílò sí i? Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityai.com. Ènìyàn gidi ń dáhùn nínú ọjọ́ iṣẹ́ kan.',
     boilerplate: 'Intelligent Singularity Inc. jẹ́ kampani ìyá àti studio sọ́fítíwéàrì. A dá a sílẹ̀ ní Alberta, Canada, ní ọdún 2024. Ó jẹ́ kampani ìyá ti mfumo Clap. Mfumo Clap jẹ́ ìdílé pèpéle tí ń dàgbà. Ó kárí òwò, ìlera, ìṣúná, iṣẹ́, ọgbọ́n àgbẹ̀, ìròyìn ìṣẹ̀dá, àti ìpilẹ̀ṣẹ̀ àjọṣe. Ẹgbẹ́ kékeré, ní ọ̀nà jíjìn pátápátá, àti tí AI ti múratàn. Gbogbo ọjà ni a kọ́ fún àǹfààní ayé ńláńlá. Ọjà àkọ́kọ́ kannáà ń ṣe iṣẹ́ fún àwọn oníbàárá ní ọjà tó ti dàgbà àti tí ń dàgbà. Kampani náà jẹ́ tí a fúnra-rẹ̀ ṣètilẹ́yìn, kì í sì í ṣe fún títà.',
     brandGuidance: {
       brandName: 'Kọ Intelligent Singularity ní lílò àkọ́kọ́. Lẹ́yìn náà, the studio. Orúkọ ìjọba ni Intelligent Singularity Inc. Wà ní Alberta, Canada.',
@@ -1305,7 +1305,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'Ìbárasọ̀rọ̀ tààrà',
       heading: 'Ó nílò àyọkà, ìpilẹ̀ àyẹ̀wò, tàbí ìfọ̀rọ̀wánilẹ́nuwò pẹ̀lú olùdásílẹ̀?',
-      body: 'Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityinc.com pẹ̀lú àkókò ìparí rẹ. Ènìyàn ń ka àkọsílẹ̀ kọ̀ọ̀kan. A dáhùn nínú ọjọ́ iṣẹ́ kan.',
+      body: 'Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityai.com pẹ̀lú àkókò ìparí rẹ. Ènìyàn ń ka àkọsílẹ̀ kọ̀ọ̀kan. A dáhùn nínú ọjọ́ iṣẹ́ kan.',
     },
     quotes: [
       { text: 'Sọ́fítíwéàrì tó dára kì í ṣe ọjà fún ìgbádùn. Ó jẹ́ ẹ̀tọ́ pàtàkì fún gbogbo òwò àti gbogbo ènìyàn tó ń ṣe iṣẹ́ olótìítọ́ ní ibikíbi ní ayé.', role: 'Olùdásílẹ̀, Intelligent Singularity' },
@@ -1341,7 +1341,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
   },
   ha: {
     eyebrow: 'JARIDU · ƊAKIN MEDIA', title: 'Rubuta wani abu na gaskiya game da mu.',
-    lede: 'Komai a nan an amince a buga shi. Don Allah ka ambace mu. Kana bukatar ƙari? Aiko da imel zuwa press@intelligentsingularityinc.com. Mutum na gaske yana amsawa cikin rana ɗaya ta aiki.',
+    lede: 'Komai a nan an amince a buga shi. Don Allah ka ambace mu. Kana bukatar ƙari? Aiko da imel zuwa press@intelligentsingularityai.com. Mutum na gaske yana amsawa cikin rana ɗaya ta aiki.',
     boilerplate: "Intelligent Singularity Inc. kamfanin uba ne kuma studiyo na software. An kafa shi a Alberta, Kanada, a shekarar 2024. Shi ne kamfanin uban tsarin Clap. Tsarin Clap iyali ne na dandamali masu girma. Yana rufe kasuwanci, lafiya, kuɗi, aiki, noma, kafofin watsa labarai na kerawa, da ababen more rayuwa na haɗin gwiwa. Ƙungiyar ƙarama ce, gaba ɗaya tana aiki ta nesa, kuma an haɓaka ta da AI. Ana gina kowane samfuri don samun damar amfani na duniya. Babban samfuri ɗaya yana hidima ga abokan ciniki a cikin kasuwanni masu ci gaba da masu tasowa. Kamfanin yana da kuɗin kansa kuma ba a sayar da shi ba.",
     brandGuidance: {
       brandName: "A rubuta Intelligent Singularity a amfani na farko. Sai the studio. Sunan shari'a shi ne Intelligent Singularity Inc. Yana Alberta, Kanada.",
@@ -1350,7 +1350,7 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     contactCta: {
       eyebrow: 'Sadarwa kai tsaye',
       heading: 'Kana bukatar magana, bayanan baya, ko hira da wanda ya kafa?',
-      body: 'Aiko da imel zuwa press@intelligentsingularityinc.com tare da lokacin ƙarshe. Mutum na karanta kowane saƙo. Muna amsa cikin rana ɗaya ta aiki.',
+      body: 'Aiko da imel zuwa press@intelligentsingularityai.com tare da lokacin ƙarshe. Mutum na karanta kowane saƙo. Muna amsa cikin rana ɗaya ta aiki.',
     },
     quotes: [
       { text: 'Software mai kyau ba kayan alatu ba ne. Hakki ne na asali ga kowane kasuwanci da kowane mutum mai aiki na gaskiya a ko\'ina a duniya.', role: 'Wanda ya kafa, Intelligent Singularity' },
@@ -1403,7 +1403,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: '报告漏洞',
       heading: '发现什么了?请先告诉我们。',
-      body: '请将描述和重现步骤发邮件至 security@intelligentsingularityinc.com。我们在一个工作日内确认报告。在三天内分类处理。修复发布时,我们在事后报告中按姓名致谢研究人员,除非他们要求匿名。我们绝不威胁或起诉善意的安全研究人员,就这么简单。',
+      body: '请将描述和重现步骤发邮件至 security@intelligentsingularityai.com。我们在一个工作日内确认报告。在三天内分类处理。修复发布时,我们在事后报告中按姓名致谢研究人员,除非他们要求匿名。我们绝不威胁或起诉善意的安全研究人员,就这么简单。',
     },
     posture: [
       { title: '每条线路加密', body: '所有公共页面和产品流量都通过 TLS 1.3 与现代密码套件传输。证书由 Let\'s Encrypt 颁发并自动轮换。HTTP 严格传输安全(HSTS)设置了较长的 max-age。你输入的任何内容都不会以明文穿越开放互联网。在网络路径可能被观察到的地方,内部服务间调用使用相互 TLS。' },
@@ -1445,7 +1445,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'Reportar una vulnerabilidad',
       heading: '¿Encontraste algo? Por favor, dínoslo primero.',
-      body: 'Envía un email a security@intelligentsingularityinc.com con una descripción y los pasos para reproducir. Confirmamos los reportes en un día laborable. Triajamos en tres. Acreditamos a los investigadores por nombre en el post-mortem cuando se envía una corrección, a menos que pidan permanecer anónimos. No amenazamos ni demandamos a investigadores de seguridad de buena fe, punto.',
+      body: 'Envía un email a security@intelligentsingularityai.com con una descripción y los pasos para reproducir. Confirmamos los reportes en un día laborable. Triajamos en tres. Acreditamos a los investigadores por nombre en el post-mortem cuando se envía una corrección, a menos que pidan permanecer anónimos. No amenazamos ni demandamos a investigadores de seguridad de buena fe, punto.',
     },
     posture: [
       { title: 'Cifrado en cada cable', body: "Todas las páginas públicas y el tráfico de los productos viajan por TLS 1.3 con cifrados modernos. Los certificados los emite Let's Encrypt y se rotan automáticamente. HTTP Strict Transport Security está configurado con un max-age largo. Nada de lo que escribes cruza la web abierta en texto claro. Las llamadas internas servicio a servicio usan TLS mutuo cuando la ruta de red podría ser observada." },
@@ -1487,7 +1487,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'भेद्यता की रिपोर्ट करें',
       heading: 'कुछ मिला? कृपया पहले हमें बताएँ।',
-      body: 'विवरण और दोहराने के चरणों के साथ security@intelligentsingularityinc.com पर ईमेल करें। हम एक कार्य दिवस में रिपोर्ट की पुष्टि करते हैं। तीन में ट्रायेज करते हैं। फ़िक्स आने पर पोस्ट-मॉर्टम में हम शोधकर्ताओं को नाम से श्रेय देते हैं, जब तक वे गुमनाम रहना न माँगें। हम सद्भावपूर्ण सुरक्षा शोधकर्ताओं को धमकी या मुकदमा कभी नहीं देते, बस।',
+      body: 'विवरण और दोहराने के चरणों के साथ security@intelligentsingularityai.com पर ईमेल करें। हम एक कार्य दिवस में रिपोर्ट की पुष्टि करते हैं। तीन में ट्रायेज करते हैं। फ़िक्स आने पर पोस्ट-मॉर्टम में हम शोधकर्ताओं को नाम से श्रेय देते हैं, जब तक वे गुमनाम रहना न माँगें। हम सद्भावपूर्ण सुरक्षा शोधकर्ताओं को धमकी या मुकदमा कभी नहीं देते, बस।',
     },
     posture: [
       { title: 'हर तार पर एन्क्रिप्शन', body: 'सभी सार्वजनिक पृष्ठ और उत्पाद ट्रैफ़िक आधुनिक साइफरों के साथ TLS 1.3 पर यात्रा करता है। प्रमाणपत्र Let\'s Encrypt द्वारा जारी किए जाते हैं और स्वचालित रूप से रोटेट होते हैं। HTTP Strict Transport Security एक लंबे max-age के साथ सेट है। आपका टाइप किया कुछ भी कभी प्लेन टेक्स्ट में खुले वेब को पार नहीं करता। आंतरिक सेवा-से-सेवा कॉल वहाँ म्युचुअल TLS का उपयोग करते हैं जहाँ नेटवर्क पथ देखा जा सकता है।' },
@@ -1529,7 +1529,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'الإبلاغ عن ثغرة',
       heading: 'وجدت شيئًا؟ من فضلك أخبرنا أولًا.',
-      body: 'راسل security@intelligentsingularityinc.com بوصف وخطوات لإعادة الإنتاج. نؤكد البلاغات خلال يوم عمل واحد. نُصنّفها خلال ثلاثة. ننسب الفضل للباحثين بالاسم في تقرير ما بعد الحادث عند إصدار الإصلاح، ما لم يطلبوا البقاء مجهولين. لا نهدد أو نقاضي باحثي الأمن ذوي النية الحسنة، نقطة.',
+      body: 'راسل security@intelligentsingularityai.com بوصف وخطوات لإعادة الإنتاج. نؤكد البلاغات خلال يوم عمل واحد. نُصنّفها خلال ثلاثة. ننسب الفضل للباحثين بالاسم في تقرير ما بعد الحادث عند إصدار الإصلاح، ما لم يطلبوا البقاء مجهولين. لا نهدد أو نقاضي باحثي الأمن ذوي النية الحسنة، نقطة.',
     },
     posture: [
       { title: 'تشفير على كل خط', body: "تنتقل جميع الصفحات العامة وحركة المنتجات عبر TLS 1.3 مع شفرات حديثة. تُصدر الشهادات Let's Encrypt وتُجدَّد تلقائيًا. HTTP Strict Transport Security مضبوط بقيمة max-age طويلة. لا شيء تكتبه يعبر الويب المفتوح كنص واضح. تستخدم الاستدعاءات الداخلية بين الخدمات TLS متبادلًا حيث قد يُلاحَظ مسار الشبكة." },
@@ -1571,7 +1571,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'Signaler une vulnérabilité',
       heading: "Trouvé quelque chose ? Dites-le-nous d'abord, s'il vous plaît.",
-      body: "Envoyez un email à security@intelligentsingularityinc.com avec une description et les étapes de reproduction. Nous confirmons les rapports sous un jour ouvré. Nous trions sous trois. Nous créditons les chercheurs nommément dans le post-mortem quand un correctif est livré, sauf s'ils demandent à rester anonymes. Nous ne menaçons ni ne poursuivons les chercheurs de sécurité de bonne foi, point final.",
+      body: "Envoyez un email à security@intelligentsingularityai.com avec une description et les étapes de reproduction. Nous confirmons les rapports sous un jour ouvré. Nous trions sous trois. Nous créditons les chercheurs nommément dans le post-mortem quand un correctif est livré, sauf s'ils demandent à rester anonymes. Nous ne menaçons ni ne poursuivons les chercheurs de sécurité de bonne foi, point final.",
     },
     posture: [
       { title: 'Chiffrement sur chaque câble', body: "Toutes les pages publiques et le trafic produit voyagent en TLS 1.3 avec des chiffres modernes. Les certificats sont émis par Let's Encrypt et renouvelés automatiquement. HTTP Strict Transport Security est configuré avec un max-age long. Rien de ce que vous tapez ne traverse jamais le web ouvert en clair. Les appels internes de service à service utilisent du TLS mutuel là où le chemin réseau pourrait être observé." },
@@ -1613,7 +1613,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'Reportar uma vulnerabilidade',
       heading: 'Encontrou algo? Por favor, diga-nos primeiro.',
-      body: 'Envie um email para security@intelligentsingularityinc.com com uma descrição e os passos para reproduzir. Confirmamos relatos dentro de um dia útil. Triamos em três. Damos crédito aos investigadores pelo nome no post-mortem quando uma correção é lançada, a menos que peçam para permanecer anónimos. Não ameaçamos nem processamos investigadores de segurança de boa-fé, ponto final.',
+      body: 'Envie um email para security@intelligentsingularityai.com com uma descrição e os passos para reproduzir. Confirmamos relatos dentro de um dia útil. Triamos em três. Damos crédito aos investigadores pelo nome no post-mortem quando uma correção é lançada, a menos que peçam para permanecer anónimos. Não ameaçamos nem processamos investigadores de segurança de boa-fé, ponto final.',
     },
     posture: [
       { title: 'Encriptação em cada fio', body: "Todas as páginas públicas e o tráfego dos produtos viajam por TLS 1.3 com cifras modernas. Os certificados são emitidos pela Let's Encrypt e rodam automaticamente. HTTP Strict Transport Security está configurado com um max-age longo. Nada do que escreve atravessa a web aberta em texto simples. As chamadas internas serviço a serviço usam TLS mútuo onde o caminho de rede possa ser observado." },
@@ -1655,7 +1655,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'একটি দুর্বলতা রিপোর্ট করুন',
       heading: 'কিছু পেলেন? দয়া করে আমাদের প্রথমে বলুন।',
-      body: 'বিবরণ এবং পুনরুৎপাদনের পদক্ষেপ সহ security@intelligentsingularityinc.com-এ ইমেইল করুন। আমরা এক কার্যদিবসের মধ্যে রিপোর্ট নিশ্চিত করি। তিনের মধ্যে ট্রায়েজ করি। ফিক্স যখন শিপ হয়, তখন পোস্ট-মর্টেমে আমরা গবেষকদের নাম দিয়ে কৃতিত্ব দিই, যদি না তারা বেনামি থাকতে চান। আমরা সদিচ্ছাপূর্ণ সুরক্ষা গবেষকদের কখনো হুমকি দিই না বা মামলা করি না, পুরোপুরি বিরাম।',
+      body: 'বিবরণ এবং পুনরুৎপাদনের পদক্ষেপ সহ security@intelligentsingularityai.com-এ ইমেইল করুন। আমরা এক কার্যদিবসের মধ্যে রিপোর্ট নিশ্চিত করি। তিনের মধ্যে ট্রায়েজ করি। ফিক্স যখন শিপ হয়, তখন পোস্ট-মর্টেমে আমরা গবেষকদের নাম দিয়ে কৃতিত্ব দিই, যদি না তারা বেনামি থাকতে চান। আমরা সদিচ্ছাপূর্ণ সুরক্ষা গবেষকদের কখনো হুমকি দিই না বা মামলা করি না, পুরোপুরি বিরাম।',
     },
     posture: [
       { title: 'প্রতিটি তারে এনক্রিপশন', body: "সকল সর্বজনীন পৃষ্ঠা এবং পণ্য ট্র্যাফিক আধুনিক সাইফারের সাথে TLS 1.3-এ ভ্রমণ করে। সার্টিফিকেটগুলো Let's Encrypt দ্বারা জারি এবং স্বয়ংক্রিয়ভাবে রোটেট করা হয়। HTTP Strict Transport Security একটি দীর্ঘ max-age সহ সেট করা। আপনি যা টাইপ করেন তা কখনো প্লেইন টেক্সটে খোলা ওয়েব অতিক্রম করে না। অভ্যন্তরীণ পরিষেবা-থেকে-পরিষেবা কলগুলো mutual TLS ব্যবহার করে যেখানে নেটওয়ার্ক পথ পর্যবেক্ষণ করা যেতে পারে।" },
@@ -1697,7 +1697,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'Сообщить об уязвимости',
       heading: 'Нашли что-то? Пожалуйста, расскажите сначала нам.',
-      body: 'Напишите на security@intelligentsingularityinc.com с описанием и шагами воспроизведения. Подтверждаем отчёты в течение одного рабочего дня. Сортируем в течение трёх. Указываем имена исследователей в посмертном отчёте, когда выходит исправление, если только они не просят остаться анонимными. Мы никогда не угрожаем добросовестным исследователям безопасности и не подаём на них в суд, точка.',
+      body: 'Напишите на security@intelligentsingularityai.com с описанием и шагами воспроизведения. Подтверждаем отчёты в течение одного рабочего дня. Сортируем в течение трёх. Указываем имена исследователей в посмертном отчёте, когда выходит исправление, если только они не просят остаться анонимными. Мы никогда не угрожаем добросовестным исследователям безопасности и не подаём на них в суд, точка.',
     },
     posture: [
       { title: 'Шифрование на каждом проводе', body: "Все публичные страницы и трафик продуктов идут через TLS 1.3 с современными шифрами. Сертификаты выпускаются Let's Encrypt и автоматически обновляются. HTTP Strict Transport Security настроен с длинным max-age. Ничто из того, что вы вводите, никогда не пересекает открытый интернет в виде открытого текста. Внутренние вызовы между сервисами используют взаимный TLS там, где сетевой путь можно наблюдать." },
@@ -1739,7 +1739,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'کمزوری کی اطلاع دیں',
       heading: 'کچھ ملا؟ براہ کرم پہلے ہمیں بتائیں۔',
-      body: 'تفصیل اور دوبارہ پیدا کرنے کے اقدامات کے ساتھ security@intelligentsingularityinc.com پر ای میل کریں۔ ہم رپورٹس کی تصدیق ایک کاروباری دن کے اندر کرتے ہیں۔ تین میں ٹرائج کرتے ہیں۔ جب فکس شپ ہوتا ہے، پوسٹ-مارٹم میں ہم محققین کو نام سے کریڈٹ دیتے ہیں، جب تک وہ گمنام رہنے نہ مانگیں۔ ہم نیک نیت سیکیورٹی محققین کو دھمکی یا مقدمہ نہیں کرتے، بس۔',
+      body: 'تفصیل اور دوبارہ پیدا کرنے کے اقدامات کے ساتھ security@intelligentsingularityai.com پر ای میل کریں۔ ہم رپورٹس کی تصدیق ایک کاروباری دن کے اندر کرتے ہیں۔ تین میں ٹرائج کرتے ہیں۔ جب فکس شپ ہوتا ہے، پوسٹ-مارٹم میں ہم محققین کو نام سے کریڈٹ دیتے ہیں، جب تک وہ گمنام رہنے نہ مانگیں۔ ہم نیک نیت سیکیورٹی محققین کو دھمکی یا مقدمہ نہیں کرتے، بس۔',
     },
     posture: [
       { title: 'ہر تار پر انکرپشن', body: "تمام عوامی صفحات اور پروڈکٹ ٹریفک جدید سائفرز کے ساتھ TLS 1.3 پر سفر کرتا ہے۔ سرٹیفکیٹس Let's Encrypt جاری کرتا ہے اور خودکار طور پر روٹیٹ ہوتے ہیں۔ HTTP Strict Transport Security ایک طویل max-age کے ساتھ سیٹ ہے۔ آپ جو ٹائپ کرتے ہیں وہ کبھی پلین ٹیکسٹ میں کھلا ویب پار نہیں کرتا۔ اندرونی سروس-سے-سروس کالیں وہاں mutual TLS استعمال کرتی ہیں جہاں نیٹ ورک کا راستہ دیکھا جا سکتا ہے۔" },
@@ -1781,7 +1781,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'Laporkan kerentanan',
       heading: 'Menemukan sesuatu? Tolong beri tahu kami terlebih dahulu.',
-      body: 'Email security@intelligentsingularityinc.com dengan deskripsi dan langkah-langkah untuk mereproduksi. Kami mengonfirmasi laporan dalam satu hari kerja. Kami memilah dalam tiga. Kami memberi kredit peneliti dengan nama dalam post-mortem ketika perbaikan dirilis, kecuali mereka meminta untuk tetap anonim. Kami tidak mengancam atau menuntut peneliti keamanan dengan niat baik, titik.',
+      body: 'Email security@intelligentsingularityai.com dengan deskripsi dan langkah-langkah untuk mereproduksi. Kami mengonfirmasi laporan dalam satu hari kerja. Kami memilah dalam tiga. Kami memberi kredit peneliti dengan nama dalam post-mortem ketika perbaikan dirilis, kecuali mereka meminta untuk tetap anonim. Kami tidak mengancam atau menuntut peneliti keamanan dengan niat baik, titik.',
     },
     posture: [
       { title: 'Enkripsi di setiap kabel', body: "Semua halaman publik dan lalu lintas produk berjalan melalui TLS 1.3 dengan cipher modern. Sertifikat dikeluarkan oleh Let's Encrypt dan dirotasi otomatis. HTTP Strict Transport Security diatur dengan max-age yang panjang. Apa pun yang Anda ketik tidak pernah melintasi web terbuka dalam teks polos. Panggilan internal antar layanan menggunakan TLS timbal balik di tempat di mana jalur jaringan dapat diamati." },
@@ -1823,7 +1823,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'Ripoti udhaifu',
       heading: 'Umepata kitu? Tafadhali tuambie kwanza.',
-      body: 'Tuma barua pepe kwa security@intelligentsingularityinc.com na maelezo na hatua za kuzaa upya. Tunathibitisha ripoti ndani ya siku moja ya kazi. Tunatatua katika siku tatu. Tunawapongeza watafiti kwa jina katika ripoti ya baada ya tukio wakati marekebisho yanapotumwa, isipokuwa wameomba kubaki bila kutambuliwa. Hatutishi au kushtaki watafiti wa usalama wenye nia njema, hivyo tu.',
+      body: 'Tuma barua pepe kwa security@intelligentsingularityai.com na maelezo na hatua za kuzaa upya. Tunathibitisha ripoti ndani ya siku moja ya kazi. Tunatatua katika siku tatu. Tunawapongeza watafiti kwa jina katika ripoti ya baada ya tukio wakati marekebisho yanapotumwa, isipokuwa wameomba kubaki bila kutambuliwa. Hatutishi au kushtaki watafiti wa usalama wenye nia njema, hivyo tu.',
     },
     posture: [
       { title: 'Usimbaji kwenye kila waya', body: "Kurasa zote za umma na trafiki ya bidhaa husafiri kupitia TLS 1.3 na cipher za kisasa. Vyeti hutolewa na Let's Encrypt na huzungushwa kiotomatiki. HTTP Strict Transport Security imewekwa na max-age ndefu. Hakuna unachoandika ambacho hupita kwenye wavuti wazi katika maandishi wazi. Simu za ndani za huduma kwa huduma hutumia TLS ya pande mbili pale njia ya mtandao inaweza kuonekana." },
@@ -1865,7 +1865,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'Ròyìn àbùkù',
       heading: 'Rí nǹkan kan? Jọ̀wọ́, sọ fún wa ní àkọ́kọ́.',
-      body: 'Fi ìmẹ́ìlì ránṣẹ́ sí security@intelligentsingularityinc.com pẹ̀lú àpèjúwe àti àwọn ìgbésẹ̀ láti tún-ṣe. A jẹ́rìí àwọn ìròyìn ní ọjọ́ iṣẹ́ kan. A ṣe ìpín-ìpín ní mẹ́ta. A fi ìbọ̀wọ̀ fún àwọn olùwádìí pẹ̀lú orúkọ wọn nínú àròyé lẹ́yìn-iṣẹ̀lẹ̀ nígbà tí ìtúnṣe bá jádelé, àyàfi tí wọ́n bá béèrè láti dúró ní àìmọ̀ràn. A kì í halẹ̀ tàbí ṣe ẹjọ́ àwọn olùwádìí ààbò tí ó ní ìfẹ́ rere, kò sí ìyèméjì.',
+      body: 'Fi ìmẹ́ìlì ránṣẹ́ sí security@intelligentsingularityai.com pẹ̀lú àpèjúwe àti àwọn ìgbésẹ̀ láti tún-ṣe. A jẹ́rìí àwọn ìròyìn ní ọjọ́ iṣẹ́ kan. A ṣe ìpín-ìpín ní mẹ́ta. A fi ìbọ̀wọ̀ fún àwọn olùwádìí pẹ̀lú orúkọ wọn nínú àròyé lẹ́yìn-iṣẹ̀lẹ̀ nígbà tí ìtúnṣe bá jádelé, àyàfi tí wọ́n bá béèrè láti dúró ní àìmọ̀ràn. A kì í halẹ̀ tàbí ṣe ẹjọ́ àwọn olùwádìí ààbò tí ó ní ìfẹ́ rere, kò sí ìyèméjì.',
     },
     posture: [
       { title: 'Ìpamọ́ lórí gbogbo okùn', body: "Gbogbo àwọn ojú-ìwé ti gbangba àti àwọn ríràn ọjà rin nípasẹ̀ TLS 1.3 pẹ̀lú àwọn àmì òkun ìpamọ́ ti òde-òní. Àwọn ìjẹ́rìí jẹ́ tí Let's Encrypt ṣe àti tí ó yí ara rẹ̀ pa lódódo. HTTP Strict Transport Security ti tan pẹ̀lú max-age tí ó gùn. Ohunkóhun tí o tẹ̀ kì í gba ojú-òpó tí ó ṣí sílẹ̀ ní ọ̀rọ̀ tó ṣàlàyé. Àwọn ìpè inú-iṣẹ́-sí-iṣẹ́ ń lo TLS olùpínkiri níbi tí a lè wo ìpa ọ̀nà nẹ́tíwọ́kì." },
@@ -1907,7 +1907,7 @@ const SECURITY: Record<LocaleCode, SecurityStrings> = {
     reportCta: {
       eyebrow: 'Bayar da rahoton rauni',
       heading: 'Kun sami wani abu? Don Allah a faɗa mana farko.',
-      body: 'Aiko da imel zuwa security@intelligentsingularityinc.com tare da bayanin da matakan sake fitarwa. Muna tabbatar da rahotanni a cikin rana ɗaya ta aiki. Muna tantance su a cikin uku. Muna ba da daraja ga masu bincike da sunansu a cikin rahoton bayan-mutuwa lokacin da gyara ya tafi, sai dai idan sun nemi su zauna ba a san su ba. Ba mu yi wa masu binciken tsaro da niyya mai kyau barazana ko kara, kwata-kwata.',
+      body: 'Aiko da imel zuwa security@intelligentsingularityai.com tare da bayanin da matakan sake fitarwa. Muna tabbatar da rahotanni a cikin rana ɗaya ta aiki. Muna tantance su a cikin uku. Muna ba da daraja ga masu bincike da sunansu a cikin rahoton bayan-mutuwa lokacin da gyara ya tafi, sai dai idan sun nemi su zauna ba a san su ba. Ba mu yi wa masu binciken tsaro da niyya mai kyau barazana ko kara, kwata-kwata.',
     },
     posture: [
       { title: 'Ɓoyewa akan kowane waya', body: "Dukkan shafukan jama'a da zirga-zirgar samfuri suna tafiya ta TLS 1.3 tare da cipher na zamani. Takaddun shaida ana ba da su ne ta Let's Encrypt kuma ana juyawa ta atomatik. HTTP Strict Transport Security an saita ta da max-age mai tsayi. Babu abin da kuke buga wanda ya taɓa ƙetare gidan yanar gizo a sarari. Kira na sabis-zuwa-sabis na ciki suna amfani da TLS na biyu inda hanyar sadarwa za a iya gani." },
@@ -2411,7 +2411,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: '常见问题 · 直白的回答', title: '问题,直白地回答。',
     lede: '人们真正向我们问的问题——关于工作室、产品,以及使用我们工具的隐私权衡。',
     sectionTitles: ['工作室', '产品', '定价与金钱', '隐私与数据', '语言与可访问性', '合作伙伴与新闻', '招聘'],
-    stillStuckCta: { eyebrow: '还有问题?', heading: '每条消息都有真人阅读。', body: '我们通常在两个工作日内回复。通过表单发送备注。或者写信至 hello@intelligentsingularityinc.com。' },
+    stillStuckCta: { eyebrow: '还有问题?', heading: '每条消息都有真人阅读。', body: '我们通常在两个工作日内回复。通过表单发送备注。或者写信至 hello@intelligentsingularityai.com。' },
     sectionItems: [
       [
         { q: 'Intelligent Singularity 是什么?', a: 'Intelligent Singularity Inc. 是 Clap 生态系统的母公司。我们是一家小型、AI 增强、完全远程的工作室。我们位于加拿大艾伯塔省。我们构建为通用访问而设计的软件。同一旗舰产品同时服务于纽约的财富 500 强买家和拉各斯的一人市场摊位。一个共享技术栈。一个使命。' },
@@ -2424,7 +2424,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: '这些产品是真实的还是还停留在想法阶段?', a: '产品组合页面上每个产品都有诚实的状态标签。"上线"意味着你今天就可以注册。"预演"意味着它在运行但仍处于邀请制状态,我们正在加固。"等待批准"意味着已经准备好但等待监管机构。"基础设施"是我们公开共享的、其他产品依赖的代码。我们不会预告尚不存在的事物。' },
         { q: '为什么有些产品列为预演状态?', a: '我们的大多数工具在公开发布之前仍在加固中。我们宁愿延迟发布也不愿在第一天就破坏信任——特别是在医疗、支付和交易领域,一次回退是真实世界的事件,而不是不便。如果你想要早期访问,请从联系页面写信给我们,我们会诚实地告诉你预演构建是否还能支持你。' },
-        { q: '为什么产品链接到其他域名?', a: '每个产品都是其自身的服务,有自己的条款、定价、注册和隐私通知。直接将你送到产品域名更快,并使边界清晰:clappe.com 受 Clappe 的条款管辖,clappay.com 受 ClapPay 的条款管辖,以此类推。intelligentsingularityinc.com 上的公司网站是前门,而不是计费系统。' },
+        { q: '为什么产品链接到其他域名?', a: '每个产品都是其自身的服务,有自己的条款、定价、注册和隐私通知。直接将你送到产品域名更快,并使边界清晰:clappe.com 受 Clappe 的条款管辖,clappay.com 受 ClapPay 的条款管辖,以此类推。intelligentsingularityai.com 上的公司网站是前门,而不是计费系统。' },
         { q: '我能离线使用你们的产品吗?', a: '可以。每个产品都设计为在慢速和间歇性网络上工作。我们以两格 2G 信号上的五年旧手机为基准,而不是锦上添花。页面在首次绘制时压缩后重量低于五十千字节。关键工作流程(开具发票、记录病人笔记、捕获作业)在无连接时也能工作,并在连接恢复时同步。' },
         { q: '产品共享账户吗?', a: '可选。单个 Clap 账户可以登录任何选择加入的产品,但每个产品仍然保留自己的数据、自己的订阅和自己的同意流程。你可以使用一个产品而不使用其他产品、切换到另一个产品,或删除一个产品而不影响其余产品。' },
         { q: '你们为单个客户构建定制功能吗?', a: '很少,而且只有当该功能对更广泛的用户群体公平合适时。我们不会为一位客户构建产品的私有分支;那条路会通向维护墓地。但是,如果一个可信的合作伙伴赞助一个路线图项目,并且结果作为公共功能对所有人发布,我们会优先处理。' },
@@ -2437,7 +2437,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: '你们在这个网站上跟踪我吗?', a: '不。本站零分析、零像素、零追踪 Cookie、零广告网络、零第三方内容。我们看到的唯一数据是你输入联系表单并点击发送的内容。一个名为 no-third-party.mjs 的持续集成脚本会在任何外部主机出现在 bundle 中时阻止发布。 On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: '我的数据存在哪里?', a: '当你联系我们时,你的消息通过电子邮件发送到加拿大艾伯塔省的收件箱。我们不在本站的数据库中存储它。产品特定数据(当你注册我们的某个工具时)在该产品自己域名上的隐私政策中描述。' },
-        { q: '我能删除你们持有的关于我的数据吗?', a: '可以。从你使用的地址发邮件至 legal@intelligentsingularityinc.com。我们在三个工作日内确认收到。我们在三十天内完成删除。同样的权利适用于每个产品,在 PIPEDA 和 GDPR 等同规则下。' },
+        { q: '我能删除你们持有的关于我的数据吗?', a: '可以。从你使用的地址发邮件至 legal@intelligentsingularityai.com。我们在三个工作日内确认收到。我们在三十天内完成删除。同样的权利适用于每个产品,在 PIPEDA 和 GDPR 等同规则下。' },
         { q: '你们用我的内容训练 AI 模型吗?', a: '不。我们组合中所有 AI 功能只使用你显式提交的数据,作用域限于你自己的账户。你的私人内容从不会混入共享训练集,从不会用于改进公共模型,也从不会发送到保留你提示的第三方 AI 提供商。' },
       ],
       [
@@ -2447,9 +2447,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: '我如何与工作室合作?', a: '我们与 NGO、政府和公司合作。共同目标是为通常负担不起的人提供普遍可及的软件。从联系页面发送一段简短说明。将其路由到 Partnerships。你将在两个工作日内收到回复。' },
-        { q: '我在哪里可以找到媒体资源包?', a: '访问 /press 获取事实简介、批准的引用、品牌指南、创始人简介和媒体样板。需要 logo 文件、高分辨率创始人肖像或定制声明?发邮件至 press@intelligentsingularityinc.com 并附上你的截止日期。' },
-        { q: '你们在会议上发言吗?', a: '有时。我们谈论普遍可及性、AI 增强团队、医疗软件和精益软件经济。发邮件至 press@intelligentsingularityinc.com,附上活动详情和受众规模。我们会诚实告诉你能否到场。' },
-        { q: '你们接受捐款或资助吗?', a: '我们不向用户请求捐款。我们欢迎资助。资助必须来自基金会或银行。该资助必须与全价尚未起作用的市场中的可及性软件相关。发邮件至 partners@intelligentsingularityinc.com。' },
+        { q: '我在哪里可以找到媒体资源包?', a: '访问 /press 获取事实简介、批准的引用、品牌指南、创始人简介和媒体样板。需要 logo 文件、高分辨率创始人肖像或定制声明?发邮件至 press@intelligentsingularityai.com 并附上你的截止日期。' },
+        { q: '你们在会议上发言吗?', a: '有时。我们谈论普遍可及性、AI 增强团队、医疗软件和精益软件经济。发邮件至 press@intelligentsingularityai.com,附上活动详情和受众规模。我们会诚实告诉你能否到场。' },
+        { q: '你们接受捐款或资助吗?', a: '我们不向用户请求捐款。我们欢迎资助。资助必须来自基金会或银行。该资助必须与全价尚未起作用的市场中的可及性软件相关。发邮件至 partners@intelligentsingularityai.com。' },
       ],
       [
         { q: '你们在招聘吗?', a: '有时。/careers 页面列出当前开放的职位。如果没有列出任何职位,我们当时就没有在招聘,就是这样。我们不运行无限期的"把简历发给我们"漏斗——但一份深思熟虑的自我介绍总会得到真实的回复。' },
@@ -2462,7 +2462,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'PREGUNTAS FRECUENTES · RESPUESTAS LLANAS', title: 'Preguntas, respondidas con llaneza.',
     lede: 'Lo que la gente realmente nos pregunta — sobre el estudio, los productos y los compromisos de privacidad al usar nuestras herramientas.',
     sectionTitles: ['El estudio', 'Los productos', 'Precios y dinero', 'Privacidad y datos', 'Idiomas y accesibilidad', 'Alianzas y prensa', 'Contratación'],
-    stillStuckCta: { eyebrow: '¿Aún tienes una pregunta?', heading: 'Una persona lee cada mensaje.', body: 'Normalmente respondemos en dos días laborables. Envía una nota desde el formulario. O escribe a hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: '¿Aún tienes una pregunta?', heading: 'Una persona lee cada mensaje.', body: 'Normalmente respondemos en dos días laborables. Envía una nota desde el formulario. O escribe a hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: '¿Qué es Intelligent Singularity?', a: 'Intelligent Singularity Inc. es la empresa matriz del ecosistema Clap. Somos un estudio pequeño, aumentado por IA y completamente remoto. Tenemos sede en Alberta, Canadá. Construimos software para acceso universal. El mismo producto principal sirve a un comprador Fortune 500 en Nueva York y a un puesto de mercado de una persona en Lagos. Un stack compartido. Una misión.' },
@@ -2475,7 +2475,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: '¿Estos productos son reales o son ideas todavía?', a: 'Cada producto en la página de portafolio tiene una etiqueta de estado honesta. "En vivo" significa que puedes registrarte hoy. "Staging" significa que funciona pero es por invitación mientras lo endurecemos. "Esperando aprobación" está listo pero a la espera de un regulador. "Infraestructura" es código que compartimos públicamente y del que dependen otros productos. No preanunciamos cosas que aún no existen.' },
         { q: '¿Por qué algunos productos están listados como staging?', a: 'La mayoría de nuestras herramientas todavía se están endureciendo antes del lanzamiento público. Preferimos lanzar tarde a romper la confianza en el primer día — especialmente en salud, pagos y trading, donde una regresión es un incidente real, no una molestia. Si quieres acceso anticipado, escríbenos desde la página de contacto y te diremos honestamente si la build de staging te puede soportar aún.' },
-        { q: '¿Por qué los productos enlazan a otros dominios?', a: 'Cada producto es su propio servicio, con sus propios términos, precios, registro y aviso de privacidad. Enviarte directamente al dominio del producto es más rápido, y deja claros los límites: clappe.com se rige por los términos de Clappe, clappay.com por los de ClapPay, y así sucesivamente. El sitio corporativo en intelligentsingularityinc.com es la puerta de entrada, no un sistema de facturación.' },
+        { q: '¿Por qué los productos enlazan a otros dominios?', a: 'Cada producto es su propio servicio, con sus propios términos, precios, registro y aviso de privacidad. Enviarte directamente al dominio del producto es más rápido, y deja claros los límites: clappe.com se rige por los términos de Clappe, clappay.com por los de ClapPay, y así sucesivamente. El sitio corporativo en intelligentsingularityai.com es la puerta de entrada, no un sistema de facturación.' },
         { q: '¿Puedo usar vuestros productos sin conexión?', a: 'Sí. Cada producto está diseñado para funcionar en redes lentas e intermitentes. Apuntamos a un teléfono de cinco años con dos barras de 2G como línea base, no como un nice-to-have. Las páginas pesan menos de cincuenta kilobytes en el primer pintado, gzip. Los flujos críticos (escribir una factura, registrar una nota de paciente, capturar un trabajo) funcionan sin conexión y se sincronizan cuando vuelve.' },
         { q: '¿Los productos comparten una cuenta?', a: 'Opcionalmente. Una única cuenta Clap puede iniciar sesión en cualquier producto que se haya adherido, pero cada producto mantiene sus propios datos, su propia suscripción y su propio flujo de consentimiento. Puedes usar un producto sin los otros, cambiar a otro, o eliminar uno sin afectar al resto.' },
         { q: '¿Construís funciones a medida para clientes individuales?', a: 'Rara vez, y solo cuando la función encaja bien con la base de usuarios más amplia. No construiremos un fork privado de un producto para un cliente; ese camino lleva a un cementerio de mantenimiento. Sin embargo, priorizaremos un punto de la hoja de ruta si un socio creíble lo patrocina y el resultado aterriza como función pública para todos.' },
@@ -2488,7 +2488,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: '¿Me rastreáis en este sitio web?', a: 'No. Este sitio tiene cero analíticas, cero píxeles, cero cookies de seguimiento, cero redes de publicidad y cero contenido de terceros. Los únicos datos que vemos son los que escribes en el formulario de contacto y envías. Un script de integración continua llamado no-third-party.mjs bloquea el lanzamiento si aparece cualquier host externo en el bundle. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: '¿Dónde se almacenan mis datos?', a: 'Cuando nos contactas, tu mensaje se envía por correo a una bandeja en Alberta, Canadá. No lo guardamos en una base de datos en este sitio. Los datos específicos del producto (cuando te registras en una de nuestras herramientas) se describen en la política de privacidad de ese producto en su propio dominio.' },
-        { q: '¿Puedo borrar los datos que tenéis sobre mí?', a: 'Sí. Envía un email a legal@intelligentsingularityinc.com desde la dirección que usaste. Confirmamos recepción en tres días laborables. Terminamos el borrado en treinta días. El mismo derecho aplica a cada producto, bajo PIPEDA y reglas equivalentes al RGPD.' },
+        { q: '¿Puedo borrar los datos que tenéis sobre mí?', a: 'Sí. Envía un email a legal@intelligentsingularityai.com desde la dirección que usaste. Confirmamos recepción en tres días laborables. Terminamos el borrado en treinta días. El mismo derecho aplica a cada producto, bajo PIPEDA y reglas equivalentes al RGPD.' },
         { q: '¿Entrenáis modelos de IA con mi contenido?', a: 'No. Las funciones de IA en todo nuestro portafolio usan solo datos que envías explícitamente, en el alcance de tu propia cuenta. Tu contenido privado nunca se mezcla en un set de entrenamiento compartido, nunca se usa para mejorar un modelo público, y nunca se envía a un proveedor de IA de terceros que retenga tus prompts.' },
       ],
       [
@@ -2498,9 +2498,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: '¿Cómo me asocio con el estudio?', a: 'Trabajamos con ONGs, gobiernos y empresas. El objetivo compartido es software de acceso universal para personas que normalmente no pueden permitírselo. Envía una nota breve desde la página de contacto. Dirígela a Partnerships. Recibirás respuesta en dos días laborables.' },
-        { q: '¿Dónde encuentro un kit de prensa?', a: 'Visita /press para la ficha de datos, las citas aprobadas, la guía de marca, la referencia del fundador y el boilerplate de prensa. ¿Necesitas un archivo de logo, un retrato del fundador en alta resolución, o una declaración personalizada? Escribe a press@intelligentsingularityinc.com con tu fecha límite.' },
-        { q: '¿Habláis en conferencias?', a: 'A veces. Hablamos sobre acceso universal, equipos aumentados por IA, software de salud y economía de software lean. Escribe a press@intelligentsingularityinc.com con los detalles del evento y el tamaño de la audiencia. Te diremos honestamente si podemos asistir.' },
-        { q: '¿Aceptáis donaciones o subvenciones?', a: 'No pedimos donaciones a los usuarios. Sí damos la bienvenida a subvenciones. Las subvenciones deben venir de fundaciones o bancos. La subvención debe estar atada a software de acceso en mercados donde los precios completos aún no funcionan. Escribe a partners@intelligentsingularityinc.com.' },
+        { q: '¿Dónde encuentro un kit de prensa?', a: 'Visita /press para la ficha de datos, las citas aprobadas, la guía de marca, la referencia del fundador y el boilerplate de prensa. ¿Necesitas un archivo de logo, un retrato del fundador en alta resolución, o una declaración personalizada? Escribe a press@intelligentsingularityai.com con tu fecha límite.' },
+        { q: '¿Habláis en conferencias?', a: 'A veces. Hablamos sobre acceso universal, equipos aumentados por IA, software de salud y economía de software lean. Escribe a press@intelligentsingularityai.com con los detalles del evento y el tamaño de la audiencia. Te diremos honestamente si podemos asistir.' },
+        { q: '¿Aceptáis donaciones o subvenciones?', a: 'No pedimos donaciones a los usuarios. Sí damos la bienvenida a subvenciones. Las subvenciones deben venir de fundaciones o bancos. La subvención debe estar atada a software de acceso en mercados donde los precios completos aún no funcionan. Escribe a partners@intelligentsingularityai.com.' },
       ],
       [
         { q: '¿Estáis contratando?', a: 'A veces. La página /careers lista los roles abiertos actuales. Cuando no hay nada listado, no estamos contratando en ese momento, punto. No ejecutamos un embudo evergreen "envíanos tu CV" que no lleva a ninguna parte — pero una presentación reflexiva siempre obtiene una respuesta real.' },
@@ -2513,7 +2513,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'अक्सर पूछे जाने वाले प्रश्न · सीधे जवाब', title: 'प्रश्न, सीधे जवाब के साथ।',
     lede: 'लोग वास्तव में हमसे क्या पूछते हैं — स्टूडियो के बारे में, उत्पादों के बारे में, और हमारे उपकरण उपयोग करने के निजता समझौतों के बारे में।',
     sectionTitles: ['स्टूडियो', 'उत्पाद', 'मूल्य और पैसा', 'निजता और डेटा', 'भाषाएँ और सुलभता', 'भागीदारी और प्रेस', 'नियुक्ति'],
-    stillStuckCta: { eyebrow: 'अभी भी कोई प्रश्न?', heading: 'हर संदेश एक इंसान पढ़ता है।', body: 'हम आमतौर पर दो कार्य दिवसों में जवाब देते हैं। फ़ॉर्म के माध्यम से नोट भेजें। या hello@intelligentsingularityinc.com पर लिखें।' },
+    stillStuckCta: { eyebrow: 'अभी भी कोई प्रश्न?', heading: 'हर संदेश एक इंसान पढ़ता है।', body: 'हम आमतौर पर दो कार्य दिवसों में जवाब देते हैं। फ़ॉर्म के माध्यम से नोट भेजें। या hello@intelligentsingularityai.com पर लिखें।' },
     sectionItems: [
       [
         { q: 'Intelligent Singularity क्या है?', a: 'Intelligent Singularity Inc. Clap इकोसिस्टम की मूल कंपनी है। हम एक छोटा, AI-संवर्धित, पूर्णतः दूरस्थ स्टूडियो हैं। हम कनाडा के अल्बर्टा में स्थित हैं। हम सार्वभौमिक पहुँच के लिए सॉफ़्टवेयर बनाते हैं। वही प्रमुख उत्पाद न्यू यॉर्क के Fortune 500 खरीदार और लागोस के एक-व्यक्ति बाज़ार-स्टॉल दोनों की सेवा करता है। एक साझा स्टैक। एक मिशन।' },
@@ -2526,7 +2526,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'क्या ये उत्पाद असली हैं या अभी विचार हैं?', a: 'पोर्टफ़ोलियो पृष्ठ पर हर उत्पाद का एक ईमानदार स्थिति लेबल है। "Live" का मतलब है आप आज साइन अप कर सकते हैं। "Staging" का मतलब है कि यह चलता है लेकिन हम इसे मज़बूत कर रहे हैं इसलिए केवल आमंत्रण-आधारित है। "Awaiting approval" तैयार है लेकिन एक नियामक के इंतज़ार में है। "Infrastructure" वह कोड है जो हम सार्वजनिक रूप से साझा करते हैं और जिस पर अन्य उत्पाद निर्भर हैं। हम उन चीज़ों की पूर्व-घोषणा नहीं करते जो अभी मौजूद नहीं हैं।' },
         { q: 'कुछ उत्पाद staging के रूप में क्यों सूचीबद्ध हैं?', a: 'हमारे अधिकांश उपकरण सार्वजनिक लॉन्च से पहले मज़बूत किए जा रहे हैं। हम पहले दिन भरोसा तोड़ने के बजाय देर से शिप करना पसंद करते हैं — विशेष रूप से स्वास्थ्य, भुगतान और ट्रेडिंग में जहाँ एक रिग्रेशन एक वास्तविक-दुनिया की घटना है, असुविधा नहीं। यदि आप जल्दी पहुँच चाहते हैं, संपर्क पृष्ठ से हमें लिखें और हम ईमानदारी से बताएँगे कि staging बिल्ड आपका समर्थन कर सकती है या नहीं।' },
-        { q: 'उत्पाद अन्य डोमेन से क्यों जुड़ते हैं?', a: 'प्रत्येक उत्पाद अपनी स्वयं की सेवा है जिसके अपने नियम, मूल्य निर्धारण, साइन-अप और गोपनीयता सूचना है। आपको सीधे उत्पाद डोमेन पर भेजना तेज़ है, और यह सीमाओं को स्पष्ट करता है: clappe.com Clappe के नियमों द्वारा शासित है, clappay.com ClapPay द्वारा, इत्यादि। intelligentsingularityinc.com पर कॉर्पोरेट साइट सामने का दरवाज़ा है, बिलिंग सिस्टम नहीं।' },
+        { q: 'उत्पाद अन्य डोमेन से क्यों जुड़ते हैं?', a: 'प्रत्येक उत्पाद अपनी स्वयं की सेवा है जिसके अपने नियम, मूल्य निर्धारण, साइन-अप और गोपनीयता सूचना है। आपको सीधे उत्पाद डोमेन पर भेजना तेज़ है, और यह सीमाओं को स्पष्ट करता है: clappe.com Clappe के नियमों द्वारा शासित है, clappay.com ClapPay द्वारा, इत्यादि। intelligentsingularityai.com पर कॉर्पोरेट साइट सामने का दरवाज़ा है, बिलिंग सिस्टम नहीं।' },
         { q: 'क्या मैं आपके उत्पादों का ऑफ़लाइन उपयोग कर सकता हूँ?', a: 'हाँ। हर उत्पाद धीमी और रुक-रुक कर चलने वाले नेटवर्क पर काम करने के लिए डिज़ाइन किया गया है। हम दो-बार 2G पर पाँच साल पुराने फ़ोन को आधार रेखा के रूप में लक्ष्य बनाते हैं, अच्छा-होगा-अगर के रूप में नहीं। पृष्ठ पहली पेंट पर gzipped पचास किलोबाइट से कम वज़न के होते हैं। महत्वपूर्ण वर्कफ़्लो (इनवॉइस लिखना, मरीज़ की नोट दर्ज करना, नौकरी पकड़ना) बिना कनेक्शन के काम करते हैं और कनेक्शन वापस आने पर सिंक होते हैं।' },
         { q: 'क्या उत्पाद एक खाता साझा करते हैं?', a: 'वैकल्पिक रूप से। एक एकल Clap खाता किसी भी उत्पाद में साइन इन कर सकता है जो ऑप्ट इन करता है, लेकिन हर उत्पाद अभी भी अपना डेटा, अपनी सदस्यता और अपना सहमति प्रवाह रखता है। आप दूसरों के बिना एक उत्पाद का उपयोग कर सकते हैं, किसी अन्य पर स्विच कर सकते हैं, या एक को बाकी को प्रभावित किए बिना हटा सकते हैं।' },
         { q: 'क्या आप व्यक्तिगत ग्राहकों के लिए कस्टम फ़ीचर बनाते हैं?', a: 'बहुत कम, और केवल तब जब फ़ीचर व्यापक उपयोगकर्ता आधार के लिए उचित फ़िट है। हम एक ग्राहक के लिए उत्पाद का निजी फ़ोर्क नहीं बनाएँगे; वह रास्ता रखरखाव के कब्रिस्तान की ओर ले जाता है। लेकिन हम एक रोडमैप आइटम को प्राथमिकता देंगे यदि एक विश्वसनीय भागीदार उसे प्रायोजित करता है और परिणाम सभी के लिए सार्वजनिक फ़ीचर के रूप में आता है।' },
@@ -2539,7 +2539,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'क्या आप इस वेबसाइट पर मुझे ट्रैक करते हैं?', a: 'नहीं। इस साइट में शून्य एनालिटिक्स, शून्य पिक्सेल, शून्य ट्रैकिंग कुकीज़, शून्य विज्ञापन नेटवर्क, और तृतीय पक्षों से शून्य सामग्री है। हम केवल वही डेटा देखते हैं जो आप संपर्क फ़ॉर्म में टाइप करते हैं और भेजते हैं। no-third-party.mjs नामक एक निरंतर एकीकरण स्क्रिप्ट बंडल में किसी भी बाहरी होस्ट के दिखने पर रिलीज़ ब्लॉक करती है। On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'मेरा डेटा कहाँ संग्रहीत है?', a: 'जब आप हमसे संपर्क करते हैं, आपका संदेश ईमेल द्वारा कनाडा के अल्बर्टा में एक इनबॉक्स को भेजा जाता है। हम इसे इस साइट पर एक डेटाबेस में संग्रहीत नहीं करते। उत्पाद-विशिष्ट डेटा (जब आप हमारे एक उपकरण के लिए साइन अप करते हैं) उस उत्पाद की अपनी निजता नीति में अपने स्वयं के डोमेन पर वर्णित है।' },
-        { q: 'क्या मैं वह डेटा हटा सकता हूँ जो आप मेरे बारे में रखते हैं?', a: 'हाँ। आपने जिस पते का उपयोग किया उससे legal@intelligentsingularityinc.com पर ईमेल करें। हम तीन कार्य दिवसों में प्राप्ति की पुष्टि करते हैं। हम तीस दिनों के भीतर हटाने का काम पूरा करते हैं। यही अधिकार हर उत्पाद पर लागू होता है, PIPEDA और GDPR-समतुल्य नियमों के तहत।' },
+        { q: 'क्या मैं वह डेटा हटा सकता हूँ जो आप मेरे बारे में रखते हैं?', a: 'हाँ। आपने जिस पते का उपयोग किया उससे legal@intelligentsingularityai.com पर ईमेल करें। हम तीन कार्य दिवसों में प्राप्ति की पुष्टि करते हैं। हम तीस दिनों के भीतर हटाने का काम पूरा करते हैं। यही अधिकार हर उत्पाद पर लागू होता है, PIPEDA और GDPR-समतुल्य नियमों के तहत।' },
         { q: 'क्या आप मेरी सामग्री पर AI मॉडल प्रशिक्षित करते हैं?', a: 'नहीं। हमारे पोर्टफ़ोलियो में सभी AI फ़ीचर केवल वही डेटा उपयोग करते हैं जो आप स्पष्ट रूप से सबमिट करते हैं, आपके अपने खाते के दायरे में। आपकी निजी सामग्री कभी साझा प्रशिक्षण सेट में मिश्रित नहीं होती, कभी सार्वजनिक मॉडल को बेहतर बनाने के लिए उपयोग नहीं होती, और कभी आपके प्रॉम्प्ट को बनाए रखने वाले तृतीय-पक्ष AI प्रदाता को नहीं भेजी जाती।' },
       ],
       [
@@ -2549,9 +2549,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'मैं स्टूडियो के साथ कैसे साझेदारी करूँ?', a: 'हम NGO, सरकारों और कंपनियों के साथ काम करते हैं। साझा लक्ष्य उन लोगों के लिए सार्वभौमिक-पहुँच सॉफ़्टवेयर है जो आमतौर पर इसका वहन नहीं कर सकते। संपर्क पृष्ठ से एक संक्षिप्त नोट भेजें। इसे Partnerships पर रूट करें। आपको दो कार्य दिवसों में जवाब मिलेगा।' },
-        { q: 'मुझे प्रेस किट कहाँ मिलेगी?', a: 'फ़ैक्ट शीट, स्वीकृत उद्धरण, ब्रांड मार्गदर्शन, संस्थापक संदर्भ और प्रेस बॉयलरप्लेट के लिए /press पर जाएँ। एक लोगो फ़ाइल, हाई-रेज़ संस्थापक चित्र, या कस्टम स्टेटमेंट चाहिए? press@intelligentsingularityinc.com पर अपनी समय सीमा के साथ ईमेल करें।' },
-        { q: 'क्या आप सम्मेलनों में बोलते हैं?', a: 'कभी-कभी। हम सार्वभौमिक पहुँच, AI-संवर्धित टीमों, स्वास्थ्य सॉफ़्टवेयर और लीन सॉफ़्टवेयर अर्थशास्त्र के बारे में बात करते हैं। press@intelligentsingularityinc.com पर इवेंट विवरण और दर्शक आकार के साथ लिखें। हम ईमानदारी से बताते हैं कि हम आ सकते हैं या नहीं।' },
-        { q: 'क्या आप दान या अनुदान लेते हैं?', a: 'हम उपयोगकर्ताओं से दान नहीं माँगते। हम अनुदान का स्वागत करते हैं। अनुदान फ़ाउंडेशनों या बैंकों से आना चाहिए। अनुदान उन बाज़ारों में पहुँच सॉफ़्टवेयर से जुड़ा होना चाहिए जहाँ पूर्ण कीमतें अभी काम नहीं करतीं। partners@intelligentsingularityinc.com पर ईमेल करें।' },
+        { q: 'मुझे प्रेस किट कहाँ मिलेगी?', a: 'फ़ैक्ट शीट, स्वीकृत उद्धरण, ब्रांड मार्गदर्शन, संस्थापक संदर्भ और प्रेस बॉयलरप्लेट के लिए /press पर जाएँ। एक लोगो फ़ाइल, हाई-रेज़ संस्थापक चित्र, या कस्टम स्टेटमेंट चाहिए? press@intelligentsingularityai.com पर अपनी समय सीमा के साथ ईमेल करें।' },
+        { q: 'क्या आप सम्मेलनों में बोलते हैं?', a: 'कभी-कभी। हम सार्वभौमिक पहुँच, AI-संवर्धित टीमों, स्वास्थ्य सॉफ़्टवेयर और लीन सॉफ़्टवेयर अर्थशास्त्र के बारे में बात करते हैं। press@intelligentsingularityai.com पर इवेंट विवरण और दर्शक आकार के साथ लिखें। हम ईमानदारी से बताते हैं कि हम आ सकते हैं या नहीं।' },
+        { q: 'क्या आप दान या अनुदान लेते हैं?', a: 'हम उपयोगकर्ताओं से दान नहीं माँगते। हम अनुदान का स्वागत करते हैं। अनुदान फ़ाउंडेशनों या बैंकों से आना चाहिए। अनुदान उन बाज़ारों में पहुँच सॉफ़्टवेयर से जुड़ा होना चाहिए जहाँ पूर्ण कीमतें अभी काम नहीं करतीं। partners@intelligentsingularityai.com पर ईमेल करें।' },
       ],
       [
         { q: 'क्या आप भर्ती कर रहे हैं?', a: 'कभी-कभी। /careers पृष्ठ वर्तमान खुली भूमिकाओं को सूचीबद्ध करता है। जब कुछ भी सूचीबद्ध नहीं होता, हम उस समय भर्ती नहीं कर रहे, बस। हम एक एवरग्रीन "हमें अपना CV भेजें" फ़नल नहीं चलाते जो कहीं नहीं जाता — लेकिन एक विचारशील परिचय हमेशा एक वास्तविक उत्तर पाता है।' },
@@ -2564,7 +2564,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'الأسئلة الشائعة · إجابات بسيطة', title: 'أسئلة، يُجاب عليها ببساطة.',
     lede: 'ما يسألنا الناس فعلًا — عن الاستوديو، والمنتجات، والمقايضات الخصوصية لاستخدام أدواتنا.',
     sectionTitles: ['الاستوديو', 'المنتجات', 'التسعير والمال', 'الخصوصية والبيانات', 'اللغات والوصول', 'الشراكات والصحافة', 'التوظيف'],
-    stillStuckCta: { eyebrow: 'لا يزال لديك سؤال؟', heading: 'إنسان يقرأ كل رسالة.', body: 'عادةً ما نرد في غضون يومي عمل. أرسل ملاحظة عبر النموذج. أو راسل hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: 'لا يزال لديك سؤال؟', heading: 'إنسان يقرأ كل رسالة.', body: 'عادةً ما نرد في غضون يومي عمل. أرسل ملاحظة عبر النموذج. أو راسل hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: 'ما هي Intelligent Singularity؟', a: 'Intelligent Singularity Inc. هي الشركة الأم لمنظومة Clap. نحن استوديو صغير، مُعزَّز بالذكاء الاصطناعي، يعمل عن بُعد بالكامل. نتخذ من ألبرتا، كندا مقرًا. نبني برمجيات للوصول الشامل. المنتج الرئيسي ذاته يخدم مشترًيا من Fortune 500 في نيويورك وكشكًا تجاريًا لشخص واحد في لاجوس. حزمة واحدة مشتركة. رسالة واحدة.' },
@@ -2577,7 +2577,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'هل هذه المنتجات حقيقية أم لا تزال أفكارًا؟', a: 'لكل منتج في صفحة المحفظة ملصق حالة صادق. "Live" يعني أنك تستطيع التسجيل اليوم. "Staging" يعني أنه يعمل لكنه بدعوة فقط بينما نُحكِم تجهيزه. "Awaiting approval" جاهز لكنه ينتظر جهة تنظيمية. "Infrastructure" كود نشاركه علنًا وتعتمد عليه منتجات أخرى. لا نُعلن مسبقًا عن أشياء لا توجد بعد.' },
         { q: 'لماذا تُسرَد بعض المنتجات على أنها staging؟', a: 'معظم أدواتنا لا تزال تُحكَم تجهيزها قبل الإطلاق العام. نفضّل الإطلاق متأخرًا على كسر الثقة في اليوم الأول — خصوصًا في الرعاية الصحية والمدفوعات والتداول، حيث الانحراف حادث في العالم الحقيقي، لا إزعاج. إن أردت وصولًا مبكرًا، راسلنا من صفحة الاتصال وسنخبرك بصدق إن كانت بناء staging تستطيع دعمك بعد.' },
-        { q: 'لماذا تربط المنتجات بنطاقات أخرى؟', a: 'كل منتج خدمته الخاصة بشروطه وأسعاره وتسجيله وإشعار خصوصيته. إرسالك مباشرة إلى نطاق المنتج أسرع، ويُوضّح الحدود: clappe.com يحكمه شروط Clappe، وclappay.com شروط ClapPay، وهكذا. الموقع المؤسسي على intelligentsingularityinc.com هو الباب الأمامي، لا نظام فوترة.' },
+        { q: 'لماذا تربط المنتجات بنطاقات أخرى؟', a: 'كل منتج خدمته الخاصة بشروطه وأسعاره وتسجيله وإشعار خصوصيته. إرسالك مباشرة إلى نطاق المنتج أسرع، ويُوضّح الحدود: clappe.com يحكمه شروط Clappe، وclappay.com شروط ClapPay، وهكذا. الموقع المؤسسي على intelligentsingularityai.com هو الباب الأمامي، لا نظام فوترة.' },
         { q: 'هل يمكنني استخدام منتجاتكم بلا اتصال؟', a: 'نعم. كل منتج مصمَّم للعمل على شبكات بطيئة ومتقطعة. نستهدف هاتفًا عمره خمس سنوات على إشارة 2G بشريطين كأساس، لا كميزة إضافية. تزن الصفحات أقل من خمسين كيلوبايت عند أول رسم بعد ضغط gzip. تعمل تدفقات العمل الحرجة (كتابة فاتورة، تسجيل ملاحظة مريض، التقاط مهمة) دون اتصال وتُزامَن عند عودة الاتصال.' },
         { q: 'هل تتشارك المنتجات حسابًا واحدًا؟', a: 'اختياريًا. يمكن لحساب Clap واحد تسجيل الدخول إلى أي منتج يختار الانضمام، لكن كل منتج يحتفظ ببياناته الخاصة، واشتراكه الخاص، وتدفق موافقته الخاص. يمكنك استخدام منتج واحد دون البقية، الانتقال إلى آخر، أو حذف واحد دون التأثير على الباقي.' },
         { q: 'هل تبنون ميزات مخصصة لعملاء فرديين؟', a: 'نادرًا، وفقط حين تناسب الميزة قاعدة المستخدمين الأوسع. لن نبني فرعًا خاصًا من منتج لعميل واحد؛ هذا الطريق يقود إلى مقبرة صيانة. مع ذلك، سنُولي بندًا على خارطة الطريق أولوية إذا رعاه شريك جدير ووصلت النتيجة كميزة عامة للجميع.' },
@@ -2590,7 +2590,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'هل تتعقّبونني على هذا الموقع؟', a: 'لا. لهذا الموقع صفر تحليلات، صفر بكسلات، صفر ملفات تعريف ارتباط للتعقّب، صفر شبكات إعلانات، وصفر محتوى من أطراف ثالثة. البيانات الوحيدة التي نراها هي ما تكتبه في نموذج الاتصال وتضغط إرسال. سكربت تكامل مستمر اسمه no-third-party.mjs يحجب الإصدار إذا ظهر أي مضيف خارجي في الحزمة. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'أين تُخزَّن بياناتي؟', a: 'حين تراسلنا، تُرسَل رسالتك بالبريد إلى صندوق وارد في ألبرتا، كندا. لا نُخزّنها في قاعدة بيانات على هذا الموقع. تُوصَف بيانات المنتج المخصصة (عند تسجيلك في إحدى أدواتنا) في سياسة خصوصية ذلك المنتج على نطاقه الخاص.' },
-        { q: 'هل يمكنني حذف البيانات التي تحتفظون بها عنّي؟', a: 'نعم. راسل legal@intelligentsingularityinc.com من العنوان الذي استخدمته. نُؤكّد الاستلام خلال ثلاثة أيام عمل. نُنهي الحذف خلال ثلاثين يومًا. الحق نفسه يسري على كل منتج، بموجب PIPEDA والقواعد المكافئة لـ GDPR.' },
+        { q: 'هل يمكنني حذف البيانات التي تحتفظون بها عنّي؟', a: 'نعم. راسل legal@intelligentsingularityai.com من العنوان الذي استخدمته. نُؤكّد الاستلام خلال ثلاثة أيام عمل. نُنهي الحذف خلال ثلاثين يومًا. الحق نفسه يسري على كل منتج، بموجب PIPEDA والقواعد المكافئة لـ GDPR.' },
         { q: 'هل تُدرّبون نماذج ذكاء اصطناعي على محتواي؟', a: 'لا. ميزات الذكاء الاصطناعي عبر محفظتنا تستخدم فقط البيانات التي ترسلها صراحةً، في نطاق حسابك الخاص. لا يُمزَج محتواك الخاص أبدًا في مجموعة تدريب مشتركة، ولا يُستخدَم لتحسين نموذج عام، ولا يُرسَل أبدًا إلى مزوّد ذكاء اصطناعي خارجي يحتفظ بمحفِّزاتك.' },
       ],
       [
@@ -2600,9 +2600,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'كيف أعقد شراكة مع الاستوديو؟', a: 'نعمل مع المنظمات غير الحكومية والحكومات والشركات. الهدف المشترك هو برمجيات وصول عالمي لمن لا يستطيعون عادةً تحمّل تكلفتها. أرسل ملاحظة موجزة من صفحة الاتصال. وجِّهها إلى Partnerships. ستتلقى ردًا خلال يومي عمل.' },
-        { q: 'أين أجد حقيبة صحفية؟', a: 'تفضّل بزيارة /press للحصول على ورقة الحقائق والاقتباسات المعتمدة وتوجيهات العلامة ومرجع المؤسس وقوالب البيانات الصحفية. تحتاج ملف شعار أو صورة عالية الدقة للمؤسس أو بيانًا مخصصًا؟ راسل press@intelligentsingularityinc.com مع موعدك النهائي.' },
-        { q: 'هل تتحدثون في المؤتمرات؟', a: 'أحيانًا. نتحدث عن الوصول الشامل والفرق المُعزَّزة بالذكاء الاصطناعي وبرمجيات الرعاية الصحية واقتصاديات البرمجيات الرشيقة. راسل press@intelligentsingularityinc.com بتفاصيل الفعالية وحجم الجمهور. نخبرك بصدق إن كنا نستطيع الحضور.' },
-        { q: 'هل تقبلون التبرعات أو المنح؟', a: 'لا نطلب تبرعات من المستخدمين. نُرحّب بالمنح. يجب أن تأتي المنح من مؤسسات أو مصارف. يجب ربط المنحة ببرمجيات الوصول في الأسواق التي لم تنجح فيها الأسعار الكاملة بعد. راسل partners@intelligentsingularityinc.com.' },
+        { q: 'أين أجد حقيبة صحفية؟', a: 'تفضّل بزيارة /press للحصول على ورقة الحقائق والاقتباسات المعتمدة وتوجيهات العلامة ومرجع المؤسس وقوالب البيانات الصحفية. تحتاج ملف شعار أو صورة عالية الدقة للمؤسس أو بيانًا مخصصًا؟ راسل press@intelligentsingularityai.com مع موعدك النهائي.' },
+        { q: 'هل تتحدثون في المؤتمرات؟', a: 'أحيانًا. نتحدث عن الوصول الشامل والفرق المُعزَّزة بالذكاء الاصطناعي وبرمجيات الرعاية الصحية واقتصاديات البرمجيات الرشيقة. راسل press@intelligentsingularityai.com بتفاصيل الفعالية وحجم الجمهور. نخبرك بصدق إن كنا نستطيع الحضور.' },
+        { q: 'هل تقبلون التبرعات أو المنح؟', a: 'لا نطلب تبرعات من المستخدمين. نُرحّب بالمنح. يجب أن تأتي المنح من مؤسسات أو مصارف. يجب ربط المنحة ببرمجيات الوصول في الأسواق التي لم تنجح فيها الأسعار الكاملة بعد. راسل partners@intelligentsingularityai.com.' },
       ],
       [
         { q: 'هل توظّفون؟', a: 'أحيانًا. صفحة /careers تسرد الأدوار المفتوحة حاليًا. حين لا يكون شيء مدرجًا، فنحن لا نوظّف في تلك اللحظة، نقطة. لا نُدير قمعًا دائمًا "أرسل سيرتك" لا يفضي إلى شيء — لكن تقديمًا مدروسًا يحظى دائمًا برد حقيقي.' },
@@ -2615,7 +2615,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · RÉPONSES DIRECTES', title: 'Questions, des réponses simples.',
     lede: "Ce que les gens nous demandent vraiment — sur le studio, les produits, et les compromis de confidentialité liés à l'usage de nos outils.",
     sectionTitles: ['Le studio', 'Les produits', 'Tarifs et argent', 'Confidentialité et données', 'Langues et accessibilité', 'Partenariats et presse', 'Recrutement'],
-    stillStuckCta: { eyebrow: 'Encore une question ?', heading: 'Une personne lit chaque message.', body: 'Nous répondons généralement sous deux jours ouvrés. Envoyez une note via le formulaire. Ou écrivez à hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: 'Encore une question ?', heading: 'Une personne lit chaque message.', body: 'Nous répondons généralement sous deux jours ouvrés. Envoyez une note via le formulaire. Ou écrivez à hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: "Qu'est-ce qu'Intelligent Singularity ?", a: "Intelligent Singularity Inc. est la société mère de l'écosystème Clap. Nous sommes un petit studio, augmenté par IA, entièrement à distance. Nous sommes basés en Alberta, au Canada. Nous construisons des logiciels pour un accès universel. Le même produit phare sert un acheteur Fortune 500 à New York et un stand de marché d'une personne à Lagos. Un stack partagé. Une mission." },
@@ -2628,7 +2628,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: "Ces produits sont-ils réels ou encore à l'état d'idées ?", a: "Chaque produit sur la page portefeuille a une étiquette de statut honnête. « Live » signifie que vous pouvez vous inscrire aujourd'hui. « Staging » signifie qu'il fonctionne mais sur invitation pendant que nous le solidifions. « Awaiting approval » est prêt mais attend un régulateur. « Infrastructure » est du code que nous partageons publiquement et dont d'autres produits dépendent. Nous n'annonçons pas à l'avance des choses qui n'existent pas encore." },
         { q: 'Pourquoi certains produits sont-ils listés comme staging ?', a: "La plupart de nos outils sont encore solidifiés avant le lancement public. Nous préférons livrer en retard plutôt que casser la confiance le premier jour — surtout dans la santé, les paiements et le trading, où une régression est un incident réel, pas un inconfort. Si vous voulez un accès anticipé, écrivez-nous depuis la page de contact et nous vous dirons honnêtement si la build staging peut vous supporter pour l'instant." },
-        { q: "Pourquoi les produits renvoient vers d'autres domaines ?", a: "Chaque produit est son propre service avec ses propres conditions, prix, inscription et avis de confidentialité. Vous envoyer directement au domaine du produit est plus rapide, et clarifie les frontières : clappe.com est régi par les conditions de Clappe, clappay.com par celles de ClapPay, et ainsi de suite. Le site corporate à intelligentsingularityinc.com est la porte d'entrée, pas un système de facturation." },
+        { q: "Pourquoi les produits renvoient vers d'autres domaines ?", a: "Chaque produit est son propre service avec ses propres conditions, prix, inscription et avis de confidentialité. Vous envoyer directement au domaine du produit est plus rapide, et clarifie les frontières : clappe.com est régi par les conditions de Clappe, clappay.com par celles de ClapPay, et ainsi de suite. Le site corporate à intelligentsingularityai.com est la porte d'entrée, pas un système de facturation." },
         { q: 'Puis-je utiliser vos produits hors-ligne ?', a: "Oui. Chaque produit est conçu pour fonctionner sur des réseaux lents et intermittents. Nous visons un téléphone de cinq ans sur 2G à deux barres comme base, pas comme un nice-to-have. Les pages pèsent moins de cinquante kilooctets au premier rendu, gzip. Les flux critiques (écrire une facture, enregistrer une note patient, saisir un job) fonctionnent sans connexion et se synchronisent au retour." },
         { q: 'Les produits partagent-ils un compte ?', a: "Optionnellement. Un compte Clap unique peut se connecter à tout produit qui adhère, mais chaque produit garde ses propres données, son propre abonnement et son propre flux de consentement. Vous pouvez utiliser un produit sans les autres, basculer vers un autre, ou en supprimer un sans affecter le reste." },
         { q: 'Construisez-vous des fonctionnalités sur mesure pour des clients individuels ?', a: "Rarement, et seulement quand la fonctionnalité s'inscrit dans la base d'utilisateurs plus large. Nous ne construirons pas un fork privé d'un produit pour un client ; ce chemin mène à un cimetière de maintenance. En revanche, nous prioriserons un élément de la feuille de route si un partenaire crédible le sponsorise et que le résultat atterrit comme fonctionnalité publique pour tous." },
@@ -2641,7 +2641,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Me suivez-vous sur ce site ?', a: "Non. Ce site n'a aucune analytique, aucun pixel, aucun cookie de tracking, aucun réseau publicitaire, et aucun contenu de tiers. Les seules données que nous voyons sont celles que vous tapez dans le formulaire de contact et envoyez. Un script d'intégration continue appelé no-third-party.mjs bloque la livraison si un hôte externe apparaît dans le bundle. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list." },
         { q: 'Où mes données sont-elles stockées ?', a: "Quand vous nous contactez, votre message est envoyé par email à une boîte en Alberta, au Canada. Nous ne le stockons pas dans une base de données sur ce site. Les données spécifiques au produit (quand vous vous inscrivez à l'un de nos outils) sont décrites dans la politique de confidentialité de ce produit sur son propre domaine." },
-        { q: 'Puis-je supprimer les données que vous détenez sur moi ?', a: "Oui. Envoyez un email à legal@intelligentsingularityinc.com depuis l'adresse que vous avez utilisée. Nous confirmons réception sous trois jours ouvrés. Nous terminons la suppression sous trente jours. Le même droit s'applique à chaque produit, selon PIPEDA et les règles équivalentes au RGPD." },
+        { q: 'Puis-je supprimer les données que vous détenez sur moi ?', a: "Oui. Envoyez un email à legal@intelligentsingularityai.com depuis l'adresse que vous avez utilisée. Nous confirmons réception sous trois jours ouvrés. Nous terminons la suppression sous trente jours. Le même droit s'applique à chaque produit, selon PIPEDA et les règles équivalentes au RGPD." },
         { q: 'Entraînez-vous des modèles IA sur mon contenu ?', a: "Non. Les fonctionnalités IA dans tout notre portefeuille n'utilisent que des données que vous soumettez explicitement, dans le périmètre de votre propre compte. Votre contenu privé n'est jamais mélangé à un jeu d'entraînement partagé, jamais utilisé pour améliorer un modèle public, et jamais envoyé à un fournisseur d'IA tiers qui conserve vos prompts." },
       ],
       [
@@ -2651,9 +2651,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Comment puis-je devenir partenaire du studio ?', a: "Nous travaillons avec des ONG, des gouvernements et des entreprises. L'objectif commun est un logiciel d'accès universel pour des personnes qui ne pourraient pas se l'offrir habituellement. Envoyez une courte note depuis la page de contact. Dirigez-la vers Partnerships. Vous aurez une réponse sous deux jours ouvrés." },
-        { q: 'Où trouver un kit presse ?', a: "Rendez-vous sur /press pour la fiche, les citations approuvées, la guidance de marque, la référence du fondateur et le boilerplate presse. Besoin d'un fichier logo, d'un portrait fondateur en haute résolution, ou d'une déclaration personnalisée ? Écrivez à press@intelligentsingularityinc.com avec votre date limite." },
-        { q: 'Intervenez-vous en conférence ?', a: "Parfois. Nous parlons d'accès universel, d'équipes augmentées par IA, de logiciels santé et d'économie logicielle lean. Écrivez à press@intelligentsingularityinc.com avec les détails de l'événement et la taille du public. Nous vous dirons honnêtement si nous pouvons venir." },
-        { q: 'Acceptez-vous des dons ou des subventions ?', a: "Nous ne demandons pas de dons aux utilisateurs. Nous accueillons les subventions. Les subventions doivent venir de fondations ou de banques. La subvention doit être liée à des logiciels d'accès sur des marchés où les prix pleins ne fonctionnent pas encore. Écrivez à partners@intelligentsingularityinc.com." },
+        { q: 'Où trouver un kit presse ?', a: "Rendez-vous sur /press pour la fiche, les citations approuvées, la guidance de marque, la référence du fondateur et le boilerplate presse. Besoin d'un fichier logo, d'un portrait fondateur en haute résolution, ou d'une déclaration personnalisée ? Écrivez à press@intelligentsingularityai.com avec votre date limite." },
+        { q: 'Intervenez-vous en conférence ?', a: "Parfois. Nous parlons d'accès universel, d'équipes augmentées par IA, de logiciels santé et d'économie logicielle lean. Écrivez à press@intelligentsingularityai.com avec les détails de l'événement et la taille du public. Nous vous dirons honnêtement si nous pouvons venir." },
+        { q: 'Acceptez-vous des dons ou des subventions ?', a: "Nous ne demandons pas de dons aux utilisateurs. Nous accueillons les subventions. Les subventions doivent venir de fondations ou de banques. La subvention doit être liée à des logiciels d'accès sur des marchés où les prix pleins ne fonctionnent pas encore. Écrivez à partners@intelligentsingularityai.com." },
       ],
       [
         { q: 'Recrutez-vous ?', a: "Parfois. La page /careers liste les postes ouverts actuels. Quand rien n'est listé, nous ne recrutons pas à ce moment, point. Nous ne lançons pas un entonnoir evergreen « envoyez-nous votre CV » qui ne mène nulle part — mais une présentation réfléchie obtient toujours une vraie réponse." },
@@ -2666,7 +2666,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · RESPOSTAS DIRETAS', title: 'Perguntas, respostas diretas.',
     lede: 'O que as pessoas nos perguntam de verdade — sobre o estúdio, os produtos e os compromissos de privacidade ao usar as nossas ferramentas.',
     sectionTitles: ['O estúdio', 'Os produtos', 'Preços e dinheiro', 'Privacidade e dados', 'Idiomas e acessibilidade', 'Parcerias e imprensa', 'Contratação'],
-    stillStuckCta: { eyebrow: 'Ainda tem uma pergunta?', heading: 'Uma pessoa lê cada mensagem.', body: 'Normalmente respondemos dentro de dois dias úteis. Envie uma nota pelo formulário. Ou escreva para hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: 'Ainda tem uma pergunta?', heading: 'Uma pessoa lê cada mensagem.', body: 'Normalmente respondemos dentro de dois dias úteis. Envie uma nota pelo formulário. Ou escreva para hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: 'O que é a Intelligent Singularity?', a: 'A Intelligent Singularity Inc. é a empresa-mãe do ecossistema Clap. Somos um estúdio pequeno, aumentado por IA, totalmente remoto. Estamos sediados em Alberta, Canadá. Construímos software para acesso universal. O mesmo produto principal serve um comprador Fortune 500 em Nova Iorque e uma banca de mercado de uma pessoa em Lagos. Uma stack partilhada. Uma missão.' },
@@ -2679,7 +2679,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Estes produtos são reais ou ainda ideias?', a: 'Cada produto na página de portefólio tem um rótulo de estado honesto. "Live" significa que pode inscrever-se hoje. "Staging" significa que funciona mas é por convite enquanto o endurecemos. "Awaiting approval" está pronto mas à espera de um regulador. "Infrastructure" é código que partilhamos publicamente e do qual outros produtos dependem. Não pré-anunciamos coisas que ainda não existem.' },
         { q: 'Porque é que alguns produtos estão listados como staging?', a: 'A maioria das nossas ferramentas ainda está a ser endurecida antes do lançamento público. Preferimos lançar tarde a quebrar confiança no primeiro dia — especialmente em saúde, pagamentos e trading onde uma regressão é um incidente real, não uma inconveniência. Se quiser acesso antecipado, escreva-nos a partir da página de contacto e dizemos-lhe honestamente se a build de staging consegue suportá-lo já.' },
-        { q: 'Porque é que os produtos ligam para outros domínios?', a: 'Cada produto é o seu próprio serviço com os seus próprios termos, preços, registo e aviso de privacidade. Enviá-lo diretamente ao domínio do produto é mais rápido, e torna as fronteiras claras: clappe.com é governado pelos termos da Clappe, clappay.com pelos da ClapPay, e por aí fora. O site corporativo em intelligentsingularityinc.com é a porta da frente, não um sistema de faturação.' },
+        { q: 'Porque é que os produtos ligam para outros domínios?', a: 'Cada produto é o seu próprio serviço com os seus próprios termos, preços, registo e aviso de privacidade. Enviá-lo diretamente ao domínio do produto é mais rápido, e torna as fronteiras claras: clappe.com é governado pelos termos da Clappe, clappay.com pelos da ClapPay, e por aí fora. O site corporativo em intelligentsingularityai.com é a porta da frente, não um sistema de faturação.' },
         { q: 'Posso usar os vossos produtos offline?', a: 'Sim. Cada produto está desenhado para funcionar em redes lentas e intermitentes. Visamos um telefone de cinco anos numa rede 2G de dois traços como linha base, não como um nice-to-have. As páginas pesam menos de cinquenta kilobytes no primeiro paint, gzipped. Os fluxos críticos (escrever uma fatura, registar uma nota de paciente, capturar um trabalho) funcionam sem ligação e sincronizam quando volta.' },
         { q: 'Os produtos partilham uma conta?', a: 'Opcionalmente. Uma única conta Clap pode entrar em qualquer produto que aceite, mas cada produto continua a guardar os seus próprios dados, a sua própria subscrição e o seu próprio fluxo de consentimento. Pode usar um produto sem os outros, mudar para outro, ou eliminar um sem afetar os restantes.' },
         { q: 'Constroem funcionalidades à medida para clientes individuais?', a: 'Raramente, e só quando a funcionalidade encaixa bem na base de utilizadores mais ampla. Não construiremos um fork privado de um produto para um cliente; esse caminho leva a um cemitério de manutenção. Mas iremos priorizar um item da roadmap se um parceiro credível o patrocinar e o resultado aterrar como funcionalidade pública para todos.' },
@@ -2692,7 +2692,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Seguem-me neste site?', a: 'Não. Este site tem zero analítica, zero pixels, zero cookies de seguimento, zero redes de publicidade e zero conteúdo de terceiros. Os únicos dados que vemos são os que você escreve no formulário de contacto e envia. Um script de integração contínua chamado no-third-party.mjs bloqueia o lançamento se algum host externo aparecer no bundle. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'Onde estão guardados os meus dados?', a: 'Quando nos contacta, a sua mensagem é enviada por email para uma caixa de entrada em Alberta, Canadá. Não a guardamos numa base de dados neste site. Os dados específicos do produto (quando se regista numa das nossas ferramentas) estão descritos na política de privacidade desse produto no seu próprio domínio.' },
-        { q: 'Posso apagar os dados que mantêm sobre mim?', a: 'Sim. Envie um email para legal@intelligentsingularityinc.com a partir do endereço que usou. Confirmamos receção em três dias úteis. Terminamos a eliminação em trinta dias. O mesmo direito aplica-se a cada produto, sob PIPEDA e regras equivalentes ao GDPR.' },
+        { q: 'Posso apagar os dados que mantêm sobre mim?', a: 'Sim. Envie um email para legal@intelligentsingularityai.com a partir do endereço que usou. Confirmamos receção em três dias úteis. Terminamos a eliminação em trinta dias. O mesmo direito aplica-se a cada produto, sob PIPEDA e regras equivalentes ao GDPR.' },
         { q: 'Treinam modelos de IA com o meu conteúdo?', a: 'Não. As funcionalidades de IA em todo o nosso portefólio usam apenas dados que submete explicitamente, no âmbito da sua própria conta. O seu conteúdo privado nunca é misturado num conjunto de treino partilhado, nunca é usado para melhorar um modelo público, e nunca é enviado a um fornecedor de IA de terceiros que retenha os seus prompts.' },
       ],
       [
@@ -2702,9 +2702,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Como me torno parceiro do estúdio?', a: 'Trabalhamos com ONGs, governos e empresas. O objetivo partilhado é software de acesso universal para pessoas que normalmente não podem pagar. Envie uma nota curta a partir da página de contacto. Encaminhe-a para Partnerships. Terá resposta em dois dias úteis.' },
-        { q: 'Onde encontro um kit de imprensa?', a: 'Visite /press para a ficha de factos, as citações aprovadas, a orientação de marca, a referência do fundador e o boilerplate de imprensa. Precisa de um ficheiro de logótipo, de um retrato do fundador em alta resolução, ou de uma declaração personalizada? Escreva para press@intelligentsingularityinc.com com a sua data-limite.' },
-        { q: 'Falam em conferências?', a: 'Por vezes. Falamos sobre acesso universal, equipas aumentadas por IA, software de saúde e economia de software lean. Escreva para press@intelligentsingularityinc.com com os detalhes do evento e o tamanho da audiência. Diremos honestamente se podemos comparecer.' },
-        { q: 'Aceitam donativos ou subsídios?', a: 'Não pedimos donativos aos utilizadores. Damos boas-vindas a subsídios. Os subsídios devem vir de fundações ou bancos. O subsídio tem de estar ligado a software de acesso em mercados onde os preços completos ainda não funcionam. Escreva para partners@intelligentsingularityinc.com.' },
+        { q: 'Onde encontro um kit de imprensa?', a: 'Visite /press para a ficha de factos, as citações aprovadas, a orientação de marca, a referência do fundador e o boilerplate de imprensa. Precisa de um ficheiro de logótipo, de um retrato do fundador em alta resolução, ou de uma declaração personalizada? Escreva para press@intelligentsingularityai.com com a sua data-limite.' },
+        { q: 'Falam em conferências?', a: 'Por vezes. Falamos sobre acesso universal, equipas aumentadas por IA, software de saúde e economia de software lean. Escreva para press@intelligentsingularityai.com com os detalhes do evento e o tamanho da audiência. Diremos honestamente se podemos comparecer.' },
+        { q: 'Aceitam donativos ou subsídios?', a: 'Não pedimos donativos aos utilizadores. Damos boas-vindas a subsídios. Os subsídios devem vir de fundações ou bancos. O subsídio tem de estar ligado a software de acesso em mercados onde os preços completos ainda não funcionam. Escreva para partners@intelligentsingularityai.com.' },
       ],
       [
         { q: 'Estão a contratar?', a: 'Por vezes. A página /careers lista as funções abertas atualmente. Quando nada está listado, não estamos a contratar nesse momento, ponto. Não corremos um funil perene "envie-nos o seu CV" que não vai a lado nenhum — mas uma apresentação ponderada recebe sempre uma resposta real.' },
@@ -2717,7 +2717,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · সরাসরি উত্তর', title: 'প্রশ্ন, সরলভাবে উত্তর দেওয়া।',
     lede: 'মানুষ আসলে আমাদের যা জিজ্ঞেস করে — স্টুডিও সম্পর্কে, পণ্যগুলো সম্পর্কে, এবং আমাদের সরঞ্জাম ব্যবহারের গোপনীয়তা ট্রেডঅফ সম্পর্কে।',
     sectionTitles: ['স্টুডিও', 'পণ্যসমূহ', 'মূল্য ও অর্থ', 'গোপনীয়তা ও ডেটা', 'ভাষা ও প্রবেশযোগ্যতা', 'অংশীদারিত্ব ও প্রেস', 'নিয়োগ'],
-    stillStuckCta: { eyebrow: 'এখনো একটি প্রশ্ন আছে?', heading: 'প্রতিটি বার্তা একজন মানুষ পড়েন।', body: 'আমরা সাধারণত দুই কার্যদিবসের মধ্যে উত্তর দিই। ফর্মের মাধ্যমে একটি নোট পাঠান। বা hello@intelligentsingularityinc.com-এ লিখুন।' },
+    stillStuckCta: { eyebrow: 'এখনো একটি প্রশ্ন আছে?', heading: 'প্রতিটি বার্তা একজন মানুষ পড়েন।', body: 'আমরা সাধারণত দুই কার্যদিবসের মধ্যে উত্তর দিই। ফর্মের মাধ্যমে একটি নোট পাঠান। বা hello@intelligentsingularityai.com-এ লিখুন।' },
     sectionItems: [
       [
         { q: 'Intelligent Singularity কী?', a: 'Intelligent Singularity Inc. হল Clap ইকোসিস্টেমের মূল কোম্পানি। আমরা একটি ছোট, AI-সংবর্ধিত, সম্পূর্ণ রিমোট স্টুডিও। আমরা কানাডার আলবার্টায় অবস্থিত। আমরা সর্বজনীন প্রবেশাধিকারের জন্য সফটওয়্যার তৈরি করি। একই প্রধান পণ্য নিউ ইয়র্কের Fortune 500 ক্রেতা এবং লাগোসের এক-ব্যক্তির বাজার স্টল উভয়কে সেবা দেয়। একটি ভাগাভাগি স্ট্যাক। একটি মিশন।' },
@@ -2730,7 +2730,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'এই পণ্যগুলো কি বাস্তব নাকি এখনো শুধু ধারণা?', a: 'পোর্টফোলিও পৃষ্ঠার প্রতিটি পণ্যের একটি সৎ স্ট্যাটাস লেবেল আছে। "Live" মানে আপনি আজই সাইন আপ করতে পারবেন। "Staging" মানে এটি চলছে কিন্তু আমরা এটিকে শক্তিশালী করছি বলে আমন্ত্রণ-ভিত্তিক। "Awaiting approval" প্রস্তুত কিন্তু একটি নিয়ন্ত্রকের অপেক্ষায়। "Infrastructure" এমন কোড যা আমরা সর্বজনীনভাবে ভাগ করি এবং অন্য পণ্যগুলো এর উপর নির্ভরশীল। আমরা এমন জিনিসের পূর্ব-ঘোষণা করি না যা এখনো বিদ্যমান নেই।' },
         { q: 'কিছু পণ্য staging হিসেবে কেন তালিকাভুক্ত?', a: 'আমাদের বেশিরভাগ সরঞ্জাম সর্বজনীন লঞ্চের আগে এখনো শক্তিশালী করা হচ্ছে। আমরা প্রথম দিনে আস্থা ভাঙার চেয়ে দেরিতে শিপ করতে পছন্দ করি — বিশেষ করে স্বাস্থ্যসেবা, অর্থপ্রদান এবং ট্রেডিংয়ে যেখানে একটি রিগ্রেশন একটি বাস্তব-জগতের ঘটনা, অসুবিধা নয়। যদি আপনি প্রাথমিক প্রবেশাধিকার চান, যোগাযোগ পৃষ্ঠা থেকে আমাদের লিখুন এবং আমরা সততার সাথে বলব staging বিল্ড আপনাকে সমর্থন করতে পারে কি না।' },
-        { q: 'পণ্যগুলো কেন অন্য ডোমেইনে লিঙ্ক করে?', a: 'প্রতিটি পণ্য তার নিজস্ব পরিষেবা যার নিজস্ব শর্তাবলী, মূল্য, সাইন-আপ এবং গোপনীয়তা নোটিশ আছে। আপনাকে সরাসরি পণ্যের ডোমেইনে পাঠানো দ্রুততর এবং সীমানা স্পষ্ট করে: clappe.com Clappe-এর শর্তাবলী দ্বারা পরিচালিত, clappay.com ClapPay দ্বারা, ইত্যাদি। intelligentsingularityinc.com-এ কর্পোরেট সাইট হলো সামনের দরজা, বিলিং সিস্টেম নয়।' },
+        { q: 'পণ্যগুলো কেন অন্য ডোমেইনে লিঙ্ক করে?', a: 'প্রতিটি পণ্য তার নিজস্ব পরিষেবা যার নিজস্ব শর্তাবলী, মূল্য, সাইন-আপ এবং গোপনীয়তা নোটিশ আছে। আপনাকে সরাসরি পণ্যের ডোমেইনে পাঠানো দ্রুততর এবং সীমানা স্পষ্ট করে: clappe.com Clappe-এর শর্তাবলী দ্বারা পরিচালিত, clappay.com ClapPay দ্বারা, ইত্যাদি। intelligentsingularityai.com-এ কর্পোরেট সাইট হলো সামনের দরজা, বিলিং সিস্টেম নয়।' },
         { q: 'আমি কি আপনার পণ্যগুলো অফলাইনে ব্যবহার করতে পারি?', a: 'হ্যাঁ। প্রতিটি পণ্য ধীর এবং বিরতিপূর্ণ নেটওয়ার্কে কাজ করার জন্য ডিজাইন করা হয়েছে। আমরা দুই-বার 2G-তে পাঁচ বছরের পুরনো ফোনকে বেসলাইন হিসেবে লক্ষ্য করি, ভালো-হলে-ভালো হিসেবে নয়। পৃষ্ঠাগুলো প্রথম পেইন্টে gzipped পঞ্চাশ কিলোবাইটের কম ওজনের। গুরুত্বপূর্ণ ওয়ার্কফ্লো (একটি ইনভয়েস লেখা, একটি রোগীর নোট রেকর্ড করা, একটি কাজ ক্যাপচার করা) সংযোগ ছাড়াই কাজ করে এবং সংযোগ ফিরে এলে সিঙ্ক হয়।' },
         { q: 'পণ্যগুলো কি একটি অ্যাকাউন্ট ভাগ করে?', a: 'ঐচ্ছিকভাবে। একটি একক Clap অ্যাকাউন্ট যে কোনো পণ্যে সাইন ইন করতে পারে যা অপ্ট ইন করে, কিন্তু প্রতিটি পণ্য এখনো নিজস্ব ডেটা, নিজস্ব সাবস্ক্রিপশন এবং নিজস্ব সম্মতি প্রবাহ রাখে। আপনি একটি পণ্য অন্যগুলো ছাড়া ব্যবহার করতে পারেন, অন্যটিতে স্যুইচ করতে পারেন, বা একটি মুছতে পারেন বাকিগুলোকে প্রভাবিত না করে।' },
         { q: 'আপনি কি ব্যক্তিগত গ্রাহকদের জন্য কাস্টম বৈশিষ্ট্য তৈরি করেন?', a: 'খুব কম, এবং কেবল তখন যখন বৈশিষ্ট্যটি বৃহত্তর ব্যবহারকারী ভিত্তির জন্য একটি ন্যায্য মানানসই। আমরা একজন গ্রাহকের জন্য একটি পণ্যের একটি ব্যক্তিগত ফর্ক তৈরি করব না; সেই পথ একটি রক্ষণাবেক্ষণ কবরস্থানের দিকে নিয়ে যায়। তবে আমরা একটি রোডম্যাপ আইটেমকে অগ্রাধিকার দেব যদি একজন বিশ্বাসযোগ্য অংশীদার এটি স্পনসর করেন এবং ফলাফলটি সকলের জন্য একটি সর্বজনীন বৈশিষ্ট্য হিসেবে আসে।' },
@@ -2743,7 +2743,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'আপনি কি এই ওয়েবসাইটে আমাকে ট্র্যাক করেন?', a: 'না। এই সাইটের শূন্য অ্যানালিটিক্স, শূন্য পিক্সেল, শূন্য ট্র্যাকিং কুকিজ, শূন্য বিজ্ঞাপন নেটওয়ার্ক এবং তৃতীয় পক্ষের শূন্য সামগ্রী আছে। আমরা কেবল সেই ডেটা দেখি যা আপনি যোগাযোগ ফর্মে টাইপ করেন এবং পাঠান। no-third-party.mjs নামক একটি ক্রমাগত একীকরণ স্ক্রিপ্ট বান্ডলে কোনো বাহ্যিক হোস্ট দেখা গেলে রিলিজ ব্লক করে। On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'আমার ডেটা কোথায় সংরক্ষিত?', a: 'যখন আপনি আমাদের সাথে যোগাযোগ করেন, আপনার বার্তা ইমেইলের মাধ্যমে কানাডার আলবার্টায় একটি ইনবক্সে পাঠানো হয়। আমরা এটিকে এই সাইটের একটি ডেটাবেসে সংরক্ষণ করি না। পণ্য-নির্দিষ্ট ডেটা (যখন আপনি আমাদের একটি সরঞ্জামের জন্য সাইন আপ করেন) সেই পণ্যের নিজস্ব গোপনীয়তা নীতিতে তার নিজস্ব ডোমেইনে বর্ণিত আছে।' },
-        { q: 'আপনি আমার সম্পর্কে যে ডেটা রাখেন তা কি আমি মুছতে পারি?', a: 'হ্যাঁ। আপনি যে ঠিকানা ব্যবহার করেছেন সেখান থেকে legal@intelligentsingularityinc.com-এ ইমেইল করুন। আমরা তিন কার্যদিবসের মধ্যে প্রাপ্তি নিশ্চিত করি। আমরা ত্রিশ দিনের মধ্যে মুছে ফেলা শেষ করি। একই অধিকার প্রতিটি পণ্যে প্রযোজ্য, PIPEDA এবং GDPR-সমতুল্য নিয়মের অধীনে।' },
+        { q: 'আপনি আমার সম্পর্কে যে ডেটা রাখেন তা কি আমি মুছতে পারি?', a: 'হ্যাঁ। আপনি যে ঠিকানা ব্যবহার করেছেন সেখান থেকে legal@intelligentsingularityai.com-এ ইমেইল করুন। আমরা তিন কার্যদিবসের মধ্যে প্রাপ্তি নিশ্চিত করি। আমরা ত্রিশ দিনের মধ্যে মুছে ফেলা শেষ করি। একই অধিকার প্রতিটি পণ্যে প্রযোজ্য, PIPEDA এবং GDPR-সমতুল্য নিয়মের অধীনে।' },
         { q: 'আপনি কি আমার সামগ্রীতে AI মডেল প্রশিক্ষণ দেন?', a: 'না। আমাদের পোর্টফোলিও জুড়ে AI বৈশিষ্ট্যগুলো কেবল সেই ডেটা ব্যবহার করে যা আপনি স্পষ্টভাবে জমা দেন, আপনার নিজের অ্যাকাউন্টের সীমার মধ্যে। আপনার ব্যক্তিগত সামগ্রী কখনো একটি ভাগাভাগি প্রশিক্ষণ সেটে মিশ্রিত হয় না, কখনো পাবলিক মডেল উন্নত করতে ব্যবহৃত হয় না, এবং কখনো আপনার প্রম্পট রাখে এমন তৃতীয়-পক্ষ AI প্রদানকারীর কাছে পাঠানো হয় না।' },
       ],
       [
@@ -2753,9 +2753,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'আমি স্টুডিওর সাথে কীভাবে অংশীদারিত্ব করব?', a: 'আমরা NGO, সরকার এবং কোম্পানিগুলোর সাথে কাজ করি। ভাগাভাগি লক্ষ্য হলো এমন মানুষদের জন্য সর্বজনীন-প্রবেশযোগ্য সফটওয়্যার যারা সাধারণত এটি বহন করতে পারে না। যোগাযোগ পৃষ্ঠা থেকে একটি ছোট নোট পাঠান। এটি Partnerships-এ রুট করুন। আপনি দুই কার্যদিবসের মধ্যে শুনবেন।' },
-        { q: 'আমি প্রেস কিট কোথায় পাব?', a: 'ফ্যাক্ট শিট, অনুমোদিত উদ্ধৃতি, ব্র্যান্ড নির্দেশনা, প্রতিষ্ঠাতা রেফারেন্স এবং প্রেস বয়লারপ্লেটের জন্য /press-এ যান। লোগো ফাইল, হাই-রেজ প্রতিষ্ঠাতা প্রতিকৃতি, বা একটি কাস্টম বিবৃতি প্রয়োজন? আপনার ডেডলাইন সহ press@intelligentsingularityinc.com-এ ইমেইল করুন।' },
-        { q: 'আপনি কি সম্মেলনে কথা বলেন?', a: 'মাঝে মাঝে। আমরা সর্বজনীন প্রবেশাধিকার, AI-সংবর্ধিত দল, স্বাস্থ্যসেবা সফটওয়্যার এবং লিন সফটওয়্যার অর্থনীতি সম্পর্কে কথা বলি। ইভেন্টের বিবরণ এবং দর্শক সংখ্যা সহ press@intelligentsingularityinc.com-এ লিখুন। আমরা সততার সাথে বলি আমরা আসতে পারব কিনা।' },
-        { q: 'আপনি কি অনুদান বা গ্র্যান্ট নেন?', a: 'আমরা ব্যবহারকারীদের কাছ থেকে অনুদান চাই না। আমরা গ্র্যান্টকে স্বাগত জানাই। গ্র্যান্ট ফাউন্ডেশন বা ব্যাংক থেকে আসতে হবে। গ্র্যান্টটি এমন বাজারে অ্যাক্সেস সফটওয়্যারের সাথে সংযুক্ত থাকতে হবে যেখানে পূর্ণ মূল্য এখনো কাজ করে না। partners@intelligentsingularityinc.com-এ ইমেইল করুন।' },
+        { q: 'আমি প্রেস কিট কোথায় পাব?', a: 'ফ্যাক্ট শিট, অনুমোদিত উদ্ধৃতি, ব্র্যান্ড নির্দেশনা, প্রতিষ্ঠাতা রেফারেন্স এবং প্রেস বয়লারপ্লেটের জন্য /press-এ যান। লোগো ফাইল, হাই-রেজ প্রতিষ্ঠাতা প্রতিকৃতি, বা একটি কাস্টম বিবৃতি প্রয়োজন? আপনার ডেডলাইন সহ press@intelligentsingularityai.com-এ ইমেইল করুন।' },
+        { q: 'আপনি কি সম্মেলনে কথা বলেন?', a: 'মাঝে মাঝে। আমরা সর্বজনীন প্রবেশাধিকার, AI-সংবর্ধিত দল, স্বাস্থ্যসেবা সফটওয়্যার এবং লিন সফটওয়্যার অর্থনীতি সম্পর্কে কথা বলি। ইভেন্টের বিবরণ এবং দর্শক সংখ্যা সহ press@intelligentsingularityai.com-এ লিখুন। আমরা সততার সাথে বলি আমরা আসতে পারব কিনা।' },
+        { q: 'আপনি কি অনুদান বা গ্র্যান্ট নেন?', a: 'আমরা ব্যবহারকারীদের কাছ থেকে অনুদান চাই না। আমরা গ্র্যান্টকে স্বাগত জানাই। গ্র্যান্ট ফাউন্ডেশন বা ব্যাংক থেকে আসতে হবে। গ্র্যান্টটি এমন বাজারে অ্যাক্সেস সফটওয়্যারের সাথে সংযুক্ত থাকতে হবে যেখানে পূর্ণ মূল্য এখনো কাজ করে না। partners@intelligentsingularityai.com-এ ইমেইল করুন।' },
       ],
       [
         { q: 'আপনি কি নিয়োগ করছেন?', a: 'মাঝে মাঝে। /careers পৃষ্ঠা বর্তমান খোলা ভূমিকার তালিকা দেয়। যখন কিছুই তালিকাভুক্ত নয়, আমরা সেই মুহূর্তে নিয়োগ করছি না, ব্যাস। আমরা একটি চিরসবুজ "আমাদের আপনার CV পাঠান" ফানেল চালাই না যা কোথাও যায় না — কিন্তু একটি বিচক্ষণ পরিচিতি সবসময় একটি বাস্তব উত্তর পায়।' },
@@ -2768,7 +2768,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · ПРОСТЫЕ ОТВЕТЫ', title: 'Вопросы, ответы по существу.',
     lede: 'Что нас спрашивают на самом деле — про студию, продукты и компромиссы приватности при использовании наших инструментов.',
     sectionTitles: ['Студия', 'Продукты', 'Цены и деньги', 'Приватность и данные', 'Языки и доступность', 'Партнёрство и пресса', 'Найм'],
-    stillStuckCta: { eyebrow: 'Остался вопрос?', heading: 'Каждое сообщение читает человек.', body: 'Обычно отвечаем в течение двух рабочих дней. Отправьте сообщение через форму. Или напишите на hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: 'Остался вопрос?', heading: 'Каждое сообщение читает человек.', body: 'Обычно отвечаем в течение двух рабочих дней. Отправьте сообщение через форму. Или напишите на hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: 'Что такое Intelligent Singularity?', a: 'Intelligent Singularity Inc. — материнская компания экосистемы Clap. Мы — небольшая студия, усиленная ИИ, полностью удалённая. Базируемся в Альберте, Канада. Делаем софт для универсального доступа. Тот же флагманский продукт обслуживает покупателя Fortune 500 в Нью-Йорке и одиночный рыночный прилавок в Лагосе. Один общий стек. Одна миссия.' },
@@ -2781,7 +2781,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Эти продукты реальны или ещё идеи?', a: 'Каждый продукт на странице портфеля имеет честный лейбл статуса. «Live» — можно зарегистрироваться сегодня. «Staging» — работает, но по приглашению, пока укрепляем. «Awaiting approval» — готов, но ждёт регулятора. «Infrastructure» — код, который мы публикуем публично и от которого зависят другие продукты. Мы не анонсируем заранее то, чего ещё нет.' },
         { q: 'Почему некоторые продукты в статусе staging?', a: 'Большинство инструментов всё ещё укрепляются перед публичным запуском. Мы предпочитаем выпустить позже, чем сломать доверие в первый день — особенно в здравоохранении, платежах и трейдинге, где регрессия — реальный инцидент, а не неудобство. Если хотите ранний доступ, напишите со страницы контактов, и мы честно скажем, может ли staging-сборка вас поддержать.' },
-        { q: 'Почему продукты ведут на другие домены?', a: 'Каждый продукт — это свой сервис со своими условиями, ценой, регистрацией и уведомлением о приватности. Отправить вас прямо на домен продукта быстрее и делает границы чёткими: clappe.com управляется условиями Clappe, clappay.com — условиями ClapPay и т.д. Корпоративный сайт intelligentsingularityinc.com — это парадная дверь, а не биллинговая система.' },
+        { q: 'Почему продукты ведут на другие домены?', a: 'Каждый продукт — это свой сервис со своими условиями, ценой, регистрацией и уведомлением о приватности. Отправить вас прямо на домен продукта быстрее и делает границы чёткими: clappe.com управляется условиями Clappe, clappay.com — условиями ClapPay и т.д. Корпоративный сайт intelligentsingularityai.com — это парадная дверь, а не биллинговая система.' },
         { q: 'Можно ли пользоваться вашими продуктами офлайн?', a: 'Да. Каждый продукт спроектирован под медленные и нестабильные сети. Мы целимся в пятилетний телефон с двумя полосками 2G как в базовый сценарий, а не как в опцию. Страницы весят меньше пятидесяти килобайт при первой отрисовке, в gzip. Критические потоки (выставление инвойса, запись пациентской записи, фиксация задачи) работают без подключения и синхронизируются при его возвращении.' },
         { q: 'Делят ли продукты единый аккаунт?', a: 'Опционально. Один аккаунт Clap может входить в любой продукт, который согласился, но каждый продукт хранит свои данные, свою подписку и свой поток согласия. Можно пользоваться одним продуктом без других, переключиться на другой или удалить один, не затрагивая остальное.' },
         { q: 'Делаете ли вы кастомные фичи для отдельных клиентов?', a: 'Редко и только когда фича честно подходит для широкой пользовательской базы. Мы не будем делать приватный форк продукта для одного клиента — этот путь ведёт к кладбищу обслуживания. Но приоритезируем элемент дорожной карты, если надёжный партнёр спонсирует его и результат выходит как публичная фича для всех.' },
@@ -2794,7 +2794,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Вы отслеживаете меня на этом сайте?', a: 'Нет. На этом сайте ноль аналитики, ноль пикселей, ноль трекинговых кук, ноль рекламных сетей и ноль контента от третьих сторон. Единственные данные, которые мы видим, — это то, что вы вводите в форму контактов и отправляете. CI-скрипт под названием no-third-party.mjs блокирует релиз, если в бандле появляется любой внешний хост. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'Где хранятся мои данные?', a: 'Когда вы пишете нам, ваше сообщение отправляется по почте в наш ящик в Альберте, Канада. Мы не храним его в базе данных на этом сайте. Продуктовые данные (когда вы регистрируетесь в одном из инструментов) описаны в политике приватности этого продукта на его собственном домене.' },
-        { q: 'Могу ли я удалить данные, которые вы храните обо мне?', a: 'Да. Напишите на legal@intelligentsingularityinc.com с того адреса, который использовали. Мы подтверждаем получение в течение трёх рабочих дней. Завершаем удаление в течение тридцати дней. Это право действует для каждого продукта по PIPEDA и эквивалентным GDPR правилам.' },
+        { q: 'Могу ли я удалить данные, которые вы храните обо мне?', a: 'Да. Напишите на legal@intelligentsingularityai.com с того адреса, который использовали. Мы подтверждаем получение в течение трёх рабочих дней. Завершаем удаление в течение тридцати дней. Это право действует для каждого продукта по PIPEDA и эквивалентным GDPR правилам.' },
         { q: 'Тренируете ли вы ИИ-модели на моём контенте?', a: 'Нет. ИИ-фичи во всём нашем портфеле используют только данные, которые вы явно отправляете, в рамках вашего же аккаунта. Ваш приватный контент никогда не вмешивается в общий тренировочный набор, никогда не используется для улучшения публичной модели и никогда не отправляется стороннему ИИ-провайдеру, который сохраняет ваши промпты.' },
       ],
       [
@@ -2804,9 +2804,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Как стать партнёром студии?', a: 'Мы работаем с НПО, правительствами и компаниями. Общая цель — софт универсального доступа для тех, кто обычно не может его себе позволить. Отправьте короткое сообщение со страницы контактов. Отметьте Partnerships. Ответим в течение двух рабочих дней.' },
-        { q: 'Где найти пресс-кит?', a: 'Загляните на /press — там факт-лист, утверждённые цитаты, brand guidance, founder reference и пресс-болерплейт. Нужен файл логотипа, портрет основателя в высоком разрешении или индивидуальное заявление? Напишите на press@intelligentsingularityinc.com с вашим дедлайном.' },
-        { q: 'Выступаете ли вы на конференциях?', a: 'Иногда. Говорим про универсальный доступ, команды, усиленные ИИ, медицинский софт и lean-экономику софта. Напишите на press@intelligentsingularityinc.com с деталями события и размером аудитории. Честно скажем, сможем ли приехать.' },
-        { q: 'Принимаете ли пожертвования или гранты?', a: 'Мы не просим пожертвований у пользователей. Гранты приветствуем. Гранты должны быть от фондов или банков. Грант должен быть привязан к access-софту на рынках, где полные цены пока не работают. Пишите на partners@intelligentsingularityinc.com.' },
+        { q: 'Где найти пресс-кит?', a: 'Загляните на /press — там факт-лист, утверждённые цитаты, brand guidance, founder reference и пресс-болерплейт. Нужен файл логотипа, портрет основателя в высоком разрешении или индивидуальное заявление? Напишите на press@intelligentsingularityai.com с вашим дедлайном.' },
+        { q: 'Выступаете ли вы на конференциях?', a: 'Иногда. Говорим про универсальный доступ, команды, усиленные ИИ, медицинский софт и lean-экономику софта. Напишите на press@intelligentsingularityai.com с деталями события и размером аудитории. Честно скажем, сможем ли приехать.' },
+        { q: 'Принимаете ли пожертвования или гранты?', a: 'Мы не просим пожертвований у пользователей. Гранты приветствуем. Гранты должны быть от фондов или банков. Грант должен быть привязан к access-софту на рынках, где полные цены пока не работают. Пишите на partners@intelligentsingularityai.com.' },
       ],
       [
         { q: 'Вы нанимаете?', a: 'Иногда. На странице /careers перечислены текущие открытые роли. Если ничего не указано — значит, в данный момент мы не нанимаем, точка. Мы не держим вечнозелёную воронку «пришлите нам резюме», которая никуда не ведёт, — но вдумчивое представление всегда получает реальный ответ.' },
@@ -2819,7 +2819,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · سادہ جوابات', title: 'سوالات، سادہ جواب کے ساتھ۔',
     lede: 'لوگ واقعی ہم سے کیا پوچھتے ہیں — اسٹوڈیو، پروڈکٹس، اور ہمارے ٹولز استعمال کرنے کے رازداری کے سمجھوتوں کے بارے میں۔',
     sectionTitles: ['اسٹوڈیو', 'پروڈکٹس', 'قیمت اور پیسہ', 'رازداری اور ڈیٹا', 'زبانیں اور رسائی', 'شراکت داری اور پریس', 'بھرتی'],
-    stillStuckCta: { eyebrow: 'ابھی بھی کوئی سوال ہے؟', heading: 'ہر پیغام ایک حقیقی شخص پڑھتا ہے۔', body: 'ہم عام طور پر دو کاروباری دنوں کے اندر جواب دیتے ہیں۔ فارم کے ذریعے ایک نوٹ بھیجیں۔ یا hello@intelligentsingularityinc.com پر لکھیں۔' },
+    stillStuckCta: { eyebrow: 'ابھی بھی کوئی سوال ہے؟', heading: 'ہر پیغام ایک حقیقی شخص پڑھتا ہے۔', body: 'ہم عام طور پر دو کاروباری دنوں کے اندر جواب دیتے ہیں۔ فارم کے ذریعے ایک نوٹ بھیجیں۔ یا hello@intelligentsingularityai.com پر لکھیں۔' },
     sectionItems: [
       [
         { q: 'Intelligent Singularity کیا ہے؟', a: 'Intelligent Singularity Inc. Clap ایکوسسٹم کی پیرنٹ کمپنی ہے۔ ہم ایک چھوٹا، AI سے بڑھایا گیا، مکمل طور پر ریموٹ اسٹوڈیو ہیں۔ ہم البرٹا، کینیڈا میں مقیم ہیں۔ ہم عالمی رسائی کے لیے سافٹ ویئر بناتے ہیں۔ وہی فلیگ شپ پروڈکٹ نیویارک میں Fortune 500 خریدار اور لاگوس میں ایک شخص کے بازار اسٹال دونوں کی خدمت کرتی ہے۔ ایک مشترکہ اسٹیک۔ ایک مشن۔' },
@@ -2832,7 +2832,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'کیا یہ پروڈکٹس حقیقی ہیں یا ابھی صرف آئیڈیاز ہیں؟', a: 'پورٹ فولیو صفحے پر ہر پروڈکٹ کا ایک ایماندار اسٹیٹس لیبل ہے۔ "Live" کا مطلب ہے آپ آج سائن اپ کر سکتے ہیں۔ "Staging" کا مطلب ہے یہ چلتا ہے لیکن جب ہم اسے مضبوط کر رہے ہیں دعوت پر مبنی ہے۔ "Awaiting approval" تیار ہے لیکن ایک ریگولیٹر کا منتظر ہے۔ "Infrastructure" وہ کوڈ ہے جسے ہم عوامی طور پر شیئر کرتے ہیں اور جس پر دیگر پروڈکٹس انحصار کرتے ہیں۔ ہم ایسی چیزوں کی پیشگی تشہیر نہیں کرتے جو ابھی موجود نہیں ہیں۔' },
         { q: 'کچھ پروڈکٹس staging کے طور پر کیوں درج ہیں؟', a: 'ہمارے زیادہ تر ٹولز عوامی لانچ سے پہلے ابھی بھی مضبوط کیے جا رہے ہیں۔ ہم پہلے دن اعتماد توڑنے کی بجائے دیر سے شپ کرنا پسند کرتے ہیں — خاص طور پر صحت، ادائیگیوں اور ٹریڈنگ میں جہاں ایک ریگریشن ایک حقیقی-دنیا کا واقعہ ہے، تکلیف نہیں۔ اگر آپ ابتدائی رسائی چاہتے ہیں، رابطہ صفحے سے ہمیں لکھیں اور ہم ایمانداری سے بتائیں گے کہ staging بلڈ ابھی آپ کی مدد کر سکتی ہے یا نہیں۔' },
-        { q: 'پروڈکٹس دوسرے ڈومینز پر کیوں لنک کرتی ہیں؟', a: 'ہر پروڈکٹ اپنی سروس ہے اپنی شرائط، قیمت، سائن اپ، اور رازداری نوٹس کے ساتھ۔ آپ کو براہ راست پروڈکٹ ڈومین پر بھیجنا تیز تر ہے، اور یہ حدود کو واضح کرتا ہے: clappe.com Clappe کی شرائط کے تحت ہے، clappay.com ClapPay کی، اور اسی طرح۔ intelligentsingularityinc.com پر کارپوریٹ سائٹ سامنے کا دروازہ ہے، بلنگ سسٹم نہیں۔' },
+        { q: 'پروڈکٹس دوسرے ڈومینز پر کیوں لنک کرتی ہیں؟', a: 'ہر پروڈکٹ اپنی سروس ہے اپنی شرائط، قیمت، سائن اپ، اور رازداری نوٹس کے ساتھ۔ آپ کو براہ راست پروڈکٹ ڈومین پر بھیجنا تیز تر ہے، اور یہ حدود کو واضح کرتا ہے: clappe.com Clappe کی شرائط کے تحت ہے، clappay.com ClapPay کی، اور اسی طرح۔ intelligentsingularityai.com پر کارپوریٹ سائٹ سامنے کا دروازہ ہے، بلنگ سسٹم نہیں۔' },
         { q: 'کیا میں آپ کی پروڈکٹس آف لائن استعمال کر سکتا ہوں؟', a: 'جی ہاں۔ ہر پروڈکٹ سست اور وقفے وقفے سے چلنے والی نیٹ ورکس پر کام کرنے کے لیے ڈیزائن کی گئی ہے۔ ہم دو-بار 2G پر پانچ سال پرانے فون کو بیس لائن کے طور پر ٹارگٹ کرتے ہیں، اچھا-ہو-تو-اچھا کے طور پر نہیں۔ صفحات پہلی پینٹ پر gzipped پچاس کلوبائٹ سے کم وزنی ہوتے ہیں۔ اہم ورک فلوز (ایک انوائس لکھنا، ایک مریض کا نوٹ ریکارڈ کرنا، ایک کام پکڑنا) کنکشن کے بغیر کام کرتے ہیں اور کنکشن واپس آنے پر سنک ہوتے ہیں۔' },
         { q: 'کیا پروڈکٹس ایک اکاؤنٹ شیئر کرتی ہیں؟', a: 'اختیاری طور پر۔ ایک واحد Clap اکاؤنٹ کسی بھی پروڈکٹ میں سائن ان کر سکتا ہے جو آپٹ ان کرتی ہے، لیکن ہر پروڈکٹ ابھی بھی اپنا ڈیٹا، اپنی سبسکرپشن، اور اپنا رضامندی کا بہاؤ رکھتی ہے۔ آپ دوسروں کے بغیر ایک پروڈکٹ استعمال کر سکتے ہیں، دوسری پر سوئچ کر سکتے ہیں، یا ایک کو باقی پر اثر ڈالے بغیر ڈلیٹ کر سکتے ہیں۔' },
         { q: 'کیا آپ انفرادی گاہکوں کے لیے کسٹم فیچرز بناتے ہیں؟', a: 'شاذ و نادر، اور صرف جب فیچر وسیع تر صارف بنیاد کے لیے منصفانہ فٹ ہو۔ ہم ایک گاہک کے لیے کسی پروڈکٹ کا نجی فورک نہیں بنائیں گے؛ وہ راستہ بحالی کے قبرستان کی طرف لے جاتا ہے۔ تاہم، ہم ایک روڈ میپ آئٹم کو ترجیح دیں گے اگر کوئی قابل اعتماد پارٹنر اسے اسپانسر کرے اور نتیجہ سب کے لیے ایک عوامی فیچر کے طور پر آئے۔' },
@@ -2845,7 +2845,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'کیا آپ مجھے اس ویب سائٹ پر ٹریک کرتے ہیں؟', a: 'نہیں۔ اس سائٹ میں صفر اینالٹکس، صفر پکسلز، صفر ٹریکنگ کوکیز، صفر ایڈ نیٹ ورکس، اور تیسرے فریق سے صفر مواد ہے۔ ہم صرف وہ ڈیٹا دیکھتے ہیں جو آپ رابطہ فارم میں ٹائپ کرتے ہیں اور بھیجتے ہیں۔ no-third-party.mjs نامی ایک مسلسل انٹیگریشن اسکرپٹ بنڈل میں کسی بیرونی ہوسٹ کے ظاہر ہونے پر ریلیز کو روک دیتی ہے۔ On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'میرا ڈیٹا کہاں ذخیرہ ہے؟', a: 'جب آپ ہم سے رابطہ کرتے ہیں، آپ کا پیغام ای میل کے ذریعے البرٹا، کینیڈا میں ایک ان باکس کو بھیجا جاتا ہے۔ ہم اسے اس سائٹ پر ڈیٹا بیس میں ذخیرہ نہیں کرتے۔ پروڈکٹ-مخصوص ڈیٹا (جب آپ ہمارے کسی ٹول کے لیے سائن اپ کرتے ہیں) اس پروڈکٹ کی اپنی پرائیویسی پالیسی میں اس کے اپنے ڈومین پر بیان کیا گیا ہے۔' },
-        { q: 'کیا میں وہ ڈیٹا حذف کر سکتا ہوں جو آپ میرے بارے میں رکھتے ہیں؟', a: 'جی ہاں۔ آپ نے جو پتہ استعمال کیا اس سے legal@intelligentsingularityinc.com پر ای میل کریں۔ ہم تین کاروباری دنوں میں وصولی کی تصدیق کرتے ہیں۔ ہم تیس دنوں کے اندر حذف مکمل کرتے ہیں۔ وہی حق ہر پروڈکٹ پر لاگو ہوتا ہے، PIPEDA اور GDPR کے مساوی اصولوں کے تحت۔' },
+        { q: 'کیا میں وہ ڈیٹا حذف کر سکتا ہوں جو آپ میرے بارے میں رکھتے ہیں؟', a: 'جی ہاں۔ آپ نے جو پتہ استعمال کیا اس سے legal@intelligentsingularityai.com پر ای میل کریں۔ ہم تین کاروباری دنوں میں وصولی کی تصدیق کرتے ہیں۔ ہم تیس دنوں کے اندر حذف مکمل کرتے ہیں۔ وہی حق ہر پروڈکٹ پر لاگو ہوتا ہے، PIPEDA اور GDPR کے مساوی اصولوں کے تحت۔' },
         { q: 'کیا آپ میرے مواد پر AI ماڈلز تربیت دیتے ہیں؟', a: 'نہیں۔ ہمارے پورٹ فولیو میں AI فیچرز صرف وہ ڈیٹا استعمال کرتے ہیں جو آپ واضح طور پر جمع کرواتے ہیں، آپ کے اپنے اکاؤنٹ کے دائرے میں۔ آپ کا نجی مواد کبھی ایک مشترکہ تربیتی سیٹ میں نہیں ملایا جاتا، کبھی ایک عوامی ماڈل کو بہتر بنانے کے لیے استعمال نہیں ہوتا، اور کبھی ایک تھرڈ-پارٹی AI فراہم کنندہ کو نہیں بھیجا جاتا جو آپ کے پرومپٹس برقرار رکھتا ہے۔' },
       ],
       [
@@ -2855,9 +2855,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'میں اسٹوڈیو کے ساتھ شراکت کیسے کروں؟', a: 'ہم NGOs، حکومتوں اور کمپنیوں کے ساتھ کام کرتے ہیں۔ مشترکہ ہدف ان لوگوں کے لیے عالمی-رسائی سافٹ ویئر ہے جو عام طور پر اس کا متحمل نہیں ہو سکتے۔ رابطہ صفحے سے ایک مختصر نوٹ بھیجیں۔ اسے Partnerships پر روٹ کریں۔ آپ کو دو کاروباری دنوں میں جواب ملے گا۔' },
-        { q: 'مجھے پریس کٹ کہاں ملے گی؟', a: 'فیکٹ شیٹ، منظور شدہ اقتباسات، برانڈ گائیڈنس، بانی حوالہ، اور پریس بائلر پلیٹ کے لیے /press پر جائیں۔ لوگو فائل، ہائی-ریز بانی پورٹریٹ، یا ایک حسب ضرورت بیان درکار ہے؟ اپنی ڈیڈ لائن کے ساتھ press@intelligentsingularityinc.com پر ای میل کریں۔' },
-        { q: 'کیا آپ کانفرنسوں میں بات کرتے ہیں؟', a: 'کبھی کبھی۔ ہم عالمی رسائی، AI-بڑھے ہوئے ٹیموں، صحت سافٹ ویئر، اور لین سافٹ ویئر اقتصادیات پر بات کرتے ہیں۔ ایونٹ تفصیلات اور حاضرین کی تعداد کے ساتھ press@intelligentsingularityinc.com پر لکھیں۔ ہم ایمانداری سے بتائیں گے کہ آ سکتے ہیں یا نہیں۔' },
-        { q: 'کیا آپ عطیات یا گرانٹس لیتے ہیں؟', a: 'ہم صارفین سے عطیات نہیں مانگتے۔ ہم گرانٹس کا خیر مقدم کرتے ہیں۔ گرانٹس فاؤنڈیشنز یا بینکوں سے آنی چاہئیں۔ گرانٹ ان مارکیٹوں میں رسائی سافٹ ویئر سے بندھی ہونی چاہیے جہاں مکمل قیمتیں ابھی کام نہیں کرتیں۔ partners@intelligentsingularityinc.com پر ای میل کریں۔' },
+        { q: 'مجھے پریس کٹ کہاں ملے گی؟', a: 'فیکٹ شیٹ، منظور شدہ اقتباسات، برانڈ گائیڈنس، بانی حوالہ، اور پریس بائلر پلیٹ کے لیے /press پر جائیں۔ لوگو فائل، ہائی-ریز بانی پورٹریٹ، یا ایک حسب ضرورت بیان درکار ہے؟ اپنی ڈیڈ لائن کے ساتھ press@intelligentsingularityai.com پر ای میل کریں۔' },
+        { q: 'کیا آپ کانفرنسوں میں بات کرتے ہیں؟', a: 'کبھی کبھی۔ ہم عالمی رسائی، AI-بڑھے ہوئے ٹیموں، صحت سافٹ ویئر، اور لین سافٹ ویئر اقتصادیات پر بات کرتے ہیں۔ ایونٹ تفصیلات اور حاضرین کی تعداد کے ساتھ press@intelligentsingularityai.com پر لکھیں۔ ہم ایمانداری سے بتائیں گے کہ آ سکتے ہیں یا نہیں۔' },
+        { q: 'کیا آپ عطیات یا گرانٹس لیتے ہیں؟', a: 'ہم صارفین سے عطیات نہیں مانگتے۔ ہم گرانٹس کا خیر مقدم کرتے ہیں۔ گرانٹس فاؤنڈیشنز یا بینکوں سے آنی چاہئیں۔ گرانٹ ان مارکیٹوں میں رسائی سافٹ ویئر سے بندھی ہونی چاہیے جہاں مکمل قیمتیں ابھی کام نہیں کرتیں۔ partners@intelligentsingularityai.com پر ای میل کریں۔' },
       ],
       [
         { q: 'کیا آپ بھرتی کر رہے ہیں؟', a: 'کبھی کبھی۔ /careers صفحہ موجودہ کھلے کرداروں کی فہرست دیتا ہے۔ جب کچھ بھی درج نہ ہو، ہم اس وقت بھرتی نہیں کر رہے، اختتام۔ ہم ایک سدا بہار "ہمیں اپنا CV بھیجیں" چنل نہیں چلاتے جو کہیں نہیں جاتا — لیکن ایک سوچا سمجھا تعارف ہمیشہ ایک حقیقی جواب پاتا ہے۔' },
@@ -2870,7 +2870,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · JAWABAN LANGSUNG', title: 'Pertanyaan, dijawab dengan langsung.',
     lede: 'Apa yang sebenarnya orang tanyakan kepada kami — tentang studio, produk, dan trade-off privasi saat menggunakan alat kami.',
     sectionTitles: ['Studio', 'Produk', 'Harga dan uang', 'Privasi dan data', 'Bahasa dan aksesibilitas', 'Kemitraan dan pers', 'Perekrutan'],
-    stillStuckCta: { eyebrow: 'Masih ada pertanyaan?', heading: 'Seorang manusia membaca setiap pesan.', body: 'Kami biasanya membalas dalam dua hari kerja. Kirim pesan melalui formulir. Atau tulis ke hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: 'Masih ada pertanyaan?', heading: 'Seorang manusia membaca setiap pesan.', body: 'Kami biasanya membalas dalam dua hari kerja. Kirim pesan melalui formulir. Atau tulis ke hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: 'Apa itu Intelligent Singularity?', a: 'Intelligent Singularity Inc. adalah perusahaan induk dari ekosistem Clap. Kami adalah studio kecil, diperkuat AI, sepenuhnya remote. Kami berbasis di Alberta, Kanada. Kami membangun perangkat lunak untuk akses universal. Produk unggulan yang sama melayani pembeli Fortune 500 di New York dan kios pasar satu orang di Lagos. Satu stack bersama. Satu misi.' },
@@ -2883,7 +2883,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Apakah produk-produk ini nyata atau masih ide?', a: 'Setiap produk di halaman portofolio memiliki label status yang jujur. "Live" berarti Anda bisa mendaftar hari ini. "Staging" berarti berjalan tetapi hanya dengan undangan saat kami memperkuatnya. "Awaiting approval" siap tetapi menunggu regulator. "Infrastructure" adalah kode yang kami bagikan secara publik dan yang diandalkan produk lain. Kami tidak mengumumkan terlebih dahulu hal-hal yang belum ada.' },
         { q: 'Mengapa beberapa produk terdaftar sebagai staging?', a: 'Sebagian besar alat kami masih sedang diperkuat sebelum peluncuran publik. Kami lebih suka merilis terlambat daripada merusak kepercayaan di hari pertama — terutama di kesehatan, pembayaran, dan trading di mana regresi adalah insiden dunia nyata, bukan ketidaknyamanan. Jika Anda ingin akses awal, tulis kepada kami dari halaman kontak dan kami akan dengan jujur memberi tahu apakah build staging sudah dapat mendukung Anda.' },
-        { q: 'Mengapa produk menautkan ke domain lain?', a: 'Setiap produk adalah layanannya sendiri dengan syarat, harga, pendaftaran, dan pemberitahuan privasi sendiri. Mengirim Anda langsung ke domain produk lebih cepat, dan membuat batas-batas jelas: clappe.com diatur oleh syarat Clappe, clappay.com oleh ClapPay, dan seterusnya. Situs korporat di intelligentsingularityinc.com adalah pintu depan, bukan sistem penagihan.' },
+        { q: 'Mengapa produk menautkan ke domain lain?', a: 'Setiap produk adalah layanannya sendiri dengan syarat, harga, pendaftaran, dan pemberitahuan privasi sendiri. Mengirim Anda langsung ke domain produk lebih cepat, dan membuat batas-batas jelas: clappe.com diatur oleh syarat Clappe, clappay.com oleh ClapPay, dan seterusnya. Situs korporat di intelligentsingularityai.com adalah pintu depan, bukan sistem penagihan.' },
         { q: 'Bisakah saya menggunakan produk Anda offline?', a: 'Ya. Setiap produk dirancang untuk bekerja di jaringan lambat dan terputus-putus. Kami menargetkan ponsel berusia lima tahun di 2G dua bar sebagai baseline, bukan sebagai nice-to-have. Halaman berbobot kurang dari lima puluh kilobyte pada first paint, gzipped. Alur kerja penting (menulis faktur, mencatat catatan pasien, menangkap pekerjaan) bekerja tanpa koneksi dan tersinkronisasi saat koneksi kembali.' },
         { q: 'Apakah produk berbagi akun?', a: 'Opsional. Satu akun Clap dapat masuk ke produk apa pun yang opt in, tetapi setiap produk masih menyimpan data sendiri, langganan sendiri, dan alur persetujuan sendiri. Anda dapat menggunakan satu produk tanpa yang lain, beralih ke yang lain, atau menghapus satu tanpa memengaruhi yang lain.' },
         { q: 'Apakah Anda membangun fitur kustom untuk pelanggan individual?', a: 'Jarang, dan hanya ketika fitur tersebut cocok untuk basis pengguna yang lebih luas. Kami tidak akan membangun fork pribadi dari sebuah produk untuk satu pelanggan; jalan itu mengarah ke kuburan pemeliharaan. Namun, kami akan memprioritaskan item peta jalan jika mitra yang kredibel mensponsorinya dan hasilnya mendarat sebagai fitur publik untuk semua orang.' },
@@ -2896,7 +2896,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Apakah Anda melacak saya di situs web ini?', a: 'Tidak. Situs ini memiliki nol analitik, nol piksel, nol cookie pelacakan, nol jaringan iklan, dan nol konten dari pihak ketiga. Satu-satunya data yang kami lihat adalah apa yang Anda ketik di formulir kontak dan tekan kirim. Skrip integrasi berkelanjutan bernama no-third-party.mjs memblokir rilis jika ada host eksternal muncul di bundel. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'Di mana data saya disimpan?', a: 'Saat Anda menghubungi kami, pesan Anda dikirim melalui email ke kotak masuk di Alberta, Kanada. Kami tidak menyimpannya di database pada situs ini. Data spesifik produk (saat Anda mendaftar untuk salah satu alat kami) dijelaskan dalam kebijakan privasi produk tersebut di domainnya sendiri.' },
-        { q: 'Bisakah saya menghapus data yang Anda simpan tentang saya?', a: 'Ya. Email legal@intelligentsingularityinc.com dari alamat yang Anda gunakan. Kami mengonfirmasi penerimaan dalam tiga hari kerja. Kami menyelesaikan penghapusan dalam tiga puluh hari. Hak yang sama berlaku untuk setiap produk, di bawah PIPEDA dan aturan setara GDPR.' },
+        { q: 'Bisakah saya menghapus data yang Anda simpan tentang saya?', a: 'Ya. Email legal@intelligentsingularityai.com dari alamat yang Anda gunakan. Kami mengonfirmasi penerimaan dalam tiga hari kerja. Kami menyelesaikan penghapusan dalam tiga puluh hari. Hak yang sama berlaku untuk setiap produk, di bawah PIPEDA dan aturan setara GDPR.' },
         { q: 'Apakah Anda melatih model AI dengan konten saya?', a: 'Tidak. Fitur AI di seluruh portofolio kami hanya menggunakan data yang Anda kirim secara eksplisit, dalam lingkup akun Anda sendiri. Konten pribadi Anda tidak pernah dicampur ke dalam set pelatihan bersama, tidak pernah digunakan untuk meningkatkan model publik, dan tidak pernah dikirim ke penyedia AI pihak ketiga yang menyimpan prompt Anda.' },
       ],
       [
@@ -2906,9 +2906,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Bagaimana saya bermitra dengan studio?', a: 'Kami bekerja dengan LSM, pemerintah, dan perusahaan. Tujuan bersama adalah perangkat lunak akses universal untuk orang-orang yang biasanya tidak mampu membayar. Kirim catatan singkat dari halaman kontak. Arahkan ke Partnerships. Anda akan mendengar kabar dalam dua hari kerja.' },
-        { q: 'Di mana saya bisa menemukan press kit?', a: 'Kunjungi /press untuk lembar fakta, kutipan yang disetujui, panduan brand, referensi pendiri, dan boilerplate pers. Butuh file logo, potret pendiri resolusi tinggi, atau pernyataan kustom? Email press@intelligentsingularityinc.com dengan tenggat Anda.' },
-        { q: 'Apakah Anda berbicara di konferensi?', a: 'Kadang-kadang. Kami berbicara tentang akses universal, tim diperkuat AI, perangkat lunak kesehatan, dan ekonomi perangkat lunak lean. Tulis ke press@intelligentsingularityinc.com dengan detail acara dan ukuran audiens. Kami akan dengan jujur mengatakan apakah kami bisa hadir.' },
-        { q: 'Apakah Anda menerima donasi atau hibah?', a: 'Kami tidak meminta donasi dari pengguna. Kami menyambut hibah. Hibah harus berasal dari yayasan atau bank. Hibah harus terikat pada perangkat lunak akses di pasar di mana harga penuh belum bekerja. Email partners@intelligentsingularityinc.com.' },
+        { q: 'Di mana saya bisa menemukan press kit?', a: 'Kunjungi /press untuk lembar fakta, kutipan yang disetujui, panduan brand, referensi pendiri, dan boilerplate pers. Butuh file logo, potret pendiri resolusi tinggi, atau pernyataan kustom? Email press@intelligentsingularityai.com dengan tenggat Anda.' },
+        { q: 'Apakah Anda berbicara di konferensi?', a: 'Kadang-kadang. Kami berbicara tentang akses universal, tim diperkuat AI, perangkat lunak kesehatan, dan ekonomi perangkat lunak lean. Tulis ke press@intelligentsingularityai.com dengan detail acara dan ukuran audiens. Kami akan dengan jujur mengatakan apakah kami bisa hadir.' },
+        { q: 'Apakah Anda menerima donasi atau hibah?', a: 'Kami tidak meminta donasi dari pengguna. Kami menyambut hibah. Hibah harus berasal dari yayasan atau bank. Hibah harus terikat pada perangkat lunak akses di pasar di mana harga penuh belum bekerja. Email partners@intelligentsingularityai.com.' },
       ],
       [
         { q: 'Apakah Anda merekrut?', a: 'Kadang-kadang. Halaman /careers mencantumkan peran terbuka saat ini. Ketika tidak ada yang tercantum, kami tidak merekrut pada saat itu, titik. Kami tidak menjalankan saluran evergreen "kirim CV Anda" yang tidak ke mana-mana — tetapi pengantar yang penuh pertimbangan selalu mendapat balasan nyata.' },
@@ -2921,7 +2921,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · MAJIBU SAHIHI', title: 'Maswali, yanayojibiwa kwa unyofu.',
     lede: 'Kile watu wanachotuuliza kweli — kuhusu studio, bidhaa, na matokeo ya faragha ya kutumia zana zetu.',
     sectionTitles: ['Studio', 'Bidhaa', 'Bei na pesa', 'Faragha na data', 'Lugha na ufikivu', 'Ushirikiano na vyombo vya habari', 'Kuajiri'],
-    stillStuckCta: { eyebrow: 'Bado una swali?', heading: 'Mtu halisi husoma kila ujumbe.', body: 'Kwa kawaida tunajibu ndani ya siku mbili za kazi. Tuma ujumbe kupitia fomu. Au andika kwa hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: 'Bado una swali?', heading: 'Mtu halisi husoma kila ujumbe.', body: 'Kwa kawaida tunajibu ndani ya siku mbili za kazi. Tuma ujumbe kupitia fomu. Au andika kwa hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: 'Intelligent Singularity ni nini?', a: 'Intelligent Singularity Inc. ni kampuni mama ya mfumo wa Clap. Sisi ni studio ndogo, iliyoimarishwa kwa AI, mbali kabisa. Tuko Alberta, Kanada. Tunajenga programu kwa ajili ya ufikiaji wa wote. Bidhaa kuu ile ile inahudumia mnunuzi wa Fortune 500 huko New York na duka la mtu mmoja kijijini Lagos. Stack moja iliyoshirikiwa. Dhamira moja.' },
@@ -2934,7 +2934,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Je, bidhaa hizi ni za kweli au bado ni mawazo?', a: 'Kila bidhaa kwenye ukurasa wa portfolio ina lebo ya hali ya uaminifu. "Live" maana yake unaweza kujiandikisha leo. "Staging" maana yake inaendesha lakini kwa mwaliko tu wakati tunaiimarisha. "Awaiting approval" iko tayari lakini inasubiri mdhibiti. "Infrastructure" ni codi tunayoshiriki hadharani na ambayo bidhaa nyingine zinategemea. Hatutangazi mapema vitu ambavyo havipo bado.' },
         { q: 'Kwa nini bidhaa zingine zimeorodheshwa kama staging?', a: 'Vifaa vyetu vingi bado vinaimarishwa kabla ya uzinduzi wa umma. Tunapendelea kutuma kuchelewa kuliko kuvunja imani siku ya kwanza — hasa katika afya, malipo, na biashara ambapo urejeshaji ni tukio la ulimwengu halisi, sio usumbufu. Ikiwa unataka ufikiaji wa mapema, tuandikie kutoka ukurasa wa mawasiliano na tutakuambia kwa unyofu kama build ya staging inaweza kukusaidia bado.' },
-        { q: 'Kwa nini bidhaa zinaungwa kwenye vikoa vingine?', a: 'Kila bidhaa ni huduma yake yenye masharti yake, bei, kujiandikisha, na arifa ya faragha. Kukutuma moja kwa moja kwenye kikoa cha bidhaa ni haraka zaidi, na kunafanya mipaka iwe wazi: clappe.com unatawaliwa na masharti ya Clappe, clappay.com na ClapPay, na kadhalika. Tovuti ya shirika kwenye intelligentsingularityinc.com ni mlango wa mbele, sio mfumo wa malipo.' },
+        { q: 'Kwa nini bidhaa zinaungwa kwenye vikoa vingine?', a: 'Kila bidhaa ni huduma yake yenye masharti yake, bei, kujiandikisha, na arifa ya faragha. Kukutuma moja kwa moja kwenye kikoa cha bidhaa ni haraka zaidi, na kunafanya mipaka iwe wazi: clappe.com unatawaliwa na masharti ya Clappe, clappay.com na ClapPay, na kadhalika. Tovuti ya shirika kwenye intelligentsingularityai.com ni mlango wa mbele, sio mfumo wa malipo.' },
         { q: 'Je, naweza kutumia bidhaa zako bila intaneti?', a: 'Ndiyo. Kila bidhaa imeundwa kufanya kazi kwenye mitandao ya polepole na inayokatika. Tunalenga simu ya miaka mitano kwenye 2G ya mistari miwili kama msingi, sio kama nzuri-kuwa-nayo. Kurasa zinazito chini ya kilobaiti hamsini kwenye paint ya kwanza, gzipped. Mtiririko muhimu (kuandika ankara, kurekodi noti ya mgonjwa, kunasa kazi) hufanya kazi bila muunganisho na kusawazisha unaporejea.' },
         { q: 'Je, bidhaa zinashiriki akaunti?', a: 'Kwa hiari. Akaunti moja ya Clap inaweza kuingia kwenye bidhaa yoyote inayokubali, lakini kila bidhaa bado huhifadhi data yake, usajili wake, na mtiririko wake wa idhini. Unaweza kutumia bidhaa moja bila zingine, kubadilisha hadi nyingine, au kufuta moja bila kuathiri nyinginezo.' },
         { q: 'Je, mnajenga vipengele maalum kwa wateja binafsi?', a: 'Mara chache, na tu wakati kipengele kinafaa vyema kwa msingi mpana wa watumiaji. Hatutajenga fork ya kibinafsi ya bidhaa kwa mteja mmoja; njia hiyo inaongoza kwenye makaburi ya matengenezo. Hata hivyo, tutaweka kipaumbele kipengele cha ramani ya barabara ikiwa mshirika anayeaminika anaadhinisha na matokeo yanapatikana kama kipengele cha umma kwa kila mtu.' },
@@ -2947,7 +2947,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Je, mnanifuatilia kwenye tovuti hii?', a: 'Hapana. Tovuti hii ina sifuri za uchanganuzi, sifuri za pikseli, sifuri za vidakuzi vya kufuatilia, sifuri za mitandao ya matangazo, na sifuri za maudhui kutoka kwa wahusika wa nje. Data pekee tunayoona ni kile unachoandika kwenye fomu ya mawasiliano na kubonyeza tuma. Hati ya muunganiko endelevu inayoitwa no-third-party.mjs huzuia kutolewa ikiwa mwenyeji wowote wa nje atatokea kwenye bundle. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'Data yangu inahifadhiwa wapi?', a: 'Unapowasiliana nasi, ujumbe wako unatumwa kwa barua pepe kwenye sanduku la kupokea huko Alberta, Kanada. Hatuihifadhi katika hifadhidata kwenye tovuti hii. Data mahususi ya bidhaa (unapojiandikisha kwa mojawapo ya zana zetu) imeelezwa katika sera ya faragha ya bidhaa hiyo kwenye kikoa chake.' },
-        { q: 'Je, ninaweza kufuta data unayoshikilia kuhusu mimi?', a: 'Ndiyo. Tuma barua pepe kwa legal@intelligentsingularityinc.com kutoka anwani uliyotumia. Tunathibitisha kupokea ndani ya siku tatu za kazi. Tunamaliza ufutaji ndani ya siku thelathini. Haki ile ile inatumika kwa kila bidhaa, chini ya PIPEDA na kanuni sawa na GDPR.' },
+        { q: 'Je, ninaweza kufuta data unayoshikilia kuhusu mimi?', a: 'Ndiyo. Tuma barua pepe kwa legal@intelligentsingularityai.com kutoka anwani uliyotumia. Tunathibitisha kupokea ndani ya siku tatu za kazi. Tunamaliza ufutaji ndani ya siku thelathini. Haki ile ile inatumika kwa kila bidhaa, chini ya PIPEDA na kanuni sawa na GDPR.' },
         { q: 'Je, mnafundisha mifano ya AI kwenye maudhui yangu?', a: 'Hapana. Vipengele vya AI katika portfolio yetu yote hutumia tu data unayowasilisha wazi, ndani ya wigo wa akaunti yako mwenyewe. Maudhui yako binafsi hayachanganywi kamwe kwenye seti ya mafunzo iliyoshirikiwa, hayatumiki kamwe kuboresha mfano wa umma, na hayatumwi kamwe kwa mtoa huduma wa AI wa nje anayehifadhi maelekezo yako.' },
       ],
       [
@@ -2957,9 +2957,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Ninafanyaje ushirikiano na studio?', a: 'Tunafanya kazi na NGOs, serikali, na kampuni. Lengo la pamoja ni programu ya ufikiaji wa wote kwa watu ambao kwa kawaida hawawezi kumudu. Tuma ujumbe mfupi kutoka ukurasa wa mawasiliano. Elekeza kwenye Partnerships. Utasikia ndani ya siku mbili za kazi.' },
-        { q: 'Naweza kupata press kit wapi?', a: 'Tembelea /press kupata karatasi ya ukweli, manukuu yaliyoidhinishwa, mwongozo wa brand, marejeo ya mwanzilishi, na boilerplate ya vyombo vya habari. Unahitaji faili ya nembo, picha ya azimio la juu ya mwanzilishi, au taarifa maalum? Tuma barua pepe kwa press@intelligentsingularityinc.com pamoja na muda wako.' },
-        { q: 'Je, mnazungumza kwenye mikutano?', a: 'Wakati mwingine. Tunazungumza kuhusu ufikiaji wa wote, timu zilizoimarishwa kwa AI, programu ya afya, na uchumi wa programu lean. Andika kwa press@intelligentsingularityinc.com pamoja na maelezo ya tukio na ukubwa wa hadhira. Tutakuambia kwa unyofu ikiwa tunaweza kuhudhuria.' },
-        { q: 'Je, mnachukua michango au ruzuku?', a: 'Hatuombi michango kutoka kwa watumiaji. Tunakaribisha ruzuku. Ruzuku lazima zitoke kwa misingi au benki. Ruzuku lazima ifungamane na programu ya ufikiaji katika masoko ambapo bei kamili bado hazifanyi kazi. Tuma barua pepe kwa partners@intelligentsingularityinc.com.' },
+        { q: 'Naweza kupata press kit wapi?', a: 'Tembelea /press kupata karatasi ya ukweli, manukuu yaliyoidhinishwa, mwongozo wa brand, marejeo ya mwanzilishi, na boilerplate ya vyombo vya habari. Unahitaji faili ya nembo, picha ya azimio la juu ya mwanzilishi, au taarifa maalum? Tuma barua pepe kwa press@intelligentsingularityai.com pamoja na muda wako.' },
+        { q: 'Je, mnazungumza kwenye mikutano?', a: 'Wakati mwingine. Tunazungumza kuhusu ufikiaji wa wote, timu zilizoimarishwa kwa AI, programu ya afya, na uchumi wa programu lean. Andika kwa press@intelligentsingularityai.com pamoja na maelezo ya tukio na ukubwa wa hadhira. Tutakuambia kwa unyofu ikiwa tunaweza kuhudhuria.' },
+        { q: 'Je, mnachukua michango au ruzuku?', a: 'Hatuombi michango kutoka kwa watumiaji. Tunakaribisha ruzuku. Ruzuku lazima zitoke kwa misingi au benki. Ruzuku lazima ifungamane na programu ya ufikiaji katika masoko ambapo bei kamili bado hazifanyi kazi. Tuma barua pepe kwa partners@intelligentsingularityai.com.' },
       ],
       [
         { q: 'Je, mnaajiri?', a: 'Wakati mwingine. Ukurasa wa /careers unaorodhesha nafasi zilizofunguliwa za sasa. Wakati hakuna kilichoorodheshwa, hatuajiri wakati huo, basi. Hatuendeshi mlolongo wa kudumu wa "tutume CV yako" usioenda popote — lakini utangulizi mzuri kila wakati hupata jibu halisi.' },
@@ -2972,7 +2972,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · ÌDÁHÙN TÓ HÀN', title: 'Àwọn ìbéèrè, ìdáhùn tó rọrùn.',
     lede: 'Ohun tí àwọn ènìyàn máa ń béèrè lọ́wọ́ wa lóòótọ́ — nípa studio, àwọn ọjà, àti ìwọ̀n-ìfàníyàn ti àwọn ohun-èlò wa.',
     sectionTitles: ['Studio', 'Àwọn ọjà', 'Iye-owó àti owó', 'Àṣírí àti déètà', 'Àwọn èdè àti àǹfààní', 'Ìbáṣepọ̀ àti ìròyìn', 'Ìgbaṣẹ́'],
-    stillStuckCta: { eyebrow: 'Ṣì ní ìbéèrè?', heading: 'Ènìyàn gidi ka àkọsílẹ̀ kọ̀ọ̀kan.', body: 'A sábà máa ń dáhùn nínú ọjọ́ iṣẹ́ méjì. Fi àkọsílẹ̀ ránṣẹ́ nípasẹ̀ fọ́ọ̀mù. Tàbí kọ́ sí hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: 'Ṣì ní ìbéèrè?', heading: 'Ènìyàn gidi ka àkọsílẹ̀ kọ̀ọ̀kan.', body: 'A sábà máa ń dáhùn nínú ọjọ́ iṣẹ́ méjì. Fi àkọsílẹ̀ ránṣẹ́ nípasẹ̀ fọ́ọ̀mù. Tàbí kọ́ sí hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: 'Kí ni Intelligent Singularity?', a: 'Intelligent Singularity Inc. jẹ́ kampani ìyá ti mfumo Clap. A jẹ́ studio kékeré, tí AI ti múratàn, ní ọ̀nà jíjìn pátápátá. A wà ní Alberta, Canada. A ń kọ́ sọ́fítíwéàrì fún àǹfààní ayé ńláńlá. Ọjà àkọ́kọ́ kannáà ń ṣe iṣẹ́ fún olùra Fortune 500 ní New York àti ìpẹ̀ja oníkàńṣoṣo ní Lagos. Stack kan tí a pín. Iṣẹ́ àyànfúnni kan.' },
@@ -2985,7 +2985,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Ǹjẹ́ àwọn ọjà wọnyi jẹ́ gidi tàbí ṣì jẹ́ àwọn ọ̀rọ̀-èrò?', a: 'Gbogbo ọjà lórí ojú-ìwé portfolio ní àmì ipò olótìítọ́. "Live" túmọ̀ sí o lè fọwọ́sí lónìí. "Staging" túmọ̀ sí ó ń ṣiṣẹ́ ṣùgbọ́n nípasẹ̀ ìpè nikan nígbà tí à ń mú un le. "Awaiting approval" ti ṣetán ṣùgbọ́n ó ń dúró fún olùdarí òfin. "Infrastructure" jẹ́ codi tí à ń pín ní gbangba àti ti àwọn ọjà mìíràn dá lé. A kì í kéde ní àkọ́kọ́ àwọn ohun tí kò sí.' },
         { q: 'Kí ló dé tí àwọn ọjà kan fi wà ní àkójọ bí staging?', a: 'Ọ̀pọ̀lọpọ̀ àwọn ohun-èlò wa ṣì ń le-bẹ́ẹ̀-le kí á tó fi jádelé ní gbangba. A fẹ́ ká ó tó láti jádelé pẹ̀lú ìpẹ́ ju káá àfara àjọṣe ní ọjọ́ àkọ́kọ́ — pàápàá ní ìlera, ìsanwó, àti ìṣòwò ibi tí ìpadàsẹ́yìn jẹ́ ìṣẹ̀lẹ̀ ayé gidi, kì í ṣe àì-tó-rìn. Tí o bá fẹ́ ìwọlé ní àkọ́kọ́, kọ́wé sí wa lórí ojú-ìwé olùbátà àti àwa á sọ fún ọ lóòótọ́ bóyá staging build lè ràn ọ́ lọ́wọ́ ṣì.' },
-        { q: 'Kí ló dé tí àwọn ọjà fi ń sopọ̀ sí àwọn àpá-ìwé mìíràn?', a: 'Ọjà kọ̀ọ̀kan jẹ́ iṣẹ́ tirẹ̀ pẹ̀lú àwọn àdéhùn rẹ̀, iye-owó, fọwọ́sí, àti àkọsílẹ̀ àṣírí. Líla yín lọ tààrà sí àpá-ìwé ọjà jẹ́ kíákíá, ó sì ń mú àwọn ààlà tó ṣe kedere: clappe.com ni a ń ṣe àkóso pẹ̀lú àdéhùn Clappe, clappay.com pẹ̀lú ti ClapPay, àti bẹ́ẹ̀ síwájú. Ojú-òpó ilé-iṣẹ́ ní intelligentsingularityinc.com ni ìlẹ̀kùn iwájú, kì í ṣe ètò bíllingì.' },
+        { q: 'Kí ló dé tí àwọn ọjà fi ń sopọ̀ sí àwọn àpá-ìwé mìíràn?', a: 'Ọjà kọ̀ọ̀kan jẹ́ iṣẹ́ tirẹ̀ pẹ̀lú àwọn àdéhùn rẹ̀, iye-owó, fọwọ́sí, àti àkọsílẹ̀ àṣírí. Líla yín lọ tààrà sí àpá-ìwé ọjà jẹ́ kíákíá, ó sì ń mú àwọn ààlà tó ṣe kedere: clappe.com ni a ń ṣe àkóso pẹ̀lú àdéhùn Clappe, clappay.com pẹ̀lú ti ClapPay, àti bẹ́ẹ̀ síwájú. Ojú-òpó ilé-iṣẹ́ ní intelligentsingularityai.com ni ìlẹ̀kùn iwájú, kì í ṣe ètò bíllingì.' },
         { q: 'Ǹjẹ́ mo lè lo àwọn ọjà yín láìsí ìntánẹ́ẹ̀tì?', a: 'Bẹ́ẹ̀ni. Ọjà kọ̀ọ̀kan ni a ṣe láti ṣiṣẹ́ lórí àwọn nẹ́tíwọ́kì tí ó lọ́ra àti tí ó ń yé. A ń tọ́ka sí fóònù ọmọ ọdún márùn-ún lórí 2G tó ní mọ́tà méjì gẹ́gẹ́ bí àkọ́kọ́, kì í ṣe gẹ́gẹ́ bí ohun rírí-tó-dára. Àwọn ojú-ìwé ń wúwo lábẹ́ kilobaiti àádọ́ta lórí àkọ́kọ́ paint, gzipped. Àwọn ìṣàn pàtàkì (kọ ìwé-òwò, kọ àkọsílẹ̀ aláìsàn sílẹ̀, mu iṣẹ́) ń ṣiṣẹ́ láìsí ìsopọ̀ ó sì máa ń ṣe ìmúdọ́gba nígbà tí ó padà.' },
         { q: 'Ǹjẹ́ àwọn ọjà ń pín àkáọ̀nù?', a: 'Lójú àyàn. Àkáọ̀nù Clap kan kan lè wọlé sí ọjà kankan tí ó kọ́kọ́, ṣùgbọ́n ọjà kọ̀ọ̀kan ṣì pa déètà rẹ̀ tirẹ̀ mọ́, ìforúkọsílẹ̀ rẹ̀, àti ìṣàn ìfọwọ́sí rẹ̀. O lè lo ọjà kan láìsí àwọn yòókù, yí padà sí òmíràn, tàbí pa ọ̀kan rẹ́ láìsí ní àbùkù àwọn yòókù.' },
         { q: 'Ǹjẹ́ ẹ̀yin máa ń kọ́ àwọn àfikún ìbámu fún àwọn oníbàárá olúkúkú?', a: 'Lọ́pọ̀ ìgbà rárá, àti nikan nígbà tí àfikún náà bá bá àpapọ̀ olùmújáde gbòòrò mu. A kì yóò kọ́ fork ìkọ̀kọ̀ ti ọjà fún oníbàárá kan; ipa ọ̀nà yẹn ń lọ sí ibojì ìmúpadà-bọ̀sípò. Síbẹ̀, a ó fún òṣùwọ̀n nínú akójọ ọ̀nà ṣiwaju tí olùdàrọ́ tí ó gbẹ́kẹ̀lé bá fọwọ́ràn àti bí àbájáde bá farahàn gẹ́gẹ́ bí àfikún tí ó wà ní gbangba fún gbogbo ènìyàn.' },
@@ -2998,7 +2998,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Ǹjẹ́ ẹ̀yin ń tọpinpin mi lórí ojú-òpó yìí?', a: 'Bẹ́ẹ̀kọ́. Ojú-òpó yìí ní àfọkàn-mọ́ òfo, ìpín-òṣùwọ̀n òfo, kúkì ìtọpinpin òfo, nẹ́tíwọ́kì ìpolongò òfo, àti ohun-ìní lati ọ̀dọ̀ àwọn ẹgbẹ́ kẹta òfo. Déètà nikan tí a rí ni ohun tí o tẹ̀ sí inú fọ́ọ̀mù ìbárasọ̀rọ̀ àti tí o tẹ̀ ránṣẹ́. Ìwé ìpapọ̀ tí ń tẹ̀síwájú tí orúkọ rẹ̀ ní no-third-party.mjs ń di ìfilọ̀ tí ó bá ní agbalejò òde tí ó han nínú àkójọpọ̀. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list.' },
         { q: 'Níbo ni a ti ń pa déètà mi mọ́?', a: 'Nígbà tí o bá tako wa, àkọsílẹ̀ rẹ ni a fi ìmẹ́ìlì ránṣẹ́ sí àpótí gbígba ní Alberta, Canada. A kì í pa á mọ́ nínú ipilẹ̀ déètà lórí ojú-òpó yìí. Déètà pàtó-sí-ọjà (nígbà tí o bá fọwọ́sí ọ̀kan lára àwọn ohun-èlò wa) ni a sọ̀rọ̀ rẹ̀ nínú ìlànà àṣírí ọjà yẹn lórí àpá-ìwé tirẹ̀.' },
-        { q: 'Ǹjẹ́ mo lè parẹ́ déètà tí ẹ̀yin ń pa mọ́ nípa mi?', a: 'Bẹ́ẹ̀ni. Fi ìmẹ́ìlì ránṣẹ́ sí legal@intelligentsingularityinc.com láti àdírẹ́sì tí o lò. A jẹ́rìí gbígbà nínú ọjọ́ iṣẹ́ mẹ́ta. A pari ìparẹ́ nínú ọjọ́ ọgbọ̀n. Ẹ̀tọ́ kannáà bá ọjà kọ̀ọ̀kan, lábẹ́ PIPEDA àti àwọn òfin tó dọ́gba pẹ̀lú GDPR.' },
+        { q: 'Ǹjẹ́ mo lè parẹ́ déètà tí ẹ̀yin ń pa mọ́ nípa mi?', a: 'Bẹ́ẹ̀ni. Fi ìmẹ́ìlì ránṣẹ́ sí legal@intelligentsingularityai.com láti àdírẹ́sì tí o lò. A jẹ́rìí gbígbà nínú ọjọ́ iṣẹ́ mẹ́ta. A pari ìparẹ́ nínú ọjọ́ ọgbọ̀n. Ẹ̀tọ́ kannáà bá ọjà kọ̀ọ̀kan, lábẹ́ PIPEDA àti àwọn òfin tó dọ́gba pẹ̀lú GDPR.' },
         { q: 'Ǹjẹ́ ẹ̀yin ń kọ́ àwọn àpẹẹrẹ AI lórí ohun-ìní mi?', a: 'Bẹ́ẹ̀kọ́. Àwọn àfikún AI nínú gbogbo àkójọpọ̀ wa lo nikan déètà tí o fi ránṣẹ́ ní gbangba, nínú àkójọpọ̀ àkáọ̀nù rẹ. Ohun-ìní àdáni rẹ kò pààpọ̀ nínú ètò ìkọ́ tí a pín rí, kò lò rí láti dára si àpẹẹrẹ ti gbangba, kò sì ránṣẹ́ rí sí olùpèsè AI ẹgbẹ́ kẹta tí ó pa àwọn ìfilelẹ̀ rẹ mọ́.' },
       ],
       [
@@ -3008,9 +3008,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Báwo ni mo ṣe lè bá studio náà ṣe ìbáṣepọ̀?', a: 'A ń ṣiṣẹ́ pẹ̀lú àwọn NGO, ìjọba, àti àwọn kampani. Èrò àpapọ̀ ni sọ́fítíwéàrì ìráyé-àgbáyé fún àwọn ènìyàn tí kò lè ní owó láti rà lóòótọ́. Fi àkọsílẹ̀ kúkúrú kan ránṣẹ́ láti ojú-ìwé olùbátà. Pa á sí Partnerships. Ìwọ yóò gbọ́ nínú ọjọ́ iṣẹ́ méjì.' },
-        { q: 'Níbo ni mo ti lè rí press kit?', a: 'Lọ sí /press fún ìwé-òṣùwọ̀n òtítọ́, àwọn àyọkà tí a ti fọwọ́sí, ìtọ́ni brand, ìtọ́ka olùdásílẹ̀, àti boilerplate fún ìròyìn. Nílò fáìlì àmì idánimọ̀, fọ́tò olùdásílẹ̀ tí ó ní ìṣòkan gíga, tàbí àkọsílẹ̀ àdáni? Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityinc.com pẹ̀lú àkókò pípé rẹ.' },
-        { q: 'Ǹjẹ́ ẹ̀yin máa ń sọ̀rọ̀ ní àwọn àpéjọ?', a: 'Nígbà mìíràn. A ń sọ̀rọ̀ nípa ìráyé-àgbáyé, àwọn ẹgbẹ́ tí AI mú lọ́pọ̀, sọ́fítíwéàrì ìlera, àti ìṣirò sọ́fítíwéàrì lean. Kọ́wé sí press@intelligentsingularityinc.com pẹ̀lú àwọn àlàyé ìṣẹ̀lẹ̀ àti ìwọ̀n àwọn olùgbọ́. A ó sọ fún ọ lóòótọ́ bóyá a lè wà.' },
-        { q: 'Ǹjẹ́ ẹ̀yin máa ń gba àwọn ọrẹ tàbí ránṣẹ́?', a: 'A kì í béèrè ọrẹ lọ́wọ́ àwọn olùmújáde. A ń gba ránṣẹ́ kàba. Ránṣẹ́ gbọ́dọ̀ wá láti ọ̀dọ̀ àwọn ipilẹ̀ṣẹ̀ tàbí àwọn báńkì. Ránṣẹ́ gbọ́dọ̀ darapọ̀ mọ́ sọ́fítíwéàrì ìráyé ní àwọn ọjà tí àwọn iye-owó kíkún kò ṣiṣẹ́ ṣì. Fi ìmẹ́ìlì ránṣẹ́ sí partners@intelligentsingularityinc.com.' },
+        { q: 'Níbo ni mo ti lè rí press kit?', a: 'Lọ sí /press fún ìwé-òṣùwọ̀n òtítọ́, àwọn àyọkà tí a ti fọwọ́sí, ìtọ́ni brand, ìtọ́ka olùdásílẹ̀, àti boilerplate fún ìròyìn. Nílò fáìlì àmì idánimọ̀, fọ́tò olùdásílẹ̀ tí ó ní ìṣòkan gíga, tàbí àkọsílẹ̀ àdáni? Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityai.com pẹ̀lú àkókò pípé rẹ.' },
+        { q: 'Ǹjẹ́ ẹ̀yin máa ń sọ̀rọ̀ ní àwọn àpéjọ?', a: 'Nígbà mìíràn. A ń sọ̀rọ̀ nípa ìráyé-àgbáyé, àwọn ẹgbẹ́ tí AI mú lọ́pọ̀, sọ́fítíwéàrì ìlera, àti ìṣirò sọ́fítíwéàrì lean. Kọ́wé sí press@intelligentsingularityai.com pẹ̀lú àwọn àlàyé ìṣẹ̀lẹ̀ àti ìwọ̀n àwọn olùgbọ́. A ó sọ fún ọ lóòótọ́ bóyá a lè wà.' },
+        { q: 'Ǹjẹ́ ẹ̀yin máa ń gba àwọn ọrẹ tàbí ránṣẹ́?', a: 'A kì í béèrè ọrẹ lọ́wọ́ àwọn olùmújáde. A ń gba ránṣẹ́ kàba. Ránṣẹ́ gbọ́dọ̀ wá láti ọ̀dọ̀ àwọn ipilẹ̀ṣẹ̀ tàbí àwọn báńkì. Ránṣẹ́ gbọ́dọ̀ darapọ̀ mọ́ sọ́fítíwéàrì ìráyé ní àwọn ọjà tí àwọn iye-owó kíkún kò ṣiṣẹ́ ṣì. Fi ìmẹ́ìlì ránṣẹ́ sí partners@intelligentsingularityai.com.' },
       ],
       [
         { q: 'Ǹjẹ́ ẹ̀yin ń gba ọmọ-iṣẹ́?', a: 'Nígbà mìíràn. Ojú-ìwé /careers ń ṣe àkójọ àwọn ipa tó ṣíi lọ́wọ́lọ́wọ́. Nígbà tí kò sí ohun tí a ṣe àkójọ, a kì í gba ọmọ-iṣẹ́ ní àkókò yẹn, dípé ńkó. A kì í ṣiṣẹ́ ìpalákèjì "fí CV rẹ ránṣẹ́" tó wà títí láé tó kò ní lọ síbikíbi — ṣùgbọ́n ìfihàn tó ní ìrònú nígbà gbogbo gba ìdáhùn gidi.' },
@@ -3023,7 +3023,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
     eyebrow: 'FAQ · AMSOSHI MASU SAUƘI', title: 'Tambayoyi, an amsa su a sauƙaƙe.',
     lede: "Abin da mutane ke tambayar mu da gaske — game da studio, samfura, da ma'aunin sirri na amfani da kayan aikin mu.",
     sectionTitles: ['Studio', 'Samfura', 'Farashi da kuɗi', 'Sirri da bayanai', 'Harsuna da damar amfani', "Haɗin gwiwa da 'yan jarida", "Ɗaukar ma'aikata"],
-    stillStuckCta: { eyebrow: 'Har yanzu kuna da tambaya?', heading: 'Mutum na karanta kowane saƙo.', body: 'Yawanci muna amsa cikin kwanaki biyu na aiki. Aiko da bayani ta hanyar fom. Ko rubuta zuwa hello@intelligentsingularityinc.com.' },
+    stillStuckCta: { eyebrow: 'Har yanzu kuna da tambaya?', heading: 'Mutum na karanta kowane saƙo.', body: 'Yawanci muna amsa cikin kwanaki biyu na aiki. Aiko da bayani ta hanyar fom. Ko rubuta zuwa hello@intelligentsingularityai.com.' },
     sectionItems: [
       [
         { q: 'Menene Intelligent Singularity?', a: "Intelligent Singularity Inc. shi ne kamfanin uba na tsarin Clap. Mu studio karami ne, wanda AI ya haɓaka, mai aiki ta nesa gaba ɗaya. Muna zaune a Alberta, Kanada. Muna gina software don samun damar amfani na duniya. Babban samfuri guda yana hidima ga mai siye na Fortune 500 a New York da kuma kwalin kasuwa na mutum ɗaya a Lagos. Stack guda da aka raba. Manufa guda." },
@@ -3036,7 +3036,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: "Shin waɗannan samfura na hakika ne ko ra'ayoyi ne kawai?", a: "Kowane samfuri akan shafin portfolio yana da lakabin matsayi mai gaskiya. \"Live\" yana nufin za ku iya yin rajista yau. \"Staging\" yana nufin yana gudana amma ta gayyatu kawai yayin da muke ƙarfafa shi. \"Awaiting approval\" yana shirye amma yana jiran mai tsari. \"Infrastructure\" shi ne lambar da muke raba a bainar jama'a kuma wanda wasu samfuran suka dogara akai. Ba mu sanar da abubuwan da har yanzu basu wanzu ba." },
         { q: 'Me ya sa wasu samfura suna jera kamar staging?', a: "Yawancin kayan aikinmu har yanzu ana ƙarfafa su kafin ƙaddamarwar jama'a. Mu fi son a aika cikin jinkiri fiye da karya amincewa a rana ta farko — musamman a kiwon lafiya, biyan kuɗi, da ciniki inda regression wani lamari ne na ainihin duniya, ba rashin jin daɗi ba. Idan kuna son shiga da wuri, rubuta mana daga shafin tuntuɓa kuma za mu gaya muku da gaskiya idan staging build na iya tallafa muku tukuna." },
-        { q: 'Me ya sa samfura suke haɗawa zuwa wasu yankuna?', a: "Kowane samfuri sabis ne na kansa tare da sharuɗɗansa, farashin sa, rajista, da sanarwar sirri. Aika ku kai tsaye zuwa yankin samfuri ya fi sauri, kuma yana sa iyakoki suka bayyana: clappe.com ana mulkar shi da sharuɗɗan Clappe, clappay.com da ClapPay, da sauransu. Shafin kamfani a intelligentsingularityinc.com shi ne ƙofar gaba, ba tsarin biyan kuɗi ba." },
+        { q: 'Me ya sa samfura suke haɗawa zuwa wasu yankuna?', a: "Kowane samfuri sabis ne na kansa tare da sharuɗɗansa, farashin sa, rajista, da sanarwar sirri. Aika ku kai tsaye zuwa yankin samfuri ya fi sauri, kuma yana sa iyakoki suka bayyana: clappe.com ana mulkar shi da sharuɗɗan Clappe, clappay.com da ClapPay, da sauransu. Shafin kamfani a intelligentsingularityai.com shi ne ƙofar gaba, ba tsarin biyan kuɗi ba." },
         { q: 'Zan iya amfani da samfuranku ba tare da intanet ba?', a: "Ee. An ƙera kowane samfuri don aiki akan hanyoyin sadarwa masu jinkiri da na yanke yanke. Muna nufin wayar da ke shekaru biyar akan 2G mai sandar biyu a matsayin tushe, ba a matsayin abin da yake da kyau samu ba. Shafuka suna nauyi ƙasa da kilobyte hamsin akan paint na farko, gzipped. Mahimman ayyukan aiki (rubuta lissafi, yin rikodin bayanin majiyyaci, kama aiki) suna aiki ba tare da haɗi ba kuma suna daidaitawa lokacin da ya dawo." },
         { q: 'Shin samfura suna raba asusu?', a: 'A zaɓi. Asusun Clap guda ɗaya na iya shiga kowane samfuri da ya yarda, amma kowane samfuri har yanzu yana riƙe da bayanansa, biyan kuɗinsa, da kwararar yardarsa. Kuna iya amfani da samfuri ɗaya ba tare da wasu ba, sauya zuwa wani, ko share ɗaya ba tare da shafa sauran ba.' },
         { q: 'Shin kuna gina fasalulluka na musamman ga abokan ciniki ɗaya ɗaya?', a: 'Da kyar, kuma kawai lokacin da fasalin ya dace da faɗin tushen masu amfani. Ba za mu gina fork na sirri na samfuri ga abokin ciniki ɗaya ba; wannan hanyar tana kai zuwa kabari na kiyayewa. Duk da haka, za mu ba da fifiko ga abu na taswirar hanya idan abokin haɗin gwiwa mai tabbatarwa ya tallafa masa kuma sakamakon ya zo a matsayin fasalin jama\'a ga kowa.' },
@@ -3049,7 +3049,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Shin kuna bibiyar ni akan wannan shafin yanar gizo?', a: "A'a. Wannan shafin yana da sifili na nazari, sifili na pixels, sifili na cookies na bibiya, sifili na hanyoyin tallace-tallace, da sifili na abun ciki daga ɓangare na uku. Bayanan kawai da muke gani su ne abin da kuke buga a cikin fom ɗin tuntuɓa kuma ku danna aika. Wani rubutu na ci gaba da haɗawa mai suna no-third-party.mjs yana toshe fitarwa idan wani mai dauke da bayanai na waje ya fito a cikin bundle. On this marketing site only. Individual products in our portfolio may use named subprocessors — see each product privacy notice for the full list." },
         { q: 'Ina aka ajiye bayanaina?', a: "Lokacin da kuka tuntuɓe mu, an aika saƙon ku ta imel zuwa wani akwatin saƙo a Alberta, Kanada. Ba mu ajiye shi cikin database akan wannan shafin ba. An bayyana bayanai masu alaƙa da samfurin (lokacin da kuka yi rajista don ɗaya daga cikin kayan aikinmu) a cikin manufofin sirri na samfurin akan yankinsa." },
-        { q: 'Zan iya goge bayanan da kuke da su game da ni?', a: "Ee. Aiko da imel zuwa legal@intelligentsingularityinc.com daga adireshin da kuka yi amfani da shi. Muna tabbatar da karɓar a cikin kwanaki uku na aiki. Muna gama gogewa a cikin kwanaki talatin. Hakki guda ya shafi kowane samfuri, ƙarƙashin PIPEDA da ƙa'idodi masu kama da GDPR." },
+        { q: 'Zan iya goge bayanan da kuke da su game da ni?', a: "Ee. Aiko da imel zuwa legal@intelligentsingularityai.com daga adireshin da kuka yi amfani da shi. Muna tabbatar da karɓar a cikin kwanaki uku na aiki. Muna gama gogewa a cikin kwanaki talatin. Hakki guda ya shafi kowane samfuri, ƙarƙashin PIPEDA da ƙa'idodi masu kama da GDPR." },
         { q: 'Shin kuna horar da samfuran AI akan abin da nake ciki?', a: "A'a. Fasalulluka na AI a duk faɗin portfolio ɗinmu suna amfani da bayanan da kuka aika a fili kawai, a cikin iyakar asusun ku. Abubuwan ku na sirri ba a taɓa cakude su a cikin saiti na horo da aka raba ba, ba a taɓa amfani da su don inganta wani samfuri na jama'a ba, kuma ba a taɓa aika su zuwa mai ba da AI na ɓangare na uku da yake riƙe da bayananku ba." },
       ],
       [
@@ -3059,9 +3059,9 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Yaya zan haɗa kai da studio?', a: "Muna aiki tare da NGOs, gwamnatoci, da kamfanoni. Manufar tarayya ita ce software na samun damar duniya ga mutanen da yawanci ba za su iya biya ba. Aika ɗan gajeren bayani daga shafin tuntuɓa. Aika shi zuwa Partnerships. Za ku ji muryarmu cikin kwanaki biyu na aiki." },
-        { q: 'Ina zan iya samun press kit?', a: "Ziyarci /press don takaddar gaskiya, kalmomin da aka amince da su, jagorar brand, ma'anar wanda ya kafa, da boilerplate na 'yan jarida. Kuna buƙatar fayil ɗin tambari, hoton mai kafa mai ƙuduri sosai, ko bayanin musamman? Aiko da imel zuwa press@intelligentsingularityinc.com tare da kwanan watan ƙarshe." },
-        { q: 'Shin kuna magana a tarurruka?', a: "Wani lokaci. Muna magana game da samun damar duniya, ƙungiyoyi waɗanda AI ya haɓaka, software na lafiya, da ilimin tattalin arzikin software lean. Rubuta zuwa press@intelligentsingularityinc.com tare da bayanan taron da girman masu sauraro. Za mu gaya muku da gaskiya idan za mu iya zuwa." },
-        { q: "Shin kuna karɓar gudummawa ko taimako?", a: "Ba mu nemar gudummawa daga masu amfani. Muna marabtar taimako. Taimako dole ne ya zo daga ginshiƙai ko bankuna. Taimako dole ne a ɗaure shi da software na samun damar a kasuwannin inda farashin cikakke har yanzu ba sa aiki. Aiko da imel zuwa partners@intelligentsingularityinc.com." },
+        { q: 'Ina zan iya samun press kit?', a: "Ziyarci /press don takaddar gaskiya, kalmomin da aka amince da su, jagorar brand, ma'anar wanda ya kafa, da boilerplate na 'yan jarida. Kuna buƙatar fayil ɗin tambari, hoton mai kafa mai ƙuduri sosai, ko bayanin musamman? Aiko da imel zuwa press@intelligentsingularityai.com tare da kwanan watan ƙarshe." },
+        { q: 'Shin kuna magana a tarurruka?', a: "Wani lokaci. Muna magana game da samun damar duniya, ƙungiyoyi waɗanda AI ya haɓaka, software na lafiya, da ilimin tattalin arzikin software lean. Rubuta zuwa press@intelligentsingularityai.com tare da bayanan taron da girman masu sauraro. Za mu gaya muku da gaskiya idan za mu iya zuwa." },
+        { q: "Shin kuna karɓar gudummawa ko taimako?", a: "Ba mu nemar gudummawa daga masu amfani. Muna marabtar taimako. Taimako dole ne ya zo daga ginshiƙai ko bankuna. Taimako dole ne a ɗaure shi da software na samun damar a kasuwannin inda farashin cikakke har yanzu ba sa aiki. Aiko da imel zuwa partners@intelligentsingularityai.com." },
       ],
       [
         { q: "Shin kuna ɗaukar ma'aikata?", a: "Wani lokaci. Shafin /careers yana lissafin matsayin da ke buɗe na yanzu. Idan ba a lissafa wani abu, ba ma ɗaukar ma'aikata a wannan lokacin, ƙarshe. Ba mu gudanar da hanya ta dindindin ta \"tura mana CV ɗin ku\" wanda baya zuwa ko ina — amma gabatarwa mai zurfi koyaushe yana samun amsa ta gaske." },
@@ -3080,91 +3080,91 @@ const CONTACT: Record<LocaleCode, ContactStrings> = {
     lead: '问题、合作想法、媒体咨询或法律事务——我们会阅读通过此表格发出的每一条消息。一位真实的人会回复你,通常在一个工作日内。',
     privacyNote: '我们不会将联系表单的消息存储在营销数据库中。你的留言会通过电子邮件发送给负责回复的小团队,不会发送到其他任何地方。',
     successMessage: '你的消息已发送。感谢你的来信。',
-    errorMessage: '我们这边出了点问题。请重试,或直接发邮件至 hello@intelligentsingularityinc.com。',
+    errorMessage: '我们这边出了点问题。请重试,或直接发邮件至 hello@intelligentsingularityai.com。',
   },
   es: {
     title: 'Ponte en contacto',
     lead: 'Preguntas, ideas de colaboración, consultas de prensa o un asunto legal — leemos cada mensaje que llega por este formulario. Una persona real responde, normalmente en un día laborable.',
     privacyNote: 'No almacenamos los mensajes del formulario de contacto en una base de marketing. Tu nota se entrega por email al pequeño equipo que la responde, y a ningún otro lado.',
     successMessage: 'Tu mensaje se ha enviado. Gracias por escribir.',
-    errorMessage: 'Algo salió mal de nuestro lado. Por favor inténtalo de nuevo o escríbenos directamente a hello@intelligentsingularityinc.com.',
+    errorMessage: 'Algo salió mal de nuestro lado. Por favor inténtalo de nuevo o escríbenos directamente a hello@intelligentsingularityai.com.',
   },
   hi: {
     title: 'संपर्क करें',
     lead: 'प्रश्न, साझेदारी विचार, प्रेस पूछताछ, या कानूनी मामला — हम इस फ़ॉर्म से आने वाले हर संदेश को पढ़ते हैं। एक वास्तविक व्यक्ति जवाब देता है, आमतौर पर एक कार्य दिवस के भीतर।',
     privacyNote: 'हम संपर्क-फ़ॉर्म के संदेशों को मार्केटिंग डेटाबेस में संग्रहीत नहीं करते। आपकी नोट ईमेल द्वारा उस छोटी टीम को पहुँचाई जाती है जो इसका उत्तर देती है, और कहीं नहीं।',
     successMessage: 'आपका संदेश भेज दिया गया है। लिखने के लिए धन्यवाद।',
-    errorMessage: 'हमारी ओर से कुछ गलत हो गया। कृपया पुनः प्रयास करें, या सीधे hello@intelligentsingularityinc.com पर ईमेल करें।',
+    errorMessage: 'हमारी ओर से कुछ गलत हो गया। कृपया पुनः प्रयास करें, या सीधे hello@intelligentsingularityai.com पर ईमेल करें।',
   },
   ar: {
     title: 'تواصلوا معنا',
     lead: 'أسئلة، أفكار شراكة، استفسارات صحفية، أو مسألة قانونية — نقرأ كل رسالة تصلنا عبر هذا النموذج. إنسان حقيقي يرد، عادةً خلال يوم عمل.',
     privacyNote: 'لا نُخزّن رسائل نموذج الاتصال في قاعدة بيانات تسويقية. تُسلَّم ملاحظتك بالبريد إلى الفريق الصغير الذي يرد عليها، ولا إلى أي مكان آخر.',
     successMessage: 'تم إرسال رسالتك. شكرًا على تواصلك.',
-    errorMessage: 'حدث خطأ من جانبنا. يرجى المحاولة مرة أخرى، أو راسلنا مباشرة على hello@intelligentsingularityinc.com.',
+    errorMessage: 'حدث خطأ من جانبنا. يرجى المحاولة مرة أخرى، أو راسلنا مباشرة على hello@intelligentsingularityai.com.',
   },
   fr: {
     title: 'Contactez-nous',
     lead: "Questions, idées de partenariat, demandes presse, ou un sujet juridique — nous lisons chaque message qui passe par ce formulaire. Une personne réelle répond, généralement sous un jour ouvré.",
     privacyNote: "Nous ne stockons pas les messages du formulaire de contact dans une base marketing. Votre note est livrée par email à la petite équipe qui y répond, et nulle part ailleurs.",
     successMessage: 'Votre message a été envoyé. Merci de nous avoir écrit.',
-    errorMessage: "Quelque chose s'est mal passé de notre côté. Veuillez réessayer, ou écrivez-nous directement à hello@intelligentsingularityinc.com.",
+    errorMessage: "Quelque chose s'est mal passé de notre côté. Veuillez réessayer, ou écrivez-nous directement à hello@intelligentsingularityai.com.",
   },
   pt: {
     title: 'Entre em contacto',
     lead: 'Perguntas, ideias de parceria, pedidos de imprensa, ou um assunto legal — lemos cada mensagem que chega por este formulário. Uma pessoa real responde, normalmente dentro de um dia útil.',
     privacyNote: 'Não guardamos as mensagens do formulário de contacto numa base de marketing. A sua nota é entregue por email à pequena equipa que lhe responde, e em nenhum outro lado.',
     successMessage: 'A sua mensagem foi enviada. Obrigado por escrever.',
-    errorMessage: 'Algo correu mal do nosso lado. Por favor, tente de novo, ou escreva-nos diretamente para hello@intelligentsingularityinc.com.',
+    errorMessage: 'Algo correu mal do nosso lado. Por favor, tente de novo, ou escreva-nos diretamente para hello@intelligentsingularityai.com.',
   },
   bn: {
     title: 'যোগাযোগ করুন',
     lead: 'প্রশ্ন, অংশীদারিত্বের ধারণা, প্রেসের জিজ্ঞাসা, বা কোনো আইনি বিষয় — এই ফর্মের মাধ্যমে আসা প্রতিটি বার্তা আমরা পড়ি। একজন বাস্তব ব্যক্তি উত্তর দেন, সাধারণত এক কার্যদিবসের মধ্যে।',
     privacyNote: 'আমরা যোগাযোগ-ফর্মের বার্তাগুলো কোনো মার্কেটিং ডেটাবেসে সংরক্ষণ করি না। আপনার বার্তা ইমেইলের মাধ্যমে সেই ছোট দলকে পৌঁছানো হয় যারা এর উত্তর দেয়, অন্য কোথাও নয়।',
     successMessage: 'আপনার বার্তা পাঠানো হয়েছে। লেখার জন্য ধন্যবাদ।',
-    errorMessage: 'আমাদের দিকে কিছু ভুল হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন, অথবা সরাসরি hello@intelligentsingularityinc.com-এ ইমেইল করুন।',
+    errorMessage: 'আমাদের দিকে কিছু ভুল হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন, অথবা সরাসরি hello@intelligentsingularityai.com-এ ইমেইল করুন।',
   },
   ru: {
     title: 'Свяжитесь с нами',
     lead: 'Вопросы, идеи партнёрства, запросы прессы или юридические вопросы — мы читаем каждое сообщение, приходящее через эту форму. Отвечает живой человек, обычно в течение одного рабочего дня.',
     privacyNote: 'Мы не храним сообщения с контактной формы в маркетинговой базе. Ваше сообщение доставляется по почте небольшой команде, которая на него отвечает, и больше никуда.',
     successMessage: 'Ваше сообщение отправлено. Спасибо, что написали.',
-    errorMessage: 'На нашей стороне что-то пошло не так. Пожалуйста, попробуйте ещё раз или напишите нам напрямую на hello@intelligentsingularityinc.com.',
+    errorMessage: 'На нашей стороне что-то пошло не так. Пожалуйста, попробуйте ещё раз или напишите нам напрямую на hello@intelligentsingularityai.com.',
   },
   ur: {
     title: 'رابطہ کریں',
     lead: 'سوالات، شراکت داری کے خیالات، پریس انکوائریز، یا قانونی معاملہ — اس فارم کے ذریعے آنے والا ہر پیغام ہم پڑھتے ہیں۔ ایک حقیقی شخص جواب دیتا ہے، عام طور پر ایک کاروباری دن کے اندر۔',
     privacyNote: 'ہم رابطہ فارم کے پیغامات کسی مارکیٹنگ ڈیٹا بیس میں ذخیرہ نہیں کرتے۔ آپ کا نوٹ ای میل کے ذریعے اس چھوٹی ٹیم کو پہنچایا جاتا ہے جو اس کا جواب دیتی ہے، اور کہیں نہیں۔',
     successMessage: 'آپ کا پیغام بھیج دیا گیا ہے۔ لکھنے کا شکریہ۔',
-    errorMessage: 'ہماری طرف سے کچھ غلط ہوگیا۔ براہ کرم دوبارہ کوشش کریں، یا براہ راست hello@intelligentsingularityinc.com پر ای میل کریں۔',
+    errorMessage: 'ہماری طرف سے کچھ غلط ہوگیا۔ براہ کرم دوبارہ کوشش کریں، یا براہ راست hello@intelligentsingularityai.com پر ای میل کریں۔',
   },
   id: {
     title: 'Hubungi kami',
     lead: 'Pertanyaan, ide kemitraan, permintaan pers, atau urusan hukum — kami membaca setiap pesan yang masuk melalui formulir ini. Orang sungguhan yang menjawab, biasanya dalam satu hari kerja.',
     privacyNote: 'Kami tidak menyimpan pesan formulir kontak di database pemasaran. Catatan Anda dikirim melalui email ke tim kecil yang menjawabnya, dan tidak ke tempat lain.',
     successMessage: 'Pesan Anda telah dikirim. Terima kasih telah menulis.',
-    errorMessage: 'Ada yang salah di sisi kami. Silakan coba lagi, atau email kami langsung di hello@intelligentsingularityinc.com.',
+    errorMessage: 'Ada yang salah di sisi kami. Silakan coba lagi, atau email kami langsung di hello@intelligentsingularityai.com.',
   },
   sw: {
     title: 'Wasiliana nasi',
     lead: 'Maswali, mawazo ya ushirikiano, maombi ya vyombo vya habari, au jambo la kisheria — tunasoma kila ujumbe unaotujia kupitia fomu hii. Mtu halisi anajibu, kwa kawaida ndani ya siku moja ya kazi.',
     privacyNote: 'Hatuhifadhi ujumbe wa fomu ya mawasiliano katika hifadhidata ya masoko. Ujumbe wako unawasilishwa kwa barua pepe kwa timu ndogo inayoujibu, na popote pengine.',
     successMessage: 'Ujumbe wako umetumwa. Asante kwa kuandika.',
-    errorMessage: 'Kitu kilienda vibaya upande wetu. Tafadhali jaribu tena, au tutume barua pepe moja kwa moja kwa hello@intelligentsingularityinc.com.',
+    errorMessage: 'Kitu kilienda vibaya upande wetu. Tafadhali jaribu tena, au tutume barua pepe moja kwa moja kwa hello@intelligentsingularityai.com.',
   },
   yo: {
     title: 'Bá wa sọ̀rọ̀',
     lead: 'Ìbéèrè, èrò ìbáṣepọ̀, ìbéèrè ìròyìn, tàbí ọ̀rọ̀ òfin — a ka àkọsílẹ̀ kọ̀ọ̀kan tí ó wá nípasẹ̀ fọ́ọ̀mù yìí. Ènìyàn gidi ni ó dáhùn, sábà ní ọjọ́ iṣẹ́ kan.',
     privacyNote: 'A kì í pa àwọn àkọsílẹ̀ fọ́ọ̀mù olùbátà mọ́ nínú àtòjọ déètà ìpolongò. Àkọsílẹ̀ rẹ̀ ni a fi ìmẹ́ìlì ránṣẹ́ sí ẹgbẹ́ kékeré tí ó dáhùn rẹ̀, kò sí síbi mìíràn.',
     successMessage: 'A ti firanṣẹ́ àkọsílẹ̀ rẹ̀. A dúpẹ́ pé o kọ̀ wá.',
-    errorMessage: 'Ohun kan ti bàjẹ́ ní ẹ̀gbẹ́ wa. Jọ̀wọ́ gbiyànjú lẹ́ẹ̀kansí, tàbí kọ̀wé sí wa tààrà ní hello@intelligentsingularityinc.com.',
+    errorMessage: 'Ohun kan ti bàjẹ́ ní ẹ̀gbẹ́ wa. Jọ̀wọ́ gbiyànjú lẹ́ẹ̀kansí, tàbí kọ̀wé sí wa tààrà ní hello@intelligentsingularityai.com.',
   },
   ha: {
     title: 'Tuntube mu',
     lead: "Tambayoyi, ra'ayoyin haɗin gwiwa, tambayoyin 'yan jarida, ko al'amari na shari'a — muna karanta kowane saƙo da yake zuwa ta wannan fom. Mutum na hakika ne ke amsawa, yawanci a cikin ranar aiki ɗaya.",
     privacyNote: 'Ba mu adana saƙonnin fom ɗin tuntuɓa a cikin database na talla. An aika bayanin ku ta imel zuwa ƙaramar ƙungiya da ke amsa shi, kuma babu wani waje.',
     successMessage: 'An aika saƙonku. Mun gode da rubuta.',
-    errorMessage: "Wani abu ya yi kuskure a wannan ɓangare. Don Allah a sake gwada, ko aiko mana imel kai tsaye a hello@intelligentsingularityinc.com.",
+    errorMessage: "Wani abu ya yi kuskure a wannan ɓangare. Don Allah a sake gwada, ko aiko mana imel kai tsaye a hello@intelligentsingularityai.com.",
   },
 };
 
