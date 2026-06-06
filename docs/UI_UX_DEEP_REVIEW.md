@@ -1,6 +1,6 @@
 # UI/UX Deep Review Report — Intelligent Singularity Website
 
-**Date:** 2026-05-01 · **Auditor:** senior UI/UX product reviewer (Claude Opus 4.7) · **Scope:** intelligentsingularityinc.com (Next.js 16 + Payload CMS, 14 locales) · **Method:** static code review, live production probe (HTTP + browser), local dev exercise, axe-core WCAG 2.2 AA scan over 19 routes, baseline Lighthouse (.lighthouse-results/), full implementation pass.
+**Date:** 2026-05-01 · **Auditor:** senior UI/UX product reviewer (Claude Opus 4.7) · **Scope:** intelligentsingularityai.com (Next.js 16 + Payload CMS, 14 locales) · **Method:** static code review, live production probe (HTTP + browser), local dev exercise, axe-core WCAG 2.2 AA scan over 19 routes, baseline Lighthouse (.lighthouse-results/), full implementation pass.
 
 ---
 

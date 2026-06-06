@@ -23,7 +23,7 @@ VPS_USER="${IS_VPS_USER:-mddiya}"
 VPS_KEY="${IS_VPS_KEY:-${HOME}/.ssh/id_ed25519}"
 REMOTE_PROJECT_DIR="${IS_REMOTE_DIR:-/home/mddiya/is-website-prod}"
 IMAGE_REPO="${IS_IMAGE_REPO:-ghcr.io/clappediya/intelligent-singularity-website}"
-DOMAIN="${IS_DOMAIN:-https://intelligentsingularityinc.com/en}"
+DOMAIN="${IS_DOMAIN:-https://intelligentsingularityai.com/en}"
 
 cd "$(git rev-parse --show-toplevel)"
 

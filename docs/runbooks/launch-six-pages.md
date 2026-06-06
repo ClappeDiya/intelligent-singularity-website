@@ -102,8 +102,8 @@ Prerequisites:
 
 1. Uptime Kuma monitors configured per `docs/runbooks/uptime-kuma-setup.md`. Confirm the public JSON endpoints return 200:
    ```
-   curl -s https://status.intelligentsingularityinc.com/api/status-page/is | head -c 200
-   curl -s https://status.intelligentsingularityinc.com/api/status-page/heartbeat/is | head -c 200
+   curl -s https://status.intelligentsingularityai.com/api/status-page/is | head -c 200
+   curl -s https://status.intelligentsingularityai.com/api/status-page/heartbeat/is | head -c 200
    ```
 2. All T38/T39/T40/T41 gates are green locally.
 
@@ -112,14 +112,14 @@ Merge the PR to `master`. Dokploy (project `guGb9sYajZHVMiSKUiv9D`, app `XaU9maE
 Once the new container is live, seed the new content one time:
 
 ```
-curl -X POST "https://intelligentsingularityinc.com/api/seed-new-pages?secret=$REVALIDATE_SECRET"
+curl -X POST "https://intelligentsingularityai.com/api/seed-new-pages?secret=$REVALIDATE_SECRET"
 ```
 
 Smoke test production:
 
 ```
 for r in changelog status roadmap insights trust help; do
-  code=$(curl -s -o /dev/null -w "%{http_code}" "https://intelligentsingularityinc.com/en/$r")
+  code=$(curl -s -o /dev/null -w "%{http_code}" "https://intelligentsingularityai.com/en/$r")
   echo "$r: $code"   # expect 200
 done
 ```
@@ -128,8 +128,8 @@ done
 
 Record the deploy timestamp. Watch:
 
-- https://status.intelligentsingularityinc.com — every monitor stays green.
-- https://errors.intelligentsingularityinc.com — zero new issue groups after deploy.
+- https://status.intelligentsingularityai.com — every monitor stays green.
+- https://errors.intelligentsingularityai.com — zero new issue groups after deploy.
 
 At 24 hours, add a `ReleaseNotes` entry through the Payload admin:
 
@@ -153,7 +153,7 @@ If the 24h window surfaces a real regression:
    DATABASE_URL="postgres://is:<prod-pass>@<db-host>:5432/is_prod" \
      ./scripts/rollback/new-collections.sh --confirm
    ```
-3. Verify `/en` still loads: `curl -I https://intelligentsingularityinc.com/en`.
+3. Verify `/en` still loads: `curl -I https://intelligentsingularityai.com/en`.
 4. Log the incident in Payload as a `fixed` ReleaseNotes entry once root cause is known.
 
 The rollback shell script takes a timestamped pg_dump backup before applying the SQL, written to `backups/rollback/`.

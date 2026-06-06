@@ -1,6 +1,6 @@
 # Uptime Kuma setup for /status
 
-**URL:** https://status.intelligentsingularityinc.com
+**URL:** https://status.intelligentsingularityai.com
 **Admin credentials:** see `docs/HANDOFF.md` (section: VPS access)
 **Goal:** populate seven monitors and one public status page so the website's
 `/status` route has real data to render.
@@ -9,13 +9,13 @@
 
 | Name | Type | Target | Interval | Retention |
 |---|---|---|---|---|
-| Website · homepage HTTPS | HTTP(s) | `https://intelligentsingularityinc.com/en` · keyword `Intelligent Singularity` | 60s | 90d |
-| Website · 14 locales reachable | HTTP(s) keyword | `https://intelligentsingularityinc.com/ar` · keyword arabic string | 300s | 90d |
-| CMS · Payload admin | HTTP(s) | `https://intelligentsingularityinc.com/admin` · expect 200 or 302 | 60s | 90d |
+| Website · homepage HTTPS | HTTP(s) | `https://intelligentsingularityai.com/en` · keyword `Intelligent Singularity` | 60s | 90d |
+| Website · 14 locales reachable | HTTP(s) keyword | `https://intelligentsingularityai.com/ar` · keyword arabic string | 300s | 90d |
+| CMS · Payload admin | HTTP(s) | `https://intelligentsingularityai.com/admin` · expect 200 or 302 | 60s | 90d |
 | Data · Postgres port | TCP | `184.70.179.66:5433` | 60s | 90d |
-| Mail · SMTP relay | TCP | `mail.intelligentsingularityinc.com:587` | 300s | 90d |
-| Errors · GlitchTip | HTTP(s) | `https://errors.intelligentsingularityinc.com/-/health/` · expect 200 | 300s | 90d |
-| Uptime · Kuma self | HTTP(s) | `https://status.intelligentsingularityinc.com/` · expect 200 | 300s | 90d |
+| Mail · SMTP relay | TCP | `mail.intelligentsingularityai.com:587` | 300s | 90d |
+| Errors · GlitchTip | HTTP(s) | `https://errors.intelligentsingularityai.com/-/health/` · expect 200 | 300s | 90d |
+| Uptime · Kuma self | HTTP(s) | `https://status.intelligentsingularityai.com/` · expect 200 | 300s | 90d |
 
 ## Public status page
 
@@ -36,8 +36,8 @@
 
 Once monitors have at least 24 hours of data, the JSON endpoints below must return 200:
 
-- `https://status.intelligentsingularityinc.com/api/status-page/is`
-- `https://status.intelligentsingularityinc.com/api/status-page/heartbeat/is`
+- `https://status.intelligentsingularityai.com/api/status-page/is`
+- `https://status.intelligentsingularityai.com/api/status-page/heartbeat/is`
 
 `curl` both from the VPS and from a local laptop — the page reads the first URL for overall status and the second for the heartbeat strip. If either 404s, fix the slug.
 

@@ -49,7 +49,7 @@ export const TRANSLATION: LocaleTranslation = {
     dataResidencyText:
       'This website is hosted in Canada. There is no content delivery network in front of it. When the page loads in your browser, your browser is speaking directly to our origin. Nothing sits in the middle to copy, cache, or read your traffic.\n\nOur encrypted backups roll on a thirty-day cycle. They never leave the data centre region. They are protected at rest with a key that only two people on our team can unlock.',
     reportIncidentText:
-      'Ṣé o ti rí àìlera, àbùkù, tàbí ohunkóhun tó kàn dàbí pé ó tàsé? Kọ ìwé sí security@intelligentsingularityinc.com. A ó dáhùn nínú ọjọ́ iṣẹ́ kan, a ó bá ọ ṣe àtúnṣe, a ó sì darí orúkọ olùròyìn ní ìṣípayá gbangba lẹ́yìn tí a bá ti tún ìṣòro náà ṣe — àyàfi tí o bá béèrè pé kí a má ṣe bẹ́ẹ̀.\n\nA kì í pe àwọn olùṣèwádìí lẹ́jọ́ tí wọ́n bá tẹ̀lé àwọn ìtọ́kasí ìṣípayá tó nírònú lórí /security.',
+      'Ṣé o ti rí àìlera, àbùkù, tàbí ohunkóhun tó kàn dàbí pé ó tàsé? Kọ ìwé sí security@intelligentsingularityai.com. A ó dáhùn nínú ọjọ́ iṣẹ́ kan, a ó bá ọ ṣe àtúnṣe, a ó sì darí orúkọ olùròyìn ní ìṣípayá gbangba lẹ́yìn tí a bá ti tún ìṣòro náà ṣe — àyàfi tí o bá béèrè pé kí a má ṣe bẹ́ẹ̀.\n\nA kì í pe àwọn olùṣèwádìí lẹ́jọ́ tí wọ́n bá tẹ̀lé àwọn ìtọ́kasí ìṣípayá tó nírònú lórí /security.',
   },
 
   commitments: [

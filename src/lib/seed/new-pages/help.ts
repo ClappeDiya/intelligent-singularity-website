@@ -82,7 +82,7 @@ export const HELP_PAGE_SEED = {
     {
       question: 'How do I delete my account or my data?',
       answer:
-        'Write to privacy@intelligentsingularityinc.com with the words "delete my data" in the subject line. We confirm receipt within one working day and finish the deletion within thirty days, unless a short legal hold says otherwise.',
+        'Write to privacy@intelligentsingularityai.com with the words "delete my data" in the subject line. We confirm receipt within one working day and finish the deletion within thirty days, unless a short legal hold says otherwise.',
     },
     {
       question: 'Is this website available in my language?',
@@ -112,17 +112,17 @@ export const HELP_PAGE_SEED = {
     {
       question: 'How do I report a security problem?',
       answer:
-        'Email security@intelligentsingularityinc.com with steps to reproduce. We answer within one working day. We credit you by name in the post-mortem when a fix ships. If you would rather stay anonymous, just say so.',
+        'Email security@intelligentsingularityai.com with steps to reproduce. We answer within one working day. We credit you by name in the post-mortem when a fix ships. If you would rather stay anonymous, just say so.',
     },
     {
       question: 'How do I report an accessibility issue?',
       answer:
-        'Email accessibility@intelligentsingularityinc.com with the page URL and a short note. We treat these as bugs, not feedback, and aim to ship a fix in the next release.',
+        'Email accessibility@intelligentsingularityai.com with the page URL and a short note. We treat these as bugs, not feedback, and aim to ship a fix in the next release.',
     },
     {
       question: 'Can I partner with you?',
       answer:
-        'Yes. We work with NGOs, with governments, and with companies that share our mission. Email partners@intelligentsingularityinc.com with a short brief and a deadline.',
+        'Yes. We work with NGOs, with governments, and with companies that share our mission. Email partners@intelligentsingularityai.com with a short brief and a deadline.',
     },
   ],
   emergencyRow: {

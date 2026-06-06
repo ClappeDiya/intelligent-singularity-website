@@ -1,10 +1,10 @@
 import nodemailer from 'nodemailer';
 
 const ROUTE_TO_ADDRESS: Record<string, string> = {
-  general: 'contact@intelligentsingularityinc.com',
-  press: 'press@intelligentsingularityinc.com',
-  partnerships: 'partnerships@intelligentsingularityinc.com',
-  legal: 'legal@intelligentsingularityinc.com',
+  general: 'contact@intelligentsingularityai.com',
+  press: 'press@intelligentsingularityai.com',
+  partnerships: 'partnerships@intelligentsingularityai.com',
+  legal: 'legal@intelligentsingularityai.com',
 };
 
 export type ContactRoute = keyof typeof ROUTE_TO_ADDRESS;
@@ -48,7 +48,7 @@ export async function sendContactMessage(
   try {
     const transport = makeTransport();
     const result = await transport.sendMail({
-      from: process.env.SMTP_FROM ?? 'noreply@intelligentsingularityinc.com',
+      from: process.env.SMTP_FROM ?? 'noreply@intelligentsingularityai.com',
       to,
       replyTo: `${input.name} <${input.from}>`,
       subject: `[${input.route}] ${input.subject}`,

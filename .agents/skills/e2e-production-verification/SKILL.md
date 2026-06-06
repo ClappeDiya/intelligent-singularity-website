@@ -5,7 +5,7 @@ description: Use when verifying the IS website production deployment on Dokploy,
 
 # IS Production E2E Verification Runbook
 
-Post-deployment live validation for intelligentsingularityinc.com on Dokploy.
+Post-deployment live validation for intelligentsingularityai.com on Dokploy.
 
 ## 0. BINDING EXECUTION DIRECTIVE
 
@@ -28,14 +28,14 @@ Upon receiving this runbook, begin execution immediately:
 
 | Parameter | Value |
 |---|---|
-| **Production URL** | `https://intelligentsingularityinc.com` |
+| **Production URL** | `https://intelligentsingularityai.com` |
 | **Project name** | intelligent-singularity-website |
 | **SSH Command** | Resolve from CLAUDE.md or conversation — server IP `184.70.179.66` |
 | **Dokploy Dashboard** | `http://184.70.179.66:3000` (md@clappe.com / Seun@@2002) |
 | **Dokploy App ID** | `XaU9maEwsJ-j55pAi8QUF` |
 | **Dokploy Compose ID (PG)** | `jfzt6kF1CEdyFt6A1VCSh` |
 | **GitHub repo** | ClappeDiya/intelligent-singularity-website |
-| **Domain aliases** | intelligentsingularityinc.com + www (Let's Encrypt TLS) |
+| **Domain aliases** | intelligentsingularityai.com + www (Let's Encrypt TLS) |
 | **Login credentials** | Payload admin — resolve from env or conversation |
 
 ### 1.2 Known stack
@@ -74,7 +74,7 @@ Create `verification-state.md` in the workspace immediately:
 # Verification State — IS Website
 
 ## Parameters
-- PRODUCTION_URL: https://intelligentsingularityinc.com
+- PRODUCTION_URL: https://intelligentsingularityai.com
 - PROJECT_NAME: intelligent-singularity-website
 - SSH_COMMAND: <resolve from CLAUDE.md>
 - SSH_AVAILABLE: <test and set>
@@ -109,7 +109,7 @@ ELSE → BLOCKED
 ```
 
 **Test SSH:** `ssh SSH_COMMAND "echo ok" 2>&1`
-**Test HTTP:** `curl -sS -o /dev/null -w "%{http_code}" https://intelligentsingularityinc.com/`
+**Test HTTP:** `curl -sS -o /dev/null -w "%{http_code}" https://intelligentsingularityai.com/`
 
 Record mode in state file.
 
@@ -139,11 +139,11 @@ Record mode in state file.
 ### 4.1 Domain + TLS (All modes)
 
 ```bash
-curl -sS -o /dev/null -w "Status: %{http_code}\nTime: %{time_total}s\nRedirect: %{redirect_url}\n" "https://intelligentsingularityinc.com/"
+curl -sS -o /dev/null -w "Status: %{http_code}\nTime: %{time_total}s\nRedirect: %{redirect_url}\n" "https://intelligentsingularityai.com/"
 ```
 
 ```bash
-echo | openssl s_client -connect intelligentsingularityinc.com:443 -servername intelligentsingularityinc.com 2>/dev/null | openssl x509 -noout -dates -subject 2>/dev/null
+echo | openssl s_client -connect intelligentsingularityai.com:443 -servername intelligentsingularityai.com 2>/dev/null | openssl x509 -noout -dates -subject 2>/dev/null
 ```
 
 If unreachable → entire run is BLOCKED. Write report immediately.
@@ -179,7 +179,7 @@ Execute in this exact order. If checks 1-3 all fail, the release is fundamentall
 ### Check 1: Domain + TLS (All modes)
 
 ```bash
-curl -sS -o /dev/null -w "HTTPS: %{http_code} | Time: %{time_total}s\n" "https://intelligentsingularityinc.com/"
+curl -sS -o /dev/null -w "HTTPS: %{http_code} | Time: %{time_total}s\n" "https://intelligentsingularityai.com/"
 ```
 
 | Result | Verdict |
@@ -201,7 +201,7 @@ Flag: `Restarting`, `Exited`, `Dead`, or missing.
 
 Using browser automation:
 
-1. Navigate to `https://intelligentsingularityinc.com/en/`
+1. Navigate to `https://intelligentsingularityai.com/en/`
 2. Wait for network idle
 3. Screenshot → `screenshots/01-homepage.png`
 4. Capture console errors → `console/01-homepage.log`
@@ -214,7 +214,7 @@ Using browser automation:
 ### Check 4: Health API (All modes)
 
 ```bash
-curl -sS -w "\nStatus: %{http_code} | Time: %{time_total}s\n" "https://intelligentsingularityinc.com/api/health"
+curl -sS -w "\nStatus: %{http_code} | Time: %{time_total}s\n" "https://intelligentsingularityai.com/api/health"
 ```
 
 Expected: 200 with JSON `{"status": "ok", "timestamp": "...", "version": "..."}`.
@@ -222,7 +222,7 @@ Expected: 200 with JSON `{"status": "ok", "timestamp": "...", "version": "..."}`
 ### Check 5: Payload Admin access (All modes)
 
 ```bash
-curl -sS -o /dev/null -w "%{http_code}" "https://intelligentsingularityinc.com/admin"
+curl -sS -o /dev/null -w "%{http_code}" "https://intelligentsingularityai.com/admin"
 ```
 
 Expected: 200 or 302 (redirect to login). A 403 is acceptable (IP lock working). A 500/502 is Tier 1.
@@ -299,7 +299,7 @@ Any raw key visible → **FAIL Tier 2**.
 
 ```bash
 for locale in en es ar zh-CN fr pt hi; do
-  code=$(curl -sS -o /dev/null -w "%{http_code}" "https://intelligentsingularityinc.com/${locale}/" 2>/dev/null)
+  code=$(curl -sS -o /dev/null -w "%{http_code}" "https://intelligentsingularityai.com/${locale}/" 2>/dev/null)
   echo "${locale}: ${code}"
 done
 ```
@@ -338,7 +338,7 @@ IS has redirect traps for common attack paths:
 
 ```bash
 for path in "/phpmyadmin" "/wp-admin" "/admin-login"; do
-  code=$(curl -sS -o /dev/null -w "%{http_code}" "https://intelligentsingularityinc.com${path}" 2>/dev/null)
+  code=$(curl -sS -o /dev/null -w "%{http_code}" "https://intelligentsingularityai.com${path}" 2>/dev/null)
   echo "${path}: ${code}"
 done
 ```
@@ -362,7 +362,7 @@ Expected: 404 for all. Any 200/301/302 = FAIL Tier 2 (trap not working).
 ### 11.1 Service worker registration
 
 ```bash
-curl -sS -o /dev/null -w "%{http_code}" "https://intelligentsingularityinc.com/sw.js"
+curl -sS -o /dev/null -w "%{http_code}" "https://intelligentsingularityai.com/sw.js"
 ```
 
 Expected: 200. If 404 → FAIL Tier 2 (PWA not working).
@@ -370,7 +370,7 @@ Expected: 200. If 404 → FAIL Tier 2 (PWA not working).
 ### 11.2 Web manifest
 
 ```bash
-curl -sS "https://intelligentsingularityinc.com/manifest.webmanifest" 2>/dev/null | head -20
+curl -sS "https://intelligentsingularityai.com/manifest.webmanifest" 2>/dev/null | head -20
 ```
 
 Expected: valid JSON with name, icons, start_url.
@@ -382,7 +382,7 @@ Expected: valid JSON with name, icons, start_url.
 ```bash
 echo "=== Load Timing ==="
 for route in "/en/" "/en/about" "/en/contact" "/en/manifesto" "/api/health"; do
-  time=$(curl -sS -o /dev/null -w "%{time_total}" "https://intelligentsingularityinc.com${route}" 2>/dev/null)
+  time=$(curl -sS -o /dev/null -w "%{time_total}" "https://intelligentsingularityai.com${route}" 2>/dev/null)
   echo "${route}: ${time}s"
 done
 ```
@@ -400,7 +400,7 @@ done
 ## 13. SECURITY HEADERS CHECK (All modes)
 
 ```bash
-curl -sS -D- -o /dev/null "https://intelligentsingularityinc.com/en/" 2>/dev/null | grep -iE 'strict-transport|content-security|x-frame|x-content-type|referrer-policy|permissions-policy'
+curl -sS -D- -o /dev/null "https://intelligentsingularityai.com/en/" 2>/dev/null | grep -iE 'strict-transport|content-security|x-frame|x-content-type|referrer-policy|permissions-policy'
 ```
 
 IS should have:
@@ -501,7 +501,7 @@ Write as `production-verification-report.md` in workspace.
 - **Environment:** production
 - **Platform:** Dokploy @ 184.70.179.66
 - **Operating Mode:** <A / B / C>
-- **Production URL:** https://intelligentsingularityinc.com
+- **Production URL:** https://intelligentsingularityai.com
 - **Release:** <image tag or "unknown">
 - **Duration:** <total minutes>
 

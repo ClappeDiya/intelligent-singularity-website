@@ -4,7 +4,7 @@ export const PRESS_PAGE_SEED = {
   eyebrow: 'Press · Media room',
   title: 'Write something true about us.',
   lede:
-    'Everything here is approved to publish. Please credit us. Need more? Email press@intelligentsingularityinc.com. A human replies within one work day.',
+    'Everything here is approved to publish. Please credit us. Need more? Email press@intelligentsingularityai.com. A human replies within one work day.',
   factSheet: [
     { label: 'Legal entity', value: 'Intelligent Singularity Inc.' },
     { label: 'Founded', value: '2024 · Alberta, Canada' },
@@ -87,8 +87,8 @@ export const PRESS_PAGE_SEED = {
   contactCta: {
     eyebrow: 'Direct contact',
     heading: 'Need a quote, background, or founder interview?',
-    body: 'Email press@intelligentsingularityinc.com with your deadline. A human reads every note. We reply in one work day.',
-    email: 'press@intelligentsingularityinc.com',
+    body: 'Email press@intelligentsingularityai.com with your deadline. A human reads every note. We reply in one work day.',
+    email: 'press@intelligentsingularityai.com',
   },
 };
 

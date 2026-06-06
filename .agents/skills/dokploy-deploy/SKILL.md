@@ -29,7 +29,7 @@ SSH_COMMAND="<required>"            # e.g. sshpass -p 'seun2002' ssh -o StrictHo
 # ── TARGET APPLICATION ──────────────────────────────────────────────────────
 DOKPLOY_PROJECT_NAME="<required>"   # Exact project name inside Dokploy
 TARGET_APP_NAME="<required>"        # Exact application name (e.g. is-website-gbydeh)
-TARGET_DOMAINS="<required>"         # e.g. intelligentsingularityinc.com,www.intelligentsingularityinc.com
+TARGET_DOMAINS="<required>"         # e.g. intelligentsingularityai.com,www.intelligentsingularityai.com
 
 # ── SERVICES IN THIS APPLICATION (set each to yes/no) ──────────────────────
 HAS_NEXTJS_PAYLOAD=yes              # yes | no — Next.js 16 + Payload CMS monolith
@@ -82,7 +82,7 @@ ROLLBACK_AUTO_FAIL_THRESHOLD=3      # Health check failures before auto-rollback
 # Security headers set in proxy.ts middleware
 # Anti-bot traps: /phpmyadmin, /wp-admin, /admin-login → 404
 # Admin: /admin (IP-locked via ADMIN_ALLOWED_IPS)
-# SMTP: notify@intelligentsingularityinc.com
+# SMTP: notify@intelligentsingularityai.com
 ```
 
 ---
@@ -1054,7 +1054,7 @@ DOKPLOY_HOST=184.70.179.66
 SSH_COMMAND="sshpass -p 'seun2002' ssh -o StrictHostKeyChecking=no md@184.70.179.66"
 DOKPLOY_PROJECT_NAME=is-website
 TARGET_APP_NAME=is-website-gbydeh
-TARGET_DOMAINS=intelligentsingularityinc.com
+TARGET_DOMAINS=intelligentsingularityai.com
 HAS_NEXTJS_PAYLOAD=yes
 HAS_POSTGRESQL=yes
 HAS_GLITCHTIP=yes

@@ -7,7 +7,7 @@
 3. Find the previous working deployment (typically second in the list).
 4. Click "Rollback" -> confirm.
 5. Traefik flips traffic within seconds.
-6. Verify `https://intelligentsingularityinc.com` works.
+6. Verify `https://intelligentsingularityai.com` works.
 
 ## Git-based rollback (if Dokploy UI is unavailable)
 

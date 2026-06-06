@@ -35,7 +35,7 @@ Run this entire list before flipping the public announcement. Every item must pa
 - [ ] Security headers via securityheaders.com — all green
 - [ ] CSP blocks inline + eval (no violations in DevTools console)
 - [ ] /admin on main domain redirects to /
-- [ ] admin.intelligentsingularityinc.com blocks non-allowlisted IPs (test from mobile data)
+- [ ] admin.intelligentsingularityai.com blocks non-allowlisted IPs (test from mobile data)
 - [ ] 2FA enabled on all Dokploy, Payload, Uptime Kuma, GlitchTip accounts
 - [ ] Rate limiting: 80-request burst test returns 429s
 - [ ] Honeypot routes (/wp-admin etc.) return 404 and log warnings
@@ -52,7 +52,7 @@ Run this entire list before flipping the public announcement. Every item must pa
 - [ ] Uptime Kuma pinging all 5 monitors, alerts configured
 - [ ] GlitchTip receiving a test error successfully
 - [ ] Plausible receiving pageviews from the live site
-- [ ] Email notifications route to ops@intelligentsingularityinc.com
+- [ ] Email notifications route to ops@intelligentsingularityai.com
 
 ## Legal & Content
 - [ ] Privacy policy references the actual data we collect (no boilerplate)

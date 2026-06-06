@@ -15,8 +15,8 @@ import proxy from '@/proxy';
 
 function makeRequest(pathname: string) {
   return {
-    nextUrl: new URL(`https://intelligentsingularityinc.com${pathname}`),
-    headers: new Headers({ host: 'intelligentsingularityinc.com' }),
+    nextUrl: new URL(`https://intelligentsingularityai.com${pathname}`),
+    headers: new Headers({ host: 'intelligentsingularityai.com' }),
   } as any;
 }
 
@@ -34,6 +34,6 @@ describe('proxy honeypot routing', () => {
   it('still redirects the real Payload admin path on the public host', () => {
     const response = proxy(makeRequest('/admin'));
     expect(response.status).toBe(307);
-    expect(response.headers.get('location')).toBe('https://intelligentsingularityinc.com/');
+    expect(response.headers.get('location')).toBe('https://intelligentsingularityai.com/');
   });
 });

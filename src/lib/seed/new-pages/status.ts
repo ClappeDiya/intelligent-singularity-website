@@ -1,7 +1,7 @@
 import type { Payload } from 'payload';
 
 export const STATUS_PAGE_SEED = {
-  kumaBaseUrl: 'https://status.intelligentsingularityinc.com',
+  kumaBaseUrl: 'https://status.intelligentsingularityai.com',
   kumaSlug: 'is',
   eyebrow: 'STATUS',
   title: 'How everything is running, right now.',

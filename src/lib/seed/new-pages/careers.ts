@@ -70,7 +70,7 @@ export const CAREERS_PAGE_SEED = {
     heading: 'The best hires we ever made wrote us before there was a role.',
     body:
       'Tell us what you have shipped and what you want to build next. Two paragraphs beats a polished CV. A real reply comes from a human, typically within two business days.',
-    email: 'careers@intelligentsingularityinc.com',
+    email: 'careers@intelligentsingularityai.com',
   },
 };
 

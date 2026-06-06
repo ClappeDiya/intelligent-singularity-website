@@ -18,8 +18,8 @@ const ROUTES = [
   '/en/help',
 ];
 
-const BASE = 'https://intelligentsingularityinc.com';
-const KUMA = 'https://status.intelligentsingularityinc.com';
+const BASE = 'https://intelligentsingularityai.com';
+const KUMA = 'https://status.intelligentsingularityai.com';
 
 async function probe(url) {
   const start = Date.now();

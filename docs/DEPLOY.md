@@ -1,6 +1,6 @@
 # Deploy Runbook
 
-Production: `https://intelligentsingularityinc.com`
+Production: `https://intelligentsingularityai.com`
 Service: Docker Swarm `is-website-gbydeh` on Dokploy host `184.70.179.66`
 Registry: `ghcr.io/clappediya/intelligent-singularity-website`
 
@@ -20,7 +20,7 @@ That runs local quality gates → ships HEAD source to the host → builds + pus
 2. **Ship source** — `git archive HEAD | tar -x` on the host into `/tmp/is-build-<utc>`. Only HEAD ships; no `node_modules`, no `.next`, no `.git`.
 3. **Build + push** — `docker buildx build --platform linux/amd64 --push -t prod-<utc>-<sha>` on the host. Host already has GHCR auth in `~/.docker/config.json`.
 4. **Swarm update** — `docker service update --image <new-tag> --update-failure-action rollback --update-monitor 30s is-website-gbydeh`.
-5. **HTTP verify** — `curl https://intelligentsingularityinc.com/en` six times with 15s gaps. Pass requires HTTP 200 *and* zero `E{"digest` chunks (RSC error fallback).
+5. **HTTP verify** — `curl https://intelligentsingularityai.com/en` six times with 15s gaps. Pass requires HTTP 200 *and* zero `E{"digest` chunks (RSC error fallback).
 
 If verify fails the script exits non-zero and prints the rollback command. The remote build dir is cleaned up regardless of outcome.
 
@@ -64,7 +64,7 @@ The script honors these env vars (defaults shown):
 | `IS_VPS_PASS` | *(required)* |
 | `IS_SERVICE_NAME` | `is-website-gbydeh` |
 | `IS_IMAGE_REPO` | `ghcr.io/clappediya/intelligent-singularity-website` |
-| `IS_DOMAIN` | `https://intelligentsingularityinc.com/en` |
+| `IS_DOMAIN` | `https://intelligentsingularityai.com/en` |
 
 ## Troubleshooting
 

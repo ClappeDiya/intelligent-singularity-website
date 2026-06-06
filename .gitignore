@@ -11,9 +11,15 @@ coverage/
 *.tsbuildinfo
 .pnpm-store/
 .env.local
+credentials.md
 .ci/seed-snapshots/
 test-results/
 playwright-report/
 output/
 .lighthouse-results/
 .lighthouseci/
+
+# Codex CLI local overrides and caches — never commit secrets
+.codex/local.toml
+.codex/.cache/
+.codex/sessions/

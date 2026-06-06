@@ -277,7 +277,7 @@ export default async function TrustPage({
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="mailto:security@intelligentsingularityinc.com"
+              href="mailto:security@intelligentsingularityai.com"
               className="inline-flex items-center gap-2 px-6 py-[11px] rounded-full text-[12px] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-mono)', background: 'linear-gradient(135deg,#059669,#0d9488)', color: '#fff', boxShadow: '0 4px 14px rgba(16,185,129,0.28)' }}
             >
