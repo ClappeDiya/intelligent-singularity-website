@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "Badan hukum",
         "founded": "Didirikan",
-        "founder": "Pendiri",
         "structure": "Struktur",
         "operatingModel": "Model operasi",
         "capital": "Modal",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · Alberta, Kanada",
-        "founder": "Dr. Md Diya, MD",
         "structure": "Induk dari ekosistem Clap",
         "operatingModel": "Kecil, jarak jauh, ditingkatkan AI",
         "capital": "Bootstrapped · mandiri · tidak dijual",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "Kutipan yang disetujui",
       "brandAssetsHeading": "Aset merek",
       "brandNameLabel": "Nama merek",
-      "founderReferenceLabel": "Referensi pendiri",
       "pressBoilerplateHeading": "Boilerplate pers",
       "storyAnglesWelcomedHeading": "Sudut cerita yang kami sambut",
       "storyAnglesDeclineHeading": "Sudut cerita yang biasanya kami tolak",
@@ -569,7 +566,6 @@
     "visit": "Buka",
     "schema": {
       "organizationDescription": "Studio yang membuat perangkat lunak untuk akses universal.",
-      "founderDescription": "Pendiri Intelligent Singularity, membangun perangkat lunak untuk akses universal dengan operasi ramping yang ditingkatkan AI.",
       "portfolioListName": "Portofolio Produk Intelligent Singularity"
     }
   },

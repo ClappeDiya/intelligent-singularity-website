@@ -11,7 +11,6 @@ import { EcosystemTree } from '@/components/illustrations/EcosystemTree';
 const META_KEYS = [
   'legalEntity',
   'founded',
-  'founder',
   'structure',
   'operatingModel',
   'capital',

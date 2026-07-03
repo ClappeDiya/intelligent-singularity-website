@@ -8,8 +8,6 @@ export const PRESS_PAGE_SEED = {
   factSheet: [
     { label: 'Legal entity', value: 'Intelligent Singularity Inc.' },
     { label: 'Founded', value: '2024 · Alberta, Canada' },
-    { label: 'Founder', value: 'Dr. Md Diya, MD' },
-    { label: 'Founder background', value: '34 years of cross-continental medical practice' },
     { label: 'Structure', value: 'Parent company of the Clap ecosystem' },
     { label: 'Team', value: 'Small, remote, AI-augmented' },
     { label: 'Funding', value: 'Bootstrapped · self-funded · not for sale' },
@@ -21,8 +19,8 @@ export const PRESS_PAGE_SEED = {
   quotes: [
     {
       text: 'Great software is not a luxury good. It is a basic right for every business and every person doing honest work anywhere in the world.',
-      who: 'Dr. Md Diya',
-      role: 'Founder, Intelligent Singularity',
+      who: 'Intelligent Singularity',
+      role: 'Company statement · 2026',
     },
     {
       text: 'A child in Oslo and a child in rural Malawi should reach for the same software. That is not an aspiration. It is the constraint every product ships against.',
@@ -31,8 +29,8 @@ export const PRESS_PAGE_SEED = {
     },
     {
       text: 'Two-point-two billion people are still offline today. Ninety-six percent of them live in low- and middle-income countries. We do not measure success by how much we sell to the most-served customer; we measure it by whether the least-served person on Earth can use the same product, in their language, on their device, on the connection they actually have.',
-      who: 'Dr. Md Diya',
-      role: 'Founder, Intelligent Singularity',
+      who: 'Intelligent Singularity',
+      role: 'Company statement · 2026',
     },
     {
       text: 'The savings from running a small AI-augmented team do not pay for bigger offices or louder launches. They pay for the free tier that lets a one-person business run real operations without a credit card.',
@@ -81,12 +79,10 @@ export const PRESS_PAGE_SEED = {
   brandGuidance: {
     brandName:
       'Write Intelligent Singularity on first use. Then write the studio. The legal name is Intelligent Singularity Inc. Based in Alberta, Canada.',
-    founderReference:
-      'Dr. Md Diya on first reference, Diya thereafter. Pronouns: he/him. Photos and a short bio are available on request.',
   },
   contactCta: {
     eyebrow: 'Direct contact',
-    heading: 'Need a quote, background, or founder interview?',
+    heading: 'Need a quote, background, or an interview?',
     body: 'Email press@intelligentsingularityai.com with your deadline. A human reads every note. We reply in one work day.',
     email: 'press@intelligentsingularityai.com',
   },

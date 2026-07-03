@@ -27,7 +27,7 @@ export const TRANSLATION: LocaleTranslation = {
   about: {
     title: 'Nípa Intelligent Singularity',
     lead: 'Ẹgbẹ́ kékeré kan tí ìmọ̀ atọwọ́dá ń fi agbára kún, tí ń ṣiṣẹ́ láti ibikíbi, tí ń kọ́ ètò amúlò fún ànfààní àgbáyé, tí a forúkọsílẹ̀ ní Alberta ní 2024.',
-    founderStoryText: 'Dókítà Md Diya dá Intelligent Singularity Inc. sílẹ̀ ní 2024 lẹ́yìn ọdún 34 ti iṣẹ́ ìṣègùn kárí ayé. Iṣẹ́ àyànfúnni: láti pa ààlà ànfààní ètò amúlò rẹ́ fún gbogbo ènìyàn, gbogbo iṣẹ́, àti gbogbo àgbègbè — bóyá lórí ayélujára tàbí ní àìsí i.',
+    founderStoryText: 'A dá Intelligent Singularity Inc. sílẹ̀ ní 2024 pẹ̀lú iṣẹ́ àyànfúnni láti pa ààlà ànfààní ètò amúlò rẹ́ fún gbogbo ènìyàn, gbogbo iṣẹ́, àti gbogbo àgbègbè — bóyá lórí ayélujára tàbí ní àìsí i.',
     incorporationContext: 'Tí a forúkọsílẹ̀ ní Alberta, Canada ní 2024. Ilé iṣẹ́ ni, kìí ṣe ilé-iṣẹ́ àdámọ̀ tí àwọn akowó jẹ́ẹ̀dí ń ṣe àtìlẹ́yìn fún. Owó tiwa, láti ìpìlẹ̀, tí ìmọ̀ atọwọ́dá sì ń fi agbára kún láti ọjọ́ àkọ́kọ́.',
     leanOpsPhilosophyText: 'Ẹgbẹ́ kékeré kan. Ìpìlẹ̀ ìmọ̀-ẹ̀rọ kan ṣoṣo tí a ń pín. Ìpele ìpìlẹ̀ amọ̀nà kan ṣoṣo tí a ń pín. Irinṣẹ́ mẹ́tàlélógún tí a ń pèsè lábẹ́ iṣẹ́ àyànfúnni kan ṣoṣo. Owó tí ìṣòwò ìrẹ̀lẹ̀ ń dá sílẹ̀ ń lọ sí ànfààní àgbáyé gidi, kìí ṣe sí owó àlùfáà ọ̀gá.',
   },

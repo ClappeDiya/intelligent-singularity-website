@@ -43,7 +43,7 @@ export const TRANSLATION: LocaleTranslation = {
     lead:
       'Une petite \u00e9quipe \u00e0 distance, augment\u00e9e par l\u2019IA, qui cr\u00e9e des logiciels pour l\u2019acc\u00e8s universel, constitu\u00e9e en soci\u00e9t\u00e9 en Alberta en 2024.',
     founderStoryText:
-      'Dr\u00a0Md Diya a fond\u00e9 Intelligent Singularity Inc. en 2024, apr\u00e8s 34\u00a0ann\u00e9es de pratique m\u00e9dicale mondiale sur plusieurs continents. La mission\u00a0: combler le foss\u00e9 d\u2019acc\u00e8s aux logiciels pour chaque personne, chaque entreprise, chaque r\u00e9gion \u2014 en ligne ou hors ligne.',
+      'Intelligent Singularity Inc. a \u00e9t\u00e9 fond\u00e9e en 2024 avec pour mission de combler le foss\u00e9 d\u2019acc\u00e8s aux logiciels pour chaque personne, chaque entreprise, chaque r\u00e9gion \u2014 en ligne ou hors ligne.',
     incorporationContext:
       'Constitu\u00e9e en soci\u00e9t\u00e9 en 2024 en Alberta, Canada. Un studio, pas une jeune pousse financ\u00e9e par du capital-risque. Autofinanc\u00e9e, amorc\u00e9e, op\u00e9rations augment\u00e9es par l\u2019IA d\u00e8s le premier jour.',
     leanOpsPhilosophyText:

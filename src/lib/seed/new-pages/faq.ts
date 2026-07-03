@@ -19,7 +19,7 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'Who is behind this?',
-          a: 'Dr. Md Diya founded the studio in 2024 after thirty-four years of cross-continental medical practice. A small, remote, AI-augmented team ships each product under one shared stack and one shared accessibility budget.',
+          a: 'The studio was founded in 2024 and is run by a small, remote, AI-augmented team. Each product ships under one shared stack and one shared accessibility budget, and we answer to users rather than investors.',
         },
         {
           q: 'How do you make money if your apps are affordable?',
@@ -128,7 +128,7 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'Where can I find a press kit?',
-          a: 'Visit /press for the fact sheet, the approved quotes, the brand guidance, the founder reference, and the press boilerplate. Need a logo file, a high-res founder portrait, or a custom statement? Email press@intelligentsingularityai.com with your deadline.',
+          a: 'Visit /press for the fact sheet, the approved quotes, the brand guidance, and the press boilerplate. Need a logo file or a custom statement? Email press@intelligentsingularityai.com with your deadline.',
         },
         {
           q: 'Do you speak at conferences?',

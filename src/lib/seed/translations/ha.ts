@@ -27,7 +27,7 @@ export const TRANSLATION: LocaleTranslation = {
   about: {
     title: "Game da Intelligent Singularity",
     lead: "Ƙaramin ƙungiya mai aiki daga nesa, da fasahar hankali na wucin gadi ke ƙarfafa, da ke haɓaka manhajoji don samun damar kowa. An kafa a Alberta a shekarar 2024.",
-    founderStoryText: "Dr. Md Diya ya kafa Intelligent Singularity Inc. a shekarar 2024, bayan shekaru 34 na aikin likitanci a duniya a nahiyoyi da dama. Manufar ita ce: rufe giɓin samun manhajoji ga kowane mutum, kowace kasuwanci da kowace yanki, da haɗin yanar gizo ko ba tare da shi ba.",
+    founderStoryText: "An kafa Intelligent Singularity Inc. a shekarar 2024 da manufar rufe giɓin samun manhajoji ga kowane mutum, kowace kasuwanci da kowace yanki, da haɗin yanar gizo ko ba tare da shi ba.",
     incorporationContext: "An kafa a shekarar 2024 a Alberta, Canada. Ɗakin aiki ne, ba wata kamfanin da masu jari hujja suka tallafa ba. Kuɗin kansu, da ƙoƙarin kansu, da fasahar hankali na wucin gadi ke tafiyar da ayyuka tun farko.",
     leanOpsPhilosophyText: "Ƙaramin ƙungiya. Dandamali ɗaya na fasaha. Kayan more ɗaya. Kayayyaki ashirin da uku da ake fitarwa a ƙarƙashin manufa ɗaya. Tanadin da aka samu daga ayyuka masu inganci suna tallafawa daidaiton haƙƙin gaske, ba albashin manyan jami'ai ba.",
   },

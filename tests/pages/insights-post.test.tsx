@@ -5,7 +5,7 @@ const POST = {
   slug: 'a',
   title: 'A post',
   subtitle: 'sub',
-  author: { name: 'Md Diya' },
+  author: { name: 'Intelligent Singularity' },
   publishedAt: '2026-04-15T12:00:00Z',
   readingTime: 3,
   tags: [{ tag: 'access' }],

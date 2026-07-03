@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "कानूनी इकाई",
         "founded": "स्थापना",
-        "founder": "संस्थापक",
         "structure": "संरचना",
         "operatingModel": "संचालन मॉडल",
         "capital": "पूंजी",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · अल्बर्टा, कनाडा",
-        "founder": "डॉ. एमडी दीया, एमडी",
         "structure": "Clap इकोसिस्टम की मूल कंपनी",
         "operatingModel": "छोटा, दूरस्थ, AI-संवर्धित",
         "capital": "बूटस्ट्रैप्ड · स्व-वित्तपोषित · बिक्री के लिए नहीं",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "स्वीकृत उद्धरण",
       "brandAssetsHeading": "ब्रांड संसाधन",
       "brandNameLabel": "ब्रांड नाम",
-      "founderReferenceLabel": "संस्थापक संदर्भ",
       "pressBoilerplateHeading": "प्रेस मानक पाठ",
       "storyAnglesWelcomedHeading": "कहानी के पहलू जिनका हम स्वागत करते हैं",
       "storyAnglesDeclineHeading": "कहानी के पहलू जिन्हें हम आमतौर पर अस्वीकार करते हैं",
@@ -569,7 +566,6 @@
     "visit": "देखें",
     "schema": {
       "organizationDescription": "सार्वभौमिक पहुँच के लिए सॉफ़्टवेयर बनाने वाला एक स्टूडियो।",
-      "founderDescription": "Intelligent Singularity के संस्थापक, एआई-संवर्धित लीन संचालन के साथ सार्वभौमिक पहुँच के लिए सॉफ़्टवेयर बनाते हैं।",
       "portfolioListName": "Intelligent Singularity उत्पाद पोर्टफोलियो"
     }
   },

@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "قانونی ادارہ",
         "founded": "قائم کردہ",
-        "founder": "بانی",
         "structure": "ساخت",
         "operatingModel": "آپریٹنگ ماڈل",
         "capital": "سرمایہ",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · البرٹا، کینیڈا",
-        "founder": "ڈاکٹر Md Diya، MD",
         "structure": "Clap ایکوسسٹم کا پیرنٹ",
         "operatingModel": "چھوٹا، ریموٹ، AI سے مدد یافتہ",
         "capital": "Bootstrapped · خود مالی · فروخت کے لیے نہیں",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "منظور شدہ اقتباسات",
       "brandAssetsHeading": "برانڈ کے اثاثے",
       "brandNameLabel": "برانڈ کا نام",
-      "founderReferenceLabel": "بانی کا حوالہ",
       "pressBoilerplateHeading": "پریس بوائلر پلیٹ",
       "storyAnglesWelcomedHeading": "کہانی کے پہلو جنہیں ہم خوش آمدید کہتے ہیں",
       "storyAnglesDeclineHeading": "کہانی کے پہلو جنہیں ہم عام طور پر مسترد کرتے ہیں",
@@ -569,7 +566,6 @@
     "visit": "ملاحظہ کریں",
     "schema": {
       "organizationDescription": "عالمی رسائی کے لیے سافٹ ویئر بنانے والا اسٹوڈیو۔",
-      "founderDescription": "Intelligent Singularity کے بانی، AI سے بہتر بنائے گئے لین آپریشنز کے ساتھ عالمی رسائی کے لیے سافٹ ویئر بناتے ہیں۔",
       "portfolioListName": "Intelligent Singularity مصنوعات کا پورٹ فولیو"
     }
   },

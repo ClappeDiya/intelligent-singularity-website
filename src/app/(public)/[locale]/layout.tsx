@@ -11,7 +11,7 @@ import { fetchSiteSettings } from '@/lib/payload';
 import { LOCALES, type Locale } from '@/i18n/config';
 import { loadScriptFont } from '@/app/fonts';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { getFounderSchema, getOrganizationSchema, getWebSiteSchema } from '@/lib/schema';
+import { getOrganizationSchema, getWebSiteSchema } from '@/lib/schema';
 
 export const dynamic = 'force-dynamic';
 
@@ -44,14 +44,12 @@ export default async function LocaleLayout({
   const settings = await fetchSiteSettings(locale);
   const organizationSchema = await getOrganizationSchema(locale);
   const webSiteSchema = getWebSiteSchema(locale);
-  const founderSchema = await getFounderSchema(locale);
 
   return (
     <NextIntlClientProvider messages={messages}>
       <div style={fontFamily ? { fontFamily } : undefined}>
         <JsonLd id="org-schema" data={organizationSchema} />
         <JsonLd id={`website-schema-${locale}`} data={webSiteSchema} />
-        <JsonLd id="founder-schema" data={founderSchema} />
         <SkipToContent />
         <Suspense>
           <TopBar locale={locale} />

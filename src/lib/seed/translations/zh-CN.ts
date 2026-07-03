@@ -27,7 +27,7 @@ export const TRANSLATION: LocaleTranslation = {
   about: {
     title: '关于 Intelligent Singularity',
     lead: '一支精小的、AI 增强的远程团队，致力于打造普惠数字接入的软件，2024 年注册于 Alberta。',
-    founderStoryText: 'Md Diya 博士在横跨多个大洲、历经 34 年的全球医疗实践后，于 2024 年创立了 Intelligent Singularity Inc.。使命：为每一个人、每一家企业、每一个地区消除软件接入的差距——无论在线还是离线。',
+    founderStoryText: 'Intelligent Singularity Inc. 成立于 2024 年，使命是为每一个人、每一家企业、每一个地区消除软件接入的差距——无论在线还是离线。',
     incorporationContext: '2024 年注册于 Alberta, Canada。这是一间工作室，而非风投支持的初创企业。自筹资金、白手起家，从第一天起即采用 AI 增强运营。',
     leanOpsPhilosophyText: '一支小团队。一套共享技术栈。一层共享基础设施。二十三款工具在同一使命下交付。精益运营所节省的成本，投入于真正的普惠化，而非高管薪酬。',
   },

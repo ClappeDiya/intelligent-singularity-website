@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "الكيان القانوني",
         "founded": "تأسست",
-        "founder": "المؤسس",
         "structure": "الهيكل",
         "operatingModel": "نموذج التشغيل",
         "capital": "رأس المال",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · ألبرتا، كندا",
-        "founder": "د. Md Diya، MD",
         "structure": "الشركة الأم لنظام Clap البيئي",
         "operatingModel": "صغير، عن بُعد، معزز بالذكاء الاصطناعي",
         "capital": "Bootstrapped · ممول ذاتيًا · غير معروض للبيع",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "اقتباسات معتمدة",
       "brandAssetsHeading": "أصول العلامة التجارية",
       "brandNameLabel": "اسم العلامة",
-      "founderReferenceLabel": "مرجع المؤسس",
       "pressBoilerplateHeading": "نص الصحافة الجاهز",
       "storyAnglesWelcomedHeading": "زوايا القصص التي نرحب بها",
       "storyAnglesDeclineHeading": "زوايا القصص التي نرفضها عادةً",
@@ -569,7 +566,6 @@
     "visit": "زيارة",
     "schema": {
       "organizationDescription": "استوديو يبني برمجيات للوصول الشامل.",
-      "founderDescription": "مؤسس Intelligent Singularity، يبني برمجيات للوصول الشامل بعمليات رشيقة معززة بالذكاء الاصطناعي.",
       "portfolioListName": "محفظة منتجات Intelligent Singularity"
     }
   },

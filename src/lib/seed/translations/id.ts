@@ -27,7 +27,7 @@ export const TRANSLATION: LocaleTranslation = {
   about: {
     title: 'Tentang Intelligent Singularity',
     lead: 'Tim kecil jarak jauh yang diperkuat AI, membangun perangkat lunak untuk akses universal, didirikan di Alberta pada tahun 2024.',
-    founderStoryText: 'Dr. Md Diya mendirikan Intelligent Singularity Inc. pada tahun 2024 setelah 34 tahun praktik medis global di berbagai benua. Misinya: menutup kesenjangan akses perangkat lunak bagi setiap orang, setiap bisnis, setiap wilayah — online maupun offline.',
+    founderStoryText: 'Intelligent Singularity Inc. didirikan pada tahun 2024 dengan misi menutup kesenjangan akses perangkat lunak bagi setiap orang, setiap bisnis, setiap wilayah — online maupun offline.',
     incorporationContext: 'Didirikan tahun 2024 di Alberta, Canada. Sebuah studio, bukan startup berbasis modal ventura. Didanai mandiri, dibangun dari nol, dengan operasional yang diperkuat AI sejak hari pertama.',
     leanOpsPhilosophyText: 'Satu tim kecil. Satu tumpukan teknologi bersama. Satu lapisan infrastruktur bersama. Dua puluh tiga alat dikirimkan di bawah satu misi. Penghematan dari operasional ramping mendanai demokratisasi yang nyata, bukan gaji eksekutif.',
   },

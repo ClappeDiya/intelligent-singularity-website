@@ -57,7 +57,6 @@ export const PressPage: GlobalConfig = {
       type: 'group',
       fields: [
         { name: 'brandName', type: 'textarea', required: true, localized: true },
-        { name: 'founderReference', type: 'textarea', required: true, localized: true },
       ],
     },
     {

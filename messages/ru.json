@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "Юридическое лицо",
         "founded": "Основано",
-        "founder": "Основатель",
         "structure": "Структура",
         "operatingModel": "Операционная модель",
         "capital": "Капитал",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · Альберта, Канада",
-        "founder": "Д-р Md Diya, MD",
         "structure": "Материнская компания экосистемы Clap",
         "operatingModel": "Малый, удалённый, дополненный ИИ",
         "capital": "Bootstrapped · самофинансируемый · не для продажи",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "Утверждённые цитаты",
       "brandAssetsHeading": "Брендовые материалы",
       "brandNameLabel": "Название бренда",
-      "founderReferenceLabel": "Ссылка на основателя",
       "pressBoilerplateHeading": "Стандартный текст для прессы",
       "storyAnglesWelcomedHeading": "Темы, которым мы рады",
       "storyAnglesDeclineHeading": "Темы, от которых мы обычно отказываемся",
@@ -569,7 +566,6 @@
     "visit": "Открыть",
     "schema": {
       "organizationDescription": "Студия, создающая программное обеспечение для всеобщего доступа.",
-      "founderDescription": "Основатель Intelligent Singularity, создающий программное обеспечение для всеобщего доступа с помощью бережливых операций, усиленных ИИ.",
       "portfolioListName": "Портфолио продуктов Intelligent Singularity"
     }
   },

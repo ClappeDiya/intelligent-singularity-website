@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "আইনি সত্তা",
         "founded": "প্রতিষ্ঠিত",
-        "founder": "প্রতিষ্ঠাতা",
         "structure": "কাঠামো",
         "operatingModel": "পরিচালন মডেল",
         "capital": "মূলধন",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "২০২৪ · আলবার্টা, কানাডা",
-        "founder": "ডা. Md Diya, MD",
         "structure": "Clap ইকোসিস্টেমের মূল কোম্পানি",
         "operatingModel": "ছোট, রিমোট, AI-উন্নত",
         "capital": "বুটস্ট্র্যাপড · স্ব-অর্থায়িত · বিক্রির জন্য নয়",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "অনুমোদিত উদ্ধৃতি",
       "brandAssetsHeading": "ব্র্যান্ড সম্পদ",
       "brandNameLabel": "ব্র্যান্ডের নাম",
-      "founderReferenceLabel": "প্রতিষ্ঠাতা সম্পর্কিত তথ্য",
       "pressBoilerplateHeading": "প্রেস বয়লারপ্লেট",
       "storyAnglesWelcomedHeading": "যেসব গল্পের কোণ আমরা স্বাগত জানাই",
       "storyAnglesDeclineHeading": "যেসব গল্পের কোণ আমরা সাধারণত প্রত্যাখ্যান করি",
@@ -569,7 +566,6 @@
     "visit": "দেখুন",
     "schema": {
       "organizationDescription": "সর্বজনীন প্রবেশযোগ্যতার জন্য সফটওয়্যার তৈরিকারী একটি স্টুডিও।",
-      "founderDescription": "Intelligent Singularity-এর প্রতিষ্ঠাতা, AI-সমৃদ্ধ লিন অপারেশনের সাথে সর্বজনীন প্রবেশযোগ্যতার জন্য সফটওয়্যার তৈরি করেন।",
       "portfolioListName": "Intelligent Singularity পণ্য পোর্টফোলিও"
     }
   },
