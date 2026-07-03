@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "Ƙungiyar shari'a",
         "founded": "An kafa",
-        "founder": "Wanda ya kafa",
         "structure": "Tsari",
         "operatingModel": "Tsarin aiki",
         "capital": "Babban jari",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · Alberta, Kanada",
-        "founder": "Dr. Md Diya, MD",
         "structure": "Mahaifiyar kamfanin tsarin Clap",
         "operatingModel": "Ƙarami, mai-nesa, mai-AI-augmented",
         "capital": "Bootstrapped · mai-tallafin-kai · ba a sayarwa",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "Maganganu da aka amince",
       "brandAssetsHeading": "Kayan tambari",
       "brandNameLabel": "Sunan tambari",
-      "founderReferenceLabel": "Ƙayyadewar wanda ya kafa",
       "pressBoilerplateHeading": "Tsarin matsayin labarai",
       "storyAnglesWelcomedHeading": "Kusurwoyin labari da muke maraba",
       "storyAnglesDeclineHeading": "Kusurwoyin labari da galibi muke ƙi",
@@ -569,7 +566,6 @@
     "visit": "Ziyarci",
     "schema": {
       "organizationDescription": "Studio mai gina manhajoji don samun damar duniya.",
-      "founderDescription": "Wanda ya kafa Intelligent Singularity, yana gina manhajoji don samun damar duniya tare da ayyukan lean da AI ta ƙarfafa.",
       "portfolioListName": "Tarin Kayayyakin Intelligent Singularity"
     }
   },

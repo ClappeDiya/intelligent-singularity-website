@@ -33,7 +33,7 @@ type CareersStrings = GlobalStrings & {
 
 type PressStrings = GlobalStrings & {
   boilerplate: string;
-  brandGuidance: { brandName: string; founderReference: string };
+  brandGuidance: { brandName: string };
   contactCta: { eyebrow: string; heading: string; body: string };
   quotes: Array<{ text: string; role: string }>;
   factSheet: Array<{ label: string; value: string }>;
@@ -805,24 +805,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. 是一家母公司和软件工作室。公司于 2024 年在加拿大艾伯塔省成立。它是 Clap 生态系统的母公司。Clap 生态系统是一个不断壮大的平台家族。它涵盖商业、健康、金融、工作、农业、创意媒体和共享基础设施。团队规模小、完全远程、AI 增强。每个产品都为通用访问而构建。同一旗舰产品同时服务于发达和发展中市场的客户。公司是自筹资金,不出售。',
     brandGuidance: {
       brandName: '首次使用时写 Intelligent Singularity。之后写 the studio。法律名称是 Intelligent Singularity Inc.,总部位于加拿大艾伯塔省。',
-      founderReference: '首次引用 Dr. Md Diya,之后用 Diya。代词:he/him。可应要求提供照片和简短简介。',
     },
     contactCta: {
       eyebrow: '直接联系',
-      heading: '需要引语、背景信息或创始人采访?',
+      heading: '需要引语、背景信息或采访?',
       body: '请将您的截止日期发邮件至 press@intelligentsingularityai.com。每条消息都有真人阅读。我们在一个工作日内回复。',
     },
     quotes: [
-      { text: '伟大的软件不是奢侈品。它是世界上任何地方每一家企业、每一位在做诚实工作的人的基本权利。', role: '创始人,Intelligent Singularity' },
+      { text: '伟大的软件不是奢侈品。它是世界上任何地方每一家企业、每一位在做诚实工作的人的基本权利。', role: '公司声明 · 2026' },
       { text: '奥斯陆的孩子和马拉维农村的孩子,应该可以拿起同一款软件。这不是抱负。这是每个产品在出货时所遵守的约束。', role: '工作室宣言 · 2026' },
-      { text: '今天仍有 22 亿人离线。其中 96% 生活在中低收入国家。我们不以向服务最充分的客户卖出多少来衡量成功;我们以地球上服务最不到位的人能否在自己的语言、自己的设备、自己实际拥有的网络连接下使用同一款产品,来衡量成功。', role: '创始人,Intelligent Singularity' },
+      { text: '今天仍有 22 亿人离线。其中 96% 生活在中低收入国家。我们不以向服务最充分的客户卖出多少来衡量成功;我们以地球上服务最不到位的人能否在自己的语言、自己的设备、自己实际拥有的网络连接下使用同一款产品,来衡量成功。', role: '公司声明 · 2026' },
       { text: '运行一个小型 AI 增强团队所节省的开支,并不用来支付更大的办公室或更喧闹的发布会。它们用来支付那个让一人企业不必信用卡就能进行真实运营的免费层。', role: '关于页面 · 2026' },
     ],
     factSheet: [
       { label: '法律实体', value: 'Intelligent Singularity Inc.' },
       { label: '成立', value: '2024 · 加拿大艾伯塔省' },
-      { label: '创始人', value: 'Dr. Md Diya, MD' },
-      { label: '创始人背景', value: '34 年跨大洲医疗从业经验' },
       { label: '架构', value: 'Clap 生态系统的母公司' },
       { label: '团队', value: '小型、远程、AI 增强' },
       { label: '融资', value: '自筹资金 · 自我融资 · 不出售' },
@@ -850,24 +847,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. es una empresa matriz y un estudio de software. Se fundó en Alberta, Canadá, en 2024. Es la matriz del ecosistema Clap. El ecosistema Clap es una familia creciente de plataformas. Cubre negocio, salud, finanzas, trabajo, agricultura, medios creativos e infraestructura compartida. El equipo es pequeño, totalmente remoto y aumentado por IA. Cada producto está construido para acceso universal. El mismo producto principal sirve a clientes en mercados desarrollados y en desarrollo. La empresa es bootstrapped y no está a la venta.',
     brandGuidance: {
       brandName: 'Escribe Intelligent Singularity en el primer uso. Después, the studio. El nombre legal es Intelligent Singularity Inc. Con sede en Alberta, Canadá.',
-      founderReference: 'Dr. Md Diya en la primera referencia, Diya después. Pronombres: he/him. Fotos y biografía corta disponibles a petición.',
     },
     contactCta: {
       eyebrow: 'Contacto directo',
-      heading: '¿Necesitas una cita, contexto o una entrevista con el fundador?',
+      heading: '¿Necesitas una cita, contexto o una entrevista?',
       body: 'Envía un email a press@intelligentsingularityai.com con tu plazo. Una persona lee cada mensaje. Respondemos en un día laborable.',
     },
     quotes: [
-      { text: 'El gran software no es un bien de lujo. Es un derecho básico para cada empresa y cada persona que hace un trabajo honesto en cualquier parte del mundo.', role: 'Fundador, Intelligent Singularity' },
+      { text: 'El gran software no es un bien de lujo. Es un derecho básico para cada empresa y cada persona que hace un trabajo honesto en cualquier parte del mundo.', role: 'Declaración de la empresa · 2026' },
       { text: 'Un niño en Oslo y un niño en la Malawi rural deberían alcanzar el mismo software. No es una aspiración. Es la restricción contra la que se entrega cada producto.', role: 'Manifiesto del estudio · 2026' },
-      { text: 'Dos mil doscientos millones de personas siguen sin conexión hoy. El noventa y seis por ciento vive en países de ingresos bajos y medios. No medimos el éxito por cuánto vendemos al cliente mejor servido; lo medimos por si la persona menos servida en la Tierra puede usar el mismo producto, en su idioma, en su dispositivo, con la conexión que realmente tiene.', role: 'Fundador, Intelligent Singularity' },
+      { text: 'Dos mil doscientos millones de personas siguen sin conexión hoy. El noventa y seis por ciento vive en países de ingresos bajos y medios. No medimos el éxito por cuánto vendemos al cliente mejor servido; lo medimos por si la persona menos servida en la Tierra puede usar el mismo producto, en su idioma, en su dispositivo, con la conexión que realmente tiene.', role: 'Declaración de la empresa · 2026' },
       { text: 'Los ahorros de operar un pequeño equipo aumentado por IA no pagan oficinas más grandes ni lanzamientos más ruidosos. Pagan el plan gratuito que permite a un negocio de una sola persona ejecutar operaciones reales sin tarjeta de crédito.', role: 'Página Sobre · 2026' },
     ],
     factSheet: [
       { label: 'Entidad legal', value: 'Intelligent Singularity Inc.' },
       { label: 'Fundada', value: '2024 · Alberta, Canadá' },
-      { label: 'Fundador', value: 'Dr. Md Diya, MD' },
-      { label: 'Trayectoria del fundador', value: '34 años de práctica médica intercontinental' },
       { label: 'Estructura', value: 'Empresa matriz del ecosistema Clap' },
       { label: 'Equipo', value: 'Pequeño, remoto, aumentado por IA' },
       { label: 'Financiación', value: 'Bootstrapped · autofinanciado · no en venta' },
@@ -895,24 +889,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. एक मूल कंपनी और सॉफ़्टवेयर स्टूडियो है। इसे 2024 में अल्बर्टा, कनाडा में स्थापित किया गया। यह Clap इकोसिस्टम की मूल कंपनी है। Clap इकोसिस्टम बढ़ता हुआ प्लेटफ़ॉर्म परिवार है। यह व्यवसाय, स्वास्थ्य, वित्त, कार्य, कृषि, रचनात्मक मीडिया और साझा बुनियादी ढाँचे को कवर करता है। टीम छोटी, पूर्णतः दूरस्थ और AI-संवर्धित है। हर उत्पाद सार्वभौमिक पहुँच के लिए बनाया गया है। वही प्रमुख उत्पाद विकसित और विकासशील बाज़ारों दोनों के ग्राहकों की सेवा करता है। कंपनी बूटस्ट्रैप्ड है और बिक्री के लिए नहीं है।',
     brandGuidance: {
       brandName: 'पहली बार के उपयोग में Intelligent Singularity लिखें। फिर the studio। कानूनी नाम Intelligent Singularity Inc. है। मुख्यालय अल्बर्टा, कनाडा में।',
-      founderReference: 'पहले संदर्भ में Dr. Md Diya, उसके बाद Diya। सर्वनाम: he/him। फ़ोटो और छोटी जीवनी अनुरोध पर उपलब्ध।',
     },
     contactCta: {
       eyebrow: 'सीधा संपर्क',
-      heading: 'उद्धरण, पृष्ठभूमि या संस्थापक साक्षात्कार चाहिए?',
+      heading: 'उद्धरण, पृष्ठभूमि या साक्षात्कार चाहिए?',
       body: 'अपनी समय-सीमा के साथ press@intelligentsingularityai.com पर ईमेल करें। हर संदेश एक इंसान पढ़ता है। हम एक कार्य दिवस में जवाब देते हैं।',
     },
     quotes: [
-      { text: 'बेहतरीन सॉफ़्टवेयर कोई विलासिता की वस्तु नहीं है। यह दुनिया में कहीं भी ईमानदारी से काम करने वाले हर व्यवसाय और हर व्यक्ति का बुनियादी अधिकार है।', role: 'संस्थापक, Intelligent Singularity' },
+      { text: 'बेहतरीन सॉफ़्टवेयर कोई विलासिता की वस्तु नहीं है। यह दुनिया में कहीं भी ईमानदारी से काम करने वाले हर व्यवसाय और हर व्यक्ति का बुनियादी अधिकार है।', role: 'कंपनी वक्तव्य · 2026' },
       { text: 'ऑस्लो का बच्चा और ग्रामीण मलावी का बच्चा एक ही सॉफ़्टवेयर तक पहुँच सके। यह आकांक्षा नहीं है। यह वह बाधा है जिसके तहत हर उत्पाद शिप होता है।', role: 'स्टूडियो घोषणापत्र · 2026' },
-      { text: 'आज भी 2.2 अरब लोग ऑफ़लाइन हैं। उनमें से 96% निम्न और मध्यम आय वाले देशों में रहते हैं। हम सफलता को इस आधार पर नहीं मापते कि सर्वोत्तम-सेवित ग्राहक को कितना बेचा; हम इसे इस आधार पर मापते हैं कि क्या पृथ्वी पर सबसे कम-सेवित व्यक्ति वही उत्पाद, अपनी भाषा में, अपने डिवाइस पर, उस कनेक्शन पर जो उसके पास वास्तव में है, इस्तेमाल कर सकता है।', role: 'संस्थापक, Intelligent Singularity' },
+      { text: 'आज भी 2.2 अरब लोग ऑफ़लाइन हैं। उनमें से 96% निम्न और मध्यम आय वाले देशों में रहते हैं। हम सफलता को इस आधार पर नहीं मापते कि सर्वोत्तम-सेवित ग्राहक को कितना बेचा; हम इसे इस आधार पर मापते हैं कि क्या पृथ्वी पर सबसे कम-सेवित व्यक्ति वही उत्पाद, अपनी भाषा में, अपने डिवाइस पर, उस कनेक्शन पर जो उसके पास वास्तव में है, इस्तेमाल कर सकता है।', role: 'कंपनी वक्तव्य · 2026' },
       { text: 'एक छोटी AI-संवर्धित टीम चलाने से होने वाली बचत बड़े दफ़्तरों या ज़्यादा शोरगुल वाले लॉन्च के लिए नहीं जाती। वह उस मुफ़्त टियर के लिए जाती है जो एक-व्यक्ति कारोबार को बिना क्रेडिट कार्ड के असली परिचालन चलाने देता है।', role: 'अबाउट पृष्ठ · 2026' },
     ],
     factSheet: [
       { label: 'कानूनी इकाई', value: 'Intelligent Singularity Inc.' },
       { label: 'स्थापना', value: '2024 · अल्बर्टा, कनाडा' },
-      { label: 'संस्थापक', value: 'Dr. Md Diya, MD' },
-      { label: 'संस्थापक पृष्ठभूमि', value: 'अंतरमहाद्वीपीय चिकित्सा अभ्यास के 34 वर्ष' },
       { label: 'संरचना', value: 'Clap इकोसिस्टम की मूल कंपनी' },
       { label: 'टीम', value: 'छोटी, दूरस्थ, AI-संवर्धित' },
       { label: 'वित्त पोषण', value: 'बूटस्ट्रैप्ड · स्व-वित्त पोषित · बिक्री के लिए नहीं' },
@@ -940,24 +931,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. شركة أم واستوديو برمجيات. تأسست في ألبرتا، كندا عام 2024. وهي الشركة الأم لمنظومة Clap. منظومة Clap عائلة متنامية من المنصات. تغطي الأعمال والصحة والتمويل والعمل والزراعة والإعلام الإبداعي والبنية التحتية المشتركة. الفريق صغير، عن بُعد بالكامل، ومُعزَّز بالذكاء الاصطناعي. كل منتج مبني للوصول الشامل. المنتج الرئيسي نفسه يخدم العملاء في الأسواق المتقدمة والنامية على حد سواء. الشركة ممولة ذاتيًا وغير معروضة للبيع.',
     brandGuidance: {
       brandName: 'اكتب Intelligent Singularity في أول استخدام. ثم اكتب the studio. الاسم القانوني هو Intelligent Singularity Inc. ومقرها ألبرتا، كندا.',
-      founderReference: 'Dr. Md Diya في أول إشارة، ثم Diya بعد ذلك. الضمائر: he/him. الصور والسيرة المختصرة متاحة عند الطلب.',
     },
     contactCta: {
       eyebrow: 'تواصل مباشر',
-      heading: 'هل تحتاج إلى اقتباس، أو خلفية، أو مقابلة مع المؤسس؟',
+      heading: 'هل تحتاج إلى اقتباس، أو خلفية، أو مقابلة؟',
       body: 'راسل press@intelligentsingularityai.com مع موعد التسليم. إنسان يقرأ كل ملاحظة. نرد خلال يوم عمل واحد.',
     },
     quotes: [
-      { text: 'البرمجيات العظيمة ليست سلعة كمالية. هي حق أساسي لكل عمل ولكل إنسان يقوم بعمل صادق في أي مكان من العالم.', role: 'المؤسس، Intelligent Singularity' },
+      { text: 'البرمجيات العظيمة ليست سلعة كمالية. هي حق أساسي لكل عمل ولكل إنسان يقوم بعمل صادق في أي مكان من العالم.', role: 'بيان الشركة · 2026' },
       { text: 'يجب أن يصل طفل في أوسلو وطفل في الريف الملاوي إلى البرنامج نفسه. هذا ليس طموحًا. هذا هو القيد الذي يُطلَق به كل منتج.', role: 'بيان الاستوديو · 2026' },
-      { text: 'لا يزال 2.2 مليار شخص خارج الإنترنت اليوم. يعيش 96% منهم في بلدان منخفضة ومتوسطة الدخل. لا نقيس النجاح بمقدار ما نبيعه للعميل الأفضل خدمة؛ نقيسه بقدرة أقل الناس خدمةً على الأرض على استخدام المنتج نفسه، بلغته، على جهازه، عبر الاتصال الذي يملكه فعلًا.', role: 'المؤسس، Intelligent Singularity' },
+      { text: 'لا يزال 2.2 مليار شخص خارج الإنترنت اليوم. يعيش 96% منهم في بلدان منخفضة ومتوسطة الدخل. لا نقيس النجاح بمقدار ما نبيعه للعميل الأفضل خدمة؛ نقيسه بقدرة أقل الناس خدمةً على الأرض على استخدام المنتج نفسه، بلغته، على جهازه، عبر الاتصال الذي يملكه فعلًا.', role: 'بيان الشركة · 2026' },
       { text: 'الوفورات الناتجة عن تشغيل فريق صغير مُعزَّز بالذكاء الاصطناعي لا تُنفَق على مكاتب أكبر أو إطلاقات أعلى صوتًا. تُنفَق على الباقة المجانية التي تتيح لعمل من شخص واحد إدارة عمليات حقيقية دون بطاقة ائتمان.', role: 'صفحة من نحن · 2026' },
     ],
     factSheet: [
       { label: 'الكيان القانوني', value: 'Intelligent Singularity Inc.' },
       { label: 'التأسيس', value: '2024 · ألبرتا، كندا' },
-      { label: 'المؤسس', value: 'Dr. Md Diya, MD' },
-      { label: 'خلفية المؤسس', value: '34 عامًا من الممارسة الطبية بين القارات' },
       { label: 'البنية', value: 'الشركة الأم لمنظومة Clap' },
       { label: 'الفريق', value: 'صغير، عن بُعد، مُعزَّز بالذكاء الاصطناعي' },
       { label: 'التمويل', value: 'ممول ذاتيًا · لا للبيع' },
@@ -985,24 +973,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: "Intelligent Singularity Inc. est une société mère et un studio logiciel. Elle a été créée en Alberta, au Canada, en 2024. Elle est la société mère de l'écosystème Clap. L'écosystème Clap est une famille croissante de plateformes. Il couvre business, santé, finance, travail, agriculture, médias créatifs et infrastructure partagée. L'équipe est petite, entièrement à distance, et augmentée par l'IA. Chaque produit est construit pour un accès universel. Le même produit phare sert les clients des marchés développés et en développement. La société est bootstrapped et n'est pas à vendre.",
     brandGuidance: {
       brandName: "Écrivez Intelligent Singularity à la première utilisation. Ensuite, the studio. Le nom légal est Intelligent Singularity Inc. Basée en Alberta, au Canada.",
-      founderReference: "Dr. Md Diya à la première référence, Diya ensuite. Pronoms : he/him. Photos et bio courte disponibles sur demande.",
     },
     contactCta: {
       eyebrow: 'Contact direct',
-      heading: "Besoin d'une citation, d'un contexte ou d'une interview du fondateur ?",
+      heading: "Besoin d'une citation, d'un contexte ou d'une interview ?",
       body: "Envoyez un email à press@intelligentsingularityai.com avec votre échéance. Une personne lit chaque message. Nous répondons sous un jour ouvré.",
     },
     quotes: [
-      { text: "Un excellent logiciel n'est pas un bien de luxe. C'est un droit fondamental pour chaque entreprise et chaque personne qui fait un travail honnête, où que ce soit dans le monde.", role: 'Fondateur, Intelligent Singularity' },
+      { text: "Un excellent logiciel n'est pas un bien de luxe. C'est un droit fondamental pour chaque entreprise et chaque personne qui fait un travail honnête, où que ce soit dans le monde.", role: 'Déclaration de la société · 2026' },
       { text: "Un enfant à Oslo et un enfant dans la Malawi rurale devraient pouvoir prendre le même logiciel. Ce n'est pas une aspiration. C'est la contrainte avec laquelle chaque produit est livré.", role: 'Manifeste du studio · 2026' },
-      { text: "Deux milliards deux cents millions de personnes sont encore hors ligne aujourd'hui. Quatre-vingt-seize pour cent vivent dans des pays à revenu faible ou intermédiaire. Nous ne mesurons pas le succès à l'aune de ce que nous vendons au client le mieux servi ; nous le mesurons en regardant si la personne la moins servie au monde peut utiliser le même produit, dans sa langue, sur son appareil, avec la connexion qu'elle a réellement.", role: 'Fondateur, Intelligent Singularity' },
+      { text: "Deux milliards deux cents millions de personnes sont encore hors ligne aujourd'hui. Quatre-vingt-seize pour cent vivent dans des pays à revenu faible ou intermédiaire. Nous ne mesurons pas le succès à l'aune de ce que nous vendons au client le mieux servi ; nous le mesurons en regardant si la personne la moins servie au monde peut utiliser le même produit, dans sa langue, sur son appareil, avec la connexion qu'elle a réellement.", role: 'Déclaration de la société · 2026' },
       { text: "Les économies réalisées en faisant tourner une petite équipe augmentée par l'IA ne paient pas des bureaux plus grands ou des lancements plus bruyants. Elles paient le forfait gratuit qui permet à une entreprise d'une personne de mener de vraies opérations sans carte de crédit.", role: 'Page À propos · 2026' },
     ],
     factSheet: [
       { label: 'Entité légale', value: 'Intelligent Singularity Inc.' },
       { label: 'Fondée', value: '2024 · Alberta, Canada' },
-      { label: 'Fondateur', value: 'Dr. Md Diya, MD' },
-      { label: 'Parcours du fondateur', value: '34 ans de pratique médicale transcontinentale' },
       { label: 'Structure', value: "Société mère de l'écosystème Clap" },
       { label: 'Équipe', value: 'Petite, à distance, augmentée par IA' },
       { label: 'Financement', value: 'Bootstrapped · auto-financé · pas à vendre' },
@@ -1030,24 +1015,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'A Intelligent Singularity Inc. é uma empresa-mãe e um estúdio de software. Foi criada em Alberta, Canadá, em 2024. É a empresa-mãe do ecossistema Clap. O ecossistema Clap é uma família crescente de plataformas. Cobre negócio, saúde, finanças, trabalho, agricultura, media criativa e infraestrutura partilhada. A equipa é pequena, totalmente remota e aumentada por IA. Cada produto é construído para acesso universal. O mesmo produto principal serve clientes em mercados desenvolvidos e em desenvolvimento. A empresa é bootstrapped e não está à venda.',
     brandGuidance: {
       brandName: 'Escreva Intelligent Singularity na primeira utilização. Depois, the studio. O nome legal é Intelligent Singularity Inc. Sediada em Alberta, Canadá.',
-      founderReference: 'Dr. Md Diya na primeira referência, Diya a seguir. Pronomes: he/him. Fotos e biografia curta disponíveis a pedido.',
     },
     contactCta: {
       eyebrow: 'Contacto direto',
-      heading: 'Precisa de uma citação, contexto, ou de uma entrevista com o fundador?',
+      heading: 'Precisa de uma citação, contexto, ou de uma entrevista?',
       body: 'Envie um email para press@intelligentsingularityai.com com o seu prazo. Uma pessoa lê cada mensagem. Respondemos dentro de um dia útil.',
     },
     quotes: [
-      { text: 'O bom software não é um bem de luxo. É um direito básico para cada empresa e cada pessoa que faz um trabalho honesto em qualquer parte do mundo.', role: 'Fundador, Intelligent Singularity' },
+      { text: 'O bom software não é um bem de luxo. É um direito básico para cada empresa e cada pessoa que faz um trabalho honesto em qualquer parte do mundo.', role: 'Declaração da empresa · 2026' },
       { text: 'Uma criança em Oslo e uma criança na Malavi rural deviam poder pegar no mesmo software. Não é uma aspiração. É a restrição com que cada produto é lançado.', role: 'Manifesto do estúdio · 2026' },
-      { text: 'Há 2,2 mil milhões de pessoas ainda offline hoje. 96% delas vivem em países de baixo e médio rendimento. Não medimos o sucesso pelo quanto vendemos ao cliente mais bem servido; medimo-lo pela capacidade da pessoa menos bem servida na Terra de usar o mesmo produto, na sua língua, no seu dispositivo, na ligação que ela realmente tem.', role: 'Fundador, Intelligent Singularity' },
+      { text: 'Há 2,2 mil milhões de pessoas ainda offline hoje. 96% delas vivem em países de baixo e médio rendimento. Não medimos o sucesso pelo quanto vendemos ao cliente mais bem servido; medimo-lo pela capacidade da pessoa menos bem servida na Terra de usar o mesmo produto, na sua língua, no seu dispositivo, na ligação que ela realmente tem.', role: 'Declaração da empresa · 2026' },
       { text: 'As poupanças de uma equipa pequena aumentada por IA não pagam escritórios maiores nem lançamentos mais barulhentos. Pagam o plano gratuito que permite a um negócio de uma só pessoa operar a sério sem cartão de crédito.', role: 'Página Sobre · 2026' },
     ],
     factSheet: [
       { label: 'Entidade legal', value: 'Intelligent Singularity Inc.' },
       { label: 'Fundada', value: '2024 · Alberta, Canadá' },
-      { label: 'Fundador', value: 'Dr. Md Diya, MD' },
-      { label: 'Antecedentes do fundador', value: '34 anos de prática médica intercontinental' },
       { label: 'Estrutura', value: 'Empresa-mãe do ecossistema Clap' },
       { label: 'Equipa', value: 'Pequena, remota, aumentada por IA' },
       { label: 'Financiamento', value: 'Bootstrapped · autofinanciada · não está à venda' },
@@ -1075,24 +1057,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. একটি মূল কোম্পানি এবং সফটওয়্যার স্টুডিও। এটি 2024 সালে কানাডার আলবার্টায় প্রতিষ্ঠিত হয়েছিল। এটি Clap ইকোসিস্টেমের মূল কোম্পানি। Clap ইকোসিস্টেম একটি ক্রমবর্ধমান প্ল্যাটফর্ম পরিবার। এটি ব্যবসা, স্বাস্থ্য, অর্থ, কাজ, কৃষি, সৃজনশীল মিডিয়া এবং ভাগাভাগি অবকাঠামো কভার করে। দলটি ছোট, সম্পূর্ণ রিমোট এবং AI-সংবর্ধিত। প্রতিটি পণ্য সর্বজনীন প্রবেশের জন্য তৈরি। একই প্রধান পণ্য উন্নত এবং উন্নয়নশীল বাজার উভয়ের গ্রাহকদের সেবা করে। কোম্পানিটি বুটস্ট্র্যাপড এবং বিক্রির জন্য নয়।',
     brandGuidance: {
       brandName: 'প্রথম ব্যবহারে Intelligent Singularity লিখুন। তারপর the studio। আইনি নাম Intelligent Singularity Inc.। কানাডার আলবার্টায় অবস্থিত।',
-      founderReference: 'প্রথম উল্লেখে Dr. Md Diya, এরপর Diya। সর্বনাম: he/him। অনুরোধে ছবি এবং সংক্ষিপ্ত জীবনী উপলব্ধ।',
     },
     contactCta: {
       eyebrow: 'সরাসরি যোগাযোগ',
-      heading: 'উদ্ধৃতি, পটভূমি, বা প্রতিষ্ঠাতার সাক্ষাৎকার দরকার?',
+      heading: 'উদ্ধৃতি, পটভূমি, বা সাক্ষাৎকার দরকার?',
       body: 'আপনার সময়সীমা সহ press@intelligentsingularityai.com-এ ইমেইল করুন। প্রতিটি বার্তা একজন মানুষ পড়েন। আমরা এক কার্যদিবসে উত্তর দিই।',
     },
     quotes: [
-      { text: 'উৎকৃষ্ট সফটওয়্যার বিলাসদ্রব্য নয়। এটি বিশ্বের যে কোনো জায়গায় সৎ কাজ করা প্রতিটি ব্যবসা এবং প্রতিটি ব্যক্তির মৌলিক অধিকার।', role: 'প্রতিষ্ঠাতা, Intelligent Singularity' },
+      { text: 'উৎকৃষ্ট সফটওয়্যার বিলাসদ্রব্য নয়। এটি বিশ্বের যে কোনো জায়গায় সৎ কাজ করা প্রতিটি ব্যবসা এবং প্রতিটি ব্যক্তির মৌলিক অধিকার।', role: 'কোম্পানি বিবৃতি · 2026' },
       { text: 'অসলোর একটি শিশু এবং গ্রামীণ মালাউইয়ের একটি শিশু একই সফটওয়্যার পর্যন্ত পৌঁছাতে পারবে। এটি কোনো আকাঙ্ক্ষা নয়। এটি সেই সীমাবদ্ধতা যার বিরুদ্ধে প্রতিটি পণ্য শিপ করা হয়।', role: 'স্টুডিও ঘোষণাপত্র · 2026' },
-      { text: 'আজও 2.2 বিলিয়ন মানুষ অফলাইনে আছেন। তাদের 96% নিম্ন ও মধ্যম আয়ের দেশগুলোতে বাস করেন। আমরা সফলতা পরিমাপ করি না সর্বাধিক-সেবিত গ্রাহকের কাছে কতটা বিক্রি করেছি তার দ্বারা; আমরা পরিমাপ করি পৃথিবীর সর্বনিম্ন-সেবিত ব্যক্তি একই পণ্য, তাঁর ভাষায়, তাঁর ডিভাইসে, তিনি বাস্তবে যে সংযোগ পান, ব্যবহার করতে পারেন কি না তার দ্বারা।', role: 'প্রতিষ্ঠাতা, Intelligent Singularity' },
+      { text: 'আজও 2.2 বিলিয়ন মানুষ অফলাইনে আছেন। তাদের 96% নিম্ন ও মধ্যম আয়ের দেশগুলোতে বাস করেন। আমরা সফলতা পরিমাপ করি না সর্বাধিক-সেবিত গ্রাহকের কাছে কতটা বিক্রি করেছি তার দ্বারা; আমরা পরিমাপ করি পৃথিবীর সর্বনিম্ন-সেবিত ব্যক্তি একই পণ্য, তাঁর ভাষায়, তাঁর ডিভাইসে, তিনি বাস্তবে যে সংযোগ পান, ব্যবহার করতে পারেন কি না তার দ্বারা।', role: 'কোম্পানি বিবৃতি · 2026' },
       { text: 'একটি ছোট AI-সংবর্ধিত দল চালানো থেকে যে সাশ্রয় হয় তা বড়ো অফিস বা আরও কোলাহলপূর্ণ লঞ্চের জন্য খরচ হয় না। তা সেই ফ্রি টিয়ারের জন্য খরচ হয় যা একজন-ব্যক্তির ব্যবসাকে ক্রেডিট কার্ড ছাড়াই বাস্তব অপারেশন চালাতে দেয়।', role: 'সম্পর্কে পৃষ্ঠা · 2026' },
     ],
     factSheet: [
       { label: 'আইনি সত্তা', value: 'Intelligent Singularity Inc.' },
       { label: 'প্রতিষ্ঠা', value: '2024 · আলবার্টা, কানাডা' },
-      { label: 'প্রতিষ্ঠাতা', value: 'Dr. Md Diya, MD' },
-      { label: 'প্রতিষ্ঠাতার পটভূমি', value: 'আন্তর্মহাদেশীয় চিকিৎসা চর্চার 34 বছর' },
       { label: 'কাঠামো', value: 'Clap ইকোসিস্টেমের মূল কোম্পানি' },
       { label: 'দল', value: 'ছোট, রিমোট, AI-সংবর্ধিত' },
       { label: 'অর্থায়ন', value: 'বুটস্ট্র্যাপড · স্ব-অর্থায়িত · বিক্রির জন্য নয়' },
@@ -1120,24 +1099,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. — материнская компания и софт-студия. Основана в Альберте, Канада, в 2024 году. Является материнской для экосистемы Clap. Экосистема Clap — растущее семейство платформ. Охватывает бизнес, здоровье, финансы, работу, сельское хозяйство, креативные медиа и общую инфраструктуру. Команда небольшая, полностью удалённая и усиленная ИИ. Каждый продукт создан для универсального доступа. Один и тот же флагманский продукт обслуживает клиентов как на развитых, так и на развивающихся рынках. Компания самофинансируемая и не продаётся.',
     brandGuidance: {
       brandName: 'При первом упоминании пишите Intelligent Singularity. Затем — the studio. Юридическое название — Intelligent Singularity Inc. Базируется в Альберте, Канада.',
-      founderReference: 'Dr. Md Diya при первом упоминании, далее — Diya. Местоимения: he/him. Фото и короткая биография по запросу.',
     },
     contactCta: {
       eyebrow: 'Прямой контакт',
-      heading: 'Нужна цитата, бэкграунд или интервью с основателем?',
+      heading: 'Нужна цитата, бэкграунд или интервью?',
       body: 'Напишите на press@intelligentsingularityai.com и укажите дедлайн. Каждое письмо читает человек. Мы отвечаем в течение одного рабочего дня.',
     },
     quotes: [
-      { text: 'Хорошее ПО — не предмет роскоши. Это базовое право каждой компании и каждого человека, занятого честным трудом, где бы он ни находился.', role: 'Основатель, Intelligent Singularity' },
+      { text: 'Хорошее ПО — не предмет роскоши. Это базовое право каждой компании и каждого человека, занятого честным трудом, где бы он ни находился.', role: 'Заявление компании · 2026' },
       { text: 'Ребёнок в Осло и ребёнок в сельском Малави должны тянуться к одному и тому же ПО. Это не цель. Это ограничение, под которое выпускается каждый продукт.', role: 'Манифест студии · 2026' },
-      { text: 'Сегодня 2,2 миллиарда людей всё ещё оффлайн. 96% из них живут в странах с низким и средним доходом. Мы измеряем успех не тем, сколько продали наиболее обслуживаемому клиенту, — а тем, может ли наименее обслуживаемый человек на Земле использовать тот же продукт, на своём языке, на своём устройстве, через ту связь, которая у него реально есть.', role: 'Основатель, Intelligent Singularity' },
+      { text: 'Сегодня 2,2 миллиарда людей всё ещё оффлайн. 96% из них живут в странах с низким и средним доходом. Мы измеряем успех не тем, сколько продали наиболее обслуживаемому клиенту, — а тем, может ли наименее обслуживаемый человек на Земле использовать тот же продукт, на своём языке, на своём устройстве, через ту связь, которая у него реально есть.', role: 'Заявление компании · 2026' },
       { text: 'Сэкономленное на маленькой команде, усиленной ИИ, не идёт на офисы побольше или громче-запуски. Оно идёт на бесплатный тариф, который позволяет бизнесу из одного человека вести реальные операции без кредитной карты.', role: 'Страница «О нас» · 2026' },
     ],
     factSheet: [
       { label: 'Юридическое лицо', value: 'Intelligent Singularity Inc.' },
       { label: 'Основана', value: '2024 · Альберта, Канада' },
-      { label: 'Основатель', value: 'Dr. Md Diya, MD' },
-      { label: 'Бэкграунд основателя', value: '34 года межконтинентальной медицинской практики' },
       { label: 'Структура', value: 'Материнская компания экосистемы Clap' },
       { label: 'Команда', value: 'Маленькая, удалённая, усиленная ИИ' },
       { label: 'Финансирование', value: 'Bootstrapped · самофинансируемая · не продаётся' },
@@ -1165,24 +1141,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. ایک پیرنٹ کمپنی اور سافٹ ویئر اسٹوڈیو ہے۔ اسے 2024 میں البرٹا، کینیڈا میں قائم کیا گیا۔ یہ Clap ایکوسسٹم کی پیرنٹ کمپنی ہے۔ Clap ایکوسسٹم پلیٹ فارمز کا ایک بڑھتا ہوا خاندان ہے۔ یہ کاروبار، صحت، مالیات، کام، زراعت، تخلیقی میڈیا اور مشترکہ بنیادی ڈھانچے کو احاطہ کرتا ہے۔ ٹیم چھوٹی، مکمل طور پر ریموٹ، اور AI سے بڑھائی گئی ہے۔ ہر پروڈکٹ عالمی رسائی کے لیے بنائی گئی ہے۔ وہی فلیگ شپ پروڈکٹ ترقی یافتہ اور ترقی پذیر مارکیٹوں دونوں کے گاہکوں کی خدمت کرتی ہے۔ کمپنی خود فنڈڈ ہے اور برائے فروخت نہیں ہے۔',
     brandGuidance: {
       brandName: 'پہلے استعمال میں Intelligent Singularity لکھیں۔ پھر the studio۔ قانونی نام Intelligent Singularity Inc. ہے۔ ہیڈکوارٹر البرٹا، کینیڈا میں۔',
-      founderReference: 'پہلے حوالے میں Dr. Md Diya، اس کے بعد Diya۔ ضمائر: he/him۔ تصاویر اور مختصر سوانح حیات درخواست پر دستیاب۔',
     },
     contactCta: {
       eyebrow: 'براہ راست رابطہ',
-      heading: 'اقتباس، پس منظر، یا بانی کے انٹرویو کی ضرورت ہے؟',
+      heading: 'اقتباس، پس منظر، یا انٹرویو کی ضرورت ہے؟',
       body: 'اپنی ڈیڈ لائن کے ساتھ press@intelligentsingularityai.com پر ای میل کریں۔ ہر پیغام ایک حقیقی شخص پڑھتا ہے۔ ہم ایک کاروباری دن میں جواب دیتے ہیں۔',
     },
     quotes: [
-      { text: 'بہترین سافٹ ویئر کوئی عیش و عشرت کی شے نہیں ہے۔ یہ دنیا میں کہیں بھی ایمانداری سے کام کرنے والے ہر کاروبار اور ہر شخص کا بنیادی حق ہے۔', role: 'بانی، Intelligent Singularity' },
+      { text: 'بہترین سافٹ ویئر کوئی عیش و عشرت کی شے نہیں ہے۔ یہ دنیا میں کہیں بھی ایمانداری سے کام کرنے والے ہر کاروبار اور ہر شخص کا بنیادی حق ہے۔', role: 'کمپنی کا بیان · 2026' },
       { text: 'اوسلو کا ایک بچہ اور دیہی ملاوی کا ایک بچہ ایک ہی سافٹ ویئر تک پہنچ سکنا چاہیے۔ یہ کوئی خواہش نہیں۔ یہ وہ قید ہے جس کے تحت ہر پروڈکٹ شپ ہوتی ہے۔', role: 'اسٹوڈیو منشور · 2026' },
-      { text: 'آج بھی 2.2 ارب لوگ آف لائن ہیں۔ ان میں سے 96% کم اور درمیانی آمدنی والے ممالک میں رہتے ہیں۔ ہم کامیابی کو اس بنیاد پر نہیں ناپتے کہ ہم نے سب سے زیادہ خدمت یافتہ صارف کو کتنا فروخت کیا؛ ہم اسے اس بنیاد پر ناپتے ہیں کہ آیا زمین پر سب سے کم خدمت یافتہ شخص وہی پروڈکٹ، اپنی زبان میں، اپنے ڈیوائس پر، اس کنکشن پر جو اس کے پاس واقعی ہے، استعمال کر سکتا ہے۔', role: 'بانی، Intelligent Singularity' },
+      { text: 'آج بھی 2.2 ارب لوگ آف لائن ہیں۔ ان میں سے 96% کم اور درمیانی آمدنی والے ممالک میں رہتے ہیں۔ ہم کامیابی کو اس بنیاد پر نہیں ناپتے کہ ہم نے سب سے زیادہ خدمت یافتہ صارف کو کتنا فروخت کیا؛ ہم اسے اس بنیاد پر ناپتے ہیں کہ آیا زمین پر سب سے کم خدمت یافتہ شخص وہی پروڈکٹ، اپنی زبان میں، اپنے ڈیوائس پر، اس کنکشن پر جو اس کے پاس واقعی ہے، استعمال کر سکتا ہے۔', role: 'کمپنی کا بیان · 2026' },
       { text: 'ایک چھوٹی AI سے بڑھائی گئی ٹیم چلانے سے جو بچت ہوتی ہے وہ بڑے دفاتر یا زیادہ شور والے لانچ پر خرچ نہیں ہوتی۔ وہ اس فری ٹائر پر خرچ ہوتی ہے جو ایک شخص کے کاروبار کو کریڈٹ کارڈ کے بغیر حقیقی آپریشنز چلانے دیتی ہے۔', role: 'تعارف صفحہ · 2026' },
     ],
     factSheet: [
       { label: 'قانونی ادارہ', value: 'Intelligent Singularity Inc.' },
       { label: 'قیام', value: '2024 · البرٹا، کینیڈا' },
-      { label: 'بانی', value: 'Dr. Md Diya, MD' },
-      { label: 'بانی کا پس منظر', value: 'بین البرعظمی طبی پریکٹس کے 34 سال' },
       { label: 'ڈھانچہ', value: 'Clap ایکوسسٹم کی پیرنٹ کمپنی' },
       { label: 'ٹیم', value: 'چھوٹی، ریموٹ، AI سے بڑھائی گئی' },
       { label: 'فنڈنگ', value: 'خود فنڈڈ · برائے فروخت نہیں' },
@@ -1210,24 +1183,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. adalah perusahaan induk dan studio perangkat lunak. Didirikan di Alberta, Kanada, pada tahun 2024. Ini adalah induk dari ekosistem Clap. Ekosistem Clap adalah keluarga platform yang terus berkembang. Mencakup bisnis, kesehatan, keuangan, kerja, pertanian, media kreatif, dan infrastruktur bersama. Tim kecil, sepenuhnya remote, dan diperkuat AI. Setiap produk dibangun untuk akses universal. Produk unggulan yang sama melayani pelanggan di pasar maju dan berkembang. Perusahaan ini bootstrapped dan tidak dijual.',
     brandGuidance: {
       brandName: 'Tulis Intelligent Singularity pada penggunaan pertama. Kemudian the studio. Nama hukum adalah Intelligent Singularity Inc. Berbasis di Alberta, Kanada.',
-      founderReference: 'Dr. Md Diya pada referensi pertama, Diya setelahnya. Kata ganti: he/him. Foto dan biografi singkat tersedia atas permintaan.',
     },
     contactCta: {
       eyebrow: 'Kontak langsung',
-      heading: 'Butuh kutipan, latar belakang, atau wawancara pendiri?',
+      heading: 'Butuh kutipan, latar belakang, atau wawancara?',
       body: 'Email press@intelligentsingularityai.com dengan tenggat waktu Anda. Seorang manusia membaca setiap pesan. Kami membalas dalam satu hari kerja.',
     },
     quotes: [
-      { text: 'Perangkat lunak yang hebat bukan barang mewah. Ia adalah hak dasar bagi setiap usaha dan setiap orang yang bekerja jujur di mana pun di dunia.', role: 'Pendiri, Intelligent Singularity' },
+      { text: 'Perangkat lunak yang hebat bukan barang mewah. Ia adalah hak dasar bagi setiap usaha dan setiap orang yang bekerja jujur di mana pun di dunia.', role: 'Pernyataan perusahaan · 2026' },
       { text: 'Seorang anak di Oslo dan seorang anak di pedesaan Malawi seharusnya bisa menggapai perangkat lunak yang sama. Itu bukan cita-cita. Itu adalah kendala yang dengannya setiap produk dirilis.', role: 'Manifesto Studio · 2026' },
-      { text: '2,2 miliar orang masih offline hari ini. Sembilan puluh enam persen dari mereka tinggal di negara berpenghasilan rendah dan menengah. Kami tidak mengukur kesuksesan dengan seberapa banyak yang kami jual kepada pelanggan paling terlayani; kami mengukurnya dengan apakah orang yang paling kurang terlayani di Bumi dapat menggunakan produk yang sama, dalam bahasanya, di perangkatnya, melalui koneksi yang sebenarnya dia miliki.', role: 'Pendiri, Intelligent Singularity' },
+      { text: '2,2 miliar orang masih offline hari ini. Sembilan puluh enam persen dari mereka tinggal di negara berpenghasilan rendah dan menengah. Kami tidak mengukur kesuksesan dengan seberapa banyak yang kami jual kepada pelanggan paling terlayani; kami mengukurnya dengan apakah orang yang paling kurang terlayani di Bumi dapat menggunakan produk yang sama, dalam bahasanya, di perangkatnya, melalui koneksi yang sebenarnya dia miliki.', role: 'Pernyataan perusahaan · 2026' },
       { text: 'Penghematan dari menjalankan tim kecil yang diperkuat AI tidak digunakan untuk kantor yang lebih besar atau peluncuran yang lebih ramai. Itu digunakan untuk paket gratis yang memungkinkan usaha satu orang menjalankan operasi nyata tanpa kartu kredit.', role: 'Halaman Tentang · 2026' },
     ],
     factSheet: [
       { label: 'Entitas hukum', value: 'Intelligent Singularity Inc.' },
       { label: 'Didirikan', value: '2024 · Alberta, Kanada' },
-      { label: 'Pendiri', value: 'Dr. Md Diya, MD' },
-      { label: 'Latar belakang pendiri', value: '34 tahun praktik medis lintas benua' },
       { label: 'Struktur', value: 'Perusahaan induk dari ekosistem Clap' },
       { label: 'Tim', value: 'Kecil, remote, diperkuat AI' },
       { label: 'Pendanaan', value: 'Bootstrapped · didanai sendiri · tidak dijual' },
@@ -1255,24 +1225,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. ni kampuni mama na studio ya programu. Ilianzishwa Alberta, Kanada, mwaka wa 2024. Ni kampuni mama ya mfumo wa Clap. Mfumo wa Clap ni familia inayoongezeka ya majukwaa. Inashughulikia biashara, afya, fedha, kazi, kilimo, vyombo vya habari vya ubunifu, na miundombinu ya pamoja. Timu ni ndogo, mbali kabisa, na imeimarishwa na AI. Kila bidhaa imejengwa kwa ajili ya ufikiaji wa wote. Bidhaa kuu ile ile inahudumia wateja katika masoko yaliyoendelea na yanayoendelea. Kampuni imejifadhili na haiuzwi.',
     brandGuidance: {
       brandName: 'Andika Intelligent Singularity wakati wa kwanza. Kisha the studio. Jina la kisheria ni Intelligent Singularity Inc. Iko Alberta, Kanada.',
-      founderReference: 'Dr. Md Diya kwenye marejeleo ya kwanza, Diya baadaye. Viwakilishi: he/him. Picha na wasifu mfupi unapatikana kwa ombi.',
     },
     contactCta: {
       eyebrow: 'Mawasiliano ya moja kwa moja',
-      heading: 'Unahitaji nukuu, asili, au mahojiano na mwanzilishi?',
+      heading: 'Unahitaji nukuu, asili, au mahojiano?',
       body: 'Tuma barua pepe kwa press@intelligentsingularityai.com pamoja na muda wako wa mwisho. Kila ujumbe husomwa na mtu halisi. Tunajibu ndani ya siku moja ya kazi.',
     },
     quotes: [
-      { text: 'Programu nzuri si bidhaa ya anasa. Ni haki ya msingi kwa kila biashara na kila mtu anayefanya kazi ya uaminifu mahali popote duniani.', role: 'Mwanzilishi, Intelligent Singularity' },
+      { text: 'Programu nzuri si bidhaa ya anasa. Ni haki ya msingi kwa kila biashara na kila mtu anayefanya kazi ya uaminifu mahali popote duniani.', role: 'Taarifa ya kampuni · 2026' },
       { text: 'Mtoto huko Oslo na mtoto kijijini Malawi wanapaswa kuweza kufikia programu ile ile. Si lengo. Ni kikwazo ambacho kila bidhaa hutumwa nayo.', role: 'Ilani ya Studio · 2026' },
-      { text: 'Bilioni 2.2 za watu bado wako nje ya mtandao leo. Asilimia tisini na sita yao wanaishi katika nchi zenye mapato ya chini na ya kati. Hatuipimi mafanikio kwa kiasi tunachouza kwa mteja anayehudumiwa zaidi; tunaipima kwa iwapo mtu anayehudumiwa kwa uchache zaidi Duniani anaweza kutumia bidhaa ile ile, kwa lugha yake, kwenye kifaa chake, kwa muunganisho anaouwa kweli.', role: 'Mwanzilishi, Intelligent Singularity' },
+      { text: 'Bilioni 2.2 za watu bado wako nje ya mtandao leo. Asilimia tisini na sita yao wanaishi katika nchi zenye mapato ya chini na ya kati. Hatuipimi mafanikio kwa kiasi tunachouza kwa mteja anayehudumiwa zaidi; tunaipima kwa iwapo mtu anayehudumiwa kwa uchache zaidi Duniani anaweza kutumia bidhaa ile ile, kwa lugha yake, kwenye kifaa chake, kwa muunganisho anaouwa kweli.', role: 'Taarifa ya kampuni · 2026' },
       { text: 'Akiba kutokana na kuendesha timu ndogo iliyoimarishwa kwa AI hailipi ofisi kubwa zaidi wala uzinduzi wa kelele zaidi. Hulipa kiwango cha bure kinachoruhusu biashara ya mtu mmoja kuendesha shughuli halisi bila kadi ya mkopo.', role: 'Ukurasa wa Kuhusu · 2026' },
     ],
     factSheet: [
       { label: 'Chombo cha kisheria', value: 'Intelligent Singularity Inc.' },
       { label: 'Imeanzishwa', value: '2024 · Alberta, Kanada' },
-      { label: 'Mwanzilishi', value: 'Dr. Md Diya, MD' },
-      { label: 'Asili ya mwanzilishi', value: 'Miaka 34 ya mazoezi ya kimatibabu kati ya bara' },
       { label: 'Muundo', value: 'Kampuni mama ya mfumo wa Clap' },
       { label: 'Timu', value: 'Ndogo, mbali, imeimarishwa kwa AI' },
       { label: 'Ufadhili', value: 'Imejifadhili · haiuzwi' },
@@ -1300,24 +1267,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: 'Intelligent Singularity Inc. jẹ́ kampani ìyá àti studio sọ́fítíwéàrì. A dá a sílẹ̀ ní Alberta, Canada, ní ọdún 2024. Ó jẹ́ kampani ìyá ti mfumo Clap. Mfumo Clap jẹ́ ìdílé pèpéle tí ń dàgbà. Ó kárí òwò, ìlera, ìṣúná, iṣẹ́, ọgbọ́n àgbẹ̀, ìròyìn ìṣẹ̀dá, àti ìpilẹ̀ṣẹ̀ àjọṣe. Ẹgbẹ́ kékeré, ní ọ̀nà jíjìn pátápátá, àti tí AI ti múratàn. Gbogbo ọjà ni a kọ́ fún àǹfààní ayé ńláńlá. Ọjà àkọ́kọ́ kannáà ń ṣe iṣẹ́ fún àwọn oníbàárá ní ọjà tó ti dàgbà àti tí ń dàgbà. Kampani náà jẹ́ tí a fúnra-rẹ̀ ṣètilẹ́yìn, kì í sì í ṣe fún títà.',
     brandGuidance: {
       brandName: 'Kọ Intelligent Singularity ní lílò àkọ́kọ́. Lẹ́yìn náà, the studio. Orúkọ ìjọba ni Intelligent Singularity Inc. Wà ní Alberta, Canada.',
-      founderReference: 'Dr. Md Diya ní àfihàn àkọ́kọ́, Diya lẹ́yìn náà. Ọ̀rọ̀ arọ́pò orúkọ: he/him. Àwòrán àti ìtàn ìgbé ayé kúkúrú wà ní ìbéèrè.',
     },
     contactCta: {
       eyebrow: 'Ìbárasọ̀rọ̀ tààrà',
-      heading: 'Ó nílò àyọkà, ìpilẹ̀ àyẹ̀wò, tàbí ìfọ̀rọ̀wánilẹ́nuwò pẹ̀lú olùdásílẹ̀?',
+      heading: 'Ó nílò àyọkà, ìpilẹ̀ àyẹ̀wò, tàbí ìfọ̀rọ̀wánilẹ́nuwò?',
       body: 'Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityai.com pẹ̀lú àkókò ìparí rẹ. Ènìyàn ń ka àkọsílẹ̀ kọ̀ọ̀kan. A dáhùn nínú ọjọ́ iṣẹ́ kan.',
     },
     quotes: [
-      { text: 'Sọ́fítíwéàrì tó dára kì í ṣe ọjà fún ìgbádùn. Ó jẹ́ ẹ̀tọ́ pàtàkì fún gbogbo òwò àti gbogbo ènìyàn tó ń ṣe iṣẹ́ olótìítọ́ ní ibikíbi ní ayé.', role: 'Olùdásílẹ̀, Intelligent Singularity' },
+      { text: 'Sọ́fítíwéàrì tó dára kì í ṣe ọjà fún ìgbádùn. Ó jẹ́ ẹ̀tọ́ pàtàkì fún gbogbo òwò àti gbogbo ènìyàn tó ń ṣe iṣẹ́ olótìítọ́ ní ibikíbi ní ayé.', role: 'Ọ̀rọ̀ ilé-iṣẹ́ · 2026' },
       { text: 'Ọmọ kan ní Oslo àti ọmọ kan ní àwọn àgbègbè ìgbé Malawi kan gbọdọ̀ lè dé sí sọ́fítíwéàrì kannáà. Ó kì í ṣe ìfojúsùn. Ó jẹ́ ìkànnì tí gbogbo ọjà ń jádelé pẹ̀lú.', role: 'Àpèjuwe Ilé-iṣẹ́ · 2026' },
-      { text: 'Bilionu 2.2 ènìyàn ṣì wà látọ̀nà jíjìn lónìí. Ìpín 96 nínú wọn ń gbé ní àwọn orílẹ̀-èdè onígbówó kekere àti àárín gbùngbùn. A kì í wọn àṣeyọrí pẹ̀lú ìwọ̀n tí a tà fún oníbàárá tí a ti ṣe iṣẹ́ jùlọ fún; a wọn ní iwọn agbára ènìyàn tí a kò tí ì pèsè jùlọ ní Ayé láti lo ọjà kannáà, ní èdè rẹ̀, lórí ẹ̀rọ rẹ̀, lórí ìsopọ̀ tí ó ní ní gidi.', role: 'Olùdásílẹ̀, Intelligent Singularity' },
+      { text: 'Bilionu 2.2 ènìyàn ṣì wà látọ̀nà jíjìn lónìí. Ìpín 96 nínú wọn ń gbé ní àwọn orílẹ̀-èdè onígbówó kekere àti àárín gbùngbùn. A kì í wọn àṣeyọrí pẹ̀lú ìwọ̀n tí a tà fún oníbàárá tí a ti ṣe iṣẹ́ jùlọ fún; a wọn ní iwọn agbára ènìyàn tí a kò tí ì pèsè jùlọ ní Ayé láti lo ọjà kannáà, ní èdè rẹ̀, lórí ẹ̀rọ rẹ̀, lórí ìsopọ̀ tí ó ní ní gidi.', role: 'Ọ̀rọ̀ ilé-iṣẹ́ · 2026' },
       { text: 'Owó tí a fipamọ́ láti ṣe iṣẹ́ ẹgbẹ́ kékeré tí AI ti múratàn kì í san fún àwọn ọ́fíìsì títóbi tàbí ìfilọ̀ tí ó pariwo. Ó san fún ipele ọfẹ tí ó jẹ́ kí òwò ènìyàn-kan ṣiṣẹ́ àwọn iṣẹ́ gidi láì sí káàdì ojú èèyàn.', role: 'Ojú-ìwé Nípa · 2026' },
     ],
     factSheet: [
       { label: 'Ọ̀nà ìjọba', value: 'Intelligent Singularity Inc.' },
       { label: 'Tí a dá sílẹ̀', value: '2024 · Alberta, Canada' },
-      { label: 'Olùdásílẹ̀', value: 'Dr. Md Diya, MD' },
-      { label: 'Ìpilẹ̀ olùdásílẹ̀', value: 'Ọdún 34 ti àjọṣe iṣẹ́ ìṣègùn àgbáyé' },
       { label: 'Ètò', value: 'Kampani ìyá ti mfumo Clap' },
       { label: 'Ẹgbẹ́', value: 'Kékeré, latọ̀nà jíjìn, tí AI ti múratàn' },
       { label: 'Ìpèsè owó', value: 'Tí a fúnra-rẹ̀ ṣètilẹ́yìn · kì í sì í ṣe fún títà' },
@@ -1345,24 +1309,21 @@ const PRESS: Record<LocaleCode, PressStrings> = {
     boilerplate: "Intelligent Singularity Inc. kamfanin uba ne kuma studiyo na software. An kafa shi a Alberta, Kanada, a shekarar 2024. Shi ne kamfanin uban tsarin Clap. Tsarin Clap iyali ne na dandamali masu girma. Yana rufe kasuwanci, lafiya, kuɗi, aiki, noma, kafofin watsa labarai na kerawa, da ababen more rayuwa na haɗin gwiwa. Ƙungiyar ƙarama ce, gaba ɗaya tana aiki ta nesa, kuma an haɓaka ta da AI. Ana gina kowane samfuri don samun damar amfani na duniya. Babban samfuri ɗaya yana hidima ga abokan ciniki a cikin kasuwanni masu ci gaba da masu tasowa. Kamfanin yana da kuɗin kansa kuma ba a sayar da shi ba.",
     brandGuidance: {
       brandName: "A rubuta Intelligent Singularity a amfani na farko. Sai the studio. Sunan shari'a shi ne Intelligent Singularity Inc. Yana Alberta, Kanada.",
-      founderReference: "Dr. Md Diya a nuni na farko, Diya bayan haka. Karin magana: he/him. Hotuna da takaitaccen tarihin rayuwa suna nan akan buƙata.",
     },
     contactCta: {
       eyebrow: 'Sadarwa kai tsaye',
-      heading: 'Kana bukatar magana, bayanan baya, ko hira da wanda ya kafa?',
+      heading: 'Kana bukatar magana, bayanan baya, ko hira?',
       body: 'Aiko da imel zuwa press@intelligentsingularityai.com tare da lokacin ƙarshe. Mutum na karanta kowane saƙo. Muna amsa cikin rana ɗaya ta aiki.',
     },
     quotes: [
-      { text: 'Software mai kyau ba kayan alatu ba ne. Hakki ne na asali ga kowane kasuwanci da kowane mutum mai aiki na gaskiya a ko\'ina a duniya.', role: 'Wanda ya kafa, Intelligent Singularity' },
+      { text: 'Software mai kyau ba kayan alatu ba ne. Hakki ne na asali ga kowane kasuwanci da kowane mutum mai aiki na gaskiya a ko\'ina a duniya.', role: 'Sanarwar kamfani · 2026' },
       { text: 'Yaro a Oslo da yaro a karkarar Malawi ya kamata su kai ga software guda. Wannan ba burin ba ne. Ƙayyadewa ne wanda kowane samfuri yake aiko da shi.', role: 'Sanarwar Studio · 2026' },
-      { text: 'Mutane biliyan 2.2 har yanzu suna a waje da intanet a yau. Kashi 96 cikin ɗari na rayuwa a ƙasashe masu ƙananan kuɗaɗen shiga da matsakaita. Ba mu auna nasara da yawan abin da muka sayar wa abokin cinikin da aka fi yi wa hidima ba; muna auna ta da ko mutum mafi rashin hidima a Duniya zai iya amfani da samfurin guda, a yarensa, a kan na\'urarsa, ta hanyar haɗin da yake da shi a hakika.', role: 'Wanda ya kafa, Intelligent Singularity' },
+      { text: 'Mutane biliyan 2.2 har yanzu suna a waje da intanet a yau. Kashi 96 cikin ɗari na rayuwa a ƙasashe masu ƙananan kuɗaɗen shiga da matsakaita. Ba mu auna nasara da yawan abin da muka sayar wa abokin cinikin da aka fi yi wa hidima ba; muna auna ta da ko mutum mafi rashin hidima a Duniya zai iya amfani da samfurin guda, a yarensa, a kan na\'urarsa, ta hanyar haɗin da yake da shi a hakika.', role: 'Sanarwar kamfani · 2026' },
       { text: 'Tanadi daga gudanar da ƙaramar ƙungiya da AI ya haɓaka ba ya biyan ɗakunan ofis manya ko ƙaddamarwa mai ƙara. Yana biyan matakin kyauta wanda ke ba da damar kasuwancin mutum ɗaya gudanar da ayyuka na hakika ba tare da katin biyan kuɗi ba.', role: 'Shafin Game da Mu · 2026' },
     ],
     factSheet: [
       { label: "Hukunci na shari'a", value: 'Intelligent Singularity Inc.' },
       { label: 'An kafa', value: '2024 · Alberta, Kanada' },
-      { label: 'Wanda ya kafa', value: 'Dr. Md Diya, MD' },
-      { label: 'Tarihin wanda ya kafa', value: 'Shekaru 34 na aikin likitanci tsakanin nahiyoyi' },
       { label: 'Tsari', value: 'Kamfanin uba na tsarin Clap' },
       { label: 'Tawaga', value: 'Ƙarama, mai aiki ta nesa, an haɓaka da AI' },
       { label: 'Tallafin kuɗi', value: 'Mai kuɗin kansa · ba a sayar da shi ba' },
@@ -2416,7 +2377,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Intelligent Singularity 是什么?', a: 'Intelligent Singularity Inc. 是 Clap 生态系统的母公司。我们是一家小型、AI 增强、完全远程的工作室。我们位于加拿大艾伯塔省。我们构建为通用访问而设计的软件。同一旗舰产品同时服务于纽约的财富 500 强买家和拉各斯的一人市场摊位。一个共享技术栈。一个使命。' },
         { q: '你们是风险投资支持的初创公司吗?', a: '不是。我们自筹资金、自助创业。这意味着我们对用户负责,而不是对追逐快速退出的投资者。我们交付较慢,但计划存在二十年。公司不出售。' },
-        { q: '是谁在做这件事?', a: 'Dr. Md Diya 在三十四年的跨大洲医疗执业之后,于 2024 年创立了这个工作室。一个小型、远程、AI 增强的团队在一个共享技术栈和一个共享可访问性预算下交付每一个产品。' },
+        { q: '是谁在做这件事?', a: '这个工作室于 2024 年成立,由一个小型、远程、AI 增强的团队运营。每个产品都在一个共享技术栈和一个共享可访问性预算下交付,我们对用户负责,而不是对投资者。' },
         { q: '如果你们的应用价格亲民,你们如何赚钱?', a: '产品有一个永远免费的层级,可以经营真实的业务。付费层增加规模,从不增加功能。定价根据购买力调整,所以在多伦多花二十美元的计划在拉各斯花得更少。发达世界和企业客户支付完整市场价;新兴市场和单人客户支付尊重其货币的价格。算账成立是因为我们运营精简,让 AI 代理结构承担杠杆。' },
         { q: '为什么叫"母公司"——这是控股结构吗?', a: '它是简单意义上的母公司。一个法律实体拥有这一系列平台。清单:Clappe、ClapBill、ClapMed、ClapDiet、ClapPay、Clapwork、Apogee、Audiflo、Nestbitt、DailyWorship、Gclap、FileManager,加上共享基础设施。每个产品都有自己的网站。每个都有自己的条款和价格。法律所有者是 Intelligent Singularity Inc.。' },
         { q: '团队有多大?', a: '足够小,新员工在第一周就认识每一张脸,但又足够大,能让十几个平台持续交付。我们刻意不做规模竞赛;AI 代理结构在真正的意义上是团队的一部分。' },
@@ -2447,7 +2408,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: '我如何与工作室合作?', a: '我们与 NGO、政府和公司合作。共同目标是为通常负担不起的人提供普遍可及的软件。从联系页面发送一段简短说明。将其路由到 Partnerships。你将在两个工作日内收到回复。' },
-        { q: '我在哪里可以找到媒体资源包?', a: '访问 /press 获取事实简介、批准的引用、品牌指南、创始人简介和媒体样板。需要 logo 文件、高分辨率创始人肖像或定制声明?发邮件至 press@intelligentsingularityai.com 并附上你的截止日期。' },
+        { q: '我在哪里可以找到媒体资源包?', a: '访问 /press 获取事实简介、批准的引用、品牌指南和媒体样板。需要 logo 文件或定制声明?发邮件至 press@intelligentsingularityai.com 并附上你的截止日期。' },
         { q: '你们在会议上发言吗?', a: '有时。我们谈论普遍可及性、AI 增强团队、医疗软件和精益软件经济。发邮件至 press@intelligentsingularityai.com,附上活动详情和受众规模。我们会诚实告诉你能否到场。' },
         { q: '你们接受捐款或资助吗?', a: '我们不向用户请求捐款。我们欢迎资助。资助必须来自基金会或银行。该资助必须与全价尚未起作用的市场中的可及性软件相关。发邮件至 partners@intelligentsingularityai.com。' },
       ],
@@ -2467,7 +2428,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: '¿Qué es Intelligent Singularity?', a: 'Intelligent Singularity Inc. es la empresa matriz del ecosistema Clap. Somos un estudio pequeño, aumentado por IA y completamente remoto. Tenemos sede en Alberta, Canadá. Construimos software para acceso universal. El mismo producto principal sirve a un comprador Fortune 500 en Nueva York y a un puesto de mercado de una persona en Lagos. Un stack compartido. Una misión.' },
         { q: '¿Sois una startup respaldada por capital riesgo?', a: 'No. Somos autofinanciados y bootstrapped. Eso significa que respondemos a los usuarios, no a inversores que persiguen salidas rápidas. Tardamos más en lanzar y planeamos estar aquí dentro de veinte años. La empresa no está en venta.' },
-        { q: '¿Quién está detrás de esto?', a: 'Dr. Md Diya fundó el estudio en 2024 tras treinta y cuatro años de práctica médica intercontinental. Un equipo pequeño, remoto y aumentado por IA entrega cada producto bajo un stack compartido y un presupuesto compartido de accesibilidad.' },
+        { q: '¿Quién está detrás de esto?', a: 'El estudio se fundó en 2024 y lo gestiona un equipo pequeño, remoto y aumentado por IA. Cada producto se entrega bajo un stack compartido y un presupuesto compartido de accesibilidad, y respondemos ante los usuarios, no ante los inversores.' },
         { q: '¿Cómo ganáis dinero si vuestras apps son asequibles?', a: 'Los productos tienen un plan gratis-para-siempre con el que se puede llevar un negocio real. Los planes de pago añaden escala, nunca funciones. El precio se ajusta al poder adquisitivo, así un plan que cuesta veinte dólares en Toronto cuesta menos en Lagos. Los clientes del mundo desarrollado y enterprise pagan precio de mercado completo; los clientes de mercados emergentes y solo pagan un precio que respeta su moneda. La matemática funciona porque operamos lean y dejamos que el tejido de agentes IA cargue el apalancamiento.' },
         { q: '¿Por qué "empresa matriz" — es una estructura holding?', a: 'Es una empresa matriz en el sentido llano. Una entidad legal posee la familia de plataformas. La lista: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, más infraestructura compartida. Cada producto corre en su propio sitio. Cada uno tiene sus propios términos y precios. La propietaria legal es Intelligent Singularity Inc.' },
         { q: '¿Cómo de grande es el equipo?', a: 'Lo bastante pequeño para que un nuevo fichaje aprenda cada cara la primera semana, lo bastante grande para mantener más de una docena de plataformas en producción. Deliberadamente no anunciamos una carrera de tamaño; el tejido de agentes IA es parte del equipo en sentido real.' },
@@ -2498,7 +2459,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: '¿Cómo me asocio con el estudio?', a: 'Trabajamos con ONGs, gobiernos y empresas. El objetivo compartido es software de acceso universal para personas que normalmente no pueden permitírselo. Envía una nota breve desde la página de contacto. Dirígela a Partnerships. Recibirás respuesta en dos días laborables.' },
-        { q: '¿Dónde encuentro un kit de prensa?', a: 'Visita /press para la ficha de datos, las citas aprobadas, la guía de marca, la referencia del fundador y el boilerplate de prensa. ¿Necesitas un archivo de logo, un retrato del fundador en alta resolución, o una declaración personalizada? Escribe a press@intelligentsingularityai.com con tu fecha límite.' },
+        { q: '¿Dónde encuentro un kit de prensa?', a: 'Visita /press para la ficha de datos, las citas aprobadas, la guía de marca y el boilerplate de prensa. ¿Necesitas un archivo de logo o una declaración personalizada? Escribe a press@intelligentsingularityai.com con tu fecha límite.' },
         { q: '¿Habláis en conferencias?', a: 'A veces. Hablamos sobre acceso universal, equipos aumentados por IA, software de salud y economía de software lean. Escribe a press@intelligentsingularityai.com con los detalles del evento y el tamaño de la audiencia. Te diremos honestamente si podemos asistir.' },
         { q: '¿Aceptáis donaciones o subvenciones?', a: 'No pedimos donaciones a los usuarios. Sí damos la bienvenida a subvenciones. Las subvenciones deben venir de fundaciones o bancos. La subvención debe estar atada a software de acceso en mercados donde los precios completos aún no funcionan. Escribe a partners@intelligentsingularityai.com.' },
       ],
@@ -2518,7 +2479,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Intelligent Singularity क्या है?', a: 'Intelligent Singularity Inc. Clap इकोसिस्टम की मूल कंपनी है। हम एक छोटा, AI-संवर्धित, पूर्णतः दूरस्थ स्टूडियो हैं। हम कनाडा के अल्बर्टा में स्थित हैं। हम सार्वभौमिक पहुँच के लिए सॉफ़्टवेयर बनाते हैं। वही प्रमुख उत्पाद न्यू यॉर्क के Fortune 500 खरीदार और लागोस के एक-व्यक्ति बाज़ार-स्टॉल दोनों की सेवा करता है। एक साझा स्टैक। एक मिशन।' },
         { q: 'क्या आप उद्यम-समर्थित स्टार्टअप हैं?', a: 'नहीं। हम स्व-वित्तपोषित और बूटस्ट्रैप्ड हैं। इसका मतलब है हम उपयोगकर्ताओं को जवाबदेह हैं, उन निवेशकों को नहीं जो जल्दी एग्ज़िट का पीछा करते हैं। हम शिप करने में अधिक समय लेते हैं और बीस साल बाद भी रहने की योजना बनाते हैं। कंपनी बिक्री के लिए नहीं है।' },
-        { q: 'इसके पीछे कौन है?', a: 'Dr. Md Diya ने चौंतीस साल की अंतरमहाद्वीपीय चिकित्सा अभ्यास के बाद 2024 में स्टूडियो की स्थापना की। एक छोटी, दूरस्थ, AI-संवर्धित टीम एक साझा स्टैक और एक साझा सुलभता बजट के तहत हर उत्पाद शिप करती है।' },
+        { q: 'इसके पीछे कौन है?', a: 'स्टूडियो की स्थापना 2024 में हुई और इसे एक छोटी, दूरस्थ, AI-संवर्धित टीम चलाती है। हर उत्पाद एक साझा स्टैक और एक साझा सुलभता बजट के तहत शिप होता है, और हम निवेशकों के बजाय उपयोगकर्ताओं के प्रति जवाबदेह हैं।' },
         { q: 'अगर आपकी ऐप्स किफ़ायती हैं तो आप पैसे कैसे कमाते हैं?', a: 'उत्पादों के पास एक हमेशा-मुफ़्त टियर है जो असली व्यवसाय चलाता है। पेड टियर स्केल जोड़ते हैं, फ़ीचर कभी नहीं। मूल्य निर्धारण क्रय शक्ति के अनुसार समायोजित होता है ताकि टोरंटो में बीस डॉलर का प्लान लागोस में कम का हो। विकसित-विश्व और एंटरप्राइज़ ग्राहक पूर्ण बाज़ार मूल्य देते हैं; उभरते बाज़ार और एकल ग्राहक एक ऐसी कीमत देते हैं जो उनकी मुद्रा का सम्मान करती है। गणित काम करता है क्योंकि हम लीन चलते हैं और AI-एजेंट फ़ैब्रिक को लीवरेज ले जाने देते हैं।' },
         { q: '"मूल कंपनी" क्यों — क्या यह एक होल्डिंग संरचना है?', a: 'यह सादे अर्थ में मूल कंपनी है। एक कानूनी इकाई प्लेटफ़ॉर्म के परिवार की मालिक है। सूची: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, साथ ही साझा बुनियादी ढाँचा। हर उत्पाद अपनी साइट पर चलता है। हर एक के अपने नियम और कीमतें हैं। कानूनी मालिक Intelligent Singularity Inc. है।' },
         { q: 'टीम कितनी बड़ी है?', a: 'इतनी छोटी कि एक नया कर्मचारी पहले हफ़्ते में हर चेहरा सीख ले, इतनी बड़ी कि एक दर्जन से अधिक प्लेटफ़ॉर्म शिपिंग होते रहें। हम जानबूझकर आकार की दौड़ का विज्ञापन नहीं करते; AI-एजेंट फ़ैब्रिक एक वास्तविक अर्थ में टीम का हिस्सा है।' },
@@ -2549,7 +2510,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'मैं स्टूडियो के साथ कैसे साझेदारी करूँ?', a: 'हम NGO, सरकारों और कंपनियों के साथ काम करते हैं। साझा लक्ष्य उन लोगों के लिए सार्वभौमिक-पहुँच सॉफ़्टवेयर है जो आमतौर पर इसका वहन नहीं कर सकते। संपर्क पृष्ठ से एक संक्षिप्त नोट भेजें। इसे Partnerships पर रूट करें। आपको दो कार्य दिवसों में जवाब मिलेगा।' },
-        { q: 'मुझे प्रेस किट कहाँ मिलेगी?', a: 'फ़ैक्ट शीट, स्वीकृत उद्धरण, ब्रांड मार्गदर्शन, संस्थापक संदर्भ और प्रेस बॉयलरप्लेट के लिए /press पर जाएँ। एक लोगो फ़ाइल, हाई-रेज़ संस्थापक चित्र, या कस्टम स्टेटमेंट चाहिए? press@intelligentsingularityai.com पर अपनी समय सीमा के साथ ईमेल करें।' },
+        { q: 'मुझे प्रेस किट कहाँ मिलेगी?', a: 'फ़ैक्ट शीट, स्वीकृत उद्धरण, ब्रांड मार्गदर्शन और प्रेस बॉयलरप्लेट के लिए /press पर जाएँ। एक लोगो फ़ाइल या कस्टम स्टेटमेंट चाहिए? press@intelligentsingularityai.com पर अपनी समय सीमा के साथ ईमेल करें।' },
         { q: 'क्या आप सम्मेलनों में बोलते हैं?', a: 'कभी-कभी। हम सार्वभौमिक पहुँच, AI-संवर्धित टीमों, स्वास्थ्य सॉफ़्टवेयर और लीन सॉफ़्टवेयर अर्थशास्त्र के बारे में बात करते हैं। press@intelligentsingularityai.com पर इवेंट विवरण और दर्शक आकार के साथ लिखें। हम ईमानदारी से बताते हैं कि हम आ सकते हैं या नहीं।' },
         { q: 'क्या आप दान या अनुदान लेते हैं?', a: 'हम उपयोगकर्ताओं से दान नहीं माँगते। हम अनुदान का स्वागत करते हैं। अनुदान फ़ाउंडेशनों या बैंकों से आना चाहिए। अनुदान उन बाज़ारों में पहुँच सॉफ़्टवेयर से जुड़ा होना चाहिए जहाँ पूर्ण कीमतें अभी काम नहीं करतीं। partners@intelligentsingularityai.com पर ईमेल करें।' },
       ],
@@ -2569,7 +2530,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'ما هي Intelligent Singularity؟', a: 'Intelligent Singularity Inc. هي الشركة الأم لمنظومة Clap. نحن استوديو صغير، مُعزَّز بالذكاء الاصطناعي، يعمل عن بُعد بالكامل. نتخذ من ألبرتا، كندا مقرًا. نبني برمجيات للوصول الشامل. المنتج الرئيسي ذاته يخدم مشترًيا من Fortune 500 في نيويورك وكشكًا تجاريًا لشخص واحد في لاجوس. حزمة واحدة مشتركة. رسالة واحدة.' },
         { q: 'هل أنتم شركة ناشئة مدعومة برأس مال جريء؟', a: 'لا. نحن مموَّلون ذاتيًا وbootstrapped. وهذا يعني أننا نُجيب أمام المستخدمين، لا أمام مستثمرين يلاحقون خروجًا سريعًا. يستغرقنا الإطلاق وقتًا أطول، ونخطط للبقاء بعد عشرين عامًا. الشركة ليست للبيع.' },
-        { q: 'من خلف هذا؟', a: 'Dr. Md Diya أسس الاستوديو عام 2024 بعد أربعة وثلاثين عامًا من الممارسة الطبية بين القارات. فريق صغير، عن بُعد، مُعزَّز بالذكاء الاصطناعي يُطلق كل منتج تحت حزمة مشتركة واحدة وميزانية وصول مشتركة واحدة.' },
+        { q: 'من خلف هذا؟', a: 'تأسس الاستوديو عام 2024 ويديره فريق صغير، عن بُعد، مُعزَّز بالذكاء الاصطناعي. يُطلَق كل منتج تحت حزمة مشتركة واحدة وميزانية وصول مشتركة واحدة، ونحن مسؤولون أمام المستخدمين لا أمام المستثمرين.' },
         { q: 'كيف تكسبون المال إذا كانت تطبيقاتكم في متناول الجميع؟', a: 'للمنتجات باقة مجانية-للأبد تكفي لإدارة عمل حقيقي. الباقات المدفوعة تضيف سعةً، لا ميزات. التسعير يتعدّل وفق القوة الشرائية، فالخطة التي تكلّف عشرين دولارًا في تورونتو تكلّف أقل في لاجوس. عملاء العالم المتقدم والشركات يدفعون السعر السوقي الكامل؛ عملاء الأسواق الناشئة والأفراد يدفعون سعرًا يحترم عملتهم. الحساب ينجح لأننا نعمل بكفاءة ونترك بنية وكلاء الذكاء الاصطناعي تحمل الرافعة.' },
         { q: 'لماذا "شركة أم" — هل هذه بنية قابضة؟', a: 'هي شركة أم بالمعنى البسيط. كيان قانوني واحد يملك عائلة المنصات. القائمة: Clappe، ClapBill، ClapMed، ClapDiet، ClapPay، Clapwork، Apogee، Audiflo، Nestbitt، DailyWorship، Gclap، FileManager، إضافة إلى البنية التحتية المشتركة. كل منتج يعمل على موقعه الخاص. لكل منتج شروطه وأسعاره. المالك القانوني هو Intelligent Singularity Inc.' },
         { q: 'كم حجم الفريق؟', a: 'صغير بما يكفي ليتعلم الموظف الجديد كل وجه في الأسبوع الأول، كبير بما يكفي ليُبقي أكثر من اثنتي عشرة منصة تُطلق. نتعمد عدم الترويج لسباق الحجم؛ بنية وكلاء الذكاء الاصطناعي جزء حقيقي من الفريق.' },
@@ -2600,7 +2561,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'كيف أعقد شراكة مع الاستوديو؟', a: 'نعمل مع المنظمات غير الحكومية والحكومات والشركات. الهدف المشترك هو برمجيات وصول عالمي لمن لا يستطيعون عادةً تحمّل تكلفتها. أرسل ملاحظة موجزة من صفحة الاتصال. وجِّهها إلى Partnerships. ستتلقى ردًا خلال يومي عمل.' },
-        { q: 'أين أجد حقيبة صحفية؟', a: 'تفضّل بزيارة /press للحصول على ورقة الحقائق والاقتباسات المعتمدة وتوجيهات العلامة ومرجع المؤسس وقوالب البيانات الصحفية. تحتاج ملف شعار أو صورة عالية الدقة للمؤسس أو بيانًا مخصصًا؟ راسل press@intelligentsingularityai.com مع موعدك النهائي.' },
+        { q: 'أين أجد حقيبة صحفية؟', a: 'تفضّل بزيارة /press للحصول على ورقة الحقائق والاقتباسات المعتمدة وتوجيهات العلامة وقوالب البيانات الصحفية. تحتاج ملف شعار أو بيانًا مخصصًا؟ راسل press@intelligentsingularityai.com مع موعدك النهائي.' },
         { q: 'هل تتحدثون في المؤتمرات؟', a: 'أحيانًا. نتحدث عن الوصول الشامل والفرق المُعزَّزة بالذكاء الاصطناعي وبرمجيات الرعاية الصحية واقتصاديات البرمجيات الرشيقة. راسل press@intelligentsingularityai.com بتفاصيل الفعالية وحجم الجمهور. نخبرك بصدق إن كنا نستطيع الحضور.' },
         { q: 'هل تقبلون التبرعات أو المنح؟', a: 'لا نطلب تبرعات من المستخدمين. نُرحّب بالمنح. يجب أن تأتي المنح من مؤسسات أو مصارف. يجب ربط المنحة ببرمجيات الوصول في الأسواق التي لم تنجح فيها الأسعار الكاملة بعد. راسل partners@intelligentsingularityai.com.' },
       ],
@@ -2620,7 +2581,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: "Qu'est-ce qu'Intelligent Singularity ?", a: "Intelligent Singularity Inc. est la société mère de l'écosystème Clap. Nous sommes un petit studio, augmenté par IA, entièrement à distance. Nous sommes basés en Alberta, au Canada. Nous construisons des logiciels pour un accès universel. Le même produit phare sert un acheteur Fortune 500 à New York et un stand de marché d'une personne à Lagos. Un stack partagé. Une mission." },
         { q: 'Êtes-vous une startup soutenue par du capital-risque ?', a: "Non. Nous sommes autofinancés et bootstrapped. Cela signifie que nous rendons des comptes aux utilisateurs, pas à des investisseurs qui chassent des sorties rapides. Nous mettons plus de temps à livrer, et nous prévoyons d'être là dans vingt ans. La société n'est pas à vendre." },
-        { q: 'Qui est derrière tout cela ?', a: "Dr. Md Diya a fondé le studio en 2024 après trente-quatre ans de pratique médicale transcontinentale. Une petite équipe à distance, augmentée par IA, livre chaque produit sous un stack partagé et un budget d'accessibilité partagé." },
+        { q: 'Qui est derrière tout cela ?', a: "Le studio a été fondé en 2024 et est dirigé par une petite équipe à distance, augmentée par l'IA. Chaque produit est livré sous un stack partagé et un budget d'accessibilité partagé, et nous répondons devant les utilisateurs plutôt que devant les investisseurs." },
         { q: "Comment gagnez-vous de l'argent si vos applis sont abordables ?", a: "Les produits ont un plan gratuit-à-vie sur lequel on peut faire tourner une vraie entreprise. Les forfaits payants ajoutent de la capacité, jamais des fonctionnalités. Le prix s'ajuste au pouvoir d'achat, ainsi un plan qui coûte vingt dollars à Toronto coûte moins à Lagos. Les clients du monde développé et entreprises paient le plein prix de marché ; les clients des marchés émergents et solo paient un prix qui respecte leur devise. Le calcul fonctionne parce que nous opérons en lean et laissons le tissu d'agents IA porter le levier." },
         { q: 'Pourquoi « société mère » — est-ce une structure holding ?', a: "C'est une société mère au sens simple. Une entité juridique possède la famille de plateformes. La liste : Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, plus l'infrastructure partagée. Chaque produit tourne sur son propre site. Chacun a ses propres conditions et prix. Le propriétaire légal est Intelligent Singularity Inc." },
         { q: "Quelle est la taille de l'équipe ?", a: "Assez petite pour qu'une nouvelle recrue apprenne chaque visage en première semaine, assez grande pour faire tourner plus d'une douzaine de plateformes. Nous ne faisons délibérément pas la course à la taille ; le tissu d'agents IA fait partie de l'équipe au sens réel." },
@@ -2651,7 +2612,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Comment puis-je devenir partenaire du studio ?', a: "Nous travaillons avec des ONG, des gouvernements et des entreprises. L'objectif commun est un logiciel d'accès universel pour des personnes qui ne pourraient pas se l'offrir habituellement. Envoyez une courte note depuis la page de contact. Dirigez-la vers Partnerships. Vous aurez une réponse sous deux jours ouvrés." },
-        { q: 'Où trouver un kit presse ?', a: "Rendez-vous sur /press pour la fiche, les citations approuvées, la guidance de marque, la référence du fondateur et le boilerplate presse. Besoin d'un fichier logo, d'un portrait fondateur en haute résolution, ou d'une déclaration personnalisée ? Écrivez à press@intelligentsingularityai.com avec votre date limite." },
+        { q: 'Où trouver un kit presse ?', a: "Rendez-vous sur /press pour la fiche, les citations approuvées, la guidance de marque et le boilerplate presse. Besoin d'un fichier logo ou d'une déclaration personnalisée ? Écrivez à press@intelligentsingularityai.com avec votre date limite." },
         { q: 'Intervenez-vous en conférence ?', a: "Parfois. Nous parlons d'accès universel, d'équipes augmentées par IA, de logiciels santé et d'économie logicielle lean. Écrivez à press@intelligentsingularityai.com avec les détails de l'événement et la taille du public. Nous vous dirons honnêtement si nous pouvons venir." },
         { q: 'Acceptez-vous des dons ou des subventions ?', a: "Nous ne demandons pas de dons aux utilisateurs. Nous accueillons les subventions. Les subventions doivent venir de fondations ou de banques. La subvention doit être liée à des logiciels d'accès sur des marchés où les prix pleins ne fonctionnent pas encore. Écrivez à partners@intelligentsingularityai.com." },
       ],
@@ -2671,7 +2632,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'O que é a Intelligent Singularity?', a: 'A Intelligent Singularity Inc. é a empresa-mãe do ecossistema Clap. Somos um estúdio pequeno, aumentado por IA, totalmente remoto. Estamos sediados em Alberta, Canadá. Construímos software para acesso universal. O mesmo produto principal serve um comprador Fortune 500 em Nova Iorque e uma banca de mercado de uma pessoa em Lagos. Uma stack partilhada. Uma missão.' },
         { q: 'São uma startup apoiada por venture capital?', a: 'Não. Somos autofinanciados e bootstrapped. Isso significa que respondemos a utilizadores, não a investidores que perseguem saídas rápidas. Demoramos mais a lançar, e planeamos estar por aqui daqui a vinte anos. A empresa não está à venda.' },
-        { q: 'Quem está por trás disto?', a: 'O Dr. Md Diya fundou o estúdio em 2024 depois de trinta e quatro anos de prática médica intercontinental. Uma equipa pequena, remota, aumentada por IA entrega cada produto sob uma stack partilhada e um orçamento de acessibilidade partilhado.' },
+        { q: 'Quem está por trás disto?', a: 'O estúdio foi fundado em 2024 e é gerido por uma equipa pequena, remota e aumentada por IA. Cada produto é entregue sob uma stack partilhada e um orçamento de acessibilidade partilhado, e respondemos aos utilizadores em vez de investidores.' },
         { q: 'Como ganham dinheiro se as vossas apps são acessíveis?', a: 'Os produtos têm um plano grátis-para-sempre com que se pode gerir um negócio a sério. Os planos pagos acrescentam escala, nunca funcionalidades. O preço ajusta-se ao poder de compra, por isso um plano que custa vinte dólares em Toronto custa menos em Lagos. Os clientes do mundo desenvolvido e enterprise pagam preço de mercado completo; os clientes de mercados emergentes e solo pagam um preço que respeita a sua moeda. As contas batem certo porque operamos lean e deixamos o tecido de agentes IA carregar a alavancagem.' },
         { q: 'Porquê "empresa-mãe" — é uma estrutura holding?', a: 'É empresa-mãe no sentido simples. Uma entidade legal detém a família de plataformas. A lista: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, mais infraestrutura partilhada. Cada produto corre no seu próprio site. Cada um tem os seus próprios termos e preços. O proprietário legal é a Intelligent Singularity Inc.' },
         { q: 'Que tamanho tem a equipa?', a: 'Pequena o suficiente para que uma nova contratação aprenda cada cara na primeira semana, grande o suficiente para manter mais de uma dúzia de plataformas em produção. Deliberadamente não fazemos uma corrida ao tamanho; o tecido de agentes IA faz parte da equipa em sentido real.' },
@@ -2702,7 +2663,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Como me torno parceiro do estúdio?', a: 'Trabalhamos com ONGs, governos e empresas. O objetivo partilhado é software de acesso universal para pessoas que normalmente não podem pagar. Envie uma nota curta a partir da página de contacto. Encaminhe-a para Partnerships. Terá resposta em dois dias úteis.' },
-        { q: 'Onde encontro um kit de imprensa?', a: 'Visite /press para a ficha de factos, as citações aprovadas, a orientação de marca, a referência do fundador e o boilerplate de imprensa. Precisa de um ficheiro de logótipo, de um retrato do fundador em alta resolução, ou de uma declaração personalizada? Escreva para press@intelligentsingularityai.com com a sua data-limite.' },
+        { q: 'Onde encontro um kit de imprensa?', a: 'Visite /press para a ficha de factos, as citações aprovadas, a orientação de marca e o boilerplate de imprensa. Precisa de um ficheiro de logótipo ou de uma declaração personalizada? Escreva para press@intelligentsingularityai.com com a sua data-limite.' },
         { q: 'Falam em conferências?', a: 'Por vezes. Falamos sobre acesso universal, equipas aumentadas por IA, software de saúde e economia de software lean. Escreva para press@intelligentsingularityai.com com os detalhes do evento e o tamanho da audiência. Diremos honestamente se podemos comparecer.' },
         { q: 'Aceitam donativos ou subsídios?', a: 'Não pedimos donativos aos utilizadores. Damos boas-vindas a subsídios. Os subsídios devem vir de fundações ou bancos. O subsídio tem de estar ligado a software de acesso em mercados onde os preços completos ainda não funcionam. Escreva para partners@intelligentsingularityai.com.' },
       ],
@@ -2722,7 +2683,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Intelligent Singularity কী?', a: 'Intelligent Singularity Inc. হল Clap ইকোসিস্টেমের মূল কোম্পানি। আমরা একটি ছোট, AI-সংবর্ধিত, সম্পূর্ণ রিমোট স্টুডিও। আমরা কানাডার আলবার্টায় অবস্থিত। আমরা সর্বজনীন প্রবেশাধিকারের জন্য সফটওয়্যার তৈরি করি। একই প্রধান পণ্য নিউ ইয়র্কের Fortune 500 ক্রেতা এবং লাগোসের এক-ব্যক্তির বাজার স্টল উভয়কে সেবা দেয়। একটি ভাগাভাগি স্ট্যাক। একটি মিশন।' },
         { q: 'আপনারা কি ভেঞ্চার-সমর্থিত স্টার্টআপ?', a: 'না। আমরা স্ব-অর্থায়িত এবং বুটস্ট্র্যাপড। এর অর্থ আমরা ব্যবহারকারীদের কাছে দায়বদ্ধ, দ্রুত এক্সিটের পেছনে ছুটে যাওয়া বিনিয়োগকারীদের কাছে নয়। আমরা শিপ করতে বেশি সময় নিই, এবং বিশ বছর পরেও থাকার পরিকল্পনা করি। কোম্পানি বিক্রির জন্য নয়।' },
-        { q: 'এর পেছনে কে আছেন?', a: 'Dr. Md Diya চৌত্রিশ বছরের আন্তর্মহাদেশীয় চিকিৎসা চর্চার পর 2024 সালে স্টুডিওটি প্রতিষ্ঠা করেন। একটি ছোট, রিমোট, AI-সংবর্ধিত দল একটি ভাগাভাগি স্ট্যাক এবং একটি ভাগাভাগি প্রবেশযোগ্যতা বাজেটের অধীনে প্রতিটি পণ্য শিপ করে।' },
+        { q: 'এর পেছনে কে আছেন?', a: 'স্টুডিওটি 2024 সালে প্রতিষ্ঠিত হয় এবং একটি ছোট, রিমোট, AI-সংবর্ধিত দল এটি পরিচালনা করে। প্রতিটি পণ্য একটি ভাগাভাগি স্ট্যাক এবং একটি ভাগাভাগি প্রবেশযোগ্যতা বাজেটের অধীনে শিপ করা হয়, এবং আমরা বিনিয়োগকারীদের চেয়ে ব্যবহারকারীদের কাছে জবাবদিহি করি।' },
         { q: 'যদি আপনার অ্যাপগুলো সাশ্রয়ী হয় তাহলে আপনি কীভাবে অর্থ উপার্জন করেন?', a: 'পণ্যগুলোর একটি চিরকাল-মুক্ত টিয়ার আছে যা একটি বাস্তব ব্যবসা চালায়। পেইড টিয়ার স্কেল যোগ করে, বৈশিষ্ট্য কখনো নয়। মূল্য ক্রয় ক্ষমতার জন্য সমন্বয় করা হয় তাই টরন্টোতে যে প্ল্যানের দাম বিশ ডলার সেটি লাগোসে কম। উন্নত-বিশ্ব ও এন্টারপ্রাইজ গ্রাহকরা পূর্ণ বাজার মূল্য দেন; উদীয়মান বাজার ও একক গ্রাহকরা এমন একটি মূল্য দেন যা তাদের মুদ্রাকে সম্মান করে। গণিত কাজ করে কারণ আমরা চটপটে চলি এবং AI-এজেন্ট ফ্যাব্রিককে লিভারেজ বহন করতে দিই।' },
         { q: '"মূল কোম্পানি" কেন — এটি কি একটি হোল্ডিং কাঠামো?', a: 'এটি সাধারণ অর্থে একটি মূল কোম্পানি। একটি আইনি সত্তা প্ল্যাটফর্ম পরিবারের মালিক। তালিকা: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, প্লাস ভাগাভাগি অবকাঠামো। প্রতিটি পণ্য তার নিজস্ব সাইটে চলে। প্রত্যেকটির নিজস্ব শর্তাবলী এবং মূল্য আছে। আইনি মালিক Intelligent Singularity Inc.।' },
         { q: 'দলটি কত বড়?', a: 'এত ছোট যে একজন নতুন নিয়োগপ্রাপ্ত প্রথম সপ্তাহে প্রতিটি মুখ শিখে যান, এত বড় যে এক ডজনেরও বেশি প্ল্যাটফর্ম শিপিং চলমান থাকে। আমরা ইচ্ছাকৃতভাবে আকারের প্রতিযোগিতা প্রচার করি না; AI-এজেন্ট ফ্যাব্রিক প্রকৃত অর্থে দলের একটি অংশ।' },
@@ -2753,7 +2714,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'আমি স্টুডিওর সাথে কীভাবে অংশীদারিত্ব করব?', a: 'আমরা NGO, সরকার এবং কোম্পানিগুলোর সাথে কাজ করি। ভাগাভাগি লক্ষ্য হলো এমন মানুষদের জন্য সর্বজনীন-প্রবেশযোগ্য সফটওয়্যার যারা সাধারণত এটি বহন করতে পারে না। যোগাযোগ পৃষ্ঠা থেকে একটি ছোট নোট পাঠান। এটি Partnerships-এ রুট করুন। আপনি দুই কার্যদিবসের মধ্যে শুনবেন।' },
-        { q: 'আমি প্রেস কিট কোথায় পাব?', a: 'ফ্যাক্ট শিট, অনুমোদিত উদ্ধৃতি, ব্র্যান্ড নির্দেশনা, প্রতিষ্ঠাতা রেফারেন্স এবং প্রেস বয়লারপ্লেটের জন্য /press-এ যান। লোগো ফাইল, হাই-রেজ প্রতিষ্ঠাতা প্রতিকৃতি, বা একটি কাস্টম বিবৃতি প্রয়োজন? আপনার ডেডলাইন সহ press@intelligentsingularityai.com-এ ইমেইল করুন।' },
+        { q: 'আমি প্রেস কিট কোথায় পাব?', a: 'ফ্যাক্ট শিট, অনুমোদিত উদ্ধৃতি, ব্র্যান্ড নির্দেশনা এবং প্রেস বয়লারপ্লেটের জন্য /press-এ যান। লোগো ফাইল বা একটি কাস্টম বিবৃতি প্রয়োজন? আপনার ডেডলাইন সহ press@intelligentsingularityai.com-এ ইমেইল করুন।' },
         { q: 'আপনি কি সম্মেলনে কথা বলেন?', a: 'মাঝে মাঝে। আমরা সর্বজনীন প্রবেশাধিকার, AI-সংবর্ধিত দল, স্বাস্থ্যসেবা সফটওয়্যার এবং লিন সফটওয়্যার অর্থনীতি সম্পর্কে কথা বলি। ইভেন্টের বিবরণ এবং দর্শক সংখ্যা সহ press@intelligentsingularityai.com-এ লিখুন। আমরা সততার সাথে বলি আমরা আসতে পারব কিনা।' },
         { q: 'আপনি কি অনুদান বা গ্র্যান্ট নেন?', a: 'আমরা ব্যবহারকারীদের কাছ থেকে অনুদান চাই না। আমরা গ্র্যান্টকে স্বাগত জানাই। গ্র্যান্ট ফাউন্ডেশন বা ব্যাংক থেকে আসতে হবে। গ্র্যান্টটি এমন বাজারে অ্যাক্সেস সফটওয়্যারের সাথে সংযুক্ত থাকতে হবে যেখানে পূর্ণ মূল্য এখনো কাজ করে না। partners@intelligentsingularityai.com-এ ইমেইল করুন।' },
       ],
@@ -2773,7 +2734,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Что такое Intelligent Singularity?', a: 'Intelligent Singularity Inc. — материнская компания экосистемы Clap. Мы — небольшая студия, усиленная ИИ, полностью удалённая. Базируемся в Альберте, Канада. Делаем софт для универсального доступа. Тот же флагманский продукт обслуживает покупателя Fortune 500 в Нью-Йорке и одиночный рыночный прилавок в Лагосе. Один общий стек. Одна миссия.' },
         { q: 'Вы стартап, поддержанный венчурным капиталом?', a: 'Нет. Мы самофинансируемые и bootstrapped. Это значит, что мы отвечаем перед пользователями, а не перед инвесторами, гоняющимися за быстрым выходом. Релизы занимают больше времени, и мы планируем быть здесь и через двадцать лет. Компания не продаётся.' },
-        { q: 'Кто за этим стоит?', a: 'Dr. Md Diya основал студию в 2024 году после тридцати четырёх лет межконтинентальной медицинской практики. Небольшая удалённая команда, усиленная ИИ, выпускает каждый продукт на одном общем стеке и в рамках одного общего бюджета на доступность.' },
+        { q: 'Кто за этим стоит?', a: 'Студия основана в 2024 году, ею управляет небольшая удалённая команда, усиленная ИИ. Каждый продукт выпускается на одном общем стеке и в рамках одного общего бюджета на доступность, и мы отчитываемся перед пользователями, а не перед инвесторами.' },
         { q: 'Как вы зарабатываете, если ваши приложения доступны по цене?', a: 'У продуктов есть бесплатный-навсегда тариф, на котором можно вести реальный бизнес. Платные тарифы добавляют масштаб — не фичи. Цена корректируется по покупательной способности, поэтому план, стоящий двадцать долларов в Торонто, стоит меньше в Лагосе. Клиенты развитого мира и enterprise платят полную рыночную цену; клиенты развивающихся рынков и одиночки — цену, уважающую их валюту. Математика сходится потому, что мы работаем экономно и позволяем фабрике ИИ-агентов нести рычаг.' },
         { q: 'Почему «материнская компания» — это холдинговая структура?', a: 'Это материнская компания в простом смысле. Одно юридическое лицо владеет семейством платформ. Список: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, плюс общая инфраструктура. Каждый продукт работает на собственном сайте. У каждого свои условия и цены. Юридический владелец — Intelligent Singularity Inc.' },
         { q: 'Какого размера команда?', a: 'Достаточно маленькая, чтобы новый сотрудник за первую неделю узнал каждое лицо, достаточно большая, чтобы поддерживать выпуск более дюжины платформ. Мы намеренно не устраиваем гонку размеров; фабрика ИИ-агентов — часть команды в реальном смысле.' },
@@ -2804,7 +2765,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Как стать партнёром студии?', a: 'Мы работаем с НПО, правительствами и компаниями. Общая цель — софт универсального доступа для тех, кто обычно не может его себе позволить. Отправьте короткое сообщение со страницы контактов. Отметьте Partnerships. Ответим в течение двух рабочих дней.' },
-        { q: 'Где найти пресс-кит?', a: 'Загляните на /press — там факт-лист, утверждённые цитаты, brand guidance, founder reference и пресс-болерплейт. Нужен файл логотипа, портрет основателя в высоком разрешении или индивидуальное заявление? Напишите на press@intelligentsingularityai.com с вашим дедлайном.' },
+        { q: 'Где найти пресс-кит?', a: 'Загляните на /press — там факт-лист, утверждённые цитаты, brand guidance и пресс-болерплейт. Нужен файл логотипа или индивидуальное заявление? Напишите на press@intelligentsingularityai.com с вашим дедлайном.' },
         { q: 'Выступаете ли вы на конференциях?', a: 'Иногда. Говорим про универсальный доступ, команды, усиленные ИИ, медицинский софт и lean-экономику софта. Напишите на press@intelligentsingularityai.com с деталями события и размером аудитории. Честно скажем, сможем ли приехать.' },
         { q: 'Принимаете ли пожертвования или гранты?', a: 'Мы не просим пожертвований у пользователей. Гранты приветствуем. Гранты должны быть от фондов или банков. Грант должен быть привязан к access-софту на рынках, где полные цены пока не работают. Пишите на partners@intelligentsingularityai.com.' },
       ],
@@ -2824,7 +2785,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Intelligent Singularity کیا ہے؟', a: 'Intelligent Singularity Inc. Clap ایکوسسٹم کی پیرنٹ کمپنی ہے۔ ہم ایک چھوٹا، AI سے بڑھایا گیا، مکمل طور پر ریموٹ اسٹوڈیو ہیں۔ ہم البرٹا، کینیڈا میں مقیم ہیں۔ ہم عالمی رسائی کے لیے سافٹ ویئر بناتے ہیں۔ وہی فلیگ شپ پروڈکٹ نیویارک میں Fortune 500 خریدار اور لاگوس میں ایک شخص کے بازار اسٹال دونوں کی خدمت کرتی ہے۔ ایک مشترکہ اسٹیک۔ ایک مشن۔' },
         { q: 'کیا آپ وینچر-بیکڈ اسٹارٹ اپ ہیں؟', a: 'نہیں۔ ہم خود فنڈڈ اور بوٹسٹریپڈ ہیں۔ اس کا مطلب ہے کہ ہم صارفین کو جوابدہ ہیں، تیز ایگزٹ کا پیچھا کرنے والے سرمایہ کاروں کو نہیں۔ ہم شپ کرنے میں زیادہ وقت لیتے ہیں، اور بیس سال بعد بھی موجود رہنے کا منصوبہ بناتے ہیں۔ کمپنی برائے فروخت نہیں۔' },
-        { q: 'اس کے پیچھے کون ہے؟', a: 'Dr. Md Diya نے بین البرعظمی طبی پریکٹس کے چونتیس سال بعد 2024 میں اسٹوڈیو قائم کیا۔ ایک چھوٹی، ریموٹ، AI سے بڑھائی گئی ٹیم ایک مشترکہ اسٹیک اور ایک مشترکہ قابل رسائی بجٹ کے تحت ہر پروڈکٹ شپ کرتی ہے۔' },
+        { q: 'اس کے پیچھے کون ہے؟', a: 'اسٹوڈیو 2024 میں قائم ہوا اور اسے ایک چھوٹی، ریموٹ، AI سے بڑھائی گئی ٹیم چلاتی ہے۔ ہر پروڈکٹ ایک مشترکہ اسٹیک اور ایک مشترکہ قابل رسائی بجٹ کے تحت شپ ہوتی ہے، اور ہم سرمایہ کاروں کے بجائے صارفین کے سامنے جوابدہ ہیں۔' },
         { q: 'اگر آپ کی ایپس سستی ہیں تو آپ پیسے کیسے کماتے ہیں؟', a: 'پروڈکٹس کا ایک ہمیشہ-مفت ٹائر ہے جو حقیقی کاروبار چلاتا ہے۔ پیڈ ٹائرز اسکیل شامل کرتے ہیں، فیچرز کبھی نہیں۔ قیمت قوت خرید کے مطابق ایڈجسٹ ہوتی ہے لہٰذا ٹورنٹو میں جس پلان کی قیمت بیس ڈالر ہے وہ لاگوس میں کم ہے۔ ترقی یافتہ-دنیا اور انٹرپرائز گاہک پوری مارکیٹ قیمت ادا کرتے ہیں؛ ابھرتی-منڈی اور تنہا گاہک ایسی قیمت ادا کرتے ہیں جو ان کی کرنسی کا احترام کرے۔ ریاضی کام کرتی ہے کیونکہ ہم لین چلتے ہیں اور AI-ایجنٹ فیبرک کو لیوریج لے جانے دیتے ہیں۔' },
         { q: '"پیرنٹ کمپنی" کیوں — کیا یہ ایک ہولڈنگ سٹرکچر ہے؟', a: 'یہ سادے معنوں میں پیرنٹ کمپنی ہے۔ ایک قانونی ادارہ پلیٹ فارمز کے خاندان کا مالک ہے۔ فہرست: Clappe، ClapBill، ClapMed، ClapDiet، ClapPay، Clapwork، Apogee، Audiflo، Nestbitt، DailyWorship، Gclap، FileManager، اور مشترکہ بنیادی ڈھانچہ۔ ہر پروڈکٹ اپنی سائٹ پر چلتی ہے۔ ہر ایک کی اپنی شرائط اور قیمتیں ہیں۔ قانونی مالک Intelligent Singularity Inc. ہے۔' },
         { q: 'ٹیم کتنی بڑی ہے؟', a: 'اتنی چھوٹی کہ نئی بھرتی پہلے ہفتے میں ہر چہرہ سیکھ لے، اتنی بڑی کہ درجن سے زیادہ پلیٹ فارمز شپنگ جاری رکھ سکیں۔ ہم جان بوجھ کر سائز کی دوڑ کا اعلان نہیں کرتے؛ AI-ایجنٹ فیبرک حقیقی معنوں میں ٹیم کا حصہ ہے۔' },
@@ -2855,7 +2816,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'میں اسٹوڈیو کے ساتھ شراکت کیسے کروں؟', a: 'ہم NGOs، حکومتوں اور کمپنیوں کے ساتھ کام کرتے ہیں۔ مشترکہ ہدف ان لوگوں کے لیے عالمی-رسائی سافٹ ویئر ہے جو عام طور پر اس کا متحمل نہیں ہو سکتے۔ رابطہ صفحے سے ایک مختصر نوٹ بھیجیں۔ اسے Partnerships پر روٹ کریں۔ آپ کو دو کاروباری دنوں میں جواب ملے گا۔' },
-        { q: 'مجھے پریس کٹ کہاں ملے گی؟', a: 'فیکٹ شیٹ، منظور شدہ اقتباسات، برانڈ گائیڈنس، بانی حوالہ، اور پریس بائلر پلیٹ کے لیے /press پر جائیں۔ لوگو فائل، ہائی-ریز بانی پورٹریٹ، یا ایک حسب ضرورت بیان درکار ہے؟ اپنی ڈیڈ لائن کے ساتھ press@intelligentsingularityai.com پر ای میل کریں۔' },
+        { q: 'مجھے پریس کٹ کہاں ملے گی؟', a: 'فیکٹ شیٹ، منظور شدہ اقتباسات، برانڈ گائیڈنس، اور پریس بائلر پلیٹ کے لیے /press پر جائیں۔ لوگو فائل یا ایک حسب ضرورت بیان درکار ہے؟ اپنی ڈیڈ لائن کے ساتھ press@intelligentsingularityai.com پر ای میل کریں۔' },
         { q: 'کیا آپ کانفرنسوں میں بات کرتے ہیں؟', a: 'کبھی کبھی۔ ہم عالمی رسائی، AI-بڑھے ہوئے ٹیموں، صحت سافٹ ویئر، اور لین سافٹ ویئر اقتصادیات پر بات کرتے ہیں۔ ایونٹ تفصیلات اور حاضرین کی تعداد کے ساتھ press@intelligentsingularityai.com پر لکھیں۔ ہم ایمانداری سے بتائیں گے کہ آ سکتے ہیں یا نہیں۔' },
         { q: 'کیا آپ عطیات یا گرانٹس لیتے ہیں؟', a: 'ہم صارفین سے عطیات نہیں مانگتے۔ ہم گرانٹس کا خیر مقدم کرتے ہیں۔ گرانٹس فاؤنڈیشنز یا بینکوں سے آنی چاہئیں۔ گرانٹ ان مارکیٹوں میں رسائی سافٹ ویئر سے بندھی ہونی چاہیے جہاں مکمل قیمتیں ابھی کام نہیں کرتیں۔ partners@intelligentsingularityai.com پر ای میل کریں۔' },
       ],
@@ -2875,7 +2836,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Apa itu Intelligent Singularity?', a: 'Intelligent Singularity Inc. adalah perusahaan induk dari ekosistem Clap. Kami adalah studio kecil, diperkuat AI, sepenuhnya remote. Kami berbasis di Alberta, Kanada. Kami membangun perangkat lunak untuk akses universal. Produk unggulan yang sama melayani pembeli Fortune 500 di New York dan kios pasar satu orang di Lagos. Satu stack bersama. Satu misi.' },
         { q: 'Apakah Anda startup yang didukung modal ventura?', a: 'Tidak. Kami self-funded dan bootstrapped. Itu berarti kami bertanggung jawab kepada pengguna, bukan kepada investor yang mengejar exit cepat. Kami butuh waktu lebih lama untuk merilis, dan kami berencana ada di sini dua puluh tahun lagi. Perusahaan tidak dijual.' },
-        { q: 'Siapa di balik ini?', a: 'Dr. Md Diya mendirikan studio pada 2024 setelah tiga puluh empat tahun praktik medis lintas benua. Tim kecil, remote, diperkuat AI mengirim setiap produk di bawah satu stack bersama dan satu anggaran aksesibilitas bersama.' },
+        { q: 'Siapa di balik ini?', a: 'Studio ini didirikan pada 2024 dan dijalankan oleh tim kecil, remote, yang diperkuat AI. Setiap produk dikirim di bawah satu stack bersama dan satu anggaran aksesibilitas bersama, dan kami bertanggung jawab kepada pengguna, bukan investor.' },
         { q: 'Bagaimana Anda menghasilkan uang jika aplikasi Anda terjangkau?', a: 'Produk memiliki tier gratis-selamanya yang dapat menjalankan bisnis nyata. Tier berbayar menambah skala, tidak pernah fitur. Harga disesuaikan dengan daya beli sehingga plan yang berharga dua puluh dolar di Toronto berharga lebih murah di Lagos. Pelanggan dunia maju dan enterprise membayar harga pasar penuh; pelanggan pasar berkembang dan solo membayar harga yang menghargai mata uangnya. Matematika berhasil karena kami beroperasi lean dan membiarkan jaringan agen AI membawa leverage.' },
         { q: 'Mengapa "perusahaan induk" — apakah ini struktur holding?', a: 'Ini perusahaan induk dalam arti sederhana. Satu entitas hukum memiliki keluarga platform. Daftar: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, plus infrastruktur bersama. Setiap produk berjalan di situsnya sendiri. Masing-masing memiliki ketentuan dan harga sendiri. Pemilik hukumnya adalah Intelligent Singularity Inc.' },
         { q: 'Seberapa besar tim?', a: 'Cukup kecil sehingga karyawan baru mempelajari setiap wajah di minggu pertama, cukup besar untuk menjaga lebih dari selusin platform tetap dirilis. Kami sengaja tidak mengiklankan perlombaan ukuran; jaringan agen AI adalah bagian dari tim dalam arti yang sebenarnya.' },
@@ -2906,7 +2867,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Bagaimana saya bermitra dengan studio?', a: 'Kami bekerja dengan LSM, pemerintah, dan perusahaan. Tujuan bersama adalah perangkat lunak akses universal untuk orang-orang yang biasanya tidak mampu membayar. Kirim catatan singkat dari halaman kontak. Arahkan ke Partnerships. Anda akan mendengar kabar dalam dua hari kerja.' },
-        { q: 'Di mana saya bisa menemukan press kit?', a: 'Kunjungi /press untuk lembar fakta, kutipan yang disetujui, panduan brand, referensi pendiri, dan boilerplate pers. Butuh file logo, potret pendiri resolusi tinggi, atau pernyataan kustom? Email press@intelligentsingularityai.com dengan tenggat Anda.' },
+        { q: 'Di mana saya bisa menemukan press kit?', a: 'Kunjungi /press untuk lembar fakta, kutipan yang disetujui, panduan brand, dan boilerplate pers. Butuh file logo atau pernyataan kustom? Email press@intelligentsingularityai.com dengan tenggat Anda.' },
         { q: 'Apakah Anda berbicara di konferensi?', a: 'Kadang-kadang. Kami berbicara tentang akses universal, tim diperkuat AI, perangkat lunak kesehatan, dan ekonomi perangkat lunak lean. Tulis ke press@intelligentsingularityai.com dengan detail acara dan ukuran audiens. Kami akan dengan jujur mengatakan apakah kami bisa hadir.' },
         { q: 'Apakah Anda menerima donasi atau hibah?', a: 'Kami tidak meminta donasi dari pengguna. Kami menyambut hibah. Hibah harus berasal dari yayasan atau bank. Hibah harus terikat pada perangkat lunak akses di pasar di mana harga penuh belum bekerja. Email partners@intelligentsingularityai.com.' },
       ],
@@ -2926,7 +2887,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Intelligent Singularity ni nini?', a: 'Intelligent Singularity Inc. ni kampuni mama ya mfumo wa Clap. Sisi ni studio ndogo, iliyoimarishwa kwa AI, mbali kabisa. Tuko Alberta, Kanada. Tunajenga programu kwa ajili ya ufikiaji wa wote. Bidhaa kuu ile ile inahudumia mnunuzi wa Fortune 500 huko New York na duka la mtu mmoja kijijini Lagos. Stack moja iliyoshirikiwa. Dhamira moja.' },
         { q: 'Je, ni startup inayoungwa mkono na mtaji wa hatari?', a: 'Hapana. Tumejifadhili na bootstrapped. Hiyo inamaanisha tunajibu kwa watumiaji, sio kwa wawekezaji wanaofuatilia kutoka kwa haraka. Tunachukua muda mrefu kutuma, na tunapanga kuwepo miaka ishirini ijayo. Kampuni haiuzwi.' },
-        { q: 'Nani yuko nyuma ya hili?', a: 'Dr. Md Diya alianzisha studio mwaka 2024 baada ya miaka thelathini na minne ya mazoezi ya kimatibabu kati ya bara. Timu ndogo, mbali, iliyoimarishwa kwa AI hutuma kila bidhaa chini ya stack moja iliyoshirikiwa na bajeti moja iliyoshirikiwa ya ufikivu.' },
+        { q: 'Nani yuko nyuma ya hili?', a: 'Studio ilianzishwa mwaka 2024 na inaendeshwa na timu ndogo, ya mbali, iliyoimarishwa kwa AI. Kila bidhaa hutumwa chini ya stack moja iliyoshirikiwa na bajeti moja iliyoshirikiwa ya ufikivu, na tunawajibika kwa watumiaji badala ya wawekezaji.' },
         { q: 'Mnatengeneza pesa vipi ikiwa apps zenu zina bei nafuu?', a: 'Bidhaa zina kiwango cha bure-milele kinachoendesha biashara halisi. Viwango vya kulipia huongeza kiasi, kamwe sio vipengele. Bei husawazishwa kwa nguvu ya kununua hivyo plan inayogharimu dolari ishirini Toronto hugharimu kidogo Lagos. Wateja wa ulimwengu ulioendelea na enterprise hulipa bei kamili ya soko; wateja wa soko linaloibuka na peke yake hulipa bei inayoheshimu sarafu yao. Hesabu inafanya kazi kwa sababu tunaendesha kwa ufanisi na kuruhusu kitambaa cha mawakala wa AI kubeba leva.' },
         { q: 'Kwa nini "kampuni mama" — je, ni muundo wa kushikilia?', a: 'Ni kampuni mama kwa maana rahisi. Chombo kimoja cha kisheria kinamiliki familia ya majukwaa. Orodha: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, pamoja na miundombinu iliyoshirikiwa. Kila bidhaa inaendesha kwenye tovuti yake. Kila moja ina masharti na bei zake. Mmiliki wa kisheria ni Intelligent Singularity Inc.' },
         { q: 'Timu ina ukubwa gani?', a: 'Ndogo vya kutosha mwajiriwa mpya kujifunza kila uso katika wiki ya kwanza, kubwa vya kutosha kuendelea kutuma majukwaa zaidi ya kumi na mbili. Tunafanya kwa makusudi tusitangaze mbio za ukubwa; kitambaa cha mawakala wa AI ni sehemu ya timu kwa maana halisi.' },
@@ -2957,7 +2918,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Ninafanyaje ushirikiano na studio?', a: 'Tunafanya kazi na NGOs, serikali, na kampuni. Lengo la pamoja ni programu ya ufikiaji wa wote kwa watu ambao kwa kawaida hawawezi kumudu. Tuma ujumbe mfupi kutoka ukurasa wa mawasiliano. Elekeza kwenye Partnerships. Utasikia ndani ya siku mbili za kazi.' },
-        { q: 'Naweza kupata press kit wapi?', a: 'Tembelea /press kupata karatasi ya ukweli, manukuu yaliyoidhinishwa, mwongozo wa brand, marejeo ya mwanzilishi, na boilerplate ya vyombo vya habari. Unahitaji faili ya nembo, picha ya azimio la juu ya mwanzilishi, au taarifa maalum? Tuma barua pepe kwa press@intelligentsingularityai.com pamoja na muda wako.' },
+        { q: 'Naweza kupata press kit wapi?', a: 'Tembelea /press kupata karatasi ya ukweli, manukuu yaliyoidhinishwa, mwongozo wa brand, na boilerplate ya vyombo vya habari. Unahitaji faili ya nembo au taarifa maalum? Tuma barua pepe kwa press@intelligentsingularityai.com pamoja na muda wako.' },
         { q: 'Je, mnazungumza kwenye mikutano?', a: 'Wakati mwingine. Tunazungumza kuhusu ufikiaji wa wote, timu zilizoimarishwa kwa AI, programu ya afya, na uchumi wa programu lean. Andika kwa press@intelligentsingularityai.com pamoja na maelezo ya tukio na ukubwa wa hadhira. Tutakuambia kwa unyofu ikiwa tunaweza kuhudhuria.' },
         { q: 'Je, mnachukua michango au ruzuku?', a: 'Hatuombi michango kutoka kwa watumiaji. Tunakaribisha ruzuku. Ruzuku lazima zitoke kwa misingi au benki. Ruzuku lazima ifungamane na programu ya ufikiaji katika masoko ambapo bei kamili bado hazifanyi kazi. Tuma barua pepe kwa partners@intelligentsingularityai.com.' },
       ],
@@ -2977,7 +2938,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Kí ni Intelligent Singularity?', a: 'Intelligent Singularity Inc. jẹ́ kampani ìyá ti mfumo Clap. A jẹ́ studio kékeré, tí AI ti múratàn, ní ọ̀nà jíjìn pátápátá. A wà ní Alberta, Canada. A ń kọ́ sọ́fítíwéàrì fún àǹfààní ayé ńláńlá. Ọjà àkọ́kọ́ kannáà ń ṣe iṣẹ́ fún olùra Fortune 500 ní New York àti ìpẹ̀ja oníkàńṣoṣo ní Lagos. Stack kan tí a pín. Iṣẹ́ àyànfúnni kan.' },
         { q: 'Ǹjẹ́ ẹ̀yin jẹ́ startup tí ó gba ìtìlẹ́yìn venture?', a: 'Bẹ́ẹ̀kọ́. A jẹ́ tí ara wa ti ṣètilẹ́yìn àti bootstrapped. Èyí túmọ̀ sí pé a ń jíhìn fún àwọn olùmújáde, kì í ṣe fún àwọn olùdòwó tí ń lépa ìjáde kíákíá. A gba àkókò gígùn láti jádelé, a sì ń pinnu láti wà níbí lẹ́yìn ogún ọdún. Kampani náà kò sí fún títà.' },
-        { q: 'Ta ni ó wà lẹ́yìn èyí?', a: 'Dr. Md Diya ṣèdá studio náà ní 2024 lẹ́yìn ogójì-dín-mẹ́rin ọdún ti àjọṣe iṣẹ́ ìṣègùn ní àgbáyé. Ẹgbẹ́ kékeré, ní ọ̀nà jíjìn, tí AI ti múratàn ń jádelé ọjà kọ̀ọ̀kan lábẹ́ stack kan tí a pín àti ààlà àǹfààní kan tí a pín.' },
+        { q: 'Ta ni ó wà lẹ́yìn èyí?', a: 'A dá studio náà sílẹ̀ ní 2024 ó sì jẹ́ ẹgbẹ́ kékeré, ní ọ̀nà jíjìn, tí AI ti múratàn ló ń darí rẹ̀. Ọjà kọ̀ọ̀kan ni a ń jádelé lábẹ́ stack kan tí a pín àti ààlà àǹfààní kan tí a pín, a sì ń jíhìn fún àwọn olùmúlò dípò àwọn olùnáwó.' },
         { q: 'Báwo ni ẹ ṣe ń ṣe owó tí àwọn ohun-èlò yín bá rọrùn?', a: 'Àwọn ọjà ní ipele ọfẹ-títí-láé tí ó ń ṣe òwò gidi. Àwọn ipele owó-sànwó fí kíkún kún, kò sí àwọn àfikún rí. Iye-owó ń ṣe àyẹ̀wò sí agbára-ìrà nítorí náà ètò tí ó nílò dọ́là ogún ní Toronto nílò kéré ní Lagos. Àwọn oníbàárá ti àgbáyé tó dàgbà àti enterprise san iye-owó ọjà kíkún; àwọn oníbàárá ọjà tí ń dìde àti olúkúkú san iye-owó tó bọ̀wọ̀ fún owó orílẹ̀-èdè wọn. Ìṣirò náà ń ṣiṣẹ́ nítorí pé a ń ṣiṣẹ́ ní rírọrùn a sì ń jẹ́ kí kítísì àwọn aṣojú AI gbé ìró.' },
         { q: 'Kí ló dé tí "kampani ìyá" — Ǹjẹ́ ó jẹ́ ẹ̀dà holding?', a: 'Ó jẹ́ kampani ìyá ní àpẹrẹ rírọrùn. Ẹgbẹ́ òfin kan ni o ní ìdílé pèpéle. Àkójọ: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, plus ìpilẹ̀ṣẹ̀ àjọṣe. Ọjà kọ̀ọ̀kan ń ṣiṣẹ́ lórí ojú-òpó tirẹ̀. Ọ̀kọ̀ọ̀kan ní àwọn àdéhùn àti iye-owó tirẹ̀. Olùní òfin ni Intelligent Singularity Inc.' },
         { q: 'Báwo ni ẹgbẹ́ ṣe tóbi tó?', a: 'Kéré tó pé tí ọmọ-iṣẹ́ tuntun lè kọ́ ojú kọ̀ọ̀kan ní ọ̀sẹ̀ àkọ́kọ́, tóbi tó pé láti pa àwọn pèpéle tí ó ju mejìlá lọ jádelé. A pinnu láti má ṣe ìpolongò ìdíje ìwọ̀n; kítísì àwọn aṣojú AI jẹ́ ara ẹgbẹ́ ní àpẹrẹ gidi.' },
@@ -3008,7 +2969,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Báwo ni mo ṣe lè bá studio náà ṣe ìbáṣepọ̀?', a: 'A ń ṣiṣẹ́ pẹ̀lú àwọn NGO, ìjọba, àti àwọn kampani. Èrò àpapọ̀ ni sọ́fítíwéàrì ìráyé-àgbáyé fún àwọn ènìyàn tí kò lè ní owó láti rà lóòótọ́. Fi àkọsílẹ̀ kúkúrú kan ránṣẹ́ láti ojú-ìwé olùbátà. Pa á sí Partnerships. Ìwọ yóò gbọ́ nínú ọjọ́ iṣẹ́ méjì.' },
-        { q: 'Níbo ni mo ti lè rí press kit?', a: 'Lọ sí /press fún ìwé-òṣùwọ̀n òtítọ́, àwọn àyọkà tí a ti fọwọ́sí, ìtọ́ni brand, ìtọ́ka olùdásílẹ̀, àti boilerplate fún ìròyìn. Nílò fáìlì àmì idánimọ̀, fọ́tò olùdásílẹ̀ tí ó ní ìṣòkan gíga, tàbí àkọsílẹ̀ àdáni? Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityai.com pẹ̀lú àkókò pípé rẹ.' },
+        { q: 'Níbo ni mo ti lè rí press kit?', a: 'Lọ sí /press fún ìwé-òṣùwọ̀n òtítọ́, àwọn àyọkà tí a ti fọwọ́sí, ìtọ́ni brand, àti boilerplate fún ìròyìn. Nílò fáìlì àmì idánimọ̀ tàbí àkọsílẹ̀ àdáni? Fi ìmẹ́ìlì ránṣẹ́ sí press@intelligentsingularityai.com pẹ̀lú àkókò pípé rẹ.' },
         { q: 'Ǹjẹ́ ẹ̀yin máa ń sọ̀rọ̀ ní àwọn àpéjọ?', a: 'Nígbà mìíràn. A ń sọ̀rọ̀ nípa ìráyé-àgbáyé, àwọn ẹgbẹ́ tí AI mú lọ́pọ̀, sọ́fítíwéàrì ìlera, àti ìṣirò sọ́fítíwéàrì lean. Kọ́wé sí press@intelligentsingularityai.com pẹ̀lú àwọn àlàyé ìṣẹ̀lẹ̀ àti ìwọ̀n àwọn olùgbọ́. A ó sọ fún ọ lóòótọ́ bóyá a lè wà.' },
         { q: 'Ǹjẹ́ ẹ̀yin máa ń gba àwọn ọrẹ tàbí ránṣẹ́?', a: 'A kì í béèrè ọrẹ lọ́wọ́ àwọn olùmújáde. A ń gba ránṣẹ́ kàba. Ránṣẹ́ gbọ́dọ̀ wá láti ọ̀dọ̀ àwọn ipilẹ̀ṣẹ̀ tàbí àwọn báńkì. Ránṣẹ́ gbọ́dọ̀ darapọ̀ mọ́ sọ́fítíwéàrì ìráyé ní àwọn ọjà tí àwọn iye-owó kíkún kò ṣiṣẹ́ ṣì. Fi ìmẹ́ìlì ránṣẹ́ sí partners@intelligentsingularityai.com.' },
       ],
@@ -3028,7 +2989,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       [
         { q: 'Menene Intelligent Singularity?', a: "Intelligent Singularity Inc. shi ne kamfanin uba na tsarin Clap. Mu studio karami ne, wanda AI ya haɓaka, mai aiki ta nesa gaba ɗaya. Muna zaune a Alberta, Kanada. Muna gina software don samun damar amfani na duniya. Babban samfuri guda yana hidima ga mai siye na Fortune 500 a New York da kuma kwalin kasuwa na mutum ɗaya a Lagos. Stack guda da aka raba. Manufa guda." },
         { q: 'Shin ku startup ne mai goyon bayan kuɗin saka jari ne?', a: "A'a. Mu masu kuɗin kanmu ne kuma bootstrapped. Wannan yana nufin muna amsa wa masu amfani, ba ga masu saka jari da ke neman fita da sauri ba. Muna ɗaukar lokaci mai tsawo don aikawa, kuma muna shirin kasancewa nan bayan shekaru ashirin. Ba a sayar da kamfanin ba." },
-        { q: 'Wane ne yake bayan wannan?', a: "Dr. Md Diya ya kafa studio a 2024 bayan shekaru talatin da huɗu na aikin likitanci tsakanin nahiyoyi. Ƙaramar ƙungiya, mai aiki ta nesa, da AI ya haɓaka tana aika kowane samfuri ƙarƙashin stack guda da aka raba da kasafin damar amfani guda da aka raba." },
+        { q: 'Wane ne yake bayan wannan?', a: "An kafa studio a 2024 kuma ƙaramar ƙungiya, mai aiki ta nesa, wadda AI ya haɓaka ce ke gudanar da ita. Ana aika kowane samfuri ƙarƙashin stack guda da aka raba da kasafin damar amfani guda da aka raba, kuma muna da alhaki ga masu amfani maimakon masu saka hannun jari." },
         { q: 'Yaya kuke samun kuɗi idan apps ɗinku suna da araha?', a: "Samfura suna da matakin kyauta-har-abada wanda ke gudanar da kasuwanci na hakika. Matakai biya suna ƙara girma, ba fasalulluka ba. An daidaita farashi da ƙarfin saye don haka plan da yake kuɗi dala ashirin a Toronto yana kuɗi ƙasa a Lagos. Abokan ciniki na duniya mai ci gaba da enterprise suna biyan cikakken farashin kasuwa; abokan ciniki na kasuwa mai tasowa da kaɗaitattu suna biyan farashi da yake girmama kuɗinsu. Lissafin yana aiki saboda muna gudana lean kuma muna barin yadudduka na wakilan AI yana ɗaukar leverage." },
         { q: "Me ya sa 'kamfanin uba' — wannan tsarin riƙewa ne?", a: "Kamfanin uba ne a ma'ana mai sauƙi. Wani entity na shari'a guda yana mallakar iyalin dandamali. Jeri: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, ƙari da ababen more rayuwa da aka raba. Kowane samfuri yana gudana akan shafinsa. Kowanne yana da sharuɗɗansa da farashinsa. Mai mallakar shari'a shi ne Intelligent Singularity Inc." },
         { q: 'Yaya girman ƙungiyar?', a: "Ƙarama isasshe sabon ɗan aiki zai koyi kowace fuska a sati na farko, babba isasshe don ci gaba da aika dandamali sama da goma sha biyu. Da gangan ba mu yin tallar tseren girma; yadudduka na wakilan AI wani ɓangare ne na ƙungiya a ma'ana ta hakika." },
@@ -3059,7 +3020,7 @@ const FAQ: Record<LocaleCode, FaqStrings> = {
       ],
       [
         { q: 'Yaya zan haɗa kai da studio?', a: "Muna aiki tare da NGOs, gwamnatoci, da kamfanoni. Manufar tarayya ita ce software na samun damar duniya ga mutanen da yawanci ba za su iya biya ba. Aika ɗan gajeren bayani daga shafin tuntuɓa. Aika shi zuwa Partnerships. Za ku ji muryarmu cikin kwanaki biyu na aiki." },
-        { q: 'Ina zan iya samun press kit?', a: "Ziyarci /press don takaddar gaskiya, kalmomin da aka amince da su, jagorar brand, ma'anar wanda ya kafa, da boilerplate na 'yan jarida. Kuna buƙatar fayil ɗin tambari, hoton mai kafa mai ƙuduri sosai, ko bayanin musamman? Aiko da imel zuwa press@intelligentsingularityai.com tare da kwanan watan ƙarshe." },
+        { q: 'Ina zan iya samun press kit?', a: "Ziyarci /press don takaddar gaskiya, kalmomin da aka amince da su, jagorar brand, da boilerplate na 'yan jarida. Kuna buƙatar fayil ɗin tambari ko bayanin musamman? Aiko da imel zuwa press@intelligentsingularityai.com tare da kwanan watan ƙarshe." },
         { q: 'Shin kuna magana a tarurruka?', a: "Wani lokaci. Muna magana game da samun damar duniya, ƙungiyoyi waɗanda AI ya haɓaka, software na lafiya, da ilimin tattalin arzikin software lean. Rubuta zuwa press@intelligentsingularityai.com tare da bayanan taron da girman masu sauraro. Za mu gaya muku da gaskiya idan za mu iya zuwa." },
         { q: "Shin kuna karɓar gudummawa ko taimako?", a: "Ba mu nemar gudummawa daga masu amfani. Muna marabtar taimako. Taimako dole ne ya zo daga ginshiƙai ko bankuna. Taimako dole ne a ɗaure shi da software na samun damar a kasuwannin inda farashin cikakke har yanzu ba sa aiki. Aiko da imel zuwa partners@intelligentsingularityai.com." },
       ],
@@ -3759,7 +3720,6 @@ export async function seedNewPagesTranslations(payload: Payload, log: string[]):
         boilerplate: pr.boilerplate,
         brandGuidance: {
           brandName: pr.brandGuidance.brandName,
-          founderReference: pr.brandGuidance.founderReference,
         },
         contactCta: {
           eyebrow: pr.contactCta.eyebrow,

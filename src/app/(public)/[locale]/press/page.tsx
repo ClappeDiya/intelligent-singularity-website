@@ -121,18 +121,12 @@ async function PressContent({ locale }: { locale: string }) {
         </div>
       </section>
 
-      <section aria-labelledby="kit-heading" className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+      <section aria-labelledby="kit-heading" className="mb-20 grid grid-cols-1 gap-5 md:gap-6">
         <h2 id="kit-heading" className="sr-only">{t('brandAssetsHeading')}</h2>
         <div className="is-card rounded-[22px] p-7 md:p-8 flex flex-col gap-4">
           <div className="label-mono">{t('brandNameLabel')}</div>
           <p className="text-[15px] leading-[1.75]" style={{ color: 'var(--color-paper-ink-soft)' }}>
             {page.brandGuidance?.brandName}
-          </p>
-        </div>
-        <div className="is-card rounded-[22px] p-7 md:p-8 flex flex-col gap-4">
-          <div className="label-mono">{t('founderReferenceLabel')}</div>
-          <p className="text-[15px] leading-[1.75]" style={{ color: 'var(--color-paper-ink-soft)' }}>
-            {page.brandGuidance?.founderReference}
           </p>
         </div>
       </section>

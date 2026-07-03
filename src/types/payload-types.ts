@@ -1294,7 +1294,6 @@ export interface PressPage {
     | null;
   brandGuidance: {
     brandName: string;
-    founderReference: string;
   };
   contactCta: {
     eyebrow: string;
@@ -1774,7 +1773,6 @@ export interface PressPageSelect<T extends boolean = true> {
     | T
     | {
         brandName?: T;
-        founderReference?: T;
       };
   contactCta?:
     | T

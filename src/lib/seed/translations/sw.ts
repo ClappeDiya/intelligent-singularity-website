@@ -27,7 +27,7 @@ export const TRANSLATION: LocaleTranslation = {
   about: {
     title: 'Kuhusu Intelligent Singularity',
     lead: 'Timu ndogo, ya mbali, iliyoimarishwa na AI, inayojenga programu kwa ufikiaji wa kila mtu, iliyosajiliwa Alberta mwaka 2024.',
-    founderStoryText: 'Dkt. Md Diya alianzisha Intelligent Singularity Inc. mwaka 2024, baada ya miaka 34 ya utabibu katika mabara mbalimbali. Dhamira: kufunga pengo la ufikiaji wa programu kwa kila mtu, kila biashara, kila eneo — mtandaoni au nje ya mtandao.',
+    founderStoryText: 'Intelligent Singularity Inc. ilianzishwa mwaka 2024 kwa dhamira ya kufunga pengo la ufikiaji wa programu kwa kila mtu, kila biashara, kila eneo — mtandaoni au nje ya mtandao.',
     incorporationContext: 'Ilisajiliwa mwaka 2024 huko Alberta, Canada. Ni studio, si kampuni ya mtaji wa hatari. Imejitegemea kifedha, imejijengea kutoka mwanzo, ikitumia AI kuimarisha shughuli tangu siku ya kwanza.',
     leanOpsPhilosophyText: 'Timu ndogo. Teknolojia moja ya pamoja. Miundombinu moja ya pamoja. Zana ishirini na tatu zinaundwa chini ya dhamira moja. Gharama zinazookolewa kwa uendeshaji mwembamba zinaelekezwa kwenye ufikiaji wa kweli, si mishahara ya wakurugenzi.',
   },

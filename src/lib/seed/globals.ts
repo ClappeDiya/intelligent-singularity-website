@@ -160,7 +160,7 @@ export const ABOUT_SEED = {
           type: 'paragraph', version: 1, direction: 'ltr', format: '', indent: 0,
           children: [{
             type: 'text', version: 1,
-            text: 'Intelligent Singularity was founded in 2024 by Dr. Md Diya, a medical doctor with thirty-four years of cross-continental experience. Across clinics, hospitals, and field practices on several continents, Dr. Diya watched good software reach the capital cities and never quite reach the village. The same broken pattern appeared in classrooms, farm co-ops, and markets. The company exists to repair that pattern \u2014 by building one strong product per problem, in one shared stack, for every human being the tool can help.',
+            text: 'Intelligent Singularity was founded in 2024 on a pattern its team kept seeing across clinics, hospitals, classrooms, farm co-ops, and markets on several continents: good software reaches the capital cities and never quite reaches the village. The company exists to repair that pattern \u2014 by building one strong product per problem, in one shared stack, for every human being the tool can help.',
           }],
         },
         {

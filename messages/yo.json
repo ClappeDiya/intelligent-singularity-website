@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "Ètò òfin",
         "founded": "Tí a dá",
-        "founder": "Olùdá",
         "structure": "Ìpilẹ̀",
         "operatingModel": "Àpẹrẹ ìṣiṣẹ́",
         "capital": "Olú",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · Alberta, Kánádà",
-        "founder": "Dr. Md Diya, MD",
         "structure": "Òbí ti àjọ Clap",
         "operatingModel": "Kéékèèké, jíjìnnà, ti AI túbọ̀",
         "capital": "Bootstrapped · ìnáwó-ara · kò sí fún títà",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "Àyọkà tí a fọwọsi",
       "brandAssetsHeading": "Àwọn dúkìá àmì",
       "brandNameLabel": "Orúkọ àmì",
-      "founderReferenceLabel": "Ìtọ́kasí olùdásílẹ̀",
       "pressBoilerplateHeading": "Àkọsílẹ̀ òfin ti ìròyìn",
       "storyAnglesWelcomedHeading": "Àwọn igun ìtàn tí a kabọ̀",
       "storyAnglesDeclineHeading": "Àwọn igun ìtàn tí a sábà máa kọ̀",
@@ -569,7 +566,6 @@
     "visit": "Ṣàbẹ̀wò",
     "schema": {
       "organizationDescription": "Sítúdíò tó ń kọ́ sọ́fítíwérì fún ìráyà gbogbo ènìyàn.",
-      "founderDescription": "Olùdásílẹ̀ Intelligent Singularity, ń kọ́ sọ́fítíwérì fún ìráyà gbogbo ènìyàn pẹ̀lú iṣẹ́ tó ní ìjáfáfá tí AI ti pọ̀ sí i.",
       "portfolioListName": "Àkójọpọ̀ Àwọn Ọjà Intelligent Singularity"
     }
   },

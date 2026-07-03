@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "Entidad jurídica",
         "founded": "Fundada",
-        "founder": "Fundador",
         "structure": "Estructura",
         "operatingModel": "Modelo operativo",
         "capital": "Capital",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · Alberta, Canadá",
-        "founder": "Dr. Md Diya, MD",
         "structure": "Empresa matriz del ecosistema Clap",
         "operatingModel": "Pequeño, remoto, aumentado por IA",
         "capital": "Bootstrapped · autofinanciado · no en venta",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "Citas aprobadas",
       "brandAssetsHeading": "Recursos de marca",
       "brandNameLabel": "Nombre de marca",
-      "founderReferenceLabel": "Referencia del fundador",
       "pressBoilerplateHeading": "Texto estándar para prensa",
       "storyAnglesWelcomedHeading": "Enfoques de historia que damos la bienvenida",
       "storyAnglesDeclineHeading": "Enfoques que solemos declinar",
@@ -569,7 +566,6 @@
     "visit": "Visitar",
     "schema": {
       "organizationDescription": "Un estudio que crea software para acceso universal.",
-      "founderDescription": "Fundador de Intelligent Singularity, creando software para acceso universal con operaciones ligeras potenciadas por IA.",
       "portfolioListName": "Portafolio de productos Intelligent Singularity"
     }
   },

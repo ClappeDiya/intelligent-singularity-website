@@ -34,9 +34,6 @@ export async function getOrganizationSchema(locale: string) {
       'https://clapdiet.com',
       'https://clapwork.com',
     ],
-    founder: {
-      '@id': `${siteUrl}#founder`,
-    },
   };
 }
 
@@ -52,22 +49,6 @@ export function getWebSiteSchema(locale: string) {
     publisher: {
       '@id': `${siteUrl}#organization`,
     },
-  };
-}
-
-export async function getFounderSchema(locale: string) {
-  const siteUrl = getSiteUrl().toString().replace(/\/$/, '');
-  const t = await getTranslations({ locale, namespace: 'common.schema' });
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    '@id': `${siteUrl}#founder`,
-    name: 'Dr. Md Diya',
-    jobTitle: 'Founder',
-    worksFor: {
-      '@id': `${siteUrl}#organization`,
-    },
-    description: t('founderDescription'),
   };
 }
 

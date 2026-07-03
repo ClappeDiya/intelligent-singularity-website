@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "法律实体",
         "founded": "成立时间",
-        "founder": "创始人",
         "structure": "结构",
         "operatingModel": "运营模式",
         "capital": "资本",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · 加拿大艾伯塔省",
-        "founder": "Md Diya 博士，医学博士",
         "structure": "Clap 生态系统的母公司",
         "operatingModel": "小型、远程、AI 增强",
         "capital": "自举 · 自筹资金 · 非卖品",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "已批准引语",
       "brandAssetsHeading": "品牌资源",
       "brandNameLabel": "品牌名称",
-      "founderReferenceLabel": "创始人参考",
       "pressBoilerplateHeading": "新闻稿模板",
       "storyAnglesWelcomedHeading": "我们欢迎的报道角度",
       "storyAnglesDeclineHeading": "我们通常婉拒的报道角度",
@@ -569,7 +566,6 @@
     "visit": "访问",
     "schema": {
       "organizationDescription": "一家为通用访问构建软件的工作室。",
-      "founderDescription": "Intelligent Singularity 创始人，通过 AI 增强的精益运营为通用访问构建软件。",
       "portfolioListName": "Intelligent Singularity 产品组合"
     }
   },

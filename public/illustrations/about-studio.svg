@@ -64,11 +64,11 @@
     </g>
   </g>
 
-  <!-- Founder label -->
+  <!-- Founded label -->
   <g>
     <line x1="490" y1="240" x2="560" y2="240" class="s-ink" stroke-width="1" opacity="0.45"/>
-    <text class="mono" x="566" y="236">Founder</text>
-    <text class="label" x="566" y="252">Dr. Md Diya · 2024</text>
+    <text class="mono" x="566" y="236">Founded</text>
+    <text class="label" x="566" y="252">2024 · Alberta, Canada</text>
   </g>
 
   <!-- AI leverage label -->

@@ -27,7 +27,7 @@ export const TRANSLATION: LocaleTranslation = {
   about: {
     title: 'Acerca de Intelligent Singularity',
     lead: 'Un pequeño equipo remoto, potenciado con inteligencia artificial, que desarrolla software para el acceso universal. Constituido en Alberta en 2024.',
-    founderStoryText: 'El Dr. Md Diya fundó Intelligent Singularity Inc. en 2024, tras 34 años de práctica médica global en múltiples continentes. La misión: cerrar la brecha de acceso al software para cada persona, cada empresa y cada región, con o sin conexión.',
+    founderStoryText: 'Intelligent Singularity Inc. se fundó en 2024 con la misión de cerrar la brecha de acceso al software para cada persona, cada empresa y cada región, con o sin conexión.',
     incorporationContext: 'Constituida en 2024 en Alberta, Canada. Un estudio, no una startup respaldada por capital de riesgo. Autofinanciada, con arranque propio y operaciones potenciadas con inteligencia artificial desde el primer día.',
     leanOpsPhilosophyText: 'Un equipo pequeño. Una plataforma tecnológica compartida. Una capa de infraestructura compartida. Veintitrés herramientas que se lanzan bajo una sola misión. Los ahorros de las operaciones eficientes financian una democratización real, no salarios ejecutivos.',
   },

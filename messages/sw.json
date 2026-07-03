@@ -217,7 +217,6 @@
       "metaLabels": {
         "legalEntity": "Taasisi ya kisheria",
         "founded": "Ilianzishwa",
-        "founder": "Mwanzilishi",
         "structure": "Muundo",
         "operatingModel": "Mtindo wa uendeshaji",
         "capital": "Mtaji",
@@ -228,7 +227,6 @@
       "metaValues": {
         "legalEntity": "Intelligent Singularity Inc.",
         "founded": "2024 · Alberta, Kanada",
-        "founder": "Dkt. Md Diya, MD",
         "structure": "Mama wa mfumo wa Clap",
         "operatingModel": "Ndogo, ya mbali, iliyoboreshwa na AI",
         "capital": "Bootstrapped · iliyojigharamia · si ya kuuza",
@@ -313,7 +311,6 @@
       "approvedQuotesHeading": "Manukuu yaliyoidhinishwa",
       "brandAssetsHeading": "Mali za chapa",
       "brandNameLabel": "Jina la chapa",
-      "founderReferenceLabel": "Marejeleo ya mwanzilishi",
       "pressBoilerplateHeading": "Maandishi ya msingi ya vyombo vya habari",
       "storyAnglesWelcomedHeading": "Pembe za hadithi tunazokaribisha",
       "storyAnglesDeclineHeading": "Pembe za hadithi tunazokataa kwa kawaida",
@@ -569,7 +566,6 @@
     "visit": "Tembelea",
     "schema": {
       "organizationDescription": "Studio inayojenga programu kwa upatikanaji wa wote.",
-      "founderDescription": "Mwanzilishi wa Intelligent Singularity, anajenga programu kwa upatikanaji wa wote na shughuli nyembamba zilizoboreshwa na AI.",
       "portfolioListName": "Mkusanyiko wa Bidhaa za Intelligent Singularity"
     }
   },
