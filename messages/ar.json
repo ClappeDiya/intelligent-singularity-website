@@ -345,11 +345,11 @@
       "publicAs": "معروف باسم",
       "breadcrumbCurrent": "أعمالنا",
       "schemaName": "أعمالنا | Intelligent Singularity",
-      "schemaDescription": "استكشف المنظومة الكاملة لأربع عشرة أداة عبر عمليات الأعمال والصحة والمالية والزراعة والإعلام والاتصالات.",
+      "schemaDescription": "استكشف المنظومة الكاملة لأربع عشرة أداة عبر عمليات الأعمال والصحة والمالية والعمل والزراعة والإعلام والاتصالات.",
       "mosaicSvgTitle": "فسيفساء المحفظة",
       "mosaicAriaLabel": "فسيفساء تُظهر ثماني منصات من منظومة Clap: Clappe، ClapBill، ClapMed، ClapDiet، ClapPay، Clapwork، Apogee، وAudiflo.",
       "metaTitle": "المحفظة | Intelligent Singularity",
-      "metaDescription": "اكتشف المنظومة الكاملة المؤلَّفة من 14 أداة عبر عمليات الأعمال والصحة والمال والزراعة والإعلام والاتصالات.",
+      "metaDescription": "اكتشف المنظومة الكاملة المؤلَّفة من 14 أداة عبر عمليات الأعمال والصحة والمال والعمل والزراعة والإعلام والاتصالات.",
       "productCountLabel": "{count, plural, zero {منتج} one {منتج} two {منتجان} few {منتجات} many {منتجاً} other {منتجات}}"
     },
     "contact": {

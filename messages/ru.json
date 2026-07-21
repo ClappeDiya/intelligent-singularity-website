@@ -29,7 +29,7 @@
     "helpLabel": "Помощь",
     "trustLabel": "Доверие",
     "startConversation": "Start a conversation",
-    "languagesBlurb": "Every public page ships in fourteen languages, including Arabic, Nastaliq Urdu, Bengali, Hindi, Hausa, Swahili, and Yoruba.",
+    "languagesBlurb": "Каждая публичная страница доступна на четырнадцати языках, включая арабский, насталик урду, бенгальский, хинди, хауса, суахили и йоруба.",
     "links": {
       "flagships": "Флагманы",
       "careers": "Карьера",
@@ -345,11 +345,11 @@
       "publicAs": "Известно как",
       "breadcrumbCurrent": "Портфолио",
       "schemaName": "Портфолио | Intelligent Singularity",
-      "schemaDescription": "Изучите полную экосистему из 14 инструментов в сферах бизнес-операций, здоровья, финансов, сельского хозяйства, медиа и коммуникаций.",
+      "schemaDescription": "Изучите полную экосистему из 14 инструментов в сферах бизнес-операций, здоровья, финансов, работы, сельского хозяйства, медиа и коммуникаций.",
       "mosaicSvgTitle": "Мозаика портфеля",
       "mosaicAriaLabel": "Мозаика, показывающая восемь платформ экосистемы Clap: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee и Audiflo.",
       "metaTitle": "Портфолио | Intelligent Singularity",
-      "metaDescription": "Изучите полную экосистему из 14 инструментов в бизнес-операциях, здравоохранении, финансах, сельском хозяйстве, медиа и связи.",
+      "metaDescription": "Изучите полную экосистему из 14 инструментов в бизнес-операциях, здравоохранении, финансах, работе, сельском хозяйстве, медиа и связи.",
       "productCountLabel": "{count, plural, one {Продукт} few {Продукта} many {Продуктов} other {Продукта}}"
     },
     "contact": {

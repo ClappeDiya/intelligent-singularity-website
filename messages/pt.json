@@ -345,11 +345,11 @@
       "publicAs": "Conhecido como",
       "breadcrumbCurrent": "Portfólio",
       "schemaName": "Portfólio | Intelligent Singularity",
-      "schemaDescription": "Explore o ecossistema completo de 14 ferramentas em operações de negócios, saúde, finanças, agricultura, mídia e comunicações.",
+      "schemaDescription": "Explore o ecossistema completo de 14 ferramentas em operações de negócios, saúde, finanças, trabalho, agricultura, mídia e comunicações.",
       "mosaicSvgTitle": "Mosaico do portfólio",
       "mosaicAriaLabel": "Um mosaico que mostra oito plataformas do ecossistema Clap: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee e Audiflo.",
       "metaTitle": "Portfólio | Intelligent Singularity",
-      "metaDescription": "Explore o ecossistema completo de 14 ferramentas em operações empresariais, saúde, finanças, agricultura, mídia e comunicações.",
+      "metaDescription": "Explore o ecossistema completo de 14 ferramentas em operações empresariais, saúde, finanças, trabalho, agricultura, mídia e comunicações.",
       "productCountLabel": "{count, plural, one {Produto} other {Produtos}}"
     },
     "contact": {

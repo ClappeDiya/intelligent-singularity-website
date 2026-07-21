@@ -68,7 +68,7 @@ export const CHANGELOG_SEED = [
     gitSha: '0e73599',
     title: 'Portfolio trimmed to the tools that are ready for real users',
     summary:
-      'We took nine tools off the public portfolio for now. They are still in test mode. The page now lists fourteen products. Each one shows a clear label. You can see where it sits at a glance: in production, in staging, or still in the studio.',
+      'We took nine tools off the public portfolio at the time. They were still in test mode. The page now lists fourteen products. Each one shows a clear label. You can see where it sits at a glance: in production, in staging, or still in the studio.',
     changes: [{ type: 'changed', entry: 'Portfolio' }],
     authors: [{ username: 'md' }],
     status: 'published',
