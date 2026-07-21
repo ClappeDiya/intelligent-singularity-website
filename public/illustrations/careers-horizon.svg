@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="careers-horizon-title careers-horizon-desc">
-  <title id="careers-horizon-title">A twenty-year horizon</title>
-  <desc id="careers-horizon-desc">The studio is bootstrapped and plans to still be shipping in 2044 — a single meridian arc marking a sustainable pace across two decades.</desc>
+  <title id="careers-horizon-title">A 120-year horizon</title>
+  <desc id="careers-horizon-desc">The studio is bootstrapped and plans to still be shipping in 2144 — a single meridian arc marking a sustainable pace across twelve decades.</desc>
   <defs>
     <style>
       .ink   { fill: #141413; }
@@ -23,7 +23,7 @@
 
   <!-- Eyebrow + framing -->
   <text class="mono" x="48" y="54">Careers · Long horizon</text>
-  <text class="serif" x="48" y="90" font-size="24">Sustainable pace. Twenty-year plan.</text>
+  <text class="serif" x="48" y="90" font-size="24">Sustainable pace. 120-year plan.</text>
 
   <!-- Baseline meridian -->
   <line x1="96" y1="230" x2="864" y2="230" class="s-faint" stroke-width="1"/>
@@ -36,23 +36,23 @@
   <g>
     <!-- 2024 -->
     <circle cx="96"  cy="230" r="7" class="mint-i"/>
-    <!-- 2030 -->
+    <!-- 2060 -->
     <circle cx="288" cy="148" r="4.5" class="s-ink" stroke-width="1.25" fill="#faf9f5"/>
-    <!-- 2036 -->
+    <!-- 2096 -->
     <circle cx="480" cy="112" r="4.5" class="s-ink" stroke-width="1.25" fill="#faf9f5"/>
-    <!-- 2040 -->
+    <!-- 2120 -->
     <circle cx="672" cy="148" r="4.5" class="s-ink" stroke-width="1.25" fill="#faf9f5"/>
-    <!-- 2044 -->
+    <!-- 2144 -->
     <circle cx="864" cy="230" r="7" class="s-mint" stroke-width="2" fill="#faf9f5"/>
   </g>
 
   <!-- Year labels under baseline -->
   <g>
     <text class="mono" x="96"  y="258" text-anchor="middle">2024</text>
-    <text class="mono" x="288" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2030</text>
-    <text class="mono" x="480" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2036</text>
-    <text class="mono" x="672" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2040</text>
-    <text class="mono" x="864" y="258" text-anchor="middle">2044</text>
+    <text class="mono" x="288" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2060</text>
+    <text class="mono" x="480" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2096</text>
+    <text class="mono" x="672" y="258" text-anchor="middle" fill="rgba(20,20,19,0.44)">2120</text>
+    <text class="mono" x="864" y="258" text-anchor="middle">2144</text>
   </g>
 
   <!-- Milestone callouts -->

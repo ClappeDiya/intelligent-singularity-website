@@ -20,7 +20,7 @@ export const CAREERS_PAGE_SEED = {
     },
     {
       title: 'Made for the long game',
-      body: 'The studio is bootstrapped and not for sale. We plan to ship in twenty years. That means a steady pace, real weekends, and choosing problems that compound over time. Nobody here is racing for an exit.',
+      body: 'The studio is bootstrapped and not for sale. We plan to ship in a hundred and twenty years. That means a steady pace, real weekends, and choosing problems that compound over time. Nobody here is racing for an exit.',
     },
     {
       title: 'Compensation, transparently',

@@ -15,7 +15,7 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'Are you a venture-backed startup?',
-          a: 'No. We are self-funded and bootstrapped. That means we answer to users, not to investors chasing quick exits. We take longer to ship, and we plan to be around in twenty years. The company is not for sale.',
+          a: 'No. We are self-funded and bootstrapped. That means we answer to users, not to investors chasing quick exits. We take longer to ship, and we plan to be around in a hundred and twenty years. The company is not for sale.',
         },
         {
           q: 'Who is behind this?',
@@ -27,7 +27,7 @@ export const FAQ_PAGE_SEED = {
         },
         {
           q: 'Why "parent company" — is this a holding structure?',
-          a: 'It is a parent company in the plain sense. One legal entity owns the family of platforms. The list: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, plus shared infrastructure. Each product runs on its own site. Each has its own terms and prices. The legal owner is Intelligent Singularity Inc.',
+          a: 'It is a parent company in the plain sense. One legal entity owns the family of platforms. The list: Clappe, ClapBill, ClapMed, ClapDiet, ClapMove, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, RateAds / Feedback Hub, plus shared infrastructure. Each product runs on its own site. Each has its own terms and prices. The legal owner is Intelligent Singularity Inc.',
         },
         {
           q: 'How big is the team?',

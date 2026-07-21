@@ -345,11 +345,11 @@
       "publicAs": "公开名为",
       "breadcrumbCurrent": "作品集",
       "schemaName": "作品集 | Intelligent Singularity",
-      "schemaDescription": "探索覆盖业务运营、健康、金融、农业、媒体和通信的 14 款工具完整生态。",
+      "schemaDescription": "探索覆盖业务运营、健康、金融、工作、农业、媒体和通信的 14 款工具完整生态。",
       "mosaicSvgTitle": "产品组合拼图",
       "mosaicAriaLabel": "展示 Clap 生态八大平台的拼图：Clappe、ClapBill、ClapMed、ClapDiet、ClapPay、Clapwork、Apogee 和 Audiflo。",
       "metaTitle": "产品组合 | Intelligent Singularity",
-      "metaDescription": "探索覆盖业务运营、健康、金融、农业、媒体与通信的 14 款产品组成的完整生态。",
+      "metaDescription": "探索覆盖业务运营、健康、金融、工作、农业、媒体与通信的 14 款产品组成的完整生态。",
       "productCountLabel": "{count, plural, other {产品}}"
     },
     "contact": {

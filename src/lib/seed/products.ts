@@ -61,7 +61,7 @@ export const PRODUCTS_SEED: ProductSeed[] = [
     outboundURL: 'https://nestbitt.com', productStatus: 'production', isFlagship: false, ordering: 17 },
   { name: 'DailyWorship', slug: 'dailyworship', categorySlug: 'media-creative',
     tagline: 'Worship music for every community.', shortDescription: 'AI-powered worship music generation, open source.',
-    outboundURL: 'https://dailyworship.net', productStatus: 'staging', isFlagship: false, ordering: 18 },
+    outboundURL: 'https://dailyworship.net', productStatus: 'production', isFlagship: false, ordering: 18 },
 
   // Communications & Infra
   { name: 'Gclap', slug: 'gclap', categorySlug: 'communications-data',

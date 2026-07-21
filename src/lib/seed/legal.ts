@@ -86,7 +86,7 @@ const PRIVACY = doc([
 
   h('h2', 'Across the Clap product family'),
   p(
-    'Intelligent Singularity is the parent company of the Clap ecosystem. The corporate website you are reading now is the public front door. The products inside the family — Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, and the shared infrastructure that connects them — each handle their own user accounts, their own paid subscriptions, and their own private business data on their own dedicated domains.',
+    'Intelligent Singularity is the parent company of the Clap ecosystem. The corporate website you are reading now is the public front door. The products inside the family — Clappe, ClapBill, ClapMed, ClapDiet, ClapMove, ClapPay, Clapwork, Apogee, Audiflo, Nestbitt, DailyWorship, Gclap, FileManager, RateAds / Feedback Hub, and the shared infrastructure that connects them — each handle their own user accounts, their own paid subscriptions, and their own private business data on their own dedicated domains.',
   ),
   p(
     'A few things are shared across the family. Single sign-on lets you use one Clap account across products that opt in. Customer-support tickets are routed through one help desk so a question about ClapBill can be picked up by the same team that maintains ClapPay. Fraud detection and abuse signals are shared between products, but only as anonymised patterns — never as the underlying personal data. The detail of what is shared, with which product, and for how long is documented on each product’s own privacy page.',

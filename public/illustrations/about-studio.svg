@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="about-studio-title about-studio-desc">
   <title id="about-studio-title">The studio topology</title>
-  <desc id="about-studio-desc">A small remote studio — one founder at centre, a ring of AI-leverage, a horizon line that reaches 20 years.</desc>
+  <desc id="about-studio-desc">A small remote studio — one founder at centre, a ring of AI-leverage, a horizon line that reaches 120 years.</desc>
   <defs>
     <style>
       .ink    { fill: #141413; }
@@ -89,7 +89,7 @@
     <g class="ink-d" font-family="-apple-system, system-ui, sans-serif" font-size="12">
       <text x="0" y="28">Founded 2024 · Alberta</text>
       <text x="0" y="52">Bootstrapped · self-funded</text>
-      <text x="0" y="76">14 tools · 5 live</text>
+      <text x="0" y="76">14 tools · 10 live</text>
       <text x="0" y="100">14 languages live</text>
     </g>
   </g>
@@ -106,10 +106,10 @@
     </g>
     <g class="ink-f" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="0.18em">
       <text x="0"   y="46">2024</text>
-      <text x="60"  y="46">2030</text>
-      <text x="124" y="46">2036</text>
-      <text x="172" y="46">2044</text>
+      <text x="60"  y="46">2060</text>
+      <text x="124" y="46">2096</text>
+      <text x="172" y="46">2144</text>
     </g>
-    <text class="label" x="0" y="72">Plan to still be shipping in 20 years.</text>
+    <text class="label" x="0" y="72">Plan to still be shipping in 120 years.</text>
   </g>
 </svg>

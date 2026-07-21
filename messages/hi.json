@@ -29,7 +29,7 @@
     "helpLabel": "सहायता",
     "trustLabel": "विश्वास",
     "startConversation": "Start a conversation",
-    "languagesBlurb": "Every public page ships in fourteen languages, including Arabic, Nastaliq Urdu, Bengali, Hindi, Hausa, Swahili, and Yoruba.",
+    "languagesBlurb": "हर सार्वजनिक पृष्ठ चौदह भाषाओं में उपलब्ध है, जिनमें अरबी, नस्तालीक़ उर्दू, बंगाली, हिंदी, हाउसा, स्वाहिली और योरूबा शामिल हैं।",
     "links": {
       "flagships": "प्रमुख उत्पाद",
       "careers": "करियर",
@@ -345,11 +345,11 @@
       "publicAs": "के नाम से",
       "breadcrumbCurrent": "पोर्टफोलियो",
       "schemaName": "पोर्टफोलियो | Intelligent Singularity",
-      "schemaDescription": "व्यावसायिक संचालन, स्वास्थ्य, वित्त, कृषि, मीडिया और संचार में फैले 14 उपकरणों के पूरे पारिस्थितिकी तंत्र का अन्वेषण करें।",
+      "schemaDescription": "व्यावसायिक संचालन, स्वास्थ्य, वित्त, कार्य, कृषि, मीडिया और संचार में फैले 14 उपकरणों के पूरे पारिस्थितिकी तंत्र का अन्वेषण करें।",
       "mosaicSvgTitle": "पोर्टफोलियो मोज़ेक",
       "mosaicAriaLabel": "Clap इकोसिस्टम के आठ प्लेटफ़ॉर्म दर्शाने वाला मोज़ेक: Clappe, ClapBill, ClapMed, ClapDiet, ClapPay, Clapwork, Apogee और Audiflo।",
       "metaTitle": "पोर्टफ़ोलियो | Intelligent Singularity",
-      "metaDescription": "व्यावसायिक संचालन, स्वास्थ्य, वित्त, कृषि, मीडिया और संचार में 14 उपकरणों का संपूर्ण इकोसिस्टम देखें।",
+      "metaDescription": "व्यावसायिक संचालन, स्वास्थ्य, वित्त, कार्य, कृषि, मीडिया और संचार में 14 उपकरणों का संपूर्ण इकोसिस्टम देखें।",
       "productCountLabel": "{count, plural, one {उत्पाद} other {उत्पाद}}"
     },
     "contact": {
